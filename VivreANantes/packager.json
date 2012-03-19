@@ -1,0 +1,21 @@
+{
+    "applicationName":"VivreANantes Recyclage",
+    "applicationId":"com.van.recyclage",
+    "iconName":"resources/icons/Icon.png",
+    "versionString":"1.0",
+    "outputPath":"C:/Users/Charlyscope/Documents/opendata/output",
+    "inputPath":"C:/Users/Charlyscope/Documents/opendata/VivreANantes",
+    "configuration":"Debug",
+    "platform":"Android",
+    "deviceType":"Universal",
+    "certificatePath":"C:/Users/Charlyscope/.android/debug.keystore",
+    "certificateAlias":"androiddebugkey",    
+	"androidAPILevel":"7",
+	"sdkPath":"C:/Outils/AndroidSDK",
+    "orientations": [
+        "portrait",
+        "landscapeLeft",
+        "landscapeRight",
+        "portraitUpsideDown"
+    ]
+}
