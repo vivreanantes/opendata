@@ -1,0 +1,6 @@
+format 75
+
+usecasecanvas 128007 usecase_ref 128007 // rechercher par mots clefs
+  xyzwh 430 75 3005 64 32 label_xy 403 107
+end
+end

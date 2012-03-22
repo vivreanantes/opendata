@@ -1,0 +1,50 @@
+format 75
+
+classcanvas 128012 class_ref 128396 // Tag
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 71 249 2000
+end
+classcanvas 128140 class_ref 128524 // ElementRecherche
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 572 242 2000
+end
+classcanvas 128268 class_ref 128652 // AssoTagElementRecherche
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 268 254 2000
+end
+classcanvas 128652 class_ref 128780 // MoteurRecherche
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 220 438 2000
+end
+note 128780 "TODO : Caractériser le moteur de recherche
+
+Exemple : trouver les différents caractères réservés, penser aux opérations"
+  xyzwh 50 401 2000 131 111
+classcanvas 129164 class_ref 128908 // BriqueLogicielle
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 282 92 2006
+end
+note 129420 "Afin d'accélérer le moteur de recherche, penser à créer des index tant sur la brique logicielle que sur le tag"
+  xyzwh 92 118 2000 135 93
+relationcanvas 128396 relation_ref 128652 // <unidirectional association>
+  from ref 128268 z 2001 to ref 128140
+  role_a_pos 471 255 3000 no_role_b
+  multiplicity_a_pos 555 278 3000 no_multiplicity_b
+end
+relationcanvas 128524 relation_ref 128780 // <unidirectional association>
+  from ref 128268 z 2001 to ref 128012
+  role_a_pos 169 255 3000 no_role_b
+  multiplicity_a_pos 169 278 3000 no_multiplicity_b
+end
+relationcanvas 129292 relation_ref 128908 // <unidirectional association>
+  from ref 128268 z 2007 to ref 129164
+  no_role_a no_role_b
+  multiplicity_a_pos 324 176 3000 no_multiplicity_b
+end
+line 129548 -_-_
+  from ref 129420 z 2007 to ref 129164
+line 129676 -_-_
+  from ref 129420 z 2001 to ref 128012
+line 129804 -_-_
+  from ref 128780 z 2001 to ref 128652
+end

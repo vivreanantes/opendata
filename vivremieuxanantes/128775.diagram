@@ -1,0 +1,80 @@
+format 75
+
+classcanvas 128007 class_ref 128775 // AbstractPointInteret
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 368 240 2000
+end
+classcanvas 128012 class_ref 130823 // Commune
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 432 74 3011
+end
+classcanvas 128135 class_ref 137351 // SiteInternet
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 658 236 2000
+end
+classcanvas 128391 class_ref 130439 // Adresse
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 96 44 2000
+end
+classcanvas 128396 class_ref 128524 // ElementRecherche
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 357 136 3017
+end
+classcanvas 128519 class_ref 130311 // Geolocalisation
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 120 228 3005
+end
+classcanvas 129031 class_ref 128903 // AbstractHoraire
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 229 368 3005
+end
+classcanvas 129287 class_ref 129927 // Tarif
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 468 382 3011
+end
+relationcanvas 128140 relation_ref 129927 // <unidirectional association>
+  from ref 128391 z 3012 to ref 128012
+  role_a_pos 375 80 3000 no_role_b
+  multiplicity_a_pos 415 103 3000 no_multiplicity_b
+end
+relationcanvas 128263 relation_ref 136583 // <unidirectional association>
+  from ref 128007 z 2001 stereotype "<<embedded>>" xyz 531 263 3000 to ref 128135
+  role_a_pos 595 241 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128524 relation_ref 131084 // <generalisation>
+  from ref 128007 z 3018 to ref 128396
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128647 relation_ref 130055 // <directional composition>
+  from ref 128391 z 3006 stereotype "<<embedded>>" xyz 150 188.5 3000 to ref 128519
+  role_a_pos 197 210 3000 no_role_b
+  multiplicity_a_pos 171 210 3000 no_multiplicity_b
+end
+relationcanvas 128775 relation_ref 136711 // <unidirectional association>
+  from ref 128007 z 2001 to ref 128391
+  role_a_pos 278 139 3000 no_role_b
+  multiplicity_a_pos 278 162 3000 no_multiplicity_b
+end
+relationcanvas 128903 relation_ref 136839 // <unidirectional association>
+  from ref 128007 z 3006 stereotype "<<embedded>>" xyz 273 258 3000 to ref 128519
+  role_a_pos 264 241 3000 no_role_b
+  multiplicity_a_pos 264 264 3000 no_multiplicity_b
+end
+relationcanvas 129159 relation_ref 136967 // <directional composition>
+  from ref 128007 z 3006 to ref 129031
+  no_role_a no_role_b
+  multiplicity_a_pos 319 350 3000 no_multiplicity_b
+end
+relationcanvas 129415 relation_ref 129415 // <association>
+  from ref 129031 z 3012 to ref 129287
+  role_a_pos 435 388 3000 role_b_pos 369 388 3000
+  multiplicity_a_pos 453 411 3000 multiplicity_b_pos 369 411 3000
+end
+relationcanvas 129543 relation_ref 137095 // <directional composition>
+  from ref 128007 z 3012 to ref 129287
+  no_role_a no_role_b
+  multiplicity_a_pos 481 364 3000 no_multiplicity_b
+end
+end

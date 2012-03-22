@@ -1,0 +1,39 @@
+format 75
+
+classcanvas 128012 class_ref 129036 // Contribution
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 612 185 2000
+end
+classcanvas 128140 class_ref 129164 // ElementCommentable
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 110 337 2000
+end
+classcanvas 128268 class_ref 129292 // Commentaire
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 111 168 2000
+end
+classcanvas 128524 class_ref 128007 // Utilisateur
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 341 137 2005
+end
+classcanvas 128908 class_ref 129676 // MoteurContribution
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 594 76 2000
+end
+note 129036 "Une contribution ne peut se faire que si le rôle CONTRIBUTEUR est disponible pour l'utilisateur"
+  xyzwh 323 33 2000 153 75
+note 129420 "Le mécanisme des contributions est encore à définir"
+  xyzwh 473 175 2000 115 59
+relationcanvas 128396 relation_ref 129036 // <association>
+  from ref 128268 z 2001 to ref 128140
+  no_role_a no_role_b
+  multiplicity_a_pos 160 319 3000 multiplicity_b_pos 162 250 3000
+end
+relationcanvas 128652 relation_ref 129420 // <unidirectional association>
+  from ref 128268 z 2006 to ref 128524
+  no_role_a no_role_b
+  multiplicity_a_pos 259 212 3000 no_multiplicity_b
+end
+line 129164 -_-_
+  from ref 129036 z 2011 to ref 128524
+end

@@ -1,0 +1,31 @@
+window_sizes 1366 706 320 960 564 68
+diagrams
+  classdiagram_ref 128135 // utilisateurs et roles
+    828 451 100 4 0 0
+  classdiagram_ref 128391 // utils
+    828 451 100 4 0 0
+  classdiagram_ref 128647 // general
+    828 451 100 4 0 0
+  classdiagram_ref 128775 // points interet
+    828 451 100 4 0 0
+  classdiagram_ref 128519 // horaires
+    828 451 100 4 0 0
+  classdiagram_ref 128903 // tarifs
+    828 451 100 4 0 0
+  classdiagram_ref 129031 // adresse et geolocalisation
+    1036 564 100 4 0 0
+  usecasediagram_ref 135559 // recherche
+    828 451 100 4 0 0
+  classdiagram_ref 135687 // recherche
+    828 451 100 4 0 0
+  active  classdiagram_ref 135815 // tri et dechets
+    1036 564 100 4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 135815 // tri et dechets
+open
+  classview_ref 147847 // recherche
+  classview_ref 147975 // tri et dechets
+  classview_ref 141319 // general
+end
+end

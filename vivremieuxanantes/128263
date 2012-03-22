@@ -1,0 +1,351 @@
+format 75
+"recyclage" // recyclage
+  revision 3
+  modified_by 12 "Sergus"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  classview 147975 "recyclage"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 135815 "recyclage"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A4
+    end
+
+    class 137479 "TypeDechet"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "D�hets : emballages en carton plat, cartonnettes, Baril de lessive, Bo�e �oeufs en carton, papier toilette, essui-tout, papier, 
+journaux, magazines, prospectus, Journaux, Livre, Magazine, revue, Sac en papier,  calendrier, agenda, carnet, 
+bloc notes (sans spirale), feuille, enveloppe, carte postale, Cahier, Carton, Enveloppe, Annuaire, Bouteilles d'eau, 
+bouteille de lait, bouteille d'huile alimentaire, bouteille de soda, flacons de lessive, flacon de savon, flacon de produits d'entretien, 
+bouteilles de sirop, bouteille verre, bocaux en verre, Ampoule classique, Assiette, Barquette plastique, Barquette Polystyr�e, 
+Bidon d'huile moteur vide, Bo�e camembert en bois, Bo�e �oeufs en plastique, CD/DVD/K7, Classeur, Coton tige, 
+Couche b�� Dentifrice (tube), Epeluchures / restes de repas, Film plastique, Gobelet plastique, Laine, Liti�e pour animaux, 
+Papier absorbant, Papier aluminium, Papier cadeau, Papier peint, Polystyr�e, Pot de cr�e fra�he, Pot de yaourt, Porterie, 
+Produits de beaut� Rasoir jetable, Sac plastique, Stylo, Cr�e en tube, Tuyau d'arrosage, Ustensile de cuisine, 
+V�ement en mauvais �at, Barquette aluminium, Bo�e de conserve, Bombe a�osol, Bombe mousse �raser, 
+Bouteille d'huile plastique, Bouteille en plastique, Bouteille produit m�ager vide, Brique alimentaire, , canette de soda, 
+boite m�allique, Flacon produit m�ager vide, Flacon en plastique, r�rig�ateurs, cong�ateurs, climatiseurs, appareils de cuisson, 
+appareils de chauffage, t��iseurs, ordinateurs portables, p�iph�iques informatiques, �uipements audio et vid�, t��honie, 
+petit �ectrom�ager, outillage aliment�par �ectricit� jouets aliment� par �ectricit� peintures, vernis, colles, tubes fluorescents, 
+diluants, solvants, acides, bases, radiographies, piles, a�osols, produits d'entretien, Engrais chimiques, herbicides, fongicides, 
+insecticides..., Antigel, liquide de refroidissement, mastic de carrosserie, peinture antirouille, huile min�ale, filtre �huile..., 
+Nettoyants cuivre et argenterie, nettoyants �l'ammoniac, r�urants pour four..., D�oucheur liquide, d�achant, eau de Javel, 
+nettoyants �sol, r�urants pour toilette, thermom�res �mercure..., Colles, produits de traitement du bois, enduits et vernis, 
+peintures huile et eau, laques, r�ines, diluants, solvants..., Anti-fourmis, insecticides, naphtaline, mort aux rats..., acides, 
+bases, petits accumulateurs, piles, essence de t��enthine, radiographie, r��ateur et fixateur photo, n�ns, 
+lampes ��onomie d'�ergie, tubes fluo..., cartouches encres, batteries, m�icaments, v�ements"
+      classrelation 128524 // <unidirectional association>
+	relation 128396 --->
+	  a role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128524 // <unidirectional association>
+	  b parent class_ref 128012 // AbstractCategorieUsuelle
+      end
+
+      classrelation 128652 // <unidirectional association>
+	relation 128524 --->
+	  a role_name "" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128652 // <unidirectional association>
+	  b parent class_ref 137607 // CategorieDechet
+      end
+
+      classrelation 129932 // <generalisation>
+	relation 129676 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129932 // <generalisation>
+	  b parent class_ref 129804 // AbstractNotionConseillable
+      end
+
+      classrelation 131468 // <generalisation>
+	relation 130956 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 131468 // <generalisation>
+	  b parent class_ref 128524 // ElementRecherche
+      end
+    end
+
+    class 137607 "CategorieDechet"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Catégorie technique de tri des déchets"
+      classrelation 130060 // <generalisation>
+	relation 129804 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130060 // <generalisation>
+	  b parent class_ref 129804 // AbstractNotionConseillable
+      end
+
+      classrelation 130188 // <unidirectional association>
+	relation 129932 --->
+	  a role_name "" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130188 // <unidirectional association>
+	  b parent class_ref 129932 // AbstractModeCollecte
+      end
+    end
+
+    class 128012 "AbstractCategorieUsuelle"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 128140 "CategorieUsuelle"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Cat�orie connues de tous : papier-carton, plastique, m�al, verre, d�het vert/bois, �ectrique, nourriture, encombrant, toxique, v�ement"
+      classrelation 128012 // <generalisation>
+	relation 128012 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128012 // <generalisation>
+	  b parent class_ref 128012 // AbstractCategorieUsuelle
+      end
+
+      classrelation 128396 // <association>
+	relation_ref 128268 // <association>
+      end
+    end
+
+    class 128268 "SousCategorieUsuelle"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "m�icaments, batteries, piles..."
+      classrelation 128140 // <generalisation>
+	relation 128140 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128140 // <generalisation>
+	  b parent class_ref 128012 // AbstractCategorieUsuelle
+      end
+
+      classrelation 128268 // <association>
+	relation 128268 ----
+	  a role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128268 // <association>
+	  b role_name "" multiplicity "*" private
+	    classrelation_ref 128396 // <association>
+      end
+    end
+
+    class 129804 "AbstractNotionConseillable"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 129292 "conseil"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+    end
+
+    class 129932 "AbstractModeCollecte"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "container, tri-sac, d�hetterie-�opoint, bacs jaunes/bleus, camion encombrant, deuxi�e chance, revendeur"
+      classrelation 131340 // <generalisation>
+	relation 130828 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 131340 // <generalisation>
+	  b parent class_ref 128524 // ElementRecherche
+      end
+    end
+
+    class 130060 "ModeCollecte"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 130444 // <generalisation>
+	relation 130060 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130444 // <generalisation>
+	  b parent class_ref 129932 // AbstractModeCollecte
+      end
+
+      classrelation 130828 // <association>
+	relation_ref 130316 // <association>
+      end
+    end
+
+    class 130188 "SousModeCollecte"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 130572 // <generalisation>
+	relation 130188 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130572 // <generalisation>
+	  b parent class_ref 129932 // AbstractModeCollecte
+      end
+
+      classrelation 130700 // <association>
+	relation 130316 ----
+	  a role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130700 // <association>
+	  b role_name "" multiplicity "*" private
+	    classrelation_ref 130828 // <association>
+      end
+    end
+
+    class 130316 "StructureCollecte"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 130956 // <generalisation>
+	relation 130444 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130956 // <generalisation>
+	  b parent class_ref 128775 // AbstractPointInteret
+      end
+
+      classrelation 131084 // sousStructures (<directional composition>)
+	relation 130572 *-->
+	  a role_name "sousStructures" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131084 // sousStructures (<directional composition>)
+	  b parent class_ref 130316 // StructureCollecte
+      end
+
+      classrelation 131212 // <unidirectional association>
+	relation 130700 --->
+	  a role_name "" multiplicity "*" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131212 // <unidirectional association>
+	  b parent class_ref 129932 // AbstractModeCollecte
+      end
+    end
+  end
+end

@@ -1,0 +1,34 @@
+window_sizes 1920 1018 450 1350 720 82
+diagrams
+  usecasediagram_ref 128007 // connexion
+    1167 688 100 4 0 0
+  usecasediagram_ref 128263 // gestion des roles
+    1167 688 100 4 0 0
+  classdiagram_ref 128519 // horaires
+    1167 688 100 4 0 0
+  classdiagram_ref 128647 // general
+    1167 688 100 4 1 0
+  active  classdiagram_ref 128012 // Types
+    1464 860 100 4 0 0
+  classdiagram_ref 128775 // points interet
+    1167 688 100 4 0 0
+  classdiagram_ref 129031 // adresse et geolocalisation
+    1167 720 100 4 0 0
+  classdiagram_ref 128903 // tarifs
+    1167 720 100 4 0 0
+  classdiagram_ref 128391 // utils
+    1167 720 100 4 0 0
+  classdiagram_ref 135815 // recyclage
+    1167 688 100 4 0 0
+  classdiagram_ref 135687 // recherche
+    1167 688 100 4 0 0
+  classdiagram_ref 128140 // Collaboration et commentaires
+    1167 688 100 4 0 0
+  classdiagram_ref 128135 // utilisateurs et roles
+    1167 688 100 4 0 0
+end
+show_stereotypes
+selected classview_ref 141319 // general
+open
+end
+end
