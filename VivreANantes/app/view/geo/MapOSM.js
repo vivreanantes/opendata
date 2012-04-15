@@ -5,7 +5,7 @@
  * @author cpoisnel
  */
 Ext.define('VivreANantes.view.geo.MapOSM', {
-			extend : 'VivreANantes.view.geo.LeafletMap',
+			extend : 'Ext.ux.LeafletMap',
 			xtype : 'vanmaposm',
 
 			config : {

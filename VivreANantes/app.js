@@ -1,21 +1,8 @@
 Ext.Loader.setPath({
-	'Ext' : 'sdk/src'
+	'Ext' : 'sdk/src',
+	'Ext.ux': 'lib/ux'
 });
-
-      Ext.define('Ext.overrides.Map', {
-            override: 'Ext.Map',
-            constructor: function() {
-                Ext.Map.superclass.constructor.apply(this, arguments);
-                this.element.setVisibilityMode(Ext.Element.OFFSETS);
-
-                if (!(window.google || {}).maps) {
-                    this.setHtml('Google Maps API is required');
-                }
-            },
-            getMapOptions: function() {
-                return Ext.merge({}, this.options || this.getInitialConfig('mapOptions'));
-            }
-        });
+   
 Ext
 		.application({
 			name : 'VivreANantes',
@@ -23,22 +10,26 @@ Ext
 			// Vue Principale
 			'Main',
 			// Partie Carte
-			'geo.LeafletMap',
+			//'geo.LeafletMap',
 			'geo.MapOSM',
-			'geo.Map', 
+			//'geo.Map', 
 			'geo.MapContainer',
 			'geo.Toast',
 			// Accueil
 			'welcome.Welcome',
+			'welcome.WelcomeList',
 			// Jeu
 			'game.Guess',
 			// A propos
-			'about.Desc',
+			'about.Description',
 			// Calendrier
-			'calendar.Calendrier'
+			'calendar.Calendar'
 			],
 
 			controllers : [ 'Welcome', 'Geo' ],
+			
+			models : ['Garbage'],
+			stores : ['GarbageStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',
@@ -57,7 +48,6 @@ Ext
 			launch : function() {
 				// Destroy the #appLoadingIndicator element
 				Ext.fly('appLoadingIndicator').destroy();
-
 				// Initialize the main view
 				Ext.Viewport.add({
 					xtype : 'main'

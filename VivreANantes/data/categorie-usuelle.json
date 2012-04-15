@@ -1,0 +1,47 @@
+{
+	"categories" : [{
+				"col_0" : "cu_plastique",
+				"col_1" : "Plastique",
+				"col_2" : "cons_uniquement_bouteille_flacon"
+			}, {
+				"col_0" : "cu_papierscartons",
+				"col_1" : "Papiers-cartons",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_metal",
+				"col_1" : "Métal",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_vertbois",
+				"col_1" : "Déchets verts / bois",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_verrevaisselle",
+				"col_1" : "Verre / Vaisselle / Pots",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_vetementtissu",
+				"col_1" : "Vêtements / tissu",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_encombrant",
+				"col_1" : "Encombrants",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_toxique",
+				"col_1" : "Toxique",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_divers",
+				"col_1" : "Divers",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_nourriture",
+				"col_1" : "Nourriture",
+				"col_2" : ""
+			}, {
+				"col_0" : "cu_electronique",
+				"col_1" : "Electronique",
+				"col_2" : ""
+			}]
+}
