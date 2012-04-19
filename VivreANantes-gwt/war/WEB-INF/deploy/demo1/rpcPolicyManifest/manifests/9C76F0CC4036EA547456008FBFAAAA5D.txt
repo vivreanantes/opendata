@@ -1,0 +1,2 @@
+serviceClass: com.romeo.demo1.client.GreetingService
+path: BE168A0F6087C002509A7E47EDDA42E7.gwt.rpc
