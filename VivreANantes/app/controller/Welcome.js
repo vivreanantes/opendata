@@ -40,7 +40,7 @@ Ext.define('VivreANantes.controller.Welcome', {
 
 				list.setStore(garbageStore);
 												
-				//console.log(garbageStore);
+				console.log(garbageStore);
 
 			}
 		});
