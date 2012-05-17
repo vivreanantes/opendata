@@ -1,0 +1,5 @@
+- Branchement avec l'API (Webservices) pour récupérer le JSON
+- Enregistrement des données via HTML5 Storage
+- Rechargement des données JSON au besoin (déclenché par utilisateur ?)
+- Interface via UI Binder (XML) plutot qu'en dur dans les classes Java
+- Utilisation d'une Google Map à partir des données JSON localisées.

@@ -1,0 +1,2 @@
+serviceClass: com.van.tri.client.GreetingService
+path: 36DC57A6694D95CFB6A07027A9BCF9E7.gwt.rpc

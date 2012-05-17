@@ -7,8 +7,5 @@ Ext.define('VivreANantes.view.welcome.WelcomeList', {
 		itemTpl : '<div>{nom} |  {description}<img src ="resources/images/{image}"/></div>' ,
 grouped : true
 	}
-
-	//
-	// store: store,
 	
 });
