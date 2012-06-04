@@ -1,0 +1,60 @@
+{
+	"categories_usuelles" : 
+	[
+   {
+      "code":"cu_plastique",
+      "libelle":"Plastique",
+      "conseils":"cons_uniquement_bouteille_flacon"
+   },
+   {
+      "code":"cu_papierscartons",
+      "libelle":"Papiers-cartons",
+      "conseils":""
+   },
+   {
+      "code":"cu_metal",
+      "libelle":"Métal",
+      "conseils":""
+   },
+   {
+      "code":"cu_vertbois",
+      "libelle":"Déchets verts / bois",
+      "conseils":""
+   },
+   {
+      "code":"cu_verrevaisselle",
+      "libelle":"Verre / Vaisselle / Pots",
+      "conseils":""
+   },
+   {
+      "code":"cu_vetementtissu",
+      "libelle":"Vêtements / tissu",
+      "conseils":""
+   },
+   {
+      "code":"cu_encombrant",
+      "libelle":"Encombrants",
+      "conseils":""
+   },
+   {
+      "code":"cu_toxique",
+      "libelle":"Toxique",
+      "conseils":""
+   },
+   {
+      "code":"cu_divers",
+      "libelle":"Divers",
+      "conseils":""
+   },
+   {
+      "code":"cu_nourriture",
+      "libelle":"Nourriture",
+      "conseils":""
+   },
+   {
+      "code":"cu_electronique",
+      "libelle":"Electronique",
+      "conseils":""
+   }
+]
+}

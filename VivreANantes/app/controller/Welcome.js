@@ -39,8 +39,20 @@ Ext.define('VivreANantes.controller.Welcome', {
 						});
 
 				list.setStore(garbageStore);
-												
 				console.log(garbageStore);
+				
+				// Les catégories usuelles
+				/*var categorieUsuelleStore = Ext.create(
+						'VivreANantes.store.CategorieUsuelleStore', {
+							autoLoad : true,							
+							listeners : {
+								'load' : function(store, results, successful) {
+								}
+							}
+						});
+				list.setStore(categorieUsuelleStore);
+				console.log(categorieUsuelleStore);
+*/
 
 			}
 		});

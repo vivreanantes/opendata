@@ -5,7 +5,9 @@ Ext.define('VivreANantes.view.welcome.WelcomeList', {
 		iconCls : 'home',
 		title : 'Liste',
 		itemTpl : '<div>{nom} |  {description}<img src ="resources/images/{image}"/></div>' ,
-grouped : true
+		grouped : true,
+		// 
+		onItemDisclosure : true
 	}
 	
 });

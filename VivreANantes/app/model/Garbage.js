@@ -8,42 +8,42 @@ Ext.define('VivreANantes.model.Garbage', {
 						}, {
 							name : 'code',
 							type : 'string',
-							mapping : 'col_0'
+							mapping : 'code'
 						}, {
 							name : 'nom',
 							type : 'string',
-							mapping : 'col_1'
+							mapping : 'nom'
 						},
 
 						{
 							name : 'description',
 							type : 'string',
-							mapping : 'col_5'
+							mapping : 'concerne_aussi'
 						},
 						{
 							name : 'image',
 							type : 'string',
 							defaultValue : 'bouteille_cidre.png',
-							mapping : 'col_7'
+							mapping : 'image'
 						},
 						
 						// TODO Association Ext
 						{
 							name : 'categorieUsuelle',
 							type : 'string',
-							mapping : 'col_2'
+							mapping : 'categorie_usuelle'
 						}, {
 							name : 'categorie',
 							type : 'string',
-							mapping : 'col_3'
+							mapping : 'categorie_traitement'
 						}, {
 							name : 'conseils',
 							type : 'string',
-							mapping : 'col_6'
+							mapping : 'conseils'
 						}, {
 							name : 'modeDeCollecte',
 							type : 'string',
-							mapping : 'col_4'
+							mapping : 'modesdecollecte'
 						}]
 			}
 

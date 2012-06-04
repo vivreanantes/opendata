@@ -1,0 +1,1722 @@
+{
+	"garbages" : [{
+				"col_0" : "",
+				"col_1" : "acides",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "aérosols",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "agenda",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Ampoule classique",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : "ampoule_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "Ampoule basse consommation",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_ampoueco",
+				"col_4" : "",
+				"col_5" : "ampoule à économie d'énergie, lampe à économie d’énergie",
+				"col_6" : "cons_ampoulemercure",
+				"col_7" : "ampoules_basse_consommation_petit.jpg"
+			}, {
+				"col_0" : "",
+				"col_1" : "Annuaire",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Anti-fourmis",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Antigel",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "appareils électroménager",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_encombrant",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "appareils de chauffage",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "appareils de cuisson",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Assiette",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Baril de lessive",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "paquets de lessives, barils en carton",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Barquette aluminium",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_allu",
+				"col_4" : "",
+				"col_5" : "barquette pizza, barquette quiche",
+				"col_6" : "",
+				"col_7" : "barquette_aluminium.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "Barquette plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouteilleflacon",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Barquette Polystyrène",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouteilleflacon",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bases",
+				"col_2" : "toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "batteries de voiture",
+				"col_2" : "scu_toxiquegarage",
+				"col_3" : "cat_batterie",
+				"col_4" : "cat_ddm",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bidon d'huile moteur vide",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bidon de métal",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bloc notes (sans spirale)",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bocal en verre",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verre",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_sansbouchon",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Boîte à oeufs en carton",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Boîte à oeufs en plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Boîte camembert en bois",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Boîte de conserve",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "boite métallique",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bombe aérosol",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : "aerosol_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "Bombe de peinture",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bombe mousse à raser",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bouchon de liège",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "onpeutlesréutiliser ?",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bouteille d'huile alimentaire",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : "bouteille_vinaigrette_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "Bouteille d'huile plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouchonamour",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bouteille d'huile en verre",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verre",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouchonamour",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bouteille de lait",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouchonamour",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bouteille de soda",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouchonamour",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bouteille en plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouchonamour",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bouteille produit ménager vide",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouchonamour",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Bouteille produit ménager non vide",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_bouchonamour",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bouteille verre",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verre",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "sans_bouchon_ni_couvercle",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "bouteilles de sirop",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Brique alimentaire",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_ela",
+				"col_4" : "",
+				"col_5" : "brique de lait",
+				"col_6" : "bouchon_brique",
+				"col_7" : "brique_alimentaire_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "branchage",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_vertbois",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "cagette bois",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : " calendrier",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Cahier",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Canette de soda",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "capsule de café",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "carnet",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "carte postale",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Carton (petits ou grands)",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "cartonnettes",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "boîte de céréales...",
+				"col_6" : "cons_souille",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "cartouches encres",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ddm",
+				"col_4" : "smco_vendeurcartoucheencre, smco_recupsupermarches, mco_decheterie",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : "cartouches_imprimantes_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "CD/DVD/K7",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "cassette audio, cassette vidéo Déchetterie ???",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "cigarette",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "mégot, cigare",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Classeur",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "colles",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "congélateurs",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "cosmétique",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : " rouge à lèvres, maquillage",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Coton tige",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Couche bébé",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "couvercle de pot en verre",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_acier",
+				"col_4" : "",
+				"col_5" : "couvercle métallique",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "couverts",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : " couverts, couteau, cuiller, fourchette",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Crème en tube",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Déboucheur liquide",
+				"col_2" : "scu_toxiquesdb",
+				"col_3" : "",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Dentifrice (tube)",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "déodorant stick",
+				"col_2" : "",
+				"col_3" : "",
+				"col_4" : "",
+				"col_5" : "déodorant à bille",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "détachant",
+				"col_2" : "scu_toxiquesdb",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "diluants",
+				"col_2" : "scu_toxiquebrico",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "eau de Javel",
+				"col_2" : "scu_toxiquesdb",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "emballages en carton plat",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "concerne aussi : Suremballage carton",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "enduits et vernis",
+				"col_2" : "scu_toxiquebrico",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Engrais chimiques",
+				"col_2" : "scu_toxiquejardin",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Enveloppe",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "supprimer la fenêtre en plastique ?",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Epeluchures / restes de repas",
+				"col_2" : "cu_nourriture",
+				"col_3" : "cat_organique",
+				"col_4" : "modco_compostage",
+				"col_5" : "épeluchures, restes de repas, nourriture",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "équipements audio et vidéo",
+				"col_2" : "cu_electronique",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "essence de térébenthine",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "essui-tout",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "le rouleau en carton",
+				"col_6" : "",
+				"col_7" : "essui_tout_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "Faience",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Feuillage",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_organiquegros",
+				"col_4" : "modco_compostage",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "feuille",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "Feuille (imprimée ou non)",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Film plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Films photographiques",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "diapositive, pellicule",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "filtre à huile...",
+				"col_2" : "scu_toxiquegarage",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "flacon de produits d'entretien",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "flacon de savon",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : "flacon_savon_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "Flacon en plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Flacon produit ménager vide",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "flacons de lessive",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "fongicides",
+				"col_2" : "scu_toxiquejardin",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "fournitures  (hors papier)",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "fournitures de bureau, crayon, stylo, feutre, gomme, agrafeuse, règle, compas, pochette plastique, classeur, trombone, taille-crayon, ciseaux",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Gazon",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_organiquegros",
+				"col_4" : "modco_compostage",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Gobelet plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_remplacergobelet, cons_vaissellebiodegradable",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Gravat",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_organiquegros",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "grillage",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : " clôture, canisses",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "guitare",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_ddm",
+				"col_4" : "smco_reempdivers",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "herbicides",
+				"col_2" : "scu_toxiquejardin",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "huile minérale",
+				"col_2" : "toxique",
+				"col_3" : "",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Huile de vidange",
+				"col_2" : "scu_toxiquegarage",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "insecticides...",
+				"col_2" : "scu_toxiquejardin",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "jouets alimentés par électricité",
+				"col_2" : "cu_electronique",
+				"col_3" : "cat_emr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "jouets non électroniques",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_materiaux",
+				"col_4" : "smco_reempjouet",
+				"col_5" : "peluche, poupée",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Journaux",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "revue",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Laine",
+				"col_2" : "cu_vetementtissu",
+				"col_3" : "cat_vetement",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Laine de verre",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_mat",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "laques",
+				"col_2" : "scu_toxiquebrico",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "lingette",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "liquide de refroidissement",
+				"col_2" : "scu_toxiquegarage",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Litière pour animaux",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Livre",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "lunette",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Magazine",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "revue",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "mastic de carrosserie",
+				"col_2" : "scu_toxiquegarage",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Matelas",
+				"col_2" : "cu_vetementtissu",
+				"col_3" : "cat_encombrant",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "médicaments",
+				"col_2" : "scu_medicament",
+				"col_3" : "cat_d3e",
+				"col_4" : "smco_pharmacie",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : "medicaments_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "Meuble",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_encombrant",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Miroir",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_coupant",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Moquette",
+				"col_2" : "cu_vetementtissu",
+				"col_3" : "cu_vetementtissu",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "mort aux rats...",
+				"col_2" : "scu_toxiqueparasite",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "mouchoir",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_souille",
+				"col_7" : "mouchoirs_petit.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "naphtaline",
+				"col_2" : "scu_toxiqueparasite",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "néons",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ampouleneon",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "nettoyants à l’ammoniac",
+				"col_2" : "scu_toxiquecuisine",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "nettoyants à sol",
+				"col_2" : "scu_toxiquesdb",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Nettoyants cuivre et argenterie",
+				"col_2" : "scu_toxiquecuisine",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Objet en terre cuite",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "ordinateurs portables",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "outillage alimenté par électricité",
+				"col_2" : "cu_electronique",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "outils manuels bricolage ou jardinage",
+				"col_2" : "cu_divers",
+				"col_3" : "",
+				"col_4" : "",
+				"col_5" : "cisaille, scies, rateaux, hâches",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "papier",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Papier absorbant",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_souille",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Papier aluminium",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_papieralu",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Papier cadeau",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Papier peint",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "papier toilette",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "le rouleau en carton",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Parpaing",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_materiaux",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "peinture antirouille",
+				"col_2" : "scu_toxiquegarage",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "peintures",
+				"col_2" : "scu_toxiquebrico",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "peintures huile et eau",
+				"col_2" : "scu_toxiquebrico",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "périphériques informatiques",
+				"col_2" : "cu_electronique",
+				"col_3" : "cat_d3e",
+				"col_4" : "smco_reempinfo",
+				"col_5" : "Ecran, clavier, souris, imprimante",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "petit électroménager",
+				"col_2" : "cu_electronique",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "piano",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_ddm",
+				"col_4" : "smco_reempdivers",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "piles",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "smco_vendeurpile, smco_recupsupermarche, smco_recupmagasinbrico",
+				"col_5" : "petits accumulateurs",
+				"col_6" : "cons_pilerechargeable",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Planche de bois",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_organiquegros",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Plante",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_organiquegros",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_compostage",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "pneu",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_encombrant",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Polystyrène",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Porcelaine",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Pot de crème fraîche",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Pot de peinture",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Pot de yaourt",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Pot en verre",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verre",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Poterie",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_coupant",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "produits d’entretien",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Produits de beauté",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "produits de traitement du bois",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Produit phytosanitaire",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "prospectus",
+				"col_2" : "cu_papierscartons",
+				"col_3" : "",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "radiographie",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Rasoir jetable",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "récurants pour four...",
+				"col_2" : "scu_toxiquecuisine",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "récurants pour toilette",
+				"col_2" : "scu_toxiquesdb",
+				"col_3" : "",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "réfrigérateur",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "résines",
+				"col_2" : "scu_toxiquebrico",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "révélateur et fixateur photo",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Sac en papier",
+				"col_2" : "cu_papiercarton",
+				"col_3" : "cat_papiercarton",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_souille",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Sac plastique",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : "sac_plastique_pt.png"
+			}, {
+				"col_0" : "",
+				"col_1" : "scotter",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_encombrant",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "solvants",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "sopalin",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_souille",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Stylo",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Table à repasser",
+				"col_2" : "cu_encombrant",
+				"col_3" : "cat_encombrant",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Taille d'arbre",
+				"col_2" : "cu_vertbois",
+				"col_3" : "cat_organiquegros",
+				"col_4" : "modco_compostage",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "téléphonie",
+				"col_2" : "cu_electronique",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "téléviseurs",
+				"col_2" : "cu_electronique",
+				"col_3" : "cat_d3e",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "thermomètre à mercure",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "trompette",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_ddm",
+				"col_4" : "smco_reempdivers",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "trotinnette",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_encombrant",
+				"col_4" : "smco_velo",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "tube (crème, dentifrice)",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "tube fluorescent",
+				"col_2" : "scu_toxiquedivers",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "tube fluo",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Tuyau d'arrosage",
+				"col_2" : "cu_plastique",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Ustensile de cuisine",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "casseroles, marmites, cocottes, poêles, wok",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Vaisselle (carton ou plastique)",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Vaisselle (verre, porcelaine...)",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : " assiette, tasse, bol, plat, verre à boire, poterie, porcelaine, faïence, carafe, verre",
+				"col_6" : "cons_coupant",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "vernis",
+				"col_2" : "cu_toxique",
+				"col_3" : "cat_ddm",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Vêtement en mauvais état",
+				"col_2" : "cu_vetementtissu",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Vélo",
+				"col_2" : "cu_metal",
+				"col_3" : "cat_encombrant",
+				"col_4" : "smco_velo",
+				"col_5" : "bicyclette, vélo",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Vêtement usagé",
+				"col_2" : "cu_vetementtissu",
+				"col_3" : "cat_omr",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Vêtement en bon état",
+				"col_2" : "cu_vetementtissu",
+				"col_3" : "cat_vetement",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "Vitre",
+				"col_2" : "cu_verrevaisselle",
+				"col_3" : "cat_verrenonvalovaisselleporcelaine",
+				"col_4" : "",
+				"col_5" : "",
+				"col_6" : "cons_coupant",
+				"col_7" : ""
+			}, {
+				"col_0" : "",
+				"col_1" : "voiture",
+				"col_2" : "cu_divers",
+				"col_3" : "cat_divers",
+				"col_4" : "smco_vendeurvoiture, smco_casseauto",
+				"col_5" : "",
+				"col_6" : "",
+				"col_7" : ""
+			}]
+}
