@@ -18,6 +18,7 @@ Ext
 			// Accueil
 			'welcome.Welcome',
 			'welcome.WelcomeList',
+			'welcome.DechetsDetails',
 			// Jeu
 			'game.Guess',
 			// A propos
@@ -28,8 +29,10 @@ Ext
 
 			controllers : [ 'Welcome', 'Geo' ],
 			
-			models : ['Garbage'],
-			stores : ['GarbageStore'],
+			// models : [],
+			// stores : [],
+			models : ['Garbage','CategorieUsuelle'],
+			stores : ['GarbageStore','CategorieUsuelleStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

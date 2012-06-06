@@ -45,6 +45,14 @@ Ext.define('VivreANantes.model.Garbage', {
 							type : 'string',
 							mapping : 'modesdecollecte'
 						}]
+			},
+			
+			imageComplete : function() {
+				var d = this.data,
+				tempo = [
+					(!d.image ? "" : "<img src ='resources/images/"+d.image+" height='80'/>")
+				]
+				return tempo.join(" ");
 			}
 
 		});

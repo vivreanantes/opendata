@@ -11,7 +11,8 @@ Ext.define('VivreANantes.controller.Welcome', {
 				},
 				control : {
 					welcomeList : {
-						initialize : 'onInitWelcome'
+						initialize : 'onInitWelcome',
+						disclose : 'showDetail'
 						// itemtap : 'onSessionTap',
 						// activate : 'onSessionsActivate'
 					}
@@ -38,11 +39,12 @@ Ext.define('VivreANantes.controller.Welcome', {
 							}
 						});
 
-				list.setStore(garbageStore);
+				// list.setStore(garbageStore);
 				console.log(garbageStore);
+
 				
 				// Les catégories usuelles
-				/*var categorieUsuelleStore = Ext.create(
+				var categorieUsuelleStore = Ext.create(
 						'VivreANantes.store.CategorieUsuelleStore', {
 							autoLoad : true,							
 							listeners : {
@@ -52,7 +54,15 @@ Ext.define('VivreANantes.controller.Welcome', {
 						});
 				list.setStore(categorieUsuelleStore);
 				console.log(categorieUsuelleStore);
-*/
+				
 
+			},
+			
+			showDetail : function(list, record) {
+				this.getWelcomeList().push({
+					xtype : 'trashesDetails',
+					title :  record.nom,
+					data : record.data
+				}); 
 			}
 		});

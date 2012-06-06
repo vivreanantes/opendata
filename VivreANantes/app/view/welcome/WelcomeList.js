@@ -3,11 +3,15 @@ Ext.define('VivreANantes.view.welcome.WelcomeList', {
 	xtype : 'welcomelist',
 	config : {
 		iconCls : 'home',
-		title : 'Liste',
-		itemTpl : '<div>{nom} |  {description}<img src ="resources/images/{image}"/></div>' ,
-		grouped : true,
+		title : 'Déchets',
+		// itemTpl : '<div>{nom} |  {description}<img src ="resources/images/{image}" height="80"/></div>' ,
+		itemTpl : '<div>{nom}</div>' ,
+		// grouped : true,
 		// 
 		onItemDisclosure : true
+		/*onItemDisclosure : function() {
+			console.log('onItemDisclosure');
+		}*/
 	}
 	
 });

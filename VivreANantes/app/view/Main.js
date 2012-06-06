@@ -8,7 +8,7 @@ Ext.define('VivreANantes.view.Main', {
 			config : {
 				tabBarPosition : 'bottom',
 				items : [{
-							xclass : 'VivreANantes.view.welcome.WelcomeList'
+							xclass : 'VivreANantes.view.welcome.Welcome'
 						}, {
 							xclass : 'VivreANantes.view.geo.MapOSM'
 						},						

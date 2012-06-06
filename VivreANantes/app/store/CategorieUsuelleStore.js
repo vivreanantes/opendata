@@ -1,11 +1,9 @@
 Ext.define('VivreANantes.store.CategorieUsuelleStore', {
 			extend : 'Ext.data.Store',
 			model : 'VivreANantes.model.CategorieUsuelle',
-			id : 'CategorieUsuelleStore',
+			id : 'categorieusuellestore',
 			autoLoad : true,
-			/*getGroupString : function(record) {
-				return record.get('categories_usuelles');
-			},*/
+			sorters : 'nom',
 			proxy : {
 				type : 'ajax',
 				url : 'data/categories_usuelles.json',
