@@ -9,7 +9,10 @@ Ext.define('VivreANantes.view.Main', {
 				tabBarPosition : 'bottom',
 				items : [{
 							xclass : 'VivreANantes.view.welcome.Welcome'
-						}, {
+						},
+						{
+							xclass : 'VivreANantes.view.garbages.Garbages'
+						},						{
 							xclass : 'VivreANantes.view.geo.MapOSM'
 						},						
 						{

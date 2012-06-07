@@ -5,8 +5,7 @@ Ext.define('VivreANantes.view.welcome.Welcome', {
 	extend : 'Ext.NavigationView',
 	xtype : 'accueilContainer',
 	requires: [
-		'VivreANantes.view.welcome.WelcomeList',
-		'VivreANantes.view.trashes.TrashesDetails'
+		'VivreANantes.view.welcome.WelcomeList'
 	],
 	config : {
 		title : 'Vivre A Nantes',

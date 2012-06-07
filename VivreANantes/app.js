@@ -18,7 +18,9 @@ Ext
 			// Accueil
 			'welcome.Welcome',
 			'welcome.WelcomeList',
-			'welcome.DechetsDetails',
+			// Déchets
+			'garbages.GarbagesDetails',
+			'garbages.GarbagesList',
 			// Jeu
 			'game.Guess',
 			// A propos
@@ -27,7 +29,7 @@ Ext
 			'calendar.Calendar'
 			],
 
-			controllers : [ 'Welcome', 'Geo' ],
+			controllers : [ 'Grabages', 'Welcome', 'Geo' ],
 			
 			// models : [],
 			// stores : [],
