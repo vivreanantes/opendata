@@ -34,12 +34,13 @@ Ext.define('VivreANantes.controller.Garbages', {
 
 				list.setStore(garbageStore);
 				console.log(garbageStore);
-
+				
 			},
 			
 			showGarbagesDetail : function(list, record) {
+				console.log('showGarbagesDetail');
 				this.getGarbagesList().push({
-					xtype : 'garbagesDetails',
+					xtype : 'garbagesList',
 					title :  record.nom,
 					data : record.data
 				}); 

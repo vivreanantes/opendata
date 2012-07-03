@@ -19,6 +19,7 @@ Ext
 			'welcome.Welcome',
 			'welcome.WelcomeList',
 			// Déchets
+			'garbages.Garbages',
 			'garbages.GarbagesDetails',
 			'garbages.GarbagesList',
 			// Jeu
@@ -29,12 +30,13 @@ Ext
 			'calendar.Calendar'
 			],
 
-			controllers : [ 'Grabages', 'Welcome', 'Geo' ],
+			controllers : [ 'Welcome', 'Geo'/*,  'Garbages'*/],/*,*/
+			/* '' + '',,*/
 			
 			// models : [],
 			// stores : [],
-			models : ['Garbage','CategorieUsuelle'],
-			stores : ['GarbageStore','CategorieUsuelleStore'],
+			models : ['CategorieUsuelle', 'Garbage'],/*,*//*, */
+			stores : ['CategorieUsuelleStore', 'GarbageStore'],/*,*//*, */
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

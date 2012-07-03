@@ -3,10 +3,10 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 	xtype : 'garbagesdetails',
 	config : {
 		styleHtmlContent: true,
-            title: 'Details',
-            // itemTpl : '<div>{nom} |  {description}{imageComplete}</div>',
-            html : 'temp',
-            scrollable : 'vertical'
+        title: 'Details',
+        // itemTpl : '<div>{nom} |  {description}{imageComplete}</div>',
+        html : 'temp',
+        scrollable : 'vertical'
 	}
 	
 });

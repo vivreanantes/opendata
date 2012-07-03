@@ -12,14 +12,17 @@ Ext.define('VivreANantes.view.Main', {
 						},
 						{
 							xclass : 'VivreANantes.view.garbages.Garbages'
-						},						{
+						},
+						{
 							xclass : 'VivreANantes.view.geo.MapOSM'
 						},						
 						{
 							xclass : 'VivreANantes.view.game.Guess'
-						}, {
+						}, 
+						{
 							xclass : 'VivreANantes.view.calendar.Calendar'
-						}, {
+						}, 
+						{
 							xclass : 'VivreANantes.view.about.Description'
 						}]
 			}

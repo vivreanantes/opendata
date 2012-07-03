@@ -14,7 +14,6 @@ Ext.define('VivreANantes.model.Garbage', {
 							type : 'string',
 							mapping : 'nom'
 						},
-
 						{
 							name : 'description',
 							type : 'string',
@@ -23,11 +22,10 @@ Ext.define('VivreANantes.model.Garbage', {
 						{
 							name : 'image',
 							type : 'string',
+							/* Utilisé en remplacement de null, mais pas d'une chaîne vide */
 							defaultValue : 'bouteille_cidre.png',
 							mapping : 'image'
 						},
-						
-						// TODO Association Ext
 						{
 							name : 'categorieUsuelle',
 							type : 'string',
