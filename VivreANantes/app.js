@@ -24,13 +24,15 @@ Ext
 			'garbages.GarbagesList',
 			// Jeu
 			'game.Guess',
+			// Informations
+			'information.Informations',
 			// A propos
 			'about.Description',
 			// Calendrier
 			'calendar.Calendar'
 			],
 
-			controllers : [ 'Welcome', 'Geo'/*,  'Garbages'*/],/*,*/
+			controllers : [ 'Welcome', 'Geo', 'Informations'/*,  'Garbages'*/],/*,*/
 			/* '' + '',,*/
 			
 			// models : [],

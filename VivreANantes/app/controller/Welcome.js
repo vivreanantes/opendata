@@ -41,7 +41,7 @@ Ext.define('VivreANantes.controller.Welcome', {
 			
 			showDetail : function(list, record) {
 				this.getWelcomeList().push({
-					xtype : 'garbagesList',
+					xtype : 'welcomeList',
 					title :  record.nom,
 					data : record.data
 				}); 

@@ -11,6 +11,9 @@ Ext.define('VivreANantes.view.Main', {
 							xclass : 'VivreANantes.view.welcome.Welcome'
 						},
 						{
+							xclass : 'VivreANantes.view.information.Informations'
+						},
+						{
 							xclass : 'VivreANantes.view.garbages.Garbages'
 						},
 						{

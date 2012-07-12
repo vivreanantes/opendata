@@ -3,9 +3,9 @@ Ext.define('VivreANantes.store.GarbageStore', {
 			model : 'VivreANantes.model.Garbage',
 			id : 'garbagestore',
 			autoLoad : true,
-			getGroupString : function(record) {
+			/*getGroupString : function(record) {
 				return record.get('categorieUsuelle');
-			},
+			},*/
 			proxy : {
 				type : 'ajax',
 				url : 'data/dechets.json',

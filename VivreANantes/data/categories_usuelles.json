@@ -1,60 +1,14 @@
 {
 	"categories_usuelles" : 
-	[
-   {
-      "code":"cu_plastique",
-      "libelle":"Plastique",
-      "conseils":"cons_uniquement_bouteille_flacon"
-   },
-   {
-      "code":"cu_papierscartons",
-      "libelle":"Papiers-cartons",
-      "conseils":""
-   },
-   {
-      "code":"cu_metal",
-      "libelle":"Métal",
-      "conseils":""
-   },
-   {
-      "code":"cu_vertbois",
-      "libelle":"Déchets verts / bois",
-      "conseils":""
-   },
-   {
-      "code":"cu_verrevaisselle",
-      "libelle":"Verre / Vaisselle / Pots",
-      "conseils":""
-   },
-   {
-      "code":"cu_vetementtissu",
-      "libelle":"Vêtements / tissu",
-      "conseils":""
-   },
-   {
-      "code":"cu_encombrant",
-      "libelle":"Encombrants",
-      "conseils":""
-   },
-   {
-      "code":"cu_toxique",
-      "libelle":"Toxique",
-      "conseils":""
-   },
-   {
-      "code":"cu_divers",
-      "libelle":"Divers",
-      "conseils":""
-   },
-   {
-      "code":"cu_nourriture",
-      "libelle":"Nourriture",
-      "conseils":""
-   },
-   {
-      "code":"cu_electronique",
-      "libelle":"Electronique",
-      "conseils":""
-   }
-]
+	[{"code" : "cu_plastique", "nom" : "Plastique", "Conseils" : "cons_uniquement_bouteille_flacon" },
+	{"code" : "cu_papierscartons", "nom" : "Papiers-cartons", "Conseils" : "" },
+	{"code" : "cu_metal", "nom" : "Métal", "Conseils" : "" },
+	{"code" : "cu_vertbois", "nom" : "Déchets verts / bois", "Conseils" : "" },
+	{"code" : "cu_verrevaisselle", "nom" : "Verre / Vaisselle / Pots", "Conseils" : "" },
+	{"code" : "cu_vetementtissu", "nom" : "Vêtements / tissu", "Conseils" : "" },
+	{"code" : "cu_encombrant", "nom" : "Encombrants", "Conseils" : "" },
+	{"code" : "cu_toxique", "nom" : "Toxique", "Conseils" : "" },
+	{"code" : "cu_divers", "nom" : "Divers", "Conseils" : "" },
+	{"code" : "cu_nourriture", "nom" : "Nourriture", "Conseils" : "" },
+	{"code" : "cu_electronique", "nom" : "Electronique", "Conseils" : "" }]
 }
