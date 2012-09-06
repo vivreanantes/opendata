@@ -3,6 +3,7 @@ Ext.Loader.setPath({
 	'Ext.ux': 'lib/ux'
 });
    
+console.log("Application");
 Ext
 		.application({
 			name : 'VivreANantes',
@@ -32,13 +33,10 @@ Ext
 			'calendar.Calendar'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations'/*,  'Garbages'*/],/*,*/
-			/* '' + '',,*/
+			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages'],
 			
-			// models : [],
-			// stores : [],
-			models : ['CategorieUsuelle', 'Garbage'],/*,*//*, */
-			stores : ['CategorieUsuelleStore', 'GarbageStore'],/*,*//*, */
+			models : ['CategorieUsuelle', 'Garbage'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

@@ -1,15 +1,21 @@
 Ext.define('VivreANantes.store.CategorieUsuelleStore', {
 			extend : 'Ext.data.Store',
-			model : 'VivreANantes.model.CategorieUsuelle',
-			id : 'categorieusuellestore',
-			autoLoad : true,
-			sorters : 'nom',
-			proxy : {
-				type : 'ajax',
-				url : 'data/categories_usuelles.json',
-				reader : {
-					type : 'json',
-					rootProperty : 'categories_usuelles'
-				}
+			id : 'categorieusuellestore',		
+			config : {
+				proxy : {
+					type : 'ajax',
+					url : 'data/categories_usuelles.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'categories_usuelles'
+					}
+				},
+				model : 'VivreANantes.model.CategorieUsuelle',
+				
+				autoLoad : true,
+				sorters : 'nom'
+
+				
 			}
+			
 		});

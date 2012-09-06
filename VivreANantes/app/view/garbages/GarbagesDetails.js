@@ -1,12 +1,34 @@
 Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
-	extend : 'Ext.Panel',
+	extend : 'Ext.Container',
 	xtype : 'garbagesdetails',
+
 	config : {
-		styleHtmlContent: true,
-        title: 'Details',
-        // itemTpl : '<div>{nom} |  {description}{imageComplete}</div>',
-        html : 'temp',
-        scrollable : 'vertical'
+		title : 'Détails',
+		layout : 'vbox',
+
+		tpl : '<div>{nom}</div>',
+//		items : [
+//				{
+//					id : 'content',
+//					tpl : [ '<div class="top">',
+//							'<div>{nom} |  {description}{imageComplete}</div>',
+//							'</div>' ].join('')
+//				}
+////				
+////				, {
+////					xtype : 'map',
+////					flex : 1,
+////					mapOptions : {
+////						zoomControl : false,
+////						panControl : false,
+////						rotateControl : false,
+////						streetViewControl : false,
+////						mapTypeControl : false,
+////						zoom : 13
+////					}}
+//				 ],
+
+		record : null
 	}
-	
+
 });
