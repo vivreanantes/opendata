@@ -1,9 +1,6 @@
 Ext.define('VivreANantes.store.GarbageStore', {
 			extend : 'Ext.data.Store',			
-			id : 'garbagestore',			
-			/*getGroupString : function(record) {
-				return record.get('categorieUsuelle');
-			},*/
+			id : 'garbagestore', 	
 			config :{
 				autoLoad : true,
 				model : 'VivreANantes.model.Garbage',

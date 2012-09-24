@@ -6755,4 +6755,13 @@ input[type="search"]::-webkit-search-cancel-button {
 
   // CHRIS_TEMP
   .demo-weather{text-align:center}
+  
+  .session .title {
+-webkit-box-flex: 1;
+box-flex: 1;
+font-weight: bold;
+font-size: 95%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
 }
