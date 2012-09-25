@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="F:\VAN\resources\jdk1.7.0_01" version="1.7.0_01">
+<bootpath>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\resources.jar"/>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\rt.jar"/>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\sunrsasign.jar"/>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\jsse.jar"/>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\jce.jar"/>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\charsets.jar"/>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="F:\VAN\resources\jdk1.7.0_01\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="F:\VAN\ECLIPSE_STS\jre" version="1.7.0_01">
+<bootpath>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\resources.jar"/>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\rt.jar"/>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\sunrsasign.jar"/>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\jsse.jar"/>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\jce.jar"/>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\charsets.jar"/>
+<entry path="F:\VAN\ECLIPSE_STS\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="F:\VAN\ECLIPSE_STS\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

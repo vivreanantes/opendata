@@ -1,0 +1,81 @@
+!SESSION 2012-09-26 01:12:05.554 -----------------------------------------------
+eclipse.buildId=2.9.2.201205071000-RELEASE
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product com.springsource.sts.ide -product com.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.springsource.sts.ide -data F:\VAN\opendata -product com.springsource.sts.ide
+
+!ENTRY org.eclipse.osgi 2 0 2012-09-26 01:12:32.384
+!MESSAGE While loading class "com.springsource.sts.maven.internal.core.MavenRuntimeWorkspaceConfigurator", thread "Thread[Worker-2,5,main]" timed out waiting (5003ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "com.springsource.sts.maven_2.9.2.201205071000-RELEASE [42]". To avoid deadlock, thread "Thread[Worker-2,5,main]" is proceeding but "com.springsource.sts.maven.internal.core.MavenRuntimeWorkspaceConfigurator" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/com.springsource.sts.maven_2.9.2.201205071000-RELEASE.jar" by thread "Worker-1".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:260)
+	at com.springsource.sts.ide.internal.configurator.ParticipantDescriptor.createConfigurator(ParticipantDescriptor.java:54)
+	at com.springsource.sts.ide.internal.configurator.ConfiguratorImporter$ConfiguratorExtensionPointReader.getParticipants(ConfiguratorImporter.java:91)
+	at com.springsource.sts.ide.internal.configurator.ConfiguratorImporter.detectExtensions(ConfiguratorImporter.java:190)
+	at com.springsource.sts.ide.internal.configurator.ConfiguratorImporter$4.run(ConfiguratorImporter.java:408)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 26 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:260)
+	at com.springsource.sts.ide.internal.configurator.ParticipantDescriptor.createConfigurator(ParticipantDescriptor.java:54)
+	at com.springsource.sts.ide.internal.configurator.ConfiguratorImporter$ConfiguratorExtensionPointReader.getParticipants(ConfiguratorImporter.java:91)
+	at com.springsource.sts.ide.internal.configurator.ConfiguratorImporter.detectExtensions(ConfiguratorImporter.java:190)
+	at com.springsource.sts.ide.internal.configurator.ConfiguratorImporter$4.run(ConfiguratorImporter.java:408)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2012-09-26 01:15:30.504
+!MESSAGE Invalid preference page path: User Agent Analysis
+
+!ENTRY com.springsource.sts.grails.core 4 4 2012-09-26 01:16:11.616
+!MESSAGE Command terminated with an error code (see details for output)
+!SUBENTRY 1 com.springsource.sts.grails.core 4 0 2012-09-26 01:16:11.616
+!MESSAGE ------System.out:-----------
+ | Loading Grails 2.1.0
+| Configuring classpath
+!SUBENTRY 1 com.springsource.sts.grails.core 4 0 2012-09-26 01:16:11.616
+!MESSAGE ------System.err:-----------
+
