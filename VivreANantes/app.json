@@ -75,7 +75,10 @@
     "extras": [
         "resources/images",
         "resources/icons",
-        "resources/loading"
+        "resources/loading",
+        "data",
+		"lib",
+		"resources/css"
     ],
 
     /**
