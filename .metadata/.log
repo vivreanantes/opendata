@@ -132,3 +132,345 @@ java.lang.NullPointerException
 	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
 	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
 	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+!SESSION 2012-09-26 20:50:00.872 -----------------------------------------------
+eclipse.buildId=2.9.2.201205071000-RELEASE
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product com.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.springsource.sts.ide
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:22:44.268
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:22:59.681
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:23:10.985
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:23:30.202
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2012-09-26 21:23:33.516
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2012-09-26 21:23:33.516
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@5935d54c,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@f61a4bd),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@5fe2a603)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@5d469e55,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@f61a4bd),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@5fe2a603)),sourcePriority=1064960)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:23:58.220
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:24:26.744
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:24:30.747
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:24:40.255
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:34:59.444
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:50:20.541
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10000 2012-09-26 21:52:00.406
+!MESSAGE Internal Error
+!STACK 0
+java.lang.NullPointerException
+	at com.springsource.sts.grails.refactoring.rename.action.GrailsActionOrViewRenameParticipant.getActions(GrailsActionOrViewRenameParticipant.java:168)
+	at com.springsource.sts.grails.refactoring.rename.action.GSPRenameParticipant.renameAction(GSPRenameParticipant.java:102)
+	at com.springsource.sts.grails.refactoring.rename.action.GSPRenameParticipant.checkConditions(GSPRenameParticipant.java:96)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:257)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:85)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:121)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:209)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10000 2012-09-26 21:52:49.507
+!MESSAGE Internal Error
+!STACK 0
+java.lang.NullPointerException
+	at com.springsource.sts.grails.refactoring.rename.action.GrailsActionOrViewRenameParticipant.getActions(GrailsActionOrViewRenameParticipant.java:168)
+	at com.springsource.sts.grails.refactoring.rename.action.GSPRenameParticipant.renameAction(GSPRenameParticipant.java:102)
+	at com.springsource.sts.grails.refactoring.rename.action.GSPRenameParticipant.checkConditions(GSPRenameParticipant.java:96)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.checkFinalConditions(ProcessorBasedRefactoring.java:257)
+	at org.eclipse.ltk.core.refactoring.CheckConditionsOperation.run(CheckConditionsOperation.java:85)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:121)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:209)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:53:10.198
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:53:11.728
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:53:32.971
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2012-09-26 21:53:48.815
+!MESSAGE null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.configure(JSPTranslator.java:359)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.reset(JSPTranslator.java:566)
+	at com.springsource.sts.grails.editor.gsp.translation.internal.GSPTranslator.createMockJSPTranslator(GSPTranslator.java:3620)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslation.<init>(GSPTranslation.java:86)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationExtension.<init>(GSPTranslationExtension.java:21)
+	at com.springsource.sts.grails.editor.gsp.translation.GSPTranslationAdapter.getJSPTranslation(GSPTranslationAdapter.java:147)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:314)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.validateFile(JSPJavaValidator.java:417)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:196)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)

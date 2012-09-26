@@ -2,5 +2,17 @@ package van.trianantes
 
 class MaquetteController {
 
-    def index() { }
+    def index() {render(view:"accueil")}
+	
+	def accueil(){
+		
+	}
+	
+	def resultatRecherche(){
+		
+	}
+	
+	def resultatLocalisation(){
+		
+	}
 }
