@@ -15,4 +15,8 @@ class MaquetteController {
 	def resultatLocalisation(){
 		
 	}
+	
+	def zoo(){
+		
+	}
 }

@@ -37,13 +37,31 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# Grails project specifications #
+# Eclipse project specifications #
 #################################
-
-.settings
-target
-target-eclipse
-.classpath
+*.pydevproject
 .project
-application.properties
-*.metadata*
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
