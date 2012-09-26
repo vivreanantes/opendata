@@ -6,7 +6,7 @@ import van.socle.geolocalisation.Adresse
  * 
  * @author Sergus
  * TODO rajouter la plage horaire
- * TODO rajouter une image (table adresses d'images en fonction d'un code ?)
+ * TODO rajouter une image
  */
 class StructureCollecte {
 
