@@ -131,13 +131,9 @@ Ext.define('VivreANantes.controller.Garbages', {
 						var categorietest = new RegExp(escaperegex(select
 								.getValue()));
 
-						if (texttest.test(item.data.nom)
+						return (texttest.test(item.data.nom)
 								&& (select.getValue() === 'all' || categorietest
-										.test(item.data.categorieUsuelle))) {
-							return true
-						} else {
-							return false;
-						}
+										.test(item.data.categorieUsuelle)));
 					}
 				});
 		store.filter(filterGarbage);
