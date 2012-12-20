@@ -6,11 +6,11 @@ Ext.define('VivreANantes.model.CategorieUsuelle', {
 							name : 'id',
 							type : 'int'
 						}, {
-							name : 'code',
+							name : 'value',
 							type : 'string',
 							mapping : 'code'
 						}, {
-							name : 'nom',
+							name : 'text',
 							type : 'string',
 							mapping : 'libelle'
 						},

@@ -6,6 +6,7 @@ Ext.define('VivreANantes.view.welcome.Welcome', {
 	xtype : 'accueilContainer',
 	requires: [
 		'VivreANantes.view.welcome.WelcomeList'
+	
 	],
 	config : {
 		title : 'Vivre A Nantes',

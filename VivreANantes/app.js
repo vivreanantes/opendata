@@ -23,6 +23,8 @@ Ext
 			'garbages.Garbages',
 			'garbages.GarbagesDetails',
 			'garbages.GarbagesList',
+			'garbages.GarbagesContainer',
+			'garbages.GarbagesForm',
 			// Jeu
 			'game.Guess',
 			// Informations

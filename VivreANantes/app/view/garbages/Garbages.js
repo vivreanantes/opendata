@@ -1,16 +1,17 @@
+/**
+ * Vue des Déchets (présente avec un icone de déchets
+ */
 Ext.define('VivreANantes.view.garbages.Garbages', {
-	extend : 'Ext.navigation.View',
-	xtype : 'garbagesContainer',
-	config : {
-		
-		autoDestroy: false,
-		iconCls : 'list',
-		title : 'Garbages',
-		itemTpl : '<div>{nom}</div>',
-		scrollable : 'vertical',
-		items : [ {
-			xtype : 'garbagesList',
-			title : 'Déchets'
-		} ]
-	}
-});
+			extend : 'Ext.navigation.View',
+			xtype : 'garbagesView',
+
+			config : {
+				autoDestroy : false,
+				iconCls : 'list',
+				title:'Déchets',
+				items : [{
+							xtype : 'garbagesContainer'
+						}
+				]
+			}
+		});
