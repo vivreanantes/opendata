@@ -28,15 +28,15 @@ Ext.define('VivreANantes.controller.Garbages', {
 				initialize : 'onInitGarbagesView',
 				push : 'onGarbagesViewPush'
 			},
-			garbagesFormText : {
-				initialize : 'onDebug',
-				keyup : 'onGarbagesFormTextKeyup'
 
+			garbagesFormText : {
+				keyup : 'onGarbageStoreFilter',
+				change : 'onGarbageStoreFilter',
+				clearicontap : 'onGarbageStoreFilter'
 			},
 
 			garbagesFormSelect : {
-				initialize : 'onDebug',
-				change : 'onGarbagesFormSelectChange'
+				change : 'onGarbageStoreFilter'
 			}
 
 		}
@@ -111,74 +111,36 @@ Ext.define('VivreANantes.controller.Garbages', {
 	// Méthodes invoquées par le formulaire
 
 	/**
-	 * Méthode invoquée par une mise à jour de la liste déroulante
+	 * Filtre sur les déchets, en fonction de la chaine saisie et de la
+	 * catégorie sélectionnée
 	 */
-	onGarbagesFormTextKeyup : function(element, event, opts) {
-		console.log('onGarbagesFormTextKeyup');
+	onGarbageStoreFilter : function() {
+
+		var text = this.getGarbagesFormText();
+		var select = this.getGarbagesFormSelect();
 		var store = this.getGarbagesList().getStore();
 
-		var filtre = element.getValue();
-		//store.clearFilter();
+		store.clearFilter();
+		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
+		// sur la catégorie
+		var filterGarbage = Ext.create('Ext.util.Filter', {
+					filterFn : function(item) {
+						var escaperegex = Ext.String.escapeRegex;
+						var texttest = new RegExp(escaperegex(text.getValue()),
+								'ig');
+						var categorietest = new RegExp(escaperegex(select
+								.getValue()));
 
-		// Filtrer sans casse, en cherchant la chaine dans le nom
-		store.filter('nom', filtre, true, false);
-	},
-
-	/**
-	 * Méthode invoquée par une mise à jour de la liste déroulante
-	 */
-	onGarbagesFormSelectUpdateData : function(element, data, opts) {
-		console.log('onGarbagesFormSelectUD');
-		console.log(data);
-
-		var store = this.garbagesList.getStore();
-		// store.filter('categorieUsuelle',data.);
-	},
-
-	/**
-	 * Méthode invoquée par une mise à jour de la liste déroulante
-	 */
-	onGarbagesFormSelectKeyup : function(element, event, opts) {
-		console.log('onGarbagesFormSelectKeyup');
-		var store = this.getGarbagesList().getStore();
-
-		var filtre = element.getValue();
-		//store.clearFilter();
-
-		// Filtrer sans casse, en cherchant la chaine dans le nom
-		store.filter('categorieUsuelle', filtre, false, false);
-	},
-
-	/**
-	 * 
-	 * @param {}
-	 *            element
-	 * @param {}
-	 *            newValue
-	 * @param {}
-	 *            oldValue
-	 * @param {}
-	 *            options
-	 */
-	onGarbagesFormSelectChange : function(element, newValue, oldValue, options) {
-		console.log('onGarbagesFormSelectChange');
-		var store = this.getGarbagesList().getStore();
-
-		var filtre = newValue;
-
-		
-		
-		//store.clearFilter();
-
-		// Filtrer sans casse, en cherchant la chaine dans le nom
-
-		if (filtre !== 'all') {
-			store.filter('categorieUsuelle', filtre, false, false);
-		}
-		else {
-			
-		}
-		
+						if (texttest.test(item.data.nom)
+								&& (select.getValue() === 'all' || categorietest
+										.test(item.data.categorieUsuelle))) {
+							return true
+						} else {
+							return false;
+						}
+					}
+				});
+		store.filter(filterGarbage);
 	}
 
 });

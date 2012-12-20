@@ -1,3 +1,6 @@
+/**
+ * Formulaire des Déchets
+ */
 Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 			extend : 'Ext.form.Panel',
 			requires : ['Ext.field.Text', 'Ext.field.Select'],
@@ -6,11 +9,11 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 				items : [{
 							xtype : 'textfield',
 							name : 'name',
-							label : 'Name',
+							label : 'Recherche',
 							id : 'garbagesFormText'
 						}, {
 							xtype : 'selectfield',
-							label : 'Choose one',
+							label : 'Catégorie',
 							id : 'garbagesFormSelect',
 							options : [{
 										text : 'Tous',
