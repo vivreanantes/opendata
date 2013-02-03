@@ -24296,13 +24296,27 @@ Ext.define('VivreANantes.view.game.Guess', {
  * Vue de Description de l'application
  * 
  */
-Ext.define('VivreANantes.view.about.Description' ,{
+Ext.define('VivreANantes.view.about.Description', {
 	extend : 'Ext.Container',
-	
+
 	config : {
-		title:'A propos',
+		title : 'A propos',
 		iconCls : 'team',
-		html : '<br/><p>L\'application Vivre A Nantes : Recyclage a été réalisée dans le cadre du concours Open Data</p>'		
+		styleHtmlContent : 'true',
+		html : [
+				'<img src=\'resources/images/conteneur_verre.png\' width=150 />',
+				'<h2>Mieux trier à Nantes</h2>',
+				'<p>L\'application Mieuw trier à Nantes a été réalisée par les bénévoles de Vivre à Nantes</p>',
+				'<p>C\'est est un logiciel libre dont l\'objectif est d\'aider les Nantais à :<br/>',
+				'- Savoir si un déchet est recyclable et les façons dont il peut être valorisé (avec des',
+				'	conseils spécifiques à chaque déchet),<br/>',
+				'- Connaître les emplacements des conteneurs, lieux et horaires des déchèteries et',
+				'	distribution des sacs jaunes et bleus,<br/>',
+				'- Connaître la filière tri à Nantes : centres de tris, centres d\'incinération, nouveaux',
+				'	déchets récupérés, et les organismes qui se proposent de donner une seconde vie à',
+				'	vos déchets,<br/>',
+				'- Retrouver le mode de collecte et le jour de collecte à domicile, en recherchant par',
+				'	rue ou à partir de votre position.</p>'].join("")
 	}
 });
 /**
@@ -24506,12 +24520,6 @@ Ext.define('VivreANantes.controller.Informations', {
         }
     },
     
-    //called when the Application is launched, remove if not needed
-    launch: function(app) {
-        
-    },
-
-    
     showInformations: function(list, index, element, record) {
         // console.log(record.get('title'));
     	this.getInformations().push({
@@ -24520,7 +24528,7 @@ Ext.define('VivreANantes.controller.Informations', {
     		html: record.get('description'),
     		scrollable: true,
     		styleHtmlContent: true
-    	})
+    	});
     }
 });
 /**
@@ -38400,34 +38408,39 @@ Ext.define('Ext.tab.Panel', {
  * Vue principale
  */
 Ext.define('VivreANantes.view.Main', {
-			extend : 'Ext.tab.Panel',
-			
-			xtype : 'main',
-			config : {
-				tabBarPosition : 'bottom',
-				items : [{
-							xclass : 'VivreANantes.view.welcome.Welcome'
-						},
-						{
-							xclass : 'VivreANantes.view.information.Informations'
-						},
-						{
-							xclass : 'VivreANantes.view.garbages.Garbages'
-						},
-						{
-							xclass : 'VivreANantes.view.geo.MapOSM'
-						},						
-						{
-							xclass : 'VivreANantes.view.game.Guess'
-						}, 
-						{
-							xclass : 'VivreANantes.view.calendar.Calendar'
-						}, 
-						{
-							xclass : 'VivreANantes.view.about.Description'
-						}]
-			}
-		});
+
+	extend : 'Ext.tab.Panel',
+	xtype : 'main',
+	config : {
+		// remplace le tabbar créée automatiquement avec un tab.panel tabBarPosition : 'bottom',
+		tabBar : { docked: 'bottom', layout : { pack: 'center' } },
+		items : [{
+				xclass : 'VivreANantes.view.welcome.Welcome'
+			},
+			{
+				xclass : 'VivreANantes.view.information.Informations'
+				// xtype : 'informations'
+			},
+			{
+				xclass : 'VivreANantes.view.garbages.Garbages',
+				// TODO la mise en valeur par badgetText ne fonctionne pas
+				badgetText : '*'
+			},
+			{
+				xclass : 'VivreANantes.view.geo.MapOSM'
+			},						
+			{
+				xclass : 'VivreANantes.view.game.Guess'
+			}, 
+			{
+				xclass : 'VivreANantes.view.calendar.Calendar'
+			}, 
+			{
+				xclass : 'VivreANantes.view.about.Description'
+			}]
+		}
+	}
+);
 
 /**
  * {@link Ext.TitleBar}'s are most commonly used as a docked item within an {@link Ext.Container}.
@@ -39800,23 +39813,61 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 /**
  * Informations
  * 
- * @author cpoisnel
+ * @author Christian Renoulin
  */
 Ext.define('VivreANantes.view.information.Informations', {
 			extend : 'Ext.NavigationView',
 			xtype : 'informations',
+
 			config : {
+				// Titre dans barre de bouton principale
 				title : 'Informations',
+				 // Icone dans la barre de bouton principale
 				iconCls : 'action',
-				autoDestroy : false,
-				html : 'Informations',
 				items : [
-				         {
-				        	 xtype:'toolbar',
-				        	 title:'Accueil'
-				         }
-				         
-				]
+						// Remplace title : 'Informations',
+						// {
+						// xtype: 'titlebar', // mieux que toolbar
+						// docked:'top',
+						// title:'Informations sur le tri',
+						// items:[{
+						// // Par défaut les xtype sont des 'button'
+						// text:'ping',
+						// align:'right'
+						// }, {
+						// text:'clear'
+						// }]
+						// },
+						{
+					cls : 'informationsCss',
+					// FIXME : les titles sont coupés dans Informations.js : 'Informations sur le tri' devient "'Informations sur le...' à l'affichage 
+					title : 'Informations sur le tri',
+					scrollable : 'true',
+					// FIXME pb sur les images dans Informations.js : les '\' sont remplacés par rien, donc les liens sont faux.
+					itemTpl : '<img src=resources\images\{image} />{name}',
+					// /i pose un pb
+					// itemTpl : ['<img src=resources\images\{image} />',
+					// '{name}'].join(''),
+					xtype : 'list',
+					store : {
+						autoLoad : true,
+						fields : ['code', 'name', 'description', 'image'],
+						// fields: ['title', 'author', 'content'],
+						proxy : {
+							// type : 'jsonp', // JSONP pour infos externe
+							// url:
+							// 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://feeds.feedburner.com/SenchaBlog',
+							type : 'ajax',
+							url : 'data/informations.json',
+							reader : {
+								type : 'json',
+								rootProperty : 'informations'
+							}
+						}
+					}
+				}]
+
+
 			}
 		});
 /**
@@ -48292,7 +48343,7 @@ Ext.define('VivreANantes.store.CategorieUsuelleStore', {
 		});
 Ext.define('VivreANantes.store.GarbageStore', {
 			extend : 'Ext.data.Store',			
-			id : 'garbagestore', 	
+			id : 'Garbagestore', 	
 			config :{
 				autoLoad : true,
 				model : 'VivreANantes.model.Garbage',
@@ -48301,7 +48352,7 @@ Ext.define('VivreANantes.store.GarbageStore', {
 					url : 'data/dechets.json',
 					reader : {
 						type : 'json',
-						rootProperty : 'garbages'
+						rootProperty : 'Garbages'
 					}
 				}	
 			}
@@ -49840,16 +49891,20 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 							xtype : 'selectfield',
 							label : 'Catégorie',
 							id : 'garbagesFormSelect',
-							options : [{
-										text : 'Tous',
-										value : 'all'
-									}, {
-										text : 'Plastique',
-										value : 'cu_plastique'
-									}, {
-										text : 'Divers',
-										value : 'cu_divers'
-									}]
+							options : [
+						            {text : 'Tous', value : 'all'},
+						            {text : "Plastique", value : "cu_plastique" },
+									{text : "Papiers-cartons", value : "cu_papierscartons" },
+									{text : "Métal", value : "cu_metal" },
+									{text : "Déchets verts / bois", value : "cu_vertbois" },
+									{text : "Verre / Vaisselle / Pots", value : "cu_verrevaisselle" },
+									{text : "Vêtements / tissu", value : "cu_vetementtissu"},
+									{text : "Encombrants", value : "cu_encombrant" },
+									{text : "Toxique", value : "cu_toxique" },
+									{text : "Divers", value : "cu_divers" },
+									{text : "Nourriture", value : "cu_nourriture" },
+									{text : "Electronique", value : "cu_electronique" }
+								]
 						}
 				]
 			}

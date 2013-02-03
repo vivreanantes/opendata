@@ -1,1980 +1,1799 @@
 {
-	"garbages" : [
-   {
-      "code":"",
-      "nom":"acides",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"aérosols",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":" aerosols_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"agenda",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"agenda_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Ampoule classique",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"ampoule_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Ampoule basse consommation",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_ampoueco",
-      "modesdecollecte":"",
-      "concerne_aussi":"ampoule à économie d'énergie, lampe à économie d’énergie",
-      "conseils":"cons_ampoulemercure",
-      "image":"ampoules_basse_consommation_petit.jpg",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Annuaire",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"annuaire_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Anti-fourmis",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Antigel",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"appareil électronique",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"appareils électroménager",
-      "categorie_usuelle":"cu_encombrant",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"machine_a_cafe_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"appareils chauffant",
-      "categorie_usuelle":"cu_encombrant",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"appareil de chauffage, appareil de cuisson",
-      "conseils":"",
-      "image":"chauffage_soufflant_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Baril de lessive",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"paquets de lessives, barils en carton",
-      "conseils":"",
-      "image":"baril_lessive_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Barquette aluminium",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_allu",
-      "modesdecollecte":"",
-      "concerne_aussi":"barquette pizza, barquette quiche",
-      "conseils":"",
-      "image":"barquette_aluminium.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Barquette plastique",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_bouteilleflacon",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Barquette Polystyrène",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_bouteilleflacon",
-      "image":"polystyrene_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"batteries de voiture",
-      "categorie_usuelle":"scu_toxiquegarage",
-      "categorie_traitement":"cat_batterie",
-      "modesdecollecte":"cat_ddm",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"batterie_voiture_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bidon d'huile moteur vide",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"bidon de métal",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bocal en verre",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verre",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_sansbouchon",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Boîte à oeufs en carton",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"boite_a_oeufs_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Boîte à oeufs en plastique",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"boite_a_oeufs_plastique_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Boîte camembert en bois",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"boite_camembert_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Boîte de conserve",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"conserve",
-      "conseils":"",
-      "image":"conserve_ratatouille_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"boite métallique",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"boite_metal_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bombe aérosol",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"aerosol_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bombe de peinture",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"aerosol_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bombe mousse à raser",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"mousse_a_raser_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"bouchon de liège",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"bouchon_liege_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"bouteille d'huile alimentaire",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"grande_bouteille_huile_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bouteille plastique",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"ketchup, vinaigrette",
-      "conseils":"cons_bouchonamour",
-      "image":"ketchup_petit.png, bouteille_vinaigrette_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bouteille d'huile en verre",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verre",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_bouchonamour",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bouteille de lait",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_bouchonamour",
-      "image":"bouteille_lait_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bouteille en plastique",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"bouteille de soda",
-      "conseils":"cons_bouchonamour",
-      "image":"bouteille_soda_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bouteille produit ménager vide",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_bouchonamour",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Bouteille produit ménager non vide",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_bouchonamour",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"bouteille verre",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verre",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"sans_bouchon_ni_couvercle",
-      "image":"bouteille_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"bouteilles de sirop",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"bouteille_sirop_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Brique alimentaire",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_ela",
-      "modesdecollecte":"",
-      "concerne_aussi":"brique de lait",
-      "conseils":"bouchon_brique",
-      "image":"brique_alimentaire_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"branchage",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_vertbois",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"feuillages_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"cagette bois",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"cageot",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"cagette_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":" calendrier",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"calendrier_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Cahier",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"cahier, bloc notes (sans spirale), carnet",
-      "conseils":"",
-      "image":"bloc_note_petit.png",
-      "image_secondaire":"cahier_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Canette de soda",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"cannette.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"capsule de café",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":";",
-      "modesdecollecte":"",
-      "concerne_aussi":"capsule métal ou plastique dosette café",
-      "conseils":"",
-      "image":"dosette_cafe_plastique_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"carte postale",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"carte_postale_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Carton (petits ou grands)",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"carton.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"cartouches encres",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"smco_vendeurcartoucheencre, smco_recupsupermarches, mco_decheterie",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"cartouches_imprimantes_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"CD/DVD/K7",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"cassette audio, cassette vidéo",
-      "conseils":"",
-      "image":"cd_sansemballage_petit.png",
-      "image_secondaire":"pochette_cd_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Chaussures usagées",
-      "categorie_usuelle":"cu_vetementtissu",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"bôte usagée, chaussure en mauvais état",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Chaussure en bon état",
-      "categorie_usuelle":"cu_vetementtissu",
-      "categorie_traitement":"cat_vetement",
-      "modesdecollecte":"",
-      "concerne_aussi":"bôte en bon état",
-      "conseils":"",
-      "image":"chaussures_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"cigarette",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"mégot, cigare",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Classeur",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"classeur_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"colles",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"colle_a_bois_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"congélateurs",
-      "categorie_usuelle":"cu_encombrant",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"congelateur_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Coton tige",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"cotons_tiges_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Couche bébé",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"couche_bebe_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"couvercle de pot en verre",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_acier",
-      "modesdecollecte":"",
-      "concerne_aussi":"couvercle métallique",
-      "conseils":"",
-      "image":"ouvercle_bocal_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"couverts",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":" couverts, couteau, cuillère, fourchette",
-      "conseils":"",
-      "image":"fourchette_petit.png",
-      "image_secondaire":"couteau_petit.png, cuillere_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Crème en tube",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Déboucheur liquide",
-      "categorie_usuelle":"scu_toxiquesdb",
-      "categorie_traitement":"",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"desinfectant_toilette.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Crème et dentifrice (tube)",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"crème en tube, tube de dentifrice",
-      "conseils":"",
-      "image":"dentifrice_petit.png",
-      "image_secondaire":"creme_main_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"déodorant stick",
-      "categorie_usuelle":"",
-      "categorie_traitement":"",
-      "modesdecollecte":"",
-      "concerne_aussi":"déodorant à bille",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"détachant",
-      "categorie_usuelle":"scu_toxiquesdb",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"decheteur_universel_vetement_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"diluants",
-      "categorie_usuelle":"scu_toxiquebrico",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"bouteille_white_spirit_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"eau de Javel",
-      "categorie_usuelle":"scu_toxiquesdb",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"bouteille_eau_de_javel_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"emballages en carton plat",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"Suremballage carton, cartonnette, boîte de céréales...",
-      "conseils":"cons_souille",
-      "image":"cartonette_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"enduits et vernis",
-      "categorie_usuelle":"scu_toxiquebrico",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"vernis_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Engrais chimiques",
-      "categorie_usuelle":"scu_toxiquejardin",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Enveloppe",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_fenetre_enveloppe",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Epeluchures / restes de repas",
-      "categorie_usuelle":"cu_nourriture",
-      "categorie_traitement":"cat_organique",
-      "modesdecollecte":"modco_compostage",
-      "concerne_aussi":"épeluchures, restes de repas, nourriture",
-      "conseils":"",
-      "image":"epeluchure_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"équipements audio et vidéo",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"chaine_hifi_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"essence de térébenthine",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"essui-tout (rouleau carton)",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"le rouleau en carton",
-      "conseils":"",
-      "image":"essui_tout_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"essui-tout (sauf rouleau carton)",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"sopalin",
-      "conseils":"cons_souille",
-      "image":"essui_tout_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Feuillage",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_organiquegros",
-      "modesdecollecte":"modco_compostage",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"feuille",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"Feuille (imprimée ou non)",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Film plastique",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Films photographiques",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"diapositive, pellicule",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"filtre à huile...",
-      "categorie_usuelle":"scu_toxiquegarage",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"flacon de produits d'entretien",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"Flacon produit ménager vide, flacon de produits d'entretien",
-      "conseils":"",
-      "image":"bouteille_white_spirit_petit.png",
-      "image_secondaire":"bouteille_pec_citron_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"flacon de savon",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"Flacon en plastique, flacon de savon",
-      "conseils":"",
-      "image":"flacon_savon_petit.png",
-      "image_secondaire":"bouteille_savon_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"fongicides",
-      "categorie_usuelle":"scu_toxiquejardin",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"fournitures  (hors papier)",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"fournitures de bureau, crayon, stylo, feutre, gomme, agrafeuse, règle, compas, pochette plastique, classeur, trombone, taille-crayon, ciseaux",
-      "conseils":"",
-      "image":"crayon_bic_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Gazon",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_organiquegros",
-      "modesdecollecte":"modco_compostage",
-      "concerne_aussi":"pelouse, herbe",
-      "conseils":"",
-      "image":"pelouse_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Gobelet plastique",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_remplacergobelet, cons_vaissellebiodegradable",
-      "image":"gobelet_plastique_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Gravat",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_organiquegros",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"gravat_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"grillage",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":" clôture, canisses",
-      "conseils":"",
-      "image":"grillage_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"guitare",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"smco_reempdivers",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"guitare_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"herbicides",
-      "categorie_usuelle":"scu_toxiquejardin",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"désherbant",
-      "conseils":"",
-      "image":"desherbant_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Huile de vidange",
-      "categorie_usuelle":"scu_toxiquegarage",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"insecticides...",
-      "categorie_usuelle":"scu_toxiquejardin",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"jouets alimentés par électricité",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_emr",
-      "modesdecollecte":"",
-      "concerne_aussi":"jeu, train électrique",
-      "conseils":"",
-      "image":"jeu_enfant_avec_pile_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"jouets non électroniques",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_materiaux",
-      "modesdecollecte":"smco_reempjouet",
-      "concerne_aussi":"jeu, peluche, poupée, petite voiture",
-      "conseils":"",
-      "image":"petite_voiture_petit.png",
-      "image_secondaire":"jouet_enfant_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Journaux",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"revue",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Laine",
-      "categorie_usuelle":"cu_vetementtissu",
-      "categorie_traitement":"cat_vetement",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Laine de verre",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_mat",
-      "modesdecollecte":"",
-      "concerne_aussi":"laine de verre, laine de roche",
-      "conseils":"",
-      "image":"laine_roche_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"lampe",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"lampe_chevet_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"laques",
-      "categorie_usuelle":"scu_toxiquebrico",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"lingette",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"lingette_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"liquide de refroidissement",
-      "categorie_usuelle":"scu_toxiquegarage",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Litière pour animaux",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Livre",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"livre_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"lunette",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"lunette_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Magazine",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"revue",
-      "conseils":"",
-      "image":"magazines_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"mastic de carrosserie",
-      "categorie_usuelle":"scu_toxiquegarage",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Matelas",
-      "categorie_usuelle":"cu_vetementtissu",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"matelas_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"médicaments",
-      "categorie_usuelle":"scu_medicament",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"smco_pharmacie",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"medicaments_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Meuble",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"canape_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Miroir",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verrenonvalovaisselleporcelaine",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_coupant",
-      "image":"miroir_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Moquette",
-      "categorie_usuelle":"cu_vetementtissu",
-      "categorie_traitement":"cu_vetementtissu",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"moquette_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"mort aux rats",
-      "categorie_usuelle":"scu_toxiqueparasite",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"raticide ",
-      "conseils":"",
-      "image":"mortaurat_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"mouchoir",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_souille",
-      "image":"mouchoirs_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"naphtaline",
-      "categorie_usuelle":"scu_toxiqueparasite",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"néons",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ampouleneon",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"nettoyants à l’ammoniac",
-      "categorie_usuelle":"scu_toxiquecuisine",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"nettoyants à sol",
-      "categorie_usuelle":"scu_toxiquesdb",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Nettoyants cuivre et argenterie",
-      "categorie_usuelle":"scu_toxiquecuisine",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Objet en terre cuite",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_verrenonvalovaisselleporcelaine",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"ordinateurs portables",
-      "categorie_usuelle":"cu_encombrant",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"ordi_portable_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"outils de bricolage",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"marteau, tournevis",
-      "conseils":"",
-      "image":"tournevis_petit.png",
-      "image_secondaire":"marteau_2_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"outillage alimenté par électricité",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"outils bricolage ou jardinage",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"",
-      "modesdecollecte":"",
-      "concerne_aussi":"cisaille, scies, rateaux, hâches",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"papier",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"prospectus, publicité",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Papier absorbant",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_souille",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Papier aluminium",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_papieralu",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Papier cadeau",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Papier peint",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"papier toilette",
-      "categorie_usuelle":"cu_papierscartons",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"le rouleau en carton",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Parpaing",
-      "categorie_usuelle":"cu_encombrant",
-      "categorie_traitement":"cat_materiaux",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"parpaing_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"peinture antirouille",
-      "categorie_usuelle":"scu_toxiquegarage",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"peintures",
-      "categorie_usuelle":"scu_toxiquebrico",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"peinture_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"périphériques informatiques",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"smco_reempinfo",
-      "concerne_aussi":"Ecran, clavier, souris, imprimante",
-      "conseils":"",
-      "image":"clavier_ordi_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"petit électroménager",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"chaine_hifi_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"piano",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"smco_reempdivers",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"piles",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"smco_vendeurpile, smco_recupsupermarche, smco_recupmagasinbrico",
-      "concerne_aussi":"petits accumulateurs",
-      "conseils":"cons_pilerechargeable",
-      "image":"pile_45_petit.png",
-      "image_secondaire":"pile9v_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Planche de bois",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_organiquegros",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"planche_bois_petit.png",
-      "image_secondaire":"morceaux_de_bois_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Plante",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_organiquegros",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_compostage",
-      "image":"plante_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"pneu",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"pneu_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Polystyrène",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"barquette de polystyrène",
-      "conseils":"",
-      "image":"polystyrene_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Porcelaine",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verrenonvalovaisselleporcelaine",
-      "modesdecollecte":"",
-      "concerne_aussi":"vase, ",
-      "conseils":"",
-      "image":"vase_petit.png",
-      "image_secondaire":"theiere_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Pot de crème fraîche",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"pot_creme_fraiche_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Pot de peinture",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"peinture, peinture à huile, peinture à l'eau, peinture, acrylique, peinture glycéro",
-      "conseils":"",
-      "image":"peinture_acrylique_petit.png",
-      "image_secondaire":"pot_peinture_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Pot de yaourt",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"yaourt_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Pot en verre",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verre",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Poterie",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verrenonvalovaisselleporcelaine",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_coupant",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"produits d’entretien",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Produits de beauté",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"cosmétique, rouge à lèvres, maquillage",
-      "conseils":"",
-      "image":"rouge_a_levre_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"produits de traitement du bois",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"traitement_de_bois_petit.png",
-      "image_secondaire":"teinte_a_bois_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Produit phytosanitaire",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"radiographie",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Rasoir jetable",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"rasoir_jetable_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"récurants pour four...",
-      "categorie_usuelle":"scu_toxiquecuisine",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"récurants pour toilette",
-      "categorie_usuelle":"scu_toxiquesdb",
-      "categorie_traitement":"",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"réfrigérateur",
-      "categorie_usuelle":"cu_encombrant",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"refrigerateur_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"résines",
-      "categorie_usuelle":"scu_toxiquebrico",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"révélateur et fixateur photo",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Sac en papier",
-      "categorie_usuelle":"cu_papiercarton",
-      "categorie_traitement":"cat_papiercarton",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_souille",
-      "image":"sac_papier_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Sac plastique",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"sac_plastique_pt.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"scooter",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"solvants",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Stylo",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"crayon_bic_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Table à repasser",
-      "categorie_usuelle":"cu_encombrant",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"table_a_repasser_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Taille d'arbre",
-      "categorie_usuelle":"cu_vertbois",
-      "categorie_traitement":"cat_organiquegros",
-      "modesdecollecte":"modco_compostage",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"téléphonie",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":" telephone_fixe_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"téléviseurs",
-      "categorie_usuelle":"cu_electronique",
-      "categorie_traitement":"cat_d3e",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"televiseur_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"thermomètre à mercure",
-      "categorie_usuelle":"cu_toxique",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"trompette",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"smco_reempdivers",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"trottinnette",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"smco_velo",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"",
-      "categorie_usuelle":"",
-      "categorie_traitement":"",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"tube fluorescent",
-      "categorie_usuelle":"scu_toxiquedivers",
-      "categorie_traitement":"cat_ddm",
-      "modesdecollecte":"",
-      "concerne_aussi":"tube fluo",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Tuyau d'arrosage",
-      "categorie_usuelle":"cu_plastique",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Ustensile de cuisine",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"casseroles, marmites, cocottes, poêles, wok",
-      "conseils":"",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Vaisselle (carton ou plastique)",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"assiette carton, gobelet, couvert plastique, couteau plastique, fourchette plastique, cuillère plastique",
-      "conseils":"",
-      "image":"assiette_carton_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Vaisselle (verre, porcelaine...)",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verrenonvalovaisselleporcelaine",
-      "modesdecollecte":"",
-      "concerne_aussi":" assiette, tasse, bol, plat, verre à boire, poterie, porcelaine, faïence, carafe, verre",
-      "conseils":"cons_coupant",
-      "image":"assiette_petit.png, ",
-      "image_secondaire":"bol_petit.png, tasse_petit.png, plat_en_faience_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Vélo",
-      "categorie_usuelle":"cu_metal",
-      "categorie_traitement":"cat_encombrant",
-      "modesdecollecte":"smco_velo",
-      "concerne_aussi":"bicyclette, vélo, skateboard",
-      "conseils":"",
-       
-      "image_secondaire":"skateboard_petit.png"
-   },
-   {
-      "code":"",
-      "nom":"Vêtement usagé",
-      "categorie_usuelle":"cu_vetementtissu",
-      "categorie_traitement":"cat_omr",
-      "modesdecollecte":"",
-      "concerne_aussi":"Vêtement usagé, Vêtement en mauvais état",
-      "conseils":"",
-      "image":"jean_usage_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Vêtement en bon état",
-      "categorie_usuelle":"cu_vetementtissu",
-      "categorie_traitement":"cat_vetement",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"chemise_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"Vitre",
-      "categorie_usuelle":"cu_verrevaisselle",
-      "categorie_traitement":"cat_verrenonvalovaisselleporcelaine",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"cons_coupant",
-       
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"voiture",
-      "categorie_usuelle":"cu_divers",
-      "categorie_traitement":"cat_divers",
-      "modesdecollecte":"smco_vendeurvoiture, smco_casseauto",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"voiture_petit.png",
-      "image_secondaire":""
-   },
-   {
-      "code":"",
-      "nom":"",
-      "categorie_usuelle":"",
-      "categorie_traitement":"",
-      "modesdecollecte":"",
-      "concerne_aussi":"",
-      "conseils":"",
-      "image":"chaine_hifi_petit.png",
-      "image_secondaire":""
-   }
-]
+	"garbages" : [{
+				"code" : "",
+				"nom" : "acides",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "aérosols",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "aerosols_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "agenda",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "agenda_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Ampoule classique",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "ampoule_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Ampoule basse consommation",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_ampoueco",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "ampoule à économie d'énergie, lampe à économie d’énergie",
+				"conseils" : "cons_ampoulemercure",
+				"image" : "ampoules_basse_consommation_petit.jpg",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Annuaire",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "annuaire_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Anti-fourmis",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Antigel",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "appareil électronique",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "appareils électroménager",
+				"categorie_usuelle" : "cu_encombrant",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "machine_a_cafe_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "appareils chauffant",
+				"categorie_usuelle" : "cu_encombrant",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "appareil de chauffage, appareil de cuisson",
+				"conseils" : "",
+				"image" : "chauffage_soufflant_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Baril de lessive",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "paquets de lessives, barils en carton",
+				"conseils" : "",
+				"image" : "baril_lessive_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Barquette aluminium",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_allu",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "barquette pizza, barquette quiche",
+				"conseils" : "",
+				"image" : "barquette_aluminium.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Barquette plastique",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_bouteilleflacon",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Barquette Polystyrène",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_bouteilleflacon",
+				"image" : "polystyrene_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "batteries de voiture",
+				"categorie_usuelle" : "scu_toxiquegarage",
+				"categorie_traitement" : "cat_batterie",
+				"modesdecollecte" : "cat_ddm",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "batterie_voiture_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bidon d'huile moteur vide",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "bidon de métal",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bocal en verre",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verre",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_sansbouchon",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Boîte à oeufs en carton",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "boite_a_oeufs_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Boîte à oeufs en plastique",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "boite_a_oeufs_plastique_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Boîte camembert en bois",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "boite_camembert_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Boîte de conserve",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "conserve",
+				"conseils" : "",
+				"image" : "conserve_ratatouille_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "boite métallique",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "boite_metal_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bombe aérosol",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "aerosol_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bombe de peinture",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "aerosol_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bombe mousse à raser",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "mousse_a_raser_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "bouchon de liège",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "bouchon_liege_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "bouteille d'huile alimentaire",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "grande_bouteille_huile_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bouteille plastique",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "ketchup, vinaigrette",
+				"conseils" : "cons_bouchonamour",
+				"image" : "ketchup_petit.png",
+				"image_secondaire" : "bouteille_vinaigrette_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Bouteille d'huile en verre",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verre",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_bouchonamour",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bouteille de lait",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_bouchonamour",
+				"image" : "bouteille_lait_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bouteille en plastique",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "bouteille de soda",
+				"conseils" : "cons_bouchonamour",
+				"image" : "bouteille_soda_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bouteille produit ménager vide",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_bouchonamour",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Bouteille produit ménager non vide",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_bouchonamour",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "bouteille verre",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verre",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "sans_bouchon_ni_couvercle",
+				"image" : "bouteille_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "bouteilles de sirop",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "bouteille_sirop_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Brique alimentaire",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_ela",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "brique de lait",
+				"conseils" : "bouchon_brique",
+				"image" : "brique_alimentaire_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "branchage",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_vertbois",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "feuillages_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "cagette bois",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "cageot",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "cagette_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : " calendrier",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "calendrier_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Cahier",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "cahier, bloc notes (sans spirale), carnet",
+				"conseils" : "",
+				"image" : "bloc_note_petit.png",
+				"image_secondaire" : "cahier_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Canette de soda",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "cannette.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "capsule de café",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : ";",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "capsule métal ou plastique dosette café",
+				"conseils" : "",
+				"image" : "dosette_cafe_plastique_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "carte postale",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "carte_postale_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Carton (petits ou grands)",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "carton.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "cartouches encres",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "smco_vendeurcartoucheencre, smco_recupsupermarches, mco_decheterie",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "cartouches_imprimantes_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "CD/DVD/K7",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "cassette audio, cassette vidéo",
+				"conseils" : "",
+				"image" : "cd_sansemballage_petit.png",
+				"image_secondaire" : "pochette_cd_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Chaussures usagées",
+				"categorie_usuelle" : "cu_vetementtissu",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "bôte usagée, chaussure en mauvais état",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Chaussure en bon état",
+				"categorie_usuelle" : "cu_vetementtissu",
+				"categorie_traitement" : "cat_vetement",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "bôte en bon état",
+				"conseils" : "",
+				"image" : "chaussures_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "cigarette",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "mégot, cigare",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Classeur",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "classeur_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "colles",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "colle_a_bois_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "congélateurs",
+				"categorie_usuelle" : "cu_encombrant",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "congelateur_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Coton tige",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "cotons_tiges_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Couche bébé",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "couche_bebe_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "couvercle de pot en verre",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_acier",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "couvercle métallique",
+				"conseils" : "",
+				"image" : "couvercle_bocal_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "couverts",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : " couverts, couteau, cuillère, fourchette",
+				"conseils" : "",
+				"image" : "fourchette_petit.png",
+				"image_secondaire" : "couteau_petit.png, cuillere_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Crème en tube",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Déboucheur liquide",
+				"categorie_usuelle" : "scu_toxiquesdb",
+				"categorie_traitement" : "",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "desinfectant_toilette.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Crème et dentifrice (tube)",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "crème en tube, tube de dentifrice",
+				"conseils" : "",
+				"image" : "dentifrice_petit.png",
+				"image_secondaire" : "creme_main_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "déodorant stick",
+				"categorie_usuelle" : "",
+				"categorie_traitement" : "",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "déodorant à bille",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "détachant",
+				"categorie_usuelle" : "scu_toxiquesdb",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "detacheur_universel_vetement_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "diluants",
+				"categorie_usuelle" : "scu_toxiquebrico",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "bouteille_white_spirit_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "eau de Javel",
+				"categorie_usuelle" : "scu_toxiquesdb",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "bouteille_eau_de_javel_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "emballages en carton plat",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "Suremballage carton, cartonnette, boîte de céréales...",
+				"conseils" : "cons_souille",
+				"image" : "cartonette_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "enduits et vernis",
+				"categorie_usuelle" : "scu_toxiquebrico",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "vernis_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Engrais chimiques",
+				"categorie_usuelle" : "scu_toxiquejardin",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Enveloppe",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_fenetre_enveloppe",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Epeluchures / restes de repas",
+				"categorie_usuelle" : "cu_nourriture",
+				"categorie_traitement" : "cat_organique",
+				"modesdecollecte" : "modco_compostage",
+				"concerne_aussi" : "épeluchures, restes de repas, nourriture",
+				"conseils" : "",
+				"image" : "epeluchure_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "équipements audio et vidéo",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "chaine_hifi_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "essence de térébenthine",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "essui-tout (rouleau carton)",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "le rouleau en carton",
+				"conseils" : "",
+				"image" : "essui_tout_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "essui-tout (sauf rouleau carton)",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "sopalin",
+				"conseils" : "cons_souille",
+				"image" : "essui_tout_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Feuillage",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_organiquegros",
+				"modesdecollecte" : "modco_compostage",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "feuille",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "Feuille (imprimée ou non)",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Film plastique",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Films photographiques",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "diapositive, pellicule",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "filtre à huile...",
+				"categorie_usuelle" : "scu_toxiquegarage",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "flacon de produits d'entretien",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "Flacon produit ménager vide, flacon de produits d'entretien",
+				"conseils" : "",
+				"image" : "bouteille_white_spirit_petit.png",
+				"image_secondaire" : "bouteille_pec_citron_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "flacon de savon",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "Flacon en plastique, flacon de savon",
+				"conseils" : "",
+				"image" : "flacon_savon_petit.png",
+				"image_secondaire" : "bouteille_savon_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "fongicides",
+				"categorie_usuelle" : "scu_toxiquejardin",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "fournitures  (hors papier)",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "fournitures de bureau, crayon, stylo, feutre, gomme, agrafeuse, règle, compas, pochette plastique, classeur, trombone, taille-crayon, ciseaux",
+				"conseils" : "",
+				"image" : "crayon_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Gazon",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_organiquegros",
+				"modesdecollecte" : "modco_compostage",
+				"concerne_aussi" : "pelouse, herbe",
+				"conseils" : "",
+				"image" : "pelouse_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Gobelet plastique",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_remplacergobelet, cons_vaissellebiodegradable",
+				"image" : "gobelet_plastique_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Gravat",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_organiquegros",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "gravat_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "grillage",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : " clôture, canisses",
+				"conseils" : "",
+				"image" : "grillage_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "guitare",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "smco_reempdivers",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "guitare_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "herbicides",
+				"categorie_usuelle" : "scu_toxiquejardin",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "désherbant",
+				"conseils" : "",
+				"image" : "desherbant_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Huile de vidange",
+				"categorie_usuelle" : "scu_toxiquegarage",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "insecticides...",
+				"categorie_usuelle" : "scu_toxiquejardin",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "jouets alimentés par électricité",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_emr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "jeu, train électrique",
+				"conseils" : "",
+				"image" : "jeu_enfant_avec_pile_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "jouets non électroniques",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_materiaux",
+				"modesdecollecte" : "smco_reempjouet",
+				"concerne_aussi" : "jeu, peluche, poupée, petite voiture",
+				"conseils" : "",
+				"image" : "petite_voiture_petit.png",
+				"image_secondaire" : "jouet_enfant_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Journaux",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "revue",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Laine",
+				"categorie_usuelle" : "cu_vetementtissu",
+				"categorie_traitement" : "cat_vetement",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Laine de verre",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_mat",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "laine de verre, laine de roche",
+				"conseils" : "",
+				"image" : "laine_roche_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "lampe",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "lampe_chevet_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "laques",
+				"categorie_usuelle" : "scu_toxiquebrico",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "lingette",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "lingette_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "liquide de refroidissement",
+				"categorie_usuelle" : "scu_toxiquegarage",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Litière pour animaux",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Livre",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "livre_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "lunette",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "lunette_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Magazine",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "revue",
+				"conseils" : "",
+				"image" : "magazines_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "mastic de carrosserie",
+				"categorie_usuelle" : "scu_toxiquegarage",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Matelas",
+				"categorie_usuelle" : "cu_vetementtissu",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "matelas_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "médicaments",
+				"categorie_usuelle" : "scu_medicament",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "smco_pharmacie",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "medicaments_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Meuble",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "canape_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Miroir",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verrenonvalovaisselleporcelaine",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_coupant",
+				"image" : "miroir_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Moquette",
+				"categorie_usuelle" : "cu_vetementtissu",
+				"categorie_traitement" : "cu_vetementtissu",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "moquette_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "mort aux rats",
+				"categorie_usuelle" : "scu_toxiqueparasite",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "raticide ",
+				"conseils" : "",
+				"image" : "mortaurat_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "mouchoir",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_souille",
+				"image" : "mouchoirs_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "naphtaline",
+				"categorie_usuelle" : "scu_toxiqueparasite",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "néons",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ampouleneon",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "nettoyants à l’ammoniac",
+				"categorie_usuelle" : "scu_toxiquecuisine",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "nettoyants à sol",
+				"categorie_usuelle" : "scu_toxiquesdb",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Nettoyants cuivre et argenterie",
+				"categorie_usuelle" : "scu_toxiquecuisine",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Objet en terre cuite",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_verrenonvalovaisselleporcelaine",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "ordinateurs portables",
+				"categorie_usuelle" : "cu_encombrant",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "ordi_portable_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "outils de bricolage",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "marteau, tournevis",
+				"conseils" : "",
+				"image" : "tournevis_petit.png",
+				"image_secondaire" : "marteau_2_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "outillage alimenté par électricité",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "outils bricolage ou jardinage",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "cisaille, scies, rateaux, hâches",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "papier",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "prospectus, publicité",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Papier absorbant",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_souille",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Papier aluminium",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_papieralu",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Papier cadeau",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Papier peint",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "papier toilette",
+				"categorie_usuelle" : "cu_papierscartons",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "le rouleau en carton",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Parpaing",
+				"categorie_usuelle" : "cu_encombrant",
+				"categorie_traitement" : "cat_materiaux",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "parpaing_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "peinture antirouille",
+				"categorie_usuelle" : "scu_toxiquegarage",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "peintures",
+				"categorie_usuelle" : "scu_toxiquebrico",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "peinture_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "périphériques informatiques",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "smco_reempinfo",
+				"concerne_aussi" : "Ecran, clavier, souris, imprimante",
+				"conseils" : "",
+				"image" : "clavier_ordinateu_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "petit électroménager",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "chaine_hifi_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "piano",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "smco_reempdivers",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "piles",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "smco_vendeurpile, smco_recupsupermarche, smco_recupmagasinbrico",
+				"concerne_aussi" : "petits accumulateurs",
+				"conseils" : "cons_pilerechargeable",
+				"image" : "pile_45_petit.png",
+				"image_secondaire" : "pile9v_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Planche de bois",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_organiquegros",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "planche_bois_petit.png",
+				"image_secondaire" : "morceaux_de_bois_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Plante",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_organiquegros",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_compostage",
+				"image" : "plante_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "pneu",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "pneu_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Polystyrène",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "barquette de polystyrène",
+				"conseils" : "",
+				"image" : "polystyrene_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Porcelaine",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verrenonvalovaisselleporcelaine",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "vase, ",
+				"conseils" : "",
+				"image" : "vase_petit.png",
+				"image_secondaire" : "theiere_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Pot de crème fraîche",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "pot_creme_fraiche_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Pot de peinture",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "peinture, peinture à huile, peinture à l'eau, peinture, acrylique, peinture glycéro",
+				"conseils" : "",
+				"image" : "peinture_acrylique_petit.png",
+				"image_secondaire" : "pot_peinture_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Pot de yaourt",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "yaourt_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Pot en verre",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verre",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Poterie",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verrenonvalovaisselleporcelaine",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_coupant",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "produits d’entretien",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Produits de beauté",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "cosmétique, rouge à lèvres, maquillage",
+				"conseils" : "",
+				"image" : "rouge_a_levre_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "produits de traitement du bois",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "traitement_de_bois_petit.png",
+				"image_secondaire" : "teinte_a_bois_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Produit phytosanitaire",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "radiographie",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Rasoir jetable",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "rasoir_jetable_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "récurants pour four...",
+				"categorie_usuelle" : "scu_toxiquecuisine",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "récurants pour toilette",
+				"categorie_usuelle" : "scu_toxiquesdb",
+				"categorie_traitement" : "",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "réfrigérateur",
+				"categorie_usuelle" : "cu_encombrant",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "refrigerateur_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "résines",
+				"categorie_usuelle" : "scu_toxiquebrico",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "révélateur et fixateur photo",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Sac en papier",
+				"categorie_usuelle" : "cu_papiercarton",
+				"categorie_traitement" : "cat_papiercarton",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_souille",
+				"image" : "sac_papier_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Sac plastique",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "sac_plastique_pt.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "scooter",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "solvants",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Stylo",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "crayon_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Table à repasser",
+				"categorie_usuelle" : "cu_encombrant",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "table_a_repasser_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Taille d'arbre",
+				"categorie_usuelle" : "cu_vertbois",
+				"categorie_traitement" : "cat_organiquegros",
+				"modesdecollecte" : "modco_compostage",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "téléphonie",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "telephone_fixe_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "téléviseurs",
+				"categorie_usuelle" : "cu_electronique",
+				"categorie_traitement" : "cat_d3e",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "televiseur_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "thermomètre à mercure",
+				"categorie_usuelle" : "cu_toxique",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "trompette",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "smco_reempdivers",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "trottinnette",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "smco_velo",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "",
+				"categorie_usuelle" : "",
+				"categorie_traitement" : "",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "tube fluorescent",
+				"categorie_usuelle" : "scu_toxiquedivers",
+				"categorie_traitement" : "cat_ddm",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "tube fluo",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Tuyau d'arrosage",
+				"categorie_usuelle" : "cu_plastique",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Ustensile de cuisine",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "casseroles, marmites, cocottes, poêles, wok",
+				"conseils" : "",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Vaisselle (carton ou plastique)",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "assiette carton, gobelet, couvert plastique, couteau plastique, fourchette plastique, cuillère plastique",
+				"conseils" : "",
+				"image" : "assiette_carton_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Vaisselle (verre, porcelaine...)",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verrenonvalovaisselleporcelaine",
+				"modesdecollecte" : "",
+				"concerne_aussi" : " assiette, tasse, bol, plat, verre à boire, poterie, porcelaine, faïence, carafe, verre",
+				"conseils" : "cons_coupant",
+				"image" : "assiette_petit.png",
+				"image_secondaire" : "bol_petit.png, tasse_petit.png, plat_en_faience_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Vélo",
+				"categorie_usuelle" : "cu_metal",
+				"categorie_traitement" : "cat_encombrant",
+				"modesdecollecte" : "smco_velo",
+				"concerne_aussi" : "bicyclette, vélo, skateboard",
+				"conseils" : "",
+
+				"image_secondaire" : "skateboard_petit.png"
+			}, {
+				"code" : "",
+				"nom" : "Vêtement usagé",
+				"categorie_usuelle" : "cu_vetementtissu",
+				"categorie_traitement" : "cat_omr",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "Vêtement usagé, Vêtement en mauvais état",
+				"conseils" : "",
+				"image" : "jean_usage_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Vêtement en bon état",
+				"categorie_usuelle" : "cu_vetementtissu",
+				"categorie_traitement" : "cat_vetement",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "chemise_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "Vitre",
+				"categorie_usuelle" : "cu_verrevaisselle",
+				"categorie_traitement" : "cat_verrenonvalovaisselleporcelaine",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "cons_coupant",
+
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "voiture",
+				"categorie_usuelle" : "cu_divers",
+				"categorie_traitement" : "cat_divers",
+				"modesdecollecte" : "smco_vendeurvoiture, smco_casseauto",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "voiture_petit.png",
+				"image_secondaire" : ""
+			}, {
+				"code" : "",
+				"nom" : "",
+				"categorie_usuelle" : "",
+				"categorie_traitement" : "",
+				"modesdecollecte" : "",
+				"concerne_aussi" : "",
+				"conseils" : "",
+				"image" : "chaine_hifi_petit.png",
+				"image_secondaire" : ""
+			}]
 }

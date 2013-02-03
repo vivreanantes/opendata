@@ -13,12 +13,6 @@ Ext.define('VivreANantes.controller.Informations', {
         }
     },
     
-    //called when the Application is launched, remove if not needed
-    launch: function(app) {
-        
-    },
-
-    
     showInformations: function(list, index, element, record) {
         // console.log(record.get('title'));
     	this.getInformations().push({
@@ -27,6 +21,6 @@ Ext.define('VivreANantes.controller.Informations', {
     		html: record.get('description'),
     		scrollable: true,
     		styleHtmlContent: true
-    	})
+    	});
     }
 });
