@@ -39,7 +39,7 @@ Ext.define('VivreANantes.view.information.Informations', {
 					xtype : 'list',
 					store : {
 						autoLoad : true,
-						fields : ['code', 'name', 'description', 'image'],
+						fields : ['code', 'name', 'description_fr', 'image'],
 						// fields: ['title', 'author', 'content'],
 						proxy : {
 							// type : 'jsonp', // JSONP pour infos externe

@@ -17,13 +17,18 @@ Ext.define('VivreANantes.model.Garbage', {
 						{
 							name : 'description',
 							type : 'string',
+							mapping : 'description_fr'
+						},
+						{
+							name : 'concerne_aussi',
+							type : 'string',
 							mapping : 'concerne_aussi'
 						},
 						{
 							name : 'image',
 							type : 'string',
 							/* Utilisé en remplacement de null, mais pas d'une chaîne vide */
-							defaultValue : 'bouteille_cidre.png',
+							defaultValue : 'image_defaut.png',
 							mapping : 'image'
 						},
 						{

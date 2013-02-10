@@ -24224,7 +24224,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 		title : 'Détails',
 		layout : 'vbox',
 
-		tpl : '<div>{nom}</div>',
+		tpl : '<div>{nom}</div>{description}{concerne_aussi}',
 //		items : [
 //				{
 //					id : 'content',
@@ -24279,6 +24279,68 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 
 		});
 
+/**
+ * Conteneur avec un bouton de recherche et la liste des modes de collectes à domicile filtrée par
+ * cette recherche en dessous
+ */
+Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsContainer', {
+			extend : 'Ext.Container',
+			xtype : 'HomeCollectModsContainer',
+			
+			config : {	
+				layout : 'vbox',				
+				items : [ {
+						xtype:'HomeCollectModsForm',
+						height:120,
+						scrollable:false
+				},
+
+						{
+							xtype : 'HomeCollectModsList',
+							scrollable : 'vertical',
+							flex : 1
+					}
+
+				]
+			}
+
+		});
+
+Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
+	extend : 'Ext.Container',
+	xtype : 'HomeCollectModsDetails',
+
+	config : {
+		title : 'Détails',
+		layout : 'vbox',
+		// TODO Afficher SOIT jour collecte bacs bleus, SOIT bac jaune, SOIT trisac
+		tpl : '<div>{denominationCompleteVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte bacs bleus : {joursCollecteBacsBleus}</div><div>Jours de collecte bacs jaunes : {joursCollecteBacsJaunes}</div><div>Jours de collecte TriSac : {joursCollecteTriSac}</div>',
+
+//		items : [
+//				{
+//					id : 'content',
+//					tpl : [ '<div class="top">',
+//							'<div>{nom} |  {description}{imageComplete}</div>',
+//							'</div>' ].join('')
+//				}
+////				
+////				, {
+////					xtype : 'map',
+////					flex : 1,
+////					mapOptions : {
+////						zoomControl : false,
+////						panControl : false,
+////						rotateControl : false,
+////						streetViewControl : false,
+////						mapTypeControl : false,
+////						zoom : 13
+////					}}
+//				 ],
+
+		record : null
+	}
+
+});
 /**
  * Carte de l'application, permettant d'afficher les différents points d'intérét
  * 
@@ -24525,7 +24587,7 @@ Ext.define('VivreANantes.controller.Informations', {
     	this.getInformations().push({
     		xtype: 'panel',
     		title:record.get('name'),
-    		html: record.get('description'),
+    		html: record.get('description_fr'),
     		scrollable: true,
     		styleHtmlContent: true
     	});
@@ -24670,6 +24732,146 @@ Ext.define('VivreANantes.controller.Garbages', {
 					}
 				});
 		store.filter(filterGarbage);
+	}
+
+});
+
+/**
+ * Controleur de la partie Mode de collecte à domicile
+ */
+Ext.define('VivreANantes.controller.HomeCollectMods', {
+	extend : 'Ext.app.Controller',
+
+	config : {
+		refs : {
+			homeCollectModsView : 'HomeCollectModsView',
+			homeCollectModsList : 'HomeCollectModsList',
+			homeCollectModDetail : 'HomeCollectModsDetails',
+			homeCollectModsForm : 'HomeCollectModsForm',
+			homeCollectModsFormText : '#homeCollectModsFormText',
+			homeCollectModsFormSelect : '#homeCollectModsFormSelect'
+		},
+		control : {
+			homeCollectModDetail : {
+				updatedata : 'onUpdateDataDetail'
+			},
+
+			homeCollectModsList : {
+				initialize : 'onInitHomeCollectMods',
+				itemtap : 'showHomeCollectModsDetail'
+
+			},
+
+			homeCollectModsView : {
+				initialize : 'onInitHomeCollectModsView',
+				push : 'onHomeCollectModsViewPush'
+			},
+
+			homeCollectModsFormText : {
+				keyup : 'onHomeCollectModStoreFilter',
+				change : 'onHomeCollectModStoreFilter',
+				clearicontap : 'onHomeCollectModStoreFilter'
+			},
+
+			homeCollectModsFormSelect : {
+				change : 'onHomeCollectModStoreFilter'
+			}
+
+		}
+	},
+
+	// DEBUG
+	onDebug : function() {
+		console.log('DEBUG');
+	},
+	// FIN DEBUG
+
+	onUpdateDataDetail : function(comp, newData, opts) {
+		if (newData) {
+			console.log(this);
+			console.log(this.id);
+		}
+	},
+
+	onInitHomeCollectModsView : function() {
+
+		console.log('onInitHomeCollectModsContainer');
+
+	},
+
+	/**
+	 * A l'initialisation de la fenêtre d'accueil
+	 */
+	onInitHomeCollectMods : function(list) {
+		console.log('onInitHomeCollectMods');
+
+		var homecollectmodStore = Ext.create('VivreANantes.store.HomeCollectModStore', {
+					autoLoad : true,
+					listeners : {
+						'load' : function(store, results, successful) {
+						}
+					}
+				});
+
+		list.setStore(homecollectmodStore);
+		console.log(homecollectmodStore);
+
+	},
+
+	onHomeCollectModsViewPush : function(view, item) {
+
+	},
+
+	showHomeCollectModsDetail : function(list, index, node, record) {
+		console.log('showHomeCollectModsDetail');
+
+		if (record) {
+			if (!this.homeCollectModDetail) {
+				this.homeCollectModDetail = Ext
+						.create('VivreANantes.view.homecollectmods.HomeCollectModsDetails');
+			}
+
+			console.log(record.data);
+
+			console.log(this.homeCollectModDetail);
+			// Bind the record onto the show contact view
+			this.homeCollectModDetail.setData(record.data);
+			//		
+			// Push the show contact view into the navigation view
+			this.getHomeCollectModsView().push(this.homeCollectModDetail);
+		}
+	},
+
+	// Méthodes invoquées par le formulaire
+
+	/**
+	 * Filtre sur les déchets, en fonction de la chaine saisie et de la
+	 * catégorie sélectionnée
+	 */
+	onHomeCollectModStoreFilter : function() {
+
+		var text = this.getHomeCollectModsFormText();
+		var select = this.getHomeCollectModsFormSelect();
+		var store = this.getHomeCollectModsList().getStore();
+
+		store.clearFilter();
+		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
+		// sur la catégorie
+		var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
+					filterFn : function(item) {
+						var escaperegex = Ext.String.escapeRegex;
+						var texttest = new RegExp(escaperegex(text.getValue()),
+								'ig');
+						var categorietest = new RegExp(escaperegex(select
+								.getValue()));
+
+						// TODO remettre nomVoie return (texttest.test(item.data.nomVoie)
+						return (texttest.test(item.data.denominationCompleteVoie)
+								&& (select.getValue() === 'all' || categorietest
+										.test(item.data.typeVoie)));
+					}
+				});
+		store.filter(filterHomeCollectMod);
 	}
 
 });
@@ -38409,38 +38611,42 @@ Ext.define('Ext.tab.Panel', {
  */
 Ext.define('VivreANantes.view.Main', {
 
-	extend : 'Ext.tab.Panel',
-	xtype : 'main',
-	config : {
-		// remplace le tabbar créée automatiquement avec un tab.panel tabBarPosition : 'bottom',
-		tabBar : { docked: 'bottom', layout : { pack: 'center' } },
-		items : [{
-				xclass : 'VivreANantes.view.welcome.Welcome'
-			},
-			{
-				xclass : 'VivreANantes.view.information.Informations'
-				// xtype : 'informations'
-			},
-			{
-				xclass : 'VivreANantes.view.garbages.Garbages',
-				// TODO la mise en valeur par badgetText ne fonctionne pas
-				badgetText : '*'
-			},
-			{
-				xclass : 'VivreANantes.view.geo.MapOSM'
-			},						
-			{
-				xclass : 'VivreANantes.view.game.Guess'
-			}, 
-			{
-				xclass : 'VivreANantes.view.calendar.Calendar'
-			}, 
-			{
-				xclass : 'VivreANantes.view.about.Description'
-			}]
-		}
-	}
-);
+			extend : 'Ext.tab.Panel',
+			xtype : 'main',
+			config : {
+				// remplace le tabbar créée automatiquement avec un tab.panel
+				// tabBarPosition : 'bottom',
+				tabBar : {
+					docked : 'bottom',
+					layout : {
+						pack : 'center'
+					}
+				},
+				items : [{
+							xclass : 'VivreANantes.view.welcome.Welcome'
+						}, {
+							xclass : 'VivreANantes.view.information.Informations'
+							// xtype : 'informations'
+						}, {
+							xclass : 'VivreANantes.view.garbages.Garbages',
+							// FIXME mise en valeur par badgetText ne fonctionne pas
+							badgetText : '*'
+						}, {
+							xclass : 'VivreANantes.view.geo.MapOSM'
+						},  
+							{
+							// Page 'mode de collecte à domicile'
+							xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
+						},
+							{
+							xclass : 'VivreANantes.view.game.Guess'
+						}, {
+							xclass : 'VivreANantes.view.calendar.Calendar'
+						}, {
+							xclass : 'VivreANantes.view.about.Description'
+						}]
+			}
+		});
 
 /**
  * {@link Ext.TitleBar}'s are most commonly used as a docked item within an {@link Ext.Container}.
@@ -39811,6 +40017,23 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 			}
 		});
 /**
+ * Vue des Modes de collecte (page principale)
+ */
+Ext.define('VivreANantes.view.homecollectmods.HomeCollectMods', {
+			extend : 'Ext.navigation.View',
+			xtype : 'HomeCollectModsView',
+
+			config : {
+				autoDestroy : false,
+				iconCls : 'trash',
+				title:'Collecte à domicile',
+				items : [{
+							xtype : 'HomeCollectModsContainer'
+						}
+				]
+			}
+		});
+/**
  * Informations
  * 
  * @author Christian Renoulin
@@ -39851,7 +40074,7 @@ Ext.define('VivreANantes.view.information.Informations', {
 					xtype : 'list',
 					store : {
 						autoLoad : true,
-						fields : ['code', 'name', 'description', 'image'],
+						fields : ['code', 'name', 'description_fr', 'image'],
 						// fields: ['title', 'author', 'content'],
 						proxy : {
 							// type : 'jsonp', // JSONP pour infos externe
@@ -41830,10 +42053,23 @@ Ext.define('VivreANantes.view.garbages.GarbagesList', {
 	config : {
 		iconCls : 'home',
 		title : 'Déchets',
-		itemTpl : '<div><img src="resources/images/{image}" height="80"/> {nom} </div>'
+		// itemTpl : '<div><img src="resources/images/{image}" height="80"/> {nom} </div>'
+		itemTpl : '<div><img src=resources/images/{image} height=80 /><br/>{nom} </div>'
 		// html : 'tempo',
 		// grouped : true,
 		//onItemDisclosure : true
+	}
+	
+});
+Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsList', {
+	extend : 'Ext.List',
+	xtype : 'HomeCollectModsList',
+	config : {
+		iconCls : 'trash',	// icône en forme de poubelle
+		title : 'Modes de collecte à domicile',
+		// TODO regrouper par type de voie
+		// TODO afficher SOIT jour collecte bacs bleus, SOIT bac jaune, SOIT trisac
+		itemTpl : '<div>{denominationCompleteVoie}<br/><i>Collecte Trisac : {joursCollecteTriSac}</i></div>'
 	}
 	
 });
@@ -46069,13 +46305,18 @@ Ext.define('VivreANantes.model.Garbage', {
 						{
 							name : 'description',
 							type : 'string',
+							mapping : 'description_fr'
+						},
+						{
+							name : 'concerne_aussi',
+							type : 'string',
 							mapping : 'concerne_aussi'
 						},
 						{
 							name : 'image',
 							type : 'string',
 							/* Utilisé en remplacement de null, mais pas d'une chaîne vide */
-							defaultValue : 'bouteille_cidre.png',
+							defaultValue : 'image_defaut.png',
 							mapping : 'image'
 						},
 						{
@@ -46094,6 +46335,50 @@ Ext.define('VivreANantes.model.Garbage', {
 							name : 'modeDeCollecte',
 							type : 'string',
 							mapping : 'modesdecollecte'
+						}]
+			}
+
+		});
+Ext.define('VivreANantes.model.HomeCollectMod', {
+			extend : 'Ext.data.Model',
+
+			config : {
+				fields : [ {
+							name : 'modesCollecte',
+							type : 'string',
+							mapping : 'modesCollecte'
+						}, {
+							name : 'denominationCompleteVoie',
+							type : 'string',
+							mapping : 'denominationCompleteVoie'
+						},
+						{
+							name : 'nomVoie',
+							type : 'string',
+							mapping : 'nomVoie'
+						},
+						{
+							name : 'typeVoie',
+							type : 'string',
+							mapping : 'typeVoie'
+						},
+						{
+							name : 'complementInformation',
+							type : 'string',
+							mapping : 'complementInformation'
+						},
+						{
+							name : 'joursCollecteTriSac',
+							type : 'string',
+							mapping : 'joursCollecteTriSac'
+						}, {
+							name : 'joursCollecteBacsBleus',
+							type : 'string',
+							mapping : 'joursCollecteBacsBleus'
+						}, {
+							name : 'joursCollecteBacsJaunes',
+							type : 'string',
+							mapping : 'joursCollecteBacsJaunes'
 						}]
 			}
 
@@ -48343,7 +48628,7 @@ Ext.define('VivreANantes.store.CategorieUsuelleStore', {
 		});
 Ext.define('VivreANantes.store.GarbageStore', {
 			extend : 'Ext.data.Store',			
-			id : 'Garbagestore', 	
+			id : 'garbagestore', 	
 			config :{
 				autoLoad : true,
 				model : 'VivreANantes.model.Garbage',
@@ -48352,7 +48637,23 @@ Ext.define('VivreANantes.store.GarbageStore', {
 					url : 'data/dechets.json',
 					reader : {
 						type : 'json',
-						rootProperty : 'Garbages'
+						rootProperty : 'garbages'
+					}
+				}	
+			}
+		});
+Ext.define('VivreANantes.store.HomeCollectModStore', {
+			extend : 'Ext.data.Store',			
+			id : 'homecollectmodstore', 	
+			config :{
+				autoLoad : true,
+				model : 'VivreANantes.model.HomeCollectMod',
+				proxy : {
+					type : 'ajax',
+					url : 'data/modes_collecte_a_domicile.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'modes_collecte_a_domicile'
 					}
 				}	
 			}
@@ -49911,6 +50212,37 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 
 		});
 /**
+ * Formulaire des Déchets
+ */
+Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
+			extend : 'Ext.form.Panel',
+			requires : ['Ext.field.Text', 'Ext.field.Select'],
+			xtype : 'HomeCollectModsForm',
+			config : {
+				items : [{
+							xtype : 'textfield',
+							name : 'name',
+							label : 'Recherche',
+							id : 'homeCollectModsFormText'
+						}, {
+							xtype : 'selectfield',
+							label : 'Type de voie',
+							id : 'homeCollectModsFormSelect',
+							options : [
+						            {text : 'Tous', value : 'all'},
+						            {text : "Allée", value : "Allée" },
+									{text : "Rue", value : "Rue" },
+									{text : "Ruelle", value : "Ruelle" },
+									{text : "Sentier", value : "Sentier" },
+									{text : "Square", value : "Square" },
+									{text : "Venelle", value : "Venelle" }
+								]
+						}
+				]
+			}
+
+		});
+/**
  * @author Ed Spencer
  * @aside guide stores
  *
@@ -50081,6 +50413,12 @@ Ext
 			'garbages.GarbagesList',
 			'garbages.GarbagesContainer',
 			'garbages.GarbagesForm',
+			// Mode de collecte à domicile
+			'homecollectmods.HomeCollectMods',
+			'homecollectmods.HomeCollectModsContainer',
+			'homecollectmods.HomeCollectModsDetails',
+			'homecollectmods.HomeCollectModsForm',
+			'homecollectmods.HomeCollectModsList',
 			// Jeu
 			'game.Guess',
 			// Informations
@@ -50091,10 +50429,10 @@ Ext
 			'calendar.Calendar'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages'],
+			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods'],
 			
-			models : ['CategorieUsuelle', 'Garbage'],
-			stores : ['CategorieUsuelleStore', 'GarbageStore'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

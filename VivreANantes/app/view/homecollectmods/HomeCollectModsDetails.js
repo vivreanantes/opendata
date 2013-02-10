@@ -1,12 +1,13 @@
-Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
+Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
 	extend : 'Ext.Container',
-	xtype : 'garbagesdetails',
+	xtype : 'HomeCollectModsDetails',
 
 	config : {
 		title : 'Détails',
 		layout : 'vbox',
+		// TODO Afficher SOIT jour collecte bacs bleus, SOIT bac jaune, SOIT trisac
+		tpl : '<div>{denominationCompleteVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte bacs bleus : {joursCollecteBacsBleus}</div><div>Jours de collecte bacs jaunes : {joursCollecteBacsJaunes}</div><div>Jours de collecte TriSac : {joursCollecteTriSac}</div>',
 
-		tpl : '<div>{nom}</div>{description}{concerne_aussi}',
 //		items : [
 //				{
 //					id : 'content',

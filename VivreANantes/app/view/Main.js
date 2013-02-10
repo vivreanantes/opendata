@@ -21,12 +21,16 @@ Ext.define('VivreANantes.view.Main', {
 							// xtype : 'informations'
 						}, {
 							xclass : 'VivreANantes.view.garbages.Garbages',
-							// TODO mise en valeur par badgetText ne fonctionne
-							// pas
+							// FIXME mise en valeur par badgetText ne fonctionne pas
 							badgetText : '*'
 						}, {
 							xclass : 'VivreANantes.view.geo.MapOSM'
-						}, {
+						},  
+							{
+							// Page 'mode de collecte à domicile'
+							xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
+						},
+							{
 							xclass : 'VivreANantes.view.game.Guess'
 						}, {
 							xclass : 'VivreANantes.view.calendar.Calendar'
