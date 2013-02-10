@@ -18,7 +18,7 @@ Ext.define('VivreANantes.controller.Informations', {
     	this.getInformations().push({
     		xtype: 'panel',
     		title:record.get('name'),
-    		html: record.get('description'),
+    		html: record.get('description_fr'),
     		scrollable: true,
     		styleHtmlContent: true
     	});

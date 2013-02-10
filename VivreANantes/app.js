@@ -25,6 +25,12 @@ Ext
 			'garbages.GarbagesList',
 			'garbages.GarbagesContainer',
 			'garbages.GarbagesForm',
+			// Mode de collecte à domicile
+			'homecollectmods.HomeCollectMods',
+			'homecollectmods.HomeCollectModsContainer',
+			'homecollectmods.HomeCollectModsDetails',
+			'homecollectmods.HomeCollectModsForm',
+			'homecollectmods.HomeCollectModsList',
 			// Jeu
 			'game.Guess',
 			// Informations
@@ -35,10 +41,10 @@ Ext
 			'calendar.Calendar'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages'],
+			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods'],
 			
-			models : ['CategorieUsuelle', 'Garbage'],
-			stores : ['CategorieUsuelleStore', 'GarbageStore'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

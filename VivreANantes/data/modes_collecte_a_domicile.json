@@ -1,0 +1,32 @@
+{
+	"modes_collecte_a_domicile" : [{
+				'modesCollecte' : 'modco_sacjaune, modco_sacbleu',
+				'denominationCompleteVoie' : 'Ruelle Aino Aalto',
+				'nomVoie' : 'Aino Aalto',
+				'typeVoie' : 'Ruelle',
+				'complementInformation' : '',
+				'joursCollecteTriSac' : 'mardi, vendredi',
+				'joursCollecteBacsBleus' : '',
+				'joursCollecteBacsJaunes' : ''
+			}, {
+				'modesCollecte' : 'modco_sacjaune, modco_sacbleu',
+				'denominationCompleteVoie' : 'Allée des Abeilles',
+				'nomVoie' : 'Abeilles',
+				'typeVoie' : 'Allée des',
+				'complementInformation' : '',
+				'joursCollecteTriSac' : 'lundi, jeudi',
+				'joursCollecteBacsBleus' : '',
+				'joursCollecteBacsJaunes' : ''
+			}, {
+				'modesCollecte' : 'modco_sacjaune, modco_sacbleu',
+				'denominationCompleteVoie' : 'Rue des Acadiens',
+				'nomVoie' : 'Acadiens',
+				'typeVoie' : 'Rue des',
+				'complementInformation' : '',
+				'joursCollecteTriSac' : 'lundi, jeudi',
+				'joursCollecteBacsBleus' : '',
+				'joursCollecteBacsJaunes' : ''
+			},
+
+	]
+}

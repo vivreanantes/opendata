@@ -1,6 +1,6 @@
-Ext.define('VivreANantes.view.garbages.GarbagesList', {
+Ext.define('VivreANantes.view.UsualCategories.UsualCategoriesList', {
 	extend : 'Ext.List',
-	xtype : 'garbagesList',
+	xtype : 'UsualCategoriesList',
 	config : {
 		iconCls : 'home',
 		title : 'Déchets',

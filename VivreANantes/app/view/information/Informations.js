@@ -32,7 +32,7 @@ Ext.define('VivreANantes.view.information.Informations', {
 					title : 'Informations sur le tri',
 					scrollable : 'true',
 					// FIXME pb sur les images dans Informations.js : les '\' sont remplacés par rien, donc les liens sont faux.
-					itemTpl : '<img src=resources\images\{image} />{name}',
+					itemTpl : '<img src=resources/images/{image} height=80 />{name}',
 					// /i pose un pb
 					// itemTpl : ['<img src=resources\images\{image} />',
 					// '{name}'].join(''),
