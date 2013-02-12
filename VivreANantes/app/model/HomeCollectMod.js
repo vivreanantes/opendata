@@ -4,8 +4,11 @@ Ext.define('VivreANantes.model.HomeCollectMod', {
 			config : {
 				fields : [ {
 							name : 'modesCollecte',
-							type : 'string',
-							mapping : 'modesCollecte'
+							// type : 'string',
+							// mapping : 'modesCollecte',
+						  	convert: function(value, record) {
+								return value.replace(/modco_sac/g, "Sac ").replace(/modco_bac/g, "Bac ");
+                			}
 						}, {
 							name : 'denominationCompleteVoie',
 							type : 'string',
@@ -23,8 +26,14 @@ Ext.define('VivreANantes.model.HomeCollectMod', {
 						},
 						{
 							name : 'complementInformation',
-							type : 'string',
-							mapping : 'complementInformation'
+							convert: function(value, record) {
+								// if not blank
+								if (value.replace(/\s/g,"") != "") {
+									// TODO : mettre à la fin .replace(" )", ")")
+									value = " ("+value+") ";
+								}
+								return value;
+							}
 						},
 						{
 							name : 'joursCollecteTriSac',

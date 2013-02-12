@@ -14,6 +14,7 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			homeCollectModsFormSelect : '#homeCollectModsFormSelect'
 		},
 		control : {
+
 			homeCollectModDetail : {
 				updatedata : 'onUpdateDataDetail'
 			},
@@ -67,7 +68,8 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 	onInitHomeCollectMods : function(list) {
 		console.log('onInitHomeCollectMods');
 
-		var homecollectmodStore = Ext.create('VivreANantes.store.HomeCollectModStore', {
+		var homecollectmodStore = Ext.create(
+				'VivreANantes.store.HomeCollectModStore', {
 					autoLoad : true,
 					listeners : {
 						'load' : function(store, results, successful) {
@@ -98,7 +100,16 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			console.log(this.homeCollectModDetail);
 			// Bind the record onto the show contact view
 			this.homeCollectModDetail.setData(record.data);
-			//		
+
+			/*if (record.data.joursCollecteBacsBleus !== "") {
+				var jour = "{joursCollecteBacsBleus}";
+			} else if (record.data.joursCollecteBacsBleus !== "") {
+				var jour = "{joursCollecteBacsBleus}";
+			} else {
+				var jour = "{joursCollecteTriSac}";
+			}*/
+			// this.homeCollectModDetail.setTpl("<div>{denominationCompleteVoie}{complementVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : " + jour + "</div>");
+			//      
 			// Push the show contact view into the navigation view
 			this.getHomeCollectModsView().push(this.homeCollectModDetail);
 		}
@@ -120,19 +131,37 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
 		// sur la catégorie
 		var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
-					filterFn : function(item) {
-						var escaperegex = Ext.String.escapeRegex;
-						var texttest = new RegExp(escaperegex(text.getValue()),
-								'ig');
-						var categorietest = new RegExp(escaperegex(select
-								.getValue()));
-
-						// TODO remettre nomVoie return (texttest.test(item.data.nomVoie)
-						return (texttest.test(item.data.denominationCompleteVoie)
-								&& (select.getValue() === 'all' || categorietest
-										.test(item.data.typeVoie)));
+			filterFn : function(item) {
+				var escaperegex = Ext.String.escapeRegex;
+				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				var categorietest = new RegExp(escaperegex(select.getValue()));
+				// TODO prévoir de pouvoir mettre "venelle, mail" pour regrouper
+				// les cas peu nombreux et faciliter la lisibilité de la page.
+				if (select.getValue().indexOf(",") !== -1) {
+					var array = select.getValue().split(',');
+					var expression = '';
+					var i = 0;
+					for (a in array) {
+						if (i == 0) {
+							expression = '(' + array[a];
+						} else {
+							expression = expression + '|' + array[a];
+						}
+						i++;
 					}
-				});
+					expression = expression + ')';
+					categorietest = new RegExp(expression);
+					// console.log("expression : " + expression);
+					// console.log("typeVoie : " + item.data.typeVoie);
+					// console.log("res :" +
+					// categorietest.test(item.data.typeVoie));
+				}
+				// TODO on pourrait mettre denominationCompleteVoie
+				return (texttest.test(item.data.nomVoie) && (select
+						.getValue() === 'all' || categorietest
+						.test(item.data.typeVoie)));
+			}
+		});
 		store.filter(filterHomeCollectMod);
 	}
 

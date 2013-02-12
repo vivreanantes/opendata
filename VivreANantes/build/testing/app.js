@@ -24313,8 +24313,10 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
 	config : {
 		title : 'Détails',
 		layout : 'vbox',
-		// TODO Afficher SOIT jour collecte bacs bleus, SOIT bac jaune, SOIT trisac
-		tpl : '<div>{denominationCompleteVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte bacs bleus : {joursCollecteBacsBleus}</div><div>Jours de collecte bacs jaunes : {joursCollecteBacsJaunes}</div><div>Jours de collecte TriSac : {joursCollecteTriSac}</div>',
+		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un seul des trois est valorisé.
+		tpl : '<div>{denominationCompleteVoie}{complementInformation}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac}</div>'+
+		'<BR/><UL>Il existe 3 modes de collecte possible : <LI>"sac bleu et sac jauns" (aussi appelé "Trisac") : ils sont à déposer dans le même bac,</LI><LI>"bac bleu et bac jaune" : le recyclable est à déposer dans le bac jaune, le bleu sert pour les poubelles,</LI><LI>"bac bleu" : il sert ppour la poubelle uniquement. Ce que vous trier doit être emmener au conteneur ou en écopoints/décheteries.<LI></LI></UL>',
+		
 
 //		items : [
 //				{
@@ -24752,6 +24754,7 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			homeCollectModsFormSelect : '#homeCollectModsFormSelect'
 		},
 		control : {
+
 			homeCollectModDetail : {
 				updatedata : 'onUpdateDataDetail'
 			},
@@ -24805,7 +24808,8 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 	onInitHomeCollectMods : function(list) {
 		console.log('onInitHomeCollectMods');
 
-		var homecollectmodStore = Ext.create('VivreANantes.store.HomeCollectModStore', {
+		var homecollectmodStore = Ext.create(
+				'VivreANantes.store.HomeCollectModStore', {
 					autoLoad : true,
 					listeners : {
 						'load' : function(store, results, successful) {
@@ -24836,7 +24840,16 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			console.log(this.homeCollectModDetail);
 			// Bind the record onto the show contact view
 			this.homeCollectModDetail.setData(record.data);
-			//		
+
+			/*if (record.data.joursCollecteBacsBleus !== "") {
+				var jour = "{joursCollecteBacsBleus}";
+			} else if (record.data.joursCollecteBacsBleus !== "") {
+				var jour = "{joursCollecteBacsBleus}";
+			} else {
+				var jour = "{joursCollecteTriSac}";
+			}*/
+			// this.homeCollectModDetail.setTpl("<div>{denominationCompleteVoie}{complementVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : " + jour + "</div>");
+			//      
 			// Push the show contact view into the navigation view
 			this.getHomeCollectModsView().push(this.homeCollectModDetail);
 		}
@@ -24858,19 +24871,37 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
 		// sur la catégorie
 		var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
-					filterFn : function(item) {
-						var escaperegex = Ext.String.escapeRegex;
-						var texttest = new RegExp(escaperegex(text.getValue()),
-								'ig');
-						var categorietest = new RegExp(escaperegex(select
-								.getValue()));
-
-						// TODO remettre nomVoie return (texttest.test(item.data.nomVoie)
-						return (texttest.test(item.data.denominationCompleteVoie)
-								&& (select.getValue() === 'all' || categorietest
-										.test(item.data.typeVoie)));
+			filterFn : function(item) {
+				var escaperegex = Ext.String.escapeRegex;
+				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				var categorietest = new RegExp(escaperegex(select.getValue()));
+				// TODO prévoir de pouvoir mettre "venelle, mail" pour regrouper
+				// les cas peu nombreux et faciliter la lisibilité de la page.
+				if (select.getValue().indexOf(",") !== -1) {
+					var array = select.getValue().split(',');
+					var expression = '';
+					var i = 0;
+					for (a in array) {
+						if (i == 0) {
+							expression = '(' + array[a];
+						} else {
+							expression = expression + '|' + array[a];
+						}
+						i++;
 					}
-				});
+					expression = expression + ')';
+					categorietest = new RegExp(expression);
+					// console.log("expression : " + expression);
+					// console.log("typeVoie : " + item.data.typeVoie);
+					// console.log("res :" +
+					// categorietest.test(item.data.typeVoie));
+				}
+				// TODO on pourrait mettre denominationCompleteVoie
+				return (texttest.test(item.data.nomVoie) && (select
+						.getValue() === 'all' || categorietest
+						.test(item.data.typeVoie)));
+			}
+		});
 		store.filter(filterHomeCollectMod);
 	}
 
@@ -42065,13 +42096,15 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsList', {
 	extend : 'Ext.List',
 	xtype : 'HomeCollectModsList',
 	config : {
-		iconCls : 'trash',	// icône en forme de poubelle
+		iconCls : 'trash', // icône en forme de poubelle
 		title : 'Modes de collecte à domicile',
 		// TODO regrouper par type de voie
-		// TODO afficher SOIT jour collecte bacs bleus, SOIT bac jaune, SOIT trisac
-		itemTpl : '<div>{denominationCompleteVoie}<br/><i>Collecte Trisac : {joursCollecteTriSac}</i></div>'
+		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un seul des trois est valorisé.
+		itemTpl : '<div>{denominationCompleteVoie}{complementInformation}<br/>Collecte "{modesCollecte}" : {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac}</div>'
 	}
+
 	
+
 });
 /**
  * A general sheet class. This renderable container provides base support for orientation-aware transitions for popup or
@@ -46345,8 +46378,11 @@ Ext.define('VivreANantes.model.HomeCollectMod', {
 			config : {
 				fields : [ {
 							name : 'modesCollecte',
-							type : 'string',
-							mapping : 'modesCollecte'
+							// type : 'string',
+							// mapping : 'modesCollecte',
+						  	convert: function(value, record) {
+								return value.replace(/modco_sac/g, "Sac ").replace(/modco_bac/g, "Bac ");
+                			}
 						}, {
 							name : 'denominationCompleteVoie',
 							type : 'string',
@@ -46364,8 +46400,14 @@ Ext.define('VivreANantes.model.HomeCollectMod', {
 						},
 						{
 							name : 'complementInformation',
-							type : 'string',
-							mapping : 'complementInformation'
+							convert: function(value, record) {
+								// if not blank
+								if (value.replace(/\s/g,"") != "") {
+									// TODO : mettre à la fin .replace(" )", ")")
+									value = " ("+value+") ";
+								}
+								return value;
+							}
 						},
 						{
 							name : 'joursCollecteTriSac',
@@ -50215,33 +50257,50 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
  * Formulaire des Déchets
  */
 Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
-			extend : 'Ext.form.Panel',
-			requires : ['Ext.field.Text', 'Ext.field.Select'],
-			xtype : 'HomeCollectModsForm',
-			config : {
-				items : [{
-							xtype : 'textfield',
-							name : 'name',
-							label : 'Recherche',
-							id : 'homeCollectModsFormText'
-						}, {
-							xtype : 'selectfield',
-							label : 'Type de voie',
-							id : 'homeCollectModsFormSelect',
-							options : [
-						            {text : 'Tous', value : 'all'},
-						            {text : "Allée", value : "Allée" },
-									{text : "Rue", value : "Rue" },
-									{text : "Ruelle", value : "Ruelle" },
-									{text : "Sentier", value : "Sentier" },
-									{text : "Square", value : "Square" },
-									{text : "Venelle", value : "Venelle" }
-								]
-						}
-				]
-			}
+	extend : 'Ext.form.Panel',
+	requires : ['Ext.field.Text', 'Ext.field.Select'],
+	xtype : 'HomeCollectModsForm',
+	config : {
+		items : [{
+					xtype : 'textfield',
+					name : 'name',
+					label : 'Recherche',
+					id : 'homeCollectModsFormText'
+				}, {
+					xtype : 'selectfield',
+					label : 'Type de voie',
+					id : 'homeCollectModsFormSelect',
+					options : [{
+								text : 'Tous',
+								value : 'all'
+							}, {
+								text : "Allée",
+								value : "Allée"
+							}, {
+								text : "Avenue",
+								value : "Avenue"
+							}, {
+								text : "Boulevard",
+								value : "Boulevard"
+							}, {
+								text : "Impasse",
+								value : "Impasse"
+							},
+							{
+								text : "Route",
+								value : "Route"
+							}, {
+								text : "Rue/ruelle",
+								value : "Rue,Ruelle"
+							},
+							{
+								text : "Autre (chemin, place, cour...)",
+								value : "Bas Chemin,Chemin,Côte,Cour,Esplanade,Hameau,Mail,Passage,Petit Chemin,Petite Avenue,Petite Rue,Place,Pont,Promenade,Quai,Rond-Point,Sentier,Square,Venelle"
+							}]
+				}]
+	}
 
-		});
+});
 /**
  * @author Ed Spencer
  * @aside guide stores
