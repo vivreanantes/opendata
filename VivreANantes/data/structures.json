@@ -1,0 +1,26 @@
+{
+	"structures" : [{
+				"code" : "sdc_ecopoint",
+				"libelle" : "Ecopoint Nantes Dervallières",
+				"description_fr" : "",
+				"modesCollecte" : "modco_ecopoint",
+				"adresseTemp" : "Quartier Dervallières, Rue Nattier, 44000 Nantes",
+				"numeroTelephone" : "02 40 43 36 69",
+				"plageHoraire" : "",
+				"conseils" : "",
+				"latitude" : "47.21837100000001",
+				"longitude" : "-1.553620999999985"
+			}, {
+				"code" : "sdc_ecopoint",
+				"libelle" : "Ecopoint Nantes-Viarme",
+				"description_fr" : "",
+				"modesCollecte" : "modco_ecopoint",
+				"adresseTemp" : "Quartier Viarme Talensac, Rue du Bourget, 44000 Nantes",
+				"numeroTelephone" : " 02 51 82 31 47",
+				"plageHoraire" : "",
+				"conseils" : "",
+				"latitude" : "47.21436100000001",
+				"longitude" : "-1.553610999999985"
+			}]
+}
+	

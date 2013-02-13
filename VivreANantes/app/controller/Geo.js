@@ -4,11 +4,14 @@
  * <p>
  * Pour information : Classe Carte Wrapper Carte Google Lire :
  * https://developers.google.com/maps/documentation/javascript/reference?hl=fr#ControlPosition
+ * http://leafletjs.com/reference.html#marker
  * </p>
  */
 Ext.define('VivreANantes.controller.Geo', {
 	extend : 'Ext.app.Controller',
+	requires : ['Ext.MessageBox'
 
+	],
 	config : {
 		refs : {
 			vanmap : 'vanmap'
@@ -46,6 +49,7 @@ Ext.define('VivreANantes.controller.Geo', {
 	 */
 	onInitMap : function() {
 		console.log('initMap');
+
 	},
 
 	/**
@@ -62,6 +66,37 @@ Ext.define('VivreANantes.controller.Geo', {
 	 */
 	onCenterChange : function(extmap, map, center, eOpts) {
 		// console.log(center);
+
+	},
+
+	positionnerStructures : function(store, map, cloudmade) {
+		console.log('positionnerStructures');
+
+		// TODO Mettre une vue centrée en dynamique par rapport à l'appareil en
+		// HTML5
+		// http://www.alsacreations.com/tuto/lire/926-geolocalisation-geolocation-html5.html
+		map.addLayer(cloudmade).setView(
+				new L.LatLng(47.21837100000001, -1.553620999999985), 15);
+
+		store.each(function(record) {
+					console.log(record);
+					// var position = new L.LatLng(record.latitude,
+					// record.longitude);
+					//
+					// var marker = new L.Marker(position);
+					//
+					// // map.addLayer(marker);
+					// map.addLayer(marker);
+					// marker.bindPopup(record.libelle).openPopup();
+
+					var position = new L.LatLng(record.get('latitude'),
+					record.get('longitude'));
+					var marker = new L.Marker(position);
+
+					//map.addLayer(cloudmade).setView(position, 15);
+					map.addLayer(marker);
+					marker.bindPopup(record.get('libelle')).openPopup();
+				});
 
 	},
 
@@ -87,13 +122,25 @@ Ext.define('VivreANantes.controller.Geo', {
 					maxZoom : 18
 				});
 
-		// En dur
-		var position = new L.LatLng(47.21837100000001, -1.553620999999985);
-		var marker = new L.Marker(position);
+		var me = this;
+		var structureStore = Ext.create('VivreANantes.store.StructureStore', {
+					autoLoad : true,
+					listeners : {
+						'load' : function(store, results, successful) {
+							console.log("Chargement du structure store");
+							console.log(store);
+							console.log(results);
+							console.log(successful);
 
-		map.addLayer(cloudmade).setView(position, 15);
-		map.addLayer(marker);
-		marker.bindPopup("").openPopup();
+							me.positionnerStructures(structureStore, map,
+									cloudmade);
+
+						}
+					}
+				});
+
+		// En dur
+
 	},
 
 	/**

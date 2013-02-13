@@ -31,6 +31,7 @@ Ext
 			'homecollectmods.HomeCollectModsDetails',
 			'homecollectmods.HomeCollectModsForm',
 			'homecollectmods.HomeCollectModsList',
+			
 			// Jeu
 			'game.Guess',
 			// Informations
@@ -43,8 +44,8 @@ Ext
 
 			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods'],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod'],
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

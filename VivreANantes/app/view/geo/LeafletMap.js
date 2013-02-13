@@ -35,7 +35,8 @@ Ext.define('VivreANantes.view.geo.LeafletMap', {
 					attribution : 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
 					maxZoom : 18
 				});
-
+		// TODO Mettre une vue centrée en dynamique par rapport à l'appareil en HTML5 
+		// http://www.alsacreations.com/tuto/lire/926-geolocalisation-geolocation-html5.html
 		this.map.addLayer(cloudmade).setView(
 				new L.LatLng(47.21837100000001, -1.553620999999985),15);
 
