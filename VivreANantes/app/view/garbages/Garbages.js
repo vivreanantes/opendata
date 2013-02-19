@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'list',
+				iconCls : 'trash',
 				title:'Déchets',
 				items : [{
 							xtype : 'garbagesContainer'
