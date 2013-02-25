@@ -26,6 +26,7 @@ Ext.define('VivreANantes.model.HomeCollectMod', {
 						},
 						{
 							name : 'complementInformation',
+							// convert ajoute transforme 'un commentaire' en ' (un commentaire') OU '' en ''
 							convert: function(value, record) {
 								// if not blank
 								if (value.replace(/\s/g,"") != "") {

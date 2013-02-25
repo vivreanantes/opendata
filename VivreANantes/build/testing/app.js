@@ -24273,6 +24273,19 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 							flex : 1
 							// title : 'Déchets'
 					}
+					
+					// CRN_DEBUT
+					, {
+						xtype : 'advicesList'
+						// hidden : 'true'
+					}, {
+						xtype : 'wasteTreatmentsCategoriesList'
+						// hidden : 'true'
+					}, {
+						xtype : 'collectModList'
+						// hidden : 'true'
+					}
+					//CRN_FIN
 
 				]
 			}
@@ -24484,7 +24497,12 @@ Ext.define('VivreANantes.controller.Garbages', {
 			garbageDetail : 'garbagesdetails',
 			garbagesForm : 'garbagesForm',
 			garbagesFormText : '#garbagesFormText',
-			garbagesFormSelect : '#garbagesFormSelect'
+			garbagesFormSelect : '#garbagesFormSelect',
+			// CRN_DEBUT
+			advicesList : 'advicesList',
+			wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
+			collectModList : 'collectModList'
+			// CRN_FIN
 		},
 		control : {
 			garbageDetail : {
@@ -24511,7 +24529,18 @@ Ext.define('VivreANantes.controller.Garbages', {
 			garbagesFormSelect : {
 				change : 'onGarbageStoreFilter'
 			}
-
+			// CRN_DEBUT
+			,
+			advicesList : {
+				initialize : 'onInitGarbagesAdvices'
+			},
+			wasteTreatmentsCategoriesList : {
+				initialize : 'onInitGarbagesWasteTreatmentsCategoriesList'
+			},
+			collectModList : {
+				initialize : 'onInitGarbagesCollectModList'
+			}
+			// CRN_FIN
 		}
 	},
 
@@ -24540,19 +24569,49 @@ Ext.define('VivreANantes.controller.Garbages', {
 	 * A l'initialisation de la fenêtre d'accueil
 	 */
 	onInitGarbages : function(list) {
+
 		console.log('onInitGarbages');
 
 		var garbageStore = Ext.create('VivreANantes.store.GarbageStore', {
 					autoLoad : true,
 					listeners : {
 						'load' : function(store, results, successful) {
+							console.log('temp');
 						}
 					}
 				});
 
 		list.setStore(garbageStore);
+
 		console.log(garbageStore);
 
+	},
+
+	/**
+	 * A l'initialisation de la fenêtre d'accueil
+	 */
+	onInitGarbagesAdvices : function(list) {
+		console.log('onInitGarbagesAdvices');
+		var store = Ext.create('VivreANantes.store.AdviceStore');
+		list.setStore(store);
+	},
+
+	/**
+	 * A l'initialisation de la fenêtre d'accueil
+	 */
+	onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
+		console.log('onInitGarbagesWasteTreatmentsCategoriesList');
+		var store = Ext.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
+		list.setStore(store);
+	},
+
+	/**
+	 * A l'initialisation de la fenêtre d'accueil
+	 */
+	onInitGarbagesCollectModList : function(list) {
+		console.log('onInitGarbagesCollectModList');
+		var store = Ext.create('VivreANantes.store.CollectModStore');
+		list.setStore(store);
 	},
 
 	onGarbagesViewPush : function(view, item) {
@@ -24571,10 +24630,114 @@ Ext.define('VivreANantes.controller.Garbages', {
 			}
 
 			console.log(record.data);
-
 			console.log(this.garbageDetail);
+
+			// CRN debut
+			var conseilTraduit = "";
+			var conseils = "";
+			var modesDeCollecte = "";
+			var treatmentCategories = "";
+			if (record.data.conseils!=='') {
+				conseils = record.data.conseils+",";
+			}
+			// conseils de catégories de traitement
+			var conseilTraitementsTraduit = "";
+			if (record.data.categorie !== '') {
+				var dataWasteTreatmentsCategories = this.getWasteTreatmentsCategoriesList().getStore().getData();
+				dataWasteTreatmentsCategories.each(function(recordCategories) {
+							if (recordCategories.raw.code === record.data.categorie) {
+								conseils +=  recordCategories.raw.conseils;
+								modesDeCollecte +=  recordCategories.raw.modesCollecte;
+								treatmentCategories += recordCategories.raw.recyclable;
+							}
+						});
+			}
+			var arrayConseils = conseils.split(',');
+			// On parcours les conseils
+			if (arrayConseils.length>0) {
+				var dataAdvices = this.getAdvicesList().getStore().getData();
+				dataAdvices.each(function(recordAdvice) {
+					for (i in arrayConseils) {
+						if (recordAdvice.raw.code === arrayConseils[i]) {
+							conseilTraduit += "<BR/><B>"
+								+ recordAdvice.raw.libelle
+								+ "</B><BR/>"
+								+ recordAdvice.raw.description;
+							if (recordAdvice.raw.fiche !== "") {
+								conseilTraduit += "Plus d'infos : "+
+										"<A HREF='#'>"+ recordAdvice.raw.fiche + "</A>";
+							}
+						}
+					}
+				});
+			}
+			if (conseilTraduit !== "") {
+				conseilTraduit = "<BR/><BR/>"/*Conseils : "*/ + conseilTraduit;
+			}
+			// Modes de collecte
+			var modesDeCollecteTraduit = "";
+			var arrayModesDeCollecte = modesDeCollecte.split(',');
+			// On parcours les modes de collecte
+			if (arrayModesDeCollecte.length>0) {
+				var dataCollectMods = this.getCollectModList().getStore().getData();
+				dataCollectMods.each(function(recordCollectMod) {
+					for (i in arrayModesDeCollecte) {
+						if (recordCollectMod.raw.code === arrayModesDeCollecte[i]) {
+							modesDeCollecteTraduit += "<A HREF='#'>"+recordCollectMod.raw.libelle+"</A>";
+						}
+					}
+				});
+			}
+			if (modesDeCollecteTraduit !== "") {
+				modesDeCollecteTraduit = "<BR/>Modes de collecte : " + modesDeCollecteTraduit;
+			}
+			// Recyclable OUI, NON, NON (mais ne pas mettre à la poubelle)
+			// "AA".replace("A/g", "B");
+			treatmentCategories = treatmentCategories.replace("PAS_POUBELLE/g", "<DIV STYLE='color:red' size='4'>NON</DIV> ne pas mettre à la poubelle.");
+			treatmentCategories = treatmentCategories.replace("OUI/g", "<DIV STYLE='color:green' size='4'>OUI</DIV>");
+			treatmentCategories = treatmentCategories.replace("NON/g", "<DIV STYLE='color:red' size='4'>NON</DIV>");
+			var concerneAussi = "";
+			if (record.data.concerne_aussi !== "") {
+				concerneAussi = "<BR/>Concerne aussi : "
+						+ record.data.concerne_aussi;
+			}
+
+			this.garbageDetail
+					.setTpl("<table border='0'><tr>" +
+							'<td><img src=resources/images/{image} height=120 /></td>' +
+							'<td>'+treatmentCategories+'<br/>'+modesDeCollecteTraduit+'</td>' +
+							"</tr></table>" +
+							'<div>{nom}</div>' +
+							'{description}' +
+							concerneAussi + conseilTraduit);
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);
+			/*
+			 * var me = this; var conseil = record.get('conseils'); var
+			 * adviceStore = Ext.create('VivreANantes.store.AdviceStore', {
+			 * autoLoad : true, listeners : { 'load' : function(store, results,
+			 * successful) { store.each(function(record) { if
+			 * (record.get('code')==='cons_verre') { console.log(record);
+			 * debugger; } }); } } });
+			 */
+
+			// this._application.stores
+			// Ext.getStore("structurestore");
+			/*
+			 * if (record.data.joursCollecteBacsBleus !== "") { var jour =
+			 * "{joursCollecteBacsBleus}"; } else if
+			 * (record.data.joursCollecteBacsBleus !== "") { var jour =
+			 * "{joursCollecteBacsBleus}"; } else { var jour =
+			 * "{joursCollecteTriSac}"; }
+			 */
+			// this.homeCollectModDetail.setTpl("<div>{denominationCompleteVoie}{complementVoie}</div><div>Modes
+			// de collecte : {modesCollecte}</div><div>Jours de collecte : " +
+			// jour + "</div>");
+			// title:record.get('name'),
+			// html: record.get('description_fr'),
+			// scrollable: true,
+			// styleHtmlContent: true
+			// CRN debut
 			//		
 			// Push the show contact view into the navigation view
 			this.getGarbagesView().push(this.garbageDetail);
@@ -24597,18 +24760,15 @@ Ext.define('VivreANantes.controller.Garbages', {
 		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
 		// sur la catégorie
 		var filterGarbage = Ext.create('Ext.util.Filter', {
-					filterFn : function(item) {
-						var escaperegex = Ext.String.escapeRegex;
-						var texttest = new RegExp(escaperegex(text.getValue()),
-								'ig');
-						var categorietest = new RegExp(escaperegex(select
-								.getValue()));
+			filterFn : function(item) {
+				var escaperegex = Ext.String.escapeRegex;
+				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				var categorietest = new RegExp(escaperegex(select.getValue()));
 
-						return (texttest.test(item.data.nom)
-								&& (select.getValue() === 'all' || categorietest
-										.test(item.data.categorieUsuelle)));
-					}
-				});
+				return (texttest.test(item.data.nom) && (select.getValue() === 'all' || categorietest
+						.test(item.data.categorieUsuelle)));
+			}
+		});
 		store.filter(filterGarbage);
 	}
 
@@ -24783,6 +24943,32 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 
 });
 
+Ext.define('VivreANantes.controller.Trisacs', {
+    extend: 'Ext.app.Controller',
+    
+    config: {
+        refs: {
+        	trisacs : 'trisacs'
+        },
+        control: {
+        	// fonctionne comme une CSS selecteur
+            'trisacs list' : {
+            	itemtap : 'showTrisacs'
+            }
+        }
+    },
+    
+    showTrisacs: function(list, index, element, record) {
+        // console.log(record.get('title'));
+    	this.getTrisacs().push({
+    		xtype: 'panel',
+    		title:record.get('libelle'),
+    		html: record.get('description_fr')+"<br/>"+ record.get('adresseTemp')+"<br/>"+"Distribution : "+record.get('plageHoraire')+"<br/>",
+    		scrollable: true,
+    		styleHtmlContent: true
+    	});
+    }
+});
 /**
  * @author Tommy Maintz
  *
@@ -36710,7 +36896,7 @@ Ext.define('VivreANantes.controller.Geo', {
 				new L.LatLng(47.21837100000001, -1.553620999999985), 15);
 
 		store.each(function(record) {
-					console.log(record);
+					// console.log(record);
 					// var position = new L.LatLng(record.latitude,
 					// record.longitude);
 					//
@@ -36758,10 +36944,10 @@ Ext.define('VivreANantes.controller.Geo', {
 					autoLoad : true,
 					listeners : {
 						'load' : function(store, results, successful) {
-							console.log("Chargement du structure store");
-							console.log(store);
-							console.log(results);
-							console.log(successful);
+							// console.log("Chargement du structure store");
+							// console.log(store);
+							// console.log(results);
+							// console.log(successful);
 
 							me.positionnerStructures(structureStore, map,
 									cloudmade);
@@ -39709,26 +39895,33 @@ Ext.define('VivreANantes.view.Main', {
 						pack : 'center'
 					}
 				},
-				items : [{
+				items : [
+						/*{
 							xclass : 'VivreANantes.view.welcome.Welcome'
-						}, {
-							xclass : 'VivreANantes.view.information.Informations'
-							// xtype : 'informations'
-						}, {
+						},*/
+						/*
+							{
+							xclass : 'VivreANantes.view.game.Guess'
+						},*/
+						{
 							xclass : 'VivreANantes.view.garbages.Garbages',
 							// FIXME mise en valeur par badgetText ne fonctionne pas
 							badgetText : '*'
 						}, {
 							xclass : 'VivreANantes.view.geo.MapOSM'
-						},  
-							{
+						}, 
+						 {
+							xclass : 'VivreANantes.view.information.Informations'
+							// xtype : 'informations'
+						},
+						{
 							// Page 'mode de collecte à domicile'
 							xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
-						},
-							{
-							xclass : 'VivreANantes.view.game.Guess'
 						}, {
 							xclass : 'VivreANantes.view.calendar.Calendar'
+						}
+						, {
+							xclass : 'VivreANantes.view.trisac.Trisacs'
 						}, {
 							xclass : 'VivreANantes.view.about.Description'
 						}]
@@ -41095,7 +41288,7 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'list',
+				iconCls : 'trash',
 				title:'Déchets',
 				items : [{
 							xtype : 'garbagesContainer'
@@ -41112,7 +41305,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectMods', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'trash',
+				iconCls : 'mvan_truck',
 				title:'Collecte à domicile',
 				items : [{
 							xtype : 'HomeCollectModsContainer'
@@ -41131,7 +41324,7 @@ Ext.define('VivreANantes.view.information.Informations', {
 
 			config : {
 				// Titre dans barre de bouton principale
-				title : 'Informations',
+				title : 'Apprendre',
 				 // Icone dans la barre de bouton principale
 				iconCls : 'action',
 				items : [
@@ -41178,6 +41371,64 @@ Ext.define('VivreANantes.view.information.Informations', {
 				}]
 
 
+			}
+		});
+/**
+ * Trisacs
+ * 
+ * @author Christian Renoulin
+ */
+Ext.define('VivreANantes.view.trisac.Trisacs', {
+			extend : 'Ext.NavigationView',
+			xtype : 'trisacs',
+
+			config : {
+				// Titre dans barre de bouton principale
+				title : 'Trisacs',
+				 // Icone dans la barre de bouton principale
+				iconCls : 'action',
+				items : [
+						// Remplace title : 'Trisacs',
+						// {
+						// xtype: 'titlebar', // mieux que toolbar
+						// docked:'top',
+						// title:'Trisacs sur le tri',
+						// items:[{
+						// // Par défaut les xtype sont des 'button'
+						// text:'ping',
+						// align:'right'
+						// }, {
+						// text:'clear'
+						// }]
+						// },
+						{
+					cls : 'trisacCss',
+					// FIXME : les titles sont coupés dans Trisacs.js : 'Trisacs sur le tri' devient "'Trisacs sur le...' à l'affichage 
+					title : 'Trisacs sur le tri',
+					scrollable : 'true',
+					// FIXME pb sur les images dans Trisacs.js : les '\' sont remplacés par rien, donc les liens sont faux.
+					itemTpl : '{libelle}',
+					// /i pose un pb
+					// itemTpl : ['<img src=resources\images\{image} />',
+					// '{name}'].join(''),
+					xtype : 'list',
+					store : {
+						autoLoad : true,
+						fields : ['code', 'libelle', 'description_fr', 'adresseTemp', 'plageHoraire'],
+						// fields: ['title', 'author', 'content'],
+						proxy : {
+							// type : 'jsonp', // JSONP pour infos externe
+							// url:
+							// 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://feeds.feedburner.com/SenchaBlog',
+							type : 'ajax',
+							url : 'data/trisacs.json',
+							reader : {
+								type : 'json',
+								rootProperty : 'trisacs'
+							}
+						}
+					}
+				}]
 			}
 		});
 /**
@@ -43145,6 +43396,40 @@ Ext.define('VivreANantes.view.garbages.GarbagesList', {
 		// html : 'tempo',
 		// grouped : true,
 		//onItemDisclosure : true
+	}
+	
+});
+Ext.define('VivreANantes.view.garbages.AdvicesList', {
+	extend : 'Ext.List',
+	xtype : 'advicesList',
+	config : {
+		iconCls : 'home',
+		title : 'Conseils',
+		// itemTpl : '<div><img src="resources/images/{image}" height="80"/> {nom} </div>'
+		itemTpl : '<div>{libelle}</div>'
+		// html : 'tempo',
+		// grouped : true,
+		//onItemDisclosure : true
+	}
+	
+});
+Ext.define('VivreANantes.view.garbages.WasteTreatmentsCategoriesList', {
+	extend : 'Ext.List',
+	xtype : 'wasteTreatmentsCategoriesList',
+	config : {
+		iconCls : 'home',
+		title : 'Catégories de traitements',
+		itemTpl : '<div>{libelle}</div>'
+	}
+	
+});
+Ext.define('VivreANantes.view.garbages.CollectModsList', {
+	extend : 'Ext.List',
+	xtype : 'collectModList',
+	config : {
+		iconCls : 'home',
+		title : 'Modes de collectes',
+		itemTpl : '<div>{libelle}</div>'
 	}
 	
 });
@@ -47288,6 +47573,7 @@ Ext.define('VivreANantes.model.HomeCollectMod', {
 						},
 						{
 							name : 'complementInformation',
+							// convert ajoute transforme 'un commentaire' en ' (un commentaire') OU '' en ''
 							convert: function(value, record) {
 								// if not blank
 								if (value.replace(/\s/g,"") != "") {
@@ -47329,6 +47615,59 @@ Ext.define('VivreANantes.model.Structure', {
 						}, {
 							name : 'longitude',
 							type : 'float'
+						}]
+			}
+		});
+Ext.define('VivreANantes.model.Advice', {
+			extend : 'Ext.data.Model',
+
+			config : {
+				fields : [
+						{
+							name : 'code'
+						}, {
+							name : 'libelle'
+						}, {
+							name : 'description'
+						}, {
+							name : 'fiche'
+						}]
+			}
+
+		});
+Ext.define('VivreANantes.model.WasteTreatmentsCategories', {
+			extend : 'Ext.data.Model',
+			config : {
+				fields : [{
+							name : 'code'
+						}, {
+							name : 'libelle'
+						}, {
+							name : 'description'
+						}, {
+							name : 'modesCollecte'
+						}, {
+							name : 'conseils'
+						}]
+			}
+
+		});
+
+Ext.define('VivreANantes.model.CollectMod', {
+			extend : 'Ext.data.Model',
+			config : {
+				fields : [{
+							name : 'code'
+						}, {
+							name : 'libelle'
+						}, {
+							name : 'estSousModeCollecte'
+						}, {
+							name : 'description'
+						}, {
+							name : 'conseils'
+						}, {
+							name : 'recyclable'
 						}]
 			}
 		});
@@ -49623,6 +49962,54 @@ Ext.define('VivreANantes.store.StructureStore', {
 				}	
 			}
 		});
+Ext.define('VivreANantes.store.AdviceStore', {
+			extend : 'Ext.data.Store',			
+			id : 'advicestore', 	
+			config :{
+				autoLoad : true,
+				model : 'VivreANantes.model.Advice',
+				proxy : {
+					type : 'ajax',
+					url : 'data/conseils.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'conseils'
+					}
+				}	
+			}
+		});
+Ext.define('VivreANantes.store.WasteTreatmentsCategoriesStore', {
+			extend : 'Ext.data.Store',			
+			id : 'wastetraitementscategoriesstore', 	
+			config :{
+				autoLoad : true,
+				model : 'VivreANantes.model.WasteTreatmentsCategories',
+				proxy : {
+					type : 'ajax',
+					url : 'data/categories_traitements.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'categories_traitements'
+					}
+				}	
+			}
+		});
+Ext.define('VivreANantes.store.CollectModStore', {
+			extend : 'Ext.data.Store',			
+			id : 'collectmodstore', 	
+			config :{
+				autoLoad : true,
+				model : 'VivreANantes.model.CollectMod',
+				proxy : {
+					type : 'ajax',
+					url : 'data/modes_collecte.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'modes_collecte'
+					}
+				}	
+			}
+		});
 /**
  * @private
  *
@@ -51393,6 +51780,11 @@ Ext
 			'garbages.Garbages',
 			'garbages.GarbagesDetails',
 			'garbages.GarbagesList',
+			// CRN_DEBUT
+			'garbages.AdvicesList',
+			'garbages.WasteTreatmentsCategoriesList',
+			'garbages.CollectModsList',
+			// CRN_FIN
 			'garbages.GarbagesContainer',
 			'garbages.GarbagesForm',
 			// Mode de collecte à domicile
@@ -51401,7 +51793,6 @@ Ext
 			'homecollectmods.HomeCollectModsDetails',
 			'homecollectmods.HomeCollectModsForm',
 			'homecollectmods.HomeCollectModsList',
-			
 			// Jeu
 			'game.Guess',
 			// Informations
@@ -51409,13 +51800,15 @@ Ext
 			// A propos
 			'about.Description',
 			// Calendrier
-			'calendar.Calendar'
+			'calendar.Calendar',
+			// Trisac
+			'trisac.Trisacs'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods'],
+			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods', 'Trisacs'],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure'],
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'WasteTreatmentsCategories', 'CollectMod'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

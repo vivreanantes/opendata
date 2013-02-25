@@ -23,6 +23,11 @@ Ext
 			'garbages.Garbages',
 			'garbages.GarbagesDetails',
 			'garbages.GarbagesList',
+			// CRN_DEBUT
+			'garbages.AdvicesList',
+			'garbages.WasteTreatmentsCategoriesList',
+			'garbages.CollectModsList',
+			// CRN_FIN
 			'garbages.GarbagesContainer',
 			'garbages.GarbagesForm',
 			// Mode de collecte à domicile
@@ -31,7 +36,6 @@ Ext
 			'homecollectmods.HomeCollectModsDetails',
 			'homecollectmods.HomeCollectModsForm',
 			'homecollectmods.HomeCollectModsList',
-			
 			// Jeu
 			'game.Guess',
 			// Informations
@@ -39,13 +43,15 @@ Ext
 			// A propos
 			'about.Description',
 			// Calendrier
-			'calendar.Calendar'
+			'calendar.Calendar',
+			// Trisac
+			'trisac.Trisacs'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods'],
+			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods', 'Trisacs'],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure'],
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'WasteTreatmentsCategories', 'CollectMod'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

@@ -1,0 +1,219 @@
+{
+	'conseils' : [{
+		"code" : "cons_collectes_bacs",
+		"libelle" : "bac jaune, bac bleu",
+		"description" : "<p >Depuis le lundi 2 janvier 2012, la collecte du bac jaune est devenue hebdomadaire. En revanche, un seul passage par semaine est assuré pour la collecte du bac bleu.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_bac_casse",
+		"libelle" : "Bac cassé",
+		"description" : "<p >Un bac de ramassage cassé ou détérioré peut-être remplacé. Il suffit de contacter ALLO PROPRETE au 0 800 344 000. Un Rendez-vous sera fixé pour le remplacement ou la réparation de votre bac (service gratuit). En cas de vol de votre bac, vous devez faire une déclaration auprès de votre commissariat de police et présenter le récépissé de dépôt de plainte à Allo Propreté.Le bac sera remplacé gratuitement.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_uniquement_bouteille_flacon",
+		"libelle" : "Plastique : uniquement bouteilles et flacons",
+		"description" : "<p >Pour des raisons économiques et environnementales, on ne recycle que les bouteilles et les flacons plastiques, préférant pour les autres emballages plastiques la valorisation énergétique. </p>",
+		"fiche" : "fiche_pet",
+		"" : ""
+	}, {
+		"code" : "cons_noeudtrisac",
+		"libelle" : "Fermer par un double noeud.",
+		"description" : "",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_trisac",
+		"libelle" : "Trisac",
+		"description" : "<p >Les sacs Tri'sac sont bleus pour les déchets non recyclables (ordures ménagères) et jaunes pour les déchets recyclables (emballages carton, bouteilles plastiques, papier)</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_passacpoubelle",
+		"libelle" : "Utiliser uniquement les sacs Trisac.",
+		"description" : "<p >N'utilisez pas d'autres types de sacs poubelles</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_acier",
+		"libelle" : "Temps disparition de l'acier",
+		"description" : "<p >Abandonnée à l’air libre, une boîte en acier mettrait de 5 à 10 ans à disparaître...</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_ferraille",
+		"libelle" : "Acier français provient à 47% du recyclage",
+		"description" : "<p >47 % de l'acier français correspond à la filière « ferrailles » qui utilise exclusivement des ferrailles comme matières premières secondaires. Ces ferrailles sont notamment composées d’emballages ménagers triés par l’habitant.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_arcencielvalorena",
+		"libelle" : "2 sites d'incinération",
+		"description" : "<p >Les ordures ménagères sont incinérées à l'usine d'Arc en Ciel à Couëron et Valoréna à Nantes. Une partie de l'énergie récupérée permet d'alimenter un réseau de chauffage urbain.",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_nbconteneurverre",
+		"libelle" : "Nombre de conteneurs en verre",
+		"description" : "<p >Généralement groupés avec des conteneurs à carton et à plastique, les conteneurs verres sont au nombre de 879 sur le territoire de la communauté urbaine, soit 1 conteneur pour 625 habitants.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_encombrantpavillon",
+		"libelle" : "Collecte des encombrants pour les pavillons",
+		"description" : "<p >logement pavillonnaire : le ramassage des encombrants se fait sur RDV, contactez le 0800 344 000 ( 'Allo Propreté' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe)</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_encombranttour",
+		"libelle" : "Collecte des encombrants pour les logements 'verticaux'",
+		"description" : "<p >logement vertical : les gros déchets de mobilier, la literie, les déchets des équipements électriques et électroniques (réfrigérateur, appareil des cuisson, télé…) sont collectés sur rendez-vous. Pour en savoir plus contactez 0800 344 000 ( 'Allo Propreté' de 8h à 17h du lundi au samedi, appel gratuit depuis un téléphone fixe)</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_bouchonamour",
+		"libelle" : "Bouchon d'amour",
+		"description" : "<p >BOUCHON D'AMOUR : Récupération de bouchons plastiques</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_allu",
+		"libelle" : "L’aluminium se recycle à 100% ! ",
+		"description" : "<p >Récupéré par la collecte sélective, ou extrait des mâchefers d’incinération, il peut être recyclé à l’infini sans perdre ses caractéristiques physiques. </p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "sans_bouchon_ni_couvercle",
+		"libelle" : "Pas de bouchon",
+		"description" : "<p >Ne pas mettre de bouchon ni de couvercle</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_remplacergobelet",
+		"libelle" : "Supprimer les gobelets",
+		"description" : "<p >Verre, tasse, et gobelet en plastique dur.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_vaissellebiodegradable",
+		"libelle" : "Vaisselle bio-dégradable",
+		"description" : "<p >A base de fibre de canne à sucre, la vaiselle bio-dégradable.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_pilerechargeable",
+		"libelle" : "Pile rechargeable",
+		"description" : "<p >Selon une étude réalisée en 2007 par Bio Intelligence Service, les piles rechargeables ont jusqu’à 32 fois moins d’impact sur l’environnement que les piles jetables.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_compostage",
+		"libelle" : "Compostage",
+		"description" : "",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_souille",
+		"libelle" : "Papiers souillés",
+		"description" : "<p >Les papiers sales (tachés de nourriture...) sont considérés comme souillés et ne peuvent être recyclés.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_d3edecheterie",
+		"libelle" : "Apport déchets électriques en déchetterie",
+		"description" : "<p >En dernier ressort, apportez-le dans nos déchèteries, elles sont équipées pour le recevoir grâce au partenariat que Nantes Métropole a signé avec l’éco-organisme Eco-systèmes.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_ecoparticipation",
+		"libelle" : "Eco-participation",
+		"description" : "<p >L'éco-participation (ou éco-contribution) est un coût ajouté au prix de vente des appareils électriques ou électroniques, qui doit compenser le coût de la collecte et du traitement des déchets électriques et électroniques et est entièrement reversée aux organismes réalisant ces tâches (Eco-systèmes, Ecologic, ERP, et Récylum).<br/>Source : Wikipédia</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_deuxiemevie",
+		"libelle" : "Deuxième vie",
+		"description" : "<p >Votre appareil est en bon état. Même en panne, donnez-le à une association spécialisée.<br/>En savoir plus : <a href='www.deuxieme-vie.org' >www.deuxieme-vie.org</a> </p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_bouteilleflacon",
+		"libelle" : "Recyclage du plastique : uniquement bouteilles et flacons",
+		"description" : "<p >En plastique, on ne recycle que les bouteilles et les flacons vides.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_papieralu",
+		"libelle" : "Aluminium non recyclé",
+		"description" : "<p >Les petites canettes métalliques, les canettes écrasées, les feuilles d’aluminium froissées, emballages de type Nespresso, etc. sont rejetées par le processus de tri du fait de leur taille.<br/>Source Wikipédia</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_coupant",
+		"libelle" : "Coupant",
+		"description" : "<p >Certains déchets non valorisables (vaisselle, faïence, miroir) ne peuvent être mis dans les sacs poubelles car ils déchireraient les sacs, ou seraient dangereux à manipuler.",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_ampoulemercure",
+		"libelle" : "Mercure",
+		"description" : "<p >Toxique car contiennent un peu de mercure.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_sansbouchon",
+		"libelle" : "Sans bouchon, ni couvercle",
+		"description" : "<p >Sans bouchon, ni couvercle</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_recuppdv",
+		"libelle" : "Récupération dans les points de vente",
+		"description" : "<p >Pour certains appareils vous pouvez échanger l'ancien contre le nouveau (voiture, appareil électro-ménager...). De même les supermarchés, magasins de bricolage reprennent certains biens usagers (ampoule basse consommation...)</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_verre",
+		"libelle" : "Recyclage du verre",
+		"description" : "<p >Seul le 'verre d'emballage' (bouteille, bocaux) peut être recyclé (on peut l'intégrer au calcin utilisé dans les fours verriers)</p>",
+		"fiche" : "fiche_verre",
+		"" : ""
+	}, {
+		"code" : "cons_recupmedicament",
+		"libelle" : "Récupération des médicaments",
+		"description" : "<p >Les pharmacies ont l'obligation de récupérer les anciens médicaments, avec ou sans conditionnement.</p>",
+		"fiche" : "fiche_medicament",
+		"" : ""
+	}, {
+		"code" : "cons_fenetre_enveloppe",
+		"libelle" : "Suppression fenêtre",
+		"description" : "<p >supprimer la fenêtre en plastique ?</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_tetrapak",
+		"libelle" : "Recyclage Tétrapak",
+		"description" : "<p >Les Tétra Pak se recyclent : le carton est récupéré, le reste est très rarement récupéré. Préféré les emballages en verre.</p>",
+		"fiche" : "fiche_tetrapak",
+		"" : ""
+	}, {
+		"code" : "cons_ecotox",
+		"libelle" : "Que dépose t'on à Ecotox ?",
+		"description" : "<ul ><li>Déchets toxiques de la salle de bain : déboucheur liquide, détachant, eau de Javel, nettoyants à sol, récurant pour toilette, thermomètres à mercure</li><li>Déchets toxiques du jardinage : engrais chimiques, herbicides, fongicides, insecticides</li><li>Déchets toxiques de la cuisine : nettoyants cuivre et argenterie, nettoyants à l’ammoniac, récurans pour four</li><li>Déchets toxiques du garage : antigel, liquide de refroidissement, mastic de carrosserie, peinture antirouille, huile minérale, filtre à huile</li><li>Déchets toxiques du bricolage : colles: produits de traitement du bois, enduits et vernis, peintures huile et eau, laques, résines, diluants, solvants</li><li>Déchets toxiques contre les 'parasites' : anti-fourmis, insecticides, naphtaline, mort aux rats,</li><li>Déchets toxiques divers : acides, bases, petits accumulateurs, piles, essence de térébenthine, radiographie, révélateur et fixateur photo, néons, lampes à économie d’énergie, tubes fluo</li></ul><p >Attention : Les déchets ménagers d’origine médicale (seringues notamment) ne sont pas collectés par ce service.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_allopropreté",
+		"libelle" : "Des questions ? 0800 344 000",
+		"description" : "<p >Numéro gratuit. 8h à 17h du lundi au samedi</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_dechet_orvault",
+		"libelle" : "Décheterie Orvault",
+		"description" : "<p >Les artisans de sont pas autorisés (une barre à 2m de haut empêche l'accès aux camions).</p>",
+		"fiche" : "",
+		"" : ""
+	}]
+}

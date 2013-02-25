@@ -1,5 +1,5 @@
 {
-	"garbages" : [{
+	"garbages" : [/*{
 				"code" : "",
 				"nom" : "acides",
 				"categorie_usuelle" : "scu_toxiquedivers",
@@ -10,15 +10,15 @@
 				"conseils" : "",
 
 				"image_secondaire" : ""
-			}, {
+			}, */{
 				"code" : "",
 				"nom" : "aérosols",
 				"categorie_usuelle" : "scu_toxiquedivers",
 				"categorie_traitement" : "cat_ddm",
 				"modesdecollecte" : "",
 				"description_fr" : "",
-				"concerne_aussi" : "",
-				"conseils" : "",
+				"concerne_aussi" : "Bombe aérosol",
+				"conseils" : "cons_collectes_bacs",
 				"image" : "aerosol_petit.png",
 				"image_secondaire" : ""
 			}, {

@@ -21,6 +21,19 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 							flex : 1
 							// title : 'Déchets'
 					}
+					
+					// CRN_DEBUT
+					, {
+						xtype : 'advicesList'
+						// hidden : 'true'
+					}, {
+						xtype : 'wasteTreatmentsCategoriesList'
+						// hidden : 'true'
+					}, {
+						xtype : 'collectModList'
+						// hidden : 'true'
+					}
+					//CRN_FIN
 
 				]
 			}
