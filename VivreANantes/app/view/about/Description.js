@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.about.Description', {
 
 	config : {
 		title : 'A propos',
-		iconCls : 'team',
+		iconCls : 'info',
 		styleHtmlContent : 'true',
 		html : [
 				'<img src=\'resources/images/conteneur_verre.png\' width=150 />',

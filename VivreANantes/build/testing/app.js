@@ -24257,35 +24257,117 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 			extend : 'Ext.Container',
 			xtype : 'garbagesContainer',
-			
-			config : {	
-				layout : 'vbox',				
-				items : [ {
-						xtype:'garbagesForm',
-						height:120,
-						scrollable:false
-				},
+
+			config : {
+				layout : 'vbox',
+				items : [{
+							xtype : 'garbagesForm',
+							height : 120,
+							scrollable : false
+						},
 
 						{
-							xtype : 'garbagesList',
+							// xtype : 'garbagesList',
+							xtype : 'usualCategoriesList',
 							scrollable : 'vertical',
-								
 							flex : 1
 							// title : 'Déchets'
 					}
-					
-					// CRN_DEBUT
-					, {
-						xtype : 'advicesList'
-						// hidden : 'true'
-					}, {
-						xtype : 'wasteTreatmentsCategoriesList'
-						// hidden : 'true'
-					}, {
-						xtype : 'collectModList'
-						// hidden : 'true'
+
+						// CRN_DEBUT
+						, {
+							xtype : 'advicesList'
+							// hidden : 'true'
+					}	, {
+							xtype : 'faqList'
+							// hidden : 'true'
+					}	, {
+							xtype : 'wasteTreatmentsCategoriesList'
+							// hidden : 'true'
+					}	, {
+							xtype : 'collectModList'
+							// hidden : 'true'
 					}
-					//CRN_FIN
+				// CRN_FIN
+
+				]
+			}
+
+		});
+
+Ext.define('VivreANantes.view.garbages.UsualCategoriesList', {
+			extend : 'Ext.Container',
+			xtype : 'usualCategoriesList',
+			config : {
+				layout : 'vbox',
+				defaults : {
+					xtype : 'container',
+					layout : {
+						type : 'hbox',
+						align : 'middle'
+					},
+					defaults : {
+						xtype : 'button',
+						margin : 10
+					}
+				},
+				items : [{
+							items : [{
+								text: 'Plastique'
+										  // xtype: 'button',
+										  // html:'<img src="resources" >Plastique',
+        								// text: 'Plastique',
+										// badgeText : 'Tous les plastiques'
+									}, {
+										text : 'Papiers-cartons'
+									}, {
+										text : 'Métal'
+									}, {
+										text : 'Déchets verts / bois'
+									}, {
+										text : 'Vaisselle / Pots'
+									}, {
+										text : 'Vêtements / tissu'
+									}, {
+										text : 'Encombrants'
+									}, {
+										text : 'Toxique'
+									}, {
+										text : 'Divers'
+									}, {
+										text : 'Nourriture'
+									}, {
+										text : 'Electronique'
+									}]
+						}, {
+							xtype : 'garbagesList',
+							scrollable : 'vertical',
+							flex : 1
+							// title : 'Déchets'
+					}]
+			}
+
+		});
+/**
+ * Conteneur avec un bouton de recherche et la liste des déchets filtrés par
+ * cette recherche en dessous
+ */
+Ext.define('VivreANantes.view.faq.FaqContainer', {
+			extend : 'Ext.Container',
+			xtype : 'faqContainer_xtype',
+
+			config : {
+				layout : 'vbox',
+				items : [{
+							xtype : 'faqForm_xtype',
+							height : 300,
+							scrollable : false
+						},
+						{
+							xtype : 'faqList',
+							scrollable : 'vertical',
+							flex : 1
+					}
 
 				]
 			}
@@ -24327,7 +24409,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
 		title : 'Détails',
 		layout : 'vbox',
 		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un seul des trois est valorisé.
-		tpl : '<div>{denominationCompleteVoie}{complementInformation}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac}</div>'+
+		tpl : '<div>{denominationCompleteVoie}{complementInformation}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : Bleu {joursCollecteBacsBleus} / Jaune {joursCollecteBacsJaunes}</div>'+
 		'<BR/><UL>Il existe 3 modes de collecte possible : <LI>"sac bleu et sac jaune" (aussi appelé "Trisac") : ils sont à déposer dans le même bac,</LI><LI>"bac bleu et bac jaune" : le recyclable est à déposer dans le bac jaune, le bleu sert pour les poubelles,</LI><LI>"bac bleu" : il sert ppour la poubelle uniquement. Ce que vous trier doit être emmené au conteneur ou en écopoints/décheteries.<LI></LI></UL>',
 		
 
@@ -24378,7 +24460,7 @@ Ext.define('VivreANantes.view.about.Description', {
 
 	config : {
 		title : 'A propos',
-		iconCls : 'team',
+		iconCls : 'info',
 		styleHtmlContent : 'true',
 		html : [
 				'<img src=\'resources/images/conteneur_verre.png\' width=150 />',
@@ -24405,8 +24487,75 @@ Ext.define('VivreANantes.view.calendar.Calendar' ,{
 	config : {
 		title:'Calendrier',
 		iconCls : 'time',
-		html : '<br/><p>Calendrier</p>'		
+		html : '<br/><p>Calendrier</p>'
 	}
+});
+
+
+/**
+Ext.define('VivreANantes.view.calendar.Calendar', {
+			extend : 'Ext.NavigationView',
+			xtype : 'calendar',
+			config : {
+				title : 'Calendrier',
+				iconCls : 'time',
+				scrollable : true,
+				itemTpl : 'ggg {libelle} {plagesHoraires}',
+				xtype : 'list',
+				store : {
+					autoLoad : true,
+					fields : ['libelle', 'horaires', 'plagesHoraires'],
+					proxy : {
+						type : 'ajax',
+						url : 'data/plages_horaires.json',
+						reader : {
+							type : 'json',
+							rootProperty : 'plages_horaires'
+						}
+					}
+				}
+			}
+		});
+*/
+/**
+ * Conteneur avec un bouton de recherche et la liste des modes de collectes à domicile filtrée par
+ * cette recherche en dessous
+ */
+Ext.define('VivreANantes.view.trisac.TrisacContainer', {
+			extend : 'Ext.Container',
+			xtype : 'TrisacContainer',
+			
+			config : {	
+				layout : 'vbox',				
+				items : [ {
+						xtype:'TrisacForm',
+						height:120,
+						scrollable:false
+				},
+
+						{
+							xtype : 'TrisacList',
+							scrollable : 'vertical',
+							flex : 1
+					}
+
+				]
+			}
+
+		});
+
+Ext.define('VivreANantes.view.trisac.TrisacDetails', {
+	extend : 'Ext.Container',
+	xtype : 'TrisacDetails',
+
+	config : {
+		title : 'Détails',
+		layout : 'vbox',
+		tpl : '',
+		
+		record : null
+	}
+
 });
 /**
  * Controleur de la partie Accueil de l'application
@@ -24499,7 +24648,9 @@ Ext.define('VivreANantes.controller.Garbages', {
 			garbagesFormText : '#garbagesFormText',
 			garbagesFormSelect : '#garbagesFormSelect',
 			// CRN_DEBUT
+			usualCategoriesList : 'usualCategoriesList',
 			advicesList : 'advicesList',
+			faqList : 'faqList',
 			wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
 			collectModList : 'collectModList'
 			// CRN_FIN
@@ -24534,6 +24685,9 @@ Ext.define('VivreANantes.controller.Garbages', {
 			advicesList : {
 				initialize : 'onInitGarbagesAdvices'
 			},
+			faqList : {
+				initialize : 'onInitFaq'
+			},
 			wasteTreatmentsCategoriesList : {
 				initialize : 'onInitGarbagesWasteTreatmentsCategoriesList'
 			},
@@ -24549,6 +24703,75 @@ Ext.define('VivreANantes.controller.Garbages', {
 		console.log('DEBUG');
 	},
 	// FIN DEBUG
+
+	// CRN_DEBUT
+
+	getArrayFromString : function(string) {
+		string = string.replace(", /g", ",").replace(" ,/g", ",");
+		return string.split(',');
+	},
+
+	getAdviceString : function(conseils) {
+		var conseilTraduit = "";
+		// var arrayConseils = conseils.split(',');
+		// TODO utiliser getArrayFromString à la place
+		var arrayConseils = conseils.replace(", /g", ",").replace(" ,/g", ",").split(',');
+		// On parcours les conseils
+		if (arrayConseils.length > 0) {
+			var dataAdvices = this.getAdvicesList().getStore().getData();
+			dataAdvices.each(function(recordAdvice) {
+						for (i in arrayConseils) {
+							if (recordAdvice.raw.code === arrayConseils[i]) {
+								conseilTraduit += "<BR/><B>"
+										+ recordAdvice.raw.libelle
+										+ "</B><BR/>"
+										+ recordAdvice.raw.description;
+								if (recordAdvice.raw.fiche !== "") {
+									conseilTraduit += "Plus d'infos : "
+											+ "<A HREF='#'>"
+											+ recordAdvice.raw.fiche + "</A>";
+								}
+							}
+						}
+					});
+		}
+		if (conseilTraduit !== "") {
+			conseilTraduit = "<BR/><BR/>"/* Conseils : " */+ conseilTraduit;
+		}
+		return conseilTraduit;
+	},
+
+	/**
+	 * Renvoie une chaine de caractère correspond aux commentaires sur un
+	 * élément de l'application
+	 * 
+	 * @param {}
+	 *            code
+	 * @return {}
+	 */
+	getFaqString : function(code) {
+		var faqTraduit = "";
+		// On parcours les remarques de la faq
+		var dataFaq = this.getFaqList().getStore().getData();
+		dataFaq.each(function(recordFaq) {
+			// TODO utiliser getArrayFromString à la place
+					var arrayElementsFaq = recordFaq.raw.elements.replace(", /g", ",").replace(" ,/g", ",").split(',');
+					for (i in arrayElementsFaq) {
+						if (arrayElementsFaq[i] === code) {
+							faqTraduit += "<BR/><A HREF=faq>FAQ</A> : <B>" + recordFaq.raw.libelle
+									+ "</B><BR/>"
+									+ recordFaq.raw.description_fr;
+
+						}
+
+					}
+				});
+		/*if (faqTraduit !== "") {
+			faqTraduit = "<BR/><BR/>Commentaires (extraits FAQ) : " + faqTraduit;
+		}*/
+		return faqTraduit;
+	},
+	// CRN_FIN
 
 	onUpdateDataDetail : function(comp, newData, opts) {
 		if (newData) {
@@ -24596,12 +24819,19 @@ Ext.define('VivreANantes.controller.Garbages', {
 		list.setStore(store);
 	},
 
+	onInitFaq : function(list) {
+		console.log('onInitFaq');
+		var store = Ext.create('VivreANantes.store.FaqStore');
+		list.setStore(store);
+	},
+
 	/**
 	 * A l'initialisation de la fenêtre d'accueil
 	 */
 	onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
 		console.log('onInitGarbagesWasteTreatmentsCategoriesList');
-		var store = Ext.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
+		var store = Ext
+				.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
 		list.setStore(store);
 	},
 
@@ -24636,66 +24866,62 @@ Ext.define('VivreANantes.controller.Garbages', {
 			var conseilTraduit = "";
 			var conseils = "";
 			var modesDeCollecte = "";
-			var treatmentCategories = "";
-			if (record.data.conseils!=='') {
-				conseils = record.data.conseils+",";
+			var treatmentCategories = "Recyclable : ";
+			if (record.data.conseils !== '') {
+				conseils = record.data.conseils + ",";
 			}
 			// conseils de catégories de traitement
 			var conseilTraitementsTraduit = "";
 			if (record.data.categorie !== '') {
-				var dataWasteTreatmentsCategories = this.getWasteTreatmentsCategoriesList().getStore().getData();
+				var dataWasteTreatmentsCategories = this
+						.getWasteTreatmentsCategoriesList().getStore()
+						.getData();
 				dataWasteTreatmentsCategories.each(function(recordCategories) {
 							if (recordCategories.raw.code === record.data.categorie) {
-								conseils +=  recordCategories.raw.conseils;
-								modesDeCollecte +=  recordCategories.raw.modesCollecte;
+								conseils += recordCategories.raw.conseils;
+								modesDeCollecte += recordCategories.raw.modesCollecte;
 								treatmentCategories += recordCategories.raw.recyclable;
 							}
 						});
 			}
-			var arrayConseils = conseils.split(',');
-			// On parcours les conseils
-			if (arrayConseils.length>0) {
-				var dataAdvices = this.getAdvicesList().getStore().getData();
-				dataAdvices.each(function(recordAdvice) {
-					for (i in arrayConseils) {
-						if (recordAdvice.raw.code === arrayConseils[i]) {
-							conseilTraduit += "<BR/><B>"
-								+ recordAdvice.raw.libelle
-								+ "</B><BR/>"
-								+ recordAdvice.raw.description;
-							if (recordAdvice.raw.fiche !== "") {
-								conseilTraduit += "Plus d'infos : "+
-										"<A HREF='#'>"+ recordAdvice.raw.fiche + "</A>";
-							}
-						}
-					}
-				});
-			}
-			if (conseilTraduit !== "") {
-				conseilTraduit = "<BR/><BR/>"/*Conseils : "*/ + conseilTraduit;
-			}
+			// conseils
+			conseilTraduit = this.getApplication()
+					.getController('VivreANantes.controller.Garbages')
+					.getAdviceString(conseils);
+			// faq
+			var faqTraduit = this.getApplication()
+					.getController('VivreANantes.controller.Garbages')
+					.getFaqString(record.data.code);
+
 			// Modes de collecte
 			var modesDeCollecteTraduit = "";
 			var arrayModesDeCollecte = modesDeCollecte.split(',');
 			// On parcours les modes de collecte
-			if (arrayModesDeCollecte.length>0) {
-				var dataCollectMods = this.getCollectModList().getStore().getData();
+			if (arrayModesDeCollecte.length > 0) {
+				var dataCollectMods = this.getCollectModList().getStore()
+						.getData();
 				dataCollectMods.each(function(recordCollectMod) {
 					for (i in arrayModesDeCollecte) {
 						if (recordCollectMod.raw.code === arrayModesDeCollecte[i]) {
-							modesDeCollecteTraduit += "<A HREF='#'>"+recordCollectMod.raw.libelle+"</A>";
+							modesDeCollecteTraduit += "<A HREF='#'>"
+									+ recordCollectMod.raw.libelle + "</A>";
 						}
 					}
 				});
 			}
 			if (modesDeCollecteTraduit !== "") {
-				modesDeCollecteTraduit = "<BR/>Modes de collecte : " + modesDeCollecteTraduit;
+				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
+						+ modesDeCollecteTraduit;
 			}
 			// Recyclable OUI, NON, NON (mais ne pas mettre à la poubelle)
 			// "AA".replace("A/g", "B");
-			treatmentCategories = treatmentCategories.replace("PAS_POUBELLE/g", "<DIV STYLE='color:red' size='4'>NON</DIV> ne pas mettre à la poubelle.");
-			treatmentCategories = treatmentCategories.replace("OUI/g", "<DIV STYLE='color:green' size='4'>OUI</DIV>");
-			treatmentCategories = treatmentCategories.replace("NON/g", "<DIV STYLE='color:red' size='4'>NON</DIV>");
+			treatmentCategories = treatmentCategories
+					.replace("PAS_POUBELLE/g",
+							"<DIV STYLE='color:red' size='4'>NON</DIV> ne pas mettre à la poubelle.");
+			treatmentCategories = treatmentCategories.replace("OUI/g",
+					"<DIV STYLE='color:green' size='4'>OUI</DIV>");
+			treatmentCategories = treatmentCategories.replace("NON/g",
+					"<DIV STYLE='color:red' size='4'>NON</DIV>");
 			var concerneAussi = "";
 			if (record.data.concerne_aussi !== "") {
 				concerneAussi = "<BR/>Concerne aussi : "
@@ -24703,13 +24929,12 @@ Ext.define('VivreANantes.controller.Garbages', {
 			}
 
 			this.garbageDetail
-					.setTpl("<table border='0'><tr>" +
-							'<td><img src=resources/images/{image} height=120 /></td>' +
-							'<td>'+treatmentCategories+'<br/>'+modesDeCollecteTraduit+'</td>' +
-							"</tr></table>" +
-							'<div>{nom}</div>' +
-							'{description}' +
-							concerneAussi + conseilTraduit);
+					.setTpl("<table border='0'><tr>"
+							+ '<td><img src=resources/images/{image} height=120 /></td>'
+							+ '<td>' + treatmentCategories + '<br/>'
+							+ modesDeCollecteTraduit + '</td>'
+							+ "</tr></table>" + '<div>{nom}</div>'
+							+ '{description}' + concerneAussi + conseilTraduit + faqTraduit);
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);
 			/*
@@ -24786,8 +25011,9 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			homeCollectModsList : 'HomeCollectModsList',
 			homeCollectModDetail : 'HomeCollectModsDetails',
 			homeCollectModsForm : 'HomeCollectModsForm',
-			homeCollectModsFormText : '#homeCollectModsFormText',
-			homeCollectModsFormSelect : '#homeCollectModsFormSelect'
+			homeCollectModsFormText : '#homeCollectModsFormText'
+			// ,
+			// homeCollectModsFormSelect : '#homeCollectModsFormSelect'
 		},
 		control : {
 
@@ -24810,11 +25036,11 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 				keyup : 'onHomeCollectModStoreFilter',
 				change : 'onHomeCollectModStoreFilter',
 				clearicontap : 'onHomeCollectModStoreFilter'
-			},
-
-			homeCollectModsFormSelect : {
-				change : 'onHomeCollectModStoreFilter'
 			}
+			// ,
+			// homeCollectModsFormSelect : {
+			// 	change : 'onHomeCollectModStoreFilter'
+			// }
 
 		}
 	},
@@ -24900,7 +25126,7 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 	onHomeCollectModStoreFilter : function() {
 
 		var text = this.getHomeCollectModsFormText();
-		var select = this.getHomeCollectModsFormSelect();
+		// var select = this.getHomeCollectModsFormSelect();
 		var store = this.getHomeCollectModsList().getStore();
 
 		store.clearFilter();
@@ -24910,9 +25136,8 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			filterFn : function(item) {
 				var escaperegex = Ext.String.escapeRegex;
 				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				/*
 				var categorietest = new RegExp(escaperegex(select.getValue()));
-				// TODO prévoir de pouvoir mettre "venelle, mail" pour regrouper
-				// les cas peu nombreux et faciliter la lisibilité de la page.
 				if (select.getValue().indexOf(",") !== -1) {
 					var array = select.getValue().split(',');
 					var expression = '';
@@ -24932,10 +25157,12 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 					// console.log("res :" +
 					// categorietest.test(item.data.typeVoie));
 				}
+				*/
 				// TODO on pourrait mettre denominationCompleteVoie
-				return (texttest.test(item.data.nomVoie) && (select
-						.getValue() === 'all' || categorietest
-						.test(item.data.typeVoie)));
+				// return (texttest.test(item.data.nomVoie) && (select
+				//		.getValue() === 'all' || categorietest
+				//		.test(item.data.typeVoie)));
+				return (texttest.test(item.data.denominationCompleteVoie));
 			}
 		});
 		store.filter(filterHomeCollectMod);
@@ -24943,32 +25170,158 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 
 });
 
+/**
+ * Controleur de la partie Mode de collecte à domicile
+ */
 Ext.define('VivreANantes.controller.Trisacs', {
-    extend: 'Ext.app.Controller',
-    
-    config: {
-        refs: {
-        	trisacs : 'trisacs'
-        },
-        control: {
-        	// fonctionne comme une CSS selecteur
-            'trisacs list' : {
-            	itemtap : 'showTrisacs'
-            }
-        }
-    },
-    
-    showTrisacs: function(list, index, element, record) {
-        // console.log(record.get('title'));
-    	this.getTrisacs().push({
-    		xtype: 'panel',
-    		title:record.get('libelle'),
-    		html: record.get('description_fr')+"<br/>"+ record.get('adresseTemp')+"<br/>"+"Distribution : "+record.get('plageHoraire')+"<br/>",
-    		scrollable: true,
-    		styleHtmlContent: true
-    	});
-    }
+	extend : 'Ext.app.Controller',
+
+	config : {
+		refs : {
+			trisacView : 'TrisacView',
+			trisacList : 'TrisacList',
+			trisacDetail : 'TrisacDetails',
+			trisacForm : 'TrisacForm',
+			trisacFormText : '#trisacFormText',
+			trisacFormSelect : '#trisacFormSelect'
+		},
+		control : {
+
+			trisacDetail : {
+				updatedata : 'onUpdateDataDetail'
+			},
+
+			trisacList : {
+				initialize : 'onInitTrisac',
+				itemtap : 'showTrisacDetail'
+
+			},
+
+			trisacView : {
+				push : 'onTrisacViewPush'
+			},
+
+			trisacFormText : {
+				keyup : 'onTrisacStoreFilter',
+				change : 'onTrisacStoreFilter',
+				clearicontap : 'onTrisacStoreFilter'
+			},
+
+			trisacFormSelect : {
+				change : 'onTrisacStoreFilter'
+			}
+
+		}
+	},
+
+	onUpdateDataDetail : function(comp, newData, opts) {
+		if (newData) {
+			console.log(this);
+			console.log(this.id);
+		}
+	},
+
+
+	/**
+	 * A l'initialisation de la fenêtre d'accueil
+	 */
+	onInitTrisac : function(list) {
+		console.log('onInitTrisac');
+/*
+		var homecollectmodStore = Ext.create(
+				'VivreANantes.store.HomeCollectModStore', {
+					autoLoad : true,
+					listeners : {
+						'load' : function(store, results, successful) {
+						}
+					}
+				});
+
+		list.setStore(homecollectmodStore);
+		console.log(homecollectmodStore);
+*/
+	},
+
+	onTrisacViewPush : function(view, item) {
+
+	},
+
+	showTrisacDetail : function(list, index, node, record) {
+		console.log('showTrisacDetail');
+
+		if (record) {
+			if (!this.trisacDetail) {
+				this.trisacDetail = Ext
+						.create('VivreANantes.view.trisac.TrisacDetails');
+						
+			// conseils
+			var conseils = "";
+			if (record.data.conseils !== '') {
+				conseils = record.data.conseils + ",";
+			}
+			// faq
+			var faqTraduit = this.getApplication()
+					.getController('VivreANantes.controller.Garbages')
+					.getFaqString(record.data.code);
+			conseilTraduit = this.getApplication()
+					.getController('VivreANantes.controller.Garbages')
+					.getAdviceString(conseils);
+			this.trisacDetail.setTpl("'<div>Type : {type} <BR/>Nom : {libelle} <BR/>Horaires : {horaires} <BR/>Adresse : {adresse_} '+ ' <BR/>Horaires interne appli {plagesHoraires}" + 
+					conseilTraduit+faqTraduit+
+					"</DIV>");
+
+			}
+
+			console.log(record.data);
+
+			console.log(this.trisacDetail);
+			// Bind the record onto the show contact view
+			this.trisacDetail.setData(record.data);
+
+			/*if (record.data.joursCollecteBacsBleus !== "") {
+				var jour = "{joursCollecteBacsBleus}";
+			} else if (record.data.joursCollecteBacsBleus !== "") {
+				var jour = "{joursCollecteBacsBleus}";
+			} else {
+				var jour = "{joursCollecteTriSac}";
+			}*/
+			// this.trisacDetail.setTpl("<div>{denominationCompleteVoie}{complementVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : " + jour + "</div>");
+			//      
+			// Push the show contact view into the navigation view
+			this.getTrisacView().push(this.trisacDetail);
+		}
+	},
+
+	// Méthodes invoquées par le formulaire
+
+	/**
+	 * Filtre sur les déchets, en fonction de la chaine saisie et de la
+	 * catégorie sélectionnée
+	 */
+	onTrisacStoreFilter : function() {
+
+		var text = this.getTrisacFormText();
+		var select = this.getTrisacFormSelect();
+		var store = this.getTrisacList().getStore();
+
+		store.clearFilter();
+		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
+		// sur la catégorie
+		var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
+			filterFn : function(item) {
+				var escaperegex = Ext.String.escapeRegex;
+				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				var categorietest = new RegExp(escaperegex(select.getValue()));
+
+				return (texttest.test(item.data.nom) && (select.getValue() === 'all' || categorietest
+						.test(item.data.quartier_)));
+			}
+		});
+		store.filter(filterHomeCollectMod);
+	}
+
 });
+
 /**
  * @author Tommy Maintz
  *
@@ -25683,6 +26036,33 @@ Ext.define('Ext.dataview.ListItemHeader', {
         docked: 'top'
     }
 });
+/**
+ * {@link Ext.Title} is used for the {@link Ext.Toolbar#title} configuration in the {@link Ext.Toolbar} component.
+ * @private
+ */
+Ext.define('Ext.Title', {
+    extend: 'Ext.Component',
+    xtype: 'title',
+
+    config: {
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        baseCls: 'x-title',
+
+        /**
+         * @cfg {String} title The title text
+         */
+        title: ''
+    },
+
+    // @private
+    updateTitle: function(newTitle) {
+        this.setHtml(newTitle);
+    }
+});
+
 /**
  * @author Ed Spencer
  *
@@ -30753,33 +31133,6 @@ Ext.define('Ext.field.Input', {
 });
 
 /**
- * {@link Ext.Title} is used for the {@link Ext.Toolbar#title} configuration in the {@link Ext.Toolbar} component.
- * @private
- */
-Ext.define('Ext.Title', {
-    extend: 'Ext.Component',
-    xtype: 'title',
-
-    config: {
-        /**
-         * @cfg
-         * @inheritdoc
-         */
-        baseCls: 'x-title',
-
-        /**
-         * @cfg {String} title The title text
-         */
-        title: ''
-    },
-
-    // @private
-    updateTitle: function(newTitle) {
-        this.setHtml(newTitle);
-    }
-});
-
-/**
  * @private
  */
 Ext.define('Ext.field.TextAreaInput', {
@@ -31870,8 +32223,8 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 			xtype : 'vanmaposm',
 
 			config : {
-				title : 'Carte OSM',
-				iconCls : 'maps'				
+				title : 'Carte',
+				iconCls : 'locate'				
 			}
 		});
 /**
@@ -32123,6 +32476,118 @@ Ext.define('VivreANantes.view.geo.Toast', {
 
 			}
 		});
+
+/**
+ * @aside guide forms
+ *
+ * A FieldSet is a great way to visually separate elements of a form. It's normally used when you have a form with
+ * fields that can be divided into groups - for example a customer's billing details in one fieldset and their shipping
+ * address in another. A fieldset can be used inside a form or on its own elsewhere in your app. Fieldsets can
+ * optionally have a title at the top and instructions at the bottom. Here's how we might create a FieldSet inside a
+ * form:
+ *
+ *     @example
+ *     Ext.create('Ext.form.Panel', {
+ *         fullscreen: true,
+ *         items: [
+ *             {
+ *                 xtype: 'fieldset',
+ *                 title: 'About You',
+ *                 instructions: 'Tell us all about yourself',
+ *                 items: [
+ *                     {
+ *                         xtype: 'textfield',
+ *                         name : 'firstName',
+ *                         label: 'First Name'
+ *                     },
+ *                     {
+ *                         xtype: 'textfield',
+ *                         name : 'lastName',
+ *                         label: 'Last Name'
+ *                     }
+ *                 ]
+ *             }
+ *         ]
+ *     });
+ *
+ * Above we created a {@link Ext.form.Panel form} with a fieldset that contains two text fields. In this case, all
+ * of the form fields are in the same fieldset, but for longer forms we may choose to use multiple fieldsets. We also
+ * configured a {@link #title} and {@link #instructions} to give the user more information on filling out the form if
+ * required.
+ */
+Ext.define('Ext.form.FieldSet', {
+    extend  : 'Ext.Container',
+    alias   : 'widget.fieldset',
+    requires: ['Ext.Title'],
+
+    config: {
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        baseCls: Ext.baseCSSPrefix + 'form-fieldset',
+
+        /**
+         * @cfg {String} title Optional fieldset title, rendered just above the grouped fields
+         * @accessor
+         */
+        title: null,
+
+        /**
+         * @cfg {String} instructions Optional fieldset instructions, rendered just below the grouped fields
+         * @accessor
+         */
+        instructions: null
+    },
+
+    // @private
+    applyTitle: function(title) {
+        if (typeof title == 'string') {
+            title = {title: title};
+        }
+
+        Ext.applyIf(title, {
+            docked : 'top',
+            baseCls: this.getBaseCls() + '-title'
+        });
+
+        return Ext.factory(title, Ext.Title, this.getTitle());
+    },
+
+    // @private
+    updateTitle: function(newTitle, oldTitle) {
+        if (newTitle) {
+            this.add(newTitle);
+        }
+        if (oldTitle) {
+            this.remove(oldTitle);
+        }
+    },
+
+    // @private
+    applyInstructions: function(instructions) {
+        if (typeof instructions == 'string') {
+            instructions = {title: instructions};
+        }
+
+        Ext.applyIf(instructions, {
+            docked : 'bottom',
+            baseCls: this.getBaseCls() + '-instructions'
+        });
+
+        return Ext.factory(instructions, Ext.Title, this.getInstructions());
+    },
+
+    // @private
+    updateInstructions: function(newInstructions, oldInstructions) {
+        if (newInstructions) {
+            this.add(newInstructions);
+        }
+        if (oldInstructions) {
+            this.remove(oldInstructions);
+        }
+    }
+});
 
 /**
  * @private
@@ -34201,6 +34666,75 @@ Ext.define('Ext.field.Text', {
 /**
  * @aside guide forms
  *
+ * The Email field creates an HTML5 email input and is usually created inside a form. Because it creates an HTML email
+ * input field, most browsers will show a specialized virtual keyboard for email address input. Aside from that, the
+ * email field is just a normal text field. Here's an example of how to use it in a form:
+ *
+ *     @example
+ *     Ext.create('Ext.form.Panel', {
+ *         fullscreen: true,
+ *         items: [
+ *             {
+ *                 xtype: 'fieldset',
+ *                 title: 'Register',
+ *                 items: [
+ *                     {
+ *                         xtype: 'emailfield',
+ *                         label: 'Email',
+ *                         name: 'email'
+ *                     },
+ *                     {
+ *                         xtype: 'passwordfield',
+ *                         label: 'Password',
+ *                         name: 'password'
+ *                     }
+ *                 ]
+ *             }
+ *         ]
+ *     });
+ *
+ * Or on its own, outside of a form:
+ *
+ *     Ext.create('Ext.field.Email', {
+ *         label: 'Email address',
+ *         value: 'prefilled@email.com'
+ *     });
+ *
+ * Because email field inherits from {@link Ext.field.Text textfield} it gains all of the functionality that text fields
+ * provide, including getting and setting the value at runtime, validations and various events that are fired as the
+ * user interacts with the component. Check out the {@link Ext.field.Text} docs to see the additional functionality
+ * available.
+ */
+Ext.define('Ext.field.Email', {
+    extend: 'Ext.field.Text',
+    alternateClassName: 'Ext.form.Email',
+    xtype: 'emailfield',
+
+    config: {
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        component: {
+	        type: 'email'
+	    },
+
+        /**
+         * @cfg
+         * @inheritdoc
+         */
+        autoCapitalize: false
+    }
+});
+
+
+
+
+
+
+/**
+ * @aside guide forms
+ *
  * The checkbox field is an enhanced version of the native browser checkbox and is great for enabling your user to
  * choose one or more items from a set (for example choosing toppings for a pizza order). It works like any other
  * {@link Ext.field.Field field} and is usually found in the context of a form:
@@ -35410,6 +35944,43 @@ Ext.define('Ext.form.Panel', {
 
 });
 
+/**
+ * Formulaire des Déchets
+ */
+Ext.define('VivreANantes.view.faq.FaqForm', {
+			extend : 'Ext.form.Panel',
+						requires : ['Ext.form.FieldSet', 'Ext.field.Email'],
+			xtype : 'faqForm_xtype',
+			config : {
+				url : 'truc.php',
+				items : [{
+							xtype : 'fieldset',
+							// title : 'Ajout un commentaire',
+							// instructions : '(courriel ne peut pas être vide)',
+							items : [{
+										xtype : 'textfield',
+										name : 'name',
+										label : 'Nom'
+									}, {
+										xtype : 'emailfield',
+										name : 'email',
+										label : 'Courriel'
+									}, {
+										xtype : 'textareafield',
+										name : 'message',
+										label : 'Message'
+									}]
+						}, {
+							xtype : 'button',
+							text : 'Envoyer un commentaire',
+							iu : 'confirm',
+							handler : function() {
+								this.up(faqForm_xtype).submit()
+							}
+						}]
+			}
+
+		});
 /**
  * @docauthor Evan Trimboli <evan@sencha.com>
  * @aside guide stores
@@ -36896,7 +37467,7 @@ Ext.define('VivreANantes.controller.Geo', {
 				new L.LatLng(47.21837100000001, -1.553620999999985), 15);
 
 		store.each(function(record) {
-					// console.log(record);
+					console.log(record);
 					// var position = new L.LatLng(record.latitude,
 					// record.longitude);
 					//
@@ -36944,10 +37515,10 @@ Ext.define('VivreANantes.controller.Geo', {
 					autoLoad : true,
 					listeners : {
 						'load' : function(store, results, successful) {
-							// console.log("Chargement du structure store");
-							// console.log(store);
-							// console.log(results);
-							// console.log(successful);
+							console.log("Chargement du structure store");
+							console.log(store);
+							console.log(results);
+							console.log(successful);
 
 							me.positionnerStructures(structureStore, map,
 									cloudmade);
@@ -39896,35 +40467,37 @@ Ext.define('VivreANantes.view.Main', {
 					}
 				},
 				items : [
-						/*{
-							xclass : 'VivreANantes.view.welcome.Welcome'
-						},*/
 						/*
-							{
-							xclass : 'VivreANantes.view.game.Guess'
-						},*/
+						 * { xclass : 'VivreANantes.view.welcome.Welcome' },
+						 */
+						/*
+						 * { xclass : 'VivreANantes.view.game.Guess' },
+						 */
 						{
-							xclass : 'VivreANantes.view.garbages.Garbages',
-							// FIXME mise en valeur par badgetText ne fonctionne pas
-							badgetText : '*'
-						}, {
-							xclass : 'VivreANantes.view.geo.MapOSM'
-						}, 
-						 {
-							xclass : 'VivreANantes.view.information.Informations'
-							// xtype : 'informations'
-						},
-						{
-							// Page 'mode de collecte à domicile'
-							xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
-						}, {
-							xclass : 'VivreANantes.view.calendar.Calendar'
-						}
-						, {
-							xclass : 'VivreANantes.view.trisac.Trisacs'
-						}, {
-							xclass : 'VivreANantes.view.about.Description'
-						}]
+					xclass : 'VivreANantes.view.garbages.Garbages',
+					// FIXME mise en valeur par badgetText ne fonctionne pas
+					badgetText : '*'
+				}, {
+					xclass : 'VivreANantes.view.geo.MapOSM'
+				}, {
+					xclass : 'VivreANantes.view.information.Informations'
+						// xtype : 'informations'
+					}, {
+					xclass : 'VivreANantes.view.calendar.Calendar'
+				}, {
+					iconCls : 'more'
+				}, {
+					xclass : 'VivreANantes.view.collectMod.CollectMods'
+				},{
+					// Page 'mode de collecte à domicile'
+					xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
+				}, {
+					xclass : 'VivreANantes.view.trisac.Trisacs'
+				}, {
+					xclass : 'VivreANantes.view.faq.Faq'
+				}, {
+					xclass : 'VivreANantes.view.about.Description'
+				}]
 			}
 		});
 
@@ -41297,6 +41870,30 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 			}
 		});
 /**
+ * Informations
+ * 
+ * @author Christian Renoulin
+ */
+Ext.define('VivreANantes.view.collectMod.CollectMods', {
+			extend : 'Ext.NavigationView',
+			xtype : 'collectMods',
+			config : {
+				// Titre dans barre de bouton principale
+				title : 'Collecte',
+				// Icone dans la barre de bouton principale
+				iconCls : 'action',
+				scrollable : true,
+				items : [{
+
+							title : 'Modes de collecte',
+							scrollable : 'true',
+							itemTpl : '{libelle}',
+							xtype : 'list',
+							store : 'CollectModStore'
+						}]
+			}
+		});
+/**
  * Vue des Modes de collecte (page principale)
  */
 Ext.define('VivreANantes.view.homecollectmods.HomeCollectMods', {
@@ -41305,8 +41902,8 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectMods', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'mvan_truck',
-				title:'Collecte à domicile',
+				iconCls : 'home',
+				title:'A domicile',
 				items : [{
 							xtype : 'HomeCollectModsContainer'
 						}
@@ -41346,8 +41943,8 @@ Ext.define('VivreANantes.view.information.Informations', {
 					// FIXME : les titles sont coupés dans Informations.js : 'Informations sur le tri' devient "'Informations sur le...' à l'affichage 
 					title : 'Informations sur le tri',
 					scrollable : 'true',
-					// FIXME pb sur les images dans Informations.js : les '\' sont remplacés par rien, donc les liens sont faux.
-					itemTpl : '<img src=resources\images\{image} />{name}',
+					itemTpl : '<img src=resources/images/{image} height=50 />{name}',
+					// itemTpl : '<div><img src=resources/images/{image} height=80 /><br/>{name} </div>',
 					// /i pose un pb
 					// itemTpl : ['<img src=resources\images\{image} />',
 					// '{name}'].join(''),
@@ -41374,61 +41971,20 @@ Ext.define('VivreANantes.view.information.Informations', {
 			}
 		});
 /**
- * Trisacs
- * 
- * @author Christian Renoulin
+ * Vue des Distribution Trisacs (page principale)
  */
 Ext.define('VivreANantes.view.trisac.Trisacs', {
-			extend : 'Ext.NavigationView',
-			xtype : 'trisacs',
+			extend : 'Ext.navigation.View',
+			xtype : 'TrisacView',
 
 			config : {
-				// Titre dans barre de bouton principale
-				title : 'Trisacs',
-				 // Icone dans la barre de bouton principale
+				autoDestroy : false,
 				iconCls : 'action',
-				items : [
-						// Remplace title : 'Trisacs',
-						// {
-						// xtype: 'titlebar', // mieux que toolbar
-						// docked:'top',
-						// title:'Trisacs sur le tri',
-						// items:[{
-						// // Par défaut les xtype sont des 'button'
-						// text:'ping',
-						// align:'right'
-						// }, {
-						// text:'clear'
-						// }]
-						// },
-						{
-					cls : 'trisacCss',
-					// FIXME : les titles sont coupés dans Trisacs.js : 'Trisacs sur le tri' devient "'Trisacs sur le...' à l'affichage 
-					title : 'Trisacs sur le tri',
-					scrollable : 'true',
-					// FIXME pb sur les images dans Trisacs.js : les '\' sont remplacés par rien, donc les liens sont faux.
-					itemTpl : '{libelle}',
-					// /i pose un pb
-					// itemTpl : ['<img src=resources\images\{image} />',
-					// '{name}'].join(''),
-					xtype : 'list',
-					store : {
-						autoLoad : true,
-						fields : ['code', 'libelle', 'description_fr', 'adresseTemp', 'plageHoraire'],
-						// fields: ['title', 'author', 'content'],
-						proxy : {
-							// type : 'jsonp', // JSONP pour infos externe
-							// url:
-							// 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://feeds.feedburner.com/SenchaBlog',
-							type : 'ajax',
-							url : 'data/trisacs.json',
-							reader : {
-								type : 'json',
-								rootProperty : 'trisacs'
-							}
+				title:'Trisac',
+				items : [{
+							xtype : 'TrisacContainer'
 						}
-					}
-				}]
+				]
 			}
 		});
 /**
@@ -43413,6 +43969,16 @@ Ext.define('VivreANantes.view.garbages.AdvicesList', {
 	}
 	
 });
+Ext.define('VivreANantes.view.garbages.FaqList', {
+	extend : 'Ext.List',
+	xtype : 'faqList',
+	config : {
+		iconCls : 'home',
+		title : 'FAQ',
+		itemTpl : '<div>{libelle}</div>'
+	}
+	
+});
 Ext.define('VivreANantes.view.garbages.WasteTreatmentsCategoriesList', {
 	extend : 'Ext.List',
 	xtype : 'wasteTreatmentsCategoriesList',
@@ -43441,7 +44007,20 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsList', {
 		title : 'Modes de collecte à domicile',
 		// TODO regrouper par type de voie
 		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un seul des trois est valorisé.
-		itemTpl : '<div>{denominationCompleteVoie}{complementInformation}<br/>Collecte "{modesCollecte}" : {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac}</div>'
+		itemTpl : '<div>{denominationCompleteVoie}{complementInformation}<br/>Collecte "{modesCollecte}" : Bleu {joursCollecteBacsBleus} / Jaune {joursCollecteBacsJaunes} </div>'
+	}
+
+	
+
+});
+Ext.define('VivreANantes.view.trisac.TrisacList', {
+	extend : 'Ext.List',
+	xtype : 'TrisacList',
+	config : {
+		iconCls : 'action', // icône en forme de ?
+		title : 'Modes de collecte à domicile',
+		itemTpl : '{type}<div>{libelle}</div>',
+		store : 'TrisacStore'
 	}
 
 	
@@ -47635,6 +48214,25 @@ Ext.define('VivreANantes.model.Advice', {
 			}
 
 		});
+Ext.define('VivreANantes.model.Faq', {
+			extend : 'Ext.data.Model',
+
+			config : {
+				fields : [
+						{
+							name : 'code'
+						}, {
+							name : 'libelle'
+						},{
+							name : 'description',
+							type : 'string',
+							mapping : 'description_fr'
+						}, {
+							name : 'element'
+						}]
+			}
+
+		});
 Ext.define('VivreANantes.model.WasteTreatmentsCategories', {
 			extend : 'Ext.data.Model',
 			config : {
@@ -50010,6 +50608,39 @@ Ext.define('VivreANantes.store.CollectModStore', {
 				}	
 			}
 		});
+Ext.define('VivreANantes.store.FaqStore', {
+			extend : 'Ext.data.Store',			
+			id : 'faqstore', 	
+			config :{
+				autoLoad : true,
+				model : 'VivreANantes.model.Faq',
+				proxy : {
+					type : 'ajax',
+					url : 'data/faq.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'faq'
+					}
+				}	
+			}
+		});
+Ext.define('VivreANantes.store.TrisacStore', {
+			extend : 'Ext.data.Store',			
+			id : 'trisacstore', 	
+			config :{
+				autoLoad : true,
+				fields : ['code', 'type', 'libelle', 'plagesHoraires', 'adresse_',
+								'horaires', 'conseils', 'quartier_'],
+				proxy : {
+					type : 'ajax',
+					url : 'data/trisacs.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'distrisac'
+					}
+				}	
+			}
+		});
 /**
  * @private
  *
@@ -51576,7 +52207,9 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
 					name : 'name',
 					label : 'Recherche',
 					id : 'homeCollectModsFormText'
-				}, {
+				}
+				/*
+				, {
 					xtype : 'selectfield',
 					label : 'Type de voie',
 					id : 'homeCollectModsFormSelect',
@@ -51607,10 +52240,78 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
 								text : "Autre (chemin, place, cour...)",
 								value : "Bas Chemin,Chemin,Côte,Cour,Esplanade,Hameau,Mail,Passage,Petit Chemin,Petite Avenue,Petite Rue,Place,Pont,Promenade,Quai,Rond-Point,Sentier,Square,Venelle"
 							}]
-				}]
+				}
+				*/
+				]
 	}
 
 });
+/**
+ * Formulaire des Déchets
+ */
+Ext.define('VivreANantes.view.trisac.TrisacForm', {
+			extend : 'Ext.form.Panel',
+			requires : ['Ext.field.Text', 'Ext.field.Select'],
+			xtype : 'TrisacForm',
+			config : {
+				items : [{
+							xtype : 'textfield',
+							name : 'name',
+							label : 'Recherche',
+							id : 'trisacFormText'
+						}, {
+							xtype : 'selectfield',
+							label : 'Quartier',
+							id : 'trisacFormSelect',
+							options : [{
+										text : 'Tous',
+										value : 'all'
+									}, {
+										text : "Chantenay",
+										value : "Chantenay"
+									}, {
+										text : "Breil - Dervallières - Bellevue",
+										value : "Breil - Dervallières - Bellevue"
+									}, {
+										text : "Hauts Pavé - Saint Félix",
+										value : "Hauts Pavé - Saint Félix"
+									}, {
+										text : "Ile De Nantes",
+										value : "Ile De Nantes"
+									}, {
+										text : "Nantes Nord - Barberie",
+										value : "Nantes Nord - Barberie"
+									}, {
+										text : "Erdre - Ranzay - Bottière - Perray",
+										value : "Erdre - Ranzay - Bottière - Perray"
+									}, {
+										text : "Malakoff",
+										value : "Malakoff"
+									}, {
+										text : "Saint Donatien",
+										value : "Saint Donatien"
+									}]
+						}]
+			}
+
+		});
+/**
+ * Vue des Déchets (présente avec un icone de déchets
+ */
+Ext.define('VivreANantes.view.faq.Faq', {
+			extend : 'Ext.navigation.View',
+			xtype : 'faqView',
+
+			config : {
+				autoDestroy : false,
+				iconCls : 'team',
+				title:'FAQ',
+				items : [{
+							xtype : 'faqContainer_xtype'
+						}
+				]
+			}
+		});
 /**
  * @author Ed Spencer
  * @aside guide stores
@@ -51780,13 +52481,18 @@ Ext
 			'garbages.Garbages',
 			'garbages.GarbagesDetails',
 			'garbages.GarbagesList',
-			// CRN_DEBUT
-			'garbages.AdvicesList',
-			'garbages.WasteTreatmentsCategoriesList',
-			'garbages.CollectModsList',
-			// CRN_FIN
 			'garbages.GarbagesContainer',
 			'garbages.GarbagesForm',
+			// CRN_DEBUT
+			'garbages.UsualCategoriesList',
+			'garbages.AdvicesList',
+			'garbages.FaqList',
+			'garbages.WasteTreatmentsCategoriesList',
+			'garbages.CollectModsList',
+			'collectMod.CollectMods',
+			'faq.FaqContainer',
+			'faq.FaqForm',
+			// CRN_FIN
 			// Mode de collecte à domicile
 			'homecollectmods.HomeCollectMods',
 			'homecollectmods.HomeCollectModsContainer',
@@ -51802,13 +52508,18 @@ Ext
 			// Calendrier
 			'calendar.Calendar',
 			// Trisac
-			'trisac.Trisacs'
+			'trisac.Trisacs',
+			'trisac.TrisacContainer',
+			'trisac.TrisacDetails',
+			'trisac.TrisacForm',
+			'trisac.TrisacList'
 			],
 
 			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods', 'Trisacs'],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'WasteTreatmentsCategories', 'CollectMod'],
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'Faq', 'WasteTreatmentsCategories', 'CollectMod'],
+			
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'FaqStore'/*, 'DistrisacStore'*/, 'TrisacStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',
@@ -51834,4 +52545,12 @@ Ext
 			}
 			
 		});
+		
+		// TODO ajouter un composant calendar
+		// TODO utilisaer le localstorage pour mémoriser les éléments du calendrier, les filtres dans les structures
+		// TODO ajouter un bouton "commentez" quand on affiche des commentaires issues de la FAQ (donc sur toutes les détails)
+		// TODO géolocolisation sur les distribution Trisacs (il en manque dans les données)
+		// TODO mettre un détail sur les éléments de la FAQ
+		// TODO vérifier type de conteneurs de Open Data
+		
 

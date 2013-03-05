@@ -11,7 +11,9 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
 					name : 'name',
 					label : 'Recherche',
 					id : 'homeCollectModsFormText'
-				}, {
+				}
+				/*
+				, {
 					xtype : 'selectfield',
 					label : 'Type de voie',
 					id : 'homeCollectModsFormSelect',
@@ -42,7 +44,9 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
 								text : "Autre (chemin, place, cour...)",
 								value : "Bas Chemin,Chemin,Côte,Cour,Esplanade,Hameau,Mail,Passage,Petit Chemin,Petite Avenue,Petite Rue,Place,Pont,Promenade,Quai,Rond-Point,Sentier,Square,Venelle"
 							}]
-				}]
+				}
+				*/
+				]
 	}
 
 });

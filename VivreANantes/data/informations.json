@@ -13,17 +13,17 @@
 		"code" : "fiche_valorena",
 		"name" : "Incinération à l'usine Valorena",
 		"description_fr" : "<P class=informationsCss>Cette usine d'incinération d'ordures ménagères  a été mise en service en octobre 1987, elle alimente un réseau de chauffage urbain grâce à l'énergie récupérée lors de la combustion des déchets.<BR/><BR/>Elle est situé à proximité de la route Nantes, Angers (au bord de la voie SNCF)<BR/><BR/><A HREF='http://www.novergie.fr/page/groupe/usines/usine.php?id=34' TARGET='NEW' >valorena</A></P><P class=informationsCss>Des visites de l'usine sont proposées toutes l'année.</P>",
-		"image" : ""
+		"image" : "image_defaut.png"
 	}, {
 		"code" : "fiche_arcenciel",
 		"name" : "Dispositif multifilières à Arc-en-ciel",
 		"description_fr" : "<P class=informationsCss>Ce dispositif a été mis en service en mars 1994 et il comprend 4 unités : <UL><LI>le centre de traitement et de valorisation des déchets,</LI><LI>le centre de tri et de conditionnement des déchets ménagers recyclables,</LI><LI> le centre de tri des déchets industriels et commerciaux, situé à Couëron,</LI><LI> l'unité de compostage de déchets verts située à Saint-Herblain.,</LI></UL><BR/>Vous pouvez visiter l'usine.</P>",
-		"image" : ""
+		"image" : "image_defaut.png"
 	}, {
 		"code" : "fiche_ecoparticipation",
 		"name" : "Eco-participation",
 		"description_fr" : "<P class=informationsCss>A l’achat d’un appareil neuf, vous payez une «éco-participation », qui correspond au coût de collecte, de réemploi, de dépollution et de recyclage d’un appareil usagé équivalent. Son montant varie selon le produit et le type de traitement qu’il nécessite.<BR/><BR/>L’éco-participation est indiquée sur les étiquettes de manière visible et séparée du prix du produit. C’est un outil de transparence et d’information. Elle est intégralement versée à un éco-organisme comme Eco-systèmes agréé par les pouvoirs publics pour prendre en charge les anciens appareils.<BR/><BR/>C'est une participation financement de la filière agréée. Ce n’est pas un financement par l’impôt mais par la consommation.</P>",
-		"image" : ""
+		"image" : "image_defaut.png"
 	}, {
 		"code" : "fiche_medicament",
 		"name" : "Médicament",

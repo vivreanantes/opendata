@@ -5,35 +5,38 @@
 Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 			extend : 'Ext.Container',
 			xtype : 'garbagesContainer',
-			
-			config : {	
-				layout : 'vbox',				
-				items : [ {
-						xtype:'garbagesForm',
-						height:120,
-						scrollable:false
-				},
+
+			config : {
+				layout : 'vbox',
+				items : [{
+							xtype : 'garbagesForm',
+							height : 120,
+							scrollable : false
+						},
 
 						{
-							xtype : 'garbagesList',
+							// xtype : 'garbagesList',
+							xtype : 'usualCategoriesList',
 							scrollable : 'vertical',
-								
 							flex : 1
 							// title : 'Déchets'
 					}
-					
-					// CRN_DEBUT
-					, {
-						xtype : 'advicesList'
-						// hidden : 'true'
-					}, {
-						xtype : 'wasteTreatmentsCategoriesList'
-						// hidden : 'true'
-					}, {
-						xtype : 'collectModList'
-						// hidden : 'true'
+
+						// CRN_DEBUT
+						, {
+							xtype : 'advicesList'
+							// hidden : 'true'
+					}	, {
+							xtype : 'faqList'
+							// hidden : 'true'
+					}	, {
+							xtype : 'wasteTreatmentsCategoriesList'
+							// hidden : 'true'
+					}	, {
+							xtype : 'collectModList'
+							// hidden : 'true'
 					}
-					//CRN_FIN
+				// CRN_FIN
 
 				]
 			}

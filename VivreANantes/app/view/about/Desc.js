@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.about.Desc' ,{
 	
 	config : {
 		title:'A propos',
-		iconCls : 'team',
+		iconCls : 'info',
 		html : '<br/><p>L\'application Vivre A Nantes : Recyclage a été réalisée dans le cadre du concours Open Data</p>'		
 	}
 });

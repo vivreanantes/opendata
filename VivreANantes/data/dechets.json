@@ -11,7 +11,7 @@
 
 				"image_secondaire" : ""
 			}, */{
-				"code" : "",
+				"code" : "aerosol",
 				"nom" : "aérosols",
 				"categorie_usuelle" : "scu_toxiquedivers",
 				"categorie_traitement" : "cat_ddm",

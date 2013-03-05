@@ -7,8 +7,8 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectMods', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'mvan_truck',
-				title:'Collecte à domicile',
+				iconCls : 'home',
+				title:'A domicile',
 				items : [{
 							xtype : 'HomeCollectModsContainer'
 						}

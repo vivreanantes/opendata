@@ -23,13 +23,18 @@ Ext
 			'garbages.Garbages',
 			'garbages.GarbagesDetails',
 			'garbages.GarbagesList',
-			// CRN_DEBUT
-			'garbages.AdvicesList',
-			'garbages.WasteTreatmentsCategoriesList',
-			'garbages.CollectModsList',
-			// CRN_FIN
 			'garbages.GarbagesContainer',
 			'garbages.GarbagesForm',
+			// CRN_DEBUT
+			'garbages.UsualCategoriesList',
+			'garbages.AdvicesList',
+			'garbages.FaqList',
+			'garbages.WasteTreatmentsCategoriesList',
+			'garbages.CollectModsList',
+			'collectMod.CollectMods',
+			'faq.FaqContainer',
+			'faq.FaqForm',
+			// CRN_FIN
 			// Mode de collecte à domicile
 			'homecollectmods.HomeCollectMods',
 			'homecollectmods.HomeCollectModsContainer',
@@ -45,13 +50,18 @@ Ext
 			// Calendrier
 			'calendar.Calendar',
 			// Trisac
-			'trisac.Trisacs'
+			'trisac.Trisacs',
+			'trisac.TrisacContainer',
+			'trisac.TrisacDetails',
+			'trisac.TrisacForm',
+			'trisac.TrisacList'
 			],
 
 			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods', 'Trisacs'],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'WasteTreatmentsCategories', 'CollectMod'],
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'Faq', 'WasteTreatmentsCategories', 'CollectMod'],
+			
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'FaqStore'/*, 'DistrisacStore'*/, 'TrisacStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',
@@ -77,3 +87,11 @@ Ext
 			}
 			
 		});
+		
+		// TODO ajouter un composant calendar
+		// TODO utilisaer le localstorage pour mémoriser les éléments du calendrier, les filtres dans les structures
+		// TODO ajouter un bouton "commentez" quand on affiche des commentaires issues de la FAQ (donc sur toutes les détails)
+		// TODO géolocolisation sur les distribution Trisacs (il en manque dans les données)
+		// TODO mettre un détail sur les éléments de la FAQ
+		// TODO vérifier type de conteneurs de Open Data
+		

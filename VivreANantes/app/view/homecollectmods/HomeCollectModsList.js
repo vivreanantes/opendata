@@ -6,7 +6,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsList', {
 		title : 'Modes de collecte à domicile',
 		// TODO regrouper par type de voie
 		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un seul des trois est valorisé.
-		itemTpl : '<div>{denominationCompleteVoie}{complementInformation}<br/>Collecte "{modesCollecte}" : {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac}</div>'
+		itemTpl : '<div>{denominationCompleteVoie}{complementInformation}<br/>Collecte "{modesCollecte}" : Bleu {joursCollecteBacsBleus} / Jaune {joursCollecteBacsJaunes} </div>'
 	}
 
 	

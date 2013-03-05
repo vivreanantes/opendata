@@ -13,7 +13,9 @@ Ext.define('VivreANantes.controller.Garbages', {
 			garbagesFormText : '#garbagesFormText',
 			garbagesFormSelect : '#garbagesFormSelect',
 			// CRN_DEBUT
+			usualCategoriesList : 'usualCategoriesList',
 			advicesList : 'advicesList',
+			faqList : 'faqList',
 			wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
 			collectModList : 'collectModList'
 			// CRN_FIN
@@ -48,6 +50,9 @@ Ext.define('VivreANantes.controller.Garbages', {
 			advicesList : {
 				initialize : 'onInitGarbagesAdvices'
 			},
+			faqList : {
+				initialize : 'onInitFaq'
+			},
 			wasteTreatmentsCategoriesList : {
 				initialize : 'onInitGarbagesWasteTreatmentsCategoriesList'
 			},
@@ -63,6 +68,75 @@ Ext.define('VivreANantes.controller.Garbages', {
 		console.log('DEBUG');
 	},
 	// FIN DEBUG
+
+	// CRN_DEBUT
+
+	getArrayFromString : function(string) {
+		string = string.replace(", /g", ",").replace(" ,/g", ",");
+		return string.split(',');
+	},
+
+	getAdviceString : function(conseils) {
+		var conseilTraduit = "";
+		// var arrayConseils = conseils.split(',');
+		// TODO utiliser getArrayFromString à la place
+		var arrayConseils = conseils.replace(", /g", ",").replace(" ,/g", ",").split(',');
+		// On parcours les conseils
+		if (arrayConseils.length > 0) {
+			var dataAdvices = this.getAdvicesList().getStore().getData();
+			dataAdvices.each(function(recordAdvice) {
+						for (i in arrayConseils) {
+							if (recordAdvice.raw.code === arrayConseils[i]) {
+								conseilTraduit += "<BR/><B>"
+										+ recordAdvice.raw.libelle
+										+ "</B><BR/>"
+										+ recordAdvice.raw.description;
+								if (recordAdvice.raw.fiche !== "") {
+									conseilTraduit += "Plus d'infos : "
+											+ "<A HREF='#'>"
+											+ recordAdvice.raw.fiche + "</A>";
+								}
+							}
+						}
+					});
+		}
+		if (conseilTraduit !== "") {
+			conseilTraduit = "<BR/><BR/>"/* Conseils : " */+ conseilTraduit;
+		}
+		return conseilTraduit;
+	},
+
+	/**
+	 * Renvoie une chaine de caractère correspond aux commentaires sur un
+	 * élément de l'application
+	 * 
+	 * @param {}
+	 *            code
+	 * @return {}
+	 */
+	getFaqString : function(code) {
+		var faqTraduit = "";
+		// On parcours les remarques de la faq
+		var dataFaq = this.getFaqList().getStore().getData();
+		dataFaq.each(function(recordFaq) {
+			// TODO utiliser getArrayFromString à la place
+					var arrayElementsFaq = recordFaq.raw.elements.replace(", /g", ",").replace(" ,/g", ",").split(',');
+					for (i in arrayElementsFaq) {
+						if (arrayElementsFaq[i] === code) {
+							faqTraduit += "<BR/><A HREF=faq>FAQ</A> : <B>" + recordFaq.raw.libelle
+									+ "</B><BR/>"
+									+ recordFaq.raw.description_fr;
+
+						}
+
+					}
+				});
+		/*if (faqTraduit !== "") {
+			faqTraduit = "<BR/><BR/>Commentaires (extraits FAQ) : " + faqTraduit;
+		}*/
+		return faqTraduit;
+	},
+	// CRN_FIN
 
 	onUpdateDataDetail : function(comp, newData, opts) {
 		if (newData) {
@@ -110,12 +184,19 @@ Ext.define('VivreANantes.controller.Garbages', {
 		list.setStore(store);
 	},
 
+	onInitFaq : function(list) {
+		console.log('onInitFaq');
+		var store = Ext.create('VivreANantes.store.FaqStore');
+		list.setStore(store);
+	},
+
 	/**
 	 * A l'initialisation de la fenêtre d'accueil
 	 */
 	onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
 		console.log('onInitGarbagesWasteTreatmentsCategoriesList');
-		var store = Ext.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
+		var store = Ext
+				.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
 		list.setStore(store);
 	},
 
@@ -150,66 +231,62 @@ Ext.define('VivreANantes.controller.Garbages', {
 			var conseilTraduit = "";
 			var conseils = "";
 			var modesDeCollecte = "";
-			var treatmentCategories = "";
-			if (record.data.conseils!=='') {
-				conseils = record.data.conseils+",";
+			var treatmentCategories = "Recyclable : ";
+			if (record.data.conseils !== '') {
+				conseils = record.data.conseils + ",";
 			}
 			// conseils de catégories de traitement
 			var conseilTraitementsTraduit = "";
 			if (record.data.categorie !== '') {
-				var dataWasteTreatmentsCategories = this.getWasteTreatmentsCategoriesList().getStore().getData();
+				var dataWasteTreatmentsCategories = this
+						.getWasteTreatmentsCategoriesList().getStore()
+						.getData();
 				dataWasteTreatmentsCategories.each(function(recordCategories) {
 							if (recordCategories.raw.code === record.data.categorie) {
-								conseils +=  recordCategories.raw.conseils;
-								modesDeCollecte +=  recordCategories.raw.modesCollecte;
+								conseils += recordCategories.raw.conseils;
+								modesDeCollecte += recordCategories.raw.modesCollecte;
 								treatmentCategories += recordCategories.raw.recyclable;
 							}
 						});
 			}
-			var arrayConseils = conseils.split(',');
-			// On parcours les conseils
-			if (arrayConseils.length>0) {
-				var dataAdvices = this.getAdvicesList().getStore().getData();
-				dataAdvices.each(function(recordAdvice) {
-					for (i in arrayConseils) {
-						if (recordAdvice.raw.code === arrayConseils[i]) {
-							conseilTraduit += "<BR/><B>"
-								+ recordAdvice.raw.libelle
-								+ "</B><BR/>"
-								+ recordAdvice.raw.description;
-							if (recordAdvice.raw.fiche !== "") {
-								conseilTraduit += "Plus d'infos : "+
-										"<A HREF='#'>"+ recordAdvice.raw.fiche + "</A>";
-							}
-						}
-					}
-				});
-			}
-			if (conseilTraduit !== "") {
-				conseilTraduit = "<BR/><BR/>"/*Conseils : "*/ + conseilTraduit;
-			}
+			// conseils
+			conseilTraduit = this.getApplication()
+					.getController('VivreANantes.controller.Garbages')
+					.getAdviceString(conseils);
+			// faq
+			var faqTraduit = this.getApplication()
+					.getController('VivreANantes.controller.Garbages')
+					.getFaqString(record.data.code);
+
 			// Modes de collecte
 			var modesDeCollecteTraduit = "";
 			var arrayModesDeCollecte = modesDeCollecte.split(',');
 			// On parcours les modes de collecte
-			if (arrayModesDeCollecte.length>0) {
-				var dataCollectMods = this.getCollectModList().getStore().getData();
+			if (arrayModesDeCollecte.length > 0) {
+				var dataCollectMods = this.getCollectModList().getStore()
+						.getData();
 				dataCollectMods.each(function(recordCollectMod) {
 					for (i in arrayModesDeCollecte) {
 						if (recordCollectMod.raw.code === arrayModesDeCollecte[i]) {
-							modesDeCollecteTraduit += "<A HREF='#'>"+recordCollectMod.raw.libelle+"</A>";
+							modesDeCollecteTraduit += "<A HREF='#'>"
+									+ recordCollectMod.raw.libelle + "</A>";
 						}
 					}
 				});
 			}
 			if (modesDeCollecteTraduit !== "") {
-				modesDeCollecteTraduit = "<BR/>Modes de collecte : " + modesDeCollecteTraduit;
+				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
+						+ modesDeCollecteTraduit;
 			}
 			// Recyclable OUI, NON, NON (mais ne pas mettre à la poubelle)
 			// "AA".replace("A/g", "B");
-			treatmentCategories = treatmentCategories.replace("PAS_POUBELLE/g", "<DIV STYLE='color:red' size='4'>NON</DIV> ne pas mettre à la poubelle.");
-			treatmentCategories = treatmentCategories.replace("OUI/g", "<DIV STYLE='color:green' size='4'>OUI</DIV>");
-			treatmentCategories = treatmentCategories.replace("NON/g", "<DIV STYLE='color:red' size='4'>NON</DIV>");
+			treatmentCategories = treatmentCategories
+					.replace("PAS_POUBELLE/g",
+							"<DIV STYLE='color:red' size='4'>NON</DIV> ne pas mettre à la poubelle.");
+			treatmentCategories = treatmentCategories.replace("OUI/g",
+					"<DIV STYLE='color:green' size='4'>OUI</DIV>");
+			treatmentCategories = treatmentCategories.replace("NON/g",
+					"<DIV STYLE='color:red' size='4'>NON</DIV>");
 			var concerneAussi = "";
 			if (record.data.concerne_aussi !== "") {
 				concerneAussi = "<BR/>Concerne aussi : "
@@ -217,13 +294,12 @@ Ext.define('VivreANantes.controller.Garbages', {
 			}
 
 			this.garbageDetail
-					.setTpl("<table border='0'><tr>" +
-							'<td><img src=resources/images/{image} height=120 /></td>' +
-							'<td>'+treatmentCategories+'<br/>'+modesDeCollecteTraduit+'</td>' +
-							"</tr></table>" +
-							'<div>{nom}</div>' +
-							'{description}' +
-							concerneAussi + conseilTraduit);
+					.setTpl("<table border='0'><tr>"
+							+ '<td><img src=resources/images/{image} height=120 /></td>'
+							+ '<td>' + treatmentCategories + '<br/>'
+							+ modesDeCollecteTraduit + '</td>'
+							+ "</tr></table>" + '<div>{nom}</div>'
+							+ '{description}' + concerneAussi + conseilTraduit + faqTraduit);
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);
 			/*

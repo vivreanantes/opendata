@@ -10,8 +10,9 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			homeCollectModsList : 'HomeCollectModsList',
 			homeCollectModDetail : 'HomeCollectModsDetails',
 			homeCollectModsForm : 'HomeCollectModsForm',
-			homeCollectModsFormText : '#homeCollectModsFormText',
-			homeCollectModsFormSelect : '#homeCollectModsFormSelect'
+			homeCollectModsFormText : '#homeCollectModsFormText'
+			// ,
+			// homeCollectModsFormSelect : '#homeCollectModsFormSelect'
 		},
 		control : {
 
@@ -34,11 +35,11 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 				keyup : 'onHomeCollectModStoreFilter',
 				change : 'onHomeCollectModStoreFilter',
 				clearicontap : 'onHomeCollectModStoreFilter'
-			},
-
-			homeCollectModsFormSelect : {
-				change : 'onHomeCollectModStoreFilter'
 			}
+			// ,
+			// homeCollectModsFormSelect : {
+			// 	change : 'onHomeCollectModStoreFilter'
+			// }
 
 		}
 	},
@@ -124,7 +125,7 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 	onHomeCollectModStoreFilter : function() {
 
 		var text = this.getHomeCollectModsFormText();
-		var select = this.getHomeCollectModsFormSelect();
+		// var select = this.getHomeCollectModsFormSelect();
 		var store = this.getHomeCollectModsList().getStore();
 
 		store.clearFilter();
@@ -134,9 +135,8 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 			filterFn : function(item) {
 				var escaperegex = Ext.String.escapeRegex;
 				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				/*
 				var categorietest = new RegExp(escaperegex(select.getValue()));
-				// TODO prévoir de pouvoir mettre "venelle, mail" pour regrouper
-				// les cas peu nombreux et faciliter la lisibilité de la page.
 				if (select.getValue().indexOf(",") !== -1) {
 					var array = select.getValue().split(',');
 					var expression = '';
@@ -156,10 +156,12 @@ Ext.define('VivreANantes.controller.HomeCollectMods', {
 					// console.log("res :" +
 					// categorietest.test(item.data.typeVoie));
 				}
+				*/
 				// TODO on pourrait mettre denominationCompleteVoie
-				return (texttest.test(item.data.nomVoie) && (select
-						.getValue() === 'all' || categorietest
-						.test(item.data.typeVoie)));
+				// return (texttest.test(item.data.nomVoie) && (select
+				//		.getValue() === 'all' || categorietest
+				//		.test(item.data.typeVoie)));
+				return (texttest.test(item.data.denominationCompleteVoie));
 			}
 		});
 		store.filter(filterHomeCollectMod);

@@ -12,15 +12,15 @@
 		"fiche" : "",
 		"" : ""
 	}, {
-		"code" : "cons_uniquement_bouteille_flacon",
-		"libelle" : "Plastique : uniquement bouteilles et flacons",
-		"description" : "<p >Pour des raisons économiques et environnementales, on ne recycle que les bouteilles et les flacons plastiques, préférant pour les autres emballages plastiques la valorisation énergétique. </p>",
-		"fiche" : "fiche_pet",
+		"code" : "",
+		"libelle" : "",
+		"description" : "",
+		"fiche" : "",
 		"" : ""
 	}, {
 		"code" : "cons_noeudtrisac",
-		"libelle" : "Fermer par un double noeud.",
-		"description" : "",
+		"libelle" : "Double nœud",
+		"description" : "Les sacs doivent être fermés par un double nœud",
 		"fiche" : "",
 		"" : ""
 	}, {
@@ -111,7 +111,7 @@
 		"code" : "cons_compostage",
 		"libelle" : "Compostage",
 		"description" : "",
-		"fiche" : "",
+		"fiche" : "fiche_compostage",
 		"" : ""
 	}, {
 		"code" : "cons_souille",
@@ -134,14 +134,14 @@
 	}, {
 		"code" : "cons_deuxiemevie",
 		"libelle" : "Deuxième vie",
-		"description" : "<p >Votre appareil est en bon état. Même en panne, donnez-le à une association spécialisée.<br/>En savoir plus : <a href='www.deuxieme-vie.org' >www.deuxieme-vie.org</a> </p>",
+		"description" : "<p >Votre appareil est en bon état. Même en panne, donnez-le à une association/entreprise spécialisée. La liste de ces structures est fournie sur la page 'structure' <br/>En savoir plus : <a href='www.deuxieme-vie.org' >www.deuxieme-vie.org</a></p>",
 		"fiche" : "",
 		"" : ""
 	}, {
-		"code" : "cons_bouteilleflacon",
+		"code" : "cons_pasuniquementbouteilleflacon",
 		"libelle" : "Recyclage du plastique : uniquement bouteilles et flacons",
-		"description" : "<p >En plastique, on ne recycle que les bouteilles et les flacons vides.</p>",
-		"fiche" : "",
+		"description" : "<p >Depuis janvier 2012, sur Nante, dans le cadre d'un projet pilote, on <B>recycle tous types de plastique</B> : les bouteilles et les flacons (comme ailleurs) mmais aussi les pots (crème fraiche...), barquettes, sacs de supermarché...</p>",
+		"fiche" : "Fiche PET",
 		"" : ""
 	}, {
 		"code" : "cons_papieralu",
@@ -152,13 +152,13 @@
 	}, {
 		"code" : "cons_coupant",
 		"libelle" : "Coupant",
-		"description" : "<p >Certains déchets non valorisables (vaisselle, faïence, miroir) ne peuvent être mis dans les sacs poubelles car ils déchireraient les sacs, ou seraient dangereux à manipuler.",
+		"description" : "<P>Certains déchets non valorisables (vaisselle, faïence, miroir) ne peuvent être mis dans les sacs poubelles car ils déchireraient les sacs, ou seraient dangereux à manipuler.</P>",
 		"fiche" : "",
 		"" : ""
 	}, {
 		"code" : "cons_ampoulemercure",
 		"libelle" : "Mercure",
-		"description" : "<p >Toxique car contiennent un peu de mercure.</p>",
+		"description" : "<p >Ce sont des produits toxiques car contiennent un peu de mercure. C'est pourquoi il faut les ramener en déchetterie ou les points de ventes (supermachés, magasins de bricolage...).</p>",
 		"fiche" : "",
 		"" : ""
 	}, {
@@ -170,7 +170,7 @@
 	}, {
 		"code" : "cons_recuppdv",
 		"libelle" : "Récupération dans les points de vente",
-		"description" : "<p >Pour certains appareils vous pouvez échanger l'ancien contre le nouveau (voiture, appareil électro-ménager...). De même les supermarchés, magasins de bricolage reprennent certains biens usagers (ampoule basse consommation...)</p>",
+		"description" : "<p >Pour certains appareils vous pouvez échanger l'ancien contre le nouveau (voiture, appareil électro-ménager...). De même les supermarchés, magasins de bricolage reprennent certains biens usagers (ampoule basse consommation...).</p>",
 		"fiche" : "",
 		"" : ""
 	}, {
@@ -189,6 +189,36 @@
 		"code" : "cons_fenetre_enveloppe",
 		"libelle" : "Suppression fenêtre",
 		"description" : "<p >supprimer la fenêtre en plastique ?</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_tetrapak",
+		"libelle" : "Recyclage Tétrapak",
+		"description" : "<p >Les Tétra Pak se recyclent : le carton est récupéré, le reste est très rarement récupéré. Préféré les emballages en verre.</p>",
+		"fiche" : "fiche_tetrapak",
+		"" : ""
+	}, {
+		"code" : "cons_ecotox",
+		"libelle" : "Que dépose t'on à Ecotox ?",
+		"description" : "<ul ><li>Déchets toxiques de la salle de bain : déboucheur liquide, détachant, eau de Javel, nettoyants à sol, récurant pour toilette, thermomètres à mercure</li><li>Déchets toxiques du jardinage : engrais chimiques, herbicides, fongicides, insecticides</li><li>Déchets toxiques de la cuisine : nettoyants cuivre et argenterie, nettoyants à l’ammoniac, récurans pour four</li><li>Déchets toxiques du garage : antigel, liquide de refroidissement, mastic de carrosserie, peinture antirouille, huile minérale, filtre à huile</li><li>Déchets toxiques du bricolage : colles: produits de traitement du bois, enduits et vernis, peintures huile et eau, laques, résines, diluants, solvants</li><li>Déchets toxiques contre les 'parasites' : anti-fourmis, insecticides, naphtaline, mort aux rats,</li><li>Déchets toxiques divers : acides, bases, petits accumulateurs, piles, essence de térébenthine, radiographie, révélateur et fixateur photo, néons, lampes à économie d’énergie, tubes fluo</li></ul><p >Attention : Les déchets ménagers d’origine médicale (seringues notamment) ne sont pas collectés par ce service.</p>",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_distrisac_relais",
+		"libelle" : "Retrait de sac en relais (3 rouleaux par retrait, 2 retraits/an)",
+		"description" : "Les relais sont des lieux de réapprovisionnement où vous pouvez retirez 3 rouleaux de sacs (bleus et/ou jaunes). Vous pouvez vous y rendre 2 fois par an. Ils sont destinés à vous « dépanner » si vous n’avez pas pu vous rendre à un rendez-vous.",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_distrisac_rdv",
+		"libelle" : "Retrait de sac aux 'rendez-vous'",
+		"description" : "Pour chaque quartier, de 2 à 4 'rendez-vous' ont lieux par an.",
+		"fiche" : "",
+		"" : ""
+	}, {
+		"code" : "cons_distrisac_achat",
+		"libelle" : "Achats de sacs Trisacs ",
+		"description" : "<UL><LI>en supermarché : Leclerc Paridis, Super U Dalby (prix constaté au 02/12 : 2,20 le rouleau de 30 sacs), Carrefour Market Rond Point de Vannes, Intermarché Pitre Chevalier.</LI> <LI>dans des distributeurs automatiques : devant la mairie de Chantenay, sous le marché de Talensac, dans le hall de la piscine Jules Verne, dans le hall de la piscine petite amazonie.</LI> </UL>",
 		"fiche" : "",
 		"" : ""
 	}, {

@@ -9,7 +9,7 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 			xtype : 'vanmaposm',
 
 			config : {
-				title : 'Carte OSM',
-				iconCls : 'maps'				
+				title : 'Carte',
+				iconCls : 'locate'				
 			}
 		});

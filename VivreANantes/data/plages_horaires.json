@@ -1,0 +1,7 @@
+{
+	'plages_horaires' : [{
+		"libelle" : "Intermarché Saint Donatien",
+		"horaires" : "Lundi au samedi de 09h00 à 20h00 (Juillet/Août fermeture entre 12h30 et 14h30)",
+		"plagesHoraires" : ",0109-3006_lu-ma-me-je-ve-sa_09h00-20h00,0107-3108_lu-ma-me-je-ve-sa_09h00-12h30,0107-3108_lu-ma-me-je-ve-sa_14h30-20h00"
+	}]
+}
