@@ -9,45 +9,82 @@
  * Ext.create('Ext.Leaflet', {}); Ext.create('Ext.Panel', { fullscreen: true,
  * layout: 'fit', items: [map] }); } });
  */
-// TODO A reporter dans le SDK Sencha Touch
 Ext.define('VivreANantes.view.geo.LeafletMap', {
-	extend : 'Ext.Component',
-	map : null,
-	xtype : 'leafletmap',
-	config : {
-		map : null
-	},
-	constructor : function() {
-		this.callParent(arguments);
-		this.element.setVisibilityMode(Ext.Element.OFFSETS);
-		this.on('painted', this.renderMap, this);
-	},
-	renderMap : function() {
-		if (this.map) {
-			return true;
-		}
-		this.map = new L.Map(this.element.dom, {
-					zoomControl : true,
-					trackResize : false
-				});
-		var cloudmade = new L.TileLayer(
-				'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-					attribution : 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-					maxZoom : 18
-				});
-		// TODO Mettre une vue centrée en dynamique par rapport à l'appareil en HTML5 
-		// http://www.alsacreations.com/tuto/lire/926-geolocalisation-geolocation-html5.html
-		this.map.addLayer(cloudmade).setView(
-				new L.LatLng(47.21837100000001, -1.553620999999985),15);
+			extend : 'Ext.Component',
+			map : null,
+			xtype : 'leafletmap',
+			requires : ['Ext.util.Geolocation'],
+			isMap : true,
+			config : {
 
-	},
+				/**
+				 * @cfg {Boolean/Ext.util.Geolocation} useCurrentLocation Pass
+				 *      in true to center the map based on the geolocation
+				 *      coordinates or pass a
+				 *      {@link Ext.util.Geolocation GeoLocation} config to have
+				 *      more control over your GeoLocation options
+				 * @accessor
+				 */
+				useCurrentLocation : false,
+				/**
+				 * @event maplrender Fired when MapOpenStreetMap initially
+				 *        rendered.
+				 * @param {Ext.Map}
+				 *            this
+				 * @param {LeafletMap}
+				 *            map The rendered LeafletMap instance
+				 */
 
-	onUpdate : function(map, e, options) {
-		this.setHtml((options || {}).data);
-	},
+				/**
+				 * @cfg {Ext.util.Geolocation} geo Geolocation provider for the
+				 *      map.
+				 * @accessor
+				 */
+				geo : null,
 
-	onDestroy : function() {
-		this.callParent();
-	}
+				map : null
+			},
 
-});
+			constructor : function() {
+				this.callParent(arguments);
+				this.element.setVisibilityMode(Ext.Element.OFFSETS);
+				if (!window.L) {
+					this.setHtml('Leaflet is required');
+				} else {
+					this.on('painted', this.renderMap, this);
+				}
+
+			},
+			renderMap : function() {
+				var me = this;
+				if (me.map) {
+					return true;
+				}
+				me.map = new L.Map(this.element.dom, {
+							zoomControl : true,
+							trackResize : false
+						});
+				me.fireEvent('maplrender', me, me.map);
+			},
+
+			updateUseCurrentLocation : function(useCurrentLocation) {
+				this.setGeo(useCurrentLocation);
+//				if (!useCurrentLocation) {
+//					this.renderMap();
+//				}
+			},
+
+			onUpdate : function(map, e, options) {
+				this.setHtml((options || {}).data);
+			},
+
+			onDestroy : function() {
+				this.callParent();
+			},
+
+			applyGeo : function(config) {
+				return Ext.factory(config, Ext.util.Geolocation, this.getGeo());
+			}
+			
+
+		});

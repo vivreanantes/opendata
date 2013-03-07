@@ -1,6 +1,5 @@
 Ext.Loader.setPath({
-	'Ext' : 'sdk/src',
-	'Ext.ux': 'lib/ux'
+	'Ext' : 'touch/src'
 });
    
 console.log("Application");
@@ -10,8 +9,8 @@ Ext
 			views : [
 			// Vue Principale
 			'Main',
-			// Partie Carte
-			//'geo.LeafletMap',
+			// Partie Carte	
+			'geo.LeafletMap',
 			'geo.MapOSM',
 			//'geo.Map', 
 			'geo.MapContainer',
