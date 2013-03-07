@@ -6,8 +6,7 @@
  */
 Ext.define('VivreANantes.view.geo.MapOSM', {
 			extend : 'VivreANantes.view.geo.LeafletMap',
-			xtype : 'vanmaposm',
-			alias : 'widget.vanmaposm',
+			xtype : 'vanmaposm',		
 			config : {
 				title : 'Carte',
 				iconCls : 'locate'

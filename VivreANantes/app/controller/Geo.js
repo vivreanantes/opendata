@@ -39,6 +39,21 @@ Ext.define('VivreANantes.controller.Geo', {
 		}
 	},
 
+	init : function() {
+		var me = this;
+		var LeafIcon = L.Icon.extend({});
+		me.greenIcon = new LeafIcon({
+					iconUrl : 'resources/icons/marker-icon-green.png'
+				});
+		me.pinkIcon = new LeafIcon({
+					iconUrl : 'resources/icons/marker-icon-pink.png'
+				});
+		me.redIcon = new LeafIcon({
+					iconUrl : 'resources/icons/marker-icon-red.png'
+				});
+
+	},
+
 	resetCenter : function(geo) {
 		localStorage.setItem('latitude', geo.getLatitude());
 		localStorage.setItem('longitude', geo.getLongitude());
@@ -61,37 +76,24 @@ Ext.define('VivreANantes.controller.Geo', {
 		if (Ext.isDefined(me.getVanmaposm())) {
 			var map = me.getVanmaposm().map;
 			if (Ext.isDefined(map)) {
-				
-				var position = new L.LatLng(geo.getLatitude(), geo
-									.getLongitude());
-				
-				if (!Ext.isDefined(map.center)) {
-					var LeafIcon = L.Icon.extend({
-								options : {
-									/*
-									 * shadowUrl :
-									 * '../docs/images/leaf-shadow.png',
-									 */									
-								}
-							});
-					var greenIcon = new LeafIcon({
-								iconUrl : 'resources/icons/marker-icon-green.png'
-							});
 
-					
+				var position = new L.LatLng(geo.getLatitude(), geo
+								.getLongitude());
+
+				if (!Ext.isDefined(map.center)) {
 					map.center = new L.Marker(position);
 					map.addLayer(map.center);
-					map.center.setIcon(greenIcon);
+					map.center.setIcon(me.greenIcon);
 				}
 
 				map.center.setLatLng(position);
 
 				if (!map.hasLayer(me.cloudmade)) {
 					map.addLayer(me.cloudmade);
-				}				
-				map
-						.setView(new L.LatLng(geo.getLatitude(), geo
-												.getLongitude()), map.getZoom());
+				}
+				map.setView(
+						new L.LatLng(geo.getLatitude(), geo.getLongitude()),
+						map.getZoom());
 			} else {
 				console.log('map non encore disponible');
 			}
@@ -143,32 +145,13 @@ Ext.define('VivreANantes.controller.Geo', {
 	/**
 	 * Positionner les structures
 	 * 
-	 * @param {}
-	 *            store
-	 * @param {}
-	 *            map
-	 * @param {}
-	 *            cloudmade
 	 */
-	positionnerStructures : function(store, map, cloudmade) {
+	positionnerStructures : function() {
 		var me = this;
 
 		console.log('positionnerStructures');
 
-		map.addLayer(me.cloudmade);
-
-		// Centrer à Nantes, la localisation fera le reste
-		map.setView(new L.LatLng(47.21837100000001, -1.553620999999985), 15);
-
-		store.each(function(record) {
-					// console.log(record);
-					var position = new L.LatLng(record.get('latitude'), record
-									.get('longitude'));
-					var marker = new L.Marker(position);
-					// map.addLayer(cloudmade).setView(position, 15);
-					map.addLayer(marker);
-					marker.bindPopup(record.get('libelle')).openPopup();
-				});
+		me.refreshMarkers();
 
 	},
 
@@ -221,20 +204,23 @@ Ext.define('VivreANantes.controller.Geo', {
 					});
 		}
 
-		var structureStore = Ext.create('VivreANantes.store.StructureStore', {
-			autoLoad : true,
-			listeners : {
-				'load' : function(store, results, successful) {
-					// console.log("Chargement du structure store");
-					// console.log(store);
-					// console.log(results);
-					// console.log(successful);
+		if (!Ext.isDefined(me.structureStore)) {
+			me.structureStore = Ext.create('VivreANantes.store.StructureStore',
+					{
+						autoLoad : true,
+						listeners : {
+							'load' : function(store, results, successful) {
+								// console.log("Chargement du structure store");
+								// console.log(store);
+								// console.log(results);
+								// console.log(successful);
 
-					me.positionnerStructures(structureStore, map, me.cloudmade);
+								me.positionnerStructures();
+							}
 
-				}
-			}
-		});
+						}
+					});
+		};
 
 	},
 
@@ -260,6 +246,66 @@ Ext.define('VivreANantes.controller.Geo', {
 							Ext.emptyFn);
 			localStorage.setItem('alreadyAccessMap', 'true');
 		}
+	},
+
+	/**
+	 * 
+	 */
+	onStructureStoreFilter : function() {
+		var me = this;
+
+		// var text = this.getGarbagesFormText();
+		// var select = this.getGarbagesFormSelect();
+		// var store = this.getGarbagesList().getStore();
+
+		// MOCK
+		var filter = "modco_decheterie";
+		// MOCK
+
+		if (filter === 'all') {
+			me.structureStore.clearFilter();
+
+		} else {
+			me.structureStore.filter('modesCollecte', filter);
+		}
+
+		// me.fireEvent('filterstructure',store);
+
+		me.refreshMarkers();
+	},
+
+	refreshMarkers : function() {
+		var me = this;
+		var map = me.getVanmaposm().map;
+
+		//map.clearLayers();
+
+		if (!map.hasLayer(me.cloudmade)) {
+			map.addLayer(me.cloudmade);
+		}
+		// Centrer à Nantes, la localisation fera le reste
+		map.setView(new L.LatLng(47.21837100000001, -1.553620999999985), 15);
+		// TODO : JSON des maps association : icone + categorie
+
+		me.structureStore.each(function(record) {
+					var position = new L.LatLng(record.get('latitude'), record
+									.get('longitude'));
+					var marker = new L.Marker(position);
+
+					var icon;
+					// MOCK
+					if (record.get('modesCollecte').length < 9) {
+						icon = me.greenIcon;
+					} else if (record.get('modesCollecte').length > 8
+							&& record.get('modesCollecte').length < 15) {
+						icon = me.pinkIcon;
+					} else {
+						icon = me.redIcon;
+					}
+					marker.setIcon(icon);
+					map.addLayer(marker);
+					marker.bindPopup(record.get('libelle')).openPopup();
+				});
 	}
 
 });

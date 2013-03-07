@@ -14,6 +14,22 @@ Ext.define('VivreANantes.model.Structure', {
 						}, {
 							name : 'longitude',
 							type : 'float'
+						}, {
+							name:'description_fr',
+							type:'string'
+						},{
+							name:'modesCollecte',
+							type:'string',
+							defaultValue:'d'
+						},{
+							name:'src',
+							type:'string'
+						},{
+							name:'numeroTelephone',
+							type:'string'
+						},{
+							name:'adresseTemp',
+							type:'string'
 						}]
 			}
 		});

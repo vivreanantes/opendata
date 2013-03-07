@@ -3,24 +3,25 @@
  */
 Ext.define('VivreANantes.view.geo.MapContainer', {
 			extend : 'Ext.Container',
-			
-			xtype : 'mapContainer',			
+			xtype : 'mapContainer',
 			config : {
-				layout:'fit',
+				layout : 'vbox',
 				title : 'Carte',
-				items : [{
+				items : [
+					{
 							xtype : 'toolbar',
-							docked : 'top',
-							title : 'Carte',
-							items : [{										
+							docked : 'top',													
+							items : [{
 										xtype : 'button',
 										iconCls : 'refresh',
 										ui : 'plain',
 										iconMask : true
 									}]
+						}, {
+							xtype : 'vanmaposm'
 						}],
 
-				iconCls : 'maps',
-				autoDestroy : false			
+				iconCls : 'locate',
+				autoDestroy : false
 			}
 		});
