@@ -6,7 +6,7 @@
 Ext.define('VivreANantes.view.geo.Map', {
 			extend : 'Ext.Map',
 			xtype : 'vanmap',
-
+  			alias   : 'widget.vanmap',	
 			config : {
 				title : 'Carte',
 				iconCls : 'maps',

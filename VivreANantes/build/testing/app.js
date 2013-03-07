@@ -32221,10 +32221,10 @@ Ext.define('Ext.ux.LeafletMap', {
 Ext.define('VivreANantes.view.geo.MapOSM', {
 			extend : 'Ext.ux.LeafletMap',
 			xtype : 'vanmaposm',
-
+			alias : 'widget.vanmaposm',
 			config : {
 				title : 'Carte',
-				iconCls : 'locate'				
+				iconCls : 'locate'
 			}
 		});
 /**
@@ -37394,15 +37394,25 @@ Ext.define('Ext.MessageBox', {
  * https://developers.google.com/maps/documentation/javascript/reference?hl=fr#ControlPosition
  * http://leafletjs.com/reference.html#marker
  * </p>
+ * 
+ * 
+ * TODO : - Gérer un nombre d'objets restreints à afficher - Gérer un
+ * enregistrement dans le localStorage
+ * 
+ * 
+ * 
+ * 
  */
 Ext.define('VivreANantes.controller.Geo', {
 	extend : 'Ext.app.Controller',
-	requires : ['Ext.MessageBox'
-
-	],
+	requires : ['Ext.MessageBox'],
 	config : {
 		refs : {
-			vanmap : 'vanmap'
+			vanmaposm : {
+				selector : 'vanmaposm',
+				xtype : 'vanmaposm',
+				autoCreate : true
+			}
 		},
 		control : {
 			vanmaposm : {
@@ -37412,8 +37422,70 @@ Ext.define('VivreANantes.controller.Geo', {
 			mapContainer : {
 				initialize : 'onInitMapContainer',
 				activate : 'onMapContainerActivate'
+
 			}
 		}
+	},
+
+	resetCenter : function(geo) {
+		localStorage.setItem('latitude', geo.getLatitude());
+		localStorage.setItem('longitude', geo.getLongitude());
+
+		this.resetCenterPosition(geo);
+
+	},
+
+	/**
+	 * Remettre à Zero le centre
+	 * 
+	 * @param {}
+	 *            geo
+	 */
+	resetCenterPosition : function(geo) {
+		var me = this;
+
+		console.log('latitude : ' + geo.getLatitude() + ' - longitude :'
+				+ geo.getLongitude());
+		if (Ext.isDefined(me.getVanmaposm())) {
+			var map = me.getVanmaposm().map;
+			if (Ext.isDefined(map)) {
+				
+				var position = new L.LatLng(geo.getLatitude(), geo
+									.getLongitude());
+				
+				if (!Ext.isDefined(map.center)) {
+					var LeafIcon = L.Icon.extend({
+								options : {
+									/*
+									 * shadowUrl :
+									 * '../docs/images/leaf-shadow.png',
+									 */									
+								}
+							});
+					var greenIcon = new LeafIcon({
+								iconUrl : 'resources/icons/marker-icon-green.png'
+							});
+
+					
+					map.center = new L.Marker(position);
+					map.addLayer(map.center);
+					map.center.setIcon(greenIcon);
+				}
+
+				map.center.setLatLng(position);
+
+				if (!map.hasLayer(me.cloudmade)) {
+					map.addLayer(me.cloudmade);
+				}
+				console.log('Center ');
+				map
+						.setView(new L.LatLng(geo.getLatitude(), geo
+												.getLongitude()), map.getZoom());
+			} else {
+				console.log('map non encore disponible');
+			}
+		}
+
 	},
 
 	/**
@@ -37457,31 +37529,32 @@ Ext.define('VivreANantes.controller.Geo', {
 
 	},
 
+	/**
+	 * Positionner les structures
+	 * 
+	 * @param {}
+	 *            store
+	 * @param {}
+	 *            map
+	 * @param {}
+	 *            cloudmade
+	 */
 	positionnerStructures : function(store, map, cloudmade) {
+		var me = this;
+
 		console.log('positionnerStructures');
 
-		// TODO Mettre une vue centrée en dynamique par rapport à l'appareil en
-		// HTML5
-		// http://www.alsacreations.com/tuto/lire/926-geolocalisation-geolocation-html5.html
-		map.addLayer(cloudmade).setView(
-				new L.LatLng(47.21837100000001, -1.553620999999985), 15);
+		map.addLayer(me.cloudmade);
+
+		// Centrer à Nantes, la localisation fera le reste
+		map.setView(new L.LatLng(47.21837100000001, -1.553620999999985), 15);
 
 		store.each(function(record) {
-					console.log(record);
-					// var position = new L.LatLng(record.latitude,
-					// record.longitude);
-					//
-					// var marker = new L.Marker(position);
-					//
-					// // map.addLayer(marker);
-					// map.addLayer(marker);
-					// marker.bindPopup(record.libelle).openPopup();
-
-					var position = new L.LatLng(record.get('latitude'),
-					record.get('longitude'));
+					// console.log(record);
+					var position = new L.LatLng(record.get('latitude'), record
+									.get('longitude'));
 					var marker = new L.Marker(position);
-
-					//map.addLayer(cloudmade).setView(position, 15);
+					// map.addLayer(cloudmade).setView(position, 15);
 					map.addLayer(marker);
 					marker.bindPopup(record.get('libelle')).openPopup();
 				});
@@ -37499,35 +37572,58 @@ Ext.define('VivreANantes.controller.Geo', {
 	 *            eOpts
 	 */
 	onMapRender : function(extmap, map, eOpts) {
-		var cloudmade = new L.TileLayer(
-				'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-					attribution : 'OpenStreetMap - VivreANantes',
-					// attribution : 'Map data &copy; <a
-					// href="http://openstreetmap.org">OpenStreetMap</a>
-					// contributors, <a
-					// href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
-					// Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-					maxZoom : 18
-				});
-
 		var me = this;
-		var structureStore = Ext.create('VivreANantes.store.StructureStore', {
-					autoLoad : true,
-					listeners : {
-						'load' : function(store, results, successful) {
-							console.log("Chargement du structure store");
-							console.log(store);
-							console.log(results);
-							console.log(successful);
+		if (!Ext.isDefined(me.cloudmade)) {
+			me.cloudmade = new L.TileLayer(
+					'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+						attribution : 'OpenStreetMap - VivreANantes',
+						// attribution : 'Map data &copy; <a
+						// href="http://openstreetmap.org">OpenStreetMap</a>
+						// contributors, <a
+						// href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
+						// Imagery © <a
+						// href="http://cloudmade.com">CloudMade</a>',
+						maxZoom : 18
+					});
+		}
 
-							me.positionnerStructures(structureStore, map,
-									cloudmade);
-
+		// A l'initialisation de la carte, on crée une variable du
+		// controller pour gérer la modification de localisation
+		// gérant la réactualisation en fonction de la postion
+		if (!Ext.isDefined(me.geolocate)) {
+			me.geolocate = Ext.create('Ext.util.Geolocation', {
+						autoUpdate : true,
+						listeners : {
+							locationupdate : function(geo) {
+								me.resetCenter(geo);
+							},
+							locationerror : function(geo, bTimeout,
+									bPermissionDenied, bLocationUnavailable,
+									message) {
+								if (bTimeout) {
+									console.error('Timeout');
+								} else {
+									console.error('Erreur :(');
+								}
+							}
 						}
-					}
-				});
+					});
+		}
 
-		// En dur
+		var structureStore = Ext.create('VivreANantes.store.StructureStore', {
+			autoLoad : true,
+			listeners : {
+				'load' : function(store, results, successful) {
+					// console.log("Chargement du structure store");
+					// console.log(store);
+					// console.log(results);
+					// console.log(successful);
+
+					me.positionnerStructures(structureStore, map, me.cloudmade);
+
+				}
+			}
+		});
 
 	},
 
