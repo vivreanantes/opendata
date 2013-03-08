@@ -30,7 +30,7 @@ local.properties
 # Eclipse #
 ###########
 *.pydevproject
-#.project
+.project
 .metadata
 .metadata/
 .metadata/*
@@ -42,7 +42,7 @@ tmp/**/*
 *.swp
 *~.nib
 local.properties
-#.classpath
+.classpath
 .settings/
 .loadpath
 
