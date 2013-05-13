@@ -3,15 +3,22 @@ Ext.define('VivreANantes.store.TrisacStore', {
 			id : 'trisacstore', 	
 			config :{
 				autoLoad : true,
-				fields : ['code', 'type', 'libelle', 'plagesHoraires', 'adresse_',
-								'horaires', 'conseils', 'quartier_'],
+				fields : ['code', 'type', 'libelle', 'plagesHoraires', 'adresseTemp',
+								'horaires', 'conseils', 'quartier'],
 				proxy : {
 					type : 'ajax',
-					url : 'data/trisacs.json',
+					// url : 'data/trisacs.json',
+					url : 'data/structures2.json',
 					reader : {
 						type : 'json',
 						rootProperty : 'distrisac'
 					}
 				}	
+				,filters: [
+        		{
+            		property: "type",
+            		value: /distrisac/
+        		}
+    		]
 			}
 		});

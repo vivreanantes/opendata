@@ -18,13 +18,8 @@ Ext
 			// Accueil
 			'welcome.Welcome',
 			'welcome.WelcomeList',
+			// 'garbages.Garbages',
 			// Déchets
-			'garbages.Garbages',
-			'garbages.GarbagesDetails',
-			'garbages.GarbagesList',
-			'garbages.GarbagesContainer',
-			'garbages.GarbagesForm',
-			// CRN_DEBUT
 			'garbages.UsualCategoriesList',
 			'garbages.AdvicesList',
 			'garbages.FaqList',
@@ -33,7 +28,6 @@ Ext
 			'collectMod.CollectMods',
 			'faq.FaqContainer',
 			'faq.FaqForm',
-			// CRN_FIN
 			// Mode de collecte à domicile
 			'homecollectmods.HomeCollectMods',
 			'homecollectmods.HomeCollectModsContainer',
@@ -47,7 +41,13 @@ Ext
 			// A propos
 			'about.Description',
 			// Calendrier
-			'calendar.Calendar',
+			// 'calendar.Calendar',
+			// 'calendar.Events',
+			'structures.Structures',
+			'structures.StructuresContainer',
+			'structures.StructuresDetails',
+			'structures.StructuresForm',
+			'structures.StructuresList',
 			// Trisac
 			'trisac.Trisacs',
 			'trisac.TrisacContainer',
@@ -56,11 +56,11 @@ Ext
 			'trisac.TrisacList'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations',  'Garbages', 'HomeCollectMods', 'Trisacs'],
+			controllers : [ 'Welcome', 'Geo', 'Informations', 'StructuresController',  'Garbages', 'HomeCollectMods', 'TrisacsController'/*, 'Calendar'*/],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'Faq', 'WasteTreatmentsCategories', 'CollectMod'],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'Faq', 'WasteTreatmentsCategories', 'CollectMod'/*, 'CalendarModel'*/],
 			
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'FaqStore'/*, 'DistrisacStore'*/, 'TrisacStore'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'FaqStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

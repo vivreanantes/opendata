@@ -27,13 +27,13 @@ Ext.define('VivreANantes.view.trisac.Trisacs', {
 					xtype : 'list',
 					store : {
 						autoLoad : true,
-						fields : ['code', 'type', 'libelle', 'plagesHoraires', 'adresse_',
-								'horaires', 'conseils', 'quartier_'],
+						fields : ['code', 'type', 'libelle', 'plagesHoraires', 'adresse',
+								'horaires', 'conseils', 'quartier'],
 						// TODO : le regroupement par Quartier ne fonctionne pas											
-						groupField: 'quartier_',
+						groupField: 'quartier',
     					grouper: {
               				groupFn: function (item) {
-                				return item.get('quartier_');
+                				return item.get('quartier');
               				} // groupFn
             			}, // grouper
             			

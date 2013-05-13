@@ -5,8 +5,8 @@ Ext.define('VivreANantes.view.trisac.TrisacDetails', {
 	config : {
 		title : 'Détails',
 		layout : 'vbox',
+		// le template est modifié dans le controlleur
 		tpl : '',
-		
 		record : null
 	}
 
