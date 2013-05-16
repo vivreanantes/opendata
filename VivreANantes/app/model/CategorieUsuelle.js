@@ -4,21 +4,40 @@ Ext.define('VivreANantes.model.CategorieUsuelle', {
 			config : {
 				fields : [{
 							name : 'id',
-							type : 'int'
+							type : 'int',
+							defaultValue : 0
 						}, {
-							name : 'value',
-							type : 'string',
-							mapping : 'code'
+							name : 'code',
+							type : 'string'
 						}, {
-							name : 'text',
+							// 'nom' dans json, 'libelle' dans js
+							name : 'nom',
 							type : 'string',
 							mapping : 'libelle'
-						},
-						{
-							name : 'conseils',
+						}, {
+							name : 'description_fr',
+							type : 'string'
+						}, {
+							// 'sousCategories' dans json,
+							// 'sous_categories' dans js
+							name : 'sousCategories',
 							type : 'string',
-							mapping : 'conseils'
+							mapping : 'sous_categories'
+						}, {
+							// 'estSousCategorie' dans json,
+							// 'est_sous_sategorie' dans js
+							name : 'estSousCategorie',
+							type : 'string',
+							mapping : 'est_sous_sategorie'
+						}, {
+							name : 'conseils',
+							type : 'string'
+						}, {
+							name : 'source',
+							type : 'string'
+						}, {
+							name : 'statut',
+							type : 'string'
 						}]
 			}
-
 		});

@@ -28,6 +28,9 @@ Ext
 			'collectMod.CollectMods',
 			'faq.FaqContainer',
 			'faq.FaqForm',
+			// Calendar,
+			// 'calendar.Calendar',
+			/*'calendar.Ext.ux.TouchCalendarView',*/
 			// Mode de collecte à domicile
 			'homecollectmods.HomeCollectMods',
 			'homecollectmods.HomeCollectModsContainer',
@@ -87,10 +90,42 @@ Ext
 			
 		});
 		
-		// TODO ajouter un composant calendar
-		// TODO utilisaer le localstorage pour mémoriser les éléments du calendrier, les filtres dans les structures
-		// TODO ajouter un bouton "commentez" quand on affiche des commentaires issues de la FAQ (donc sur toutes les détails)
-		// TODO géolocolisation sur les distribution Trisacs (il en manque dans les données)
-		// TODO mettre un détail sur les éléments de la FAQ
-		// TODO vérifier type de conteneurs de Open Data
+		///////////// CRN //////////////////
+
+		// TODO Structures : vérifier que les modesCollecte des conteneurs dans structures2.json sont les bons.
+		// TODO Structures : supprimer de structures2.json les structures trop eloignées de Nantes (nécessite de modifier Main_ConvertData_DeuxiemeVie.java)
+		// TODO Structures : refaire fonctionner le bouton "1 jour" "1 jour" ou "Tous"
+		// TODO Structures : prise en comte des filtres "sauf" ("sauf_ferie" ou "sauf_JJDD")
 		
+		// TODO Trisacs : ajouter l'info latitude et longitude sur les 20 lieux ne l'ayant pas encore dans structures2.json (il en manque dans les données)
+		// TODO Trisacs : refaire marcher l'affichage du détail
+		// TODO Trisacs : le filtre quartier ne fonctionne pas toujours
+		
+		// TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
+		
+		// TODO Mode de collecte : mettre des pastilles sur les modes de collectes qui dirige SOIT vers le détail d'une collecte SOIT (dans le cas du mode de collecte "réutilisation") vers une page contenant les pastilles des sous-modes de collectes (qui dirige vers le détail du sous-mode de collecte)
+
+		// TODO FAQ : pour les détails on affiche les commentaires; il faut ajouter un bouton permettant d'aller sur la page FAQ pour poster un commentaire 
+		// TODO FAQ : connecter le bouton "commentez" à un script côté serveur (donc sur toutes les détails)
+ 		// TODO FAQ : mettre un détail sur les éléments de la FAQ
+
+		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : supprimer les sous-catégories Toxiques
+		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
+		
+		// TODO A domicile : petites corrections d'ergonomie
+		
+		///////////// CED ////////////////// 
+
+		// TODO Carte : utiliser le localstorage pour mémoriser les structures affichées, et les quartiers 
+		// TODO Carte : filtrer sur les structures et les quartiers
+		// TODO Carte : utiliser structures2.json à la place structures.json
+		// TODO Carte : permettre la bascule de la carte vers StructuresDetails
+
+		// TODO Calendrier - DUR : intégrer le composant Ext.ux.TouchCalendar (on utilisera Ext.ux.TouchCalendarView)
+		// TODO Calendrier : utiliser le localstorage pour mémoriser les codes des structures affichées dans le calendrier
+		
+		// TODO Déchets : mettre des pastilles sur les catégories de traitement, qui permet de diriger ensuite vers la page actuelle.
+		// TODO Déchets : mettre un lien qui dirige vers les modes de collecte
+		// TODO Déchet : mettre un lien sur les conseils qui sont associés à une fiche pour rediriger vers la fiche information
+
+		// TODO DUR Dans la tagbar remplacer "iconCls : 'more'" par un vrai bouton suivant.

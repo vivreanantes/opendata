@@ -7,7 +7,8 @@ Ext.define('VivreANantes.view.trisac.TrisacContainer', {
 			xtype : 'TrisacContainer',
 			
 			config : {	
-				layout : 'vbox',				
+				layout : 'vbox',
+				title : 'Distribution de Trisac',
 				items : [ {
 						xtype:'TrisacForm',
 						height:120,

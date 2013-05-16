@@ -105,8 +105,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			"fr" : "Toute l'année"
 		},
 		"label_au" : { 
-			"en" : "au", 
-			"fr" : "to the"
+			"en" : "to the", 
+			"fr" : "au"
 		},
 		"label_a" : { 
 			"en" : "to", 
@@ -123,8 +123,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			"en" : "Type : {type} - {soustype} <BR/>Name : {libelle} <BR/>Schedules : {plagesHoraires2} <BR/>Address : {adresseTemp} '+ ' <BR/>Phone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}", 
 			"fr" : "Type : {type} - {soustype} <BR/>Nom : {libelle} <BR/>Horaires : {plagesHoraires2} <BR/>Adresse : {adresseTemp} '+ ' <BR/>Téléphone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
 		},"label_trisac_template_detail" : {
-			"en" : "Type : {type} <BR/>Name : {libelle} <BR/>Schedules : {horaires} <BR/>Address : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
-			"fr" : "Type : {type} <BR/>Nom : {libelle} <BR/>Horaires : {horaires} <BR/>Adresse : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
+			"en" : "Name : {libelle} <BR/>Schedules : {horaires} <BR/>Address : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
+			"fr" : "Nom : {libelle} <BR/>Horaires : {horaires} <BR/>Adresse : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
 		}
 	
 	};

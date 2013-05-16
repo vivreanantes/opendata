@@ -9,9 +9,10 @@ Ext.define('VivreANantes.view.trisac.TrisacForm', {
 				items : [{
 							xtype : 'textfield',
 							name : 'name',
-							label : 'Recherche',
+							label : 'Nom ',
 							id : 'trisacFormText'
-						}, {
+						}
+						, {
 							xtype : 'selectfield',
 							label : 'Quartier',
 							id : 'trisacFormSelect',
@@ -22,20 +23,20 @@ Ext.define('VivreANantes.view.trisac.TrisacForm', {
 										text : "Chantenay",
 										value : "Chantenay"
 									}, {
-										text : "Breil - Dervallières - Bellevue",
-										value : "Breil - Dervallières - Bellevue"
+										text : "Breil / Dervallières / Bellevue",
+										value : "Breil Dervallières Bellevue"
 									}, {
-										text : "Hauts Pavé - Saint Félix",
-										value : "Hauts Pavé - Saint Félix"
+										text : "Hauts Pavé / Saint Félix",
+										value : "Hauts Pavé Saint Félix"
 									}, {
 										text : "Ile De Nantes",
 										value : "Ile De Nantes"
 									}, {
-										text : "Nantes Nord - Barberie",
-										value : "Nantes Nord - Barberie"
+										text : "Nantes Nord / Barberie",
+										value : "Nantes Nord Barberie"
 									}, {
-										text : "Erdre - Ranzay - Bottière - Perray",
-										value : "Erdre - Ranzay - Bottière - Perray"
+										text : "Erdre / Ranzay / Bottière / Perray",
+										value : "Erdre Ranzay Bottière Perray"
 									}, {
 										text : "Malakoff",
 										value : "Malakoff"

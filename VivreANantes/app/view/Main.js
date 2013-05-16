@@ -31,9 +31,11 @@ Ext.define('VivreANantes.view.Main', {
 					xclass : 'VivreANantes.view.information.Informations'
 						// xtype : 'informations'
 					}, {
-					// xclass : 'VivreANantes.view.calendar.Calendar'
 						xclass : 'VivreANantes.view.structures.Structures'
-				}, {
+				}/*, {
+					xclass : 'VivreANantes.view.calendar.TouchCalendarView'
+				}*/,
+				{
 					iconCls : 'more'
 				}, {
 					xclass : 'VivreANantes.view.collectMod.CollectMods'

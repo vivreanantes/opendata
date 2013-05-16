@@ -61,7 +61,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 				// fabrique la chaîne affichée sur la page détail
 				// this.trisacDetail.setTpl("
 				this.trisacDetail.setHtml("<div>"
-						+ translate("label_trisac_template_detail", stLocale)
+						+ this.translate("label_trisac_template_detail", stLocale)
 						+ conseilTraduit + faqTraduit + "</div>");
 			}
 
@@ -94,9 +94,9 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 				var escaperegex = Ext.String.escapeRegex;
 				var stTextRexexp = new RegExp(escaperegex(text.getValue()),
 						"ig");
-				var stQuartierRexexp = new RegExp(escaperegex(select.getValue()));
-
-				return (stTextRexexp.test(item.data["nom"]) && (select
+				var stQuartierRexexp = new RegExp(select.getValue());
+				var stType = item.data["modesCollecte"];
+				return ( stType=='modco_distrisac' && stTextRexexp.test(item.data["nom"]) && (select
 						.getValue() === "all" || stQuartierRexexp
 						.test(item.data["quartier"])));
 			}

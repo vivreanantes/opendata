@@ -14,17 +14,14 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 										text : 'Tous',
 										value : 'all'
 									}, {
-										text : "Réutilisation",
-										value : "reemploi"
-									}, {
-										text : "Distribution Trisac",
-										value : "distrisac"
+										text : "Récupération",
+										value : "modco_reemploi"
 									}, {
 										text : "Ecotox",
-										value : "ecotox"
+										value : "modco_ecotox"
 									}, {
-										text : "Déchetteries / EcopointsSaint Donatien",
-										value : "dechetterie / ecopoint"
+										text : "Déchetteries / Ecopoints",
+										value : "(modco_decheterie|modco_ecopoint)"
 									}]
 						}, {
 							xtype : 'selectfield',

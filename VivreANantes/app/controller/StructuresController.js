@@ -169,11 +169,34 @@ Ext.define("VivreANantes.controller.StructuresController", {
 		var filterElements = Ext.create("Ext.util.Filter", {
 			filterFn : function(item) {
 				var escaperegex = Ext.String.escapeRegex;
-				var stQuartierRegexp = new RegExp(escaperegex(selectQuartier
-						.getValue()));
+				var stQuartierRegexp = new RegExp(selectQuartier.getValue());
+			 	var stTypeRegexp = new RegExp(selectType.getValue());
+				
+				
+				
+				
+				/*
+				
+				
 				var stTypeRegexp = new RegExp(escaperegex(selectType.getValue()));
+				if (selectType.getValue().indexOf(",") !== -1) {
+					var array = selectType.getValue().split(',');
+					var expression = '';
+					var i = 0;
+					for (a in array) {
+						if (i == 0) {
+							expression = '(' + array[a];
+						} else {
+							expression = expression + '|' + array[a];
+						}
+						i++;
+					}
+					expression = expression + ')';
+					stTypeRegexp = new RegExp(expression);
+				}*/
+				
 				var stQuartier = item.data["quartier"];
-				var stType = item.data["type"];
+				var stType = item.data["modesCollecte"];
 				return ((selectQuartier.getValue() === "all" || stQuartierRegexp
 						.test(stQuartier)) && (selectType.getValue() === "all" || stTypeRegexp
 						.test(stType)));
@@ -233,17 +256,17 @@ Ext.define("VivreANantes.controller.StructuresController", {
 	,
 	getPlageHoraire : function(objStructures) {
 
-		var strName = objStructures.get("libelle");
-		var strType = objStructures.get("type");
-		var strAdresse = objStructures.get("adresseTemp");
-		var strConseils = objStructures.get("conseils");
+		// var strName = objStructures.get("libelle");
+		// var strType = objStructures.get("type");
+		// var strAdresse = objStructures.get("adresseTemp");
+		// var strConseils = objStructures.get("conseils");
 		var arNewAttributes = this
 				.getAttributes_FillPeriod(objStructures, "fr");
 
 		return {
 			"libelle" : objStructures.get("libelle"),
 			"type" : objStructures.get("type"),
-			"soustype" : objStructures.get("soustype"),
+			"modesCollecte" : objStructures.get("modesCollecte"),
 			"adresseTemp" : objStructures.get("adresseTemp"),
 			"quartier" : objStructures.get("quartier"),
 			"conseils" : objStructures.get("conseils"),
@@ -316,7 +339,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
 		var stPlagesHoraire = objStructures.get("plagesHoraires");
 		// Ce qui sera ajouté à l"objet Structures
 		var arNewAttributes = Array();
-		if (stPlagesHoraire != null) {
+		if (stPlagesHoraire != null && stPlagesHoraire != "") {
 
 			// verifie si ",sauf_ferie" est mis
 			var saufFerie = this.utilArrayContainObject(stPlagesHoraire,

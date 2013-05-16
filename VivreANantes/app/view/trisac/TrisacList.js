@@ -4,7 +4,7 @@ Ext.define('VivreANantes.view.trisac.TrisacList', {
 	config : {
 		iconCls : 'action', // icône en forme de ?
 		title : 'Modes de collecte à domicile',
-		itemTpl : '{type}<div>{libelle}</div>',
+		itemTpl : 'Quartiers : {quartier} <div>{libelle}</div>Type de distribution : {soustype} ',
 		store : 'TrisacStore'
 	}
 
