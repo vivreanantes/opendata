@@ -5,7 +5,18 @@
  */
 Ext.define('VivreANantes.view.collectMod.CollectMods', {
 			extend : 'Ext.NavigationView',
-			xtype : 'collectMods',
+			xtype : 'collectMods_xtype',
+
+			config : {
+				autoDestroy : false,
+				iconCls : 'maps',
+				title : 'Modes de collectes',
+				items : [{
+							xtype : 'collectModsButtonsList_xtype'
+						}
+				]
+			}
+			/*xtype : 'collectMods',
 			config : {
 				// Titre dans barre de bouton principale
 				title : 'Collecte',
@@ -20,5 +31,5 @@ Ext.define('VivreANantes.view.collectMod.CollectMods', {
 							xtype : 'list',
 							store : 'CollectModStore'
 						}]
-			}
+			}*/
 		});

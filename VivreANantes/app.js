@@ -25,7 +25,10 @@ Ext
 			'garbages.FaqList',
 			'garbages.WasteTreatmentsCategoriesList',
 			'garbages.CollectModsList',
+			// Modes de collecte
 			'collectMod.CollectMods',
+			'collectMod.CollectModsButtonsList',
+			// Commentaires
 			'faq.FaqContainer',
 			'faq.FaqForm',
 			// Calendar,
@@ -59,7 +62,7 @@ Ext
 			'trisac.TrisacList'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations', 'StructuresController',  'Garbages', 'HomeCollectMods', 'TrisacsController'/*, 'Calendar'*/],
+			controllers : [ 'Welcome', 'Geo', 'Informations', 'StructuresController', 'ReusesController', 'Garbages', 'HomeCollectMods', 'TrisacsController'/*, 'Calendar'*/],
 			
 			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'Faq', 'WasteTreatmentsCategories', 'CollectMod'/*, 'CalendarModel'*/],
 			
@@ -92,25 +95,28 @@ Ext
 		
 		///////////// CRN //////////////////
 
+		
+		// TODO Structures : vérifier présence de quartier sur toutes les structures
 		// TODO Structures : vérifier que les modesCollecte des conteneurs dans structures2.json sont les bons.
-		// TODO Structures : supprimer de structures2.json les structures trop eloignées de Nantes (nécessite de modifier Main_ConvertData_DeuxiemeVie.java)
-		// TODO Structures : refaire fonctionner le bouton "1 jour" "1 jour" ou "Tous"
-		// TODO Structures : prise en comte des filtres "sauf" ("sauf_ferie" ou "sauf_JJDD")
+		//  22/05 TODO Structures : prise en comte des filtres "sauf_JJDD"
 		
-		// TODO Trisacs : ajouter l'info latitude et longitude sur les 20 lieux ne l'ayant pas encore dans structures2.json (il en manque dans les données)
-		// TODO Trisacs : refaire marcher l'affichage du détail
-		// TODO Trisacs : le filtre quartier ne fonctionne pas toujours
+		//  22/05 TODO Trisac : même comportement que structure (héritage) 
 		
-		// TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
+		//  22/05 TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
 		
-		// TODO Mode de collecte : mettre des pastilles sur les modes de collectes qui dirige SOIT vers le détail d'une collecte SOIT (dans le cas du mode de collecte "réutilisation") vers une page contenant les pastilles des sous-modes de collectes (qui dirige vers le détail du sous-mode de collecte)
+		// 22/05 TODO Mode de collecte : mettre des pastilles sur les modes de collectes qui dirige SOIT vers le détail d'une collecte SOIT (dans le cas du mode de collecte "réutilisation") vers une page contenant les pastilles des sous-modes de collectes (qui dirige vers le détail du sous-mode de collecte)
 
 		// TODO FAQ : pour les détails on affiche les commentaires; il faut ajouter un bouton permettant d'aller sur la page FAQ pour poster un commentaire 
 		// TODO FAQ : connecter le bouton "commentez" à un script côté serveur (donc sur toutes les détails)
- 		// TODO FAQ : mettre un détail sur les éléments de la FAQ
+ 		// 22/05 TODO FAQ : mettre un détail sur les éléments de la FAQ
 
 		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : supprimer les sous-catégories Toxiques
 		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
+		// TODO Déchets vérifier les conseils
+		
+		//  22/05 TODO Informations : mettre des icônes et relire le texte
+		// TODO Informations : faire libricompost
+		// TOD Informations : faire panneaux thermiques
 		
 		// TODO A domicile : petites corrections d'ergonomie
 		

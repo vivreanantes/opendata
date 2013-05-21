@@ -1,32 +1,29 @@
 /**
  * Formulaire des Déchets
  */
-Ext.define('VivreANantes.view.structures.StructuresForm', {
+Ext.define('VivreANantes.view.reuses.ReusesForm', {
 			extend : 'Ext.form.Panel',
 			requires : ['Ext.field.Text', 'Ext.field.Select'],
-			xtype : 'structuresForm_xtype',
+			xtype : 'reusesForm_xtype',
 			config : {
 				items : [{
 							xtype : 'selectfield',
 							label : 'Type',
-							id : 'structuresFormSelectType',
+							id : 'reusesFormSelectType',
 							options : [{
 										text : 'Tous',
 										value : 'all'
-									}/*, {
-										text : "Récupération",
-										value : "modco_reemploi"
-									}*/, {
-										text : "Ecotox",
-										value : "modco_ecotox"
 									}, {
-										text : "Déchetteries / Ecopoints",
-										value : "(modco_decheterie|modco_ecopoint)"
+										text : "Meuble",
+										value : "smco_reempmeuble"
+									}, {
+										text : "Informatique",
+										value : "smco_reempinfo"
 									}]
 						}, {
 							xtype : 'selectfield',
 							label : 'Quartier',
-							id : 'structuresFormSelectQuartier',
+							id : 'reusesFormSelectQuartier',
 							options : [{
 										text : 'Tous',
 										value : 'all'

@@ -1,4 +1,4 @@
-Ext.define('VivreANantes.store.Structure2Store', {
+Ext.define('VivreANantes.store.Structure2Store_2', {
 			extend : 'Ext.data.Store',			
 
 			config :{
@@ -6,7 +6,7 @@ Ext.define('VivreANantes.store.Structure2Store', {
 
 				
 				fields : ['code', 'type', 'modesCollecte', 'plagesHoraires2', 'libelle', 'plagesHoraires', 'adresseTemp',
-								'horaires', 'conseils', 'quartier', 'ouvertAujourdhuiEtDemain', 'sousModesCollecte'],
+								'horaires', 'conseils', 'quartier', 'sousModesCollecte'],
 				proxy : {
 					type : 'ajax',
 					// url : 'data/events.json',

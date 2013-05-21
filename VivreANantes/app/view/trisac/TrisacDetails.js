@@ -10,11 +10,12 @@ Ext.define('VivreANantes.view.trisac.TrisacDetails', {
 		// tpl : '',
 		// record : null
 		//layout : 'vbox',
+		//tpl : '',
 		tpl : '',
 		html: '',
     	scrollable: true,
-    	styleHtmlContent: true,
-		record : null
+    	styleHtmlContent: true
+		// record : null
 	}
 
 });

@@ -31,15 +31,14 @@ Ext.define('VivreANantes.view.Main', {
 					xclass : 'VivreANantes.view.information.Informations'
 						// xtype : 'informations'
 					}, {
-						xclass : 'VivreANantes.view.structures.Structures'
-				}/*, {
-					xclass : 'VivreANantes.view.calendar.TouchCalendarView'
-				}*/,
-				{
+					xclass : 'VivreANantes.view.structures.Structures'
+				}, {
+					xclass : 'VivreANantes.view.reuses.Reuses'
+				}, {
 					iconCls : 'more'
 				}, {
 					xclass : 'VivreANantes.view.collectMod.CollectMods'
-				},{
+				}, {
 					// Page 'mode de collecte à domicile'
 					xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
 				}, {
