@@ -54,7 +54,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	}
 
 	,
-	utilGetDateWithoutSeconds : function() {
+	utilGetDateTodayWithoutSeconds : function() {
 		// var today = new Date();
 		// return today;
 		var today = new Date();
@@ -63,6 +63,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return today;
 	}
 
+	,
+	utilGetDateTomorrowWithoutSeconds : function() {
+		var today = this.utilGetDateTodayWithoutSeconds();
+		return this.addDays(today, 1);
+	}
 	/*
 	 * Retourne sous forme d'une chaîne de caractère le jour de la semaine d'une
 	 * date
@@ -172,8 +177,10 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return result;
 	}
 
-	,
-	SAUF_FERIE : "sauf_ferie"
+	,IMAGE_DIR : "resources/images/"
+	
+	,SAUF_FERIE : "sauf_ferie"
+
 
 	/*
 	 * Vérifie si un jour est férié.

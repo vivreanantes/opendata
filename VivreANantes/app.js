@@ -28,6 +28,7 @@ Ext
 			// Modes de collecte
 			'collectMod.CollectMods',
 			'collectMod.CollectModsButtonsList',
+			'collectMod.CollectModsDetails',
 			// Commentaires
 			'faq.FaqContainer',
 			'faq.FaqForm',
@@ -62,7 +63,7 @@ Ext
 			'trisac.TrisacList'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations', 'StructuresController', 'ReusesController', 'Garbages', 'HomeCollectMods', 'TrisacsController'/*, 'Calendar'*/],
+			controllers : [ 'Welcome', 'Geo', 'Informations', 'StructuresController', 'ReusesController', 'Garbages', 'HomeCollectMods', 'TrisacsController', 'CollectModsController'/*, 'Calendar'*/],
 			
 			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'Faq', 'WasteTreatmentsCategories', 'CollectMod'/*, 'CalendarModel'*/],
 			
@@ -95,30 +96,30 @@ Ext
 		
 		///////////// CRN //////////////////
 
+		// TODO Mode de collecte : dirige SOIT vers le détail d'une collecte SOIT (dans le cas du mode de collecte "réutilisation") vers une page contenant les pastilles des sous-modes de collectes (qui dirige vers le détail du sous-mode de collecte)
+		// TODO Mode de collecte : charger la description directement depuis le JSON (actuellement données en dur)
+		// TODO  mettre conseils et FAQ
 		
-		// TODO Structures : vérifier présence de quartier sur toutes les structures
-		// TODO Structures : vérifier que les modesCollecte des conteneurs dans structures2.json sont les bons.
-		//  22/05 TODO Structures : prise en comte des filtres "sauf_JJDD"
-		
-		//  22/05 TODO Trisac : même comportement que structure (héritage) 
-		
-		//  22/05 TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
-		
-		// 22/05 TODO Mode de collecte : mettre des pastilles sur les modes de collectes qui dirige SOIT vers le détail d'une collecte SOIT (dans le cas du mode de collecte "réutilisation") vers une page contenant les pastilles des sous-modes de collectes (qui dirige vers le détail du sous-mode de collecte)
+		// 22/05 1 TODO Structures : vérifier présence de quartier sur toutes les structures
+		// 22/05 3 TODO Trisac : même comportement que structure (héritage)
 
-		// TODO FAQ : pour les détails on affiche les commentaires; il faut ajouter un bouton permettant d'aller sur la page FAQ pour poster un commentaire 
-		// TODO FAQ : connecter le bouton "commentez" à un script côté serveur (donc sur toutes les détails)
- 		// 22/05 TODO FAQ : mettre un détail sur les éléments de la FAQ
+ 
+ 		// 22/05 5 TODO FAQ : mettre un détail sur les éléments de la FAQ
+		// 22/05 6 TODO Informations : mettre des icônes et relire le texte
+		
+		// 23/05 TODO Structures : vérifier que les modesCollecte des conteneurs dans structures2.json sont les bons.
+		// 23/05 TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
+		// 23/05 TODO FAQ : pour les détails on affiche les commentaires; il faut ajouter un bouton permettant d'aller sur la page FAQ pour poster un commentaire 
+		// 25/05 TODO FAQ : connecter le bouton "commentez" à un script côté serveur (donc sur toutes les détails)
+		// 23/05 TODO Informations : faire libricompost
+		// 23/05 TODO Informations : faire panneaux thermiques
 
-		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : supprimer les sous-catégories Toxiques
-		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
-		// TODO Déchets vérifier les conseils
-		
-		//  22/05 TODO Informations : mettre des icônes et relire le texte
-		// TODO Informations : faire libricompost
-		// TOD Informations : faire panneaux thermiques
-		
-		// TODO A domicile : petites corrections d'ergonomie
+		// 25/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : supprimer les sous-catégories Toxiques
+		// 25/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
+		// 25/05 TODO Déchets vérifier les conseils
+		// 25/05 TODO A domicile : petites corrections d'ergonomie
+
+
 		
 		///////////// CED ////////////////// 
 

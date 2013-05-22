@@ -6,19 +6,21 @@
 Ext.define('VivreANantes.view.collectMod.CollectModsButtonsList', {
 			extend : 'Ext.Container',
 			xtype : 'collectModsButtonsList_xtype',
+			title : 'Modes de collectes',
 			config : {
 				fullscreen : true,
 				layout : {
 					type : 'vbox'
-				},
-				items : [{
+					
+				}
+				/*items : [{
 							layout : {
 								type : 'hbox',
 								align : 'stretch'
 							},
 							items : [{
 										// flex : 1,
-										html : 'conteneur métal/plastique/brique'
+										html : ''
 									}, {
 										height : 50,
 										html : 'conteneur papier-carton'
@@ -53,11 +55,15 @@ Ext.define('VivreANantes.view.collectMod.CollectModsButtonsList', {
 										// flex : 1,
 										html : 'sacs jaunes'
 									}, {
-										height : 50,
-										html : 'Ecopoint/déchetteries'
+										// height : 50,
+										xtype: 'button',
+										 html: 'Ecopoint /<br/>déchetteries<br/><img src="resources/images/bouton_ecotox_petit.png" />'
+										// , cls: 'btnAction' // pour avoir les bonnes dimensions (100 par 100 pixels)
 									}, {
 										height : 50,
 										html : 'Ecotox',
+										 iconCls: 'refresh',
+    									 iconMask: true, // Apparently this is required to show an icon in 2.1, but will not be needed in 2.2
 										 flex : 1
 									}]
 
@@ -80,30 +86,15 @@ Ext.define('VivreANantes.view.collectMod.CollectModsButtonsList', {
 									}, {
 										// height : 50,
 										// html : 'bouton 9'
-										// html : 'Ecotox<BR/>',
+										html : 'Ecotox',
 										title : 'Point dépôt encombrant',
 										iconCls: 'btnAction2',
 				xtype: 'button'
 				, cls: 'btnAction'
 									}]
 
-						}]
+						}]*/
 
-				/*
-				 * layout : { type : 'hbox', align : 'stretch' }, items : [{
-				 * width : 50, flex : 1, // this needs to be flexy as well
-				 * layout : { type : 'vbox', align : 'stretch' }, items : [{
-				 * flex : 1, html : '1st' }, { height : 50, html : '2nd' }, {
-				 * height : 50, html : '3nd' }] }, { flex : 1, html : 'Large' }]
-				 */
 			}
 		}
-
-/*
- * extend : 'Ext.NavigationView', xtype : 'collectMods', config : { // Titre
- * dans barre de bouton principale title : 'Collecte', // Icone dans la barre de
- * bouton principale iconCls : 'action', scrollable : true, items : [{
- * 
- * title : 'Modes de collecte', scrollable : 'true', itemTpl : '{libelle}',
- * xtype : 'list', store : 'CollectModStore' }] } }
- */);
+);

@@ -13,6 +13,8 @@ Ext.define('VivreANantes.model.CollectMod', {
 							name : 'conseils'
 						}, {
 							name : 'recyclable'
+						}, {
+							name : 'image'
 						}]
 			}
 		});

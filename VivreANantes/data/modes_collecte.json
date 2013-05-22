@@ -2,268 +2,353 @@
 	'modes_collecte' : [{
 				"code" : "modco_contmpb",
 				"libelle" : "conteneur métal/plastique/brique",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "(ou container)",
-				"conseils" : ""
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "cons_collectes_bacs,cons_bac_casse",
+				"statut" : "Vérif le 03/2013",
+				"image" : "conteneur_plastique_instructions.png"
 			}, {
 				"code" : "modco_contpapiercarton",
 				"libelle" : "conteneur papier-carton",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "(ou container)",
-				"conseils" : ""
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "",
+				"statut" : "Vérif le 03/2013",
+				"image" : "conteneur_carton_instructions.png"
 			}, {
 				"code" : "modco_contverre",
 				"libelle" : "conteneur verre",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "Aussi appelée 'container verre' (on parle aussi de 'colonne verre')",
-				"conseils" : "sans_bouchon_ni_couvercle, cons_nbconteneurverre"
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "sans_bouchon_ni_couvercle, cons_nbconteneurverre",
+				"statut" : "Vérif le 03/2013",
+				"image" : "conteneur_verre_instructions.png"
 			}, {
 				"code" : "modco_bacbleu",
 				"libelle" : "bacs bleus",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "Bacs bleus",
-				"conseils" : "cons_bac_casse, cons_collectes_bacs, cons_arcencielvalorena"
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "cons_bac_casse,cons_collectes_bacs,cons_arcencielvalorena",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "modco_bacjaune",
 				"libelle" : "bacs jaunes",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "Bacs jaunes",
-				"conseils" : "cons_bac_casse, cons_collectes_bacs"
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "cons_bac_casse, cons_collectes_bacs",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "modco_sacbleu",
 				"libelle" : "sacs bleus",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "Sacs bleus Tri'sac",
-				"conseils" : "cons_noeudtrisac, cons_trisac, cons_passacpoubelle"
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "cons_noeudtrisac,cons_trisac,cons_passacpoubelle",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "modco_sacjaune",
 				"libelle" : "sacs jaunes",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "Sacs jaunes Tri'sac",
-				"conseils" : "cons_noeudtrisac, cons_trisac, cons_passacpoubelle"
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "cons_noeudtrisac,cons_trisac,cons_passacpoubelle",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "modco_ecopoint",
 				"libelle" : "Ecopoint",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
 				"description" : "Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "modco_ecotox",
 				"libelle" : "Ecotox",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "Le camion Ecotox : une camionnette itinérante qui stationne à proximité de chez moi à intervalle régulier, et selon un calendrier défini. J'y dépose mes déchets dangereux. Attention : les déchets ménagers d'origine médicale (seringues notamment) ne sont pas collectés par ce service.",
-				"conseils" : "cons_ecotox"
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "Le camion Ecotox : une camionnette itinérante qui stationne régulièrement sur des points, pour  y déposer les déchets toxiques.",
+				"conseils" : "cons_ecotox",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
-				"code" : "modco_reemploisolidaire",
+				"code" : "modco_reemploi",
 				"libelle" : "Le réemploi et les associations spécialisées",
-				"sousModesCollecte" : "smco_reempelectromenag ,  smco_reempinfo, smco_reempcartouchetoner, smco_reemplivreCD, smco_reempjouet, smco_reempmeuble, smco_reempvet, smco_reempdivers, smco_batiment, smco_vaisselle, smco_papier, smco_plastique, smco_velo",
-				"estSousModeCollecte" : "0",
+				"sous_modes_collecte" : "smco_reempelectromenag ,  smco_reempinfo, smco_reempcartouchetoner, smco_reemplivreCD, smco_reempjouet, smco_reempmeuble, smco_reempvet, smco_reempdivers, smco_batiment, smco_vaisselle, smco_papier, smco_plastique, smco_velo",
+				"est_sous_mode_collecte" : "false",
 				"description" : "Réemploi et recyclage par des structures solidaires",
-				"conseils" : "cons_deuxiemevie"
+				"conseils" : "cons_deuxiemevie",
+				"statut" : "vérif le 03/2013",
+				"image" : "structures_reemplois.png"
 			}, {
 				"code" : "modco_pointsdevente",
 				"libelle" : "Récupération sur les points de vente",
-				"sousModesCollecte" : "smco_vendeurcartoucheencre, smco_vendeurpile, smco_reprise, smco_vendeur_lampe_eco, smco_vendeurvoiture, smco_casseauto, smco_recupsupermarche, smco_recupmagasinbrico, smco_garage",
-				"estSousModeCollecte" : "0",
+				"sous_modes_collecte" : "smco_vendeurcartoucheencre, smco_vendeurpile, smco_reprise, smco_vendeur_lampe_eco, smco_vendeurvoiture, smco_casseauto, smco_recupsupermarche, smco_recupmagasinbrico, smco_garage",
+				"est_sous_mode_collecte" : "false",
 				"description" : "Récupération dans les points de vente",
-				"conseils" : "cons_recuppdv"
+				"conseils" : "cons_recuppdv",
+				"statut" : "vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "modco_decheterie",
-				"libelle" : "Les déchetteries",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
+				"libelle" : "Déchetteries",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
 				"description" : "Les déchetteries nantaises.",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "vérif le 03/2013",
+				"image" : "conteneur_lerelais.png"
 			}, {
 				"code" : "modco_compostage",
 				"libelle" : "Compostage",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
-				"description" : "Les matières compostables sont : les déchets domestiques (sauf la viande et les matières grasses). y compris les coquilles d'œufs, les sachets de thé, grain de café et filtre en papier tous les fruits et légumes, la paille, gazon (en quantité raisonnable), les feuilles déchiquetées (avec la tondeuse ou une déchiqueteuse), les mauvaises herbes et les plantes de jardins. En pratique, tous les éléments organiques peuvent être utilisés. Pour accélérer la décomposition de votre tas de compost vous pouvez le brasser. Texte issu de http://www.plante-interieur.com/forum/topic350.html",
-				"conseils" : ""
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "thé, épluchure, papier à usage unique (papier toilette, essuie-tout), plante, reste de repas (nourriture)",
+				"conseils" : "",
+				"statut" : "vérif le 03/2013",
+				"image" : ""
 			}, {
-				"code" : "modo_encombrant",
+				"code" : "modco_encombrant",
 				"libelle" : "Point dépôt encombrant",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "0",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
+			}, {
+				"code" : "modco_conteneur_le_relais",
+				"libelle" : "Conteneur Le Relay",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "false",
+				"description" : "",
+				"conseils" : "",
+				"statut" : "",
+				"image" : "conteneur_lerelais.png"
 			}, {
 				"code" : "smco_reempelectromenag  ",
 				"libelle" : "Ré-utilisation appareils électroménager",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "Ré-utilisation des appareils électro-ménager",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reempinfo",
 				"libelle" : "Ré-utilisation des appareils informatique",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reempcartouchetoner",
 				"libelle" : "Récupération des cartouches d'encres et tuners",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reemplivreCD",
 				"libelle" : "Ré-utilisation des livres, CDs, BDs, DVDs...",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "livre Revue CD BD",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reempjouet",
 				"libelle" : "Ré-utilisation des jouets",
-				"sousModesCollecte" : "cat_omr",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "cat_omr",
+				"est_sous_mode_collecte" : "true",
 				"description" : "jouets jeux",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reempmeuble",
 				"libelle" : "Ré-utilisation des meubles",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reempvet",
-				"libelle" : "Ré-utilisation des vêtemetns",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"libelle" : "Ré-utilisation des vêtements",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reempdivers",
 				"libelle" : "Ré-utilisation d'objets divers",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_batiment",
 				"libelle" : "",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_vaisselle",
 				"libelle" : "Ré-utilisation de la vaisselle",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_papier",
 				"libelle" : "Recyclage du papier par des associations.",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : "uniquement dans les conseils ??"
+				"conseils" : "uniquement dans les conseils ??",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_plastique",
 				"libelle" : "Recyclage du plastique par des associations.",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_electrique",
 				"libelle" : "Recyclage du matériel électrique par des associations.",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_vendeurcartoucheencre",
 				"libelle" : "Vendeur de cartouche d'encre",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_vendeurpile",
 				"libelle" : "Vendeur de pile",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_reprise",
 				"libelle" : "La reprise par les magasins",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "Vous achetez un appareil neuf, le distributeur est désormais tenu de reprendre  l’ancien à l’achat ou la livraison. C’est le principe de la reprise « un pour un ».  ",
-				"conseils" : "cons_ecopart"
+				"conseils" : "cons_ecopart",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_vendeur_lampe_eco",
-				"libelle" : "",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"libelle" : "Vendeur lampe économie d'énergie",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "",
+				"image" : ""
 			}, {
 				"code" : "smco_vendeurvoiture",
-				"libelle" : "",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"libelle" : "Vendeur automobile",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "smco_casseauto",
 				"libelle" : "Casse automobile",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "smco_recupsupermarche",
 				"libelle" : "Récupération dans les supermarchés",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "les supermarchés mettent à disposition des bornes de récupération pour les piles usagées, cartouches d'encre, ampoules basses consos",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "smco_recupmagasinbrico",
 				"libelle" : "Récupération dans les magasins de bricolage",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "les magasins de bricolage mettent à disposition des bornes de récupération pour les piles usagées, cartouches d'encre, ampoules basses consos, tubes fluos",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "smco_garage",
 				"libelle" : "Garage, stations services",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "garagistes, stations services",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "smco_velo",
 				"libelle" : "Récupération des vélos",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
+				"conseils" : "",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
 			}, {
 				"code" : "smco_pharmacie",
 				"libelle" : "Pharmacie",
-				"sousModesCollecte" : "",
-				"estSousModeCollecte" : "1",
+				"sous_modes_collecte" : "",
+				"est_sous_mode_collecte" : "true",
 				"description" : "",
-				"conseils" : ""
-			}]
+				"conseils" : "",
+				"statut" : "Vérif le 03/2013",
+				"image" : ""
+			},]
 }

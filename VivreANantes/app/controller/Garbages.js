@@ -105,6 +105,7 @@ Ext.define('VivreANantes.controller.Garbages', {
 		}
 		return conseilTraduit;
 	},
+	
 
 	/**
 	 * Renvoie une chaine de caractère correspond aux commentaires sur un
