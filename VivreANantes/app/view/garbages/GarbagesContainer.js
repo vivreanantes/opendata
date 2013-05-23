@@ -27,7 +27,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 							xtype : 'advicesList'
 							// hidden : 'true'
 					}	, {
-							xtype : 'faqList'
+							xtype : 'commentsList_xtype'
 							// hidden : 'true'
 					}	, {
 							xtype : 'wasteTreatmentsCategoriesList'

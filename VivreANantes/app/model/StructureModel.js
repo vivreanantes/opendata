@@ -1,4 +1,4 @@
-Ext.define('VivreANantes.model.Structure', {
+Ext.define('VivreANantes.model.StructureModel', {
 			extend : 'Ext.data.Model',
 
 			config : {

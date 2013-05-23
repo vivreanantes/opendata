@@ -1,25 +1,25 @@
 /**
- * Conteneur avec un bouton de recherche et la liste des modes de collectes à domicile filtrée par
- * cette recherche en dessous
+ * Conteneur avec un bouton de recherche et la liste des modes de collectes à
+ * domicile filtrée par cette recherche en dessous
  */
 Ext.define('VivreANantes.view.trisac.TrisacContainer', {
 			extend : 'Ext.Container',
-			xtype : 'TrisacContainer',
-			
-			config : {	
+			xtype : 'TrisacContainer_xtype',
+
+			config : {
 				layout : 'vbox',
 				title : 'Distribution de Trisac',
-				items : [ {
-						xtype:'TrisacForm',
-						height:120,
-						scrollable:false
-				},
+				items : [{
+							xtype : 'TrisacForm_xtype',
+							height : 120,
+							scrollable : false
+						},
 
 						{
-							xtype : 'TrisacList',
+							xtype : 'TrisacList_xtype',
 							scrollable : 'vertical',
 							flex : 1
-					}
+						}
 
 				]
 			}

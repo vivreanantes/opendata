@@ -3,7 +3,7 @@ Ext.define('VivreANantes.store.StructureStore', {
 			id : 'structurestore', 	
 			config :{
 				autoLoad : true,
-				model : 'VivreANantes.model.Structure',
+				model : 'VivreANantes.model.StructureModel',
 				proxy : {
 					type : 'ajax',
 					url : 'data/structures.json',

@@ -1,16 +1,16 @@
 /**
  * Vue des Déchets (présente avec un icone de déchets
  */
-Ext.define('VivreANantes.view.faq.Faq', {
+Ext.define('VivreANantes.view.comments.Comments', {
 			extend : 'Ext.navigation.View',
-			xtype : 'faqView',
+			xtype : 'comments_xtype',
 
 			config : {
 				autoDestroy : false,
 				iconCls : 'team',
-				title:'FAQ',
+				title : 'Commentaires',
 				items : [{
-							xtype : 'faqContainer_xtype'
+							xtype : 'commentsContainer_xtype'
 						}
 				]
 			}

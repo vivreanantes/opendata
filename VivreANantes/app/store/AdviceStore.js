@@ -3,7 +3,7 @@ Ext.define('VivreANantes.store.AdviceStore', {
 			id : 'advicestore', 	
 			config :{
 				autoLoad : true,
-				model : 'VivreANantes.model.Advice',
+				model : 'VivreANantes.model.AdviceModel',
 				proxy : {
 					type : 'ajax',
 					url : 'data/conseils.json',

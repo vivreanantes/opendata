@@ -108,8 +108,6 @@ Ext.define("VivreANantes.controller.StructuresController", {
 
 		var selectQuartier = this.getStructuresFormSelectQuartier();
 		var selectType = this.getStructuresFormSelectType();
-		// var delay = this.getStructuresButtons().getPressedButtons()[0].getText();
-
 		var store = this.getStructuresList().getStore();
 		store.clearFilter();
 
@@ -118,13 +116,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
 				var escaperegex = Ext.String.escapeRegex;
 				var stQuartierRegexp = new RegExp(selectQuartier.getValue());
 			 	var stTypeRegexp = new RegExp(selectType.getValue());
-				
-				
-				
-				
 				/*
-				
-				
 				var stTypeRegexp = new RegExp(escaperegex(selectType.getValue()));
 				if (selectType.getValue().indexOf(",") !== -1) {
 					var array = selectType.getValue().split(',');

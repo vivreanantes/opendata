@@ -22,7 +22,6 @@ Ext
 			// Déchets
 			'garbages.UsualCategoriesList',
 			'garbages.AdvicesList',
-			'garbages.FaqList',
 			'garbages.WasteTreatmentsCategoriesList',
 			'garbages.CollectModsList',
 			// Modes de collecte
@@ -30,8 +29,11 @@ Ext
 			'collectMod.CollectModsButtonsList',
 			'collectMod.CollectModsDetails',
 			// Commentaires
-			'faq.FaqContainer',
-			'faq.FaqForm',
+			'garbages.CommentsList',
+			'comments.Comments',
+			'comments.CommentsContainer',
+			'comments.CommentsForm',
+			'comments.CommentsDetails',
 			// Calendar,
 			// 'calendar.Calendar',
 			/*'calendar.Ext.ux.TouchCalendarView',*/
@@ -63,11 +65,12 @@ Ext
 			'trisac.TrisacList'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'Informations', 'StructuresController', 'ReusesController', 'Garbages', 'HomeCollectMods', 'TrisacsController', 'CollectModsController'/*, 'Calendar'*/],
+			controllers : [ 'Welcome', 'Geo', 'InformationsController', 'StructuresController', 'ReusesController', 'Garbages', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
+			,'CommentsController'  /*, 'Calendar'*/],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectMod','Structure','Advice', 'Faq', 'WasteTreatmentsCategories', 'CollectMod'/*, 'CalendarModel'*/],
+			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', 'WasteTreatmentsCategories', 'CollectModModel'/*, 'CalendarModel'*/],
 			
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'FaqStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',
@@ -96,30 +99,23 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO Mode de collecte : dirige SOIT vers le détail d'une collecte SOIT (dans le cas du mode de collecte "réutilisation") vers une page contenant les pastilles des sous-modes de collectes (qui dirige vers le détail du sous-mode de collecte)
-		// TODO Mode de collecte : charger la description directement depuis le JSON (actuellement données en dur)
-		// TODO  mettre conseils et FAQ
+		// Introduire les éléments suivants dans Garbages.js
+		// avant : conseilTraduit += "Plus d'infos : " "<A HREF='#'>"	+ recordAdvice.raw.fiche + "</A>";
+		// après : conseilTraduit += this.makeTextLink("informationsPanel");
+
+		// 24/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : supprimer les sous-catégories Toxiques
+		// 24/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
+		// 24/05 TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
+		// 24/05 TODO Déchets vérifier les conseils
+		// 24/05 TODO A domicile : petites corrections d'ergonomie
 		
-		// 22/05 1 TODO Structures : vérifier présence de quartier sur toutes les structures
-		// 22/05 3 TODO Trisac : même comportement que structure (héritage)
-
- 
- 		// 22/05 5 TODO FAQ : mettre un détail sur les éléments de la FAQ
-		// 22/05 6 TODO Informations : mettre des icônes et relire le texte
-		
-		// 23/05 TODO Structures : vérifier que les modesCollecte des conteneurs dans structures2.json sont les bons.
-		// 23/05 TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
-		// 23/05 TODO FAQ : pour les détails on affiche les commentaires; il faut ajouter un bouton permettant d'aller sur la page FAQ pour poster un commentaire 
-		// 25/05 TODO FAQ : connecter le bouton "commentez" à un script côté serveur (donc sur toutes les détails)
-		// 23/05 TODO Informations : faire libricompost
-		// 23/05 TODO Informations : faire panneaux thermiques
-
-		// 25/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : supprimer les sous-catégories Toxiques
-		// 25/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
-		// 25/05 TODO Déchets vérifier les conseils
-		// 25/05 TODO A domicile : petites corrections d'ergonomie
-
-
+		// TODO Structures : suivi de la question posée sur le FORUM sur les conteneurs dans structures2.json : ds_ent om_ent verre_ent
+		// TODO Ajout structures Ecotox
+		// TODO Informations : faire libricompost
+		// TODO Informations : faire panneaux thermiques
+		// TODO FAQ : connecter le bouton "commentez" à un script côté serveur (donc sur toutes les détails)
+		// TODO Structures : inclure les Relais dans structures2.json, et un descriptif dans modes_collecte.json
+		// TODO Retrouver la nouvelle déchetterie et l'ajouter dans les collecte
 		
 		///////////// CED ////////////////// 
 
@@ -136,3 +132,5 @@ Ext
 		// TODO Déchet : mettre un lien sur les conseils qui sont associés à une fiche pour rediriger vers la fiche information
 
 		// TODO DUR Dans la tagbar remplacer "iconCls : 'more'" par un vrai bouton suivant.
+		// Récup les Ecotox de 2013
+		// 23/05 TODO Structures : regrouper les structures dans quelques quartiers

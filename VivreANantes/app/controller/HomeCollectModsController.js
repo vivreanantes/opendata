@@ -1,7 +1,7 @@
 /**
  * Controleur de la partie Mode de collecte à domicile
  */
-Ext.define('VivreANantes.controller.HomeCollectMods', {
+Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	extend : 'Ext.app.Controller',
 
 	config : {

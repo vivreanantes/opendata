@@ -15,7 +15,7 @@ Ext.define('VivreANantes.controller.Garbages', {
 			// CRN_DEBUT
 			usualCategoriesList : 'usualCategoriesList',
 			advicesList : 'advicesList',
-			faqList : 'faqList',
+
 			wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
 			collectModList : 'collectModList'
 			// CRN_FIN
@@ -50,9 +50,7 @@ Ext.define('VivreANantes.controller.Garbages', {
 			advicesList : {
 				initialize : 'onInitGarbagesAdvices'
 			},
-			faqList : {
-				initialize : 'onInitFaq'
-			},
+
 			wasteTreatmentsCategoriesList : {
 				initialize : 'onInitGarbagesWasteTreatmentsCategoriesList'
 			},
@@ -107,36 +105,6 @@ Ext.define('VivreANantes.controller.Garbages', {
 	},
 	
 
-	/**
-	 * Renvoie une chaine de caractère correspond aux commentaires sur un
-	 * élément de l'application
-	 * 
-	 * @param {}
-	 *            code
-	 * @return {}
-	 */
-	getFaqString : function(code) {
-		var faqTraduit = "";
-		// On parcours les remarques de la faq
-		var dataFaq = this.getFaqList().getStore().getData();
-		dataFaq.each(function(recordFaq) {
-			// TODO utiliser getArrayFromString à la place
-					var arrayElementsFaq = recordFaq.raw.elements.replace(", /g", ",").replace(" ,/g", ",").split(',');
-					for (i in arrayElementsFaq) {
-						if (arrayElementsFaq[i] === code) {
-							faqTraduit += "<BR/><A HREF=faq>FAQ</A> : <B>" + recordFaq.raw.libelle
-									+ "</B><BR/>"
-									+ recordFaq.raw.description_fr;
-
-						}
-
-					}
-				});
-		/*if (faqTraduit !== "") {
-			faqTraduit = "<BR/><BR/>Commentaires (extraits FAQ) : " + faqTraduit;
-		}*/
-		return faqTraduit;
-	},
 	// CRN_FIN
 
 	onUpdateDataDetail : function(comp, newData, opts) {
@@ -182,12 +150,6 @@ Ext.define('VivreANantes.controller.Garbages', {
 	onInitGarbagesAdvices : function(list) {
 		console.log('onInitGarbagesAdvices');
 		var store = Ext.create('VivreANantes.store.AdviceStore');
-		list.setStore(store);
-	},
-
-	onInitFaq : function(list) {
-		console.log('onInitFaq');
-		var store = Ext.create('VivreANantes.store.FaqStore');
 		list.setStore(store);
 	},
 
@@ -256,8 +218,8 @@ Ext.define('VivreANantes.controller.Garbages', {
 					.getAdviceString(conseils);
 			// faq
 			var faqTraduit = this.getApplication()
-					.getController('VivreANantes.controller.Garbages')
-					.getFaqString(record.data.code);
+					.getController('VivreANantes.controller.CommentsController')
+					.getCommentString(record.data.code);
 
 			// Modes de collecte
 			var modesDeCollecteTraduit = "";

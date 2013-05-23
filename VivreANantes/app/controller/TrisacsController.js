@@ -2,14 +2,14 @@
  * Controleur de la partie Mode de collecte à domicile
  */
 Ext.define("VivreANantes.controller.TrisacsController", {
-	extend : "VivreANantes.controller.AbstractController",
+	extend : "VivreANantes.controller.AbstractStructuresController",
 
 	config : {
 		refs : {
-			trisacView : "TrisacView",
-			trisacList : "TrisacList",
-			trisacDetail : "TrisacDetails",
-			trisacForm : "TrisacForm",
+			structuresView : "Trisac_xtype",
+			trisacList : "TrisacList_xtype",
+			trisacDetail : "TrisacDetails_xtype",
+			trisacForm : "TrisacForm_xtype",
 			trisacFormText : "#trisacFormText",
 			trisacFormSelect : "#trisacFormSelect"
 		},
@@ -20,8 +20,9 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 			},
 
 			trisacList : {
-				itemtap : "showTrisacDetail"
-
+				initialize : "onInitTrisacsController",
+				itemtap : "showStructuresDetail",
+				refresh : "onListRefresh"
 			},
 
 			trisacFormText : {
@@ -36,8 +37,29 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 
 		}
 	},
+	/**
+	 * A l"initialisation de la fenêtre
+	 */
+	onInitTrisacsController : function(list) {
+		// 1
+		var homecollectmodStore = Ext.create(
+				"VivreANantes.store.Structure2Store", {
+					id : 'structure2_store_2',
+					filters : [{
+								property : "modesCollecte",
+								// le type correspond aux modes de collectes
+								// possibles
+								// voir
+								// http://quentinc.net/javascript/testeur-expressions-regulieres/
+								value : /modco_distrisac/g
+							}]
 
-	showTrisacDetail : function(list, index, node, record) {
+				});
+
+		list.setStore(homecollectmodStore);
+		console.log(homecollectmodStore);
+	},
+	/*showTrisacDetail : function(list, index, node, record) {
 
 		var stLocale = "fr";
 
@@ -48,8 +70,8 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 
 				// calcule la chaîne correspondant aux commentaires
 				var faqTraduit = this.getApplication()
-						.getController("VivreANantes.controller.Garbages")
-						.getFaqString(record.data["code"]);
+						.getController("VivreANantes.controller.CommentsController")
+						.getCommenttring(record.data["code"]);
 				// calcule la chaîne correspondant aux conseils
 				var conseils = "";
 				if (record.data["conseils"] !== "") {
@@ -68,12 +90,16 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 			// Bind the record onto the show contact view
 			this.trisacDetail.setData(record.data);
 			// Push this view into the navigation view
-			this.getTrisacView().push(this.trisacDetail);
+			this.getTrisac().push(this.trisacDetail);
 		}
-	},
+	},*/
 
 	// Méthodes invoquées par le formulaire
-
+	
+	onListRefresh : function(list, eOpts) {
+		store = this.calculateDatas(list.getStore());
+	},
+	
 	/**
 	 * Filtre en fonction de la chaine saisie et du quartier sélectionné
 	 */

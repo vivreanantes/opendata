@@ -1,10 +1,15 @@
 Ext.define('VivreANantes.store.TrisacStore', {
-			extend : 'Ext.data.Store',			
-			id : 'trisacstore', 	
-			config :{
+			extend : 'Ext.data.Store',
+			id : 'trisacstore',
+			config : {
 				autoLoad : true,
-				fields : ['code', 'type', 'modesCollecte', 'libelle', 'plagesHoraires', 'adresseTemp',
-								'horaires', 'conseils', 'quartier', 'soustype'],
+				// fields : ['code', 'type', 'modesCollecte', 'libelle',
+				// 'plagesHoraires', 'adresseTemp',
+				// 'horaires', 'conseils', 'quartier', 'soustype'],
+				fields : ['code', 'type', 'modesCollecte', 'plagesHoraires2',
+						'libelle', 'plagesHoraires', 'adresseTemp', 'horaires',
+						'conseils', 'quartier', 'ouvertAujourdhuiEtDemain',
+						'sousModesCollecte'],
 				proxy : {
 					type : 'ajax',
 					// url : 'data/trisacs.json',
@@ -13,12 +18,10 @@ Ext.define('VivreANantes.store.TrisacStore', {
 						type : 'json',
 						rootProperty : 'structures'
 					}
-				}		
-				,filters: [
-        		{
-            		property: "modesCollecte",
-            		value: /modco_distrisac/
-        		}
-    		]
+				},
+				filters : [{
+							property : "modesCollecte",
+							value : /modco_distrisac/
+						}]
 			}
 		});

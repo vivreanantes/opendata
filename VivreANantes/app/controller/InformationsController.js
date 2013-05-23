@@ -1,4 +1,4 @@
-Ext.define('VivreANantes.controller.Informations', {
+Ext.define('VivreANantes.controller.InformationsController', {
     extend: 'Ext.app.Controller',
     
     config: {
@@ -17,7 +17,7 @@ Ext.define('VivreANantes.controller.Informations', {
         // console.log(record.get('title'));
     	this.getInformations().push({
     		xtype: 'panel',
-    		title:record.get('name'),
+    		title:record.get('libelle'),
     		html: record.get('description_fr'),
     		scrollable: true,
     		styleHtmlContent: true

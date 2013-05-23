@@ -3,8 +3,10 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 
 			config : {
 				refs : {
+					mainView : 'main',
 					collectModsView : 'collectMods_xtype',
 					collectModsList : 'collectModsButtonsList_xtype',
+					collectModsDetails : 'collectModsDetails_xtype',
 					buttonConteneurPapierCarton : '#modco_contpapiercarton',
 					buttonConteneurMetalPlastiqueBrique : '#modco_contmpb',
 					buttonConteneurVerre : '#modco_contverre',
@@ -24,6 +26,9 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 					collectModsList : {
 						initialize : "onInitCollectModsList"
 
+					},
+					collectModsDetails : {
+						show : 'onPanelShow'
 					},
 					// fonctionne comme une CSS selecteur
 					'collectModsView button' : {
@@ -72,6 +77,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				var collectModFromStore = this.getCollectMod(button.id);
 				var description = this
 						.makeDescriptionString(collectModFromStore);
+
 				this
 						.showCollectMod(collectModFromStore["libelle"],
 								description);
@@ -116,24 +122,63 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 			 * Crée la description
 			 */
 			makeDescriptionString : function(collectModFromStore) {
-				var result = "";
-				collectModFromStore["id"];
+				var res = "";
 				var description = collectModFromStore["description"];
-				result += description;
+				res += description;
 				var image = collectModFromStore["image"];
 				if (image != undefined && image != "") {
-					result += "<br/><img src=" + this.IMAGE_DIR + image
+					res += "<br/><img src=" + this.IMAGE_DIR + image
 							+ " width='400px' />";
 				}
 				var conseils = collectModFromStore["conseils"];
 				if (conseils != "") {
-					result += this.getApplication()
+					res += this.getApplication()
 							.getController("VivreANantes.controller.Garbages")
 							.getAdviceString(conseils);
 				}
-				return result;
-
+				var comments = this
+						.getApplication()
+						.getController("VivreANantes.controller.CommentsController")
+						.getCommentString(collectModFromStore["id"]);
+				if (comments != "") {
+					res += comments;
+				}
+				var links = this.makeLinkString(collectModFromStore["id"]);
+				if (links != "") {
+					res += links;
+				}
+				return res;
 			},
+
+			makeLinkString : function(id) {
+				var res = "";
+
+				if (id == "modco_ecopoint" || id == "modco_ecotox") {
+					res += this.makeTextLink("structuresPanel");
+					res += this.makeTextLink("mapPanel");
+				} else if (id == "modco_contpapiercarton"
+						|| id == "modco_contmpb" || id == "modco_contverre") {
+					res += this.makeTextLink("mapPanel");
+				} else if (id == "modco_bacbleu" || id == "modco_bacjaune") {
+					res += this.makeTextLink("homeCollectsModsPanel");
+				}
+				 else if (id == "modco_sacbleu" || id == "modco_sacjaune") {
+					res += this.makeTextLink("homeCollectsModsPanel");
+					res += this.makeTextLink("trisacsPanel");
+				} else if (id == "modco_reemploi") {
+					res += this.makeTextLink("reusesPanel");
+					res += this.makeTextLink("mapPanel");
+				}
+				if (res != "") {
+					res += "<br/>";
+				}
+				return res;
+			},
+
+			/**
+			 * 
+			 */
+
 			showButtonEcotox : function(button, e, eOpts) {
 				this
 						.showCollectMod(
@@ -224,58 +269,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 							"id" : "modco_ecotox"
 						});
 
-				var arrayItems = this.fillButtons(arrayItemsToShow);
+				var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
 				container.setItems(arrayItems);
-			}
-
-			,
-			fillButtons : function(arrayItemsToShow) {
-				var arrayItems = new Array();
-				var nbElementsParLines = 3;
-				/*
-				 * var nbLines = Math.abs(arrayItems.length / 3); // Si 1 > 1,
-				 * si 1,33 > 2 if (arrayItems.length / 3 != nbLines) { nbLines +=
-				 * 1; }
-				 */
-
-				for (var i = 0; i < arrayItemsToShow.length; i++) {
-					// Si je suis sur un multiple de 3 je
-					if (i / nbElementsParLines == Math.round(i
-							/ nbElementsParLines)) {
-						if (arrayitemsLine != null) {
-							var objectItem1 = {
-								'layout' : {
-									type : 'hbox',
-									align : 'stretch'
-								},
-								'items' : arrayitemsLine
-							};
-							arrayItems.push(objectItem1);
-						}
-
-						var arrayitemsLine = new Array();
-					}
-					arrayitemsLine.push({
-								xtype : 'button',
-								id : arrayItemsToShow[i]["id"],
-								html : arrayItemsToShow[i]["libelle"] + " "
-										+ "<br/><img src='resources/images/"
-										+ arrayItemsToShow[i]["image"]
-										+ "' width='60px' />"
-							});
-				}
-				if (arrayitemsLine.length != 0) {
-					var objectItem1 = {
-						'layout' : {
-							type : 'hbox',
-							align : 'stretch'
-						},
-						'items' : arrayitemsLine
-					};
-					arrayItems.push(objectItem1);
-				}
-
-				return arrayItems;
 			},
 
 			/*
@@ -298,11 +293,29 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 							}
 						});
 				return {
+					"id" : stCollectMod,
 					"description" : description,
 					"conseils" : conseils,
 					"faq" : faq,
 					"image" : image
 				}
+			},
+
+			onPanelShow : function(component, options) {
+				component.getEl().on({
+					tap : function(event) {
+						var location = event.getTarget()
+								.getAttribute('data-link');
+						// window.location = location;
+						// Push this view into the navigation view
+						this.getStructuresView().push(this.structuresDetail);
+						var intance = Ext.getCmp("structuresView");
+						var activeIndex = intance.indexOf(intance
+								.getActiveItem());
+						this.getMainView().setActiveItem(activeIndex);
+					},
+					delegate : '.link'
+				});
 			}
 
 		});

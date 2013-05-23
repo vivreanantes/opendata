@@ -3,14 +3,14 @@
  */
 Ext.define('VivreANantes.view.trisac.Trisacs', {
 			extend : 'Ext.navigation.View',
-			xtype : 'TrisacView',
+			xtype : 'Trisac_xtype',
 
 			config : {
 				autoDestroy : false,
 				iconCls : 'action',
 				title:'Trisac',
 				items : [{
-							xtype : 'TrisacContainer'
+							xtype : 'TrisacContainer_xtype'
 						}
 				]
 			}

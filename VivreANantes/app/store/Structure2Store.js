@@ -3,10 +3,10 @@ Ext.define('VivreANantes.store.Structure2Store', {
 
 			config :{
 				autoLoad : true,
-
-				
-				fields : ['code', 'type', 'modesCollecte', 'plagesHoraires2', 'libelle', 'plagesHoraires', 'adresseTemp',
-								'horaires', 'conseils', 'quartier', 'ouvertAujourdhuiEtDemain', 'sousModesCollecte'],
+				fields : ['code', 'type', 'modesCollecte', 'plagesHoraires2',
+						'libelle', 'plagesHoraires', 'adresseTemp', 'horaires',
+						'conseils', 'quartier', 'ouvertAujourdhuiEtDemain',
+						'sousModesCollecte'],
 				proxy : {
 					type : 'ajax',
 					// url : 'data/events.json',

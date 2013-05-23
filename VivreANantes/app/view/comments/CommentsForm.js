@@ -1,16 +1,16 @@
 /**
  * Formulaire des Déchets
  */
-Ext.define('VivreANantes.view.faq.FaqForm', {
+Ext.define('VivreANantes.view.comments.CommentsForm', {
 			extend : 'Ext.form.Panel',
-						requires : ['Ext.form.FieldSet', 'Ext.field.Email'],
-			xtype : 'faqForm_xtype',
+			requires : ['Ext.form.FieldSet', 'Ext.field.Email'],
+			xtype : 'commentsForm_xtype',
 			config : {
 				url : 'truc.php',
 				items : [{
 							xtype : 'fieldset',
-							// title : 'Ajout un commentaire',
-							// instructions : '(courriel ne peut pas être vide)',
+							// instructions : '(courriel ne peut pas être
+							// vide)',
 							items : [{
 										xtype : 'textfield',
 										name : 'name',
@@ -26,10 +26,10 @@ Ext.define('VivreANantes.view.faq.FaqForm', {
 									}]
 						}, {
 							xtype : 'button',
-							text : 'Envoyer un commentaire',
+							text : 'Envoyez un commentaire',
 							iu : 'confirm',
 							handler : function() {
-								this.up(faqForm_xtype).submit()
+								this.up(commentsForm_xtype).submit()
 							}
 						}]
 			}

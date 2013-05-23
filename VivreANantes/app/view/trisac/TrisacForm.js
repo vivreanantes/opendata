@@ -4,7 +4,7 @@
 Ext.define('VivreANantes.view.trisac.TrisacForm', {
 			extend : 'Ext.form.Panel',
 			requires : ['Ext.field.Text', 'Ext.field.Select'],
-			xtype : 'TrisacForm',
+			xtype : 'TrisacForm_xtype',
 			config : {
 				items : [{
 							xtype : 'textfield',

@@ -1,6 +1,6 @@
 Ext.define('VivreANantes.view.trisac.TrisacDetails', {
 	extend : 'Ext.Container',
-	xtype : 'TrisacDetails',
+	xtype : 'TrisacDetails_xtype',
 
 	config : {
 		title : 'Détails',

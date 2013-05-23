@@ -5,6 +5,7 @@ Ext.define('VivreANantes.view.Main', {
 
 			extend : 'Ext.tab.Panel',
 			xtype : 'main',
+			id : 'mainView',
 			config : {
 				// remplace le tabbar créée automatiquement avec un tab.panel
 				// tabBarPosition : 'bottom',
@@ -29,8 +30,7 @@ Ext.define('VivreANantes.view.Main', {
 					xclass : 'VivreANantes.view.geo.MapOSM'
 				}, {
 					xclass : 'VivreANantes.view.information.Informations'
-						// xtype : 'informations'
-					}, {
+				}, {
 					xclass : 'VivreANantes.view.structures.Structures'
 				}, {
 					xclass : 'VivreANantes.view.reuses.Reuses'
@@ -44,7 +44,7 @@ Ext.define('VivreANantes.view.Main', {
 				}, {
 					xclass : 'VivreANantes.view.trisac.Trisacs'
 				}, {
-					xclass : 'VivreANantes.view.faq.Faq'
+					xclass : 'VivreANantes.view.comments.Comments'
 				}, {
 					xclass : 'VivreANantes.view.about.Description'
 				}]

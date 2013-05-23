@@ -22,6 +22,11 @@ Ext.define('VivreANantes.view.about.Description', {
 				'	déchets récupérés, et les organismes qui se proposent de donner une seconde vie à',
 				'	vos déchets,<br/>',
 				'- Retrouver le mode de collecte et le jour de collecte à domicile, en recherchant par',
-				'	rue ou à partir de votre position.</p>'].join("")
+				'	rue ou à partir de votre position.</p>',
+				"<ul>Nous avons besoin de 3 types d'aide (en plus de nouvelles idées) : ",
+				"<li>que les données libres fournies par Open Data Nantes et www.deuxieme-vie.org restent maintenues.</li>",
+				"<li>des personnes impliquées dans l'environnement : un travail de relecture via les commentaires, d'envoi de photos, ou de maintenance le tableur source de données.</li>",
+				"<li>des informations bénévolles (technologies Grails, et Sencha Touch).</li>",
+				""].join("")
 	}
 });

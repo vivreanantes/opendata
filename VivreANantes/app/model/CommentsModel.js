@@ -1,4 +1,4 @@
-Ext.define('VivreANantes.model.Advice', {
+Ext.define('VivreANantes.model.CommentsModel', {
 			extend : 'Ext.data.Model',
 
 			config : {
@@ -7,10 +7,10 @@ Ext.define('VivreANantes.model.Advice', {
 							name : 'code'
 						}, {
 							name : 'libelle'
-						}, {
+						},{
 							name : 'description'
 						}, {
-							name : 'fiche'
+							name : 'element'
 						}]
 			}
 

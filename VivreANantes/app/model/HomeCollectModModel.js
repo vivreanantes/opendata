@@ -1,4 +1,4 @@
-Ext.define('VivreANantes.model.HomeCollectMod', {
+Ext.define('VivreANantes.model.HomeCollectModModel', {
 			extend : 'Ext.data.Model',
 
 			config : {

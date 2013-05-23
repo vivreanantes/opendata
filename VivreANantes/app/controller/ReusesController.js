@@ -36,12 +36,11 @@ Ext.define("VivreANantes.controller.ReusesController", {
 			}
 
 		}
-	}
+	},
 
 	/**
-	 * A l"initialisation de la fenêtre d"accueil
+	 * A l"initialisation de la fenêtre
 	 */
-	,
 	onInitReusesController : function(list) {
 		// 1
 		var homecollectmodStore = Ext.create(

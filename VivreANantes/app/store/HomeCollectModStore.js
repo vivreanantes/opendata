@@ -3,7 +3,7 @@ Ext.define('VivreANantes.store.HomeCollectModStore', {
 			id : 'homecollectmodstore', 	
 			config :{
 				autoLoad : true,
-				model : 'VivreANantes.model.HomeCollectMod',
+				model : 'VivreANantes.model.HomeCollectModModel',
 				proxy : {
 					type : 'ajax',
 					url : 'data/modes_collecte_a_domicile.json',
