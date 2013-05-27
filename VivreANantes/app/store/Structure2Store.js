@@ -3,7 +3,7 @@ Ext.define('VivreANantes.store.Structure2Store', {
 
 			config :{
 				autoLoad : true,
-				fields : ['code', 'type', 'modesCollecte', 'plagesHoraires2',
+				fields : ['code', 'description_fr', 'type', 'modesCollecte', 'plagesHoraires2',
 						'libelle', 'plagesHoraires', 'adresseTemp', 'horaires',
 						'conseils', 'quartier', 'ouvertAujourdhuiEtDemain',
 						'sousModesCollecte'],

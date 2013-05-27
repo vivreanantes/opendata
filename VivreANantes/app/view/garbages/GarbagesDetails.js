@@ -5,8 +5,8 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 	config : {
 		title : 'Détails',
 		layout : 'vbox',
-
 		tpl : '<div>{nom}</div>{description}{concerne_aussi}',
+		styleHtmlContent: true,
 //		items : [
 //				{
 //					id : 'content',

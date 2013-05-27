@@ -59,6 +59,11 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				this.structuresDetail = Ext
 						.create("VivreANantes.view.structures.StructuresDetails");
 
+				// description_fr
+				var description_fr = "";
+				if (record.data["description_fr"] !== "") {
+					description_fr = record.data["description_fr"] + "<br/><br/>";
+				}		
 				// calcule la chaîne correspondant aux commentaires
 				var faqTraduit = this.getApplication()
 						.getController("VivreANantes.controller.CommentsController")
@@ -69,14 +74,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					conseils = record.data["conseils"] + ",";
 				}
 				conseilTraduit = this.getApplication()
-						.getController("VivreANantes.controller.Garbages")
+						.getController("VivreANantes.controller.GarbagesController")
 						.getAdviceString(conseils);
 				// fabrique la chaîne affichée sur la page détail
 				this.structuresDetail.setTpl("<div>"
 						// this.structuresDetail.setHtml("<div>"
 						+ this.translate("label_structure_template_detail",
-								stLocale) + conseilTraduit + faqTraduit
+								stLocale) + description_fr + conseilTraduit + faqTraduit
 						+ "</div>");
+				this.structuresDetail.setTitle(record.data["libelle"]);
 			}
 
 			console.log(record.data);
@@ -167,6 +173,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 
 		return {
 			"libelle" : objStructures.get("libelle"),
+			"description_fr" : objStructures.get("description_fr"),
 			"type" : objStructures.get("type"),
 			"modesCollecte" : objStructures.get("modesCollecte"),
 			"sousModesCollecte" : objStructures.get("sousModesCollecte"),

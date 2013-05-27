@@ -3,7 +3,7 @@ Ext.define('VivreANantes.store.GarbageStore', {
 			id : 'garbagestore', 	
 			config :{
 				autoLoad : true,
-				model : 'VivreANantes.model.Garbage',
+				model : 'VivreANantes.model.GarbageModel',
 				proxy : {
 					type : 'ajax',
 					url : 'data/dechets.json',

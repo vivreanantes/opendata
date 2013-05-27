@@ -1,6 +1,6 @@
 Ext.define('VivreANantes.controller.CollectModsController', {
 			extend : 'VivreANantes.controller.AbstractController',
-
+			id : 'collectModsController',
 			config : {
 				refs : {
 					mainView : 'main',
@@ -35,46 +35,50 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 						tap : 'showCollectMods'
 					},
 					buttonConteneurPapierCarton : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonConteneurMetalPlastiqueBrique : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonConteneurVerre : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonBacBleu : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonBacJaune : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonSacBleu : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonSacJaune : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonEcopointsDechetteries : {
 						tap : 'showButtonEcopointsDechetteries'
 					},
 					buttonReemploi : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonPointsDeVente : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonConteneurLeRelay : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					},
 					buttonEcotox : {
-						tap : 'showDetails'
+						tap : 'onShowDetails'
 					}
 				}
 			},
 
-			showDetails : function(button, e, eOpts) {
-				var collectModFromStore = this.getCollectMod(button.id);
+			onShowDetails : function(button, e, eOpts) {
+				this.showDetails(button.id);
+			},
+			
+			showDetails : function(collectModId) {
+				var collectModFromStore = this.getCollectMod(collectModId);
 				var description = this
 						.makeDescriptionString(collectModFromStore);
 
@@ -133,7 +137,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				var conseils = collectModFromStore["conseils"];
 				if (conseils != "") {
 					res += this.getApplication()
-							.getController("VivreANantes.controller.Garbages")
+							.getController("VivreANantes.controller.GarbagesController")
 							.getAdviceString(conseils);
 				}
 				var comments = this
@@ -146,6 +150,10 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				var links = this.makeLinkString(collectModFromStore["id"]);
 				if (links != "") {
 					res += links;
+				}
+				var mailLink = this.makeSendLink(collectModFromStore["id"]);
+				if (mailLink != "") {
+					res += mailLink;
 				}
 				return res;
 			},
@@ -282,7 +290,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				var faq = "";
 				var image = "";
 				var dataCollectMods = this.getApplication()
-						.getController("VivreANantes.controller.Garbages")
+						.getController("VivreANantes.controller.GarbagesController")
 						.getCollectModList().getStore().getData();
 				dataCollectMods.each(function(recordAdvice) {
 							if (recordAdvice.raw["code"] === stCollectMod) {

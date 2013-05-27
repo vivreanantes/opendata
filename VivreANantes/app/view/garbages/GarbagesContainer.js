@@ -5,22 +5,26 @@
 Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 			extend : 'Ext.Container',
 			xtype : 'garbagesContainer',
-
+			
 			config : {
 				layout : 'vbox',
+				title:'Déchets',
 				items : [{
 							xtype : 'garbagesForm',
-							height : 120,
+							height : 80,
 							scrollable : false
 						},
-
 						{
-							// xtype : 'garbagesList',
-							xtype : 'usualCategoriesList',
+							xtype : 'usualCategoriesList_xtype',
+							height : 120
+					}/*,
+					
+						{
+							xtype : 'garbagesList',
 							scrollable : 'vertical',
+							hidden:true,
 							flex : 1
-							// title : 'Déchets'
-					}
+					}*/
 
 						// CRN_DEBUT
 						, {

@@ -22,7 +22,7 @@
 		"libelle" : "Dispositif multifilières à Arc-en-ciel",
 		"description_fr" : "Ce dispositif a été mis en service en mars 1994 et il comprend 4 unités : <UL><LI>le centre de traitement et de valorisation des déchets,</LI><LI>le centre de tri et de conditionnement des déchets ménagers recyclables,</LI><LI> le centre de tri des déchets industriels et commerciaux, situé à Couëron,</LI><LI> l'unité de compostage de déchets verts située à Saint-Herblain.,</LI></UL><BR/>Vous pouvez visiter l'usine.",
 		"image" : "Ce dispositif a été mis en service en mars 1994 et il comprend 4 unités : <UL><LI>le centre de traitement et de valorisation des déchets,</LI><LI>le centre de tri et de conditionnement des déchets ménagers recyclables,</LI><LI> le centre de tri des déchets industriels et commerciaux, situé à Couëron,</LI><LI> l'unité de compostage de déchets verts située à Saint-Herblain.,</LI></UL><BR/>Vous pouvez visiter l'usine.",
-		"image" : ""
+		"image" : "usine_arcenciel_petit.png"
 	}, {
 		"code" : "fiche_ecoparticipation",
 		"libelle" : "Eco-participation",

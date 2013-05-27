@@ -27,13 +27,14 @@ Ext.define('VivreANantes.controller.Welcome', {
 				
 				// Les catégories usuelles
 				var categorieUsuelleStore = Ext.create(
-						'VivreANantes.store.CategorieUsuelleStore', {
+						'VivreANantes.store.CategorieUsuelleStore');
+						/*, {
 							autoLoad : true,							
 							listeners : {
 								'load' : function(store, results, successful) {
 								}
 							}
-						});
+						});*/
 				list.setStore(categorieUsuelleStore);
 
 				console.log(categorieUsuelleStore);

@@ -78,7 +78,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 					conseils = record.data["conseils"] + ",";
 				}
 				conseilTraduit = this.getApplication()
-						.getController("VivreANantes.controller.Garbages")
+						.getController("VivreANantes.controller.GarbagesController")
 						.getAdviceString(conseils);
 				// fabrique la chaîne affichée sur la page détail
 				// this.trisacDetail.setTpl("

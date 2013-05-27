@@ -118,6 +118,26 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	translate : function(stKey, stLocale) {
 		var result = stKey;
 		var map = {
+			"label_recyclabe" : {
+				"en" : "recycling",
+				"fr" : "recyclable"
+			},
+			"label_OUI" : {
+				"en" : "YES",
+				"fr" : "OUI"
+			},
+			"label_NON" : {
+				"en" : "NO",
+				"fr" : "NON"
+			},
+			"label_pas_poubelle" : {
+				"en" : ", nut do not put on the trash",
+				"fr" : ", mais ne pas mettre à la poubelle"
+			},
+			"label_comment" : {
+				"en" : "Comment",
+				"fr" : "Commentez"
+			},
 			"label_sauf_ferie" : {
 				"en" : "except official holiday",
 				"fr" : "sauf jours fériés"
@@ -154,17 +174,123 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				"en" : "and",
 				"fr" : "et"
 			},
+			"label_modco_contmpb" : {
+				"en" : "",
+				"fr" : "Conteneur métal / plastique / brique"
+			},
+			"label_modco_contpapiercarton" : {
+				"en" : "",
+				"fr" : "Conteneur papier-carton"
+			},
+			"label_modco_contverre" : {
+				"en" : "",
+				"fr" : "Conteneur verre"
+			},
+			"label_modco_bacbleu" : {
+				"en" : "",
+				"fr" : "Bac bleu"
+			},
+			"label_modco_bacjaune" : {
+				"en" : "",
+				"fr" : "Bac jaune"
+			},
+			"label_modco_sacbleu" : {
+				"en" : "",
+				"fr" : "Sac bleu"
+			},
+			"label_modco_sacjaune" : {
+				"en" : "",
+				"fr" : "Sac jaune"
+			},
+			"label_modco_ecopoint" : {
+				"en" : "",
+				"fr" : "Ecopoint"
+			},
+			"label_modco_ecotox" : {
+				"en" : "",
+				"fr" : "Ecotox"
+			},
+			"label_modco_reemploi" : {
+				"en" : "",
+				"fr" : "Réeemploi"
+			},
+			"label_modco_pointsdevente" : {
+				"en" : "",
+				"fr" : "Points de vente"
+			},
+			"label_modco_decheterie" : {
+				"en" : "",
+				"fr" : "Décheteries"
+			},
+			"label_modco_compostage" : {
+				"en" : "",
+				"fr" : "Compostage"
+			},
+			"label_modco_encombrant" : {
+				"en" : "",
+				"fr" : "Encombrant"
+			},
+			"label_modco_conteneur_le_relais" : {
+				"en" : "",
+				"fr" : "Conteneur Le Relais"
+			},
+			"label_cu_plastique" : {
+				"en" : "",
+				"fr" : "Plastique"
+			},
+			"label_cu_papierscartons" : {
+				"en" : "",
+				"fr" : "Papiers-cartons"
+			},
+			"label_cu_metal" : {
+				"en" : "",
+				"fr" : "Métal"
+			},
+			"label_cu_vertbois" : {
+				"en" : "",
+				"fr" : "Déchets verts / bois"
+			},
+			"label_cu_verrevaisselle" : {
+				"en" : "",
+				"fr" : "Verre / Vaisselle / Pots"
+			},
+			"label_cu_vetementtissu" : {
+				"en" : "",
+				"fr" : "Vêtements / tissu"
+			},
+			"label_cu_encombrant" : {
+				"en" : "",
+				"fr" : "Encombrants"
+			},
+			"label_cu_divers" : {
+				"en" : "",
+				"fr" : "Divers"
+			},
+			"label_cu_nourriture" : {
+				"en" : "",
+				"fr" : "Nourriture"
+			},
+			"label_cu_electronique" : {
+				"en" : "",
+				"fr" : "Électronique"
+			},
+			"label_cu_toxique" : {
+				"en" : "",
+				"fr" : "Toxique"
+			},
 			"label_structure_template_detail" : {
-				"en" : "Type : {type} - {soustype} <BR/>Name : {libelle} <BR/>Schedules : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>Phone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
-				"fr" : "Type : {type} - {soustype} <BR/>Nom : {libelle} <BR/>Horaires : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>Téléphone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
+				"en" : "Type : {type} - {soustype} <BR/>{description_fr} <BR/>Schedules : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>Phone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
+				"fr" : "Type : {type} - {soustype} <BR/>{description_fr} <BR/><BR/>Horaires : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>Téléphone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
 			},
 			"label_trisac_template_detail" : {
-				"en" : "Name : {libelle} <BR/>Schedules : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
-				"fr" : "Nom : {libelle} <BR/>Horaires : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
+				"en" : "{description_fr} <BR/>Schedules : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
+				"fr" : "{description_fr} <BR/>Horaires : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
 			}
 
 		};
-		if (stLocale == "en" && map[stKey]["en"] != null) {
+		if (map[stKey] == null) {
+			result = stKey;
+		} else if (stLocale == "en" && map[stKey]["en"] != null) {
 			result = map[stKey]["en"];
 		} else if (map[stKey]["fr"] != null) {
 			result = map[stKey]["fr"];
@@ -214,7 +340,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 	getContentButtonsPanel : function(arrayItemsToShow) {
 		var arrayItems = new Array();
-		var nbElementsParLines = 3;
+		var nbElementsParLines = 4;
 
 		for (var i = 0; i < arrayItemsToShow.length; i++) {
 			// Si je suis sur un multiple de 3 je termine la ligne
@@ -256,106 +382,158 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return arrayItems;
 	},
 	/*
-	 * Créer un lien verbeux vers une page de l'application.
-	 * En paramètre l'identifiant :
-	 * valeur autorisées : garbagePanel, mapPanel, informationsPanel,
-	 * structuresPanel, reusesPanel, collectModsPanel, homeCollectsModsPanel,
-	 * trisacsPanel, commentsPanel, aboutPanel
+	 * Créer un lien verbeux vers une page de l'application. En paramètre
+	 * l'identifiant : valeur autorisées : garbagePanel, mapPanel,
+	 * informationsPanel, structuresPanel, reusesPanel, collectModsPanel,
+	 * homeCollectsModsPanel, trisacsPanel, commentsPanel, aboutPanel
 	 */
 	makeTextLink : function(id) {
 		var res = "";
 		if (id == "garbagePanel") {
-			res = "<br/>Voir les "
-					+ this.makeLink(id) + " (recherche par texte ou image)";
+			res = "<br/>Voir les " + this.makeLink(id)
+					+ " (recherche par texte ou image)";
 		} else if (id == "mapPanel") {
 			res = "<br/>Voir la localisation sur la " + this.makeLink(id);
 		} else if (id == "informationsPanel") {
-			res = "<br/>Voir les " + this.makeLink(id) + " sur la filière du tri.";
+			res = "<br/>Voir les " + this.makeLink(id)
+					+ " sur la filière du tri.";
 		} else if (id == "structuresPanel") {
-			res = "<br/>Voir les adresses, horaires et déchets acceptés des " + this.makeLink(id);
+			res = "<br/>Voir les adresses, horaires et déchets acceptés des "
+					+ this.makeLink(id);
 		} else if (id == "reusesPanel") {
-			res = "<br/>Voir les adresses, horaires et déchets acceptés des structures de " + this.makeLink(id);
+			res = "<br/>Voir les adresses, horaires et déchets acceptés des structures de "
+					+ this.makeLink(id);
 		} else if (id == "collectModsPanel") {
-			res = "<br/>Voir les jours de passage des collecte " + this.makeLink(id);
+			res = "<br/>Voir les jours de passage des collecte "
+					+ this.makeLink(id);
 		} else if (id == "homeCollectsModsPanel") {
 			res = "<br/>Voir les collectes " + this.makeLink(id);
 		} else if (id == "trisacsPanel") {
-			res = "<br/>Voir les lieux et horaires des distributions de " + this.makeLink(id);
+			res = "<br/>Voir les lieux et horaires des distributions de "
+					+ this.makeLink(id);
 		} else if (id == "commentsPanel") {
 			res = "<br/> " + this.makeLink(id);
 		} else if (id == "aboutPanel") {
-			res = "<br/>Voir plus d'infos dans " + this.makeLink(id); 
+			res = "<br/>Voir plus d'infos dans " + this.makeLink(id);
 		}
 		return res;
 
 	},
 	/*
-	 * Créer un lien vers une page de l'application.
-	 * En paramètre l'identifiant :
+	 * Créer un lien vers une page de l'application. En paramètre l'identifiant :
 	 * valeur autorisées : garbagePanel, mapPanel, informationsPanel,
 	 * structuresPanel, reusesPanel, collectModsPanel, homeCollectsModsPanel,
 	 * trisacsPanel, commentsPanel, aboutPanel
 	 */
-	makeLink : function(id) {
+	makeLink : function(id, idDetail) {
+		if (idDetail == undefined) {
+			idDetail = "";
+		}
 		var res = "";
 		var st1 = "<a href='#' onClick='Javascript:";
 		var st2 = "' >";
 		var st3 = "</a>";
 
 		if (id == "garbagePanel") {
-			res = st1 + "showGarbagePanel()" + st2 + "Déchets" + st3;
+			res = st1 + "showGarbagePanel(\"" + idDetail + "\")" + st2
+					+ "Déchets" + st3;
 		} else if (id == "mapPanel") {
-			res = st1 + "showMapPanel()" + st2 + "Carte" + st3;
+			res = st1 + "showMapPanel(\"" + idDetail + "\")" + st2 + "Carte"
+					+ st3;
 		} else if (id == "informationsPanel") {
-			res = st1 + "showInformationsPanel()" + st2 + "Informations" + st3;
+			res = st1 + "showInformationsPanel(\"" + idDetail + "\")" + st2
+					+ "Informations" + st3;
 		} else if (id == "structuresPanel") {
-			res = st1 + "showStructuresPanel()" + st2 + "Structures" + st3;
+			res = st1 + "showStructuresPanel(\"" + idDetail + "\")" + st2
+					+ "Structures" + st3;
 		} else if (id == "reusesPanel") {
-			res = st1 + "showReusesPanel()" + st2 + "Réemploi" + st3;
+			res = st1 + "showReusesPanel(\"" + idDetail + "\")" + st2
+					+ "Réemploi" + st3;
 		} else if (id == "collectModsPanel") {
-			res = st1 + "showCollectModsPanel()" + st2 + "Modes de collectes"
-					+ st3;
+			if (idDetail != "") {
+				var label = this.translate("label_" + idDetail);
+			}
+			if (label == "" || label == idDetail) {
+				label = "Modes de collectes";
+			}
+			res = st1 + "showCollectModsPanel(\"" + idDetail + "\")" + st2
+					+ label + st3;
+
 		} else if (id == "homeCollectsModsPanel") {
-			res = st1 + "showHomeCollectsModsPanel()" + st2 + "A domicile"
-					+ st3;
+			res = st1 + "showHomeCollectsModsPanel(\"" + idDetail + "\")" + st2
+					+ "A domicile" + st3;
 		} else if (id == "trisacsPanel") {
-			res = st1 + "showTrisacsPanel()" + st2 + "Trisac" + st3;
+			res = st1 + "showTrisacsPanel(\"" + idDetail + "\")" + st2 + "Trisac"
+					+ st3;
 		} else if (id == "commentsPanel") {
-			res = st1 + "showCommentsPanel()" + st2 + "Commentaires" + st3;
+			res = st1 + "showCommentsPanel(\"" + idDetail + "\")" + st2
+					+ "Commentaires" + st3;
 		} else if (id == "aboutPanel") {
-			res = st1 + "showAboutPanel()" + st2 + "A propos" + st3;
+			res = st1 + "showAboutPanel(\"" + idDetail + "\")" + st2 + "A propos"
+					+ st3;
 		}
 		return res;
+	},
+
+	/**
+	 * Créer la chaine de caractère d'envoie de mail.
+	 * 
+	 * @param {}
+	 *            id
+	 * @return {}
+	 */
+	makeSendLink : function(id) {
+		return "<a href='#' onClick='Javascript:sendMail(id)'>"
+				+ this.translate("label_comment") + "</a>";
 	}
+
 });
 
-function showGarbagePanel() {
+function showGarbagePanel(id) {
 	Ext.getCmp("mainView").setActiveItem(0);
 };
-function showMapPanel() {
+function showMapPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(1);
 };
-function showInformationsPanel() {
+function showInformationsPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(2);
 };
-function showStructuresPanel() {
+function showStructuresPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(3);
 };
-function showReusesPanel() {
+function showReusesPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(4);
 };
-function showCollectModsPanel() {
+function showCollectModsPanel(collectModId) {
+	/*
+	 * if (collectModId != "") {
+	 * Ext.getCmp("collectModsController").showDetails(collectModId);
+	 * this.getApplication()
+	 * .getController('VivreANantes.controller.CollectModsController')
+	 * .showDetails(collectModId);
+	 
+	}*/
 	Ext.getCmp("mainView").setActiveItem(6);
 };
-function showHomeCollectsModsPanel() {
+function showHomeCollectsModsPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(7);
 };
-function showTrisacsPanel() {
+function showTrisacsPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(8);
 };
-function showCommentsPanel() {
+function showCommentsPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(9);
 };
-function showAboutPanel() {
+function showAboutPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(9);
 };
+
+
+sendMail = function(id) {
+	var msg = {
+		subject : "Ajouter un commentaire " + id,
+		body : "N'oubliez pas votre nom."
+	};
+	window.location = "mailto:vivreanantes@gmail.com" + "?"
+			+ Ext.urlEncode(msg);
+}

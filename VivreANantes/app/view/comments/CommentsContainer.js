@@ -12,7 +12,8 @@ Ext.define('VivreANantes.view.comments.CommentsContainer', {
 				scrollable : 'true',
 				items : [{
 							xtype : 'commentsForm_xtype',
-							height : 300,
+							// height : 300,
+							height : 50,
 							scrollable : false
 						}, {
 							xtype : 'commentsList_xtype',

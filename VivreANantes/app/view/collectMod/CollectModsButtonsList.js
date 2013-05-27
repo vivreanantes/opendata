@@ -1,5 +1,5 @@
 /**
- * Informations
+ * Modes de collecte : page avant boutons
  * 
  * @author Christian Renoulin
  */

@@ -70,7 +70,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
         			property : "modesCollecte",
             		// le type correspond aux modes de collectes possibles
             		// voir http://quentinc.net/javascript/testeur-expressions-regulieres/
-            		value: /modco_ecopoint|modco_ecotox|modco_decheterie/g
+            		value: /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g
         			// value: /modco_reemploi/g
         		}]
 					// autoLoad : true,

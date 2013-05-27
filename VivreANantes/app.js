@@ -65,10 +65,10 @@ Ext
 			'trisac.TrisacList'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'InformationsController', 'StructuresController', 'ReusesController', 'Garbages', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
+			controllers : [ 'Welcome', 'Geo', 'InformationsController', 'StructuresController', 'ReusesController', 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
 			,'CommentsController'  /*, 'Calendar'*/],
 			
-			models : ['CategorieUsuelle', 'Garbage', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', 'WasteTreatmentsCategories', 'CollectModModel'/*, 'CalendarModel'*/],
+			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', 'WasteTreatmentsCategories', 'CollectModModel'/*, 'CalendarModel'*/],
 			
 			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store'],
 
@@ -99,38 +99,35 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// Introduire les éléments suivants dans Garbages.js
-		// avant : conseilTraduit += "Plus d'infos : " "<A HREF='#'>"	+ recordAdvice.raw.fiche + "</A>";
-		// après : conseilTraduit += this.makeTextLink("informationsPanel");
-
-		// 24/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : supprimer les sous-catégories Toxiques
-		// 24/05 TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
-		// 24/05 TODO Déchets/Structures/Modes de collecte LONG : remettre les nouvelles images
-		// 24/05 TODO Déchets vérifier les conseils
-		// 24/05 TODO A domicile : petites corrections d'ergonomie
+		// 28/05 TODO A domicile : petites corrections d'ergonomie
+		// 28/05 TODO Modes de collecte ajouter du contenu
+		// 28/05 TODO Stuctures LONG : harmoniser les quartiers 
+		// 28/05 TODO Structures : Intégrer décheterie Vertou http://www.nantesmetropole.fr/pratique/dechets/decheterie-de-vertou-dechetterie-ecopoint-24950.kjsp?RH=1250010215678
+		// 28/05 TODO A domicile LONG : Vérifier les donnéees
 		
-		// TODO Structures : suivi de la question posée sur le FORUM sur les conteneurs dans structures2.json : ds_ent om_ent verre_ent
-		// TODO Ajout structures Ecotox
+		// TODO Bascule d'une page à l'autre avec paramètre
+		// TODO Déchets LONG : vérifier les conseils
+		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
 		// TODO Informations : faire libricompost
 		// TODO Informations : faire panneaux thermiques
-		// TODO FAQ : connecter le bouton "commentez" à un script côté serveur (donc sur toutes les détails)
-		// TODO Structures : inclure les Relais dans structures2.json, et un descriptif dans modes_collecte.json
-		// TODO Retrouver la nouvelle déchetterie et l'ajouter dans les collecte
-		
+		// TODO Informations : faire réchauffement climatique
+
+		// TODO Réemploi : vérif http://ourecycler.fr/point-tri-selectif.php
+		// TODO Suivi suivre la demande en cours http://lerelais.org/oudonner.php
+		// TODO Suivi demande horaires structures Ecotox (reçu par courrier et intégré sur le site)
+		// TODO Suivi de la question posée sur le FORUM sur les conteneurs dans structures2.json : ds_ent om_ent verre_ent
+	
+		// TODO Reprendre photo de Valorena et Arc en ciel
+		// TODO Structures : inclure les Relais dans structures2.json, et un descriptif dans modes_collecte.json 
+
 		///////////// CED ////////////////// 
 
 		// TODO Carte : utiliser le localstorage pour mémoriser les structures affichées, et les quartiers 
 		// TODO Carte : filtrer sur les structures et les quartiers
 		// TODO Carte : utiliser structures2.json à la place structures.json
-		// TODO Carte : permettre la bascule de la carte vers StructuresDetails
+		// TODO Carte : permettre la bascule de la carte vers StructuresDetails (utiliser AbstractController.makeLink)
 
 		// TODO Calendrier - DUR : intégrer le composant Ext.ux.TouchCalendar (on utilisera Ext.ux.TouchCalendarView)
 		// TODO Calendrier : utiliser le localstorage pour mémoriser les codes des structures affichées dans le calendrier
-		
-		// TODO Déchets : mettre des pastilles sur les catégories de traitement, qui permet de diriger ensuite vers la page actuelle.
-		// TODO Déchets : mettre un lien qui dirige vers les modes de collecte
-		// TODO Déchet : mettre un lien sur les conseils qui sont associés à une fiche pour rediriger vers la fiche information
 
 		// TODO DUR Dans la tagbar remplacer "iconCls : 'more'" par un vrai bouton suivant.
-		// Récup les Ecotox de 2013
-		// 23/05 TODO Structures : regrouper les structures dans quelques quartiers

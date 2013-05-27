@@ -2,15 +2,23 @@
  * Formulaire des Déchets
  */
 Ext.define('VivreANantes.view.comments.CommentsForm', {
-			extend : 'Ext.form.Panel',
-			requires : ['Ext.form.FieldSet', 'Ext.field.Email'],
+			extend : 'Ext.Container',
+				xtype : 'commentsForm_xtype',
+			config : {
+				layout : 'vbox',
+				tpl : '',
+				html :  "Pour nous aidez à améliorer cette application, <A HREF='#' onClick='Javascript:sendMail(id)'>envoyez un commentaire</A>.",
+				xtype : 'panel',
+				styleHtmlContent : true
+			}
+				
+			/*requires : ['Ext.form.FieldSet', 'Ext.field.Email'],
 			xtype : 'commentsForm_xtype',
 			config : {
 				url : 'truc.php',
 				items : [{
 							xtype : 'fieldset',
-							// instructions : '(courriel ne peut pas être
-							// vide)',
+							// instructions : '(courriel pas vide)',
 							items : [{
 										xtype : 'textfield',
 										name : 'name',
@@ -32,6 +40,6 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 								this.up(commentsForm_xtype).submit()
 							}
 						}]
-			}
+			}*/
 
 		});

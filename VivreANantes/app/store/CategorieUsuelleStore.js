@@ -10,7 +10,7 @@ Ext.define('VivreANantes.store.CategorieUsuelleStore', {
 						rootProperty : 'categories_usuelles'
 					}
 				},
-				model : 'VivreANantes.model.CategorieUsuelle',
+				model : 'VivreANantes.model.CategorieUsuelleModel',
 				
 				autoLoad : true,
 				sorters : 'nom'
