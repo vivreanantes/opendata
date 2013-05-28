@@ -25,7 +25,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			buttonCategoryEncombrant : '#cu_encombrant',
 			buttonCategoryNourriture : '#cu_nourriture',
 			buttonCategoryElectronique : '#cu_electronique',
-			buttonCategoryToxique : '#cu_toxique'
+			buttonCategoryToxique : '#cu_toxique',
+			buttonCategoryDivers : '#cu_divers'
 		},
 		control : {
 			garbageDetail : {
@@ -38,7 +39,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 			},
 			usualCategoriesList : {
-				initialize : 'onInitUsualCategoriesList'
+				initialize : 'onInitUsualCategoriesList',
+				show : 'onShowUsualCategoriesList'
 			},
 			garbagesList : {
 				initialize : 'onInitGarbages',
@@ -58,7 +60,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			},
 
 			garbagesFormSelect : {
-				change : 'onGarbageStoreFilter'
+// change : 'onGarbageStoreFilter'
 			}
 			// CRN_DEBUT
 			,
@@ -104,6 +106,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			},
 			buttonCategoryToxique : {
 				tap : 'onShowDetails'
+			},
+			buttonCategoryDivers : {
+				tap : 'onShowDetails'
 			}
 		}
 	},
@@ -118,18 +123,18 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	showDetails : function(collectModId) {
-	
-		if (this.garbagesList==null) {
+
+		if (this.garbagesList == null) {
 			this.garbagesList = Ext
 					.create('VivreANantes.view.garbages.GarbagesList');
 		}
-		var title = this.translate("label_"+collectModId);
-		if (title==collectModId) {
+		var title = this.translate("label_" + collectModId);
+		if (title == collectModId) {
 			title = "Déchets";
 		}
 		this.garbagesList.setTitle(title);
 		this.getGarbagesFormSelect().setValue(collectModId);
-		this.onGarbageStoreFilter();
+		this.filter();
 		this.getGarbagesView().push(this.garbagesList);
 	},
 	onInitUsualCategoriesList : function(container) {
@@ -197,12 +202,21 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		container.setItems(arrayItems);
 	},
 
+	/*
+	 * 
+	 */
+	onShowUsualCategoriesList : function() {
+		// Efface le champ texte de l'écran recherche
+		this.getGarbagesFormText().setValue("");
+	},
+
 	getArrayFromString : function(string) {
 		string = string.replace(", /g", ",").replace(" ,/g", ",");
 		return string.split(',');
 	},
 
 	getAdviceString : function(conseils) {
+		var thisController = this;
 		var conseilTraduit = "";
 		// var arrayConseils = conseils.split(',');
 		// TODO utiliser getArrayFromString à la place
@@ -215,7 +229,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			dataAdvices.each(function(recordAdvice) {
 						for (i in arrayConseils) {
 							if (recordAdvice.raw["code"] === arrayConseils[i]) {
-								conseilTraduit += "<BR/><B>"
+								 
+								conseilTraduit = conseilTraduit + "<BR/>"+ thisController.translate("label_Conseil") +" : <B>"
 										+ recordAdvice.raw["libelle"]
 										+ "</B><BR/>"
 										+ recordAdvice.raw["description"];
@@ -308,8 +323,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	showGarbagesDetail : function(list, index, node, record) {
-		console.log('showGarbagesDetail');
-
+		var thisController = this;
 		if (record) {
 			if (!this.garbageDetail) {
 				this.garbageDetail = Ext
@@ -346,12 +360,17 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 					.getApplication()
 					.getController('VivreANantes.controller.GarbagesController')
 					.getAdviceString(conseils);
+			if (conseilTraduit != "") {
+				conseilTraduit = conseilTraduit + "<br/>";
+			}
 			// faq
 			var faqTraduit = this
 					.getApplication()
 					.getController('VivreANantes.controller.CommentsController')
 					.getCommentString(record.data["code"]);
-
+			if (faqTraduit != "") {
+				faqTraduit = faqTraduit + "<br/>";
+			}
 			// Modes de collecte
 			var modesDeCollecteTraduit = "";
 			var arrayModesDeCollecte = modesDeCollecte.split(',');
@@ -359,15 +378,14 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			if (arrayModesDeCollecte.length > 0) {
 				var dataCollectMods = this.getCollectModList().getStore()
 						.getData();
-				var thisController = this;
 				var numModCollect = 0;
 				dataCollectMods.each(function(recordCollectMod) {
 					for (i in arrayModesDeCollecte) {
 						if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
-							if (numModCollect!=0) {
+							if (numModCollect != 0) {
 								modesDeCollecteTraduit += ", ";
 							}
-							numModCollect ++;
+							numModCollect++;
 							modesDeCollecteTraduit += thisController
 									.makeLink("collectModsPanel",
 											arrayModesDeCollecte[i]);
@@ -387,16 +405,16 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// "AA".replace("A/g", "B");
 
 			if (treatmentCategories === "OUI") {
-				treatmentCategories = this.translate("label_recyclage") + " : "
-						+ "<FONT COLOR='green' size='4'>"
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='green' size='4'>"
 						+ this.translate("label_OUI") + "</FONT>";
 			} else if (treatmentCategories === "NON") {
-				treatmentCategories = this.translate("label_recyclage") + " : "
-						+ "<FONT COLOR='red' size='4'>"
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='red' size='4'>"
 						+ this.translate("label_NON") + "</FONT>";
 			} else if (treatmentCategories === "PAS_POUBELLE") {
-				treatmentCategories = this.translate("label_recyclage") + " : "
-						+ "<FONT COLOR='orange' size='4'>"
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='orange' size='4'>"
 						+ this.translate("label_NON") + "</FONT>"
 						+ this.translate("label_pas_poubelle");
 			} else {
@@ -417,14 +435,19 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 * record.data["concerne_aussi"]; }
 			 */
 
+			var descriptionTraduit = "";
+			if (record.data["description"] != "") {
+				descriptionTraduit = this.translate("label_concerne_aussi")
+						+ " : " + record.data["description"];
+			}
 			this.garbageDetail
 					.setTpl("<table border='0'><tr>"
 							+ '<td><img src=resources/images/{image} height=120 /></td>'
 							+ '<td>' + treatmentCategories + '<br/>'
 							+ modesDeCollecteTraduit + '</td>'
-							+ "</tr></table>" + '<div>{nom}</div>'
-							+ '{description}'
-							+ /* concerneAussi + */conseilTraduit + faqTraduit);
+							+ "</tr></table>" + "<div>" + descriptionTraduit
+							+ "</div>" + /* concerneAussi + */conseilTraduit
+							+ faqTraduit);
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);
 			/*
@@ -466,7 +489,19 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * catégorie sélectionnée
 	 */
 	onGarbageStoreFilter : function() {
+		if (this.garbagesList == null) {
+			this.garbagesList = Ext
+					.create('VivreANantes.view.garbages.GarbagesList');
+		}
+		var title = this.translate("label_resultat_recherche");
+		this.garbagesList.setTitle(title);
+		this.getGarbagesFormSelect().setValue("");
+		this.filter();
+		this.getGarbagesView().push(this.garbagesList);
 
+	},
+
+	filter : function() {
 		var text = this.getGarbagesFormText();
 		var category = this.getGarbagesFormSelect();
 		var store = this.getGarbagesList().getStore();

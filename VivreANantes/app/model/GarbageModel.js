@@ -12,10 +12,9 @@ Ext.define('VivreANantes.model.GarbageModel', {
 							name : 'nom',
 							type : 'string'
 						}, {
-							// 'description_fr' dans json, 'description' dans js
 							name : 'description',
-							type : 'string',
-							mapping : 'description_fr'
+							type : 'string'
+							// mapping : 'description_fr'
 						}, {
 							name : 'concerne_aussi',
 							type : 'string',

@@ -118,7 +118,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	translate : function(stKey, stLocale) {
 		var result = stKey;
 		var map = {
-			"label_recyclabe" : {
+			"label_Conseil" : {
+				"en" : "Advise",
+				"fr" : "Conseil"
+			},
+			"label_recyclable" : {
 				"en" : "recycling",
 				"fr" : "recyclable"
 			},
@@ -173,6 +177,10 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			"label_et" : {
 				"en" : "and",
 				"fr" : "et"
+			},
+			"label_de" : {
+				"en" : "of",
+				"fr" : "de"
 			},
 			"label_modco_contmpb" : {
 				"en" : "",
@@ -234,9 +242,113 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				"en" : "",
 				"fr" : "Conteneur Le Relais"
 			},
-			"label_cu_plastique" : {
+			"label_smco_reempvet" : {
 				"en" : "",
-				"fr" : "Plastique"
+				"fr" : "Réemploi de vêtements"
+			},
+			"label_smco_reempmeuble" : {
+				"en" : "",
+				"fr" : "Réemploi de meuble"
+			},
+			"label_smco_reempinfo" : {
+				"en" : "",
+				"fr" : "Réemploi informatique"
+			},
+			"label_smco_vendeurvoiture" : {
+				"en" : "",
+				"fr" : "Vendeur et casse automobile"
+			},
+			"labelsmco_reempelectromenag" : {
+				"en" : "",
+				"fr" : "Réemploi appareils électroménager"
+			},
+			"label_smco_reempinfo" : {
+				"en" : "",
+				"fr" : "Réemploi des appareils informatique"
+			},
+			"label_smco_reempcartouchetoner" : {
+				"en" : "",
+				"fr" : "Réemploi des cartouches d'encres et tuners"
+			},
+			"label_smco_reemplivreCD" : {
+				"en" : "",
+				"fr" : "Réemploi des livres, CDs, BDs, DVDs..."
+			},
+			"label_smco_reempjouet" : {
+				"en" : "",
+				"fr" : "Réemploi des jouets"
+			},
+			"label_smco_reempmeuble" : {
+				"en" : "",
+				"fr" : "Réemploi des meubles"
+			},
+			"label_smco_reempvet" : {
+				"en" : "",
+				"fr" : "Réemploi des vêtements"
+			},
+			"label_smco_reempdivers" : {
+				"en" : "",
+				"fr" : "Réemploi d'objets divers"
+			},
+			"label_smco_batiment" : {
+				"en" : "",
+				"fr" : ""
+			},
+			"label_smco_vaisselle" : {
+				"en" : "",
+				"fr" : "Réemploi de la vaisselle"
+			},
+			"label_smco_papier" : {
+				"en" : "",
+				"fr" : "Recyclage du papier par des associations."
+			},
+			"label_smco_plastique" : {
+				"en" : "",
+				"fr" : "Recyclage du plastique par des associations."
+			},
+			"label_smco_electrique" : {
+				"en" : "",
+				"fr" : "Recyclage du matériel électrique par des associations."
+			},
+			"label_smco_vendeurcartoucheencre" : {
+				"en" : "",
+				"fr" : "Vendeur de cartouche d'encre"
+			},
+			"label_smco_vendeurpile" : {
+				"en" : "",
+				"fr" : "Vendeur de pile"
+			},
+			"label_smco_reprise" : {
+				"en" : "",
+				"fr" : "La reprise par les magasins"
+			},
+			"label_smco_vendeur_lampe_eco" : {
+				"en" : "",
+				"fr" : "Vendeur lampe économie d'énergie"
+			},
+			"label_smco_vendeurvoiture" : {
+				"en" : "",
+				"fr" : "Vendeur et casse automobile"
+			},
+			"label_smco_recupsupermarche" : {
+				"en" : "",
+				"fr" : "Réemploi dans les supermarchés"
+			},
+			"label_smco_recupmagasinbrico" : {
+				"en" : "",
+				"fr" : "Réemploi dans les magasins de bricolage"
+			},
+			"label_smco_garage" : {
+				"en" : "",
+				"fr" : "Garage, stations services"
+			},
+			"label_smco_velo" : {
+				"en" : "",
+				"fr" : "Réemploi des vélos"
+			},
+			"label_smco_pharmacie" : {
+				"en" : "",
+				"fr" : "Pharmacie"
 			},
 			"label_cu_papierscartons" : {
 				"en" : "",
@@ -277,6 +389,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			"label_cu_toxique" : {
 				"en" : "",
 				"fr" : "Toxique"
+			},
+			"label_concerne_aussi" : {
+				"en" : "Also concern",
+				"fr" : "Concerne aussi"
+			},
+			"label_resultat_recherche" : {
+				"en" : "Search result",
+				"fr" : "Résultat de la recherche"
 			},
 			"label_structure_template_detail" : {
 				"en" : "Type : {type} - {soustype} <BR/>{description_fr} <BR/>Schedules : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>Phone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
@@ -463,14 +583,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			res = st1 + "showHomeCollectsModsPanel(\"" + idDetail + "\")" + st2
 					+ "A domicile" + st3;
 		} else if (id == "trisacsPanel") {
-			res = st1 + "showTrisacsPanel(\"" + idDetail + "\")" + st2 + "Trisac"
-					+ st3;
+			res = st1 + "showTrisacsPanel(\"" + idDetail + "\")" + st2
+					+ "Trisac" + st3;
 		} else if (id == "commentsPanel") {
 			res = st1 + "showCommentsPanel(\"" + idDetail + "\")" + st2
 					+ "Commentaires" + st3;
 		} else if (id == "aboutPanel") {
-			res = st1 + "showAboutPanel(\"" + idDetail + "\")" + st2 + "A propos"
-					+ st3;
+			res = st1 + "showAboutPanel(\"" + idDetail + "\")" + st2
+					+ "A propos" + st3;
 		}
 		return res;
 	},
@@ -511,8 +631,8 @@ function showCollectModsPanel(collectModId) {
 	 * this.getApplication()
 	 * .getController('VivreANantes.controller.CollectModsController')
 	 * .showDetails(collectModId);
-	 
-	}*/
+	 *  }
+	 */
 	Ext.getCmp("mainView").setActiveItem(6);
 };
 function showHomeCollectsModsPanel(id) {
@@ -527,7 +647,6 @@ function showCommentsPanel(id) {
 function showAboutPanel(id) {
 	Ext.getCmp("mainView").setActiveItem(9);
 };
-
 
 sendMail = function(id) {
 	var msg = {
