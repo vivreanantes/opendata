@@ -14,16 +14,39 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 										text : 'Tous',
 										value : 'all'
 									}, {
-										text : "Meuble",
-										value : "smco_reempmeuble"
+										text : "Cartouches d'encres/tuners imprimantes",
+										value : "smco_reempcartouchetoner"
+									}, {
+										text : "Electroménager",
+										value : "smco_reempelectromenag"
 									}, {
 										text : "Informatique",
 										value : "smco_reempinfo"
-									}]
+									}, {
+										text : "Jouets",
+										value : "smco_reempjouet"
+									}, {
+										text : "Livres, CDs, BDs...",
+										value : "smco_reemplivreCD"
+									}, {
+										text : "Meubles",
+										value : "smco_reempmeuble"
+									}, {
+										text : "Vêtements",
+										value : "smco_reempvet"
+									}
+									// FIXME : le dernier élément ne peut être affiché (limité à 8)
+									// , {
+									// text : "Divers",
+									// 	value : "smco_reempdivers"
+									// }
+									]
 						}, {
 							xtype : 'selectfield',
 							label : 'Quartier',
 							id : 'reusesFormSelectQuartier',
+							options : [{}]
+							/*,
 							options : [{
 										text : 'Tous',
 										value : 'all'
@@ -51,7 +74,7 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 									}, {
 										text : "Saint Donatien",
 										value : "Saint Donatien"
-									}]
+									}]*/
 						}]
 			}
 

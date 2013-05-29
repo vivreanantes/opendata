@@ -5,8 +5,8 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsList', {
 		iconCls : 'trash', // icône en forme de poubelle
 		title : 'Modes de collecte à domicile',
 		// TODO regrouper par type de voie
-		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un seul des trois est valorisé.
-		itemTpl : '<div>{denominationCompleteVoie}{complementInformation}<br/>Collecte "{modesCollecte}" : Bleu {joursCollecteBacsBleus} / Jaune {joursCollecteBacsJaunes} </div>'
+		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un ou deux des trois est valorisé.
+		itemTpl : '<div>{denominationCompleteVoie}{complementInformation}<br/>Collecte "{modesCollecte}" : {joursCollecteTriSac} {joursCollecteBacsBleus} {joursCollecteBacsJaunes} </div>'
 	}
 
 	

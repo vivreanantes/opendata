@@ -17,7 +17,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 		control : {
 
 			homeCollectModDetail : {
-				updatedata : 'onUpdateDataDetail'
 			},
 
 			homeCollectModsList : {
@@ -50,13 +49,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	},
 	// FIN DEBUG
 
-	onUpdateDataDetail : function(comp, newData, opts) {
-		if (newData) {
-			console.log(this);
-			console.log(this.id);
-		}
-	},
-
 	onInitHomeCollectModsView : function() {
 
 		console.log('onInitHomeCollectModsContainer');
@@ -64,7 +56,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	},
 
 	/**
-	 * A l'initialisation de la fenêtre d'accueil
+	 * A l'initialisation de la fenêtre
 	 */
 	onInitHomeCollectMods : function(list) {
 		console.log('onInitHomeCollectMods');
@@ -79,7 +71,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 				});
 
 		list.setStore(homecollectmodStore);
-		console.log(homecollectmodStore);
 
 	},
 
@@ -96,9 +87,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 						.create('VivreANantes.view.homecollectmods.HomeCollectModsDetails');
 			}
 
-			console.log(record.data);
-
-			console.log(this.homeCollectModDetail);
 			// Bind the record onto the show contact view
 			this.homeCollectModDetail.setData(record.data);
 

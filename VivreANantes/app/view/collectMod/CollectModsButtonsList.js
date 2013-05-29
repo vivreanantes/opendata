@@ -6,9 +6,9 @@
 Ext.define('VivreANantes.view.collectMod.CollectModsButtonsList', {
 			extend : 'Ext.Container',
 			xtype : 'collectModsButtonsList_xtype',
-			title : 'Modes de collectes',
 			config : {
 				fullscreen : true,
+				title : 'Modes de collectes',
 				layout : {
 					type : 'vbox'
 					

@@ -14,6 +14,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			structuresFormSelectQuartier : "#structuresFormSelectQuartier",
 			structuresFormSelectType : "#structuresFormSelectType",
 			structuresButtons : "#structuresButtons"
+			
 		},
 		control : {
 
@@ -32,6 +33,8 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			,
 			structuresFormSelectQuartier : {
 				change : "onStructuresStoreFilter"
+				,
+				initialize : "setOptionsQuartier"
 			}
 
 			,
@@ -43,7 +46,11 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			structuresButtons : {
 				toggle : "onStructuresStoreFilter"
 			}
-
+,
+			
+			reusesFormSelectQuartier : {
+				initialize : "setOptionsQuartier"
+			}
 		}
 	}
 

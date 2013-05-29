@@ -8,6 +8,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsContainer', {
 
 			config : {
 				layout : 'vbox',
+				title : "Collecte à domicile",
 				items : [{
 							xtype : 'HomeCollectModsForm',
 							height : 120,
@@ -16,7 +17,6 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsContainer', {
 
 						{
 							xtype : 'HomeCollectModsList',
-			title : 'Modes de collecte',
 							scrollable : 'vertical',
 							flex : 1
 						}

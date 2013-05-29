@@ -22,6 +22,17 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		return false;
 	},
+
+	/**
+	 * Met la première lettre en majuscule
+	 */
+	stringUpperFirstLetter : function(result) {
+		if (result != null && result.length > 1) {
+			result = result.substring(0, 1).toUpperCase() + result.substring(1);
+		}
+		return result;
+	},
+
 	/**
 	 * Renvoie la position du premier nombre sur la chaîne. Ex lu200313 renvoie
 	 * 2 (car 0 est la première position) ou -1 si pas trouvé.
@@ -242,13 +253,25 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				"en" : "",
 				"fr" : "Conteneur Le Relais"
 			},
-			"label_smco_reempvet" : {
+			"label_smco_reempelectromenag" : {
 				"en" : "",
-				"fr" : "Réemploi de vêtements"
+				"fr" : "Réemploi électroménager"
+			},
+			"label_smco_reempcartouchetoner" : {
+				"en" : "",
+				"fr" : "Réemploi cartouches d'encres/tuners imprimantes"
+			},
+			"label_smco_reempjouet" : {
+				"en" : "",
+				"fr" : "Réemploi de jouets"
 			},
 			"label_smco_reempmeuble" : {
 				"en" : "",
 				"fr" : "Réemploi de meuble"
+			},
+			"smco_reempdivers" : {
+				"en" : "",
+				"fr" : "Réemploi divers"
 			},
 			"label_smco_reempinfo" : {
 				"en" : "",
@@ -262,25 +285,9 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				"en" : "",
 				"fr" : "Réemploi appareils électroménager"
 			},
-			"label_smco_reempinfo" : {
-				"en" : "",
-				"fr" : "Réemploi des appareils informatique"
-			},
-			"label_smco_reempcartouchetoner" : {
-				"en" : "",
-				"fr" : "Réemploi des cartouches d'encres et tuners"
-			},
 			"label_smco_reemplivreCD" : {
 				"en" : "",
 				"fr" : "Réemploi des livres, CDs, BDs, DVDs..."
-			},
-			"label_smco_reempjouet" : {
-				"en" : "",
-				"fr" : "Réemploi des jouets"
-			},
-			"label_smco_reempmeuble" : {
-				"en" : "",
-				"fr" : "Réemploi des meubles"
 			},
 			"label_smco_reempvet" : {
 				"en" : "",
@@ -630,8 +637,7 @@ function showCollectModsPanel(collectModId) {
 	 * Ext.getCmp("collectModsController").showDetails(collectModId);
 	 * this.getApplication()
 	 * .getController('VivreANantes.controller.CollectModsController')
-	 * .showDetails(collectModId);
-	 *  }
+	 * .showDetails(collectModId); }
 	 */
 	Ext.getCmp("mainView").setActiveItem(6);
 };

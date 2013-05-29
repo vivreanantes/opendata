@@ -32,9 +32,9 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 			},
 
 			trisacFormSelect : {
-				change : "onTrisacStoreFilter"
+				change : "onTrisacStoreFilter",
+				initialize : "setOptionsQuartier"
 			}
-
 		}
 	},
 	/**

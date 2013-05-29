@@ -26,8 +26,9 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 						}, {
 							xtype : 'selectfield',
 							label : 'Quartier',
-							id : 'structuresFormSelectQuartier',
-							options : [{
+							id : 'structuresFormSelectQuartier'
+							,options : [{}]
+							/*options : [{
 										text : 'Tous',
 										value : 'all'
 									}, {
@@ -54,7 +55,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 									}, {
 										text : "Saint Donatien",
 										value : "Saint Donatien"
-									}]
+									}]*/
 						}]
 			}
 

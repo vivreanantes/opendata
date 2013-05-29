@@ -15,8 +15,9 @@ Ext.define('VivreANantes.view.trisac.TrisacForm', {
 						, {
 							xtype : 'selectfield',
 							label : 'Quartier',
-							id : 'trisacFormSelect',
-							options : [{
+							id : 'trisacFormSelect'
+							,options : [{}]
+							/*,options : [{
 										text : 'Tous',
 										value : 'all'
 									}, {
@@ -43,7 +44,7 @@ Ext.define('VivreANantes.view.trisac.TrisacForm', {
 									}, {
 										text : "Saint Donatien",
 										value : "Saint Donatien"
-									}]
+									}]*/
 						}]
 			}
 

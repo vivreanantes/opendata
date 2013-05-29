@@ -38,16 +38,25 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 						},
 						{
 							name : 'joursCollecteTriSac',
-							type : 'string',
-							mapping : 'joursCollecteTriSac'
+							type : 'string'
 						}, {
 							name : 'joursCollecteBacsBleus',
 							type : 'string',
-							mapping : 'joursCollecteBacsBleus'
+							convert: function(value, record) {
+								if (record.data["modesCollecte"].indexOf("Bac bleu",0)!=-1) {
+									return "<B>Bleu</B> "+value;
+								}
+								return value;
+							}
 						}, {
 							name : 'joursCollecteBacsJaunes',
 							type : 'string',
-							mapping : 'joursCollecteBacsJaunes'
+							convert: function(value, record) {
+								if (record.data["modesCollecte"].indexOf("Bac jaune",0)!=-1) {
+									return "<B>Jaune</B> "+value;
+								}
+								return value;
+							}
 						}]
 			}
 

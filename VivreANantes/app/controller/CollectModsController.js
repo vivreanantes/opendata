@@ -178,7 +178,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 					res += this.makeTextLink("mapPanel");
 				}
 				if (res != "") {
-					res += "<br/>";
+					res += "<br/><br/>";
 				}
 				return res;
 			},
@@ -202,6 +202,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 					this.structuresDetail = Ext
 							.create("VivreANantes.view.collectMod.CollectModsDetails");
 				}
+				title = this.stringUpperFirstLetter(title);
 				this.getCollectModsView().push({
 							xtype : 'panel',
 							title : title,
@@ -258,12 +259,12 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 						});
 				arrayItemsToShow.push({
 							"libelle" : "Réemploi",
-							"image" : "image_defaut_petit.png",
+							"image" : "structures_reemplois_petit.png",
 							"id" : "modco_reemploi"
 						});
 				arrayItemsToShow.push({
 							"libelle" : "Points de vente",
-							"image" : "image_defaut_petit.png",
+							"image" : "recyclage_point_de_vente_petit.png",
 							"id" : "modco_pointsdevente"
 						});
 				arrayItemsToShow.push({
@@ -289,6 +290,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				var conseils = "";
 				var faq = "";
 				var image = "";
+				var libelle = "";
 				var dataCollectMods = this.getApplication()
 						.getController("VivreANantes.controller.GarbagesController")
 						.getCollectModList().getStore().getData();
@@ -305,7 +307,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 					"description" : description,
 					"conseils" : conseils,
 					"faq" : faq,
-					"image" : image
+					"image" : image,
+					"libelle" : libelle
 				}
 			},
 

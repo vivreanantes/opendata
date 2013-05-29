@@ -3,12 +3,13 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
 	xtype : 'HomeCollectModsDetails',
 
 	config : {
-		title : 'Détails',
+		title : 'Collecte à domicile',
 		layout : 'vbox',
 		// On affiche {joursCollecteBacsBleus}{joursCollecteBacsJaunes}{joursCollecteTriSac} car un seul des trois est valorisé.
-		tpl : '<div>{denominationCompleteVoie}{complementInformation}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : Bleu {joursCollecteBacsBleus} / Jaune {joursCollecteBacsJaunes}</div>'+
-		'<BR/><UL>Il existe 3 modes de collecte possible : <LI>"sac bleu et sac jaune" (aussi appelé "Trisac") : ils sont à déposer dans le même bac,</LI><LI>"bac bleu et bac jaune" : le recyclable est à déposer dans le bac jaune, le bleu sert pour les poubelles,</LI><LI>"bac bleu" : il sert ppour la poubelle uniquement. Ce que vous trier doit être emmené au conteneur ou en écopoints/décheteries.<LI></LI></UL>',
-		
+		tpl : '<div>{denominationCompleteVoie}{complementInformation}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  :  {joursCollecteTriSac} {joursCollecteBacsBleus} {joursCollecteBacsJaunes}</div>'+
+		'<BR/><UL>Il existe 3 modes de collecte possible : <LI>"sac bleu et sac jaune" (aussi appelé "Trisac") : ils sont à déposer dans le même bac,</LI><LI>"bac bleu et bac jaune" : le recyclable est à déposer dans le bac jaune, le bleu sert pour les poubelles,</LI><LI>"bac bleu" : il sert pour la poubelle uniquement. Ce que vous trier doit être emmené au conteneur ou en écopoints/décheteries.</LI></UL>',
+				scrollable : true,
+				styleHtmlContent : true,		
 
 //		items : [
 //				{

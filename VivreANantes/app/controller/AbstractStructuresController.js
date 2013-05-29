@@ -62,10 +62,12 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				// description_fr
 				var description_fr = "";
 				if (record.data["description_fr"] !== "") {
-					description_fr = record.data["description_fr"] + "<br/><br/>";
-				}		
+					description_fr = record.data["description_fr"]
+							+ "<br/><br/>";
+				}
 				// calcule la chaîne correspondant aux commentaires
-				var faqTraduit = this.getApplication()
+				var faqTraduit = this
+						.getApplication()
 						.getController("VivreANantes.controller.CommentsController")
 						.getCommentString(record.data["code"]);
 				// calcule la chaîne correspondant aux conseils
@@ -73,15 +75,16 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				if (record.data["conseils"] !== "") {
 					conseils = record.data["conseils"] + ",";
 				}
-				conseilTraduit = this.getApplication()
+				conseilTraduit = this
+						.getApplication()
 						.getController("VivreANantes.controller.GarbagesController")
 						.getAdviceString(conseils);
 				// fabrique la chaîne affichée sur la page détail
 				this.structuresDetail.setTpl("<div>"
 						// this.structuresDetail.setHtml("<div>"
 						+ this.translate("label_structure_template_detail",
-								stLocale) + description_fr + conseilTraduit + faqTraduit
-						+ "</div>");
+								stLocale) + description_fr + conseilTraduit
+						+ faqTraduit + "</div>");
 				this.structuresDetail.setTitle(record.data["libelle"]);
 			}
 
@@ -240,7 +243,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			result = "dimanche"
 		}
 		if (firstLetterInUpper == 0) {
-			result = result.substring(0, 1).toUpperCase() + result.substring(1);
+			this.stringUpperFirstLetter(result);
 		}
 		return result;
 	}
@@ -631,6 +634,57 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		} else {
 			return "";
 		}
+	},
+
+	/**
+	 * Valorise les options des listes déroulantes "quartier"
+	 * @param {} selectField
+	 */
+	setOptionsQuartier : function(selectField) {
+
+		selectField.setOptions([{
+					text : 'Tous',
+					value : 'all'
+				}, {
+					text : "Bellevue Chantenay",
+					value : "Bellevue Chantenay"
+				}, {
+					text : "Breil Barberie",
+					value : "Breil Barberie"
+				}, {
+					text : "Centre-ville",
+					value : "Centre-ville"
+				}, {
+					text : "Dervallières Zola",
+					value : "Dervallieres Zola"
+				}, {
+					text : "Doulon Bottière",
+					value : "Doulon Bottiere"
+				}, {
+					text : "Hauts-Pavés Saint-Félix",
+					value : "Hauts-Paves Saint-Felix"
+				}, {
+					text : "Île de Nantes",
+					value : "Ile de Nantes"
+				}, {
+					text : "Malakoff Saint-Donatien",
+					value : "Malakoff Saint-Donatien"
+				}, {
+					text : "Nantes Erdre",
+					value : "Nantes Erdre"
+				}, {
+					text : "Nantes Nord",
+					value : "Nantes Nord"
+				}, {
+					text : "Nantes Sud",
+					value : "Nantes Sud"
+				}, {
+					text : "Hors Nantes (sud Loire)",
+					value : "Hors Nantes sud Loire"
+				}, {
+					text : "Hors Nantes (nord Loire)",
+					value : "Hors Nantes nord Loire"
+				}]);
 	}
 
 });

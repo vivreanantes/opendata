@@ -99,23 +99,21 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// 28/05 TODO A domicile : petites corrections d'ergonomie
-		// 28/05 TODO Modes de collecte ajouter du contenu
-		// 28/05 TODO Stuctures LONG : harmoniser les quartiers 
-		// 28/05 TODO Structures : Intégrer décheterie Vertou http://www.nantesmetropole.fr/pratique/dechets/decheterie-de-vertou-dechetterie-ecopoint-24950.kjsp?RH=1250010215678
-		// 28/05 TODO A domicile LONG : Vérifier les donnéees
-		
+		// TODO Mettre les horaires Ecotox
+		// TODO A domicile LONG : Vérifier les donnéees
+		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
+
 		// TODO Bascule d'une page à l'autre avec paramètre
 		// TODO Déchets LONG : vérifier les conseils
-		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
+		// TODO Structures : changger "conteneur" par "colonnes enterrées"
+
 		// TODO Informations : faire libricompost
 		// TODO Informations : faire panneaux thermiques
 		// TODO Informations : faire réchauffement climatique
-
 		// TODO Réemploi : vérif http://ourecycler.fr/point-tri-selectif.php
 		// TODO Suivi suivre la demande en cours http://lerelais.org/oudonner.php
 		// TODO Suivi demande horaires structures Ecotox (reçu par courrier et intégré sur le site)
-		// TODO Suivi de la question posée sur le FORUM sur les conteneurs dans structures2.json : ds_ent om_ent verre_ent
+		// TODO Suivi de la question posée sur le FORUM sur les conteneurs dans structures2.json
 	
 		// TODO Reprendre photo de Valorena et Arc en ciel
 		// TODO Structures : inclure les Relais dans structures2.json, et un descriptif dans modes_collecte.json 
