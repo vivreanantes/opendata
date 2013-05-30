@@ -13,6 +13,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			garbagesFormText : '#garbagesFormText',
 			garbagesFormSelect : '#garbagesFormSelect',
 			usualCategoriesList : 'usualCategoriesList_xtype',
+			usualSubCategoriesList : 'usualSubCategoriesList_xtype',
 			advicesList : 'advicesList',
 			wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
 			collectModList : 'collectModList',
@@ -26,7 +27,15 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			buttonCategoryNourriture : '#cu_nourriture',
 			buttonCategoryElectronique : '#cu_electronique',
 			buttonCategoryToxique : '#cu_toxique',
-			buttonCategoryDivers : '#cu_divers'
+			buttonCategoryDivers : '#cu_divers',
+			buttonSubCategoryJardin : '#scu_toxiquejardin',
+			buttonSubCategoryGarage : '#scu_toxiquegarage',
+			buttonSubCategoryCuisine : '#scu_toxiquecuisine',
+			buttonSubCategorySdb : '#scu_toxiquesdb',
+			buttonSubCategoryBrico : '#scu_toxiquebrico',
+			buttonSubCategoryParasite : '#scu_toxiqueparasite',
+			buttonSubCategoryDivers : '#scu_toxiquedivers'
+
 		},
 		control : {
 			garbageDetail : {
@@ -42,10 +51,12 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				initialize : 'onInitUsualCategoriesList',
 				show : 'onShowUsualCategoriesList'
 			},
+			usualSubCategoriesList : {
+				initialize : 'onInitUsualSubCategoriesList'
+			},
 			garbagesList : {
 				initialize : 'onInitGarbages',
 				itemtap : 'showGarbagesDetail'
-
 			},
 
 			garbagesView : {
@@ -105,9 +116,30 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				tap : 'onShowDetails'
 			},
 			buttonCategoryToxique : {
-				tap : 'onShowDetails'
+				tap : 'onShowSubCategory'
 			},
 			buttonCategoryDivers : {
+				tap : 'onShowDetails'
+			},
+			buttonSubCategoryJardin : {
+				tap : 'onShowDetails'
+			},
+			buttonSubCategoryGarage : {
+				tap : 'onShowDetails'
+			},
+			buttonSubCategoryCuisine : {
+				tap : 'onShowDetails'
+			},
+			buttonSubCategorySdb : {
+				tap : 'onShowDetails'
+			},
+			buttonSubCategoryBrico : {
+				tap : 'onShowDetails'
+			},
+			buttonSubCategoryParasite : {
+				tap : 'onShowDetails'
+			},
+			buttonSubCategoryDivers : {
 				tap : 'onShowDetails'
 			}
 		}
@@ -137,6 +169,18 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		this.filter();
 		this.getGarbagesView().push(this.garbagesList);
 	},
+
+	onShowSubCategory : function(button, e, eOpts) {
+		this.showSubCategory(button.id);
+	},
+	showSubCategory : function(collectModId) {
+		if (this.usualSubCategoriesList == null) {
+			this.usualSubCategoriesList = Ext
+					.create('VivreANantes.view.garbages.UsualSubCategoriesList');
+		}
+		this.getGarbagesView().push(this.usualSubCategoriesList);
+	},
+
 	onInitUsualCategoriesList : function(container) {
 		// var categorieUsuelleStore =
 		// Ext.create('VivreANantes.store.CategorieUsuelleStore');
@@ -210,6 +254,48 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		this.getGarbagesFormText().setValue("");
 	},
 
+	onInitUsualSubCategoriesList : function(container) {
+		var arrayItemsToShow = new Array();
+		arrayItemsToShow.push({
+					"libelle" : "Jardinage",
+					"id" : "scu_toxiquejardin",
+					"image" : "desherbant_petit.png"
+				});
+		arrayItemsToShow.push({
+					"libelle" : "Garage",
+					"id" : "scu_toxiquegarage",
+					"image" : "batterie_voiture_petit.png"
+				});
+		arrayItemsToShow.push({
+					"libelle" : "Cuisine",
+					"id" : "scu_toxiquecuisine",
+					"image" : "bouteille_ammoniaque_petit.png"
+				});
+		arrayItemsToShow.push({
+					"libelle" : "Salle de bain",
+					"id" : "scu_toxiquesdb",
+					"image" : "desinfectant_toilette_petit.png"
+				});
+		arrayItemsToShow.push({
+					"libelle" : "Bricolage",
+					"id" : "scu_toxiquebrico",
+					"image" : "peinture_petit.png"
+				});
+		arrayItemsToShow.push({
+					"libelle" : "Traitement des parasites",
+					"id" : "scu_toxiqueparasite",
+					"image" : "mortaurat_petit.png"
+				});
+		arrayItemsToShow.push({
+					"libelle" : "Déchets toxiques divers",
+					"id" : "scu_toxiquedivers",
+					"image" : "pile_45_petit.png"
+				});
+
+		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+		container.setItems(arrayItems);
+	},
+
 	getArrayFromString : function(string) {
 		string = string.replace(", /g", ",").replace(" ,/g", ",");
 		return string.split(',');
@@ -227,21 +313,21 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			var dataAdvices = this.getAdvicesList().getStore().getData();
 			var thisController = this;
 			dataAdvices.each(function(recordAdvice) {
-						for (i in arrayConseils) {
-							if (recordAdvice.raw["code"] === arrayConseils[i]) {
-								 
-								conseilTraduit = conseilTraduit + "<BR/>"+ thisController.translate("label_Conseil") +" : <B>"
-										+ recordAdvice.raw["libelle"]
-										+ "</B><BR/>"
-										+ recordAdvice.raw["description"];
-								if (recordAdvice.raw["fiche"] !== "") {
-									conseilTraduit += thisController
-											.makeTextLink("informationsPanel");
+				for (i in arrayConseils) {
+					if (recordAdvice.raw["code"] === arrayConseils[i]) {
 
-								}
-							}
+						conseilTraduit = conseilTraduit + "<BR/>"
+								+ thisController.translate("label_Conseil")
+								+ " : <B>" + recordAdvice.raw["libelle"]
+								+ "</B><BR/>" + recordAdvice.raw["description"];
+						if (recordAdvice.raw["fiche"] !== "") {
+							conseilTraduit += thisController
+									.makeTextLink("informationsPanel");
+
 						}
-					});
+					}
+				}
+			});
 		}
 		if (conseilTraduit !== "") {
 			conseilTraduit = "<BR/><BR/>"/* Conseils : " */+ conseilTraduit;
@@ -417,6 +503,14 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 						+ " : " + "<FONT COLOR='orange' size='4'>"
 						+ this.translate("label_NON") + "</FONT>"
 						+ this.translate("label_pas_poubelle");
+			} else if (treatmentCategories === "OUI_ET_NON") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='red' size='4'>"
+						+ this.translate("label_NON") + "</FONT>" + " / "
+						+ "<FONT COLOR='green' size='4'>"
+						+ this.translate("label_OUI") + " "
+						+ this.translate("label_pour_collecte_bac_jaune")
+						+ "</FONT>";
 			} else {
 				treatmentCategories = "";
 			}

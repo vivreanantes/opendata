@@ -21,6 +21,7 @@ Ext
 			// 'garbages.Garbages',
 			// Déchets
 			'garbages.UsualCategoriesList',
+			'garbages.UsualSubCategoriesList',
 			'garbages.AdvicesList',
 			'garbages.WasteTreatmentsCategoriesList',
 			'garbages.CollectModsList',
@@ -99,24 +100,24 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO Mettre les horaires Ecotox
 		// TODO A domicile LONG : Vérifier les donnéees
-		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données
-
+		// TODO Trisac harmoniser les quartiers
+		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données et les conseils
+		// TODO Réemploi : vérifier pourquoi il y a plus de données ici : http://ourecycler.fr/point-tri-selectif.php
+		// TODO Structures : inclure les Relais dans structures2.json 
 		// TODO Bascule d'une page à l'autre avec paramètre
-		// TODO Déchets LONG : vérifier les conseils
-		// TODO Structures : changger "conteneur" par "colonnes enterrées"
 
 		// TODO Informations : faire libricompost
 		// TODO Informations : faire panneaux thermiques
 		// TODO Informations : faire réchauffement climatique
-		// TODO Réemploi : vérif http://ourecycler.fr/point-tri-selectif.php
-		// TODO Suivi suivre la demande en cours http://lerelais.org/oudonner.php
-		// TODO Suivi demande horaires structures Ecotox (reçu par courrier et intégré sur le site)
-		// TODO Suivi de la question posée sur le FORUM sur les conteneurs dans structures2.json
+		// TODO Conseils : mettre cons_dechetecolimite2metres modco_decheterie
+		
+		// TODO Suivi la question de récup des coordonnées postées sur http://lerelais.org/oudonner.php
+		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json
+		//      http://data.nantes.fr/forum/?tx_mmforum_pi1[action]=list_post&tx_mmforum_pi1[tid]=166
 	
-		// TODO Reprendre photo de Valorena et Arc en ciel
-		// TODO Structures : inclure les Relais dans structures2.json, et un descriptif dans modes_collecte.json 
+		// TODO photos : ajouter des photos de Valorena...
+
 
 		///////////// CED ////////////////// 
 

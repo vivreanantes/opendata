@@ -28,7 +28,14 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 									{text : "Toxique", value : "cu_toxique" },
 									{text : "Divers", value : "cu_divers" },
 									{text : "Nourriture", value : "cu_nourriture" },
-									{text : "Electronique", value : "cu_electronique" }
+									{text : "Electronique", value : "cu_electronique" },
+									{text : "Toxique du Jardin", value : "scu_toxiquejardin" },
+									{text : "Toxique du Garage", value : "scu_toxiquegarage" },
+									{text : "Toxique de la Cuisine", value : "scu_toxiquecuisine" },
+									{text : "Toxique de la Salle de bain", value : "scu_toxiquesdb" },
+									{text : "Toxique du Bricolage", value : "scu_toxiquebrico" },
+									{text : "Toxique du Parasite", value : "scu_toxiqueparasite" },
+									{text : "Toxique Divers", value : "scu_toxiquedivers" }
 								]
 						}
 				]

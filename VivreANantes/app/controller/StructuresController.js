@@ -14,7 +14,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			structuresFormSelectQuartier : "#structuresFormSelectQuartier",
 			structuresFormSelectType : "#structuresFormSelectType",
 			structuresButtons : "#structuresButtons"
-			
+
 		},
 		control : {
 
@@ -32,9 +32,9 @@ Ext.define("VivreANantes.controller.StructuresController", {
 
 			,
 			structuresFormSelectQuartier : {
-				change : "onStructuresStoreFilter"
-				,
-				initialize : "setOptionsQuartier"
+				change : "onStructuresStoreFilter",
+				initialize : "setOptionsQuartier",
+				show : "selectFirstOptionsQuartier"
 			}
 
 			,
@@ -46,19 +46,14 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			structuresButtons : {
 				toggle : "onStructuresStoreFilter"
 			}
-,
-			
-			reusesFormSelectQuartier : {
-				initialize : "setOptionsQuartier"
-			}
 		}
 	}
 
 	,
 	onUpdateDataDetail : function(comp, newData, opts) {
 		// if (newData) {
-		// 	console.log("onUpdateDataDetail" + this);
-		// 	console.log("onUpdateDataDetail" + this.id);
+		// console.log("onUpdateDataDetail" + this);
+		// console.log("onUpdateDataDetail" + this.id);
 		// }
 	}
 
@@ -70,30 +65,30 @@ Ext.define("VivreANantes.controller.StructuresController", {
 		// 1
 		var homecollectmodStore = Ext.create(
 				"VivreANantes.store.Structure2Store", {
-				id : 'structure2_store_1', 	
-					filters: [
-        		{
-            		// property: "type",
-        			property : "modesCollecte",
-            		// le type correspond aux modes de collectes possibles
-            		// voir http://quentinc.net/javascript/testeur-expressions-regulieres/
-            		value: /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g
-        			// value: /modco_reemploi/g
-        		}]
+					id : 'structure2_store_1',
+					filters : [{
+						// property: "type",
+						property : "modesCollecte",
+						// le type correspond aux modes de collectes possibles
+						// voir
+						// http://quentinc.net/javascript/testeur-expressions-regulieres/
+						value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g
+							// value: /modco_reemploi/g
+					}]
 					// autoLoad : true,
 					// listeners : {
-					// 	"load" : function(store, results, successful) {
-					// 	}
+					// "load" : function(store, results, successful) {
+					// }
 					// }
 				});
 		// 2
 		// homecollectmodStore.each(function(record) {
-		//			console.log("homecollectmodStore.each" + record.libelle);
-		//		});
+		// console.log("homecollectmodStore.each" + record.libelle);
+		// });
 
 		// 3
 		list.setStore(homecollectmodStore);
-		console.log(homecollectmodStore);
+		this.getStructuresFormSelectQuartier().setValue("all");
 	}
 
 	,
@@ -107,7 +102,8 @@ Ext.define("VivreANantes.controller.StructuresController", {
 	 * Filtre sur les évènements, en fonction de la chaine saisie et de la
 	 * catégorie sélectionnée
 	 */
-	,onStructuresStoreFilter : function() {
+	,
+	onStructuresStoreFilter : function() {
 		this.filterElements();
 	},
 
@@ -116,35 +112,29 @@ Ext.define("VivreANantes.controller.StructuresController", {
 		var selectQuartier = this.getStructuresFormSelectQuartier();
 		var selectType = this.getStructuresFormSelectType();
 		var store = this.getStructuresList().getStore();
+		// FIXME : ceci prend trop de temps
 		store.clearFilter();
 
 		var filterElements = Ext.create("Ext.util.Filter", {
 			filterFn : function(item) {
 				var escaperegex = Ext.String.escapeRegex;
-				var stQuartierRegexp = new RegExp(selectQuartier.getValue());
-			 	var stTypeRegexp = new RegExp(selectType.getValue());
+				// var stQuartierRegexp = new RegExp(selectQuartier.getValue());
+				var stTypeRegexp = new RegExp(selectType.getValue());
 				/*
-				var stTypeRegexp = new RegExp(escaperegex(selectType.getValue()));
-				if (selectType.getValue().indexOf(",") !== -1) {
-					var array = selectType.getValue().split(',');
-					var expression = '';
-					var i = 0;
-					for (a in array) {
-						if (i == 0) {
-							expression = '(' + array[a];
-						} else {
-							expression = expression + '|' + array[a];
-						}
-						i++;
-					}
-					expression = expression + ')';
-					stTypeRegexp = new RegExp(expression);
-				}*/
-				
+				 * var stTypeRegexp = new
+				 * RegExp(escaperegex(selectType.getValue())); if
+				 * (selectType.getValue().indexOf(",") !== -1) { var array =
+				 * selectType.getValue().split(','); var expression = ''; var i =
+				 * 0; for (a in array) { if (i == 0) { expression = '(' +
+				 * array[a]; } else { expression = expression + '|' + array[a]; }
+				 * i++; } expression = expression + ')'; stTypeRegexp = new
+				 * RegExp(expression); }
+				 */
+
 				var stQuartier = item.data["quartier"];
 				var stType = item.data["modesCollecte"];
-				return ((selectQuartier.getValue() === "all" || stQuartierRegexp
-						.test(stQuartier)) && (selectType.getValue() === "all" || stTypeRegexp
+				return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
+						.getValue()) && (/*selectType.getValue() === "all"  ||*/ stTypeRegexp
 						.test(stType)));
 			}
 		});

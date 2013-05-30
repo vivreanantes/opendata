@@ -12,7 +12,8 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 							id : 'reusesFormSelectType',
 							options : [{
 										text : 'Tous',
-										value : 'all'
+										// value : 'all'
+										value : /smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reempvet/g
 									}, {
 										text : "Cartouches d'encres/tuners imprimantes",
 										value : "smco_reempcartouchetoner"

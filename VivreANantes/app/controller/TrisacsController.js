@@ -16,7 +16,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 		control : {
 
 			trisacDetail : {
-				// updatedata : "onUpdateDataDetail"
+// updatedata : "onUpdateDataDetail"
 			},
 
 			trisacList : {
@@ -57,49 +57,35 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 				});
 
 		list.setStore(homecollectmodStore);
-		console.log(homecollectmodStore);
+		this.getTrisacFormSelect().setValue("all");
 	},
-	/*showTrisacDetail : function(list, index, node, record) {
-
-		var stLocale = "fr";
-
-		if (record) {
-			if (!this.trisacDetail) {
-				this.trisacDetail = Ext
-						.create("VivreANantes.view.trisac.TrisacDetails");
-
-				// calcule la chaîne correspondant aux commentaires
-				var faqTraduit = this.getApplication()
-						.getController("VivreANantes.controller.CommentsController")
-						.getCommenttring(record.data["code"]);
-				// calcule la chaîne correspondant aux conseils
-				var conseils = "";
-				if (record.data["conseils"] !== "") {
-					conseils = record.data["conseils"] + ",";
-				}
-				conseilTraduit = this.getApplication()
-						.getController("VivreANantes.controller.GarbagesController")
-						.getAdviceString(conseils);
-				// fabrique la chaîne affichée sur la page détail
-				// this.trisacDetail.setTpl("
-				this.trisacDetail.setTpl("<div>"
-						+ this.translate("label_trisac_template_detail", stLocale)
-						+ conseilTraduit + faqTraduit + "</div>");
-			}
-
-			// Bind the record onto the show contact view
-			this.trisacDetail.setData(record.data);
-			// Push this view into the navigation view
-			this.getTrisac().push(this.trisacDetail);
-		}
-	},*/
+	/*
+	 * showTrisacDetail : function(list, index, node, record) {
+	 * 
+	 * var stLocale = "fr";
+	 * 
+	 * if (record) { if (!this.trisacDetail) { this.trisacDetail = Ext
+	 * .create("VivreANantes.view.trisac.TrisacDetails"); // calcule la chaîne
+	 * correspondant aux commentaires var faqTraduit = this.getApplication()
+	 * .getController("VivreANantes.controller.CommentsController")
+	 * .getCommenttring(record.data["code"]); // calcule la chaîne correspondant
+	 * aux conseils var conseils = ""; if (record.data["conseils"] !== "") {
+	 * conseils = record.data["conseils"] + ","; } conseilTraduit =
+	 * this.getApplication()
+	 * .getController("VivreANantes.controller.GarbagesController")
+	 * .getAdviceString(conseils); // fabrique la chaîne affichée sur la page
+	 * détail // this.trisacDetail.setTpl(" this.trisacDetail.setTpl("<div>" +
+	 * this.translate("label_trisac_template_detail", stLocale) + conseilTraduit +
+	 * faqTraduit + "</div>"); } // Bind the record onto the show contact view
+	 * this.trisacDetail.setData(record.data); // Push this view into the
+	 * navigation view this.getTrisac().push(this.trisacDetail); } },
+	 */
 
 	// Méthodes invoquées par le formulaire
-	
 	onListRefresh : function(list, eOpts) {
 		store = this.calculateDatas(list.getStore());
 	},
-	
+
 	/**
 	 * Filtre en fonction de la chaine saisie et du quartier sélectionné
 	 */
@@ -109,8 +95,10 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 
 	filterElements : function() {
 		var text = this.getTrisacFormText();
-		var select = this.getTrisacFormSelect();
+		var selectQuartier = this.getTrisacFormSelect();
 		var store = this.getTrisacList().getStore();
+
+		// FIXME : Ceci est un traitement trop long
 
 		store.clearFilter();
 		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
@@ -120,11 +108,13 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 				var escaperegex = Ext.String.escapeRegex;
 				var stTextRexexp = new RegExp(escaperegex(text.getValue()),
 						"ig");
-				var stQuartierRexexp = new RegExp(select.getValue());
+				// var stQuartierRexexp = new RegExp(selectQuartier.getValue());
 				var stType = item.data["modesCollecte"];
-				return ( stType=='modco_distrisac' && stTextRexexp.test(item.data["libelle"]) && (select
-						.getValue() === "all" || stQuartierRexexp
-						.test(item.data["quartier"])));
+				var stQuartier = item.data["quartier"];
+				return (stType == 'modco_distrisac'
+						&& stTextRexexp.test(item.data["libelle"]) && (selectQuartier
+						.getValue() === "all" || stQuartier === selectQuartier
+						.getValue()));
 			}
 		});
 		store.filter(filterHomeCollectMod);

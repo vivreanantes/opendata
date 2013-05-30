@@ -137,6 +137,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				"en" : "recycling",
 				"fr" : "recyclable"
 			},
+			"label_ou" : {
+				"en" : "or",
+				"fr" : "ou"
+			},
+			"label_pour_collecte_bac_jaune" : {
+				"en" : "only for yellow bacs",
+				"fr" : "pour les bacs jaunes"
+			},
 			"label_OUI" : {
 				"en" : "YES",
 				"fr" : "OUI"
@@ -396,6 +404,34 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			"label_cu_toxique" : {
 				"en" : "",
 				"fr" : "Toxique"
+			},
+			"label_scu_toxiquejardin" : {
+				"en" : "",
+				"fr" : "Jardin"
+			},
+			"label_scu_toxiquegarage" : {
+				"en" : "",
+				"fr" : "Garage"
+			},
+			"label_scu_toxiquecuisine" : {
+				"en" : "",
+				"fr" : "Cuisine"
+			},
+			"label_scu_toxiquesdb" : {
+				"en" : "",
+				"fr" : "Salle de bain"
+			},
+			"label_scu_toxiquebrico" : {
+				"en" : "",
+				"fr" : "Bricolage"
+			},
+			"label_scu_toxiqueparasite" : {
+				"en" : "",
+				"fr" : "Parasite"
+			},
+			"label_scu_toxiquedivers" : {
+				"en" : "",
+				"fr" : "Divers"
 			},
 			"label_concerne_aussi" : {
 				"en" : "Also concern",
