@@ -53,7 +53,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 								// voir
 								// http://quentinc.net/javascript/testeur-expressions-regulieres/
 								// value : /modco_reemploi/g
-								value : /smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reempvet/g
+								value : /smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reempvet|smco_conteneurlerelais/g
 							}]
 
 				});
@@ -85,12 +85,14 @@ Ext.define("VivreANantes.controller.ReusesController", {
 		// var delay = this.getReusesButtons().getPressedButtons()[0].getText();
 
 		var store = this.getReusesList().getStore();
+		
+		// FIXME : Ceci est un traitement trop long
 		store.clearFilter();
 
 		var filterElements = Ext.create("Ext.util.Filter", {
 					filterFn : function(item) {
 						var stModesDeCollecte = item.data["modesCollecte"];
-						if (stModesDeCollecte !== 'modco_reemploi') {
+						if (stModesDeCollecte !== 'modco_reemploi' && stModesDeCollecte !== 'smco_conteneurlerelais') {
 							return false;
 						}
 						var escaperegex = Ext.String.escapeRegex;

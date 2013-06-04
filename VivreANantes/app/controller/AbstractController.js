@@ -257,7 +257,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				"en" : "",
 				"fr" : "Encombrant"
 			},
-			"label_modco_conteneur_le_relais" : {
+			"label_smco_conteneurlerelais" : {
 				"en" : "",
 				"fr" : "Conteneur Le Relais"
 			},

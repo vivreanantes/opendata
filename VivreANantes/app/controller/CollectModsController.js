@@ -17,7 +17,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 					buttonEcopointsDechetteries : '#modco_ecopoint_modco_decheterie',
 					buttonReemploi : '#modco_reemploi',
 					buttonPointsDeVente : '#modco_pointsdevente',
-					buttonConteneurLeRelay : '#modco_conteneur_le_relais',
+					buttonConteneurLeRelay : '#smco_conteneurlerelais',
 					buttonEcotox : '#modco_ecotox'
 
 				},
@@ -270,7 +270,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				arrayItemsToShow.push({
 							"libelle" : "Conteneur <br/>Le Relay",
 							"image" : "conteneur_lerelais_petit.png",
-							"id" : "modco_conteneur_le_relais"
+							"id" : "smco_conteneurlerelais"
 						});
 				arrayItemsToShow.push({
 							"libelle" : "Camions Ecotoc",
