@@ -100,23 +100,28 @@ Ext
 		
 		///////////// CRN //////////////////
 
- 		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données et les conseils
-		// TODO Réemploi : vérifier pourquoi il y a plus de données ici : http://ourecycler.fr/point-tri-selectif.php 
 		// TODO Bascule d'une page à l'autre avec paramètre
-		// TODO Conseils : mettre cons_dechetecolimite2metres modco_decheterie
+		// TODO Ajout photo : vers de terre, panneau solaire thermique
 
-		// TODO Informations : logos
-		// TODO Informations : faire libricompost
-		// TODO Informations : faire panneaux thermiques
-		// TODO Informations : faire réchauffement climatique
-		
-		// TODO A domicile LONG : Vérifier les donnéees
+		// TODO améliorer affichage des boutons : http://dev.sencha.com/deploy/ext-3.4.0/examples/layout/vbox.html
+		//                                        http://try.sencha.com/touch/2.0.0/docs/Ext.layout.VBox.2/viewer.html
+		// TODO Optimisation (pages trop longues)
+		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données et les conseils
+		// TODO Faire un déploiement
+		// TODO Vérif si un bouchon métallique se recycle, idem capsule bouteille lait
 		// TODO Compléter les infos sur Le Relais
+		// TODO Informations : faire réchauffement climatique
+		// TODO Informations : améliorer la fiche sur les panneaux solaires 
+		// TODO A domicile LONG : faire une relecture des données du tableur 
+		//                 http://www.nantesmetropole.fr/pratique/dechets/les-ordures-menageres-residuelles-23181.kjsp
+		
+		/////////// CRN Long terme //////////
+
+		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
+		// TODO Contacter des assos pour améliorer le contenu de l'appli 
 		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json
 		//      http://data.nantes.fr/forum/?tx_mmforum_pi1[action]=list_post&tx_mmforum_pi1[tid]=166
-	
-		// TODO photos : ajouter des photos de Valorena...
-
+		// TODO photos : visiter (et ajouter des photos) de Valorena et Arc-En-Ciel...
 
 		///////////// CED ////////////////// 
 
@@ -127,5 +132,3 @@ Ext
 
 		// TODO Calendrier - DUR : intégrer le composant Ext.ux.TouchCalendar (on utilisera Ext.ux.TouchCalendarView)
 		// TODO Calendrier : utiliser le localstorage pour mémoriser les codes des structures affichées dans le calendrier
-
-		// TODO DUR Dans la tagbar remplacer "iconCls : 'more'" par un vrai bouton suivant.

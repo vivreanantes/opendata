@@ -1,6 +1,6 @@
 {
 	'structures' : [
-			// 1 - structuresDecheteriesEcopointsReemploi
+			// Les structures
 			{
 		"code" : "stco_reemploi1",
 		"longitude" : "-1.624346",
@@ -8,7 +8,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.199656",
 		"description_fr" : "Collecte des déchets et communication sur le tri. Vous avez besoin d'espace, de détruire plafonds, cloisons, toiture, etc. ? Nos spécialistes de la déconstruction interviennent chez vous et vous débarrassent. Nos professionnels peuvent aussi réaliser des petits travaux de maçonnerie ou de bricolage et vous aider à reconstruire ! Vous ne savez que faire de résidus de tonte de pelouses, de coupe de bois? de cartons, plastiques, ferraille, etc. ? Nos spécialistes de la collecte des déchets valorisables viennent chez vous, les récupèrent et les orientent vers les filières de recyclage adaptées.",
-		"libelle" : "Récupération TRAIT D'UNION",
+		"libelle" : "TRAIT D'UNION",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "95 rue Robert Schuman 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "06 67 23 03 95",
@@ -16,7 +16,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi2",
 		"longitude" : "-1.639795",
@@ -24,7 +24,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.197236",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrorvaultants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie SAINT-HERBLAIN",
+		"libelle" : "SAINT-HERBLAIN",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rond point Lacroix 44470 SAINT-HERBLAIN",
 		"numeroTemp" : "02 51 80 90 27",
@@ -32,7 +32,7 @@
 		"horaires" : "Ouvert tous les jours de 10h à  17h45, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-17h45,sauf_ferie",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi3",
 		"longitude" : "-1.888551",
@@ -40,7 +40,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.354684",
 		"description_fr" : "Au Bazar Citoyen, la première boutique de la Recyclerie Nord Atlantique, les habitants du territoire peuvent venir chiner, fouiller, faire de bonnes affaires.",
-		"libelle" : "Récupération Recyclerie Nord Atlantique",
+		"libelle" : "Recyclerie Nord Atlantique",
 		"sousModesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
 		"adresseTemp" : "Point du Jour 44260 SAVENAY",
 		"numeroTemp" : "02 40 05 38 21",
@@ -48,7 +48,7 @@
 		"horaires" : "La boutique est ouverte tous les mercredi et samedi de 9h30 à 12h et de 14h à 16h45. Chacun peut également venir y déposer les objets encore utilisables, aux mêmes jours et heures d’ouverture.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi4",
 		"longitude" : "-1.551347",
@@ -56,7 +56,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.258670",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie LA CHAPELLE SUR ERDRE",
+		"libelle" : "LA CHAPELLE SUR ERDRE",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rue Ampère 44240 LA CHAPELLE SUR ERDRE",
 		"numeroTemp" : "02 40 37 72 21",
@@ -64,7 +64,7 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "LA CHAPELLE SUR ERDRE",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure"
 	}, {
 		"code" : "stco_reemploi5",
 		"longitude" : "-1.754959",
@@ -72,7 +72,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.201260",
 		"description_fr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...",
-		"libelle" : "Récupération ATELIER DU RETZ EMPLOI (LE PELLERIN)",
+		"libelle" : "ATELIER DU RETZ EMPLOI (LE PELLERIN)",
 		"sousModesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
 		"adresseTemp" : "18 rue du docteur Sourdille 44640 LE PELLERIN",
 		"numeroTemp" : "06 71 65 87 20",
@@ -80,7 +80,7 @@
 		"horaires" : "le MERCREDI de 9 h à 12 h, le SAMEDI de 9 h à 12 h 30",
 		"plagesHoraires" : "0101-3112_me_09h00-12h00,0101-3112_sa_09h00-12h30",
 		"quartier" : "Hors ??????????????????????????? sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi6",
 		"longitude" : "-1.560690",
@@ -88,15 +88,15 @@
 		"type" : "Récupération",
 		"latitude" : "47.161667",
 		"description_fr" : "Meubles, appareils et ustensiles ménagers, literie, couverture, linge, lustres et luminaires, vêtements, livres, vaisselle...",
-		"libelle" : "Récupération EMMAUS",
+		"libelle" : "EMMAUS",
 		"sousModesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempdivers",
 		"adresseTemp" : "La Guilloterie Rue d'Emmaus 44430 BOUGENAIS",
 		"numeroTemp" : "02 40 75 63 36",
 		"src" : "deuxiemeVie",
 		"horaires" : "Pour effectuer vos dépôts : du lundi au samedi de 8h00 à  11h30 et de 14h à  17h30",
-		"plagesHoraires" : "Pour effectuer vos dépôts : du lundi au samedi de 8h00 à  11h30 et de 14h à  17h30",
+		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa_08h00-11h30,0101-3112_lu-ma-me-je-ve-sa_14h00-17h30",
 		"quartier" : "Hors ??????????????????????????? sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi7",
 		"longitude" : "-1.534953",
@@ -104,7 +104,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.157418",
 		"description_fr" : "Déchets admis : déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie REZE",
+		"libelle" : "REZE",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rue Pierre Legendre 44400 REZE",
 		"numeroTemp" : "02 51 70 24 04",
@@ -112,7 +112,7 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)"
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi8",
 		"longitude" : "-1.636877",
@@ -120,7 +120,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.148371",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie SAINT-AIGNAN-DE-GRAND-LIEU",
+		"libelle" : "SAINT-AIGNAN-DE-GRAND-LIEU",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Avenue de la Forêt 44640 SAINT-AIGNAN-DE-GRAND-LIEU",
 		"numeroTemp" : "06 84 58 50 20",
@@ -128,7 +128,7 @@
 		"horaires" : "Ouvert Lundi, Mardi, Mercredi, Vendredi et Samedi de 10h à  18h (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me_10h00-18h00,ve-sa_10h00-18h00,sauf_ferie",
 		"quartier" : "SAINT-AIGNAN-DE-GRAND-LIEU",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi9",
 		"longitude" : "-2.253592",
@@ -136,7 +136,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.310977",
 		"description_fr" : "Déchets acceptés: Végétaux, Gravats, tout venant, cartons, ferrailles, huile minérale, huile végétale (en bidon), batterie, emballages légers, verres, journaux revues magazines, bois, lampes/tubes, DEEE (après réhabilitation). Déchets dangereux des ménages acceptés : Piles, déchets toxiques, pneus (uniquement pour les particuliers et après réhabilitation). Les particuliers domiciliés sur l'agglomération peuvent également : déposer de l'amiante liée (plaques de fibrociment), à la déchèterie le samedi et le dimanche de 9h à 18h du 1er octobre au 31 mars (les mêmes jours de 9h à 19h le reste de l'année). Utiliser la plateforme des déchets verts pour y effectuer des dépôts de déchets verts ou charger gratuitement du compost (dans la limite d'une remorque), le samedi et le dimanche de 9h à 18h du 1er octobre au 31 mars (les mêmes jours de 9h à 19h le reste de l'année)",
-		"libelle" : "Décheterie CUNEIX",
+		"libelle" : "CUNEIX",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Route de Cuneix 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 22 50 97",
@@ -144,7 +144,7 @@
 		"horaires" : " Été (Du 1er avril au 30 septembre) : Lundi au Samedi de 9h à 19h. Dimanche de 9h à 12h15. Hiver (du 1er octobre au 31 mars) : Lundi au Samedi de 9h à 18h. Dimanche de 9h à 12h15. Fermeture les jours fériés.",
 		"plagesHoraires" : "0109-3103_lu-ma-me-je-ve-sa_09h00-18h00,0104-3008_lu-ma-me-je-ve-sa_09h00-18h00,0101-3112_di_09h00-12h15,sauf_ferie",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi10",
 		"longitude" : "-2.2184136",
@@ -152,7 +152,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2764666",
 		"description_fr" : "Dépot vente et commerce de vêtements pour enfant et articles de puériculture.",
-		"libelle" : "Récupération Enfant'y Age",
+		"libelle" : "Enfant'y Age",
 		"sousModesCollecte" : "smco_reempvet,smco_reempjouet",
 		"adresseTemp" : "1 rue etienne de condillac, square de la mutualité 44600 SAINT NAZAIRE",
 		"numeroTemp" : "09 81 48 66 76 / 06 63 76 39 04",
@@ -160,7 +160,7 @@
 		"horaires" : "Le magasin est ouvert du mardi au samedi de 9h30 à 12h30 et de 13h30 à 18h",
 		"plagesHoraires" : "0101-3112_ma-me-je-ve-sa_09h30-12h30,0101-3112_ma-me-je-ve-sa_13h30-18h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi11",
 		"longitude" : "-1.503839",
@@ -168,7 +168,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.225106",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages. Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...) ; piles ; bouteilles de gaz ; déchets d'amiante-lié : fibrociment, fibro ondulé (long maxi 2m, quantité maxi 10 plaques), tubes en fibrociment en petite longueur, les cuves ou jardinières; pneus.",
-		"libelle" : "Décheterie NANTES",
+		"libelle" : "NANTES",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rue Vulcain 44300 NANTES",
 		"numeroTemp" : "02 40 49 43 20",
@@ -176,7 +176,7 @@
 		"horaires" : "Ouvert du Lundi au Samedi de 10h à  18h et le Dimanche de 8h30 à  12h (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa_10h00-18h00,0101-3112_di_08h30-12h00,sauf_ferie",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi12",
 		"longitude" : "-2.2726939",
@@ -184,7 +184,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2599674",
 		"description_fr" : "Récupération et vente d'électroménager",
-		"libelle" : "Récupération ENVIE 44",
+		"libelle" : "ENVIE 44",
 		"sousModesCollecte" : "smco_reempelectromenag",
 		"adresseTemp" : "Zone commerciale Océanis, 29 rue de l’étoile du matin 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 53 35 51 90 ",
@@ -192,7 +192,7 @@
 		"horaires" : "Du mardi au samedi de 10h à 12h30 et de 14h30 à 19h",
 		"plagesHoraires" : "0101-3112_ma-me-je-ve-sa_12h00-14h00,0101-3112_ma-me-je-ve-sa_14h30-19h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi13",
 		"longitude" : "-2.161143",
@@ -200,7 +200,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.3264595",
 		"description_fr" : "L'atelier recycle les toiles de voile ou les bâches publicitaires pour en faire des sacs marins, des cabas, des cartables ou des étuis isothermes. Ces articles sont aussi commercialisés dans le magasin Artisan du Monde de Saint-Nazaire.",
-		"libelle" : "Récupération ESAT Marie Moreau",
+		"libelle" : "ESAT Marie Moreau",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "40 rue du Docteur Schweitzer 44612 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 53 85 79",
@@ -208,7 +208,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi14",
 		"longitude" : "-1.573717",
@@ -216,7 +216,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.258869",
 		"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
-		"libelle" : "Récupération ATAO",
+		"libelle" : "ATAO",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "7 bis, rue Jacques Cartier 44300 NANTES",
 		"numeroTemp" : "02 40 59 93 68",
@@ -224,7 +224,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "???????????????????????????",
-		"conseils" : "  "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi15",
 		"longitude" : "-1.6133603",
@@ -232,7 +232,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2062095",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
-		"libelle" : "Récupération LEVER L'ENCRE",
+		"libelle" : "LEVER L'ENCRE",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "14 Boulevard Winston Churchill 44100 NANTES",
 		"numeroTemp" : "",
@@ -240,7 +240,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi16",
 		"longitude" : "-1.5578842",
@@ -248,7 +248,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2143672",
 		"description_fr" : "Récupération de lunettes",
-		"libelle" : "Récupération Optique Jean ROYER",
+		"libelle" : "Optique Jean ROYER",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "11, place Royale 44000 NANTES",
 		"numeroTemp" : "02 40 48 75 73",
@@ -256,7 +256,7 @@
 		"horaires" : "Du mardi au samedi de 10h à 19h, le lundi de 14h à 19h",
 		"plagesHoraires" : "0101-3112_ma-me-je-ve-sa_10h00-19h00,0101-3112_lu_14h00-19h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : "Du mardi au samedi de 10h à 19h, le lundi de 14h à 19h"
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi17",
 		"longitude" : "-1.4852487",
@@ -264,7 +264,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.1842788",
 		"description_fr" : "Collecte de papiers usagés. L'association a pour objectif de financer des actions humanitaires éducatives à partir d'un geste écologique, le tri du papier.",
-		"libelle" : "Récupération PAPIERS DE L'ESPOIR",
+		"libelle" : "PAPIERS DE L'ESPOIR",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "29 Rue Maladrie 44120 VERTOU",
 		"numeroTemp" : "02 40 34 29 24 ou 06 75 67 98 02 ou 06 37 27 14 22 (St-Nazaire)",
@@ -272,7 +272,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi18",
 		"longitude" : "-1.5515172",
@@ -280,7 +280,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.1879293",
 		"description_fr" : "Boutique du Relais",
-		"libelle" : "Récupération DING-FRING Rezé",
+		"libelle" : "DING-FRING Rezé",
 		"sousModesCollecte" : "smco_reempvet",
 		"adresseTemp" : "75 Rue de la Commune 44400 REZE",
 		"numeroTemp" : "02 51 70 28 35",
@@ -288,7 +288,7 @@
 		"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h à 19h00. Le samedi de 10h à 12h30 et de 14h à 18h30",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_10h00-12h30,0101-3112_lu-ma-me-je-ve_14h00-19h00,0101-3112_sa_10h00-12h30,0101-3112_sa_14h00-18h30",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi19",
 		"longitude" : "-1.641401",
@@ -296,7 +296,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.224091",
 		"description_fr" : "Récupération de meubles",
-		"libelle" : "Récupération L'HOMME DEBOUT",
+		"libelle" : "L'HOMME DEBOUT",
 		"sousModesCollecte" : "smco_reempmeuble",
 		"adresseTemp" : "9 rue des Compagnons 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 92 26 91",
@@ -304,7 +304,7 @@
 		"horaires" : "Ferme le mercredi apres midi et le vendredi. Devis meuble le mardi de 14 a 17h et le jeudi de 9 a 12h.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi20",
 		"longitude" : "-1.2710598",
@@ -312,7 +312,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.165074",
 		"description_fr" : "Collecte et vente à petits prix des articles textiles : vêtements adulte et enfant, linge plat, maroquinerie, jouets, bijoux fantaisie...",
-		"libelle" : "Récupération PAT'MOUILLE",
+		"libelle" : "PAT'MOUILLE",
 		"sousModesCollecte" : "smco_reempvet,smco_reempjouet",
 		"adresseTemp" : "8 route de la loire 44330 VALLET",
 		"numeroTemp" : "02 40 36 39 89",
@@ -320,7 +320,7 @@
 		"horaires" : "du lundi au vendredi de 8h à 12h30 et de 14h à 19h ainsi que le samedi matin de 9h à 12h30",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h00-12h30,0101-3112_lu-ma-me-je-ve_14h00-19h00,0101-3112_sa_09h00-12h30",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi21",
 		"longitude" : "-1.641127",
@@ -328,7 +328,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.223984",
 		"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
-		"libelle" : "Récupération ATAO",
+		"libelle" : "ATAO",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "4 rue des compagnons 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 92 28 91",
@@ -336,7 +336,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi22",
 		"longitude" : "-1.483498",
@@ -344,7 +344,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.199569",
 		"description_fr" : "Déchets admis : déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie SAINT SEBASTIEN SUR LOIRE",
+		"libelle" : "SAINT SEBASTIEN SUR LOIRE",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rue Pierre Legendre 44400 SAINT SEBASTIEN SUR LOIRE",
 		"numeroTemp" : "02 40 03 08 33",
@@ -352,7 +352,7 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)"
+		"conseils" : ",cons_decheterieecopointquartheure"
 	}, {
 		"code" : "stco_reemploi23",
 		"longitude" : "-2.2117936",
@@ -360,7 +360,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2803679",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
-		"libelle" : "Récupération CARTRIDGE WORLD",
+		"libelle" : "CARTRIDGE WORLD",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "68 Avenue de la République 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 24 80 09",
@@ -368,7 +368,7 @@
 		"horaires" : "Lundi au Samedi de 09H00 à 19H00",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa_09h00-19h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi24",
 		"longitude" : "-1.621382",
@@ -376,7 +376,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.329666",
 		"description_fr" : "Récupération de ferrailles, voitures, cuivre, batteries, linge, vaisselles, bibelots, fauteuils roulants, machines à  coudre. Récupération possible à  domicile",
-		"libelle" : "Récupération ECHANGES ET SOLIDARITE 44",
+		"libelle" : "ECHANGES ET SOLIDARITE 44",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "64 rue de la mairie 44119 TREILLIERES",
 		"numeroTemp" : "02 40 43 84 91",
@@ -384,7 +384,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi25",
 		"longitude" : "-1.411228",
@@ -392,7 +392,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.313224",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie MAUVES-SUR-LOIRE",
+		"libelle" : "MAUVES-SUR-LOIRE",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rond point Lacroix 44470 MAUVES-SUR-LOIRE",
 		"numeroTemp" : "",
@@ -400,7 +400,7 @@
 		"horaires" : "Ouvert Lundi et Mercredi de 14h à  18h et Samedi de 10h à  18 h (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-sa_14h00-18h00,sauf_ferie",
 		"quartier" : "Hors ??????????????????????????? nord Loire",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi26",
 		"longitude" : "-1.654222",
@@ -408,7 +408,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.258053",
 		"description_fr" : "Récupération de pain",
-		"libelle" : "Récupération ATELIER BAR'AMEL TRAJET",
+		"libelle" : "ATELIER BAR'AMEL TRAJET",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "9, Route de Brimberne 44880 SAUTRON",
 		"numeroTemp" : "02 51 78 64 62",
@@ -416,7 +416,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi27",
 		"longitude" : "-1.718935",
@@ -424,7 +424,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.187263",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie SAINT-JEAN-DE-BOISEAU",
+		"libelle" : "SAINT-JEAN-DE-BOISEAU",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rue de la Poterie 44640 SAINT-JEAN-DE-BOISEAU",
 		"numeroTemp" : "02 40 32 94 22",
@@ -432,7 +432,7 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "SAINT-JEAN-DE-BOISEAU",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi28",
 		"longitude" : "-2.1881119",
@@ -440,7 +440,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.3108847",
 		"description_fr" : "Meubles, appareils et ustensiles ménagers, literie, couverture, linge, lustres et luminaires, vêtements, livres, vaisselle...",
-		"libelle" : "Récupération EMMAUS",
+		"libelle" : "EMMAUS",
 		"sousModesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempdivers",
 		"adresseTemp" : "43 bis Rue Jean-Baptiste Marcet 44570 TRIGNAC",
 		"numeroTemp" : "08 99 23 72 78",
@@ -448,7 +448,7 @@
 		"horaires" : "Dépôts des dons : Mardi, mercredi, vendredi et le samedi de 9h30 à 11h30 et de 13h30 à 16h30. Salle de vente : Le mercredi de 13h30 à 17h30 et le samedi de 9h30 à 11h30 et de 13h30 à 17h30.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi29",
 		"longitude" : "-2.2100357",
@@ -456,7 +456,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2774346",
 		"description_fr" : "Récupération, reconditionnement et distribution d'ordinateurs",
-		"libelle" : "Récupération SNALIS",
+		"libelle" : "SNALIS",
 		"sousModesCollecte" : "smco_reempinfo",
 		"adresseTemp" : "61 rue d’Anjou 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "09 50 72 82 51",
@@ -464,7 +464,7 @@
 		"horaires" : "Ouvert au public le jeudi de 14h à 17h",
 		"plagesHoraires" : "0101-3112_je_14h00-17h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi30",
 		"longitude" : "-1.51986",
@@ -472,7 +472,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.239259",
 		"description_fr" : "Récupération, reconditionnement et distribution d'ordinateurs",
-		"libelle" : "Récupération ALIS44",
+		"libelle" : "ALIS44",
 		"sousModesCollecte" : "smco_reempinfo",
 		"adresseTemp" : "60 rue de la Bottière 44300 NANTES",
 		"numeroTemp" : "06.47.98.02.68",
@@ -480,7 +480,7 @@
 		"horaires" : "Du lundi au vendredi, 9h-12h et 14h-18h",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-12h00,0101-3112_lu-ma-me-je-ve_14h00-18h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi31",
 		"longitude" : "-1.5591834",
@@ -488,7 +488,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2125716",
 		"description_fr" : "Recharge de cartouche d'imprimante",
-		"libelle" : "Récupération OCE'ENCRE",
+		"libelle" : "OCE'ENCRE",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "7 place Bourse 44000 NANTES",
 		"numeroTemp" : "02 51 88 98 65",
@@ -496,7 +496,7 @@
 		"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 10h à  13h et de 14h à  19h et le samedi de 10h à  13h et de 14h à  18h",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma-me-je-ve_10h00-13h00,0101-3112_ma-me-je-ve_14h00-19h00,0101-3112_sa_10h00-13h00,0101-3112_sa_14h00-18h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi32",
 		"longitude" : "-1.652637",
@@ -504,7 +504,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.233582",
 		"description_fr" : "Récupération et vente d'électroménager",
-		"libelle" : "Récupération ENVIE 44",
+		"libelle" : "ENVIE 44",
 		"sousModesCollecte" : "smco_reempelectromenag",
 		"adresseTemp" : "18 rue Bobby Sands 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 43 82 37",
@@ -520,7 +520,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.312759",
 		"description_fr" : "Collecte et recyclage de cartouches d'imprimantes laser et jet d'encre.",
-		"libelle" : "Récupération PRAXIS ENVIRONNEMENT",
+		"libelle" : "PRAXIS ENVIRONNEMENT",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "ZA les 4 Nations 2 rue Henri Farman 44360 VIGNEUX DE BRETAGNE",
 		"numeroTemp" : "02 40 57 44 54",
@@ -528,7 +528,7 @@
 		"horaires" : "Du lundi au vendredi de 9h00 à  18h00.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-18h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi34",
 		"longitude" : "-1.548943",
@@ -536,7 +536,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.217117",
 		"description_fr" : "Récupération de livres, revues, BD",
-		"libelle" : "Récupération NANTES ÉCOLOGIE, L'AIR LIVRE",
+		"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
 		"sousModesCollecte" : "smco_reemplivreCD",
 		"adresseTemp" : "3 bis rue Prémion 44015 NANTES",
 		"numeroTemp" : "02 40 47 18 27 (public) / 02 51 82 05 41 (bureau)",
@@ -544,7 +544,7 @@
 		"horaires" : "Lundi à Vendredi 9h-13h et 14h30-18h30",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-13h00,0101-3112_lu-ma-me-je-ve_14h30-18h30",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi35",
 		"longitude" : "-1.608134",
@@ -552,7 +552,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.247658",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
-		"libelle" : "Récupération ENCRE STATION",
+		"libelle" : "ENCRE STATION",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "113 route de Vannes 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 74 42 16",
@@ -560,7 +560,7 @@
 		"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 9h30 à  12h30 et de 14h à  19h et le samedi de 10h à  12h30 et de 14h à  17h",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma-me-je-ve_09h00-12h30,0101-3112_ma-me-je-ve_14h00-19h00,0101-3112_sa_10h00-12h30,0101-3112_sa_14h00-17h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi36",
 		"longitude" : "-1.642425",
@@ -568,7 +568,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.223204",
 		"description_fr" : "Rénovation de micro-ordinateurs réformés et leur revente avec garantie. Démantèlement assuré par un Atelier d'insertion, pour le matériel «obsolète», en panne et les déchets informatiques et électroniques.",
-		"libelle" : "Récupération ACTIF OUEST",
+		"libelle" : "ACTIF OUEST",
 		"sousModesCollecte" : "smco_reempinfo",
 		"adresseTemp" : "8 rue du Charron 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 51 80 05 38",
@@ -576,7 +576,7 @@
 		"horaires" : "Du lundi au vendredi de 9h00 à  12h30 et de 14h00 à  18h00.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-12h30,0101-3112_lu-ma-me-je-ve_14h00-18h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi37",
 		"longitude" : "-2.2116533",
@@ -584,7 +584,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2717698",
 		"description_fr" : "En partant de vêtements neufs ou anciens, et en choisissant différents tissus , galons, boutons, perles, ...je transforme, je revisite, pour proposer des pièces originales et uniques; jupes, vestes, sacs, chaussures, chapeaux, étoles, pantalons, etc... revus et corrigés...!",
-		"libelle" : "Récupération La Pomme et la lionne",
+		"libelle" : "La Pomme et la lionne",
 		"sousModesCollecte" : "smco_reempvet",
 		"adresseTemp" : "19 avenue Léon Blum 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "06 33 63 35 52",
@@ -592,7 +592,7 @@
 		"horaires" : "Ouvert le mardi, jeudi et vendredi, de 10 h à 12 h et de 14 h à 19 h; le samedi, de 15 h à 18 h.",
 		"plagesHoraires" : "0101-3112_ma-je-ve_10h00-12h00,0101-3112_ma-je-ve_14h00-19h00,0101-3112_sa_15h00-18h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi38",
 		"longitude" : "-2.185721",
@@ -600,7 +600,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.304255",
 		"description_fr" : "Déchets acceptés: Végétaux, Gravats, tout venant, cartons, ferrailles, huile minérale, huile végétale (en bidon), batterie, emballages légers, verres, journaux revues magazines, lampes/tubes. Déchets dangereux des ménages acceptés : Piles, déchets toxiques. ",
-		"libelle" : "Décheterie MÉAN PENHOËT SAINT-NAZAIRE",
+		"libelle" : "MÉAN PENHOËT SAINT-NAZAIRE",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rue de la petite pâture 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 90 45 19",
@@ -608,7 +608,7 @@
 		"horaires" : " Été (Du 1er avril au 30 septembre) : Lundi au Vendredi de 10h à 12h15 et de 14h30 à 19h. Samedi de 9h à 12h15 et de 14h30 à 19h. Hiver (du 1er octobre au 31 mars) : Lundi au Samedi de 9h à 12h15 et de 14h30 à 18h. Fermeture les jours fériés.",
 		"plagesHoraires" : "3009-3103_lu-ma-me-je-ve-sa_09h00-12h15,3009-3103_lu-ma-me-je-ve-sa_14h30-19h00,0104-3009_lu-ma-me-je-ve-sa_10h00-12h15,0104-3009_lu-ma-me-je-ve-sa_14h30-18h00,sauf_ferie",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi39",
 		"longitude" : "-1.815695",
@@ -616,7 +616,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.109553",
 		"description_fr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...",
-		"libelle" : "Récupération ATELIER DU RETZ EMPLOI (SAINTE-PAZANNE)",
+		"libelle" : "ATELIER DU RETZ EMPLOI (SAINTE-PAZANNE)",
 		"sousModesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
 		"adresseTemp" : "28 rue de Bel Air 44640 SAINTE-PAZANNE",
 		"numeroTemp" : "06 71 65 87 20",
@@ -624,7 +624,7 @@
 		"horaires" : "le MERCREDI de 9 h à 17 h 30, le SAMEDI de 9 h à 17 h 30",
 		"plagesHoraires" : "0101-3112_me_09h00-17h30,0101-3112_sa_09h00-17h30",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi40",
 		"longitude" : "-1.5468354",
@@ -632,7 +632,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2119882",
 		"description_fr" : "Boutique du Relais",
-		"libelle" : "Récupération DING-FRING Fourré",
+		"libelle" : "DING-FRING Fourré",
 		"sousModesCollecte" : "smco_reempvet",
 		"adresseTemp" : "32 rue Fourré 44200 NANTES",
 		"numeroTemp" : "02 40 75 46 91",
@@ -640,7 +640,7 @@
 		"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 18h30",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_10h00-19h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi41",
 		"longitude" : "-1.443844",
@@ -648,7 +648,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.287963",
 		"description_fr" : "Déchets admis : déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie CARQUEFOU",
+		"libelle" : "CARQUEFOU",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Lieu-dit L'Ebaupin (accès RD 209) 44470 CARQUEFOU",
 		"numeroTemp" : "02 40 93 76 71",
@@ -656,7 +656,7 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "Hors ??????????????????????????? nord Loire",
-		"conseils" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)"
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi42",
 		"longitude" : "-1.460903",
@@ -664,7 +664,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.178060",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie VERTOU",
+		"libelle" : "VERTOU",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "La Foresterie 44120 VERTOU",
 		"numeroTemp" : "02 40 34 43 74",
@@ -672,15 +672,15 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi43",
 		"longitude" : "-1.564511",
-		"modesCollecte" : "modco_ecopoint",
+		"modesCollecte" : "modco_reemploi",
 		"type" : "Ecopoint",
 		"latitude" : "47.222541",
 		"description_fr" : "Déchets admis : Papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques (D.E.E.E.), batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages, Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...), piles, bouteilles de gaz, les cuves ou jardinières, pneus.",
-		"libelle" : "Ecopoint VIARME",
+		"libelle" : "VIARME",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Quartier Viarme Talensac, Rue du Bourget 44000 VIARME",
 		"numeroTemp" : "02 51 82 31 47",
@@ -688,7 +688,7 @@
 		"horaires" : "Ouvert du Lundi au Samedi de 10h à  18h et Dimanche de 8h30 à  12h (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa_10h00-18h00,0101-3112_di_08h30-12h00,sauf_ferie",
 		"quartier" : "Hauts-Paves Saint-Felix",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi44",
 		"longitude" : "-1.561791",
@@ -696,7 +696,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.200229",
 		"description_fr" : "Scénographie Architecture Bâti Lieux Expérimentaux. Notre travail trouve son application dans la création d'installation urbaines et constructions temporaires à base d'objets récupérés.",
-		"libelle" : "Récupération LES MARCHANDS DE SABLE",
+		"libelle" : "LES MARCHANDS DE SABLE",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "18 quai du président Wilson 44200 NANTES",
 		"numeroTemp" : "06 81 67 42 06",
@@ -704,7 +704,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi45",
 		"longitude" : "-1.53276",
@@ -712,7 +712,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.23558",
 		"description_fr" : "Récupération et distribution de vêtements, livres, jouets, vaisselle, bibelots",
-		"libelle" : "Récupération LA CROIX ROUGE / Vestiboutique",
+		"libelle" : "LA CROIX ROUGE / Vestiboutique",
 		"sousModesCollecte" : "smco_reempvet,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
 		"adresseTemp" : "51 bis rue de la Moisdonnière 44300 NANTES",
 		"numeroTemp" : "02 51 89 47 62",
@@ -720,7 +720,7 @@
 		"horaires" : "Mardi et jeudi de 9h30 à 12h00 et de 14h00 à 17h00",
 		"plagesHoraires" : "0101-3112_ma-je_09h30-12h00,0101-3112_ma-je_14h00-17h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi46",
 		"longitude" : "-1.683226",
@@ -728,7 +728,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.177112",
 		"description_fr" : "Déchets admis : déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie LA MONTAGNE",
+		"libelle" : "LA MONTAGNE",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Chemin du Pérou 44620 LA MONTAGNE",
 		"numeroTemp" : "02 40 32 94 23",
@@ -736,15 +736,15 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "Hors ??????????????????????????? sud Loire",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi47",
 		"longitude" : "-1.601493",
-		"modesCollecte" : "modco_ecopoint",
+		"modesCollecte" : "modco_reemploi",
 		"type" : "Ecopoint",
 		"latitude" : "47.198548",
 		"description_fr" : "Déchets admis : Papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques (D.E.E.E.), batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages, Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...), piles, bouteilles de gaz, les cuves ou jardinières, pneus.",
-		"libelle" : "Ecopoint CHANTENAY",
+		"libelle" : "CHANTENAY",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "42, bd du Maréchal Juin 44000 CHANTENAY",
 		"numeroTemp" : "02 40 46 61 05",
@@ -752,15 +752,15 @@
 		"horaires" : "Ouvert du Mardi au Samedi de 10h à  17h30 (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_ma-me-je-ve-sa_10h00-17h30,sauf_ferie",
 		"quartier" : "Bellevue Chantenay",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi48",
 		"longitude" : "-1.591301",
-		"modesCollecte" : "modco_ecopoint",
+		"modesCollecte" : "modco_reemploi",
 		"type" : "Ecopoint",
 		"latitude" : "47.225397",
 		"description_fr" : "Déchets admis : Papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques (D.E.E.E.), batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages, Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...), piles, bouteilles de gaz, les cuves ou jardinières, pneus.",
-		"libelle" : "Ecopoint DERVALLIERES",
+		"libelle" : "DERVALLIERES",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Quartier Dervallières, Rue J.M. Nattier 44000 DERVALLIERES",
 		"numeroTemp" : "02 40 43 36 69",
@@ -768,7 +768,7 @@
 		"horaires" : "Ouvert du Mardi au Samedi de 10h à  17h30 (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_ma-me-je-ve-sa_10h00-17h30,sauf_ferie",
 		"quartier" : "Dervallieres Zola",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi49",
 		"longitude" : "-1.5484173",
@@ -776,7 +776,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.213765",
 		"description_fr" : "Récupération de livres, revues, BD et de manuels scolaires",
-		"libelle" : "Récupération NANTES ÉCOLOGIE, L'AIR LIVRE",
+		"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
 		"sousModesCollecte" : "smco_reemplivreCD",
 		"adresseTemp" : "6 rue Monteil 44000 NANTES",
 		"numeroTemp" : "02 51 82 78 30",
@@ -784,7 +784,7 @@
 		"horaires" : "Lundi, mardi, jeudi, vendredi 9h-13h et 14h00-18h00",
 		"plagesHoraires" : "0101-3112_lu-ma-je-ve_09h00-13h00,0101-3112_lu-ma-je-ve_14h00-18h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi50",
 		"longitude" : "-1.5692261",
@@ -792,7 +792,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2092982",
 		"description_fr" : "Boutique du Relais",
-		"libelle" : "Récupération DING-FRING Brunelière",
+		"libelle" : "DING-FRING Brunelière",
 		"sousModesCollecte" : "smco_reempvet",
 		"adresseTemp" : "5 rue Charles Brunelière 44200 NANTES",
 		"numeroTemp" : "02 40 69 13 89",
@@ -800,7 +800,7 @@
 		"horaires" : "Du lundi au vendredi de 10h à 19h00. Le samedi de 10h à 18h30",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_12h00-14h00,0101-3112_sa_10h00-18h30",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi51",
 		"longitude" : "-1.643064",
@@ -808,15 +808,15 @@
 		"type" : "Récupération",
 		"latitude" : "47.222275",
 		"description_fr" : "Récupération de vêtements, chaussures, linge. Informations sur l'emplacement des conteneur : www.relais-atlantique.fr",
-		"libelle" : "Récupération RELAIS ATLANTIQUE",
+		"libelle" : "RELAIS ATLANTIQUE",
 		"sousModesCollecte" : "smco_reempvet,smco_reempdivers",
 		"adresseTemp" : "3 impasse du Bourrelier, CP 1526 44806 SAINT-HERBLAIN CEDEX",
 		"numeroTemp" : "02 28 03 18 57",
 		"src" : "deuxiemeVie",
 		"horaires" : "",
 		"plagesHoraires" : "",
-		"quartier" : "Hors Nantes nord Loire ",
-		"conseils" : " "
+		"quartier" : "Hors Nantes nord Loire CEDEX",
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi52",
 		"longitude" : "-1.633449",
@@ -824,7 +824,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.259354",
 		"description_fr" : "Récupération de matériels divers pour le tiers monde",
-		"libelle" : "Récupération ARCADE",
+		"libelle" : "ARCADE",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "Rue Stévin 44700 ORVAULT",
 		"numeroTemp" : "02 40 63 74 20",
@@ -832,7 +832,7 @@
 		"horaires" : "Le mardi de 10h à 12 h.",
 		"plagesHoraires" : "0101-3112_ma_10h00-12h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi53",
 		"longitude" : "-1.565745",
@@ -840,7 +840,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.196638",
 		"description_fr" : "Réemploi d'objets de la vie courante : collecte en déchèterie puis revente à bas prix (mobilier, vaisselle, jouets, livres, vêtements, articles de loisirs, outillage...)",
-		"libelle" : "Récupération ECOREV",
+		"libelle" : "ECOREV",
 		"sousModesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
 		"adresseTemp" : "90 rue de la basse île 44400 REZE",
 		"numeroTemp" : "02 28 23 64 47",
@@ -848,7 +848,7 @@
 		"horaires" : "Dépôt d'objets réutilisables : lundi-samedi de 9h à 12h Boutique solidaire : le samedi de 10h à 18h",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_12h00-14h00",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi54",
 		"longitude" : "-2.206235",
@@ -856,7 +856,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.285496",
 		"description_fr" : "Pour tous, qui recherchez des meubles, des vêtements, des livres, des jouets, de la vaisselle, une braderie est à votre disposition",
-		"libelle" : "Récupération SECOURS POPULAIRE",
+		"libelle" : "SECOURS POPULAIRE",
 		"sousModesCollecte" : "smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
 		"adresseTemp" : "14 rue Madame de Sévigné  44604 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 74 48 41",
@@ -864,7 +864,7 @@
 		"horaires" : "Le Samedi de 9h30 à 12h, et en semaine selon les horaires suivants : Meubles : Lundi, Mardi, Mercredi, Jeudi de 14h30 à 17h, Vestiaire : Mardi, un  Mercredi sur deux ( non distribution alimentaire ), Jeudi  :  10h à12h et de 14h30 à 16h30, Jouets : Mardi et Jeudi de 10h à 12h et de 14h30 à 16h30, Bibliothèque : Jeudi de 14h30 à 16h30.  Les dépots de vêtements, livres, jouets, vaisselle, bibelots peuvent se faire tous les jours, de 9h à 12 h et de 14h30 à 16h30. De préférence, venez le lundi et le samedi matin. Dépots de meubles toutes les après-midi, du lundi au jeudi, de 14 h à 17 h. ",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi55",
 		"longitude" : "-1.550624",
@@ -872,7 +872,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.201511",
 		"description_fr" : "Récupération de bouchons plastiques",
-		"libelle" : "Récupération BOUCHON D'AMOUR",
+		"libelle" : "BOUCHON D'AMOUR",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "Stockage : Chà¢teau d'eau du MIN de Nantes 44200 NANTES",
 		"numeroTemp" : "02 40 86 57 29",
@@ -880,7 +880,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi56",
 		"longitude" : "-2.2100179",
@@ -888,7 +888,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2774497",
 		"description_fr" : "Boutique du Relais",
-		"libelle" : "Récupération DING-FRING Saint-Nazaire",
+		"libelle" : "DING-FRING Saint-Nazaire",
 		"sousModesCollecte" : "smco_reempvet",
 		"adresseTemp" : "60 rue de Stalingrad 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 66 10 07",
@@ -896,7 +896,7 @@
 		"horaires" : "Du lundi au jeudi : de 10h à 12h30 et de 14h30 à 19h00 ; Le vendredi : 10h00 à 19h00 ; Le samedi : 10h00 à 12h30 et de 14h30 à 18h30",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je_10h00-12h30,0101-3112_lu-ma-me-je_14h30-19h00,0101-3112_ve_10h00-19h00,0101-3112_sa_10h00-12h30,0101-3112_sa_14h30-18h30",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi57",
 		"longitude" : "-2.2065413",
@@ -904,7 +904,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2735589",
 		"description_fr" : "Rechargez vos cartouches d'encre et toners.",
-		"libelle" : "Récupération PIGMENTA",
+		"libelle" : "PIGMENTA",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "Tabac presse La Civette,  1 Rue Henri Gautier 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 22 39 20",
@@ -912,7 +912,7 @@
 		"horaires" : "du lundi au vendredi 7h00-19h00 et le samedi 8h00-19h00",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_07h00-19h00,0101-3112_sa_08h00-19h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi58",
 		"longitude" : "-1.560953",
@@ -920,7 +920,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.227348",
 		"description_fr" : "Récupération de vêtements, meubles, électroménagers",
-		"libelle" : "Récupération SECOURS POPULAIRE",
+		"libelle" : "SECOURS POPULAIRE",
 		"sousModesCollecte" : "smco_reempmeuble,smco_reempvet,smco_reempelectromenag",
 		"adresseTemp" : "163 Rue Paul Bellamy 44000 NANTES",
 		"numeroTemp" : "02 40 74 48 41",
@@ -928,7 +928,7 @@
 		"horaires" : "Tous les jours du lundi au vendredi de 9h à 12h et de 14h à 17h",
 		"plagesHoraires" : "Tous les jours du lundi au vendredi de 9h à 12h et de 14h à 17h",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi59",
 		"longitude" : "-1.570404",
@@ -936,7 +936,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.260956",
 		"description_fr" : "Récupération de papier (même pour des volumes moyens)",
-		"libelle" : "Récupération A.R.B.R.E.S.",
+		"libelle" : "A.R.B.R.E.S.",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "105, Rue des Renards 44300 NANTES",
 		"numeroTemp" : "02 40 40 35 55",
@@ -944,7 +944,7 @@
 		"horaires" : "Du lundi au jeudi de 9h00 à 12h30 et de 14h00 à 17h00. Le vendredi de 9h00 à 12h30 et de 14h00 à 16h00.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je_12h00-14h00,0101-3112_lu-ma-me-je_14h00-17h00,0101-3112_ve_09h00-12h30,0101-3112_ve_14h00-16h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi60",
 		"longitude" : "-1.556319",
@@ -952,7 +952,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.217781",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
-		"libelle" : "Récupération POINT ENCRE ET TONER",
+		"libelle" : "POINT ENCRE ET TONER",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "13 Rue de l'Hotel de Ville 44000 NANTES",
 		"numeroTemp" : "02 40 35 64 29",
@@ -960,7 +960,7 @@
 		"horaires" : "Ouvert le lundi de 13h à 19h ; du mardi au vendredi de 9h à 12h45 et de 13h45 à 19h ; le samedi de 14h à 19h.",
 		"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma-me-je-ve_09h00-12h45,0101-3112_ma-me-je-ve_13h45-19h00,0101-3112_sa_14h00-19h00",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi61",
 		"longitude" : "-1.5318757",
@@ -968,7 +968,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2414082",
 		"description_fr" : "Boutique du Relais : Ding Fring",
-		"libelle" : "Récupération DING-FRING Marsauderies",
+		"libelle" : "DING-FRING Marsauderies",
 		"sousModesCollecte" : "smco_reempvet",
 		"adresseTemp" : "15 rue des Marsauderies  44000 NANTES",
 		"numeroTemp" : "02 40 20 87 11",
@@ -976,7 +976,7 @@
 		"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 12h et de 14h à 18h30",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_10h00-19h00,0101-3112_sa_10h00-12h00,0101-3112_sa_14h00-18h30",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi62",
 		"longitude" : "-2.2577916",
@@ -984,7 +984,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2615601",
 		"description_fr" : "La grange aux fringues est une bourse permanente de vêtements d'occasion ouvert à tous et porté par un chantier d'insertion. Il est possible de vendre ses vêtements en étant adhérent à une Maison de quartier : 15 articles par mois peuvent être déposés. Les articles non vendus et l'argent des ventes sont ensuite récupérés à la fin du mois. La grange aux fringues devient, à certaines périodes de l'année, la grange ambulante et se déplace dans les différents quartiers de Saint-Nazaire.",
-		"libelle" : "Récupération La grange aux fringues",
+		"libelle" : "La grange aux fringues",
 		"sousModesCollecte" : "smco_reempvet",
 		"adresseTemp" : "48 rue Pitre Grenapin 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 70 35 00",
@@ -992,7 +992,7 @@
 		"horaires" : "Ouvert le lundi de 14h15 à 17h45, le mardi et le jeudi de 9h à 12h30 et de 14h15 à 17h45, le mercredi de 9h à 12h et de 14h15 à 17h45, le vendredi de 9h à 12h30 et de 13h30 à 17h30, le samedi de 9h à 12h.",
 		"plagesHoraires" : "0101-3112_lu_14h15-17h45,0101-3112_ma-je_09h00-12h30,0101-3112_ma-je_14h15-17h45,0101-3112_me_09h00-12h00,0101-3112_me_14h15-17h45,0101-3112_ve_09h00-12h30,0101-3112_ve_13h30-17h30,0101-3112_sa_09h00-12h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi63",
 		"longitude" : "-1.5324433",
@@ -1000,7 +1000,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.1819242",
 		"description_fr" : "Récupération de ferraille, métaux, électroménager, voiture, camion, bateau, engins agricole... Déplacement à domicile dans toute la loire-atlantique.",
-		"libelle" : "Récupération RECUPFER44",
+		"libelle" : "RECUPFER44",
 		"sousModesCollecte" : "smco_reempelectromenag,smco_reempdivers",
 		"adresseTemp" : "1 résidence du parc 44400 REZE",
 		"numeroTemp" : "06 38 39 72 78",
@@ -1008,7 +1008,7 @@
 		"horaires" : "Du lundi au samedi de 8 heures à 20 heures.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa_08h00-20h00",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : "Du lundi au samedi de 8 heures à 20 heures."
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi64",
 		"longitude" : "-1.523216",
@@ -1016,7 +1016,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.253922",
 		"description_fr" : "Déchets admis : Papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques (D.E.E.E.), batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages, Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...), piles, bouteilles de gaz, les cuves ou jardinières, pneus.",
-		"libelle" : "Décheterie LA BEAUJOIRE",
+		"libelle" : "LA BEAUJOIRE",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "29, rue de la Gare Saint-Joseph 44000 NANTES",
 		"numeroTemp" : "02 40 49 62 67",
@@ -1024,7 +1024,7 @@
 		"horaires" : "Ouvert du Mardi au Samedi de 10h à  17h30 (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_ma-me-je-ve-sa_10h00-17h30,sauf_ferie",
 		"quartier" : "???????????????????????????",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi65",
 		"longitude" : "-1.661669",
@@ -1032,7 +1032,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.229244",
 		"description_fr" : "Récupération de matériels pour chambre d'hôpital, fauteuils roulant, lunettes, appareils auditifs",
-		"libelle" : "Récupération ORTHOPEDIE SANS FRONTIERE",
+		"libelle" : "ORTHOPEDIE SANS FRONTIERE",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "Chemin de la métairie 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "06 83 45 78 96",
@@ -1040,7 +1040,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi66",
 		"longitude" : "-2.2115574",
@@ -1048,7 +1048,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.2820733",
 		"description_fr" : "Spécialistes de la recharge de cartouches d'encre pour particuliers et professionnels.",
-		"libelle" : "Récupération ENCRE ÉCO...LOGIQUE",
+		"libelle" : "ENCRE ÉCO...LOGIQUE",
 		"sousModesCollecte" : "smco_reempcartouchetoner",
 		"adresseTemp" : "91 Avenue de la République 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 22 11 53",
@@ -1056,7 +1056,7 @@
 		"horaires" : "Ouvert le lundi de 14h00 à 18h00 - Du mardi au vendredi : 10h00 - 12h30 et de 14h00 à 18h30 - le samedi : 10h00 - 12h30 et de 14h00 à 18h00.",
 		"plagesHoraires" : "0101-3112_lu_14h00-18h00,0101-3112_ma-me-je-ve_10h00-12h30,0101-3112_ma-me-je-ve_14h00-18h30,0101-3112_sa_10h00-12h30,0101-3112_sa_14h00-18h00",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi67",
 		"longitude" : "-1.548718",
@@ -1064,7 +1064,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.301243",
 		"description_fr" : "Récupération de vêtements, chaussures, linge, en bon état et non démodé",
-		"libelle" : "Récupération PORTE OUVERTE CHAPELAINE",
+		"libelle" : "PORTE OUVERTE CHAPELAINE",
 		"sousModesCollecte" : "smco_reempvet,smco_reempdivers",
 		"adresseTemp" : "6 bis route de Sucé 44240 LA CHAPELLE SUR ERDRE",
 		"numeroTemp" : "02 40 72 97 20",
@@ -1072,7 +1072,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "LA CHAPELLE SUR ERDRE",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi68",
 		"longitude" : "-1.545704",
@@ -1080,7 +1080,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.190903",
 		"description_fr" : "Récupération d'emballages triés par les particuliers et les entreprises",
-		"libelle" : "Récupération OSER FORET VIVANTE",
+		"libelle" : "OSER FORET VIVANTE",
 		"sousModesCollecte" : "smco_reempdivers",
 		"adresseTemp" : "12 rue Jean-Baptiste Vigier 44400 REZE",
 		"numeroTemp" : "02 51 72 71 00",
@@ -1088,7 +1088,7 @@
 		"horaires" : "",
 		"plagesHoraires" : "",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	}, {
 		"code" : "stco_reemploi69",
 		"longitude" : "-1.633058",
@@ -1096,7 +1096,7 @@
 		"type" : "Décheterie",
 		"latitude" : "47.257112",
 		"description_fr" : "Déchets admis : Déblais et gravats issus du bricolage familial, papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques, batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages.",
-		"libelle" : "Décheterie ORVAULT",
+		"libelle" : "ORVAULT",
 		"sousModesCollecte" : "modco_decheterie",
 		"adresseTemp" : "Rond point Lacroix 44470 ORVAULT",
 		"numeroTemp" : "02 51 78 33 93",
@@ -1104,7 +1104,7 @@
 		"horaires" : "Ouvert tous les jours de 10h à  18h, dimanche compris (sauf jours fériés)",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve-sa-di_10h00-18h00,sauf_ferie",
 		"quartier" : "Hors Nantes nord Loire",
-		"conseils" : " "
+		"conseils" : ",cons_decheterieecopointquartheure,cons_dechetecolimite2metres"
 	}, {
 		"code" : "stco_reemploi70",
 		"longitude" : "-1.634285",
@@ -1112,7 +1112,7 @@
 		"type" : "Récupération",
 		"latitude" : "47.048713",
 		"description_fr" : "- Récupération de tous types de meubles en bois, que nous remettons en état. - Ventes des meubles, qui peuvent être peints, lasurés, cirés...selon les goûts de chacun...et à des prix raisonnables. Venez découvrir nos réalisations dans nos ateliers",
-		"libelle" : "Récupération RETZ'AGIR",
+		"libelle" : "RETZ'AGIR",
 		"sousModesCollecte" : "smco_reempmeuble",
 		"adresseTemp" : "4 Moulin de la Chaussée 44310 ST PHILBERT DE GRAND LIEU",
 		"numeroTemp" : "02 40 78 84 00",
@@ -1120,9 +1120,8 @@
 		"horaires" : "Du lundi au vendredi de 8h à 12h et de 13h à 17h.",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h00-12h00,0101-3112_lu-ma-me-je-ve_13h00-17h00",
 		"quartier" : "Hors Nantes sud Loire",
-		"conseils" : " "
+		"conseils" : ""
 	},
-
 			// Ajout CRN
 			{
 				"code" : "stco_dechetterie_vertou",
