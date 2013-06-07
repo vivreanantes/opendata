@@ -100,11 +100,11 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO Bascule d'une page à l'autre avec paramètre
+		// TODO Terminer la bascule d'une page à l'autre avec paramètre
+		// TODO Améliorer le code source
 		// TODO Ajout photo : vers de terre, panneau solaire thermique
 
-		// TODO améliorer affichage des boutons : http://dev.sencha.com/deploy/ext-3.4.0/examples/layout/vbox.html
-		//                                        http://try.sencha.com/touch/2.0.0/docs/Ext.layout.VBox.2/viewer.html
+		// TODO améliorer affichage des boutons
 		// TODO Optimisation (pages trop longues)
 		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données et les conseils
 		// TODO Faire un déploiement
@@ -115,6 +115,9 @@ Ext
 		// TODO A domicile LONG : faire une relecture des données du tableur 
 		//                 http://www.nantesmetropole.fr/pratique/dechets/les-ordures-menageres-residuelles-23181.kjsp
 		
+		
+ 		// Divers http://dev.sencha.com/deploy/ext-3.4.0/examples/layout/vbox.html
+		//        http://try.sencha.com/touch/2.0.0/docs/Ext.layout.VBox.2/viewer.html
 		/////////// CRN Long terme //////////
 
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli

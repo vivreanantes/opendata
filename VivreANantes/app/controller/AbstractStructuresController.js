@@ -85,9 +85,9 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 						+ this.translate("label_structure_template_detail",
 								stLocale) + description_fr + conseilTraduit
 						+ faqTraduit + "</div>");
-				this.structuresDetail.setTitle(record.data["libelle"]);
 			}
-
+			this.structuresDetail.setTitle(record.data["libelle"]);
+				
 			console.log(record.data);
 
 			console.log(this.structuresDetail);

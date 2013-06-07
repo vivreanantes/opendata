@@ -315,7 +315,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			dataAdvices.each(function(recordAdvice) {
 				for (i in arrayConseils) {
 					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-
 						conseilTraduit = conseilTraduit + "<BR/>"
 								+ thisController.translate("label_Conseil")
 								+ " : <B>" + recordAdvice.raw["libelle"]
@@ -334,6 +333,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		}
 		return conseilTraduit;
 	},
+
 
 	// CRN_FIN
 
@@ -428,7 +428,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				conseils = record.data["conseils"] + ",";
 			}
 			// conseils de catégories de traitement
-			var conseilTraitementsTraduit = "";
 			if (record.data["categorie_traitement"] !== '') {
 				var dataWasteTreatmentsCategories = this
 						.getWasteTreatmentsCategoriesList().getStore()
@@ -441,6 +440,31 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 					}
 				});
 			}
+			if (treatmentCategories === "OUI") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR=green size=4>"
+						+ this.translate("label_OUI") + "</FONT>";
+			} else if (treatmentCategories === "NON") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='red' size=4>"
+						+ this.translate("label_NON") + "</FONT>";
+			} else if (treatmentCategories === "PAS_POUBELLE") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='orange' size=4>"
+						+ this.translate("label_NON") + "</FONT>"
+						+ this.translate("label_pas_poubelle");
+			} else if (treatmentCategories === "OUI_ET_NON") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='red' size=4>"
+						+ this.translate("label_NON") + "</FONT>" + " / "
+						+ "<FONT COLOR=green size=4>"
+						+ this.translate("label_OUI") + " "
+						+ this.translate("label_pour_collecte_bac_jaune")
+						+ "</FONT>";
+			} else {
+				treatmentCategories = "";
+			}
+
 			// conseils
 			conseilTraduit = this
 					.getApplication()
@@ -450,15 +474,23 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				conseilTraduit = conseilTraduit + "<br/>";
 			}
 			// faq
-			var faqTraduit = this
+			/*var faqTraduit = this
 					.getApplication()
 					.getController('VivreANantes.controller.CommentsController')
 					.getCommentString(record.data["code"]);
 			if (faqTraduit != "") {
 				faqTraduit = faqTraduit + "<br/>";
-			}
+			}*/
+			var arraysItemsComments = this.getArraysItemsComments(record.data["code"]);
+			
+			var arraysItemsAdvices = this.getArraysItemsAdvices(conseils);
 			// Modes de collecte
 			var modesDeCollecteTraduit = "";
+			var arrayItemsToShow = new Array();
+			arrayItemsToShow.push({
+				"html" : treatmentCategories + "<br/><br/>Modes de collecte :",
+				"id" : "garbagesdetails_recyclable"
+			});
 			var arrayModesDeCollecte = modesDeCollecte.split(',');
 			// On parcours les modes de collecte
 			if (arrayModesDeCollecte.length > 0) {
@@ -468,17 +500,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				dataCollectMods.each(function(recordCollectMod) {
 					for (i in arrayModesDeCollecte) {
 						if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
-							if (numModCollect != 0) {
-								modesDeCollecteTraduit += ", ";
-							}
-							numModCollect++;
-							modesDeCollecteTraduit += thisController
-									.makeLink("collectModsPanel",
-											arrayModesDeCollecte[i]);
-							/*
-							 * modesDeCollecteTraduit += "<A HREF='#'>" +
-							 * recordCollectMod.raw["libelle"] + "</A>";
-							 */
+							arrayItemsToShow.push(thisController
+									.makeLinkButton("collectModsPanel",
+											arrayModesDeCollecte[i]));
 						}
 					}
 				});
@@ -487,90 +511,58 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
 						+ modesDeCollecteTraduit;
 			}
-			// Recyclable OUI, NON, NON (mais ne pas mettre à la poubelle)
-			// "AA".replace("A/g", "B");
-
-			if (treatmentCategories === "OUI") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='green' size='4'>"
-						+ this.translate("label_OUI") + "</FONT>";
-			} else if (treatmentCategories === "NON") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='red' size='4'>"
-						+ this.translate("label_NON") + "</FONT>";
-			} else if (treatmentCategories === "PAS_POUBELLE") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='orange' size='4'>"
-						+ this.translate("label_NON") + "</FONT>"
-						+ this.translate("label_pas_poubelle");
-			} else if (treatmentCategories === "OUI_ET_NON") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='red' size='4'>"
-						+ this.translate("label_NON") + "</FONT>" + " / "
-						+ "<FONT COLOR='green' size='4'>"
-						+ this.translate("label_OUI") + " "
-						+ this.translate("label_pour_collecte_bac_jaune")
-						+ "</FONT>";
-			} else {
-				treatmentCategories = "";
-			}
-			/*
-			 * treatmentCategories = treatmentCategories
-			 * .replace("PAS_POUBELLE/g", "<DIV STYLE='color:red' size='4'>NON</DIV>
-			 * ne pas mettre à la poubelle."); treatmentCategories =
-			 * treatmentCategories.replace("OUI/g", "<DIV STYLE='color:green'
-			 * size='4'>OUI</DIV>"); treatmentCategories =
-			 * treatmentCategories.replace("NON/g", "<DIV STYLE='color:red'
-			 * size='4'>NON</DIV>");
-			 */
-			/*
-			 * var concerneAussi = ""; if (record.data["concerne_aussi"] !== "") {
-			 * concerneAussi = "<BR/>Concerne aussi : " +
-			 * record.data["concerne_aussi"]; }
-			 */
 
 			var descriptionTraduit = "";
 			if (record.data["description"] != "") {
 				descriptionTraduit = this.translate("label_concerne_aussi")
-						+ " : " + record.data["description"];
+						+ " : " + record.data["description"]+"<br/><br/>";
 			}
-			this.garbageDetail
-					.setTpl("<table border='0'><tr>"
-							+ '<td><img src=resources/images/{image} height=120 /></td>'
-							+ '<td>' + treatmentCategories + '<br/>'
-							+ modesDeCollecteTraduit + '</td>'
-							+ "</tr></table>" + "<div>" + descriptionTraduit
-							+ "</div>" + /* concerneAussi + */conseilTraduit
-							+ faqTraduit);
+			/*
+			 * this.garbageDetail .setTpl("<table border='0'><tr>" + '<td><img
+			 * src=resources/images/{image} height=120 /></td>' + '<td>' +
+			 * treatmentCategories + '<br/>' + modesDeCollecteTraduit + '</td>' + "</tr></table>" + "<div>" +
+			 * descriptionTraduit + "</div>" +
+			 */
+			// image
+			var imageComplet = "<img src='resources/images/" + record.data["image"] + "' width='150px' />";
+			this.garbageDetail.items.items['0'].items.items['0'].setData({
+						'image' : imageComplet
+					})
+			// garbagesdetails_recyclable
+			// this.garbageDetail.items.items['0'].items.items['1'].items.items['0'].setData({'recyclable_string':treatmentCategories
+			// })
+			// garbagesdetails_recyclableetmodesdecollecte
+			// var items = "{ xtype : 'container', layout : 'vbox', id : 'garbagesdetails_recyclableetmodesdecollecte',   items : [  { id : 'garbagesdetails_recyclable', html: 'recyclable : <FONT COLOR=green size=4>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
+
+			this.garbageDetail.items.items['0'].items.items['1'].setItems(arrayItemsToShow);
+			// garbagesdetails_description
+			this.garbageDetail.items.items['1'].setData({
+						'concerne_aussi' : descriptionTraduit
+					})
+			// garbagesdetails_conseils
+			// this.garbageDetail.items.items['2'].setData({'conseils_string' : conseilTraduit})
+			this.garbageDetail.items.items['2'].setItems(arraysItemsAdvices);
+			// garbagesdetails_commentaires
+					this.garbageDetail.items.items['3'].items.items['0'].setItems(arraysItemsComments);
+			/*this.garbageDetail.items.items['3'].items.items['0'].setData({
+						'commentaire_string' : faqTraduit
+					})*/
+
+			// record.data["description_string"] = descriptionTraduit;
+			// record.data["conseils_string"] = "conseilTraduit"+conseilTraduit;
+			// record.data["commentaire_string"] = "faqTraduit"+faqTraduit;
+			/*
+			 * garbageDetail. arrayitemsLine.push(
+			 *  [{ tpl : '<div>{conseilscommentaires_string}</div>' },{ xtype :
+			 * 'button', id : arrayItemsToShow[i]["id"], html :
+			 * arrayItemsToShow[i]["libelle"] + " " + "<br/><img
+			 * src='resources/images/" + arrayItemsToShow[i]["image"] + "'
+			 * width='60px' />" }]);
+			 */
+			// record.data["conseilscommentaireslink_string"] = "";
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);
-			/*
-			 * var me = this; var conseil = record.get('conseils'); var
-			 * adviceStore = Ext.create('VivreANantes.store.AdviceStore', {
-			 * autoLoad : true, listeners : { 'load' : function(store, results,
-			 * successful) { store.each(function(record) { if
-			 * (record.get('code')==='cons_verre') { console.log(record);
-			 * debugger; } }); } } });
-			 */
 
-			// this._application.stores
-			// Ext.getStore("structurestore");
-			/*
-			 * if (record.data["joursCollecteBacsBleus !== "") { var jour =
-			 * "{joursCollecteBacsBleus}"; } else if
-			 * (record.data["joursCollecteBacsBleus !== "") { var jour =
-			 * "{joursCollecteBacsBleus}"; } else { var jour =
-			 * "{joursCollecteTriSac}"; }
-			 */
-			// this.homeCollectModDetail.setTpl("<div>{denominationCompleteVoie}{complementVoie}</div><div>Modes
-			// de collecte : {modesCollecte}</div><div>Jours de collecte : " +
-			// jour + "</div>");
-			// title:record.get('name'),
-			// html: record.get('description_fr'),
-			// scrollable: true,
-			// styleHtmlContent: true
-			// CRN debut
-			//		
 			// Push the show contact view into the navigation view
 			this.getGarbagesView().push(this.garbageDetail);
 		}

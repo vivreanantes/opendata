@@ -544,6 +544,92 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 		return arrayItems;
 	},
+
+	/*
+	 * Renvoie les commentaires
+	 */
+	getArraysItemsComments : function(commentsString) {
+		var result = new Array();
+		var thisController = this;
+		// TODO mettre un bouton à la place du HREF 
+		// commentLink =  this.getApplication().getController("VivreANantes.controller.CommentsController").makeLink("commentsPanel");
+		// On parcours les remarques de la faq
+		var dataFaq = this
+						.getApplication()
+						.getController("VivreANantes.controller.CommentsController").getCommentsList().getStore().getData();
+			dataFaq.each(function(recordFaq) {
+					// TODO utiliser getArrayFromString à la place
+					var arrayElementsFaq = recordFaq.raw["elements"].replace(
+							", /g", ",").replace(" ,/g", ",").split(',');
+					for (i in arrayElementsFaq) {
+						if (arrayElementsFaq[i] === commentsString) {
+							result.push({
+										html : "<B>" + recordFaq.raw["libelle"] + "</B><BR/>" + recordFaq.raw["description"] + "<br/>"
+									});
+						}
+					}
+				});
+		result.push({
+					html : this.makeLink("commentsPanel")
+				});
+		return result;
+
+	},
+
+	getArraysItemsAdvices : function(advicesString) {
+		var result = new Array();
+		var thisController = this;
+		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
+				",").split(',');
+		// On parcours les conseils
+		if (arrayConseils.length > 0) {
+			var dataAdvices = this.getAdvicesList().getStore().getData();
+			var thisController = this;
+			dataAdvices.each(function(recordAdvice) {
+				for (i in arrayConseils) {
+					if (recordAdvice.raw["code"] === arrayConseils[i]) {
+						if (recordAdvice.raw["fiche"] != "") {
+							// lien vers une fiche
+							result.push({
+										xtype : 'container',
+										layout : 'hbox',
+										// style : 'background-color: #759E60;',
+										id : "garbagesdetails_commentaires",
+										items : [{
+											html : "<b>"
+													+ recordAdvice.raw["libelle"]
+													+ "</b><br/>"
+													+ recordAdvice.raw["description"]
+													+ "<br/><br/>",
+											flex : 1
+										}, {
+											xtype : 'container',
+											layout : 'vbox',
+											items : [{
+														xtype : 'button',
+														id : recordAdvice.raw["fiche"],
+														text : "Fiche explicative"
+													}]
+										}]
+									});
+						}
+
+						// pas de lien vers une fiche
+						else {
+							result.push({
+										html : "<b>"
+												+ recordAdvice.raw["libelle"]
+												+ "<br/></b>"
+												+ recordAdvice.raw["description"]
+												+ "<br/><br/>"
+									});
+						}
+					}
+				}
+			});
+		}
+		return result;
+	},
 	/*
 	 * Créer un lien verbeux vers une page de l'application. En paramètre
 	 * l'identifiant : valeur autorisées : garbagePanel, mapPanel,
@@ -635,6 +721,16 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			res = st1 + "showAboutPanel(\"" + idDetail + "\")" + st2
 					+ "A propos" + st3;
 		}
+		return res;
+	},
+
+	makeLinkButton : function(id, idDetail) {
+		var label = this.translate("label_" + idDetail);
+		var res = {
+			'xtype' : 'button',
+			'id' : id + "_" + idDetail,
+			'text' : label
+		};
 		return res;
 	},
 
