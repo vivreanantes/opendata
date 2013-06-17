@@ -3,7 +3,7 @@
  */
 Ext.define('VivreANantes.view.garbages.Garbages', {
 			extend : 'Ext.navigation.View',
-			xtype : 'garbagesView',
+			xtype : 'garbages_xtype',
 			config : {
 				autoDestroy : false,
 				iconCls : 'trash',

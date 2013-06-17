@@ -15,12 +15,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	},
 
 	utilArrayContainObject : function(a, obj) {
-		for (var i = 0; i < a.length; i++) {
-			if (a[i] === obj) {
-				return true;
-			}
-		}
-		return false;
+		return _utilArrayContainObject(a, obj);
 	},
 
 	/**
@@ -34,27 +29,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	},
 
 	/**
-	 * Renvoie la position du premier nombre sur la chaîne. Ex lu200313 renvoie
-	 * 2 (car 0 est la première position) ou -1 si pas trouvé.
+	 * Traduit et met la première lettre en majuscule
 	 */
-
-	utilPosFirstNumberInString : function(string) {
-		var arrayNumbers = new Array("0", "1", "2", "3", "4", "5", "6", "7",
-				"8", "9");
-		var indexLastNumberPosition = string.length;
-		for (var i = 0; i < arrayNumbers.length; i++) {
-			var searchvalue = arrayNumbers[i];
-			if (string.indexOf(searchvalue, 0) != -1
-					&& string.indexOf(searchvalue, 0) < indexLastNumberPosition) {
-				indexLastNumberPosition = string.indexOf(searchvalue, 0);
-			}
-		}
-		if (indexLastNumberPosition == string.length) {
-			indexLastNumberPosition = -1;
-		}
-		return indexLastNumberPosition;
+	translateWithUpperFirstLetter : function(result, stLocale) {
+		return this.stringUpperFirstLetter(this.translate(result, stLocale));
 	},
-
 	/*
 	 * Retourne un objet String correspondant à l'année actuelle. Exemple "2014"
 	 */
@@ -84,24 +63,16 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	utilGetDayOfWeek : function(d, locale) {
 
 		var weekday = new Array(7);
-		if (locale == "en") {
-			weekday[0] = "Sunday";
-			weekday[1] = "Monday";
-			weekday[2] = "Tuesday";
-			weekday[3] = "Wednesday";
-			weekday[4] = "Thursday";
-			weekday[5] = "Friday";
-			weekday[6] = "Saturday";
-		} else {
-			weekday[0] = "Lundi";
-			weekday[1] = "Mardi";
-			weekday[2] = "Mercredi";
-			weekday[3] = "Jeudi";
-			weekday[4] = "Vendredi";
-			weekday[5] = "Samedi";
-			weekday[6] = "Dimanche";
-		}
-		return weekday[d.getDay()];
+		weekday[0] = "label_dimanche";
+		weekday[1] = "label_lundi";
+		weekday[2] = "label_mardi";
+		weekday[3] = "label_mercredi";
+		weekday[4] = "label_jeudi";
+		weekday[5] = "label_vendredi";
+		weekday[6] = "label_samedi";
+		var day = weekday[d.getDay()];
+		var result = this.translate(day, "fr");
+		return result;
 	},
 
 	utilGetDayOfWeekTwoCharacters : function(d) {
@@ -123,377 +94,47 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	},
 
 	/*
-	 * Traduit un libellé. Si on ne le trouve pas renvoie la clé.
+	 * Traduit un libellé. Si on ne le trouve pas, renvoie la clé.
 	 */
 
 	translate : function(stKey, stLocale) {
-		var result = stKey;
-		var map = {
-			"label_Conseil" : {
-				"en" : "Advise",
-				"fr" : "Conseil"
-			},
-			"label_recyclable" : {
-				"en" : "recycling",
-				"fr" : "recyclable"
-			},
-			"label_ou" : {
-				"en" : "or",
-				"fr" : "ou"
-			},
-			"label_pour_collecte_bac_jaune" : {
-				"en" : "only for yellow bacs",
-				"fr" : "pour les bacs jaunes"
-			},
-			"label_OUI" : {
-				"en" : "YES",
-				"fr" : "OUI"
-			},
-			"label_NON" : {
-				"en" : "NO",
-				"fr" : "NON"
-			},
-			"label_pas_poubelle" : {
-				"en" : ", nut do not put on the trash",
-				"fr" : ", mais ne pas mettre à la poubelle"
-			},
-			"label_comment" : {
-				"en" : "Comment",
-				"fr" : "Commentez"
-			},
-			"label_sauf_ferie" : {
-				"en" : "except official holiday",
-				"fr" : "sauf jours fériés"
-			},
-			"label_de" : {
-				"en" : "from",
-				"fr" : "de"
-			},
-			"label_le" : {
-				"en" : " ",
-				"fr" : "le"
-			},
-			"label_du" : {
-				"en" : "from",
-				"fr" : "du"
-			},
-			"label_toutelannee" : {
-				"en" : "All the year",
-				"fr" : "Toute l'année"
-			},
-			"label_au" : {
-				"en" : "to the",
-				"fr" : "au"
-			},
-			"label_a" : {
-				"en" : "to",
-				"fr" : "à"
-			},
-			"label_h" : {
-				"en" : "h",
-				"fr" : "h"
-			},
-			"label_et" : {
-				"en" : "and",
-				"fr" : "et"
-			},
-			"label_de" : {
-				"en" : "of",
-				"fr" : "de"
-			},
-			"label_modco_contmpb" : {
-				"en" : "",
-				"fr" : "Conteneur métal / plastique / brique"
-			},
-			"label_modco_contpapiercarton" : {
-				"en" : "",
-				"fr" : "Conteneur papier-carton"
-			},
-			"label_modco_contverre" : {
-				"en" : "",
-				"fr" : "Conteneur verre"
-			},
-			"label_modco_bacbleu" : {
-				"en" : "",
-				"fr" : "Bac bleu"
-			},
-			"label_modco_bacjaune" : {
-				"en" : "",
-				"fr" : "Bac jaune"
-			},
-			"label_modco_sacbleu" : {
-				"en" : "",
-				"fr" : "Sac bleu"
-			},
-			"label_modco_sacjaune" : {
-				"en" : "",
-				"fr" : "Sac jaune"
-			},
-			"label_modco_ecopoint" : {
-				"en" : "",
-				"fr" : "Ecopoint"
-			},
-			"label_modco_ecotox" : {
-				"en" : "",
-				"fr" : "Ecotox"
-			},
-			"label_modco_reemploi" : {
-				"en" : "",
-				"fr" : "Réeemploi"
-			},
-			"label_modco_pointsdevente" : {
-				"en" : "",
-				"fr" : "Points de vente"
-			},
-			"label_modco_decheterie" : {
-				"en" : "",
-				"fr" : "Décheteries"
-			},
-			"label_modco_compostage" : {
-				"en" : "",
-				"fr" : "Compostage"
-			},
-			"label_modco_encombrant" : {
-				"en" : "",
-				"fr" : "Encombrant"
-			},
-			"label_smco_conteneurlerelais" : {
-				"en" : "",
-				"fr" : "Conteneur Le Relais"
-			},
-			"label_smco_reempelectromenag" : {
-				"en" : "",
-				"fr" : "Réemploi électroménager"
-			},
-			"label_smco_reempcartouchetoner" : {
-				"en" : "",
-				"fr" : "Réemploi cartouches d'encres/tuners imprimantes"
-			},
-			"label_smco_reempjouet" : {
-				"en" : "",
-				"fr" : "Réemploi de jouets"
-			},
-			"label_smco_reempmeuble" : {
-				"en" : "",
-				"fr" : "Réemploi de meuble"
-			},
-			"smco_reempdivers" : {
-				"en" : "",
-				"fr" : "Réemploi divers"
-			},
-			"label_smco_reempinfo" : {
-				"en" : "",
-				"fr" : "Réemploi informatique"
-			},
-			"label_smco_vendeurvoiture" : {
-				"en" : "",
-				"fr" : "Vendeur et casse automobile"
-			},
-			"labelsmco_reempelectromenag" : {
-				"en" : "",
-				"fr" : "Réemploi appareils électroménager"
-			},
-			"label_smco_reemplivreCD" : {
-				"en" : "",
-				"fr" : "Réemploi des livres, CDs, BDs, DVDs..."
-			},
-			"label_smco_reempvet" : {
-				"en" : "",
-				"fr" : "Réemploi des vêtements"
-			},
-			"label_smco_reempdivers" : {
-				"en" : "",
-				"fr" : "Réemploi d'objets divers"
-			},
-			"label_smco_batiment" : {
-				"en" : "",
-				"fr" : ""
-			},
-			"label_smco_vaisselle" : {
-				"en" : "",
-				"fr" : "Réemploi de la vaisselle"
-			},
-			"label_smco_papier" : {
-				"en" : "",
-				"fr" : "Recyclage du papier par des associations."
-			},
-			"label_smco_plastique" : {
-				"en" : "",
-				"fr" : "Recyclage du plastique par des associations."
-			},
-			"label_smco_electrique" : {
-				"en" : "",
-				"fr" : "Recyclage du matériel électrique par des associations."
-			},
-			"label_smco_vendeurcartoucheencre" : {
-				"en" : "",
-				"fr" : "Vendeur de cartouche d'encre"
-			},
-			"label_smco_vendeurpile" : {
-				"en" : "",
-				"fr" : "Vendeur de pile"
-			},
-			"label_smco_reprise" : {
-				"en" : "",
-				"fr" : "La reprise par les magasins"
-			},
-			"label_smco_vendeur_lampe_eco" : {
-				"en" : "",
-				"fr" : "Vendeur lampe économie d'énergie"
-			},
-			"label_smco_vendeurvoiture" : {
-				"en" : "",
-				"fr" : "Vendeur et casse automobile"
-			},
-			"label_smco_recupsupermarche" : {
-				"en" : "",
-				"fr" : "Réemploi dans les supermarchés"
-			},
-			"label_smco_recupmagasinbrico" : {
-				"en" : "",
-				"fr" : "Réemploi dans les magasins de bricolage"
-			},
-			"label_smco_garage" : {
-				"en" : "",
-				"fr" : "Garage, stations services"
-			},
-			"label_smco_velo" : {
-				"en" : "",
-				"fr" : "Réemploi des vélos"
-			},
-			"label_smco_pharmacie" : {
-				"en" : "",
-				"fr" : "Pharmacie"
-			},
-			"label_cu_papierscartons" : {
-				"en" : "",
-				"fr" : "Papiers-cartons"
-			},
-			"label_cu_metal" : {
-				"en" : "",
-				"fr" : "Métal"
-			},
-			"label_cu_vertbois" : {
-				"en" : "",
-				"fr" : "Déchets verts / bois"
-			},
-			"label_cu_verrevaisselle" : {
-				"en" : "",
-				"fr" : "Verre / Vaisselle / Pots"
-			},
-			"label_cu_vetementtissu" : {
-				"en" : "",
-				"fr" : "Vêtements / tissu"
-			},
-			"label_cu_encombrant" : {
-				"en" : "",
-				"fr" : "Encombrants"
-			},
-			"label_cu_divers" : {
-				"en" : "",
-				"fr" : "Divers"
-			},
-			"label_cu_nourriture" : {
-				"en" : "",
-				"fr" : "Nourriture"
-			},
-			"label_cu_electronique" : {
-				"en" : "",
-				"fr" : "Électronique"
-			},
-			"label_cu_toxique" : {
-				"en" : "",
-				"fr" : "Toxique"
-			},
-			"label_scu_toxiquejardin" : {
-				"en" : "",
-				"fr" : "Jardin"
-			},
-			"label_scu_toxiquegarage" : {
-				"en" : "",
-				"fr" : "Garage"
-			},
-			"label_scu_toxiquecuisine" : {
-				"en" : "",
-				"fr" : "Cuisine"
-			},
-			"label_scu_toxiquesdb" : {
-				"en" : "",
-				"fr" : "Salle de bain"
-			},
-			"label_scu_toxiquebrico" : {
-				"en" : "",
-				"fr" : "Bricolage"
-			},
-			"label_scu_toxiqueparasite" : {
-				"en" : "",
-				"fr" : "Parasite"
-			},
-			"label_scu_toxiquedivers" : {
-				"en" : "",
-				"fr" : "Divers"
-			},
-			"label_concerne_aussi" : {
-				"en" : "Also concern",
-				"fr" : "Concerne aussi"
-			},
-			"label_resultat_recherche" : {
-				"en" : "Search result",
-				"fr" : "Résultat de la recherche"
-			},
-			"label_structure_template_detail" : {
-				"en" : "Type : {type} - {soustype} <BR/>{description_fr} <BR/>Schedules : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>Phone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
-				"fr" : "Type : {type} - {soustype} <BR/>{description_fr} <BR/><BR/>Horaires : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>Téléphone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
-			},
-			"label_trisac_template_detail" : {
-				"en" : "{description_fr} <BR/>Schedules : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
-				"fr" : "{description_fr} <BR/>Horaires : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
-			}
-
-		};
-		if (map[stKey] == null) {
-			result = stKey;
-		} else if (stLocale == "en" && map[stKey]["en"] != null) {
-			result = map[stKey]["en"];
-		} else if (map[stKey]["fr"] != null) {
-			result = map[stKey]["fr"];
-		}
-		return result;
+		// invoque la fonction définie dans translation.js
+		return _translate(stKey, stLocale);
 	},
 
 	IMAGE_DIR : "resources/images/",
 
-	/*
-	 * Convertit un jour dans sa chaine de caractère. Ex "01" devient "janvier")
+	/**
+	 * Convertit un jour dans sa chaine de caractère. Ex "01" devient "janvier".
 	 */
-
 	convertDayNumberToString : function(stMonth, stLocale) {
 		var result = "";
 		if (stMonth == "01") {
-			result = "janvier";
+			result = "label_janvier";
 		} else if (stMonth == "02") {
-			result = "février";
+			result = "label_fevrier";
 		} else if (stMonth == "03") {
-			result = "mars";
+			result = "label_mars";
 		} else if (stMonth == "04") {
-			result = "avril";
+			result = "label_avril";
 		} else if (stMonth == "05") {
-			result = "mai";
+			result = "label_mai";
 		} else if (stMonth == "06") {
-			result = "juin";
+			result = "label_juin";
 		} else if (stMonth == "07") {
-			result = "juillet";
+			result = "label_juillet";
 		} else if (stMonth == "08") {
-			result = "août";
+			result = "label_aout";
 		} else if (stMonth == "09") {
-			result = "septembre";
+			result = "label_septembre";
 		} else if (stMonth == "10") {
-			result = "octobre";
+			result = "label_octobre";
 		} else if (stMonth == "11") {
-			result = "novembre";
+			result = "label_novembre";
 		} else if (stMonth == "02") {
-			result = "décembre";
+			result = "label_decembre";
 		}
+		result = this.translate(result, stLocale);
 		return result;
 	},
 
@@ -545,45 +186,91 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return arrayItems;
 	},
 
-	/*
-	 * Renvoie les commentaires
+	/**
+	 * Renvoie les items (les éléments fils d'un container) correspondant à la
+	 * partie "commentaires" d'une page
+	 * 
+	 * @params commentsString chaine de caractère correspondant au code de
+	 *         l'élément dont on recherche des commentaires (ex :
+	 *         "dec_bouchons")
 	 */
-	getArraysItemsComments : function(commentsString) {
+	getItemsComments : function(commentsString) {
 		var result = new Array();
 		var thisController = this;
-		// TODO mettre un bouton à la place du HREF 
-		// commentLink =  this.getApplication().getController("VivreANantes.controller.CommentsController").makeLink("commentsPanel");
+		// TODO mettre un bouton à la place du HREF
+		// commentLink =
+		// this.getApplication().getController("VivreANantes.controller.CommentsController").makeLink("commentsPanel");
 		// On parcours les remarques de la faq
-		var dataFaq = this
-						.getApplication()
-						.getController("VivreANantes.controller.CommentsController").getCommentsList().getStore().getData();
-			dataFaq.each(function(recordFaq) {
+		var dataFaq = this.getApplication()
+				.getController("VivreANantes.controller.CommentsController")
+				.getCommentsList().getStore().getData();
+		dataFaq.each(function(recordFaq) {
 					// TODO utiliser getArrayFromString à la place
 					var arrayElementsFaq = recordFaq.raw["elements"].replace(
 							", /g", ",").replace(" ,/g", ",").split(',');
 					for (i in arrayElementsFaq) {
 						if (arrayElementsFaq[i] === commentsString) {
 							result.push({
-										html : "<B>" + recordFaq.raw["libelle"] + "</B><BR/>" + recordFaq.raw["description"] + "<br/>"
+										html : "<B>" + recordFaq.raw["libelle"]
+												+ "</B><BR/>"
+												+ recordFaq.raw["description"]
+												+ "<br/>"
 									});
 						}
 					}
 				});
+		// TODO Ajout d'un formulaire
 		result.push({
-					html : this.makeLink("commentsPanel")
+					xtype : 'commentsForm_xtype'
 				});
 		return result;
-
 	},
 
-	getArraysItemsAdvices : function(advicesString) {
+	/**
+	 * Affecte les items (les éléments fils d'un container) à un élement dont
+	 * l'identifiant est elementId de l'élément view.
+	 */
+	setItemsElement : function(view, elementId, arrayItems) {
+		var theItems = view.items.items;
+		for (var i = 0; i < theItems.length; i++) {
+			if (theItems[i].id == elementId) {
+				// Cet élément devient actif
+				theItems[i].setItems(arrayItems);
+			}
+		};
+	},
+
+	/**
+	 * Affecte les datas d'un élement dont l'identifiant est elementId de
+	 * l'élément view.
+	 */
+	setDataElement : function(view, elementId, objectData) {
+		var theItems = view.items.items;
+		for (var i = 0; i < theItems.length; i++) {
+			if (theItems[i].id == elementId) {
+				// Cet élément devient actif
+				theItems[i].setData(objectData);
+			}
+		};
+	},
+	/**
+	 * Renvoie les items (les éléments fils d'un container) correspondant à la
+	 * partie "conseils" d'une page
+	 * 
+	 * @params advicesString chaine de caractère listant les codes des conseils
+	 *         (ex : ",cons_1,cons2,cons3")
+	 */
+	getItemsAdvices : function(advicesString) {
 		var result = new Array();
 		var thisController = this;
 		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
 				",").split(',');
 		// On parcours les conseils
 		if (arrayConseils.length > 0) {
-			var dataAdvices = this.getAdvicesList().getStore().getData();
+			var dataAdvices = this
+					.getApplication()
+					.getController("VivreANantes.controller.GarbagesController")
+					.getAdvicesList().getStore().getData();
 			var thisController = this;
 			dataAdvices.each(function(recordAdvice) {
 				for (i in arrayConseils) {
@@ -606,10 +293,12 @@ Ext.define('VivreANantes.controller.AbstractController', {
 											xtype : 'container',
 											layout : 'vbox',
 											items : [{
-														xtype : 'button',
-														id : recordAdvice.raw["fiche"],
-														text : "Fiche explicative"
-													}]
+												xtype : 'button',
+												id : "informations"
+														+ "-"
+														+ recordAdvice.raw["fiche"],
+												text : "Fiche explicative"
+											}]
 										}]
 									});
 						}
@@ -630,13 +319,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		return result;
 	},
-	/*
+
+	/**
 	 * Créer un lien verbeux vers une page de l'application. En paramètre
 	 * l'identifiant : valeur autorisées : garbagePanel, mapPanel,
 	 * informationsPanel, structuresPanel, reusesPanel, collectModsPanel,
 	 * homeCollectsModsPanel, trisacsPanel, commentsPanel, aboutPanel
 	 */
-	makeTextLink : function(id) {
+	makeTextLink_old : function(id) {
 		var res = "";
 		if (id == "garbagePanel") {
 			res = "<br/>Voir les " + this.makeLink(id)
@@ -724,11 +414,15 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return res;
 	},
 
+	/**
+	 * Construit un bouton dont l'identifiant est mainPageXtype +
+	 * elementToShowInPage (ex : "garbagesView-dec_aerosols").
+	 */
 	makeLinkButton : function(id, idDetail) {
 		var label = this.translate("label_" + idDetail);
 		var res = {
 			'xtype' : 'button',
-			'id' : id + "_" + idDetail,
+			'id' : id + "-" + idDetail,
 			'text' : label
 		};
 		return res;
@@ -741,9 +435,82 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *            id
 	 * @return {}
 	 */
-	makeSendLink : function(id) {
+	makeSendLink_old : function(id) {
 		return "<a href='#' onClick='Javascript:sendMail(id)'>"
 				+ this.translate("label_comment") + "</a>";
+	},
+
+	/**
+	 * Effectue le changement de page
+	 * 
+	 * @param {}
+	 *            buttonId : mainPageXtype + elementToShowInPage (ex :
+	 *            "garbagesView-dec_aerosols")
+	 */
+	manageLinkButtons : function(buttonId) {
+
+		// On décompose buttonId pour initialiser mainPageXtype et
+		// elementToShowInPage
+		var arrayButtonsId = buttonId.split("-");
+		var mainPageXtype = arrayButtonsId[0];
+		if (arrayButtonsId.length > 1) {
+			var elementToShowInPage = arrayButtonsId[1];
+		}
+
+		// On affiche le déchet
+		if (mainPageXtype == "garbages_xtype") {
+			var myController = this
+					.getApplication()
+					.getController("VivreANantes.controller.GarbagesController");
+			var datas = myController.getGarbagesList().getStore().getData();
+			datas.each(function(record) {
+						if (record.raw["code"] == elementToShowInPage) {
+							// On doit effacer le filtre pour être sur que la
+							// liste contient bien l'élément
+							store.clearFilter();
+							myController.showGarbagesDetail(null, null, null,
+									record);
+						}
+					});
+		}
+		// OU On affiche le mode de collecte
+		else if (mainPageXtype == "collectMods_xtype") {
+			var myController = this
+					.getApplication()
+					.getController("VivreANantes.controller.CollectModsController");
+			if (elementToShowInPage != null) {
+				myController.showDetails(elementToShowInPage);
+			}
+		}
+		// OU On affiche la fiche explicative
+		else if (mainPageXtype == "informations") {
+			var myController = this
+					.getApplication()
+					.getController("VivreANantes.controller.InformationsController");
+			var datas = myController.getInformationsList().getStore().getData();
+			datas.each(function(record) {
+						// bascule vers la page
+						if (record.raw["code"] == elementToShowInPage) {
+							myController.showInformations(null, null, null,
+									record);
+						}
+					});
+
+		}
+		// OU On affiche le commentaire
+		else if (mainPageXtype == "comments_xtype") {
+
+		}
+
+		// On recherche la page dont le xtype correspond au buttonId
+		var mainItems = Ext.getCmp("mainView").items.items;
+		for (var i = 0; i < mainItems.length; i++) {
+			if (mainItems[i].xtype == mainPageXtype) {
+				// Cet élément devient actif
+				Ext.getCmp("mainView").setActiveItem(i - 1);
+			}
+		};
+
 	}
 
 });

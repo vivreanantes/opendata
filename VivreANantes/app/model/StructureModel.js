@@ -23,9 +23,17 @@ Ext.define('VivreANantes.model.StructureModel', {
 							defaultValue:'d'
 						},{
 							name:'src',
-							type:'string'
+							type:'string',
+							// On affiche la source uniquement si pas MieuxTrierANantes
+							convert: function(value, record) {
+								if (value=="MieuxTrierANantes") {
+									return "";
+								} else {
+									return "<BR/><I>Source : "+value + "</I>";
+								}
+							}
 						},{
-							name:'numeroTelephone',
+							name:'numeroTemp',
 							type:'string'
 						},{
 							name:'adresseTemp',

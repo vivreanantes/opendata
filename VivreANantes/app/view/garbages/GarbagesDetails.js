@@ -1,6 +1,6 @@
 Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 	extend : 'Ext.Container',
-	xtype : 'garbagesdetails',
+	xtype : 'garbagesDetails_xtype',
 	record : null,
 	config : {
 		title : 'Détails',

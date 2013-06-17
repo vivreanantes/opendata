@@ -8,6 +8,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 	config : {
 		refs : {
 			structuresView : "reusesView_xtype",
+			structuresDetail : "reusesDetails_xtype",
 			reusesList : "reusesList_xtype",
 			reusesFormSelectQuartier : "#reusesFormSelectQuartier",
 			reusesFormSelectType : "#reusesFormSelectType",

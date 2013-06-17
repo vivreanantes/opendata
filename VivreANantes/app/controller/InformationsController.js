@@ -3,18 +3,17 @@ Ext.define('VivreANantes.controller.InformationsController', {
     
     config: {
         refs: {
-        	informations : 'informations'
+        	informations : 'informations',
+			informationsList : 'informationsList_xtype'
         },
         control: {
-        	// fonctionne comme une CSS selecteur
-            'informations list' : {
+            informationsList : {
             	itemtap : 'showInformations'
             }
         }
     },
     
     showInformations: function(list, index, element, record) {
-        // console.log(record.get('title'));
     	this.getInformations().push({
     		xtype: 'panel',
     		title:record.get('libelle'),

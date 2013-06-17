@@ -58,39 +58,67 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			if (!this.structuresDetail) {
 				this.structuresDetail = Ext
 						.create("VivreANantes.view.structures.StructuresDetails");
-
-				// description_fr
-				var description_fr = "";
-				if (record.data["description_fr"] !== "") {
-					description_fr = record.data["description_fr"]
-							+ "<br/><br/>";
-				}
-				// calcule la chaîne correspondant aux commentaires
-				var faqTraduit = this
-						.getApplication()
-						.getController("VivreANantes.controller.CommentsController")
-						.getCommentString(record.data["code"]);
-				// calcule la chaîne correspondant aux conseils
-				var conseils = "";
-				if (record.data["conseils"] !== "") {
-					conseils = record.data["conseils"] + ",";
-				}
-				conseilTraduit = this
-						.getApplication()
-						.getController("VivreANantes.controller.GarbagesController")
-						.getAdviceString(conseils);
-				// fabrique la chaîne affichée sur la page détail
-				this.structuresDetail.setTpl("<div>"
-						// this.structuresDetail.setHtml("<div>"
-						+ this.translate("label_structure_template_detail",
-								stLocale) + description_fr + conseilTraduit
-						+ faqTraduit + "</div>");
 			}
-			this.structuresDetail.setTitle(record.data["libelle"]);
-				
-			console.log(record.data);
+			// Ajout de la description
+			var descriptionTraduit = "";
+			if (record.data["description_fr"] != null
+					&& record.data["description_fr"] !== "") {
+				descriptionTraduit = record.data["description_fr"]
+						+ "<br/><br/>";
+			}
+			if (record.data["adresseTemp"] != null
+					&& record.data["adresseTemp"] !== "") {
+				var label = this.stringUpperFirstLetter(this
+						.translate("label_adresse"));
+				descriptionTraduit += label + " : "
+						+ record.data["adresseTemp"] + "<br/><br/>";
+			}
+			if (record.data["numeroTemp"] != null
+					&& record.data["numeroTemp"] !== "") {
+				var label = this.stringUpperFirstLetter(this
+						.translate("label_telephone"));
+				descriptionTraduit += label + " : " + record.data["numeroTemp"]
+						+ "<br/><br/>";
+			}
+			if (record.data["plagesHoraires2"] != null
+					&& record.data["plagesHoraires2"] !== "") {
+				var label = this.stringUpperFirstLetter(this
+						.translate("label_horaires"));
+				descriptionTraduit += label + " : "
+						+ record.data["ouvertAujourdhuiEtDemain"] + "<br/>"
+						+ record.data["plagesHoraires2"] + "<br/><br/>";
+			}
+			if (record.data["src"] != null
+					&& record.data["src"] !== "") {
+				var label = this.stringUpperFirstLetter(this
+						.translate("label_source"));
+				descriptionTraduit += label + " : " + record.data["src"]
+						+ "<br/><br/>";
+			}
+			this.setDataElement(this.structuresDetail,
+					"structuresDetails_description", {
+						'description' : descriptionTraduit
+					})
 
-			console.log(this.structuresDetail);
+			// Ajout des conseils
+			var conseils = "";
+			if (record.data["conseils"] !== "") {
+				conseils = record.data["conseils"] + ",";
+			}
+			var arraysItemsAdvices = this.getItemsAdvices(conseils);
+			this.setItemsElement(this.structuresDetail,
+					"structuresDetails_advices", arraysItemsAdvices);
+
+			// Ajout des commentaires
+			var code = record.data["code"];
+			this.setItemsElement(this.structuresDetail,
+					"structuresDetails_comments", this.getItemsComments(code));
+
+			// Affectation du titre
+			var title = "<I>" + record.data["type"] + "</I>" + " "
+					+ this.stringUpperFirstLetter(record.data["libelle"]);
+			this.structuresDetail.setTitle(title);
+
 			// Bind the record onto the show contact view
 			this.structuresDetail.setData(record.data);
 			// Push this view into the navigation view
@@ -181,6 +209,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			"modesCollecte" : objStructures.get("modesCollecte"),
 			"sousModesCollecte" : objStructures.get("sousModesCollecte"),
 			"adresseTemp" : objStructures.get("adresseTemp"),
+			"src" : objStructures.get("src"),
+			"numeroTemp" : objStructures.get("numeroTemp"),
 			"quartier" : objStructures.get("quartier"),
 			"conseils" : objStructures.get("conseils"),
 			"plagesHoraires" : objStructures.get("plagesHoraires"),
@@ -190,7 +220,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		};
 	},
 
-	getDaysOfWeekString : function(strsDaysOfWeek) {
+	getDaysOfWeekString : function(strsDaysOfWeek, stLocale) {
 
 		var result = "";
 		// 2. Si pas lu-ma, ma-me, me-je, je-ve, ve-sa, sa-di, on met de
@@ -201,11 +231,11 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			if (strsDaysOfWeek != "lu-ma" && strsDaysOfWeek != "ma-me"
 					&& strsDaysOfWeek != "me-je" && strsDaysOfWeek != "je-ve"
 					&& strsDaysOfWeek != "ve-sa" && strsDaysOfWeek != "sa-di") {
-				result = "du " + this.getDayString(dayOfWeekStart, 1) + " au "
-						+ this.getDayString(dayOfWeekEnd, 1);
+				result = "du " + this.getDayString(dayOfWeekStart, 1, stLocale) + " au "
+						+ this.getDayString(dayOfWeekEnd, 1, stLocale);
 			} else {
-				result = this.getDayString(dayOfWeekStart, 1) + " et "
-						+ this.getDayString(dayOfWeekEnd, 1);
+				result = this.getDayString(dayOfWeekStart, 1, stLocale) + " et "
+						+ this.getDayString(dayOfWeekEnd, 1, stLocale);
 			}
 		} else {
 			var posFirstNumber = this
@@ -216,7 +246,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			var arDays = strsDaysOfWeek.split("-");
 			for (var i = 0; i < arDays.length; i++) {
 				var day = arDays[i];
-				result += this.getDayString(day, i);
+				result += this.getDayString(day, i, stLocale);
 				if (i != (arDays.length - 1)) {
 					result += ", ";
 				}
@@ -225,23 +255,47 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		return result;
 	},
 
-	getDayString : function(strDay, firstLetterInUpper) {
+
+	/**
+	 * Renvoie la position du premier nombre sur la chaîne. Ex lu200313 renvoie
+	 * 2 (car 0 est la première position) ou -1 si pas trouvé.
+	 */
+
+	utilPosFirstNumberInString : function(string) {
+		var arrayNumbers = new Array("0", "1", "2", "3", "4", "5", "6", "7",
+				"8", "9");
+		var indexLastNumberPosition = string.length;
+		for (var i = 0; i < arrayNumbers.length; i++) {
+			var searchvalue = arrayNumbers[i];
+			if (string.indexOf(searchvalue, 0) != -1
+					&& string.indexOf(searchvalue, 0) < indexLastNumberPosition) {
+				indexLastNumberPosition = string.indexOf(searchvalue, 0);
+			}
+		}
+		if (indexLastNumberPosition == string.length) {
+			indexLastNumberPosition = -1;
+		}
+		return indexLastNumberPosition;
+	},
+
+	getDayString : function(strDay, firstLetterInUpper, stLocale) {
 		result = strDay;
 		if (strDay == "lu") {
-			result = "lundi"
+			result = "label_lundi"
 		} else if (strDay == "ma") {
-			result = "mardi"
+			result = "label_mardi"
 		} else if (strDay == "me") {
-			result = "mercredi"
+			result = "label_mercredi"
 		} else if (strDay == "je") {
-			result = "jeudi"
+			result = "label_jeudi"
 		} else if (strDay == "ve") {
-			result = "vendredi"
+			result = "label_vendredi"
 		} else if (strDay == "sa") {
-			result = "samedi"
+			result = "label_samedi"
 		} else if (strDay == "di") {
-			result = "dimanche"
+			result = "label_dimanche"
 		}
+		result = this.translate(result, stLocale);
 		if (firstLetterInUpper == 0) {
 			this.stringUpperFirstLetter(result);
 		}
@@ -383,11 +437,11 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		}
 
 		if (bOuvertAujourdhui == true && bOuvertDemain == true) {
-			var stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>Ouvert aujourd'hui et demain</FONT>"
+			var stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"+ this.translate("label_ouvert_aujourdhui_et_demain", stLocale)+"</FONT>"
 		} else if (bOuvertAujourdhui == true && bOuvertDemain == false) {
-			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>Ouvert aujourd'hui</FONT>"
+			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"+ this.translate("label_ouvert_aujourdhui", stLocale)+"</FONT>"
 		} else if (bOuvertAujourdhui == false && bOuvertDemain == true) {
-			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>Ouvert demain</FONT>"
+			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"+ this.translate("label_ouvert_demain", stLocale)+"</FONT>"
 		} else {
 			var stOuvertAujourdhuiEtDemain = " ";
 		}
@@ -456,7 +510,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		var stLabelTouteLAnnee = this.translate("label_toutelannee", stLocale);
 		var stLabelAu = this.translate("label_au", stLocale);
 
-		var stDays = this.getDaysOfWeekString(daysOfWeekZone);
+		var stDays = this.getDaysOfWeekString(daysOfWeekZone, stLocale);
 		if (allDays == true) {
 			if (jourDebut == "01" && moisDebut == "01" && jourFin == "31"
 					&& moisFin == "12") {
@@ -546,7 +600,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		return this.getSpecialDay(tomorrow);
 	},
 
-	SAUF_FERIE : "sauf_ferie",
+/*	SAUF_FERIE : "sauf_ferie",
 	FERIE_SAINT_SYLVESTRE : "sauf_saint_sylvestre",
 	FERIE_PAQUES : "sauf_paques",
 	FERIE_FETE_TRAVAIL : "sauf_fete_travail",
@@ -557,7 +611,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	FERIE_ASSOMPTION : "sauf_assomption",
 	FERIE_LA_TOUSSAINT : "sauf_la_toussaint",
 	FERIE_ARMISTICE : "sauf_armistice",
-	FERIE_NOEL : "sauf_noel",
+	FERIE_NOEL : "sauf_noel",*/
 
 	/**
 	 * Renvoie une chaine correspondant au nom du jour ferie de la date fournie.
@@ -565,7 +619,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	 */
 	getSpecialDay : function(date) {
 
-		var jourDateJJ = date.getDate();
+		return _getSpecialDay(date);
+		/*var jourDateJJ = date.getDate();
 		// on ajoute le "0" pour avoir "01"
 		if (jourDateJJ < 10) {
 			jourDateJJ = "0" + jourDateJJ;
@@ -605,10 +660,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		var arrayNoel = new Array("251213", "251214", "251215", //
 				"251216", "251217", "251218");
 
-		// TODO Test : à supprimer
-		if (dayString == "230513") {
-			return this.FERIE_PAQUES;
-		}
 		if (this.utilArrayContainObject(arraySaintSylvestre, dayString)) {
 			return this.FERIE_SAINT_SYLVESTRE;
 		} else if (this.utilArrayContainObject(arrayPaques, dayString)) {
@@ -633,12 +684,11 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			return this.FERIE_NOEL;
 		} else {
 			return "";
-		}
+		}*/
 	},
 
 	/**
 	 * Valorise les options des listes déroulantes "quartier"
-	 * @param {} selectField
 	 */
 	setOptionsQuartier : function(selectField) {
 

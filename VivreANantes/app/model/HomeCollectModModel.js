@@ -64,8 +64,9 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							}
 						}, {
 							name : 'src',
+							// On affiche la source uniquement si pas MieuxTrierANantes
 							convert: function(value, record) {
-								if (value=="OpenDataNantes") {
+								if (value=="MieuxTrierANantes") {
 									return "";
 								} else {
 									return "<BR/><I>Source : "+value + "</I>";

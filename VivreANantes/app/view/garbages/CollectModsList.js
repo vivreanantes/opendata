@@ -1,6 +1,6 @@
 Ext.define('VivreANantes.view.garbages.CollectModsList', {
 	extend : 'Ext.List',
-	xtype : 'collectModList',
+	xtype : 'collectModList_xtype',
 	config : {
 		iconCls : 'home',
 		title : 'Modes de collectes',

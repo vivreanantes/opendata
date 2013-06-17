@@ -48,6 +48,7 @@ Ext
 			'game.Guess',
 			// Informations
 			'information.Informations',
+			'information.InformationsList',
 			// A propos
 			'about.Description',
 			// Calendrier
@@ -100,7 +101,9 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO Terminer la bascule d'une page à l'autre avec paramètre
+		// TODO transformation json / menu
+		// TODO utiliser un emethode this.getLcoale() dans this.translate
+		// TODO Brancher le formulaire de commentaire sur un script SGI
 		// TODO Améliorer le code source
 		// TODO Ajout photo : vers de terre, panneau solaire thermique
 
@@ -114,7 +117,6 @@ Ext
 		// TODO Informations : améliorer la fiche sur les panneaux solaires 
 		// TODO A domicile LONG : faire une relecture des données du tableur 
 		//                 http://www.nantesmetropole.fr/pratique/dechets/les-ordures-menageres-residuelles-23181.kjsp
-		
 		
  		// Divers http://dev.sencha.com/deploy/ext-3.4.0/examples/layout/vbox.html
 		//        http://try.sencha.com/touch/2.0.0/docs/Ext.layout.VBox.2/viewer.html

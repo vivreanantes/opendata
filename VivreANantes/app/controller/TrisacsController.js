@@ -73,7 +73,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 	 * conseils = record.data["conseils"] + ","; } conseilTraduit =
 	 * this.getApplication()
 	 * .getController("VivreANantes.controller.GarbagesController")
-	 * .getAdviceString(conseils); // fabrique la chaîne affichée sur la page
+	 * .getAdviceString_old(conseils); // fabrique la chaîne affichée sur la page
 	 * détail // this.trisacDetail.setTpl(" this.trisacDetail.setTpl("<div>" +
 	 * this.translate("label_trisac_template_detail", stLocale) + conseilTraduit +
 	 * faqTraduit + "</div>"); } // Bind the record onto the show contact view

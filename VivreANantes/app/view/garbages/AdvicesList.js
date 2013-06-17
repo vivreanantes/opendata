@@ -1,6 +1,6 @@
 Ext.define('VivreANantes.view.garbages.AdvicesList', {
 	extend : 'Ext.List',
-	xtype : 'advicesList',
+	xtype : 'advicesList_xtype',
 	config : {
 		iconCls : 'home',
 		title : 'Conseils',

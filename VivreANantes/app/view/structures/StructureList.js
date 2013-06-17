@@ -3,9 +3,7 @@ Ext.define('VivreANantes.view.structures.StructuresList', {
 	xtype : 'structuresList_xtype',
 	config : {
 		// iconCls : 'action', // icône en forme de ?
-		// title : 'Modes de collecte à domicile',
-		// TODO : initialiser ce template avec translate 
-		itemTpl : '<div>{libelle} {ouvertAujourdhuiEtDemain} <br/>{plagesHoraires2}</div>'
+		itemTpl : '<div><i>{type}</i> {libelle} {ouvertAujourdhuiEtDemain} <br/>{plagesHoraires2}</div>'
 	}
 
 	

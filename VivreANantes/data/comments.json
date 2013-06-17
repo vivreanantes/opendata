@@ -58,6 +58,22 @@
 		"description" : "Contrairement au compostage, je n'ai jamais pratiqué le lombricompost. Les conseils, bien que tirés de sources fiables, sont donc uniquement théoriques. Un avis d'un utilisateur régulier serait intéressant.",
 		"elements" : "fiche_lombricompost"
 	}, {
+		"code" : "faq_donnees_ourecycler",
+		"type" : "appli",
+		"auteurs" : "Chris-ren",
+		"dates" : "41430",
+		"libelle" : "Données de http://ourecycler.fr/ non exploitables",
+		"description" : "Les données affichées sur http://ourecycler.fr/ sont inexploitables : les associations collectrices sont rarement mentionnées, si l'on regarde précisément les adresses fournies correspondent à des commerces (?), \"recyclage solidaire\" n'est pas une structure de collecte directe mais une société qui récupère auprès d'associations",
+		"elements" : ""
+	}, {
+		"code" : "faq_modco_contmpb",
+		"type" : "modco",
+		"auteurs" : "Chris-ren",
+		"dates" : "41440",
+		"libelle" : "Pas de brique ni de métal ",
+		"description" : "Contraiment à la plupart des villes, on ne peut pas mettre les briques alimentaires (lait, jus de fruit, potages...) ni le métal dans les conteneurs plastiques. <br/>Quelques conséquences : <br/>- que faire alors de sa cannette de soda si on est en ville ? <br/>- les personnes ayant uniquement un bac bleu (il en reste) doivent aller à la déchetterie pour tout le métal et les briques…",
+		"elements" : "modco_contmpb"
+	}, {
 		"code" : "faq_cons_coupant",
 		"type" : "appli",
 		"auteurs" : "Chris-ren",

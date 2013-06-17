@@ -1133,7 +1133,7 @@
 		"categorieTraitement" : "cat_papiercarton",
 		"description" : "",
 		"conseils" : "",
-		"image" : "papier_cadeau_petit,png",
+		"image" : "papier_cadeau_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_papierPeint",
@@ -1294,7 +1294,7 @@
 		"categoriesUsuelles" : "cu_verrevaisselle",
 		"categorieTraitement" : "cat_verre",
 		"description" : "",
-		"conseils" : "cons_sansbouchon",
+		"conseils" : "cons_sansbouchon,cons_bouchonmetal",
 		"image" : "pot_confiture_petit.png",
 		"image_secondaire" : ""
 	}, {

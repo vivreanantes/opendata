@@ -4,7 +4,7 @@
 Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 			extend : 'Ext.form.Panel',
 			requires : ['Ext.field.Text', 'Ext.field.Select'],
-			xtype : 'garbagesForm',
+			xtype : 'garbagesForm_xtype',
 			config : {
 				items : [{
 							xtype : 'textfield',
