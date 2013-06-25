@@ -35,7 +35,7 @@
 		"categorieTraitement" : "cat_ddm",
 		"description" : "ampoule à économie d'énergie, lampe à économie d’énergie",
 		"conseils" : "cons_ampoulemercure,cons_recuppdv2",
-		"image" : "ampoules_basse_consommation_petit.jpg",
+		"image" : "ampoules_basse_consommation_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_ampouleClassique",

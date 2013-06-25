@@ -44,7 +44,6 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 		// 1
 		var homecollectmodStore = Ext.create(
 				"VivreANantes.store.Structure2Store", {
-					id : 'structure2_store_2',
 					filters : [{
 								property : "modesCollecte",
 								// le type correspond aux modes de collectes
@@ -59,27 +58,6 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 		list.setStore(homecollectmodStore);
 		this.getTrisacFormSelect().setValue("all");
 	},
-	/*
-	 * showTrisacDetail : function(list, index, node, record) {
-	 * 
-	 * var stLocale = "fr";
-	 * 
-	 * if (record) { if (!this.trisacDetail) { this.trisacDetail = Ext
-	 * .create("VivreANantes.view.trisac.TrisacDetails"); // calcule la chaîne
-	 * correspondant aux commentaires var faqTraduit = this.getApplication()
-	 * .getController("VivreANantes.controller.CommentsController")
-	 * .getCommenttring(record.data["code"]); // calcule la chaîne correspondant
-	 * aux conseils var conseils = ""; if (record.data["conseils"] !== "") {
-	 * conseils = record.data["conseils"] + ","; } conseilTraduit =
-	 * this.getApplication()
-	 * .getController("VivreANantes.controller.GarbagesController")
-	 * .getAdviceString_old(conseils); // fabrique la chaîne affichée sur la page
-	 * détail // this.trisacDetail.setTpl(" this.trisacDetail.setTpl("<div>" +
-	 * this.translate("label_trisac_template_detail", stLocale) + conseilTraduit +
-	 * faqTraduit + "</div>"); } // Bind the record onto the show contact view
-	 * this.trisacDetail.setData(record.data); // Push this view into the
-	 * navigation view this.getTrisac().push(this.trisacDetail); } },
-	 */
 
 	// Méthodes invoquées par le formulaire
 	onListRefresh : function(list, eOpts) {

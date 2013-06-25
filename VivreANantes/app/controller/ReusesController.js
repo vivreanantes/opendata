@@ -46,7 +46,6 @@ Ext.define("VivreANantes.controller.ReusesController", {
 		// 1
 		var homecollectmodStore = Ext.create(
 				"VivreANantes.store.Structure2Store", {
-					id : 'structure2_store_2',
 					filters : [{
 								property : "modesCollecte",
 								// le type correspond aux modes de collectes

@@ -1,21 +1,193 @@
-{ 'categories_usuelles':[
-{"code":"cu_plastique","nom":"Plastique","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"grande_bouteille_huile_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_papierscartons","nom":"Papiers-cartons","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"cartonette_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_metal","nom":"Métal","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"barquette_aluminium.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_vertbois","nom":"Déchets verts / bois","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"feuillages_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_verrevaisselle","nom":"Verre / Vaisselle / Pots","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"vase_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_vetementtissu","nom":"Vêtements / tissu","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"jean_usage_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_encombrant","nom":"Encombrants","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"refrigerateur_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_divers","nom":"Divers","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"bouchon_liege_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_nourriture","nom":"Nourriture","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"epeluchure_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"cu_electronique","nom":"Électronique","description_fr":"","estSousCategorie":"","sousCategories":"false","source":"MieuxTrierANantes","image":"telephone_fixe_petit.png","statut":"Vérif le 03/2013","accueil":"true"},
-{"code":"scu_medicament","nom":"Médicament","description_fr":"","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"scu_toxiquejardin","nom":"Déchets toxiques du Jardinage","description_fr":" Engrais chimiques, herbicides, fongicides, insecticides...","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"desherbant_petit.png","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"scu_toxiquegarage","nom":"Déchets toxiques du Garage","description_fr":" Antigel, liquide de refroidissement, mastic de carrosserie, peinture antirouille, huile minérale, filtre à huile...","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"batterie_voiture_petit.png","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"scu_toxiquecuisine","nom":"Déchets toxiques de la Cuisine","description_fr":"Nettoyants cuivre et argenterie, nettoyants à l’ammoniac, récurant pour four...","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"bouteille_ammoniaque_petit.png","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"scu_toxiquesdb","nom":"Déchets toxiques de la Salle de bain","description_fr":"Déboucheur liquide, détachant, eau de Javel, nettoyants à sol, récurant pour toilette, thermomètres à mercure...","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"desinfectant_toilette_petit.png","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"scu_toxiquebrico","nom":"Déchets toxiques du Bricolage","description_fr":"Colles, produits de traitement du bois, enduits et vernis, peintures huile et eau,  laques, résines, diluants, solvants...","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"peinture_petit.png","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"scu_toxiqueparasite","nom":"Déchets toxiques du traitement des parasites","description_fr":"Anti-fourmis, insecticides, naphtaline, mort aux rats...","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"mortaurat_petit.png","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"scu_toxiquedivers","nom":"Déchets toxiques divers","description_fr":"acides, bases, essence de térébenthine, radiographie, révélateur et fixateur photo, néons...","estSousCategorie":"","sousCategories":"true","source":"MieuxTrierANantes","image":"pile_45_petit.png","statut":"Vérif le 03/2013","accueil":"false"},
-{"code":"cu_toxique","nom":"Toxique","description_fr":"","estSousCategorie":"scu_medicament,scu_toxiquejardin,scu_toxiquegarage,scu_toxiquecuisine,scu_toxiquesdb,scu_toxiquebrico,scu_toxiqueparasite,scu_toxiquedivers","sousCategories":"false","source":"MieuxTrierANantes","image":"batterie_voiture_petit.png","statut":"Vérif le 03/2013","accueil":"true"}
-]}
+{
+	'categories_usuelles' : [{
+				"code" : "cu_plastique",
+				"nom" : "Plastique",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "grande_bouteille_huile_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_papierscartons",
+				"nom" : "Papiers-cartons",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "cartonette_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_metal",
+				"nom" : "Métal",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "barquette_aluminium.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_vertbois",
+				"nom" : "Déchets verts / bois",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "feuillages_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_verrevaisselle",
+				"nom" : "Verre / Vaisselle / Pots",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "vase_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_vetementtissu",
+				"nom" : "Vêtements / tissu",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "jean_usage_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_encombrant",
+				"nom" : "Encombrants",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "refrigerateur_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_divers",
+				"nom" : "Divers",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "bouchon_liege_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_nourriture",
+				"nom" : "Nourriture",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "epeluchure_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "cu_electronique",
+				"nom" : "Électronique",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "telephone_fixe_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu"
+			}, {
+				"code" : "scu_medicament",
+				"nom" : "Médicament",
+				"description_fr" : "",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "scu_toxiquejardin",
+				"nom" : "Déchets toxiques du Jardinage",
+				"description_fr" : " Engrais chimiques, herbicides, fongicides, insecticides...",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "desherbant_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "scu_toxiquegarage",
+				"nom" : "Déchets toxiques du Garage",
+				"description_fr" : " Antigel, liquide de refroidissement, mastic de carrosserie, peinture antirouille, huile minérale, filtre à huile...",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "batterie_voiture_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "scu_toxiquecuisine",
+				"nom" : "Déchets toxiques de la Cuisine",
+				"description_fr" : "Nettoyants cuivre et argenterie, nettoyants à l’ammoniac, récurant pour four...",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "bouteille_ammoniaque_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "scu_toxiquesdb",
+				"nom" : "Déchets toxiques de la Salle de bain",
+				"description_fr" : "Déboucheur liquide, détachant, eau de Javel, nettoyants à sol, récurant pour toilette, thermomètres à mercure...",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "desinfectant_toilette_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "scu_toxiquebrico",
+				"nom" : "Déchets toxiques du Bricolage",
+				"description_fr" : "Colles, produits de traitement du bois, enduits et vernis, peintures huile et eau,  laques, résines, diluants, solvants...",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "peinture_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "scu_toxiqueparasite",
+				"nom" : "Déchets toxiques du traitement des parasites",
+				"description_fr" : "Anti-fourmis, insecticides, naphtaline, mort aux rats...",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "mortaurat_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "scu_toxiquedivers",
+				"nom" : "Déchets toxiques divers",
+				"description_fr" : "acides, bases, essence de térébenthine, radiographie, révélateur et fixateur photo, néons...",
+				"estSousCategorie" : "",
+				"sousCategories" : "true",
+				"source" : "MieuxTrierANantes",
+				"image" : "pile_45_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}, {
+				"code" : "cu_toxique",
+				"nom" : "Toxique",
+				"description_fr" : "",
+				"estSousCategorie" : "scu_medicament,scu_toxiquejardin,scu_toxiquegarage,scu_toxiquecuisine,scu_toxiquesdb,scu_toxiquebrico,scu_toxiqueparasite,scu_toxiquedivers",
+				"sousCategories" : "false",
+				"source" : "MieuxTrierANantes",
+				"image" : "batterie_voiture_petit.png",
+				"statut" : "Vérif le 03/2013",
+				"bouton" : "cu_toxique"
+			}]
+}

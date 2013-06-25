@@ -6,54 +6,25 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 
 	,
 	config : {
-/*
- * refs : { structuresView : "structuresView_xtype", structuresList :
- * "structuresList_xtype", structuresDetail : "structuresDetails_xtype",
- * structuresForm : "structuresForm_xtype", structuresFormSelectQuartier :
- * "#structuresFormSelectQuartier", structuresFormSelectType :
- * "#structuresFormSelectType", structuresButtons : "#structuresButtons" },
- * control : {
- * 
- * structuresDetail : { updatedata : "onUpdateDataDetail" },
- * 
- * structuresList : { initialize : "onInitStructures", itemtap :
- * "showStructuresDetail", refresh : "onListRefresh" },
- * 
- * structuresView : {} , structuresFormSelectQuartier : { change :
- * "onStructuresStoreFilter" } , structuresFormSelectType : { change :
- * "onStructuresStoreFilter" } , structuresButtons : { toggle :
- * "onStructuresStoreFilter" } }
- */
+
 }
 
 	,
 	calculateDatas : function(store) {
-		// var dataResult = new Array();
 		var datas = store.getData();
 		var dataLength = datas.length;
 		if (dataLength > 0 && datas.items[0].data["type"] != null) {
-			/*
-			 * if (datas.items[0].data["plagesHoraires"].substring(0,1)==="" //
-			 * Et si je n'ai pas encore été initialisé ||
-			 * datas.items[0].data["plagesHoraires"].substring(0,1)!=="-") {
-			 */
-			// On ajoute les éléments (1 par jour)
+			
+			// On parcours tous les éléments pour valoriser "plagesHoraires_prochainsJours", "plagesHoraires_lisible" et "plagesHoraires_periodes"
 			for (var i = 0; i < dataLength; i++) {
-				var arNewItem = this.getPlageHoraire(datas.items[i]);
-				store.add(arNewItem);
+				this.fillAttributs_PlagesHoraires(datas.items[i]);
 			}
-			// On supprime les anciens éléments
-			for (var i = 0; i < dataLength; i++) {
-				store.removeAt(0);
-			}
-			/* } */
 		}
 		return store;
 	}
 
 	,
 	showStructuresDetail : function(list, index, node, record) {
-		var stLocale = "fr";
 		if (record) {
 			if (!this.structuresDetail) {
 				this.structuresDetail = Ext
@@ -80,16 +51,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				descriptionTraduit += label + " : " + record.data["numeroTemp"]
 						+ "<br/><br/>";
 			}
-			if (record.data["plagesHoraires2"] != null
-					&& record.data["plagesHoraires2"] !== "") {
+			if (record.data["plagesHoraires_lisible"] != null
+					&& record.data["plagesHoraires_lisible"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_horaires"));
 				descriptionTraduit += label + " : "
-						+ record.data["ouvertAujourdhuiEtDemain"] + "<br/>"
-						+ record.data["plagesHoraires2"] + "<br/><br/>";
+						+ record.data["plagesHoraires_prochainsJours"] + "<br/>"
+						+ record.data["plagesHoraires_lisible"] + "<br/><br/>";
 			}
-			if (record.data["src"] != null
-					&& record.data["src"] !== "") {
+			if (record.data["src"] != null && record.data["src"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_source"));
 				descriptionTraduit += label + " : " + record.data["src"]
@@ -126,24 +96,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		}
 	},
 
-	/*
-	 * filterElements : function() {
-	 * 
-	 * var selectQuartier = this.getStructuresFormSelectQuartier(); var
-	 * selectType = this.getStructuresFormSelectType(); var delay =
-	 * this.getStructuresButtons().getPressedButtons()[0] .getText();
-	 * 
-	 * var store = this.getStructuresList().getStore(); store.clearFilter();
-	 * 
-	 * var filterElements = Ext.create("Ext.util.Filter", { filterFn :
-	 * function(item) { var escaperegex = Ext.String.escapeRegex; var
-	 * stQuartierRegexp = new RegExp(selectQuartier.getValue()); var
-	 * stTypeRegexp = new RegExp(selectType.getValue()); var stQuartier =
-	 * item.data["quartier"]; var stType = item.data["modesCollecte"]; return
-	 * ((selectQuartier.getValue() === "all" || stQuartierRegexp
-	 * .test(stQuartier)) && (selectType.getValue() === "all" || stTypeRegexp
-	 * .test(stType))); } }); store.filter(filterElements); },
-	 */
 
 	// ///////////////////////////////////////////////////////////////////////////////
 	/*
@@ -157,10 +109,10 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 
 		var stSchedule;
 
-		var stLabelDe = this.translate("label_de", stLocale);
-		var stLabelH = this.translate("label_h", stLocale);
-		var stLabelA = this.translate("label_a", stLocale);
-		var stLabelEt = this.translate("label_et", stLocale);
+		var stLabelDe = this.translate("label_de");
+		var stLabelH = this.translate("label_h");
+		var stLabelA = this.translate("label_a");
+		var stLabelEt = this.translate("label_et");
 
 		if (heureDebut != null) {
 			var heuresDebutInt = parseInt(heureDebut.substring(0, 2));
@@ -190,37 +142,10 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			stSchedule = stHoraires;
 		}
 		return stSchedule;
-	}
-
-	,
-	getPlageHoraire : function(objStructures) {
-
-		// var strName = objStructures.get("libelle");
-		// var strType = objStructures.get("type");
-		// var strAdresse = objStructures.get("adresseTemp");
-		// var strConseils = objStructures.get("conseils");
-		var arNewAttributes = this
-				.getAttributes_FillPeriod(objStructures, "fr");
-
-		return {
-			"libelle" : objStructures.get("libelle"),
-			"description_fr" : objStructures.get("description_fr"),
-			"type" : objStructures.get("type"),
-			"modesCollecte" : objStructures.get("modesCollecte"),
-			"sousModesCollecte" : objStructures.get("sousModesCollecte"),
-			"adresseTemp" : objStructures.get("adresseTemp"),
-			"src" : objStructures.get("src"),
-			"numeroTemp" : objStructures.get("numeroTemp"),
-			"quartier" : objStructures.get("quartier"),
-			"conseils" : objStructures.get("conseils"),
-			"plagesHoraires" : objStructures.get("plagesHoraires"),
-			"plagesHoraires2" : arNewAttributes["plagesHoraires"],
-			"horaires" : objStructures.get("horaires"),
-			"ouvertAujourdhuiEtDemain" : arNewAttributes["ouvertAujourdhuiEtDemain"]
-		};
 	},
 
-	getDaysOfWeekString : function(strsDaysOfWeek, stLocale) {
+
+	getDaysOfWeekString : function(strsDaysOfWeek) {
 
 		var result = "";
 		// 2. Si pas lu-ma, ma-me, me-je, je-ve, ve-sa, sa-di, on met de
@@ -231,11 +156,11 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			if (strsDaysOfWeek != "lu-ma" && strsDaysOfWeek != "ma-me"
 					&& strsDaysOfWeek != "me-je" && strsDaysOfWeek != "je-ve"
 					&& strsDaysOfWeek != "ve-sa" && strsDaysOfWeek != "sa-di") {
-				result = "du " + this.getDayString(dayOfWeekStart, 1, stLocale) + " au "
-						+ this.getDayString(dayOfWeekEnd, 1, stLocale);
+				result = "du " + this.getDayString(dayOfWeekStart, 1) + " au "
+						+ this.getDayString(dayOfWeekEnd, 1);
 			} else {
-				result = this.getDayString(dayOfWeekStart, 1, stLocale) + " et "
-						+ this.getDayString(dayOfWeekEnd, 1, stLocale);
+				result = this.getDayString(dayOfWeekStart, 1) + " et "
+						+ this.getDayString(dayOfWeekEnd, 1);
 			}
 		} else {
 			var posFirstNumber = this
@@ -246,7 +171,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			var arDays = strsDaysOfWeek.split("-");
 			for (var i = 0; i < arDays.length; i++) {
 				var day = arDays[i];
-				result += this.getDayString(day, i, stLocale);
+				result += this.getDayString(day, i);
 				if (i != (arDays.length - 1)) {
 					result += ", ";
 				}
@@ -254,7 +179,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		}
 		return result;
 	},
-
 
 	/**
 	 * Renvoie la position du premier nombre sur la chaîne. Ex lu200313 renvoie
@@ -278,7 +202,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		return indexLastNumberPosition;
 	},
 
-	getDayString : function(strDay, firstLetterInUpper, stLocale) {
+	getDayString : function(strDay, firstLetterInUpper) {
 		result = strDay;
 		if (strDay == "lu") {
 			result = "label_lundi"
@@ -295,7 +219,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		} else if (strDay == "di") {
 			result = "label_dimanche"
 		}
-		result = this.translate(result, stLocale);
+		result = this.translate(result);
 		if (firstLetterInUpper == 0) {
 			this.stringUpperFirstLetter(result);
 		}
@@ -303,7 +227,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	}
 
 	,
-	getAttributes_FillPeriod : function(objStructures, stLocale) {
+	fillAttributs_PlagesHoraires : function(objStructures) {
 		var stPlagesHoraire = objStructures.get("plagesHoraires");
 
 		var bOuvertAujourdhui = false;
@@ -311,10 +235,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 
 		var stTodayFerieSpecialDay = this.getTodaySpecialDay();
 		var stTomorrowSpecialDay = this.getTomorrowSpecialDay();
-		// var stOuvertAujourdhui = "<FONT COLOR=red>Ouvert aujourd'hui</FONT>";
-		// var stOuvertDemain = "<FONT COLOR=red>Ouvert demain</FONT>";
-		// var stOuvertAujourdhui = "Ouvert aujourd'hui";
-		// var stOuvertDemain = "Ouvert demain";
+
 
 		// Ce qui sera ajouté à l"objet Structures
 		var arNewAttributes = Array();
@@ -332,8 +253,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					specialDayZone = plageHoraire;
 				}
 			}
-			// var specialDayZone =
-			// this.utilArrayContainObject(arPlagesHoraires,this.SAUF_FERIE);
 
 			// Parcours le tableau des plages horaires pour obtenir plusieurs
 			// évènements
@@ -378,10 +297,10 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 							.getAttributes_HoursFromToAsTextAndDaysFromToAsTextAttribute(
 									arNewAttributes, dateDebut, dateFin,
 									heureDebutHHDeuxPointsMM,
-									heureFinHHDeuxPointsMM, stLocale);
+									heureFinHHDeuxPointsMM);
 					var fromToAttribute = this.getAttribute_FromTo(jourDebutJJ,
 							moisDebutMM, jourFinJJ, moisFinMM, true,
-							daysOfWeekZone, 3, stLocale);
+							daysOfWeekZone, 3);
 
 					// -- verifie si
 					var obAujoudhuiDemain = this.verifieOuvertAujourdhuiDemain(
@@ -420,9 +339,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				}
 			}
 			var stplagesHoraires = "";
-			// var period = this.getAttribute_FromTo(jourDebut, moisDebut,
-			// jourFin, moisFin, allDays, daysOfWeekZone,
-			// deleteBetweenActualDay);
 			// Parcours tous les évènements obtenus
 			for (var i = 0; i < arNewAttributes.length; i++) {
 				stplagesHoraires = stplagesHoraires + "- "
@@ -432,25 +348,28 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			}
 			if (specialDayZone != "") {
 				stplagesHoraires = stplagesHoraires + "- "
-						+ this.translate("label_sauf_ferie", stLocale);
+						+ this.translate("label_sauf_ferie");
 			}
 		}
 
 		if (bOuvertAujourdhui == true && bOuvertDemain == true) {
-			var stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"+ this.translate("label_ouvert_aujourdhui_et_demain", stLocale)+"</FONT>"
+			var stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+					+ this.translate("label_ouvert_aujourdhui_et_demain")
+					+ "</FONT>"
 		} else if (bOuvertAujourdhui == true && bOuvertDemain == false) {
-			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"+ this.translate("label_ouvert_aujourdhui", stLocale)+"</FONT>"
+			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+					+ this.translate("label_ouvert_aujourdhui") + "</FONT>"
 		} else if (bOuvertAujourdhui == false && bOuvertDemain == true) {
-			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"+ this.translate("label_ouvert_demain", stLocale)+"</FONT>"
+			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+					+ this.translate("label_ouvert_demain") + "</FONT>"
 		} else {
 			var stOuvertAujourdhuiEtDemain = " ";
 		}
-		// ajout des attributs à l"objet
-		return {
-			"plagesHoraires" : stplagesHoraires,
-			"ouvertAujourdhuiEtDemain" : stOuvertAujourdhuiEtDemain,
-			"periods" : arNewAttributes
-		};
+		
+		objStructures.data["plagesHoraires_lisible"] = stplagesHoraires;
+		objStructures.data["plagesHoraires_prochainsJours"] = stOuvertAujourdhuiEtDemain;
+		objStructures.data["plagesHoraires_periodes"] = arNewAttributes;
+
 	}
 
 	,
@@ -503,27 +422,26 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	 */
 	,
 	getAttribute_FromTo : function(jourDebut, moisDebut, jourFin, moisFin,
-			allDays, daysOfWeekZone, deleteBetweenActualDay, stLocale) {
+			allDays, daysOfWeekZone, deleteBetweenActualDay) {
 		var result = "";
-		var stLabelDu = this.translate("label_du", stLocale);
-		var stLabelLe = this.translate("label_le", stLocale);
-		var stLabelTouteLAnnee = this.translate("label_toutelannee", stLocale);
-		var stLabelAu = this.translate("label_au", stLocale);
+		var stLabelDu = this.translate("label_du");
+		var stLabelLe = this.translate("label_le");
+		var stLabelTouteLAnnee = this.translate("label_toutelannee");
+		var stLabelAu = this.translate("label_au");
 
-		var stDays = this.getDaysOfWeekString(daysOfWeekZone, stLocale);
+		var stDays = this.getDaysOfWeekString(daysOfWeekZone);
 		if (allDays == true) {
 			if (jourDebut == "01" && moisDebut == "01" && jourFin == "31"
 					&& moisFin == "12") {
 				result = stLabelTouteLAnnee + " (" + stDays + ")";
 			} else if (jourDebut == jourFin && moisDebut == moisFin) {
 				result = stLabelLe + " " + stDays + " " + jourDebut + " "
-						+ this.convertDayNumberToString(moisDebut, stLocale);
+						+ this.convertDayNumberToString(moisDebut);
 			} else {
 				result = stLabelDu + " " + jourDebut + " "
-						+ this.convertDayNumberToString(moisDebut, stLocale)
-						+ " " + stLabelAu + " " + jourFin + " "
-						+ this.convertDayNumberToString(moisFin, stLocale)
-						+ " " + stDays;
+						+ this.convertDayNumberToString(moisDebut) + " "
+						+ stLabelAu + " " + jourFin + " "
+						+ this.convertDayNumberToString(moisFin) + " " + stDays;
 			}
 		}
 		return result;
@@ -600,18 +518,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		return this.getSpecialDay(tomorrow);
 	},
 
-/*	SAUF_FERIE : "sauf_ferie",
-	FERIE_SAINT_SYLVESTRE : "sauf_saint_sylvestre",
-	FERIE_PAQUES : "sauf_paques",
-	FERIE_FETE_TRAVAIL : "sauf_fete_travail",
-	FERIE_8_MAI : "sauf_8_mai",
-	FERIE_ASCENSION : "sauf_ascenscion",
-	FERIE_PENTECOTE : "sauf_pentecote",
-	FERIE_FETE_NATIONALE : "sauf_fete_nationale",
-	FERIE_ASSOMPTION : "sauf_assomption",
-	FERIE_LA_TOUSSAINT : "sauf_la_toussaint",
-	FERIE_ARMISTICE : "sauf_armistice",
-	FERIE_NOEL : "sauf_noel",*/
+	/*
+	 * SAUF_FERIE : "sauf_ferie", FERIE_SAINT_SYLVESTRE :
+	 * "sauf_saint_sylvestre", FERIE_PAQUES : "sauf_paques", FERIE_FETE_TRAVAIL :
+	 * "sauf_fete_travail", FERIE_8_MAI : "sauf_8_mai", FERIE_ASCENSION :
+	 * "sauf_ascenscion", FERIE_PENTECOTE : "sauf_pentecote",
+	 * FERIE_FETE_NATIONALE : "sauf_fete_nationale", FERIE_ASSOMPTION :
+	 * "sauf_assomption", FERIE_LA_TOUSSAINT : "sauf_la_toussaint",
+	 * FERIE_ARMISTICE : "sauf_armistice", FERIE_NOEL : "sauf_noel",
+	 */
 
 	/**
 	 * Renvoie une chaine correspondant au nom du jour ferie de la date fournie.
@@ -620,71 +535,56 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	getSpecialDay : function(date) {
 
 		return _getSpecialDay(date);
-		/*var jourDateJJ = date.getDate();
-		// on ajoute le "0" pour avoir "01"
-		if (jourDateJJ < 10) {
-			jourDateJJ = "0" + jourDateJJ;
-		} else {
-			jourDateJJ = "" + jourDateJJ;
-		}
-		// on ajoute le "0" pour avoir "01"
-		var moisDateMM = date.getMonth() + 1;
-		if (moisDateMM < 10) {
-			moisDateMM = "0" + moisDateMM;
-		} else {
-			moisDateMM = "" + moisDateMM;
-		}
-		var yearDateYY = (date.getFullYear() + "").substring(2, 4);
-		var dayString = "" + jourDateJJ + moisDateMM + yearDateYY;
-
-		var arraySaintSylvestre = new Array("010113", "010114", "010115", //
-				"010116", "010117", "010118");
-		var arrayPaques = new Array("010413", "210414", "060415", //
-				"280316", "160417", "010418");
-		var arrayFeteTravail = new Array("010513", "010514", "010515", //
-				"010516", "010517", "010518");
-		var array8mai = new Array("080513", "080514", "080515", //
-				"080516", "080517", "080518");
-		var arrayAscension = new Array("090513", "290514", "140515", //
-				"050516", "250517", "100518");
-		var arrayPentecote = new Array("200513", "090614", "250515", //
-				"160516", "050617", "210518");
-		var arrayFeteNationale = new Array("140713", "140714", "140715", //
-				"140716", "140717", "140718");
-		var arrayAssomption = new Array("150813", "150814", "150815", //
-				"150816", "150817", "150818");
-		var arrayLaToussaint = new Array("011113", "011114", "011115", //
-				"011116", "011117", "011118");
-		var arrayArmistice = new Array("111113", "111114", "111115", //
-				"111116", "111117", "111118");
-		var arrayNoel = new Array("251213", "251214", "251215", //
-				"251216", "251217", "251218");
-
-		if (this.utilArrayContainObject(arraySaintSylvestre, dayString)) {
-			return this.FERIE_SAINT_SYLVESTRE;
-		} else if (this.utilArrayContainObject(arrayPaques, dayString)) {
-			return this.FERIE_PAQUES;
-		} else if (this.utilArrayContainObject(arrayFeteTravail, dayString)) {
-			return this.FERIE_FETE_TRAVAIL;
-		} else if (this.utilArrayContainObject(array8mai, dayString)) {
-			return this.FERIE_8_MAI;
-		} else if (this.utilArrayContainObject(arrayAscension, dayString)) {
-			return this.FERIE_ASCENSION;
-		} else if (this.utilArrayContainObject(arrayPentecote, dayString)) {
-			return this.FERIE_PENTECOTE;
-		} else if (this.utilArrayContainObject(arrayFeteNationale, dayString)) {
-			return this.FERIE_FETE_NATIONALE;
-		} else if (this.utilArrayContainObject(arrayAssomption, dayString)) {
-			return this.FERIE_ASSOMPTION;
-		} else if (this.utilArrayContainObject(arrayLaToussaint, dayString)) {
-			return this.FERIE_LA_TOUSSAINT;
-		} else if (this.utilArrayContainObject(arrayArmistice, dayString)) {
-			return this.FERIE_ARMISTICE;
-		} else if (this.utilArrayContainObject(arrayNoel, dayString)) {
-			return this.FERIE_NOEL;
-		} else {
-			return "";
-		}*/
+		/*
+		 * var jourDateJJ = date.getDate(); // on ajoute le "0" pour avoir "01"
+		 * if (jourDateJJ < 10) { jourDateJJ = "0" + jourDateJJ; } else {
+		 * jourDateJJ = "" + jourDateJJ; } // on ajoute le "0" pour avoir "01"
+		 * var moisDateMM = date.getMonth() + 1; if (moisDateMM < 10) {
+		 * moisDateMM = "0" + moisDateMM; } else { moisDateMM = "" + moisDateMM; }
+		 * var yearDateYY = (date.getFullYear() + "").substring(2, 4); var
+		 * dayString = "" + jourDateJJ + moisDateMM + yearDateYY;
+		 * 
+		 * var arraySaintSylvestre = new Array("010113", "010114", "010115", //
+		 * "010116", "010117", "010118"); var arrayPaques = new Array("010413",
+		 * "210414", "060415", // "280316", "160417", "010418"); var
+		 * arrayFeteTravail = new Array("010513", "010514", "010515", //
+		 * "010516", "010517", "010518"); var array8mai = new Array("080513",
+		 * "080514", "080515", // "080516", "080517", "080518"); var
+		 * arrayAscension = new Array("090513", "290514", "140515", // "050516",
+		 * "250517", "100518"); var arrayPentecote = new Array("200513",
+		 * "090614", "250515", // "160516", "050617", "210518"); var
+		 * arrayFeteNationale = new Array("140713", "140714", "140715", //
+		 * "140716", "140717", "140718"); var arrayAssomption = new
+		 * Array("150813", "150814", "150815", // "150816", "150817", "150818");
+		 * var arrayLaToussaint = new Array("011113", "011114", "011115", //
+		 * "011116", "011117", "011118"); var arrayArmistice = new
+		 * Array("111113", "111114", "111115", // "111116", "111117", "111118");
+		 * var arrayNoel = new Array("251213", "251214", "251215", // "251216",
+		 * "251217", "251218");
+		 * 
+		 * if (this.utilArrayContainObject(arraySaintSylvestre, dayString)) {
+		 * return this.FERIE_SAINT_SYLVESTRE; } else if
+		 * (this.utilArrayContainObject(arrayPaques, dayString)) { return
+		 * this.FERIE_PAQUES; } else if
+		 * (this.utilArrayContainObject(arrayFeteTravail, dayString)) { return
+		 * this.FERIE_FETE_TRAVAIL; } else if
+		 * (this.utilArrayContainObject(array8mai, dayString)) { return
+		 * this.FERIE_8_MAI; } else if
+		 * (this.utilArrayContainObject(arrayAscension, dayString)) { return
+		 * this.FERIE_ASCENSION; } else if
+		 * (this.utilArrayContainObject(arrayPentecote, dayString)) { return
+		 * this.FERIE_PENTECOTE; } else if
+		 * (this.utilArrayContainObject(arrayFeteNationale, dayString)) { return
+		 * this.FERIE_FETE_NATIONALE; } else if
+		 * (this.utilArrayContainObject(arrayAssomption, dayString)) { return
+		 * this.FERIE_ASSOMPTION; } else if
+		 * (this.utilArrayContainObject(arrayLaToussaint, dayString)) { return
+		 * this.FERIE_LA_TOUSSAINT; } else if
+		 * (this.utilArrayContainObject(arrayArmistice, dayString)) { return
+		 * this.FERIE_ARMISTICE; } else if
+		 * (this.utilArrayContainObject(arrayNoel, dayString)) { return
+		 * this.FERIE_NOEL; } else { return ""; }
+		 */
 	},
 
 	/**

@@ -20,17 +20,21 @@ Ext
 			'welcome.WelcomeList',
 			// 'garbages.Garbages',
 			// Déchets
+			'garbages.GarbagesContainer2',
+			'garbages.GarbageButtonsPanel',
 			'garbages.UsualCategoriesList',
 			'garbages.UsualSubCategoriesList',
 			'garbages.AdvicesList',
 			'garbages.WasteTreatmentsCategoriesList',
 			'garbages.CollectModsList',
+			'garbages.InformationsList',
+			'garbages.CommentsList',
+			'garbages.UsualCategoriesList2',
 			// Modes de collecte
 			'collectMod.CollectMods',
 			'collectMod.CollectModsButtonsList',
 			'collectMod.CollectModsDetails',
 			// Commentaires
-			'garbages.CommentsList',
 			'comments.Comments',
 			'comments.CommentsContainer',
 			'comments.CommentsForm',
@@ -48,7 +52,7 @@ Ext
 			'game.Guess',
 			// Informations
 			'information.Informations',
-			'information.InformationsList',
+			'information.InformationsButtonsList',
 			// A propos
 			'about.Description',
 			// Calendrier
@@ -68,11 +72,11 @@ Ext
 			],
 
 			controllers : [ 'Welcome', 'Geo', 'InformationsController', 'StructuresController', 'ReusesController', 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
-			,'CommentsController'  /*, 'Calendar'*/],
+			,'CommentsController', 'LocalStorageController' /*, 'Calendar'*/],
 			
-			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', 'WasteTreatmentsCategories', 'CollectModModel'/*, 'CalendarModel'*/],
+			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', 'WasteTreatmentsCategories', 'CollectModModel'/*, 'CalendarModel'*/, 'LocaleStorageModel', 'InformationsModel'],
 			
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store', 'InformationsStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',
@@ -101,14 +105,11 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO transformation json / menu
-		// TODO utiliser un emethode this.getLcoale() dans this.translate
+		// TODO fusionner subCaterory et caterory 
+		// TODO utiliser container2
 		// TODO Brancher le formulaire de commentaire sur un script SGI
-		// TODO Améliorer le code source
 		// TODO Ajout photo : vers de terre, panneau solaire thermique
 
-		// TODO améliorer affichage des boutons
-		// TODO Optimisation (pages trop longues)
 		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données et les conseils
 		// TODO Faire un déploiement
 		// TODO Vérif si un bouchon métallique se recycle, idem capsule bouteille lait

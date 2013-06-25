@@ -1,6 +1,7 @@
 Ext.define('VivreANantes.view.garbages.GarbagesList', {
 	extend : 'Ext.List',
 	xtype : 'garbagesList_xtype',
+	
 	config : {
 		iconCls : 'home',
 		title : 'Déchets',

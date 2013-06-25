@@ -1,6 +1,6 @@
 
 /**
- * Controleur de la partie Structures
+ * Controleur abstrait de l'application
  */
 Ext.define('VivreANantes.controller.AbstractController', {
 	extend : 'Ext.app.Controller',
@@ -31,8 +31,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	/**
 	 * Traduit et met la première lettre en majuscule
 	 */
-	translateWithUpperFirstLetter : function(result, stLocale) {
-		return this.stringUpperFirstLetter(this.translate(result, stLocale));
+	translateWithUpperFirstLetter : function(result) {
+		return this.stringUpperFirstLetter(this.translate(result));
 	},
 	/*
 	 * Retourne un objet String correspondant à l'année actuelle. Exemple "2014"
@@ -60,7 +60,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 * date
 	 */
 
-	utilGetDayOfWeek : function(d, locale) {
+	utilGetDayOfWeek : function(d) {
 
 		var weekday = new Array(7);
 		weekday[0] = "label_dimanche";
@@ -71,7 +71,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		weekday[5] = "label_vendredi";
 		weekday[6] = "label_samedi";
 		var day = weekday[d.getDay()];
-		var result = this.translate(day, "fr");
+		var result = this.translate(day);
 		return result;
 	},
 
@@ -97,9 +97,25 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 * Traduit un libellé. Si on ne le trouve pas, renvoie la clé.
 	 */
 
-	translate : function(stKey, stLocale) {
+	translate : function(stKey) {
+		if (this.stLocale == null) {
+			this.stLocale = this.getLocale();
+		}
 		// invoque la fonction définie dans translation.js
-		return _translate(stKey, stLocale);
+		return _translate(stKey, this.stLocale);
+	},
+
+	/**
+	 * Renvoie la locale (par exemple "fr" ou "en"). Cette fonction invoque le
+	 * LocalStorageController.
+	 */
+	getLocale : function() {
+		var result = "";
+		var localStorageController = this
+				.getApplication()
+				.getController("VivreANantes.controller.LocalStorageController");
+		result = localStorageController.getLocale();
+		return result;
 	},
 
 	IMAGE_DIR : "resources/images/",
@@ -107,7 +123,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	/**
 	 * Convertit un jour dans sa chaine de caractère. Ex "01" devient "janvier".
 	 */
-	convertDayNumberToString : function(stMonth, stLocale) {
+	convertDayNumberToString : function(stMonth) {
 		var result = "";
 		if (stMonth == "01") {
 			result = "label_janvier";
@@ -134,7 +150,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		} else if (stMonth == "02") {
 			result = "label_decembre";
 		}
-		result = this.translate(result, stLocale);
+		result = this.translate(result);
 		return result;
 	},
 
@@ -144,45 +160,47 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 	getContentButtonsPanel : function(arrayItemsToShow) {
 		var arrayItems = new Array();
+		var arrayitemsLine = new Array();
 		var nbElementsParLines = 4;
+		if (arrayItemsToShow) {
+			for (var i = 0; i < arrayItemsToShow.length; i++) {
+				// Si je suis sur un multiple de 3 je termine la ligne
+				if (i / nbElementsParLines == Math
+						.round(i / nbElementsParLines)) {
+					if (arrayitemsLine != null) {
+						var objectItem1 = {
+							'layout' : {
+								type : 'hbox',
+								align : 'stretch'
+							},
+							'items' : arrayitemsLine
+						};
+						arrayItems.push(objectItem1);
+					}
 
-		for (var i = 0; i < arrayItemsToShow.length; i++) {
-			// Si je suis sur un multiple de 3 je termine la ligne
-			if (i / nbElementsParLines == Math.round(i / nbElementsParLines)) {
-				if (arrayitemsLine != null) {
-					var objectItem1 = {
-						'layout' : {
-							type : 'hbox',
-							align : 'stretch'
-						},
-						'items' : arrayitemsLine
-					};
-					arrayItems.push(objectItem1);
+					var arrayitemsLine = new Array();
 				}
-
-				var arrayitemsLine = new Array();
+				arrayitemsLine.push({
+							xtype : 'button',
+							id : arrayItemsToShow[i]["id"],
+							html : arrayItemsToShow[i]["libelle"] + " "
+									+ "<br/><img src='resources/images/"
+									+ arrayItemsToShow[i]["image"]
+									+ "' width='60px' />"
+						});
 			}
-			arrayitemsLine.push({
-						xtype : 'button',
-						id : arrayItemsToShow[i]["id"],
-						html : arrayItemsToShow[i]["libelle"] + " "
-								+ "<br/><img src='resources/images/"
-								+ arrayItemsToShow[i]["image"]
-								+ "' width='60px' />"
-					});
+			// Si la dernière ligne n'est pas terminée
+			if (arrayitemsLine.length != 0) {
+				var objectItem1 = {
+					'layout' : {
+						type : 'hbox',
+						align : 'stretch'
+					},
+					'items' : arrayitemsLine
+				};
+				arrayItems.push(objectItem1);
+			}
 		}
-		// Si la dernière ligne n'est pas terminée
-		if (arrayitemsLine.length != 0) {
-			var objectItem1 = {
-				'layout' : {
-					type : 'hbox',
-					align : 'stretch'
-				},
-				'items' : arrayitemsLine
-			};
-			arrayItems.push(objectItem1);
-		}
-
 		return arrayItems;
 	},
 
@@ -464,7 +482,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					.getController("VivreANantes.controller.GarbagesController");
 			var datas = myController.getGarbagesList().getStore().getData();
 			datas.each(function(record) {
-						if (record.raw["code"] == elementToShowInPage) {
+						if (record.data["code"] == elementToShowInPage) {
 							// On doit effacer le filtre pour être sur que la
 							// liste contient bien l'élément
 							store.clearFilter();
@@ -486,11 +504,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		else if (mainPageXtype == "informations") {
 			var myController = this
 					.getApplication()
-					.getController("VivreANantes.controller.InformationsController");
+					.getController("VivreANantes.controller.GarbagesController");
 			var datas = myController.getInformationsList().getStore().getData();
 			datas.each(function(record) {
 						// bascule vers la page
-						if (record.raw["code"] == elementToShowInPage) {
+						if (record.data["code"] == elementToShowInPage) {
 							myController.showInformations(null, null, null,
 									record);
 						}
@@ -511,8 +529,71 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			}
 		};
 
-	}
+	},
 
+	/**
+	 * Renvoie les boutons d'après le data d'un store
+	 * 
+	 * @param {}
+	 *            datas buttonLabel le label du bouton a affiche (exemple "cu"
+	 *            pour "catégories usuelles")
+	 * @return {} tableau des items (les items sont des objets permettant de
+	 *         créer des boutons)
+	 */
+	getDatasForButtons : function(datas, buttonLabel) {
+		var arrayItemsToShow = new Array();
+		var thisController = this;
+		datas.each(function(record) {
+					if (record.data["bouton"] == buttonLabel) {
+
+						// Ajoute les <br/>
+						var stLibelle = thisController
+								.decoupe(record.data["libelle"]);
+
+						arrayItemsToShow.push({
+									"libelle" : stLibelle,
+									"image" : record.data["image"],
+									"id" : record.data["code"]
+								});
+					}
+
+				});
+		return arrayItemsToShow;
+	},
+	/**
+	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
+	 * des balises "<br/>
+	 */
+	decoupe : function(stChaine) {
+		var result = "";
+		if (stChaine != undefined) {
+			var iTailleMax = 15;
+
+			// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
+			var array = stChaine.split(/, | ,| -|- |-| /);
+			var tailleRestanteLigne = iTailleMax;
+			for (var i = 0; i < array.length; i++) {
+				result += array[i];
+				tailleRestanteLigne = tailleRestanteLigne - array[i].length;
+				// Si il reste des mots
+				if (i + 1 < array.length) {
+					// Si le prochain mot n'est pas trop long, on ajoute juste
+					// un
+					// espace
+					if (array[i + 1].length <= tailleRestanteLigne) {
+						result += " ";
+						tailleRestanteLigne = tailleRestanteLigne - 1;
+					}
+					// Sinon on ajoute un retour à la ligne
+					else {
+						result += "<br/>";
+						tailleRestanteLigne = iTailleMax;
+					}
+				}
+			}
+		}
+		return result;
+	}
 });
 
 function showGarbagePanel(id) {

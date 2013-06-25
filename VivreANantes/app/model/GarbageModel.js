@@ -17,8 +17,7 @@ Ext.define('VivreANantes.model.GarbageModel', {
 							// mapping : 'description_fr'
 					}	, {
 							name : 'concerne_aussi',
-							type : 'string',
-							mapping : 'concerne_aussi'
+							type : 'string'
 						}, {
 							name : 'image',
 							type : 'string',

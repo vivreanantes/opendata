@@ -9,28 +9,36 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 					buttonConteneurPapierCarton : '#modco_contpapiercarton'
 				},
 				control : {
-					collectModsView : {},
+					collectModsView : {
+						activate : 'onActivate'
+					},
 					collectModsList : {
 						initialize : "onInitCollectModsList"
-
 					},
 					collectModsDetails : {},
 					// fonctionne comme une CSS selecteur
 					'collectModsButtonsList_xtype button' : {
-						// tap : 'onShowDetails'
 						tap : 'onShowDetails'
 					}
 
 				}
 			},
 
+			onActivate : function(newActiveItem, container, oldActiveItem,
+					eOpts) {
+				var dataCollectMods = this
+						.getApplication()
+						.getController("VivreANantes.controller.GarbagesController")
+						.getCollectModList().getStore();
+				var arrayItemsToShow = this.getDatasForButtons(dataCollectMods, "modco");
+				var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+				this.getCollectModsList().setItems(arrayItems);
+			},
+
 			onShowDetails : function(button, e, eOpts) {
 				this.showDetails(button.id);
 			},
 
-			/**
-			 * 
-			 */
 			showDetails : function(elementId) {
 
 				// Crée la page si elle n'existe pas encode
@@ -39,8 +47,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 							.create("VivreANantes.view.collectMod.CollectModsDetails");
 				}
 
-				// Récupère le store
-				var collectModFromStore = this.getCollectMod(elementId);
+				// Récupère l'élément à partir du store
+				var collectModFromStore = this.getElementFromStore(elementId);
 
 				// Ajout de la description
 				var descriptionTraduit = "";
@@ -70,8 +78,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 
 				// Affectation du titre
 				var title = "<I>"
-						+ this.translateWithUpperFirstLetter(
-								"label_modeDeCollecte", "fr")
+						+ this
+								.translateWithUpperFirstLetter("label_modeDeCollecte")
 						+ "</I> "
 						+ this
 								.stringUpperFirstLetter(collectModFromStore["libelle"]);
@@ -84,96 +92,32 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 
 			},
 			onInitCollectModsList : function(container) {
-
-				var arrayItemsToShow = new Array();
-				arrayItemsToShow.push({
-							"libelle" : "Conteneur <br/>papier-carton",
-							"image" : "conteneur_carton_petit.png",
-							"id" : "modco_contpapiercarton"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Conteneur plastique",
-							"image" : "conteneur_plastique_petit.png",
-							"id" : "modco_contmpb"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Conteneur verre",
-							"image" : "conteneur_verre_petit.png",
-							"id" : "modco_contverre"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Bacs bleus",
-							"image" : "bac_bleu_petit.png",
-							"id" : "modco_bacbleu"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Bacs jaunes",
-							"image" : "bac_jaune_en_cours_petit.png",
-							"id" : "modco_bacjaune"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Sacs bleus",
-							"image" : "sac_bleu_petit.png",
-							"id" : "modco_sacbleu"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Sacs jaunes",
-							"image" : "sac_jaune_petit.png",
-							"id" : "modco_sacjaune"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Ecopoints /<br/>déchetteries",
-							"image" : "ecopoint_panneau_labeaujoire_petit.png",
-							"id" : "modco_ecopoint_modco_decheterie"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Réemploi",
-							"image" : "structures_reemplois_petit.png",
-							"id" : "modco_reemploi"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Points de vente",
-							"image" : "recyclage_point_de_vente_petit.png",
-							"id" : "modco_pointsdevente"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Conteneur <br/>Le Relay",
-							"image" : "conteneur_lerelais_petit.png",
-							"id" : "smco_conteneurlerelais"
-						});
-				arrayItemsToShow.push({
-							"libelle" : "Camions Ecotoc",
-							"image" : "ecotox_panneau_malakoff_petit.png",
-							"id" : "modco_ecotox"
-						});
-
-				var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-				container.setItems(arrayItems);
 			},
 
 			/*
 			 * Renvoie le mode de collecte
 			 */
-			getCollectMod : function(stCollectMod) {
+			getElementFromStore : function(idElement) {
 				var description = "";
 				var conseils = "";
 				var faq = "";
 				var image = "";
 				var libelle = "";
-				var dataCollectMods = this
+				var datas = this
 						.getApplication()
 						.getController("VivreANantes.controller.GarbagesController")
 						.getCollectModList().getStore().getData();
-				dataCollectMods.each(function(recordAdvice) {
-							if (recordAdvice.raw["code"] === stCollectMod) {
-								description = recordAdvice.raw["description"];
-								conseils = recordAdvice.raw["conseils"];
-								libelle = recordAdvice.raw["libelle"];
-								image = recordAdvice.raw["image"];
+				datas.each(function(record) {
+							if (record.data["code"] === idElement) {
+								description = record.data["description"];
+								conseils = record.data["conseils"];
+								faq = record.data["faq"];
+								libelle = record.data["libelle"];
+								image = record.data["image"];
 							}
 						});
 				return {
-					"code" : stCollectMod,
+					"code" : idElement,
 					"description" : description,
 					"conseils" : conseils,
 					"faq" : faq,

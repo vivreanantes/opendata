@@ -14,7 +14,16 @@ Ext.define('VivreANantes.model.CollectModModel', {
 						}, {
 							name : 'recyclable'
 						}, {
-							name : 'image'
+							name : 'image',
+							type : 'string',
+							convert : function(value, record) {
+								if (value == null || value === "") {
+									return "image_defaut.png";
+								}
+								return value;
+							}
+						}, {
+							name : 'bouton'
 						}]
 			}
 		});

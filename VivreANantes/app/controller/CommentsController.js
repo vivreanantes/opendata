@@ -19,6 +19,14 @@ Ext.define('VivreANantes.controller.CommentsController', {
 		console.log('onInitFaq');
 		var store = Ext.create('VivreANantes.store.CommentsStore');
 		list.setStore(store);
+		
+				
+				// Initialisation du storage
+				var localStorageController= this.getApplication().getController("VivreANantes.controller.LocalStorageController");
+				localStorageController.initLocalStorage();
+				var temp = localStorageController.getLocale();
+				console.log("localStorageController :" + temp);
+				
 	},
 
 	onListItemTap : function(list, index, element, record) {

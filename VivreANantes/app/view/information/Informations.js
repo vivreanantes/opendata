@@ -1,5 +1,5 @@
 /**
- * Fiches explicatives
+ * Page des Fiches explicatives
  * 
  * @author Christian Renoulin
  */
@@ -13,7 +13,7 @@ Ext.define('VivreANantes.view.information.Informations', {
 				iconCls : 'action',
 				scrollable : true,
 				items : [{
-							xtype : 'informationsList_xtype'
+							xtype : 'informationsButtonsList_xtype'
 						}]
 
 			}

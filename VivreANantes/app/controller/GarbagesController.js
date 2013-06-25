@@ -7,16 +7,21 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
+			garbagesContainer2 : 'garbagesContainer2_xtype',
 			garbagesList : 'garbagesList_xtype',
 			garbageDetail : 'garbagesDetails_xtype',
 			garbagesForm : 'garbagesForm_xtype',
 			garbagesFormText : '#garbagesFormText',
 			garbagesFormSelect : '#garbagesFormSelect',
-			usualCategoriesList : 'usualCategoriesList_xtype',
-			usualSubCategoriesList : 'usualSubCategoriesList_xtype',
+			garbagesButtonsPanel : 'garbagesButtonsPanel_xtype',
+			usualCategoriesButtonsPanel : 'usualCategoriesButtonsPanel_xtype',
+			// usualSubCategoriesButtonsPanel :
+			// 'usualSubCategoriesButtonsPanel_xtype',
 			advicesList : 'advicesList_xtype',
 			wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
-			collectModList : 'collectModList_xtype'
+			collectModList : 'collectModList_xtype',
+			usualCategoriesList2 : 'usualCategoriesList2_xtype',
+			informationsList : 'informationsList_xtype'
 		},
 		control : {
 			garbageDetail : {
@@ -27,21 +32,23 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				initialize : "onInitCollectModsList"
 
 			},
-			usualCategoriesList : {
-				initialize : 'onInitUsualCategoriesList',
-				show : 'onShowUsualCategoriesList'
+			usualCategoriesButtonsPanel : {
+				initialize : 'onInitUsualCategoriesButtonsPanel',
+				show : 'onShowUsualCategoriesButtonsPanel'
 			},
-			usualSubCategoriesList : {
-				initialize : 'onInitUsualSubCategoriesList'
-			},
+			/*
+			 * usualSubCategoriesButtonsPanel : { initialize :
+			 * 'onInitUsualSubCategoriesButtonsPanel' },
+			 */
 			garbagesList : {
 				initialize : 'onInitGarbages',
-				itemtap : 'showGarbagesDetail'
+				itemtap : 'showGarbagesDetail_old'
 			},
 
 			garbagesView : {
 				initialize : 'onInitGarbagesView',
-				push : 'onGarbagesViewPush'
+				push : 'onGarbagesViewPush',
+				activate : 'onActivate'
 			},
 
 			garbagesFormText : {
@@ -50,11 +57,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				clearicontap : 'onGarbageStoreFilter'
 			},
 
-			garbagesFormSelect : {
-// change : 'onGarbageStoreFilter'
-			}
-			// CRN_DEBUT
-			,
+			garbagesFormSelect : {},
 			advicesList : {
 				initialize : 'onInitGarbagesAdvices'
 			},
@@ -65,16 +68,28 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			collectModList : {
 				initialize : 'onInitGarbagesCollectModList'
 			},
+			informationsList : {
+				initialize : 'onInitGarbagesInformationsList'
+			},
+			usualCategoriesList2 : {
+				initialize : 'onInitGarbagesUsualCategoryList'
+			},
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
-			'usualCategoriesList_xtype button' : {
+			'usualCategoriesButtonsPanel_xtype button' : {
 				tap : 'onShowDetails'
 			},
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
-			'usualSubCategoriesList_xtype button' : {
+			'usualSubCategoriesButtonsPanel_xtype button' : {
 				tap : 'onShowDetails'
 			},
+			// fonctionne comme une CSS selector
+			// (http://www.w3.org/TR/CSS2/selector.html)
+			'garbagesButtonsPanel_xtype button' : {
+				tap : 'showGarbagesDetail'
+			},
+
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'garbagesDetails_xtype button' : {
@@ -86,6 +101,13 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	// DEBUG
 	onDebug : function() {
 		console.log('DEBUG');
+	},
+
+	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
+		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu");
+		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+		this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
 	},
 
 	onTapLinkButton : function(button, e, eOpts) {
@@ -102,148 +124,139 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 	},
 
+	/**
+	 * Invoqué lorsque l'on clique sur un bouton d'une catégorie usuelle
+	 * 
+	 * @param {}
+	 *            collectModId
+	 */
 	showDetails : function(collectModId) {
 
-		if (this.garbagesList == null) {
-			this.garbagesList = Ext
-					.create('VivreANantes.view.garbages.GarbagesList');
-		}
-		var title = this.translate("label_" + collectModId);
-		if (title == collectModId) {
-			title = this.translateWithUpperFirstLetter("label_dechets");
-		}
-		this.garbagesList.setTitle(title);
 		this.getGarbagesFormSelect().setValue(collectModId);
-		this.filter();
-		this.getGarbagesView().push(this.garbagesList);
-	},
-	/*
-	 * onShowSubCategory : function(button, e, eOpts) {
-	 * this.showSubCategory(button.id); },
-	 */
-	showSubCategory : function(collectModId) {
-		if (this.usualSubCategoriesList == null) {
-			this.usualSubCategoriesList = Ext
-					.create('VivreANantes.view.garbages.UsualSubCategoriesList');
-		}
-		this.getGarbagesView().push(this.usualSubCategoriesList);
+		this.filter2();
+		// this.getGarbagesContainer2().push(this.garbagesButtonsPanel);
+		this.getGarbagesView().push(this.garbagesButtonsPanel);
 	},
 
-	onInitUsualCategoriesList : function(container) {
-		// var categorieUsuelleStore =
-		// Ext.create('VivreANantes.store.CategorieUsuelleStore');
+	showSubCategory : function(collectModId) {
+		if (this.usualSubCategoriesButtonsPanel == null) {
+			// this.usualSubCategoriesButtonsPanel =
+			// Ext.create('VivreANantes.view.garbages.UsualSubCategoriesButtonsPanel');
+			this.usualSubCategoriesButtonsPanel = Ext
+					.create('VivreANantes.view.garbages.UsualCategoriesList');
+
+		}
+		// this.getGarbagesContainer2().push(this.usualSubCategoriesButtonsPanel);
+		this.getGarbagesView().push(this.usualSubCategoriesButtonsPanel);
+	},
+
+	onInitUsualCategoriesButtonsPanel : function(container) {
+		// var categorieUsuelleStore = Ext.create('VivreANantes.store.CategorieUsuelleStore');
 		// list.setStore(categorieUsuelleStore);
 		var arrayItemsToShow = new Array();
-		var stLocale = "fr";
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_plastique", stLocale),
-					"id" : "cu_plastique",
-					"image" : "grande_bouteille_huile_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_plastique"),
+			"id" : "cu_plastique",
+			"image" : "grande_bouteille_huile_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_papierscartons", stLocale),
-					"id" : "cu_papierscartons",
-					"image" : "cartonette_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_papierscartons"),
+			"id" : "cu_papierscartons",
+			"image" : "cartonette_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_metal", stLocale),
+					"libelle" : this
+							.translateWithUpperFirstLetterAndDecoupe("label_cu_metal"),
 					"id" : "cu_metal",
 					"image" : "barquette_aluminium.png"
 				});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_vertbois", stLocale),
-					"id" : "cu_vertbois",
-					"image" : "feuillages_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_vertbois"),
+			"id" : "cu_vertbois",
+			"image" : "feuillages_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_verrevaisselle", stLocale),
-					"id" : "cu_verrevaisselle",
-					"image" : "vase_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_verrevaisselle"),
+			"id" : "cu_verrevaisselle",
+			"image" : "vase_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_vetementtissu", stLocale),
-					"id" : "cu_vetementtissu",
-					"image" : "jean_usage_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_vetementtissu"),
+			"id" : "cu_vetementtissu",
+			"image" : "jean_usage_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_encombrant", stLocale),
-					"id" : "cu_encombrant",
-					"image" : "refrigerateur_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_encombrant"),
+			"id" : "cu_encombrant",
+			"image" : "refrigerateur_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_divers", stLocale),
-					"id" : "cu_divers",
-					"image" : "bouchon_liege_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_divers"),
+			"id" : "cu_divers",
+			"image" : "bouchon_liege_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_nourriture", stLocale),
-					"id" : "cu_nourriture",
-					"image" : "epeluchure_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_nourriture"),
+			"id" : "cu_nourriture",
+			"image" : "epeluchure_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_electronique", stLocale),
-					"id" : "cu_electronique",
-					"image" : "telephone_fixe_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_electronique"),
+			"id" : "cu_electronique",
+			"image" : "telephone_fixe_petit.png"
+		});
 		arrayItemsToShow.push({
-					"libelle" : this.translateWithUpperFirstLetter("label_cu_toxique", stLocale),
-					"id" : "cu_toxique",
-					"image" : "batterie_voiture_petit.png"
-				});
+			"libelle" : this
+					.translateWithUpperFirstLetterAndDecoupe("label_cu_toxique"),
+			"id" : "cu_toxique",
+			"image" : "batterie_voiture_petit.png"
+		});
 
 		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
 		container.setItems(arrayItems);
+	},
+
+	translateWithUpperFirstLetterAndDecoupe : function(stLabel) {
+		return this.decoupe(this.translateWithUpperFirstLetter(stLabel));
 	},
 
 	/*
 	 * 
 	 */
-	onShowUsualCategoriesList : function() {
+	onShowUsualCategoriesButtonsPanel : function() {
 		// Efface le champ texte de l'écran recherche
 		this.getGarbagesFormText().setValue("");
 	},
 
-	onInitUsualSubCategoriesList : function(container) {
-		var arrayItemsToShow = new Array();
-		arrayItemsToShow.push({
-					"libelle" : "Jardinage",
-					"id" : "scu_toxiquejardin",
-					"image" : "desherbant_petit.png"
-				});
-		arrayItemsToShow.push({
-					"libelle" : "Garage",
-					"id" : "scu_toxiquegarage",
-					"image" : "batterie_voiture_petit.png"
-				});
-		arrayItemsToShow.push({
-					"libelle" : "Cuisine",
-					"id" : "scu_toxiquecuisine",
-					"image" : "bouteille_ammoniaque_petit.png"
-				});
-		arrayItemsToShow.push({
-					"libelle" : "Salle de bain",
-					"id" : "scu_toxiquesdb",
-					"image" : "desinfectant_toilette_petit.png"
-				});
-		arrayItemsToShow.push({
-					"libelle" : "Bricolage",
-					"id" : "scu_toxiquebrico",
-					"image" : "peinture_petit.png"
-				});
-		arrayItemsToShow.push({
-					"libelle" : "Traitement des parasites",
-					"id" : "scu_toxiqueparasite",
-					"image" : "mortaurat_petit.png"
-				});
-		arrayItemsToShow.push({
-					"libelle" : "Déchets toxiques divers",
-					"id" : "scu_toxiquedivers",
-					"image" : "pile_45_petit.png"
-				});
-
-		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		container.setItems(arrayItems);
-	},
+	/*
+	 * onInitUsualSubCategoriesButtonsPanel : function(container) { var
+	 * arrayItemsToShow = new Array(); arrayItemsToShow.push({ "libelle" :
+	 * "Jardinage", "id" : "scu_toxiquejardin", "image" : "desherbant_petit.png"
+	 * }); arrayItemsToShow.push({ "libelle" : "Garage", "id" :
+	 * "scu_toxiquegarage", "image" : "batterie_voiture_petit.png" });
+	 * arrayItemsToShow.push({ "libelle" : "Cuisine", "id" :
+	 * "scu_toxiquecuisine", "image" : "bouteille_ammoniaque_petit.png" });
+	 * arrayItemsToShow.push({ "libelle" : "Salle de bain", "id" :
+	 * "scu_toxiquesdb", "image" : "desinfectant_toilette_petit.png" });
+	 * arrayItemsToShow.push({ "libelle" : "Bricolage", "id" :
+	 * "scu_toxiquebrico", "image" : "peinture_petit.png" });
+	 * arrayItemsToShow.push({ "libelle" : "Traitement des parasites", "id" :
+	 * "scu_toxiqueparasite", "image" : "mortaurat_petit.png" });
+	 * arrayItemsToShow.push({ "libelle" : "Déchets toxiques divers", "id" :
+	 * "scu_toxiquedivers", "image" : "pile_45_petit.png" });
+	 * 
+	 * var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+	 * container.setItems(arrayItems); },
+	 */
 
 	getArrayFromString : function(string) {
 		string = string.replace(", /g", ",").replace(" ,/g", ",");
@@ -295,18 +308,13 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	onInitGarbagesView : function() {
-
-		console.log('onInitGarbagesContainer');
-
 	},
 
 	/**
-	 * A l'initialisation de la fenêtre d'accueil
+	 * A l'initialisation de la fenêtre d'accueil : initialisation de la liste
+	 * des déchets
 	 */
 	onInitGarbages : function(list) {
-
-		console.log('onInitGarbages');
-
 		var garbageStore = Ext.create('VivreANantes.store.GarbageStore', {
 					autoLoad : true,
 					listeners : {
@@ -315,15 +323,11 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 						}
 					}
 				});
-
 		list.setStore(garbageStore);
-
-		console.log(garbageStore);
-
 	},
 
 	/**
-	 * A l'initialisation de la fenêtre d'accueil
+	 * Initialisation de la liste des conseils
 	 */
 	onInitGarbagesAdvices : function(list) {
 		console.log('onInitGarbagesAdvices');
@@ -332,7 +336,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	/**
-	 * A l'initialisation de la fenêtre d'accueil
+	 * Initialisation de la liste des catégories de traitement
 	 */
 	onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
 		console.log('onInitGarbagesWasteTreatmentsCategoriesList');
@@ -342,7 +346,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	/**
-	 * A l'initialisation de la fenêtre d'accueil
+	 * Initialisation de la liste des modes de collectes
 	 */
 	onInitGarbagesCollectModList : function(list) {
 		console.log('onInitGarbagesCollectModList');
@@ -350,20 +354,38 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		list.setStore(store);
 	},
 
+	/**
+	 * Initialisation de la liste des fiches explicatives de collectes
+	 */
+	onInitGarbagesInformationsList : function(list) {
+		console.log('onInitGarbagesInformationsList');
+		var store = Ext.create('VivreANantes.store.InformationsStore');
+		list.setStore(store);
+	},
+
+	/**
+	 * Initialisation de la liste des fiches explicatives de collectes
+	 */
+	onInitGarbagesUsualCategoryList : function(list) {
+		console.log('onInitGarbagesUsualCategoryList');
+		var store = Ext.create('VivreANantes.store.CategorieUsuelleStore');
+		list.setStore(store);
+	},
 	onGarbagesViewPush : function(view, item) {
 
 		// this.garbagesList().deselectAll();
 
 	},
 
-	showGarbagesDetail : function(list, index, node, record) {
+	showGarbagesDetail_old : function(list, index, node, record) {
 		var thisController = this;
 		if (record) {
 			if (!this.garbageDetail) {
 				this.garbageDetail = Ext
 						.create('VivreANantes.view.garbages.GarbagesDetails');
 			}
-			var title = "<I>" + this.translate("label_dechet")+ "</I> "+ record.data["nom"];
+			var title = "<I>" + this.translate("label_dechet") + "</I> "
+					+ record.data["nom"];
 			this.garbageDetail.setTitle(title);
 			console.log(record.data);
 			console.log(this.garbageDetail);
@@ -499,6 +521,174 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		}
 	},
 
+	showGarbagesDetail : function(button, e, eOpts) {
+
+		// Récupère l'élément
+		var record = this.getElementFromStore(button.id);
+
+		var thisController = this;
+		if (record) {
+			if (!this.garbageDetail) {
+				this.garbageDetail = Ext
+						.create('VivreANantes.view.garbages.GarbagesDetails');
+			}
+			var title = "<I>" + this.translate("label_dechet") + "</I> "
+					+ record.data["nom"];
+			this.garbageDetail.setTitle(title);
+			console.log(record.data);
+			console.log(this.garbageDetail);
+
+			// var conseilTraduit = "";
+			var conseils = "";
+			var modesDeCollecte = "";
+			var treatmentCategories = "";
+			if (record.data["conseils"] !== '') {
+				conseils = record.data["conseils"] + ",";
+			}
+			// conseils de catégories de traitement
+			if (record.data["categorie_traitement"] !== '') {
+				var dataWasteTreatmentsCategories = this
+						.getWasteTreatmentsCategoriesList().getStore()
+						.getData();
+				dataWasteTreatmentsCategories.each(function(recordCategories) {
+					if (recordCategories.raw["code"] === record.data["categorie_traitement"]) {
+						conseils += recordCategories.raw["conseils"];
+						modesDeCollecte += recordCategories.raw["modesCollecte"];
+						treatmentCategories += recordCategories.raw["recyclable"];
+					}
+				});
+			}
+			if (treatmentCategories === "OUI") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR=green size=4>"
+						+ this.translate("label_OUI") + "</FONT>";
+			} else if (treatmentCategories === "NON") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='red' size=4>"
+						+ this.translate("label_NON") + "</FONT>";
+			} else if (treatmentCategories === "PAS_POUBELLE") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='orange' size=4>"
+						+ this.translate("label_NON") + "</FONT>"
+						+ this.translate("label_pas_poubelle");
+			} else if (treatmentCategories === "OUI_ET_NON") {
+				treatmentCategories = this.translate("label_recyclable")
+						+ " : " + "<FONT COLOR='red' size=4>"
+						+ this.translate("label_NON") + "</FONT>" + " / "
+						+ "<FONT COLOR=green size=4>"
+						+ this.translate("label_OUI") + " "
+						+ this.translate("label_pour_collecte_bac_jaune")
+						+ "</FONT>";
+			} else {
+				treatmentCategories = "";
+			}
+
+			// Modes de collecte
+			var modesDeCollecteTraduit = "";
+			var arrayItemsToShow = new Array();
+			arrayItemsToShow.push({
+						"html" : treatmentCategories
+								+ "<br/><br/>Modes de collecte :",
+						"id" : "garbagesdetails_recyclable"
+					});
+			var arrayModesDeCollecte = modesDeCollecte.split(',');
+			// On parcours les modes de collecte
+			if (arrayModesDeCollecte.length > 0) {
+				var dataCollectMods = this.getCollectModList().getStore()
+						.getData();
+				var numModCollect = 0;
+				dataCollectMods.each(function(recordCollectMod) {
+					for (i in arrayModesDeCollecte) {
+						if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
+							arrayItemsToShow.push(thisController
+									.makeLinkButton("collectMods_xtype",
+											arrayModesDeCollecte[i]));
+						}
+					}
+				});
+			}
+			if (modesDeCollecteTraduit !== "") {
+				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
+						+ modesDeCollecteTraduit;
+			}
+
+			/*
+			 * this.garbageDetail .setTpl("<table border='0'><tr>" + '<td><img
+			 * src=resources/images/{image} height=120 /></td>' + '<td>' +
+			 * treatmentCategories + '<br/>' + modesDeCollecteTraduit + '</td>' + "</tr></table>" + "<div>" +
+			 * descriptionTraduit + "</div>" +
+			 */
+			// image
+			var imageComplet = "<img src='resources/images/"
+					+ record.data["image"] + "' width='150px' />";
+			// this.setDataElement(this.garbageDetail,"garbagesdetails_image",
+			// {'image' : imageComplet})
+			this.garbageDetail.items.items['0'].items.items['0'].setData({
+						'image' : imageComplet
+					})
+			// garbagesdetails_recyclable
+			// this.garbageDetail.items.items['0'].items.items['1'].items.items['0'].setData({'recyclable_string':treatmentCategories
+			// })
+			// garbagesdetails_recyclableetmodesdecollecte
+			// var items = "{ xtype : 'container', layout : 'vbox', id :
+			// 'garbagesdetails_recyclableetmodesdecollecte', items : [ { id :
+			// 'garbagesdetails_recyclable', html: 'recyclable : <FONT
+			// COLOR=green size=4>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
+
+			// this.garbageDetail.items.items['0'].items.items['1']
+			// .setItems(arrayItemsToShow);
+			this.setItemsElement(this.garbageDetail,
+					"garbagesdetails_recyclableetmodesdecollecte",
+					arrayItemsToShow);
+			// Ajout de la description
+			var descriptionTraduit = "";
+			if (record.data["description"] != "") {
+				descriptionTraduit = this.translate("label_concerne_aussi")
+						+ " : " + record.data["description"] + "<br/><br/>";
+			}
+			this.setDataElement(this.garbageDetail,
+					"garbagesdetails_description", {
+						'concerne_aussi' : descriptionTraduit
+					})
+			// this.garbageDetail.items.items['1'].setData()
+			// garbagesdetails_conseils
+			// this.garbageDetail.items.items['2'].setData({'conseils_string' :
+			// conseilTraduit})
+
+			// Ajout des conseils
+			var arraysItemsAdvices = this.getItemsAdvices(conseils);
+			this.setItemsElement(this.garbageDetail,
+					"garbagesdetails_conseils", arraysItemsAdvices);
+
+			// Ajout des commentaires
+			this.setItemsElement(this.garbageDetail,
+					"garbagesdetails_commentaires", this
+							.getItemsComments(record.data["code"]));
+
+			// Bind the record onto the show contact view
+			this.garbageDetail.setData(record.data);
+
+			// Push the show contact view into the navigation view
+			this.getGarbagesView().push(this.garbageDetail);
+		}
+	},
+
+	/*
+	 * Renvoie le mode de collecte
+	 */
+	getElementFromStore : function(idElement) {
+		var result;
+		var datas = this.getApplication()
+				.getController("VivreANantes.controller.GarbagesController")
+				.getGarbagesList().getStore().getData();
+		datas.each(function(record) {
+					if (record.data["code"] === idElement) {
+						result = record;
+					}
+				});
+		return result;
+	},
+
 	// Méthodes invoquées par le formulaire
 
 	/**
@@ -506,16 +696,20 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * catégorie sélectionnée
 	 */
 	onGarbageStoreFilter : function() {
-		if (this.garbagesList == null) {
-			this.garbagesList = Ext
-					.create('VivreANantes.view.garbages.GarbagesList');
-		}
-		var title = this.translate("label_resultat_recherche");
-		this.garbagesList.setTitle(title);
-		this.getGarbagesFormSelect().setValue("");
-		this.filter();
-		this.getGarbagesView().push(this.garbagesList);
+		// if (this.garbagesList == null) {
+		// this.garbagesList = Ext
+		// .create('VivreANantes.view.garbages.GarbagesList');
+		// }
+		// var title = this.translate("label_resultat_recherche");
+		// this.garbagesList.setTitle(title);
+		// this.getGarbagesFormSelect().setValue("");
+		// this.filter();
+		// this.getGarbagesView().push(this.garbagesList);
 
+		this.getGarbagesFormSelect().setValue("");
+		this.filter2();
+		// this.getGarbagesContainer2().push(this.garbagesButtonsPanel);
+		this.getGarbagesView().push(this.garbagesButtonsPanel);
 	},
 
 	filter : function() {
@@ -539,6 +733,49 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			}
 		});
 		store.filter(filterGarbage);
+	},
+
+	filter2 : function() {
+		var result = new Array();
+
+		if (this.garbagesList == null) {
+			this.garbagesList = Ext
+					.create('VivreANantes.view.garbages.GarbagesList');
+		}
+		var arrayItemsToShow = this.getGarbagesList().getStore().getData();
+
+		if (arrayItemsToShow.length > 0) {
+
+			var text = this.getGarbagesFormText();
+			var category = this.getGarbagesFormSelect();
+			var escaperegex = Ext.String.escapeRegex;
+			var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+			var categorietest = new RegExp(category.getValue());
+
+			var theItems = arrayItemsToShow.items;
+			for (var i = 0; i < theItems.length; i++) {
+				var aData = theItems[i].data;
+				if ((aData["categorie_usuelle"] === category.getValue() || category
+						.getValue() === "all")
+						&& texttest.test(aData["nom"])) {
+					// Ajoute les <br/>
+					var stLibelle = this.decoupe(aData["nom"]);
+					result.push({
+								id : aData["code"],
+								libelle : stLibelle,
+								image : aData["image"]
+							});
+				}
+			}
+		}
+		if (result.length > 0) {
+			if (this.garbagesButtonsPanel == null) {
+				this.garbagesButtonsPanel = Ext
+						.create('VivreANantes.view.garbages.GarbageButtonsPanel');
+			}
+			var arrayItems = this.getContentButtonsPanel(result);
+			this.garbagesButtonsPanel.setItems(arrayItems);
+		}
 	}
 
 });
