@@ -13,6 +13,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			garbagesForm : 'garbagesForm_xtype',
 			garbagesFormText : '#garbagesFormText',
 			garbagesFormSelect : '#garbagesFormSelect',
+			garbagesFormButton : '#garbagesFormButton',
 			garbagesButtonsPanel : 'garbagesButtonsPanel_xtype',
 			usualCategoriesButtonsPanel : 'usualCategoriesButtonsPanel_xtype',
 			// usualSubCategoriesButtonsPanel :
@@ -48,16 +49,20 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			garbagesView : {
 				initialize : 'onInitGarbagesView',
 				push : 'onGarbagesViewPush',
-				activate : 'onActivate'
+				show : 'onActivate'
 			},
 
 			garbagesFormText : {
-				keyup : 'onGarbageStoreFilter',
-				change : 'onGarbageStoreFilter',
-				clearicontap : 'onGarbageStoreFilter'
+				// keyup : 'onGarbageStoreFilter',
+				// change : 'onGarbageStoreFilter',
+				// clearicontap : 'onGarbageStoreFilter'
 			},
-
-			garbagesFormSelect : {},
+			garbagesFormSelect : {
+			
+			},
+			garbagesFormButton : {
+				tap : 'onTapGarbagesFormButton'
+			},
 			advicesList : {
 				initialize : 'onInitGarbagesAdvices'
 			},
@@ -131,7 +136,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 *            collectModId
 	 */
 	showDetails : function(collectModId) {
-
+		this.getGarbagesFormText().setValue("");
 		this.getGarbagesFormSelect().setValue(collectModId);
 		this.filter2();
 		// this.getGarbagesContainer2().push(this.garbagesButtonsPanel);
@@ -143,7 +148,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// this.usualSubCategoriesButtonsPanel =
 			// Ext.create('VivreANantes.view.garbages.UsualSubCategoriesButtonsPanel');
 			this.usualSubCategoriesButtonsPanel = Ext
-					.create('VivreANantes.view.garbages.UsualCategoriesList');
+					.create('VivreANantes.view.garbages.UsualCategoriesButtonPanel');
 
 		}
 		// this.getGarbagesContainer2().push(this.usualSubCategoriesButtonsPanel);
@@ -151,78 +156,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	onInitUsualCategoriesButtonsPanel : function(container) {
-		// var categorieUsuelleStore = Ext.create('VivreANantes.store.CategorieUsuelleStore');
-		// list.setStore(categorieUsuelleStore);
-		var arrayItemsToShow = new Array();
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_plastique"),
-			"id" : "cu_plastique",
-			"image" : "grande_bouteille_huile_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_papierscartons"),
-			"id" : "cu_papierscartons",
-			"image" : "cartonette_petit.png"
-		});
-		arrayItemsToShow.push({
-					"libelle" : this
-							.translateWithUpperFirstLetterAndDecoupe("label_cu_metal"),
-					"id" : "cu_metal",
-					"image" : "barquette_aluminium.png"
-				});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_vertbois"),
-			"id" : "cu_vertbois",
-			"image" : "feuillages_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_verrevaisselle"),
-			"id" : "cu_verrevaisselle",
-			"image" : "vase_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_vetementtissu"),
-			"id" : "cu_vetementtissu",
-			"image" : "jean_usage_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_encombrant"),
-			"id" : "cu_encombrant",
-			"image" : "refrigerateur_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_divers"),
-			"id" : "cu_divers",
-			"image" : "bouchon_liege_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_nourriture"),
-			"id" : "cu_nourriture",
-			"image" : "epeluchure_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_electronique"),
-			"id" : "cu_electronique",
-			"image" : "telephone_fixe_petit.png"
-		});
-		arrayItemsToShow.push({
-			"libelle" : this
-					.translateWithUpperFirstLetterAndDecoupe("label_cu_toxique"),
-			"id" : "cu_toxique",
-			"image" : "batterie_voiture_petit.png"
-		});
-
-		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		container.setItems(arrayItems);
+	
 	},
 
 	translateWithUpperFirstLetterAndDecoupe : function(stLabel) {
@@ -706,34 +640,17 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		// this.filter();
 		// this.getGarbagesView().push(this.garbagesList);
 
-		this.getGarbagesFormSelect().setValue("");
+		this.getGarbagesFormSelect().setValue("all");
 		this.filter2();
-		// this.getGarbagesContainer2().push(this.garbagesButtonsPanel);
+		this.getGarbagesView().push(this.garbagesButtonsPanel);
+	},
+	
+	onTapGarbagesFormButton : function(button, e, eOpts) {
+		this.getGarbagesFormSelect().setValue('all');
+		this.filter2();
 		this.getGarbagesView().push(this.garbagesButtonsPanel);
 	},
 
-	filter : function() {
-		var text = this.getGarbagesFormText();
-		var category = this.getGarbagesFormSelect();
-		var store = this.getGarbagesList().getStore();
-
-		store.clearFilter();
-		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
-		// sur la catégorie
-		var filterGarbage = Ext.create('Ext.util.Filter', {
-			filterFn : function(item) {
-				var escaperegex = Ext.String.escapeRegex;
-				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
-				// var categorietest = new
-				// RegExp(escaperegex(select.getValue()));
-				var categorietest = new RegExp(category.getValue());
-
-				return (texttest.test(item.data["nom"]) && (category.getValue() === 'all' || categorietest
-						.test(item.data["categorie_usuelle"])));
-			}
-		});
-		store.filter(filterGarbage);
-	},
 
 	filter2 : function() {
 		var result = new Array();
@@ -768,14 +685,14 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				}
 			}
 		}
-		if (result.length > 0) {
+		// if (result.length > 0) {
 			if (this.garbagesButtonsPanel == null) {
 				this.garbagesButtonsPanel = Ext
 						.create('VivreANantes.view.garbages.GarbageButtonsPanel');
 			}
 			var arrayItems = this.getContentButtonsPanel(result);
 			this.garbagesButtonsPanel.setItems(arrayItems);
-		}
+		// }
 	}
 
 });

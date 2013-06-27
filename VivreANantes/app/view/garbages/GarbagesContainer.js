@@ -11,11 +11,16 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 				title : 'Déchets',
 				items : [{
 							xtype : 'garbagesForm_xtype',
-							height : 80,
+							height : 100,
 							scrollable : false
 						}, {
 							xtype : 'usualCategoriesButtonsPanel_xtype'
-						}, {
+							// xtype : 'garbagesContainer2_xtype'
+						},
+						/////////////////////////////////////////
+						// Les listes commune de l'application
+						/////////////////////////////////////////
+						{
 							xtype : 'garbagesList_xtype'
 						}, {
 							xtype : 'advicesList_xtype'

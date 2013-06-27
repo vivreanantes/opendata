@@ -3,7 +3,7 @@
  * 
  * @author Christian Renoulin
  */
-Ext.define('VivreANantes.view.garbages.UsualCategoriesList', {
+Ext.define('VivreANantes.view.garbages.UsualCategoriesButtonPanel', {
 			extend : 'Ext.Container',
 			xtype : 'usualCategoriesButtonsPanel_xtype',
 			config : {

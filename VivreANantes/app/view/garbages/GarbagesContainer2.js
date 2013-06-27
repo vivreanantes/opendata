@@ -3,12 +3,29 @@
  * cette recherche en dessous
  */
 Ext.define('VivreANantes.view.garbages.GarbagesContainer2', {
-			extend : 'Ext.navigation.View',
+						extend : 'Ext.navigation.View',
+			xtype : 'garbagesContainer2_xtype',
+
+			config : {
+				autoDestroy : false,
+				iconCls : 'team',
+				title : 'Commentaires',
+				items : [{
+							xtype : 'commentsContainer_xtype'
+						}
+				]}}
+			
+			
+			/*extend : 'Ext.navigation.View',
 			xtype : 'garbagesContainer2_xtype',
 			config : {
+				autoDestroy : false,
+				iconCls : 'home',
+				title:'GarbagesContainer2',
 				items : [{
 							xtype : 'usualCategoriesButtonsPanel_xtype'
-						}]
+						}
+				]
 			}
 
-		});
+		}*/);

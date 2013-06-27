@@ -20,10 +20,9 @@ Ext
 			'welcome.WelcomeList',
 			// 'garbages.Garbages',
 			// Déchets
-			'garbages.GarbagesContainer2',
+			// 'garbages.GarbagesContainer2',
 			'garbages.GarbageButtonsPanel',
-			'garbages.UsualCategoriesList',
-			'garbages.UsualSubCategoriesList',
+			'garbages.UsualCategoriesButtonPanel',
 			'garbages.AdvicesList',
 			'garbages.WasteTreatmentsCategoriesList',
 			'garbages.CollectModsList',
@@ -105,23 +104,16 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO fusionner subCaterory et caterory 
-		// TODO utiliser container2
+		// TODO Régler le pb de performance sur la recherche des déchets !
 		// TODO Brancher le formulaire de commentaire sur un script SGI
-		// TODO Ajout photo : vers de terre, panneau solaire thermique
-
-		// TODO Déchets (dans le tableur et ensuite dans dechets.json) : LONG vérifier les données et les conseils
 		// TODO Faire un déploiement
-		// TODO Vérif si un bouchon métallique se recycle, idem capsule bouteille lait
-		// TODO Compléter les infos sur Le Relais
+
+		/////////// CRN Long terme //////////
+
+		// TODO Vérif si la capsule bouteille lait
 		// TODO Informations : faire réchauffement climatique
-		// TODO Informations : améliorer la fiche sur les panneaux solaires 
 		// TODO A domicile LONG : faire une relecture des données du tableur 
 		//                 http://www.nantesmetropole.fr/pratique/dechets/les-ordures-menageres-residuelles-23181.kjsp
-		
- 		// Divers http://dev.sencha.com/deploy/ext-3.4.0/examples/layout/vbox.html
-		//        http://try.sencha.com/touch/2.0.0/docs/Ext.layout.VBox.2/viewer.html
-		/////////// CRN Long terme //////////
 
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
 		// TODO Contacter des assos pour améliorer le contenu de l'appli 

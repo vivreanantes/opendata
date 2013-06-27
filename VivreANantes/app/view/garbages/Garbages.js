@@ -1,5 +1,5 @@
 /**
- * Vue des Déchets (présente avec un icone de déchets
+ * Vue principale des Déchets (présente avec un icone de déchets)
  */
 Ext.define('VivreANantes.view.garbages.Garbages', {
 			extend : 'Ext.navigation.View',

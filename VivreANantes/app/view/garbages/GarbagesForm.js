@@ -11,11 +11,16 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 							name : 'name',
 							label : 'Recherche',
 							id : 'garbagesFormText'
-						}, {
+						},  {
+							xtype : 'button',
+							id : 'garbagesFormButton',
+							text : 'Chercher'
+						},
+						{
 							xtype : 'selectfield',
 							label : 'Catégorie',
 							id : 'garbagesFormSelect',
-							hidden : true,
+							hidden:true,
 							options : [
 						            {text : 'Tous', value : 'all'},
 						            {text : "Plastique", value : "cu_plastique" },

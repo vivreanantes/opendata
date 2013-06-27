@@ -16,6 +16,9 @@ Ext.define('VivreANantes.view.Main', {
 			}
 		},
 		items : [{
+					xclass : 'VivreANantes.view.about.Description'
+				},
+				{
 					xclass : 'VivreANantes.view.garbages.Garbages'
 				}, {
 					xclass : 'VivreANantes.view.geo.MapOSM'
@@ -35,8 +38,6 @@ Ext.define('VivreANantes.view.Main', {
 					xclass : 'VivreANantes.view.trisac.Trisacs'
 				}, {
 					xclass : 'VivreANantes.view.comments.Comments'
-				}, {
-					xclass : 'VivreANantes.view.about.Description'
 				}]
 	}
 });
