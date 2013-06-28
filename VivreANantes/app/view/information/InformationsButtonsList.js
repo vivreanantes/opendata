@@ -7,6 +7,7 @@
 Ext.define('VivreANantes.view.information.InformationsButtonsList', {
 			extend : 'Ext.Container',
 			xtype : 'informationsButtonsList_xtype',
+			scrollable : true,
 			// extend : 'Ext.List',
 			// xtype : 'informationsList_xtype',
 			config : {

@@ -78,6 +78,6 @@ Ext.define('VivreANantes.controller.InformationsController', {
 
 				var arrayItemsToShow = this.getDatasForButtons(datas, "fiche");
 				var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-				this.getInformationsList().setItems(arrayItems);
+				this.removeAllAndSetItems(this.getInformationsList(), arrayItems);
 			}
 		});

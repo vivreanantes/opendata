@@ -203,6 +203,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		return arrayItems;
 	},
+	
+	removeAllAndSetItems : function(panel, arrayItems) {
+		panel.removeAll(true, true);
+		panel.setItems(arrayItems);
+	},
 
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la

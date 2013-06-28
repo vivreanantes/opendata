@@ -104,17 +104,14 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO Régler le pb de performance sur la recherche des déchets !
 		// TODO Brancher le formulaire de commentaire sur un script SGI
 		// TODO Faire un déploiement
 
 		/////////// CRN Long terme //////////
 
 		// TODO Vérif si la capsule bouteille lait
-		// TODO Informations : faire réchauffement climatique
 		// TODO A domicile LONG : faire une relecture des données du tableur 
 		//                 http://www.nantesmetropole.fr/pratique/dechets/les-ordures-menageres-residuelles-23181.kjsp
-
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
 		// TODO Contacter des assos pour améliorer le contenu de l'appli 
 		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json

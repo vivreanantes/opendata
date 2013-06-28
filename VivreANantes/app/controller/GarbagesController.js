@@ -685,14 +685,12 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				}
 			}
 		}
-		// if (result.length > 0) {
 			if (this.garbagesButtonsPanel == null) {
 				this.garbagesButtonsPanel = Ext
 						.create('VivreANantes.view.garbages.GarbageButtonsPanel');
 			}
 			var arrayItems = this.getContentButtonsPanel(result);
-			this.garbagesButtonsPanel.setItems(arrayItems);
-		// }
+			this.removeAllAndSetItems(this.garbagesButtonsPanel, arrayItems);
 	}
 
 });
