@@ -24,7 +24,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 
 			reusesFormSelectQuartier : {
 				change : "onReusesControllerStoreFilter",
-				initialize : "setOptionsQuartier"
+				initialize : "setOptionsQuartierReemploi"
 			}
 
 			,
@@ -47,14 +47,14 @@ Ext.define("VivreANantes.controller.ReusesController", {
 		var homecollectmodStore = Ext.create(
 				"VivreANantes.store.Structure2Store", {
 					filters : [{
-								property : "modesCollecte",
-								// le type correspond aux modes de collectes
-								// possibles
-								// voir
-								// http://quentinc.net/javascript/testeur-expressions-regulieres/
-								// value : /modco_reemploi/g
-								value : /smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reempvet|smco_conteneurlerelais/g
-							}]
+						property : "modesCollecte",
+						// le type correspond aux modes de collectes
+						// possibles
+						// voir
+						// http://quentinc.net/javascript/testeur-expressions-regulieres/
+						// value : /modco_reemploi/g
+						value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reempvet|smco_conteneurlerelais/g
+					}]
 
 				});
 
@@ -82,46 +82,45 @@ Ext.define("VivreANantes.controller.ReusesController", {
 
 		var selectQuartier = this.getReusesFormSelectQuartier();
 		var selectType = this.getReusesFormSelectType();
-		// var delay = this.getReusesButtons().getPressedButtons()[0].getText();
 
 		var store = this.getReusesList().getStore();
-		
-		// FIXME : Ceci est un traitement trop long
 		store.clearFilter();
 
 		var filterElements = Ext.create("Ext.util.Filter", {
-					filterFn : function(item) {
-						var stModesDeCollecte = item.data["modesCollecte"];
-						if (stModesDeCollecte !== 'modco_reemploi' && stModesDeCollecte !== 'smco_conteneurlerelais') {
-							return false;
-						}
-						var escaperegex = Ext.String.escapeRegex;
-						
-						var stTypeRegexp = new RegExp(selectType.getValue());
-
-						/*
-						 * 
-						 * 
-						 * var stTypeRegexp = new
-						 * RegExp(escaperegex(selectType.getValue())); if
-						 * (selectType.getValue().indexOf(",") !== -1) { var
-						 * array = selectType.getValue().split(','); var
-						 * expression = ''; var i = 0; for (a in array) { if (i ==
-						 * 0) { expression = '(' + array[a]; } else { expression =
-						 * expression + '|' + array[a]; } i++; } expression =
-						 * expression + ')'; stTypeRegexp = new
-						 * RegExp(expression); }
-						 */
-
-						var stQuartier = item.data["quartier"];
-						var stSousModesCollecte = item.data["sousModesCollecte"];
-						return ( selectQuartier.getValue() === "all" || stQuartierRegexp===selectQuartier.getValue())
-								&& //
-								(/*selectType.getValue() === "all" ||*/ stTypeRegexp
-										.test(stSousModesCollecte));
-					}
-				});
+			filterFn : function(item) {
+				var stModesDeCollecte = item.data["modesCollecte"];
+				if (stModesDeCollecte !== 'modco_reemploi'
+						&& stModesDeCollecte !== 'smco_conteneurlerelais') {
+					return false;
+				}
+				var stTypeRegexp = new RegExp(selectType.getValue());
+				var stQuartier = item.data["quartier"];
+				var stSousModesCollecte = item.data["sousModesCollecte"];
+				return (selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) && (stTypeRegexp
+								.test(stSousModesCollecte));
+			}
+		});
 		store.filter(filterElements);
-	}
+	},
 
+	/**
+	 * Valorise les options des listes déroulantes "quartier"
+	 */
+	setOptionsQuartierReemploi : function(selectField) {
+
+		selectField.setOptions([{
+					text : 'Tous',
+					value : 'all'
+				}, {
+					text : "Nantes",
+					value : "Nantes"
+				}, {
+					text : "Hors Nantes : Sud Loire",
+					value : "Hors Nantes sud Loire"
+				}, {
+					text : "Hors Nantes : Nord Loire",
+					value : "Hors Nantes nord Loire"
+				}]);
+
+	}
 });

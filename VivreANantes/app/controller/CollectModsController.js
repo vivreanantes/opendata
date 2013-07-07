@@ -32,7 +32,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 						.getCollectModList().getStore();
 				var arrayItemsToShow = this.getDatasForButtons(dataCollectMods, "modco");
 				var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-				this.getCollectModsList().setItems(arrayItems);
+				this.removeAllAndSetItems(this.getCollectModsList(), arrayItems);
 			},
 
 			onShowDetails : function(button, e, eOpts) {

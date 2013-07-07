@@ -33,7 +33,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 
 			trisacFormSelect : {
 				change : "onTrisacStoreFilter",
-				initialize : "setOptionsQuartier"
+				initialize : "setOptionsQuartierTrisac"
 			}
 		}
 	},
@@ -96,6 +96,41 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 			}
 		});
 		store.filter(filterHomeCollectMod);
+	},
+
+	/**
+	 * Valorise les options des listes déroulantes "quartier"
+	 */
+	setOptionsQuartierTrisac : function(selectField) {
+
+		selectField.setOptions([{
+					text : 'Tous',
+					value : 'all'
+				}, {
+					text : "Chantenay",
+					value : "Chantenay"
+				}, {
+					text : "Breil Dervallières Bellevue",
+					value : "Breil Dervallieres Bellevue"
+				}, {
+					text : "Hauts Pavé Saint Félix",
+					value : "Hauts Pave Saint Felix"
+				}, {
+					text : "Ile De Nantes",
+					value : "Ile De Nantes"
+				}, {
+					text : "Nantes Nord Barberie",
+					value : "Nantes Nord Barberie"
+				}, {
+					text : "Erdre Ranzay Bottière Perray",
+					value : "Erdre Ranzay Bottiere Perray"
+				}, {
+					text : "Saint Donatien",
+					value : "Saint Donatien"
+				}, {
+					text : "Nantes",
+					value : "Nantes"
+				}]);
 	}
 
 });

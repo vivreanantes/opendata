@@ -568,12 +568,11 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// 'garbagesdetails_recyclableetmodesdecollecte', items : [ { id :
 			// 'garbagesdetails_recyclable', html: 'recyclable : <FONT
 			// COLOR=green size=4>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
-
-			// this.garbageDetail.items.items['0'].items.items['1']
-			// .setItems(arrayItemsToShow);
-			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_recyclableetmodesdecollecte",
-					arrayItemsToShow);
+			// Affecte les modes de collecte
+			this.garbageDetail.items.items['0'].items.items['1'].setItems(arrayItemsToShow);
+			//this.setItemsElement(this.garbageDetail,
+			//		"garbagesdetails_recyclableetmodesdecollecte",
+			//		arrayItemsToShow);
 			// Ajout de la description
 			var descriptionTraduit = "";
 			if (record.data["description"] != "") {

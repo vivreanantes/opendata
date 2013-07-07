@@ -26,12 +26,6 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 							data : {
 								recyclable_string : ""
 							}
-						}, {
-							xtype : 'button',
-							text : 'bacs bleus'
-						}, {
-							xtype : 'button',
-							text : 'bacs jaunes'
 						}]
 					}]
 		},

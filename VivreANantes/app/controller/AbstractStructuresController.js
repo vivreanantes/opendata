@@ -60,9 +60,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 						+ record.data["plagesHoraires_lisible"] + "<br/><br/>";
 			}
 			if (record.data["src"] != null && record.data["src"] !== "") {
-				var label = this.stringUpperFirstLetter(this
-						.translate("label_source"));
-				descriptionTraduit += label + " : " + record.data["src"]
+				// var label = this.stringUpperFirstLetter(this.translate("label_source"));
+				descriptionTraduit += record.data["src"]
 						+ "<br/><br/>";
 			}
 			this.setDataElement(this.structuresDetail,

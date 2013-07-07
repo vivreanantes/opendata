@@ -79,6 +79,10 @@ function _translate(stKey, stLocale) {
 			"en" : "",
 			"fr" : "Conteneur plastique"
 		},
+		"label_modco_contembjournmag" : {
+			"en" : "",
+			"fr" : "Conteneur emballages journaux magazines"
+		},
 		"label_modco_contpapiercarton" : {
 			"en" : "",
 			"fr" : "Conteneur papier-carton"
@@ -379,7 +383,7 @@ function _translate(stKey, stLocale) {
 		"label_samedi" : { "en" : "saturday", "fr" : "samedi" },
 		"label_dimanche" : { "en" : "sunday", "fr" : "dimanche" },
 		"label_adresse" : { "en" : "address", "fr" : "adresse" },
-		"label_telephone" : { "en" : "number", "phone" : "téléphone" },
+		"label_telephone" : { "en" : "phone number", "fr" : "téléphone" },
 		"label_horaires" : { "en" : "schedules", "fr" : "horaires" },
 		
 		

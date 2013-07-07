@@ -110,31 +110,17 @@ Ext.define("VivreANantes.controller.StructuresController", {
 
 		var selectQuartier = this.getStructuresFormSelectQuartier();
 		var selectType = this.getStructuresFormSelectType();
+
 		var store = this.getStructuresList().getStore();
-		// FIXME : ceci prend trop de temps
 		store.clearFilter();
 
 		var filterElements = Ext.create("Ext.util.Filter", {
 			filterFn : function(item) {
-				var escaperegex = Ext.String.escapeRegex;
-				// var stQuartierRegexp = new RegExp(selectQuartier.getValue());
 				var stTypeRegexp = new RegExp(selectType.getValue());
-				/*
-				 * var stTypeRegexp = new
-				 * RegExp(escaperegex(selectType.getValue())); if
-				 * (selectType.getValue().indexOf(",") !== -1) { var array =
-				 * selectType.getValue().split(','); var expression = ''; var i =
-				 * 0; for (a in array) { if (i == 0) { expression = '(' +
-				 * array[a]; } else { expression = expression + '|' + array[a]; }
-				 * i++; } expression = expression + ')'; stTypeRegexp = new
-				 * RegExp(expression); }
-				 */
-
 				var stQuartier = item.data["quartier"];
 				var stType = item.data["modesCollecte"];
 				return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
-						.getValue()) && (/*selectType.getValue() === "all"  ||*/ stTypeRegexp
-						.test(stType)));
+						.getValue()) && (stTypeRegexp.test(stType)));
 			}
 		});
 		store.filter(filterElements);

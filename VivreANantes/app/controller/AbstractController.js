@@ -443,10 +443,12 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 */
 	makeLinkButton : function(id, idDetail) {
 		var label = this.translate("label_" + idDetail);
+		var idComplet = id + "-" + idDetail;
+		var idComplet = "collectMods-contembjournmag";
 		var res = {
-			'xtype' : 'button',
-			'id' : id + "-" + idDetail,
-			'text' : label
+			xtype : 'button',
+			id : idComplet,
+			text : label
 		};
 		return res;
 	},
@@ -511,10 +513,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					.getApplication()
 					.getController("VivreANantes.controller.GarbagesController");
 			var datas = myController.getInformationsList().getStore().getData();
+			// CRN_TEMPO
 			datas.each(function(record) {
 						// bascule vers la page
 						if (record.data["code"] == elementToShowInPage) {
-							myController.showInformations(null, null, null,
+							myController.showDetails(null, null, null,
 									record);
 						}
 					});

@@ -37,7 +37,7 @@ Ext.define('VivreANantes.model.StructureModel', {
 					type : 'string',
 					// On affiche la source uniquement si pas MieuxTrierANantes
 					convert : function(value, record) {
-						if (value == "MieuxTrierANantes") {
+						if (value == "MieuxTrierANantes" || value == "" || value == " ") {
 							return "";
 						} else {
 							return "<BR/><I>Source : " + value + "</I>";

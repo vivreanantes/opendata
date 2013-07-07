@@ -27,11 +27,14 @@ Ext.define('VivreANantes.controller.InformationsController', {
 			showDetails : function(elementId) {
 				// Récupère l'élément à partir du store
 				var myElement = this.getElementFromStore(elementId);
+				
+				var description = myElement["description"];
+				var description = description + this.getApplication().getController("VivreANantes.controller.CommentsController").getCommentString(myElement["code"]);
 				// Met l'élément dans le détail
 				this.getInformations().push({
 							xtype : 'panel',
 							title : myElement["libelle"],
-							html : myElement["description"],
+							html : description,
 							scrollable : true,
 							styleHtmlContent : true
 						});
