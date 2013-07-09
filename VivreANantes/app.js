@@ -104,6 +104,7 @@ Ext
 		
 		///////////// CRN //////////////////
 
+		// TODO mettre un bouton pour "comment"
 		// TODO Brancher le formulaire de commentaire sur un script SGI
 		// TODO Faire un déploiement
 
@@ -117,6 +118,7 @@ Ext
 		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json
 		//      http://data.nantes.fr/forum/?tx_mmforum_pi1[action]=list_post&tx_mmforum_pi1[tid]=166
 		// TODO photos : visiter (et ajouter des photos) de Valorena et Arc-En-Ciel...
+		// TODO Modes des collecte listing des lieux les plus proches sur la page des modes de collecte
 
 		///////////// CED ////////////////// 
 

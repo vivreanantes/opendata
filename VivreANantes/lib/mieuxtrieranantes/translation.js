@@ -20,8 +20,8 @@ function _translate(stKey, stLocale) {
 			"fr" : "ou"
 		},
 		"label_pour_collecte_bac_jaune" : {
-			"en" : "only for yellow bacs",
-			"fr" : "pour les bacs jaunes"
+			"en" : "Only for yellow bacs",
+			"fr" : "uniquement pour les bacs jaunes"
 		},
 		"label_OUI" : {
 			"en" : "YES",

@@ -23,6 +23,20 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							mapping : 'nomVoie'
 						},
 						{
+							name : 'nomVoie_sansAccents',
+							type : 'string',
+							convert: function(value, record) {
+								var input = "";
+								if (record.data["nomVoie"]!=null && record.data["nomVoie"]!="") {
+									input = record.data["nomVoie"];
+									input = input.toLowerCase();
+									input = input.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g,"a");
+									input = input.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g,"e");
+								}
+								return input;
+							}
+						},
+						{
 							name : 'typeVoie',
 							type : 'string',
 							mapping : 'typeVoie'

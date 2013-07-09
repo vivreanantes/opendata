@@ -123,6 +123,8 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			filterFn : function(item) {
 				var escaperegex = Ext.String.escapeRegex;
 				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				var nomVoie_sansAccents = item.data['nomVoie_sansAccents'];
+				return (texttest.test(nomVoie_sansAccents));
 				/*
 				var categorietest = new RegExp(escaperegex(select.getValue()));
 				if (select.getValue().indexOf(",") !== -1) {
@@ -149,7 +151,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 				// return (texttest.test(item.data.nomVoie) && (select
 				//		.getValue() === 'all' || categorietest
 				//		.test(item.data.typeVoie)));
-				return (texttest.test(item.data.denominationCompleteVoie));
+				// return (texttest.test(item.data.denominationCompleteVoie));
 			}
 		});
 		store.filter(filterHomeCollectMod);

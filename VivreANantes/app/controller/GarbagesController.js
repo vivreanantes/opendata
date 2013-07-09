@@ -311,149 +311,149 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 	},
 
-	showGarbagesDetail_old : function(list, index, node, record) {
-		var thisController = this;
-		if (record) {
-			if (!this.garbageDetail) {
-				this.garbageDetail = Ext
-						.create('VivreANantes.view.garbages.GarbagesDetails');
-			}
-			var title = "<I>" + this.translate("label_dechet") + "</I> "
-					+ record.data["nom"];
-			this.garbageDetail.setTitle(title);
-			console.log(record.data);
-			console.log(this.garbageDetail);
-
-			// var conseilTraduit = "";
-			var conseils = "";
-			var modesDeCollecte = "";
-			var treatmentCategories = "";
-			if (record.data["conseils"] !== '') {
-				conseils = record.data["conseils"] + ",";
-			}
-			// conseils de catégories de traitement
-			if (record.data["categorie_traitement"] !== '') {
-				var dataWasteTreatmentsCategories = this
-						.getWasteTreatmentsCategoriesList().getStore()
-						.getData();
-				dataWasteTreatmentsCategories.each(function(recordCategories) {
-					if (recordCategories.raw["code"] === record.data["categorie_traitement"]) {
-						conseils += recordCategories.raw["conseils"];
-						modesDeCollecte += recordCategories.raw["modesCollecte"];
-						treatmentCategories += recordCategories.raw["recyclable"];
-					}
-				});
-			}
-			if (treatmentCategories === "OUI") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR=green size=4>"
-						+ this.translate("label_OUI") + "</FONT>";
-			} else if (treatmentCategories === "NON") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='red' size=4>"
-						+ this.translate("label_NON") + "</FONT>";
-			} else if (treatmentCategories === "PAS_POUBELLE") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='orange' size=4>"
-						+ this.translate("label_NON") + "</FONT>"
-						+ this.translate("label_pas_poubelle");
-			} else if (treatmentCategories === "OUI_ET_NON") {
-				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='red' size=4>"
-						+ this.translate("label_NON") + "</FONT>" + " / "
-						+ "<FONT COLOR=green size=4>"
-						+ this.translate("label_OUI") + " "
-						+ this.translate("label_pour_collecte_bac_jaune")
-						+ "</FONT>";
-			} else {
-				treatmentCategories = "";
-			}
-
-			// Modes de collecte
-			var modesDeCollecteTraduit = "";
-			var arrayItemsToShow = new Array();
-			arrayItemsToShow.push({
-						"html" : treatmentCategories
-								+ "<br/><br/>Modes de collecte :",
-						"id" : "garbagesdetails_recyclable"
-					});
-			var arrayModesDeCollecte = modesDeCollecte.split(',');
-			// On parcours les modes de collecte
-			if (arrayModesDeCollecte.length > 0) {
-				var dataCollectMods = this.getCollectModList().getStore()
-						.getData();
-				var numModCollect = 0;
-				dataCollectMods.each(function(recordCollectMod) {
-					for (i in arrayModesDeCollecte) {
-						if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
-							arrayItemsToShow.push(thisController
-									.makeLinkButton("collectMods_xtype",
-											arrayModesDeCollecte[i]));
-						}
-					}
-				});
-			}
-			if (modesDeCollecteTraduit !== "") {
-				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
-						+ modesDeCollecteTraduit;
-			}
-
-			/*
-			 * this.garbageDetail .setTpl("<table border='0'><tr>" + '<td><img
-			 * src=resources/images/{image} height=120 /></td>' + '<td>' +
-			 * treatmentCategories + '<br/>' + modesDeCollecteTraduit + '</td>' + "</tr></table>" + "<div>" +
-			 * descriptionTraduit + "</div>" +
-			 */
-			// image
-			var imageComplet = "<img src='resources/images/"
-					+ record.data["image"] + "' width='150px' />";
-			this.garbageDetail.items.items['0'].items.items['0'].setData({
-						'image' : imageComplet
-					})
-			// garbagesdetails_recyclable
-			// this.garbageDetail.items.items['0'].items.items['1'].items.items['0'].setData({'recyclable_string':treatmentCategories
-			// })
-			// garbagesdetails_recyclableetmodesdecollecte
-			// var items = "{ xtype : 'container', layout : 'vbox', id :
-			// 'garbagesdetails_recyclableetmodesdecollecte', items : [ { id :
-			// 'garbagesdetails_recyclable', html: 'recyclable : <FONT
-			// COLOR=green size=4>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
-
-			this.garbageDetail.items.items['0'].items.items['1']
-					.setItems(arrayItemsToShow);
-
-			// Ajout de la description
-			var descriptionTraduit = "";
-			if (record.data["description"] != "") {
-				descriptionTraduit = this.translate("label_concerne_aussi")
-						+ " : " + record.data["description"] + "<br/><br/>";
-			}
-			this.setDataElement(this.garbageDetail,
-					"garbagesdetails_description", {
-						'concerne_aussi' : descriptionTraduit
-					})
-			// this.garbageDetail.items.items['1'].setData()
-			// garbagesdetails_conseils
-			// this.garbageDetail.items.items['2'].setData({'conseils_string' :
-			// conseilTraduit})
-
-			// Ajout des conseils
-			var arraysItemsAdvices = this.getItemsAdvices(conseils);
-			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_conseils", arraysItemsAdvices);
-
-			// Ajout des commentaires
-			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_commentaires", this
-							.getItemsComments(record.data["code"]));
-
-			// Bind the record onto the show contact view
-			this.garbageDetail.setData(record.data);
-
-			// Push the show contact view into the navigation view
-			this.getGarbagesView().push(this.garbageDetail);
-		}
-	},
+	//	showGarbagesDetail_old : function(list, index, node, record) {
+	//		var thisController = this;
+	//		if (record) {
+	//			if (!this.garbageDetail) {
+	//				this.garbageDetail = Ext
+	//						.create('VivreANantes.view.garbages.GarbagesDetails');
+	//			}
+	//			var title = "<I>" + this.translate("label_dechet") + "</I> "
+	//					+ record.data["nom"];
+	//			this.garbageDetail.setTitle(title);
+	//			console.log(record.data);
+	//			console.log(this.garbageDetail);
+	//
+	//			// var conseilTraduit = "";
+	//			var conseils = "";
+	//			var modesDeCollecte = "";
+	//			var treatmentCategories = "";
+	//			if (record.data["conseils"] !== '') {
+	//				conseils = record.data["conseils"] + ",";
+	//			}
+	//			// conseils de catégories de traitement
+	//			if (record.data["categorie_traitement"] !== '') {
+	//				var dataWasteTreatmentsCategories = this
+	//						.getWasteTreatmentsCategoriesList().getStore()
+	//						.getData();
+	//				dataWasteTreatmentsCategories.each(function(recordCategories) {
+	//					if (recordCategories.raw["code"] === record.data["categorie_traitement"]) {
+	//						conseils += recordCategories.raw["conseils"];
+	//						modesDeCollecte += recordCategories.raw["modesCollecte"];
+	//						treatmentCategories += recordCategories.raw["recyclable"];
+	//					}
+	//				});
+	//			}
+	//			if (treatmentCategories === "OUI") {
+	//				treatmentCategories = this.translate("label_recyclable")
+	//						+ " : " + "<FONT COLOR=green size=4>"
+	//						+ this.translate("label_OUI") + "</FONT>";
+	//			} else if (treatmentCategories === "NON") {
+	//				treatmentCategories = this.translate("label_recyclable")
+	//						+ " : " + "<FONT COLOR='red' size=4>"
+	//						+ this.translate("label_NON") + "</FONT>";
+	//			} else if (treatmentCategories === "PAS_POUBELLE") {
+	//				treatmentCategories = this.translate("label_recyclable")
+	//						+ " : " + "<FONT COLOR='orange' size=4>"
+	//						+ this.translate("label_NON") + "</FONT>"
+	//						+ this.translate("label_pas_poubelle");
+	//			} else if (treatmentCategories === "OUI_ET_NON") {
+	//				treatmentCategories = this.translate("label_recyclable")
+	//						+ " : " + "<FONT COLOR='red' size=4>"
+	//						+ this.translate("label_NON") + "</FONT>" + " / "
+	//						+ "<FONT COLOR=green size=4>"
+	//						+ this.translate("label_OUI") + " "
+	//						+ this.translate("label_pour_collecte_bac_jaune")
+	//						+ "</FONT>";
+	//			} else {
+	//				treatmentCategories = "";
+	//			}
+	//
+	//			// Modes de collecte
+	//			var modesDeCollecteTraduit = "";
+	//			var arrayItemsToShow = new Array();
+	//			arrayItemsToShow.push({
+	//						"html" : treatmentCategories
+	//								+ "<br/><br/>Modes de collecte :",
+	//						"id" : "garbagesdetails_recyclable"
+	//					});
+	//			var arrayModesDeCollecte = modesDeCollecte.split(',');
+	//			// On parcours les modes de collecte
+	//			if (arrayModesDeCollecte.length > 0) {
+	//				var dataCollectMods = this.getCollectModList().getStore()
+	//						.getData();
+	//				var numModCollect = 0;
+	//				dataCollectMods.each(function(recordCollectMod) {
+	//					for (i in arrayModesDeCollecte) {
+	//						if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
+	//							arrayItemsToShow.push(thisController
+	//									.makeLinkButton("collectMods_xtype",
+	//											arrayModesDeCollecte[i]));
+	//						}
+	//					}
+	//				});
+	//			}
+	//			if (modesDeCollecteTraduit !== "") {
+	//				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
+	//						+ modesDeCollecteTraduit;
+	//			}
+	//
+	//			/*
+	//			 * this.garbageDetail .setTpl("<table border='0'><tr>" + '<td><img
+	//			 * src=resources/images/{image} height=120 /></td>' + '<td>' +
+	//			 * treatmentCategories + '<br/>' + modesDeCollecteTraduit + '</td>' + "</tr></table>" + "<div>" +
+	//			 * descriptionTraduit + "</div>" +
+	//			 */
+	//			// image
+	//			var imageComplet = "<img src='resources/images/"
+	//					+ record.data["image"] + "' width='150px' />";
+	//			this.garbageDetail.items.items['0'].items.items['0'].setData({
+	//						'image' : imageComplet
+	//					})
+	//			// garbagesdetails_recyclable
+	//			// this.garbageDetail.items.items['0'].items.items['1'].items.items['0'].setData({'recyclable_string':treatmentCategories
+	//			// })
+	//			// garbagesdetails_recyclableetmodesdecollecte
+	//			// var items = "{ xtype : 'container', layout : 'vbox', id :
+	//			// 'garbagesdetails_recyclableetmodesdecollecte', items : [ { id :
+	//			// 'garbagesdetails_recyclable', html: 'recyclable : <FONT
+	//			// COLOR=green size=4>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
+	//
+	//			this.garbageDetail.items.items['0'].items.items['1']
+	//					.setItems(arrayItemsToShow);
+	//
+	//			// Ajout de la description
+	//			var descriptionTraduit = "";
+	//			if (record.data["description"] != "") {
+	//				descriptionTraduit = this.translate("label_concerne_aussi")
+	//						+ " : " + record.data["description"] + "<br/><br/>";
+	//			}
+	//			this.setDataElement(this.garbageDetail,
+	//					"garbagesdetails_description", {
+	//						'concerne_aussi' : descriptionTraduit
+	//					})
+	//			// this.garbageDetail.items.items['1'].setData()
+	//			// garbagesdetails_conseils
+	//			// this.garbageDetail.items.items['2'].setData({'conseils_string' :
+	//			// conseilTraduit})
+	//
+	//			// Ajout des conseils
+	//			var arraysItemsAdvices = this.getItemsAdvices(conseils);
+	//			this.setItemsElement(this.garbageDetail,
+	//					"garbagesdetails_conseils", arraysItemsAdvices);
+	//
+	//			// Ajout des commentaires
+	//			this.setItemsElement(this.garbageDetail,
+	//					"garbagesdetails_commentaires", this
+	//							.getItemsComments(record.data["code"]));
+	//
+	//			// Bind the record onto the show contact view
+	//			this.garbageDetail.setData(record.data);
+	//
+	//			// Push the show contact view into the navigation view
+	//			this.getGarbagesView().push(this.garbageDetail);
+	//		}
+	//	},
 
 	showGarbagesDetail : function(button, e, eOpts) {
 
@@ -507,10 +507,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 						+ this.translate("label_pas_poubelle");
 			} else if (treatmentCategories === "OUI_ET_NON") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='red' size=4>"
-						+ this.translate("label_NON") + "</FONT>" + " / "
-						+ "<FONT COLOR=green size=4>"
-						+ this.translate("label_OUI") + " "
+						+ " : " + "<FONT COLOR='orange' size=4>"
 						+ this.translate("label_pour_collecte_bac_jaune")
 						+ "</FONT>";
 			} else {
@@ -671,9 +668,10 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			var theItems = arrayItemsToShow.items;
 			for (var i = 0; i < theItems.length; i++) {
 				var aData = theItems[i].data;
+				var nom_description_sansAccents = aData["nom_description_sansAccents"];
 				if ((aData["categorie_usuelle"] === category.getValue() || category
 						.getValue() === "all")
-						&& texttest.test(aData["nom"])) {
+						&& texttest.test(nom_description_sansAccents)) {
 					// Ajoute les <br/>
 					var stLibelle = this.decoupe(aData["nom"]);
 					result.push({
