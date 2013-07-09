@@ -5,13 +5,13 @@
 	 * This is the name of your application, which is displayed on the device when the app is installed. On IOS, this should match
 	 * the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationName":"My Application",
+	"applicationName":"MieuxTrierANantes",
 
 	/**
 	 * @cfg {String} applicationId
 	 * This is the name namespace for your application. On IOS, this should match the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationId":"com.mycompany.myAppID",
+	"applicationId":"com.MieuxVivreANantes.MieuxTrierANantes",
 
 	/**
 	 * @cfg {String} bundleSeedId
@@ -79,7 +79,7 @@
 	 *  - Android
 	 *  - AndroidEmulator
 	 */
-	"platform":"iOSSimulator",
+	"platform":"Android",
 
 	/**
 	 * @cfg {String} deviceType
@@ -100,7 +100,7 @@
 	 * This is the location of your certificate.
 	 * This is required when you are developing for Android or you are developing on Windows.
 	 */
-	"certificatePath":"/path/to/certificate.file",
+		"certificatePath":"C:/Users/Chris/Documents/GitHub/opendata/VivreANantes/my-release-key.keystore",
 
 	/**
 	 * @cfg {String} certificateAlias
@@ -128,14 +128,18 @@
 	 * @cfg {String} sdkPath
 	 * This is the path to the Android SDK, if you are developing an Android application.
 	 */
-	"sdkPath":"/path/to/android-sdk",
+	// "sdkPath":"/path/to/android-sdk",
+	"sdkPath":"C:/android-sdk/sdk",
+
 
 	/**
 	 * @cfg {String} androidAPILevel
 	 * This is android API level, the version of Android SDK to use, you can read more about it here: http://developer.android.com/guide/appendix/api-levels.html.
 	 * Be sure to install corresponding platform API in android SDK manager (android_sdk/tools/android)
 	 */
-	"androidAPILevel":"8",
+	// CRN : Androïd 2.3.3 > API Level 10
+	"androidAPILevel":"10",
+
 
 	/**
 	/**
