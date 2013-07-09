@@ -116,7 +116,7 @@
 		"categorieTraitement" : "cat_allu",
 		"description" : "barquette pizza, barquette quiche",
 		"conseils" : "",
-		"image" : "barquette_aluminium.png",
+		"image" : "barquette_aluminium_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_barquettePlastique",
@@ -179,7 +179,7 @@
 		"categorieTraitement" : "cat_verre",
 		"description" : "",
 		"conseils" : "cons_coupant,cons_sansbouchon",
-		"image" : "bocal_verre.png",
+		"image" : "bocal_verre_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_boiteOeufsEnCarton",
@@ -386,13 +386,13 @@
 		"categorieTraitement" : "cat_acier",
 		"description" : "",
 		"conseils" : "",
-		"image" : "cannette.png",
+		"image" : "cannette_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_capsuleCafe",
 		"nom" : "capsule de café",
 		"categoriesUsuelles" : "cu_metal",
-		"categorieTraitement" : "cat_organique",
+		"categorieTraitement" : "cat_omr",
 		"description" : "capsule métal ou plastique dosette café",
 		"conseils" : "",
 		"image" : "dosette_cafe_plastique_petit.png",
@@ -413,7 +413,7 @@
 		"categorieTraitement" : "cat_papiercarton",
 		"description" : "",
 		"conseils" : "",
-		"image" : "carton.png",
+		"image" : "carton_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_cartouchesEncres",
@@ -746,7 +746,7 @@
 		"categorieTraitement" : "cat_omr",
 		"description" : "fournitures de bureau, crayon, stylo, feutre, gomme, agrafeuse, règle, compas, pochette plastique, classeur, trombone, taille-crayon, ciseaux",
 		"conseils" : "",
-		"image" : "crayon_petit",
+		"image" : "crayon_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_gazon",
@@ -1421,7 +1421,7 @@
 		"categorieTraitement" : "cat_omr_plastique",
 		"description" : "",
 		"conseils" : "",
-		"image" : "sac_plastique_pt.png",
+		"image" : "sac_plastique_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_scooter",
@@ -1448,7 +1448,7 @@
 		"categorieTraitement" : "cat_omr_plastique",
 		"description" : "",
 		"conseils" : "",
-		"image" : "crayon_petit",
+		"image" : "crayon_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_tableARepasser",

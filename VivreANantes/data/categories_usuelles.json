@@ -26,7 +26,7 @@
 				"estSousCategorie" : "",
 				"sousCategories" : "false",
 				"source" : "MieuxTrierANantes",
-				"image" : "barquette_aluminium.png",
+				"image" : "barquette_aluminium_petit.png",
 				"statut" : "Vérif le 03/2013",
 				"bouton" : "cu"
 			}, {
@@ -106,7 +106,7 @@
 				"estSousCategorie" : "",
 				"sousCategories" : "true",
 				"source" : "MieuxTrierANantes",
-				"image" : "",
+				"image" : "medicaments_petit.png",
 				"statut" : "Vérif le 03/2013",
 				"bouton" : "cu_toxique"
 			}, {
