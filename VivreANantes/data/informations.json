@@ -24,7 +24,7 @@
 		"libelle" : "Incinération à l'usine Valorena",
 		"description_fr" : "Cette usine d'incinération d'ordures ménagères  a été mise en service en octobre 1987, elle alimente un réseau de chauffage urbain grâce à l'énergie récupérée lors de la combustion des déchets.<BR/><BR/>Elle est situé à proximité de la route Nantes, Angers (au bord de la voie SNCF)<BR/><BR/>Consultez le site Internet : <A HREF='http://www.novergie.fr/page/groupe/usines/usine.php?id=34' TARGET='NEW' >valorena</A><br/><br/>Des visites de l'usine sont proposées toutes l'année.",
 		"bouton" : "fiche",
-		"image" : ""
+		"image" : "image_defaut.png"
 	}, {
 		"code" : "fiche_arcenciel",
 		"libelle" : "Dispositif multifilières à Arc-en-ciel",

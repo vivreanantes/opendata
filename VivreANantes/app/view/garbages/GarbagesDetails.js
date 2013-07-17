@@ -22,10 +22,41 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 						id : "garbagesdetails_recyclableetmodesdecollecte",
 						items : [{
 							id : "garbagesdetails_recyclable",
-							tpl : 'Recyclable {recyclable_string}<br/><br/>Modes de collecte :',
+							tpl : "{recyclable_string}<br/><br/>Modes de collecte : ",
+							//,tpl : 'Recyclable {recyclable_string}<br/><br/>Modes de collecte :',
 							data : {
 								recyclable_string : ""
 							}
+						},
+						{
+							id : "garbagesdetails_collectmod_1",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+						},
+						{
+							id : "garbagesdetails_collectmod_2",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+						},
+						{
+							id : "garbagesdetails_collectmod_3",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+						},
+						{
+							id : "garbagesdetails_collectmod_4",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+						},
+						{
+							id : "garbagesdetails_collectmod_5",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+						},
+						{
+							id : "garbagesdetails_collectmod_5",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
 						}]
 					}]
 		},

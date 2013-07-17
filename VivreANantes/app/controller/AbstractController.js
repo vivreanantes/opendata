@@ -183,6 +183,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				arrayitemsLine.push({
 							xtype : 'button',
 							id : arrayItemsToShow[i]["id"],
+							// code : arrayItemsToShow[i]["id"],
 							html : arrayItemsToShow[i]["libelle"] + " "
 									+ "<br/><img src='resources/images/"
 									+ arrayItemsToShow[i]["image"]
@@ -208,7 +209,71 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		panel.removeAll(true, true);
 		panel.setItems(arrayItems);
 	},
+	
+	setDataInButtonsWithManyLines : function(panel, prefix, arrayItems, nbMaxElements, nbElementsPerLine) {
+		var idElementToChange = 0;
+		for (var i = 0; i < arrayItems.length; i++) {
+			var element = arrayItems[i];
+			var idElementToChange = i+1;
+			var prefixComplet = prefix + "_"+idElementToChange;
+			var nbLine = Math.floor(i/nbElementsPerLine);
+			// Si la ligne n'existe pas
+			if ( panel.items.items[nbLine]==null) {
+				item = -1;
+			} else {
+				var item = panel.items.items[nbLine].items.keys.indexOf(prefixComplet);
+			}
+			if (item!=-1) {
+				panel.items.items[nbLine].items.items[item].setData(element);
+				panel.items.items[nbLine].items.items[item].setHidden(false);
+			}
+		};
+		for (var i = idElementToChange; i < nbMaxElements; i++) {
+		// Cache les éléments restants
+			var idElementToChange = i+1;
+			var prefixComplet = prefix + "_"+idElementToChange;
+			var nbLine = Math.floor(i/nbElementsPerLine);
+			// Si la ligne n'existe pas
+			if ( panel.items.items[nbLine]==null) {
+				item = -1;
+			} else {
+				var item = panel.items.items[nbLine].items.keys.indexOf(prefixComplet);
+			}
+			if (item!=-1) {
+				panel.items.items[nbLine].items.items[item].setHidden(true);
+			}
+		}
+	},
+	
+	
+	setDataInButtons : function(panel, prefix, arrayItems, nbMaxElements) {
 
+		var idElementToChange = 0;
+		for (var i = 0; i < arrayItems.length; i++) {
+			var element = arrayItems[i];
+			var idElementToChange = i+1;
+			var prefixComplet = prefix + "_"+idElementToChange;
+			var item = panel.items.keys.indexOf(prefixComplet); 
+			if (item!=-1) {
+				panel.items.items[item].setData(element);
+				panel.items.items[item].setHidden(false);
+			}
+		};
+		// Cache les éléments restants
+		for (var i = idElementToChange; i < nbMaxElements; i++) {
+			var idElementToChange = idElementToChange+1;
+			var prefixComplet = prefix + "_"+idElementToChange;
+			var item = panel.items.keys.indexOf(prefixComplet); 
+			if (item!=-1) {
+				panel.items.items[item].setHidden(true);
+			}
+		}
+/*			var item = panel.items.keys.indexOf(prefixComplet); 
+		if (item!=-1) {
+				panel.items.items[item].setData({ image: "bac_jaune_petit.png", label: "jaune"})
+			}
+			*/
+	},
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "commentaires" d'une page
@@ -244,7 +309,9 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				});
 		// TODO Ajout d'un formulaire
 		result.push({
-					xtype : 'commentsForm_xtype'
+					xtype : 'button',
+					text : 'Envoyez un commentaire',
+					centered : 'true'
 				});
 		return result;
 	},
@@ -320,7 +387,10 @@ Ext.define('VivreANantes.controller.AbstractController', {
 												id : "informations"
 														+ "-"
 														+ recordAdvice.raw["fiche"],
-												text : "Fiche explicative"
+												text : "Fiche explicative",
+												data: {
+													code : "informations" + "-" + recordAdvice.raw["fiche"]
+												}
 											}]
 										}]
 									});
@@ -343,44 +413,6 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return result;
 	},
 
-	/**
-	 * Créer un lien verbeux vers une page de l'application. En paramètre
-	 * l'identifiant : valeur autorisées : garbagePanel, mapPanel,
-	 * informationsPanel, structuresPanel, reusesPanel, collectModsPanel,
-	 * homeCollectsModsPanel, trisacsPanel, commentsPanel, aboutPanel
-	 */
-	makeTextLink_old : function(id) {
-		var res = "";
-		if (id == "garbagePanel") {
-			res = "<br/>Voir les " + this.makeLink(id)
-					+ " (recherche par texte ou image)";
-		} else if (id == "mapPanel") {
-			res = "<br/>Voir la localisation sur la " + this.makeLink(id);
-		} else if (id == "informationsPanel") {
-			res = "<br/>Voir les " + this.makeLink(id)
-					+ " sur la filière du tri.";
-		} else if (id == "structuresPanel") {
-			res = "<br/>Voir les adresses, horaires et déchets acceptés des "
-					+ this.makeLink(id);
-		} else if (id == "reusesPanel") {
-			res = "<br/>Voir les adresses, horaires et déchets acceptés des structures de "
-					+ this.makeLink(id);
-		} else if (id == "collectModsPanel") {
-			res = "<br/>Voir les jours de passage des collecte "
-					+ this.makeLink(id);
-		} else if (id == "homeCollectsModsPanel") {
-			res = "<br/>Voir les collectes " + this.makeLink(id);
-		} else if (id == "trisacsPanel") {
-			res = "<br/>Voir les lieux et horaires des distributions de "
-					+ this.makeLink(id);
-		} else if (id == "commentsPanel") {
-			res = "<br/> " + this.makeLink(id);
-		} else if (id == "aboutPanel") {
-			res = "<br/>Voir plus d'infos dans " + this.makeLink(id);
-		}
-		return res;
-
-	},
 	/*
 	 * Créer un lien vers une page de l'application. En paramètre l'identifiant :
 	 * valeur autorisées : garbagePanel, mapPanel, informationsPanel,

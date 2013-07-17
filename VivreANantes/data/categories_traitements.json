@@ -9,7 +9,7 @@
 	}, {
 		"code" : "cat_omr_plastique",
 		"libelle" : "Ordures Ménagères Résiduelles (OMR) recyclé sur Nantes uniquement",
-		"modesCollecte" : "modco_bacjaune,modco_sacbleuco_bacjaune",
+		"modesCollecte" : "modco_bacjaune,modco_sacbleu",
 		"description" : "",
 		"conseils" : "cons_pasuniquementbouteilleflacon",
 		"recyclable" : "OUI_ET_NON"

@@ -107,6 +107,7 @@ Ext
 		// TODO mettre un bouton pour "comment"
 		// TODO Brancher le formulaire de commentaire sur un script SGI
 		// TODO Faire un déploiement
+		// TODO Remplacer setItems par setData (auf les éléments statiques)
 
 		/////////// CRN Long terme //////////
 
