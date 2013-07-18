@@ -545,12 +545,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					.getApplication()
 					.getController("VivreANantes.controller.GarbagesController");
 			var datas = myController.getInformationsList().getStore().getData();
+			myController = this
+					.getApplication()
+					.getController("VivreANantes.controller.InformationsController");
 			// CRN_TEMPO
 			datas.each(function(record) {
 						// bascule vers la page
 						if (record.data["code"] == elementToShowInPage) {
-							myController.showDetails(null, null, null,
-									record);
+							myController.showDetails(elementToShowInPage);
 						}
 					});
 

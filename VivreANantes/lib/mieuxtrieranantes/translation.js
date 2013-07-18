@@ -405,7 +405,7 @@ function _translate(stKey, stLocale) {
 		"label_source" : { "en" : "source", "fr" : "source" },
 		"label_dechet" : { "en" : "garbage", "fr" : "déchet" },
 		"label_modeDeCollecte" : { "en" : "collect mod", "fr" : "mode de collecte" },
-		"label_" : { "en" : "", "fr" : "" },
+		"label_fiche" : { "en" : "", "fr" : "fiche" },
 		"label_" : { "en" : "", "fr" : "" },
 		"label_" : { "en" : "", "fr" : "" },
 		"label_" : { "en" : "", "fr" : "" },

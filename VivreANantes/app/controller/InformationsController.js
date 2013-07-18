@@ -30,10 +30,11 @@ Ext.define('VivreANantes.controller.InformationsController', {
 				
 				var description = myElement["description"];
 				var description = description + this.getApplication().getController("VivreANantes.controller.CommentsController").getCommentString(myElement["code"]);
+				var title = "<I>" + this.translateWithUpperFirstLetter("label_fiche") + "</I> " +  myElement["libelle"];
 				// Met l'élément dans le détail
 				this.getInformations().push({
 							xtype : 'panel',
-							title : myElement["libelle"],
+							title : title,
 							html : description,
 							scrollable : true,
 							styleHtmlContent : true

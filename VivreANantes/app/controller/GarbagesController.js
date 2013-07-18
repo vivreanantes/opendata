@@ -117,7 +117,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 	onTapLinkButton : function(button, e, eOpts) {
 		this.manageLinkButtons(button._data["code"]);
-		// this.manageLinkButtons("collectMods_xtype-"+button._data["code"]);
 	},
 
 	onShowDetails : function(button, e, eOpts) {

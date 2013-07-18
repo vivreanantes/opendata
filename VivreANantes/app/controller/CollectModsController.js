@@ -19,8 +19,12 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 					// fonctionne comme une CSS selecteur
 					'collectModsButtonsList_xtype button' : {
 						tap : 'onShowDetails'
+					},
+					// fonctionne comme une CSS selector
+					// (http://www.w3.org/TR/CSS2/selector.html)
+					'collectModsDetails_xtype button' : {
+						tap : 'onTapLinkButton'
 					}
-
 				}
 			},
 
@@ -35,6 +39,10 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				this.removeAllAndSetItems(this.getCollectModsList(), arrayItems);
 			},
 
+			onTapLinkButton : function(button, e, eOpts) {
+				this.manageLinkButtons(button._data["code"]);
+			},
+			
 			onShowDetails : function(button, e, eOpts) {
 				this.showDetails(button.id);
 			},
