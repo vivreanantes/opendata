@@ -153,6 +153,10 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		result = this.translate(result);
 		return result;
 	},
+	
+	/*onTapCommentButton : function(button) {
+		alert(button.id);
+	},*/
 
 	addDays : function(d, j) {
 		return new Date(d.getTime() + (1000 * 60 * 60 * 24 * j));
@@ -308,10 +312,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					}
 				});
 		// TODO Ajout d'un formulaire
+		var codeValue = "comments_xtype-"+commentsString;
 		result.push({
 					xtype : 'button',
 					text : 'Envoyez un commentaire',
-					centered : 'true'
+					centered : 'true',
+					data : {
+						code : codeValue
+					}
 				});
 		return result;
 	},

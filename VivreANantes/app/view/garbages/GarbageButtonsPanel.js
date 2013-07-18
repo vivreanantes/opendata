@@ -84,7 +84,7 @@ Ext.define('VivreANantes.view.garbages.GarbageButtonsPanel', {
 				xtype : "button",
 				tpl : "{label}<br/><img src='resources/images/{image}' width='60px' />", data : { label:"", image : ""}
 			}]
-		}/* , {
+		} , {
 			layout : {
 				type : 'hbox',
 				align : 'strech'
@@ -246,7 +246,7 @@ Ext.define('VivreANantes.view.garbages.GarbageButtonsPanel', {
 				xtype : "button",
 				tpl : "{label}<br/><img src='resources/images/{image}' width='60px' />", data : { label:"", image : ""}
 			}]
-		}*/
+		}
 
 		]
 	}

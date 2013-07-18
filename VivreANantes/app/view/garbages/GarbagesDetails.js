@@ -1,6 +1,7 @@
 Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 	extend : 'Ext.Container',
 	xtype : 'garbagesDetails_xtype',
+	scrollable : true,
 	record : null,
 	config : {
 		title : 'Détails',
@@ -54,7 +55,17 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
 						},
 						{
-							id : "garbagesdetails_collectmod_5",
+							id : "garbagesdetails_collectmod_6",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+						},
+						{
+							id : "garbagesdetails_collectmod_7",
+							xtype : "button",
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+						},
+						{
+							id : "garbagesdetails_collectmod_8",
 							xtype : "button",
 							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
 						}]

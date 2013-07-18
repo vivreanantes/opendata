@@ -100,6 +100,13 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			'garbagesDetails_xtype button' : {
 				tap : 'onTapLinkButton'
 			}
+
+			// fonctionne comme une CSS selector
+			// (http://www.w3.org/TR/CSS2/selector.html)
+			/*'garbagesdetails_commentaires button' : {
+				tap : 'onTapCommentButton'
+			}*/
+			
 		}
 	},
 
@@ -436,8 +443,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// Affecte les modes de collecte
 			
 			// this.garbageDetail.items.items['0'].items.items['1'].setItems(arrayItemsToShow);
+			var nbGarbagesdetailsCollectmodsMax = 8;	// la page GarbagesDetails.js affiche 8 éléments
 			this.setDataInButtons(this.garbageDetail.items.items['0'].items.items['1'], 
-									"garbagesdetails_collectmod", arrayItemsToShow, 6);
+									"garbagesdetails_collectmod", arrayItemsToShow, nbGarbagesdetailsCollectmodsMax);
 			//this.setItemsElement(this.garbageDetail,
 			//		"garbagesdetails_recyclableetmodesdecollecte",
 			//		arrayItemsToShow);
@@ -563,8 +571,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// var arrayItems = this.getContentButtonsPanel(result);
 			
 			// this.removeAllAndSetItems(this.garbagesButtonsPanel, arrayItems);
+			var nbGarbagesMax = 39;	// la page GarbageButtonsPanel.js affiche 39 éléments
 			this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel, 
-									"garbagesButtonsPanel_garbage", result, 12, 3);
+									"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);
 			
 	}
 
