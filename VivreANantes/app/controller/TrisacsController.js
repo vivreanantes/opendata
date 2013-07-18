@@ -34,6 +34,12 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 			trisacFormSelect : {
 				change : "onTrisacStoreFilter",
 				initialize : "setOptionsQuartierTrisac"
+			},
+
+			// fonctionne comme une CSS selector
+			// (http://www.w3.org/TR/CSS2/selector.html)
+			'TrisacDetails_xtype button' : {
+				tap : 'onTapLinkButton'
 			}
 		}
 	},

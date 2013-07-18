@@ -2,14 +2,13 @@
  * Controleur de la partie Structures
  */
 Ext.define("VivreANantes.controller.AbstractStructuresController", {
-	extend : "VivreANantes.controller.AbstractController"
+	extend : "VivreANantes.controller.AbstractController",
 
-	,
-	config : {
-
-}
-
-	,
+	onTapLinkButton : function(button, e, eOpts) {
+		this.manageLinkButtons(button._data["code"]);
+	},
+	
+	
 	calculateDatas : function(store) {
 		var datas = store.getData();
 		var dataLength = datas.length;
@@ -78,15 +77,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			this.setItemsElement(this.structuresDetail,
 					"structuresDetails_advices", arraysItemsAdvices);
 
-			// Ajout des commentaires
-			var code = record.data["code"];
-			this.setItemsElement(this.structuresDetail,
-					"structuresDetails_comments", this.getItemsComments(code));
-
 			// Affectation du titre
 			var title = "<I>" + record.data["type"] + "</I>" + " "
 					+ this.stringUpperFirstLetter(record.data["libelle"]);
 			this.structuresDetail.setTitle(title);
+			
+			// Ajout des commentaires
+			var code = record.data["code"];
+			this.setItemsElement(this.structuresDetail,
+					"structuresDetails_comments", this.getItemsComments(code, title));
 
 			// Bind the record onto the show contact view
 			this.structuresDetail.setData(record.data);

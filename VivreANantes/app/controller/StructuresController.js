@@ -45,6 +45,12 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			,
 			structuresButtons : {
 				toggle : "onStructuresStoreFilter"
+			},
+
+			// fonctionne comme une CSS selector
+			// (http://www.w3.org/TR/CSS2/selector.html)
+			'structuresDetails_xtype button' : {
+				tap : 'onTapLinkButton'
 			}
 		}
 	}

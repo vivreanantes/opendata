@@ -125,7 +125,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_modco_decheterie" : {
 			"en" : "",
-			"fr" : "Décheterie"
+			"fr" : "Déchèterie"
 		},
 		"label_modco_compostage" : {
 			"en" : "",

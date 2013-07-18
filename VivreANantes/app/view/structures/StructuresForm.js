@@ -18,7 +18,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 										text : "Ecotox",
 										value : "modco_ecotox"
 									}, {
-										text : "Déchetteries / Ecopoints",
+										text : "Déchèteries / Ecopoints",
 										value : "(modco_decheterie|modco_ecopoint)"
 									}, {
 										text : "Encombrants",

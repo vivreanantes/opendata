@@ -78,12 +78,6 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				this.setItemsElement(this.collectModsDetails,
 						"collectModsDetails_advices", arraysItemsAdvices);
 
-				// Ajout des commentaires
-				var code = collectModFromStore["code"];
-				this.setItemsElement(this.collectModsDetails,
-						"collectModsDetails_comments", this
-								.getItemsComments(code));
-
 				// Affectation du titre
 				var title = "<I>"
 						+ this
@@ -92,6 +86,13 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 						+ this
 								.stringUpperFirstLetter(collectModFromStore["libelle"]);
 				this.collectModsDetails.setTitle(title);
+				
+				// Ajout des commentaires
+				var code = collectModFromStore["code"];
+				this.setItemsElement(this.collectModsDetails,
+						"collectModsDetails_comments", this
+								.getItemsComments(code, title));
+
 
 				// Bind the record onto the show contact view
 				this.collectModsDetails.setData(collectModFromStore.data);

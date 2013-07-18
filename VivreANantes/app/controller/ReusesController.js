@@ -25,16 +25,20 @@ Ext.define("VivreANantes.controller.ReusesController", {
 			reusesFormSelectQuartier : {
 				change : "onReusesControllerStoreFilter",
 				initialize : "setOptionsQuartierReemploi"
-			}
+			},
 
-			,
 			reusesFormSelectType : {
 				change : "onReusesControllerStoreFilter"
-			}
+			},
 
-			,
 			reusesButtons : {
 				toggle : "onReusesControllerStoreFilter"
+			}
+			,
+			// fonctionne comme une CSS selector
+			// (http://www.w3.org/TR/CSS2/selector.html)
+			'reusesDetails_xtype button' : {
+				tap : 'onTapLinkButton'
 			}
 		}
 	},

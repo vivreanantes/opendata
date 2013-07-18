@@ -472,7 +472,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// Ajout des commentaires
 			this.setItemsElement(this.garbageDetail,
 					"garbagesdetails_commentaires", this
-							.getItemsComments(record.data["code"]));
+							.getItemsComments(record.data["code"], title));
 
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);

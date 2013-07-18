@@ -286,7 +286,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *         l'élément dont on recherche des commentaires (ex :
 	 *         "dec_bouchons")
 	 */
-	getItemsComments : function(commentsString) {
+	getItemsComments : function(commentsString, title) {
 		var result = new Array();
 		var thisController = this;
 		// TODO mettre un bouton à la place du HREF
@@ -312,7 +312,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					}
 				});
 		// TODO Ajout d'un formulaire
-		var codeValue = "comments_xtype-"+commentsString;
+		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
+		var codeValue = "comments_xtype-"+" "+title+"("+commentsString+")";
 		result.push({
 					xtype : 'button',
 					text : 'Envoyez un commentaire',
@@ -567,7 +568,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		// OU On affiche le commentaire
 		else if (mainPageXtype == "comments_xtype") {
-
+			Ext.getCmp("commentsFormTextareafield").setValue("A propos de : "+elementToShowInPage+"\r\nVotre commentaire : ");
 		}
 
 		// On recherche la page dont le xtype correspond au buttonId

@@ -58,6 +58,12 @@ Ext.define('VivreANantes.model.StructureModel', {
 				}, {
 					name : 'plagesHoraires_periodes',
 					type : 'object'
+				}, {
+					name : 'latitude',
+					type : 'string'
+				}, {
+					name : 'longitude',
+					type : 'object'
 				}]
 	}
 });

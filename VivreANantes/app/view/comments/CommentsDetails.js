@@ -1,7 +1,6 @@
 Ext.define('VivreANantes.view.comments.CommentsDetails', {
 			extend : 'Ext.Container',
 			xtype : 'commentsDetails_xtype',
-
 			config : {
 				layout : 'vbox',
 				tpl : '',
