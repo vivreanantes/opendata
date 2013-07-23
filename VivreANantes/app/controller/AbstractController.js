@@ -313,7 +313,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				});
 		// TODO Ajout d'un formulaire
 		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
-		var codeValue = "comments_xtype-"+" "+title+"("+commentsString+")";
+		var codeValue = "comments_xtype-"+" "+title+" ("+commentsString+")";
 		result.push({
 					xtype : 'button',
 					text : 'Envoyez un commentaire',
@@ -568,7 +568,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		// OU On affiche le commentaire
 		else if (mainPageXtype == "comments_xtype") {
-			Ext.getCmp("commentsFormTextareafield").setValue("A propos de : "+elementToShowInPage+"\r\nVotre commentaire : ");
+			Ext.getCmp("commentsFormTextfield").setValue("A propos de <<"+elementToShowInPage+">>");
 		}
 
 		// On recherche la page dont le xtype correspond au buttonId

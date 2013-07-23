@@ -294,10 +294,12 @@ Ext.define('VivreANantes.controller.Geo', {
 
 					var icon;
 					// MOCK
-					if (record.get('modesCollecte').length < 9) {
+					if (record.get('modesCollecte') !=null && 
+						record.get('modesCollecte').length < 9) {
 						icon = me.greenIcon;
-					} else if (record.get('modesCollecte').length > 8
-							&& record.get('modesCollecte').length < 15) {
+					} else if (record.get('modesCollecte') !=null && 
+						record.get('modesCollecte').length > 8 &&
+						record.get('modesCollecte').length < 15) {
 						icon = me.pinkIcon;
 					} else {
 						icon = me.redIcon;

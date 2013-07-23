@@ -18,9 +18,7 @@ Ext.define('VivreANantes.view.collectMod.CollectModsDetails', {
 							id : "collectModsDetails_advices"
 						}, {
 							id : "collectModsDetails_comments"
-						}]
-						
-						
+						}]		
 			}
 
 		});

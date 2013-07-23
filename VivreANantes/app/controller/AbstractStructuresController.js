@@ -626,12 +626,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				}, {
 					text : "Nantes Sud",
 					value : "Nantes Sud"
-				}, {
-					text : "Hors Nantes (sud Loire)",
-					value : "Hors Nantes sud Loire"
-				}, {
-					text : "Hors Nantes (nord Loire)",
-					value : "Hors Nantes nord Loire"
 				}]);
 	}
 

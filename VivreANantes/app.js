@@ -104,9 +104,8 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO Brancher le formulaire de commentaire sur un script SGI
-		// TODO Faire un déploiement
-
+		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
+		
 		/////////// CRN Long terme //////////
 
 		// TODO Vérif si la capsule bouteille lait
