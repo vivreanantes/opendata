@@ -1,7 +1,7 @@
 {
 	'categories_usuelles' : [{
 				"code" : "cu_plastique",
-				"nom" : "Plastique",
+				"nom" : "Plastique / briques",
 				"description_fr" : "",
 				"estSousCategorie" : "",
 				"sousCategories" : "false",
@@ -88,7 +88,7 @@
 				"source" : "MieuxTrierANantes",
 				"image" : "epeluchure_petit.png",
 				"statut" : "Vérif le 03/2013",
-				"bouton" : "cu"
+				"bouton" : ""
 			}, {
 				"code" : "cu_electronique",
 				"nom" : "Électronique",

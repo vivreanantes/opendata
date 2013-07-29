@@ -9,7 +9,7 @@
 	}, {
 		"code" : "cat_omr_plastique",
 		"libelle" : "Ordures Ménagères Résiduelles (OMR) recyclé sur Nantes uniquement",
-		"modesCollecte" : "modco_bacjaune,modco_sacbleu",
+		"modesCollecte" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
 		"description" : "",
 		"conseils" : "cons_pasuniquementbouteilleflacon",
 		"recyclable" : "OUI_ET_NON"
@@ -23,7 +23,7 @@
 	}, {
 		"code" : "cat_ela",
 		"libelle" : "Emballages pour liquides alimentaires (ELA)",
-		"modesCollecte" : "modco_bacjaune,modco_sacjaune,",
+		"modesCollecte" : "modco_bacjaune,modco_sacjaune,modco_contembjournmag",
 		"description" : "Ces emballages (briques jus d'orange, lait, potage...) sont recyclables. Du fait de leur composition (75 % de carton, 20% de plastique et 5% d’aluminium), ils nécessitent des installations spécifiques pour pouvoir être traités.",
 		"conseils" : "",
 		"recyclable" : "OUI"
@@ -72,14 +72,14 @@
 	}, {
 		"code" : "cat_verre",
 		"libelle" : "Verre d’emballage",
-		"modesCollecte" : "modco_contverre,modco_decheterie",
+		"modesCollecte" : "modco_contverre,modco_decheterie,modco_ecopoint",
 		"description" : "<P>Les bouteilles de verre et le verre d'emballage (bocaux...) sont <B>recyclable</B>, contrairement aux autres types de verre et la vaisselle/porcelaine.</P>",
 		"conseils" : "cons_verre",
 		"recyclable" : "OUI"
 	}, {
 		"code" : "cat_verrenonvalovaisselleporcelaine",
 		"libelle" : "Vaisselle",
-		"modesCollecte" : "modco_bacbleu,modco_sacbleu,modco_decheterie,smco_vaisselle",
+		"modesCollecte" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
 		"description" : "<P>On ne recycle que les bouteilles de verre et le verre d'emballage (bocaux...). Les autres types de verre et la vaisselle/porcelaine ne sont <B>pas recyclables</B>.</P>",
 		"conseils" : "cons_verre",
 		"recyclable" : "PAS_POUBELLE"
@@ -133,6 +133,13 @@
 		"conseils" : "",
 		"recyclable" : "REMPLOI"
 	}, {
+		"code" : "cat_ampouleseco",
+		"libelle" : "Ampoules basses consommations / néons",
+		"modesCollecte" : "smco_vendeur_lampe_eco",
+		"description" : "",
+		"conseils" : "",
+		"recyclable" : "REMPLOI"
+	}, {
 		"code" : "cat_cartouche",
 		"libelle" : "Cartouche d'encre",
 		"modesCollecte" : "smco_vendeurcartoucheencre,modco_decheterie,modco_ecopoint",
@@ -142,7 +149,7 @@
 	}, {
 		"code" : "cat_pile",
 		"libelle" : "Pile",
-		"modesCollecte" : "smco_vendeurpile,modco_decheterie,modco_ecopoint",
+		"modesCollecte" : "modco_decheterie,modco_ecopoint,smco_vendeurpile",
 		"description" : "",
 		"conseils" : "",
 		"recyclable" : "REMPLOI"
@@ -186,7 +193,7 @@
 		"libelle" : "Matériaux",
 		"modesCollecte" : "modco_decheterie",
 		"description" : "",
-		"conseils" : "",
+		"conseils" : "cons_paspoubelle",
 		"recyclable" : "PAS_POUBELLE"
 	}]
 }

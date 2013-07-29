@@ -32,7 +32,7 @@
 		"code" : "dec_ampouleBasseConso",
 		"nom" : "Ampoule basse consommation",
 		"categoriesUsuelles" : "cu_divers",
-		"categorieTraitement" : "cat_ddm",
+		"categorieTraitement" : "cat_ampouleseco",
 		"description" : "ampoule à économie d'énergie, lampe à économie d’énergie",
 		"conseils" : "cons_ampoulemercure,cons_recuppdv2",
 		"image" : "ampoules_basse_consommation_petit.png",
@@ -529,8 +529,8 @@
 		"categoriesUsuelles" : "cu_plastique",
 		"categorieTraitement" : "cat_omr",
 		"description" : "",
-		"conseils" : "creme_main_petit.png",
-		"image" : "",
+		"conseils" : "",
+		"image" : "creme_main_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_cremeEtDentifriceTube",
@@ -625,7 +625,7 @@
 	}, {
 		"code" : "dec_epeluchuresRestesRepas",
 		"nom" : "Épluchures / restes de repas",
-		"categoriesUsuelles" : "cu_nourriture",
+		"categoriesUsuelles" : "cu_vertbois",
 		"categorieTraitement" : "cat_organique",
 		"description" : "épluchures, restes de repas, nourriture",
 		"conseils" : "",
@@ -656,14 +656,14 @@
 		"categorieTraitement" : "cat_papiercarton",
 		"description" : "le rouleau en carton",
 		"conseils" : "",
-		"image" : "essui_tout_petit.png",
+		"image" : "rouleau_carton_essui_tout_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_essuiToutSaufRouleauCarton",
 		"nom" : "Essuie-tout (sauf rouleau carton)",
 		"categoriesUsuelles" : "cu_papierscartons",
 		"categorieTraitement" : "cat_omr",
-		"description" : "sopalin",
+		"description" : "sopalin, papier absorbant",
 		"conseils" : "cons_souille",
 		"image" : "essui_tout_petit.png",
 		"image_secondaire" : ""
@@ -673,15 +673,6 @@
 		"categoriesUsuelles" : "cu_vertbois",
 		"categorieTraitement" : "cat_organiquegros",
 		"description" : "",
-		"conseils" : "",
-		"image" : "",
-		"image_secondaire" : ""
-	}, {
-		"code" : "dec_feuille",
-		"nom" : "Feuille",
-		"categoriesUsuelles" : "cu_papierscartons",
-		"categorieTraitement" : "cat_papiercarton",
-		"description" : "Feuille (imprimée ou non)",
 		"conseils" : "",
 		"image" : "",
 		"image_secondaire" : ""
@@ -741,7 +732,7 @@
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_fournituresHorsPapier",
-		"nom" : "Fournitures  (hors papier)",
+		"nom" : "Fournitures (hors papier)",
 		"categoriesUsuelles" : "cu_divers",
 		"categorieTraitement" : "cat_omr",
 		"description" : "fournitures de bureau, crayon, stylo, feutre, gomme, agrafeuse, règle, compas, pochette plastique, classeur, trombone, taille-crayon, ciseaux",
@@ -994,8 +985,8 @@
 	}, {
 		"code" : "dec_moquette",
 		"nom" : "Moquette",
-		"categoriesUsuelles" : "cu_vetementtissu",
-		"categorieTraitement" : "cat_vetement",
+		"categoriesUsuelles" : "cu_divers",
+		"categorieTraitement" : "cat_omr",
 		"description" : "",
 		"conseils" : "",
 		"image" : "moquette_petit.png",
@@ -1031,7 +1022,7 @@
 		"code" : "dec_neons",
 		"nom" : "Néons",
 		"categoriesUsuelles" : "scu_toxiquedivers",
-		"categorieTraitement" : "cat_ddm",
+		"categorieTraitement" : "cat_ampouleseco",
 		"description" : "",
 		"conseils" : "",
 		"image" : "neon_petit.png",
@@ -1104,18 +1095,9 @@
 		"nom" : "Papier",
 		"categoriesUsuelles" : "cu_papierscartons",
 		"categorieTraitement" : "cat_papiercarton",
-		"description" : "prospectus, publicité",
+		"description" : "prospectus, publicité, feuille (imprimée ou non)",
 		"conseils" : "",
 		"image" : "feuilles_petit_2.png",
-		"image_secondaire" : ""
-	}, {
-		"code" : "dec_papierAbsorbant",
-		"nom" : "Papier absorbant",
-		"categoriesUsuelles" : "cu_divers",
-		"categorieTraitement" : "cat_omr",
-		"description" : "",
-		"conseils" : "cons_souille",
-		"image" : "essui_tout_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_papierAluminium",
@@ -1142,7 +1124,7 @@
 		"categorieTraitement" : "cat_omr",
 		"description" : "",
 		"conseils" : "",
-		"image" : "",
+		"image" : "papier_peint_petit.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_papierToilette",

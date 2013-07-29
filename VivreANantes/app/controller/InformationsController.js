@@ -37,7 +37,14 @@ Ext.define('VivreANantes.controller.InformationsController', {
 		var title = "<I>" + this.translateWithUpperFirstLetter("label_fiche")
 				+ "</I> " + myElement["libelle"];
 		// Met l'élément dans le détail
-		this.getInformations().push({
+				this.getInformations().push({
+							xtype : 'panel',
+							title : myElement["libelle"],
+							html : description,
+							scrollable : true,
+							styleHtmlContent : true
+						});
+		/*this.getInformations().push({
 					layout : 'vbox',
 					items : [{
 								xtype : 'panel',
@@ -48,7 +55,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 							}, {
 								id : "collectModsDetails_comments"
 							}]
-				});
+				});*/
 		// this.setItemsElement(this.structuresDetail,"informations", this.getItemsComments(myElement["code"], title));
 
 	},

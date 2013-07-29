@@ -57,7 +57,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 						// voir
 						// http://quentinc.net/javascript/testeur-expressions-regulieres/
 						// value : /modco_reemploi/g
-						value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reempvet|smco_conteneurlerelais/g
+						value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
 					}]
 
 				});

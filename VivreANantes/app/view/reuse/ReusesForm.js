@@ -13,7 +13,7 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 							options : [{
 										text : 'Tous',
 										// value : 'all'
-										value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reempvet|smco_conteneurlerelais/g
+										value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
 									}, {
 										text : "Cartouches d'encres/tuners imprimantes",
 										value : "smco_reempcartouchetoner"
@@ -37,8 +37,8 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 										value : /smco_reempvet|smco_conteneurlerelais/g
 									}, {
 										// Celui-ci n'est pas visible (le 8ème élément)
-									 text : "Divers",
-									 	value : "smco_reempdivers"
+									 text : "Divers (lunettes...)",
+									 	value : "smco_reempdivers,smco_reemplunettes"
 									}
 									]
 						}, {

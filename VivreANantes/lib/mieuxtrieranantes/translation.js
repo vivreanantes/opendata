@@ -159,6 +159,10 @@ function _translate(stKey, stLocale) {
 			"en" : "",
 			"fr" : "Réemploi divers"
 		},
+		"smco_reempdivers" : {
+			"en" : "",
+			"fr" : "Réemploi lunettes"
+		},
 		"label_smco_reempinfo" : {
 			"en" : "",
 			"fr" : "Réemploi informatique"
