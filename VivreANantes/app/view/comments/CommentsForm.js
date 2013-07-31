@@ -8,6 +8,7 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 			style : 'background-color: #759E60;',
 			config : {
 				url : 'http://renoulin.fr/mieuxtrieranantes/send_mail.php',
+				headers: {'Content-Type':'multipart/form-data; charset=UTF-8'},
 				method: 'POST',
 				items : [{
 							xtype : 'fieldset',
@@ -35,16 +36,15 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 							handler : function() {
 
 								this.up("commentsForm_xtype").submit({
-										failure : function(response) {
-										if (response.responseText != null) {
-											alert("success "
-													+ response.responseText);
+										failure : function(form, result) {
+										if (result.failure != null) {
+											alert("Echec de l'envoie : " + result.failure);
 										} else {
-											alert("failure ");
+											alert("Echec de l'envoie.");
 										}
 									},
-									success : function(response) {
-										alert("success ");
+									success : function(form, result) {
+										alert("Votre message a bien été envoyé.");
 									}
 								});
 							}

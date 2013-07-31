@@ -105,7 +105,7 @@ Ext
 		///////////// CRN //////////////////
 
 		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
-		// TODO callback sur envoi de mail.
+		// TODO récup Trisac OpenData
 		
 		/////////// CRN Long terme //////////
 

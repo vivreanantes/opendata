@@ -119,6 +119,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	},
 
 	IMAGE_DIR : "resources/images/",
+	
+	SEPARATOR : "#",
 
 	/**
 	 * Convertit un jour dans sa chaine de caractère. Ex "01" devient "janvier".
@@ -313,7 +315,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				});
 		// TODO Ajout d'un formulaire
 		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
-		var codeValue = "comments_xtype-"+" "+title+" ("+commentsString+")";
+		var codeValue = "comments_xtype"+this.SEPARATOR + " "+title+" ("+commentsString+")";
 		result.push({
 					xtype : 'button',
 					text : 'Envoyez un commentaire',
@@ -394,11 +396,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 											items : [{
 												xtype : 'button',
 												id : "informations"
-														+ "-"
+														+ thisController.SEPARATOR
 														+ recordAdvice.raw["fiche"],
 												text : "Fiche explicative",
 												data: {
-													code : "informations" + "-" + recordAdvice.raw["fiche"]
+													code : "informations" + thisController.SEPARATOR + recordAdvice.raw["fiche"]
 												}
 											}]
 										}]
@@ -484,7 +486,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 */
 	makeLinkButton : function(id, idDetail) {
 		var label = this.translate("label_" + idDetail);
-		var idComplet = id + "-" + idDetail;
+		var idComplet = id + this.SEPARATOR + idDetail;
 		var idComplet = "collectMods-contembjournmag";
 		var res = {
 			xtype : 'button',
@@ -517,7 +519,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 		// On décompose buttonId pour initialiser mainPageXtype et
 		// elementToShowInPage
-		var arrayButtonsId = buttonId.split("-");
+		var arrayButtonsId = buttonId.split(this.SEPARATOR);
 		var mainPageXtype = arrayButtonsId[0];
 		if (arrayButtonsId.length > 1) {
 			var elementToShowInPage = arrayButtonsId[1];
@@ -568,7 +570,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		// OU On affiche le commentaire
 		else if (mainPageXtype == "comments_xtype") {
-			Ext.getCmp("commentsFormTextfield").setValue("A propos de <<"+elementToShowInPage+">>");
+			Ext.getCmp("commentsFormTextfield").setValue("A propos de '"+elementToShowInPage+"'");
+			Ext.getCmp("commentsFormTextareafield").setValue("");
 		}
 
 		// On recherche la page dont le xtype correspond au buttonId

@@ -402,7 +402,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 					for (i in arrayModesDeCollecte) {
 						if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
 							var imageValue = recordCollectMod.data['image'];
-							var codeValue = "collectMods_xtype-" + recordCollectMod.data['code'];
+							var codeValue = "collectMods_xtype" + thisController.SEPARATOR + recordCollectMod.data['code'];
 							var libelleValue = thisController.stringUpperFirstLetter(recordCollectMod.data['libelle']);
 							arrayItemsToShow.push({image:imageValue,code:codeValue,label:libelleValue});
 							/*arrayItemsToShow.push(thisController
