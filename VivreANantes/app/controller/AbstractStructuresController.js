@@ -102,7 +102,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	 * horaires "de 14h30 à 19h00 et de 14h30 à 19h00"
 	 */
 	getAttributes_HoursFromToAsTextAndDaysFromToAsTextAttribute : function(
-			arPlagesHoraires, dateDebut, dateFin, heureDebut, heureFin,
+			arPlagesHoraires, dateDebut, dateFin, fromToAttribute, heureDebut, heureFin,
 			stLocale) {
 
 		var stSchedule;
@@ -125,10 +125,13 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				+ minutesFin;
 		var estPresent = false;
 		for (var i = 0; i < arPlagesHoraires.length; i++) {
+			// meme jour : "du 0101 au 3112"
+			// et meme jour de la semaine ex "Toute l'année (du lundi au mercredi)"
 			if (arPlagesHoraires[i]["dateDebut"].toString() === dateDebut
 					.toString()
 					&& arPlagesHoraires[i]["dateFin"].toString() === dateFin
-							.toString()) {
+							.toString()
+					&& arPlagesHoraires[i]["fromTo"].toString() === fromToAttribute) {
 				// On complète les horaires
 				stSchedule = arPlagesHoraires[i]["schedule"] + " " + stLabelEt
 						+ " " + stHoraires;
@@ -291,14 +294,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					// fait "-1")
 					var dateFin = new Date(currentYearAAAA, moisFin - 1,
 							jourFin);
-					var stSchedule = this
-							.getAttributes_HoursFromToAsTextAndDaysFromToAsTextAttribute(
-									arNewAttributes, dateDebut, dateFin,
-									heureDebutHHDeuxPointsMM,
-									heureFinHHDeuxPointsMM);
 					var fromToAttribute = this.getAttribute_FromTo(jourDebutJJ,
 							moisDebutMM, jourFinJJ, moisFinMM, true,
-							daysOfWeekZone, 3);
+							daysOfWeekZone, 3)
+					var stSchedule = this
+							.getAttributes_HoursFromToAsTextAndDaysFromToAsTextAttribute(
+									arNewAttributes, dateDebut, dateFin, fromToAttribute,
+									heureDebutHHDeuxPointsMM,
+									heureFinHHDeuxPointsMM);
+;
 
 					// -- verifie si
 					var obAujoudhuiDemain = this.verifieOuvertAujourdhuiDemain(
@@ -310,13 +314,14 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					if (obAujoudhuiDemain["bOuvertDemain"] == true) {
 						bOuvertDemain = true;
 					}
-					// -- on regroupe par journee
+					// -- on regroupe par journee (meme journee et meme jour de semaines
 					var isPresent = false;
 					for (var j = 0; j < arNewAttributes.length; j++) {
 						if (arNewAttributes[j]["jourDebutJJ"] == jourDebutJJ
 								&& arNewAttributes[j]["moisDebutMM"] == moisDebutMM
 								&& arNewAttributes[j]["jourFinJJ"] == jourFinJJ
-								&& arNewAttributes[j]["moisFinMM"] == moisFinMM) {
+								&& arNewAttributes[j]["moisFinMM"] == moisFinMM
+								&& arNewAttributes[j]["fromTo"] == fromToAttribute) {
 							isPresent = true;
 						}
 					}
@@ -329,7 +334,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 									"jourFinJJ" : jourFinJJ,
 									"moisFinMM" : moisFinMM,
 									"schedule" : stSchedule,
-									"fromTo" : fromToAttribute,
 									"dateDebut" : dateDebut,
 									"dateFin" : dateFin
 								});
@@ -443,9 +447,9 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			}
 		}
 		return result;
-	}
+	},
 
-	,
+	
 	verifieOuvertAujourdhuiDemain : function(stTodayFerieSpecialDay,
 			stTomorrowSpecialDay, dateDebut, dateFin, daysOfWeekZone,
 			specialDayZone) {

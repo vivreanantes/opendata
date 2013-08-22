@@ -70,7 +70,7 @@ Ext
 			'trisac.TrisacList'
 			],
 
-			controllers : [ 'Welcome', 'Geo', 'InformationsController', 'StructuresController', 'ReusesController', 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
+			controllers : [ 'Welcome', 'GeoController', 'InformationsController', 'StructuresController', 'ReusesController', 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
 			,'CommentsController', 'LocalStorageController' /*, 'Calendar'*/],
 			
 			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', 'WasteTreatmentsCategories', 'CollectModModel'/*, 'CalendarModel'*/, 'LocaleStorageModel', 'InformationsModel'],
@@ -106,6 +106,7 @@ Ext
 
 		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
 		// TODO récup Trisac OpenData
+		// TODO régler le pb de regexp ampoule qui ne marche pas !		
 		
 		/////////// CRN Long terme //////////
 
@@ -123,7 +124,6 @@ Ext
 
 		// TODO Carte : utiliser le localstorage pour mémoriser les structures affichées, et les quartiers 
 		// TODO Carte : filtrer sur les structures et les quartiers
-		// TODO Carte : utiliser structures2.json à la place structures.json
 		// TODO Carte : permettre la bascule de la carte vers StructuresDetails (utiliser AbstractController.makeLink)
 
 		// TODO Calendrier - DUR : intégrer le composant Ext.ux.TouchCalendar (on utilisera Ext.ux.TouchCalendarView)

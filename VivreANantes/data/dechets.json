@@ -386,7 +386,7 @@
 		"categorieTraitement" : "cat_acier",
 		"description" : "",
 		"conseils" : "",
-		"image" : "bouteille_soda_petit.png",
+		"image" : "cannette.png",
 		"image_secondaire" : ""
 	}, {
 		"code" : "dec_capsuleCafe",

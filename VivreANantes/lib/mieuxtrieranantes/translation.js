@@ -113,78 +113,70 @@ function _translate(stKey, stLocale) {
 		},
 		"label_modco_ecotox" : {
 			"en" : "",
-			"fr" : "Ecotox"
+			"fr" : "Camion écotox"
 		},
 		"label_modco_reemploi" : {
-			"en" : "",
+			"en" : "Re-employment",
 			"fr" : "Réeemploi"
 		},
+		"label_modco_distrisac" : {
+			"en" : "Distribution Trisac",
+			"fr" : "Distribution Trisac"
+		},
 		"label_modco_pointsdevente" : {
-			"en" : "",
-			"fr" : "Points de vente"
+			"en" : "Point of sale",
+			"fr" : "Point de vente"
 		},
 		"label_modco_decheterie" : {
-			"en" : "",
+			"en" : "Waste sorting centre",
 			"fr" : "Déchèterie"
 		},
 		"label_modco_compostage" : {
-			"en" : "",
+			"en" : "Composting",
 			"fr" : "Compostage"
 		},
-		"label_modco_encombrant" : {
-			"en" : "",
+		"label_modco_encombrants" : {
+			"en" : "bulky waste",
 			"fr" : "Encombrant"
 		},
 		"label_smco_conteneurlerelais" : {
-			"en" : "",
+			"en" : "Contener Le Relais",
 			"fr" : "Conteneur Le Relais"
 		},
 		"label_smco_reempelectromenag" : {
-			"en" : "",
+			"en" : "Re-employment household appliances ",
 			"fr" : "Réemploi électroménager"
 		},
 		"label_smco_reempcartouchetoner" : {
-			"en" : "",
+			"en" : "Re-employment ",
 			"fr" : "Réemploi cartouches d'encres/tuners imprimantes"
 		},
 		"label_smco_reempjouet" : {
-			"en" : "",
+			"en" : "Re-employment toy",
 			"fr" : "Réemploi de jouets"
 		},
 		"label_smco_reempmeuble" : {
-			"en" : "",
+			"en" : "Re-employment pieces of furniture",
 			"fr" : "Réemploi de meuble"
 		},
-		"smco_reempdivers" : {
-			"en" : "",
-			"fr" : "Réemploi divers"
-		},
-		"smco_reempdivers" : {
-			"en" : "",
-			"fr" : "Réemploi lunettes"
-		},
 		"label_smco_reempinfo" : {
-			"en" : "",
+			"en" : "Re-employment computer",
 			"fr" : "Réemploi informatique"
 		},
 		"label_smco_vendeurvoiture" : {
 			"en" : "",
 			"fr" : "Vendeur et casse automobile"
 		},
-		"labelsmco_reempelectromenag" : {
-			"en" : "",
-			"fr" : "Réemploi appareils électroménager"
-		},
 		"label_smco_reemplivreCD" : {
-			"en" : "",
+			"en" : "Re-employment books, CDs, comics, DVDs",
 			"fr" : "Réemploi des livres, CDs, BDs, DVDs..."
 		},
 		"label_smco_reempvet" : {
-			"en" : "",
+			"en" : "Re-employment clothes",
 			"fr" : "Réemploi des vêtements"
 		},
 		"label_smco_reempdivers" : {
-			"en" : "",
+			"en" : "Re-employment divers",
 			"fr" : "Réemploi d'objets divers"
 		},
 		"label_smco_batiment" : {
@@ -192,7 +184,7 @@ function _translate(stKey, stLocale) {
 			"fr" : ""
 		},
 		"label_smco_vaisselle" : {
-			"en" : "",
+			"en" : "Re-employment ",
 			"fr" : "Réemploi de la vaisselle"
 		},
 		"label_smco_papier" : {
@@ -332,52 +324,52 @@ function _translate(stKey, stLocale) {
 			"fr" : "{description_fr} <BR/>Horaires : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
 		},
 		"label_janvier" : {
-			"en" : "",
+			"en" : "january",
 			"fr" : "janvier"
 		},
 		"label_fevrier" : {
-			"en" : "",
+			"en" : "february",
 			"fr" : "février"
 		},
 		"label_mars" : {
-			"en" : "",
+			"en" : "march",
 			"fr" : "mars"
 		},
 		"label_avril" : {
-			"en" : "",
+			"en" : "april",
 			"fr" : "avril"
 		},
 		"label_mai" : {
-			"en" : "",
+			"en" : "may",
 			"fr" : "mai"
 		},
 		"label_juin" : {
-			"en" : "",
+			"en" : "june",
 			"fr" : "juin"
 		},
 		"label_juillet" : {
-			"en" : "",
+			"en" : "july",
 			"fr" : "juillet"
 		},
 		"label_aout" : {
-			"en" : "",
+			"en" : "august",
 			"fr" : "août"
 		},
 		"label_septembre" : {
-			"en" : "",
+			"en" : "september",
 			"fr" : "septembre"
 		},
 		"label_octobre" : {
-			"en" : "",
+			"en" : "october",
 			"fr" : "octobre"
 		},
 		"label_novembre" : {
-			"en" : "",
+			"en" : "november",
 			"fr" : "novembre"
 		},
 		"label_decembre" : {
-			"en" : "",
-			"fr" : "decembre"
+			"en" : "december",
+			"fr" : "décembre"
 		},
 		"label_lundi" : { "en" : "monday", "fr" : "lundi" },
 		"label_mardi" : { "en" : "tuesday", "fr" : "mardi" },

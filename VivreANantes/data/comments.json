@@ -54,14 +54,6 @@
 		"type" : "appli",
 		"auteurs" : "Chris-ren",
 		"dates" : "41430",
-		"libelle" : "Je ne l'ai pas expérimenté",
-		"description" : "Contrairement au compostage, je n'ai jamais pratiqué le lombricompost. Les conseils, bien que tirés de sources fiables, sont donc uniquement théoriques. Un avis d'un utilisateur régulier serait intéressant.",
-		"elements" : "fiche_lombricompost"
-	}, {
-		"code" : "faq_fiche_lombricompost",
-		"type" : "fiche",
-		"auteurs" : "Arnaud",
-		"dates" : "41459",
 		"libelle" : "Retours d'expériences",
 		"description" : "Retour d'expérience : j'ai tué toute ma colonie une fois avec des poussières d'aspirateur (trop d'éléments synthétiques comme les poussières des vêtements).<br/>je mets l'ail et les mouchoirs usagers<br/>Y a-t-il des choses qui ne doivent pas aller dans le composteur ? Viande, poisson, produits laitiers, gras, huile. Feuilles de rhubarbe, chêne et noyer. La cendre, la litière des chats, les excréments. Le contenu des sacs d’aspirateurs et charpies de la sécheuse, car cela contient trop de résidus synthétiques. Les mauvaises herbes comme l’herbe à puce, à poux. Les végétaux très malades.Feuilles de rhubarbe. Il y a au moins deux manières d'envisager le compostage de ces feuilles. La première suggère de ne pas les composter car ces feuilles contiennent des élèments chimiques qui sont toxiques pour les habitants du sol. La seconde suggère que l'acide oxalique dégagé par la décomposition rabaisse le niveau du pH et inhibe l'activité microbienne, mais dans la mesure ou ces feuilles de rhubarbe sont mélangées à de nombreuses autres matières organiques, elles restent un produit acceptable pour le tas de compost.<br/>http://cecilegladel.wordpress.com/2010/06/21/l%E2%80%99abc-du-compostage-a-domicile/",
 		"elements" : "fiche_lombricompost"
@@ -82,10 +74,10 @@
 		"description" : "Sur Nantes lorsque on regroupe conteneurs plastique/paper-carton/verre , on ne peut pas mettre les briques alimentaires (lait, jus de fruit, potages...) ni le métal dans les conteneurs plastiques. <br/>Quelques conséquences : <br/>- que faire alors de sa cannette de soda si on est en ville ? <br/>- les personnes ayant uniquement un bac bleu (il en reste) doivent aller à la déchèterie pour tout le métal et les briques… <BR/>Le problème n'apparaît pas lorsque l'on regoupe les conteneurs emballages-journaux-magazines/verre.",
 		"elements" : "modco_contmpb"
 	}, {
-		"code" : "",
+		"code" : "faq_pb_plastique",
 		"type" : "appli",
 		"auteurs" : "Chris-ren",
-		"dates" : "41376",
+		"dates" : "",
 		"libelle" : "Pb plastique",
 		"description" : "Les plastiques sont mis dans la catégorie de traitement cat_emr, alors qu'il existe des conteneurs réservés aux plastiques (donc pas à tous les emr)",
 		"elements" : ""
