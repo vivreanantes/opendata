@@ -102,47 +102,62 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	 * horaires "de 14h30 à 19h00 et de 14h30 à 19h00"
 	 */
 	getAttributes_HoursFromToAsTextAndDaysFromToAsTextAttribute : function(
-			arPlagesHoraires, dateDebut, dateFin, fromToAttribute, heureDebut, heureFin,
-			stLocale) {
-
-		var stSchedule;
+			arPlagesHoraires, dateDebut, dateFin, fromToAttribute, timeZone, stLocale) {
 
 		var stLabelDe = this.translate("label_de");
 		var stLabelH = this.translate("label_h");
 		var stLabelA = this.translate("label_a");
 		var stLabelEt = this.translate("label_et");
 
-		if (heureDebut != null) {
-			var heuresDebutInt = parseInt(heureDebut.substring(0, 2));
-			var minutesDebut = heureDebut.substring(3, 5);
-		}
-		if (heureFin != null) {
-			var heuresFinInt = parseInt(heureFin.substring(0, 2));
-			var minutesFin = heureFin.substring(3, 5);
-		}
-		var stHoraires = stLabelDe + " " + heuresDebutInt + stLabelH
-				+ minutesDebut + " " + stLabelA + " " + heuresFinInt + stLabelH
-				+ minutesFin;
-		var estPresent = false;
-		for (var i = 0; i < arPlagesHoraires.length; i++) {
-			// meme jour : "du 0101 au 3112"
-			// et meme jour de la semaine ex "Toute l'année (du lundi au mercredi)"
-			if (arPlagesHoraires[i]["dateDebut"].toString() === dateDebut
-					.toString()
-					&& arPlagesHoraires[i]["dateFin"].toString() === dateFin
-							.toString()
-					&& arPlagesHoraires[i]["fromTo"].toString() === fromToAttribute) {
-				// On complète les horaires
-				stSchedule = arPlagesHoraires[i]["schedule"] + " " + stLabelEt
-						+ " " + stHoraires;
-				estPresent = true;
+		var arHeures = timeZone.split(this.separatorEt);
+		
+		var result = "";
+		for (var i = 0; i < arHeures.length; i++) {
+			var heures = arHeures[i];
+			var indexFinHeure = heures.indexOf(this.separatorJusquA, 0);
+			var heureDebut = heures.substring(0, indexFinHeure);
+			var heureFin = heures.substring(indexFinHeure + 1);
+			if (heureDebut != null) {
+				var heuresDebutInt = parseInt(heureDebut.substring(0, 2));
+				var minutesDebut = heureDebut.substring(3, 5);
 			}
+			if (heureFin != null) {
+				var heuresFinInt = parseInt(heureFin.substring(0, 2));
+				var minutesFin = heureFin.substring(3, 5);
+			}
+			var stHoraires = stLabelDe + " " + heuresDebutInt + stLabelH
+					+ minutesDebut + " " + stLabelA + " " + heuresFinInt + stLabelH
+					+ minutesFin;
+			if (result!="") {
+				// On ajoute "Et de 19h45 à 20h30"
+				result = result + " " + stLabelEt + " " + stHoraires;
+			} else {
+				// On ajoute "19h45 à 20h30"
+				result = result + stHoraires;
+			}
+			/*var estPresent = false;
+			for (var i = 0; i < arPlagesHoraires.length; i++) {
+				// meme jour : "du 0101 au 3112"
+				// et meme jour de la semaine ex "Toute l'année (du lundi au mercredi)"
+				if (arPlagesHoraires[i]["dateDebut"].toString() === dateDebut
+						.toString()
+						&& arPlagesHoraires[i]["dateFin"].toString() === dateFin
+								.toString()
+						&& arPlagesHoraires[i]["fromTo"].toString() === fromToAttribute) {
+					// On complète les horaires
+					stSchedule = arPlagesHoraires[i]["schedule"] + " " + stLabelEt
+							+ " " + stHoraires;
+					estPresent = true;
+				}
+			}
+			if (estPresent === false) {
+				// On ajoute l"horaire
+				stSchedule = stHoraires;
+			}*/
 		}
-		if (estPresent === false) {
-			// On ajoute l"horaire
-			stSchedule = stHoraires;
-		}
-		return stSchedule;
+
+		/*var stSchedule;*/
+		return result;
 	},
 
 
@@ -169,7 +184,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			if (posFirstNumber != -1) {
 				strsDaysOfWeek = strsDaysOfWeek.substring(0, posFirstNumber);
 			}
-			var arDays = strsDaysOfWeek.split("-");
+			var arDays = strsDaysOfWeek.split(this.separatorEt);
 			for (var i = 0; i < arDays.length; i++) {
 				var day = arDays[i];
 				result += this.getDayString(day, i);
@@ -264,8 +279,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					var indexSeparator1 = plageHoraire.indexOf("_", 0);
 					var indexSeparator2 = plageHoraire.indexOf("_",
 							indexSeparator1 + 1);
-					var indexSeparator3 = plageHoraire.indexOf("_",
-							indexSeparator3 + 1);
+					var indexseparatorEt = plageHoraire.indexOf("_",
+							indexseparatorEt + 1);
 					var timeZones = this
 							.getTimeZone_JourDebutMoisDebutJourFinMoisFin(plageHoraire);
 					var jourDebutJJ = timeZones.jourDebutJJ;
@@ -281,11 +296,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					var daysOfWeekZone = plageHoraire.substring(indexSeparator1
 									+ 1, indexSeparator2);
 					var timeZone = plageHoraire.substring(indexSeparator2 + 1);
-					var indexFinHeure = timeZone.indexOf("-", 0);
-					var heureDebutHHDeuxPointsMM = timeZone.substring(0,
-							indexFinHeure);
-					var heureFinHHDeuxPointsMM = timeZone
-							.substring(indexFinHeure + 1);
 					// En javascript on met "0" pour le premier mois (donc on
 					// fait "-1")
 					var dateDebut = new Date(currentYearAAAA, moisDebut - 1,
@@ -299,10 +309,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 							daysOfWeekZone, 3)
 					var stSchedule = this
 							.getAttributes_HoursFromToAsTextAndDaysFromToAsTextAttribute(
-									arNewAttributes, dateDebut, dateFin, fromToAttribute,
-									heureDebutHHDeuxPointsMM,
-									heureFinHHDeuxPointsMM);
-;
+									arNewAttributes, dateDebut, dateFin, fromToAttribute, timeZone);
 
 					// -- verifie si
 					var obAujoudhuiDemain = this.verifieOuvertAujourdhuiDemain(
@@ -372,15 +379,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		objStructures.data["plagesHoraires_prochainsJours"] = stOuvertAujourdhuiEtDemain;
 		objStructures.data["plagesHoraires_periodes"] = arNewAttributes;
 
-	}
+	},
 
-	,
+	/* renvoie une chaine de caractère */
 	getTimeZone_JourDebutMoisDebutJourFinMoisFin : function(plageHoraire) {
 		var index1 = plageHoraire.indexOf("_", 0);
 		if (index1 == 9) {
 			// On est sur une plage horaire
 			var periodZone = plageHoraire.substring(0, index1);
-			var indexFinHeure = periodZone.indexOf("-", 0);
+			var indexFinHeure = periodZone.indexOf(this.separatorJusquA, 0);
 			var strDateDebut = periodZone.substring(0, indexFinHeure);
 			var jourDebutJJ = strDateDebut.substring(0, 2);
 			var moisDebutMM = strDateDebut.substring(2, 4);
@@ -388,7 +395,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			var jourFinJJ = strDateFin.substring(0, 2);
 			var moisFinMM = strDateFin.substring(2, 4);
 		} else if (index1 == 6) {
-			// On est dans le cas d"une dare précise
+			// On est dans le cas d"une date précise
 			var stDate = plageHoraire.substring(0, index1);
 			if (stDate.length === 6) {
 				var jourDebutJJ = stDate.substring(0, 2);
@@ -449,6 +456,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		return result;
 	},
 
+	separatorEt : "+",
+	separatorJusquA : "-",
 	
 	verifieOuvertAujourdhuiDemain : function(stTodayFerieSpecialDay,
 			stTomorrowSpecialDay, dateDebut, dateFin, daysOfWeekZone,
@@ -461,11 +470,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		var bOuvertAujourdhui = false;
 		var bOuvertDemain = false;
 
-		// var annee = this.utilGetStringCurrentYearAAAA();
-		var arDays = daysOfWeekZone.split("-");
-
-		// var dateDebut = new Date(annee, moisDebut - 1, jourDebut);
-		// var dateFin = new Date(annee, moisFin - 1, jourFin);
+		var arDays = daysOfWeekZone.split(this.separatorEt);
 
 		if (today >= dateDebut && today <= dateFin
 				&& this.utilArrayContainObject(arDays, todayTwoDays)) {
@@ -490,7 +495,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		}
 	},
 
-	/*
+	/**
 	 * Vérifie si un jour est parmi les jours fériés.
 	 */
 	verifSpecialDay : function(stSpecialDay, specialDayZone) {
@@ -500,7 +505,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		if (stSpecialDay != "") {
 			// Je transforme la zone des jours fériés, puis je recherche mon
 			// jour
-			var arSpecialDays = specialDayZone.split("-");
+			var arSpecialDays = specialDayZone.split(this.separatorEt);
 			if (specialDayZone == "sauf_ferie") {
 				result = true;
 			} else if (this.utilArrayContainObject(arSpecialDays, stSpecialDay)) {
@@ -510,25 +515,23 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		return result;
 	},
 
+	/**
+	 * Renvoie une chaine correspondant au nom du jour ferie de aujourd'hui.
+	 * Exemple : renvoie "sauf_saint_sylvestre"
+	 */
 	getTodaySpecialDay : function() {
 		var today = this.utilGetDateTodayWithoutSeconds();
 		return this.getSpecialDay(today);
 	},
 
+	/**
+	 * Renvoie une chaine correspondant au nom du jour ferie de demain.
+	 * Exemple : renvoie "sauf_saint_sylvestre"
+	 */
 	getTomorrowSpecialDay : function() {
 		var tomorrow = this.utilGetDateTomorrowWithoutSeconds();
 		return this.getSpecialDay(tomorrow);
 	},
-
-	/*
-	 * SAUF_FERIE : "sauf_ferie", FERIE_SAINT_SYLVESTRE :
-	 * "sauf_saint_sylvestre", FERIE_PAQUES : "sauf_paques", FERIE_FETE_TRAVAIL :
-	 * "sauf_fete_travail", FERIE_8_MAI : "sauf_8_mai", FERIE_ASCENSION :
-	 * "sauf_ascenscion", FERIE_PENTECOTE : "sauf_pentecote",
-	 * FERIE_FETE_NATIONALE : "sauf_fete_nationale", FERIE_ASSOMPTION :
-	 * "sauf_assomption", FERIE_LA_TOUSSAINT : "sauf_la_toussaint",
-	 * FERIE_ARMISTICE : "sauf_armistice", FERIE_NOEL : "sauf_noel",
-	 */
 
 	/**
 	 * Renvoie une chaine correspondant au nom du jour ferie de la date fournie.
@@ -537,56 +540,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	getSpecialDay : function(date) {
 
 		return _getSpecialDay(date);
-		/*
-		 * var jourDateJJ = date.getDate(); // on ajoute le "0" pour avoir "01"
-		 * if (jourDateJJ < 10) { jourDateJJ = "0" + jourDateJJ; } else {
-		 * jourDateJJ = "" + jourDateJJ; } // on ajoute le "0" pour avoir "01"
-		 * var moisDateMM = date.getMonth() + 1; if (moisDateMM < 10) {
-		 * moisDateMM = "0" + moisDateMM; } else { moisDateMM = "" + moisDateMM; }
-		 * var yearDateYY = (date.getFullYear() + "").substring(2, 4); var
-		 * dayString = "" + jourDateJJ + moisDateMM + yearDateYY;
-		 * 
-		 * var arraySaintSylvestre = new Array("010113", "010114", "010115", //
-		 * "010116", "010117", "010118"); var arrayPaques = new Array("010413",
-		 * "210414", "060415", // "280316", "160417", "010418"); var
-		 * arrayFeteTravail = new Array("010513", "010514", "010515", //
-		 * "010516", "010517", "010518"); var array8mai = new Array("080513",
-		 * "080514", "080515", // "080516", "080517", "080518"); var
-		 * arrayAscension = new Array("090513", "290514", "140515", // "050516",
-		 * "250517", "100518"); var arrayPentecote = new Array("200513",
-		 * "090614", "250515", // "160516", "050617", "210518"); var
-		 * arrayFeteNationale = new Array("140713", "140714", "140715", //
-		 * "140716", "140717", "140718"); var arrayAssomption = new
-		 * Array("150813", "150814", "150815", // "150816", "150817", "150818");
-		 * var arrayLaToussaint = new Array("011113", "011114", "011115", //
-		 * "011116", "011117", "011118"); var arrayArmistice = new
-		 * Array("111113", "111114", "111115", // "111116", "111117", "111118");
-		 * var arrayNoel = new Array("251213", "251214", "251215", // "251216",
-		 * "251217", "251218");
-		 * 
-		 * if (this.utilArrayContainObject(arraySaintSylvestre, dayString)) {
-		 * return this.FERIE_SAINT_SYLVESTRE; } else if
-		 * (this.utilArrayContainObject(arrayPaques, dayString)) { return
-		 * this.FERIE_PAQUES; } else if
-		 * (this.utilArrayContainObject(arrayFeteTravail, dayString)) { return
-		 * this.FERIE_FETE_TRAVAIL; } else if
-		 * (this.utilArrayContainObject(array8mai, dayString)) { return
-		 * this.FERIE_8_MAI; } else if
-		 * (this.utilArrayContainObject(arrayAscension, dayString)) { return
-		 * this.FERIE_ASCENSION; } else if
-		 * (this.utilArrayContainObject(arrayPentecote, dayString)) { return
-		 * this.FERIE_PENTECOTE; } else if
-		 * (this.utilArrayContainObject(arrayFeteNationale, dayString)) { return
-		 * this.FERIE_FETE_NATIONALE; } else if
-		 * (this.utilArrayContainObject(arrayAssomption, dayString)) { return
-		 * this.FERIE_ASSOMPTION; } else if
-		 * (this.utilArrayContainObject(arrayLaToussaint, dayString)) { return
-		 * this.FERIE_LA_TOUSSAINT; } else if
-		 * (this.utilArrayContainObject(arrayArmistice, dayString)) { return
-		 * this.FERIE_ARMISTICE; } else if
-		 * (this.utilArrayContainObject(arrayNoel, dayString)) { return
-		 * this.FERIE_NOEL; } else { return ""; }
-		 */
 	},
 
 	/**

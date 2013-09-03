@@ -23,10 +23,10 @@ Ext.define('VivreANantes.model.StructureModel', {
 				}, {
 					name : 'quartier',
 					type : 'string'
-				}, {
+				}/*, {
 					name : 'sousModesCollecte',
 					type : 'string'
-				}, {
+				}*/, {
 					name : 'description_fr',
 					type : 'string'
 				}, {
@@ -34,15 +34,7 @@ Ext.define('VivreANantes.model.StructureModel', {
 					type : 'string'
 				}, {
 					name : 'src',
-					type : 'string'//,
-					// On affiche la source uniquement si pas MieuxTrierANantes
-					//convert : function(value, record) {
-					//	if (value == "MieuxTrierANantes" || value == "" || value == " ") {
-					//		return "";
-					//	} else {
-					//		return "<BR/><I>Source : " + value + "</I>";
-					//	}
-					// }
+					type : 'string'
 				}, {
 					name : 'numeroTemp',
 					type : 'string'

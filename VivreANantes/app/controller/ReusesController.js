@@ -99,7 +99,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 				}
 				var stTypeRegexp = new RegExp(selectType.getValue());
 				var stQuartier = item.data["quartier"];
-				var stSousModesCollecte = item.data["sousModesCollecte"];
+				var stSousModesCollecte = item.data["type"];
 				return (selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) && (stTypeRegexp
 								.test(stSousModesCollecte));
 			}

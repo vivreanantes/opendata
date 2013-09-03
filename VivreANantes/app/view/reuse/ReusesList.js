@@ -5,7 +5,7 @@ Ext.define('VivreANantes.view.reuses.ReusesList', {
 		// iconCls : 'action', // icône en forme de ?
 		// title : 'Modes de collecte à domicile',
 		// TODO : initialiser ce template avec translate 
-		itemTpl : '<div>{type} - {libelle} {plagesHoraires_prochainsJours}<br/>{plagesHoraires_lisible}</div>'
+		itemTpl : '<div>{libelle} {plagesHoraires_prochainsJours}<br/>{plagesHoraires_lisible}</div>'
 	}
 
 	

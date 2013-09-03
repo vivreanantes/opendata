@@ -3,12 +3,6 @@ Ext.define('VivreANantes.store.TrisacStore', {
 			id : 'trisacstore',
 			config : {
 				autoLoad : true,
-				/*
-				 * fields : ['code', 'type', 'modesCollecte', 'plagesHoraires2',
-				 * 'libelle', 'plagesHoraires', 'adresseTemp', 'horaires',
-				 * 'conseils', 'quartier', 'ouvertAujourdhuiEtDemain',
-				 * 'sousModesCollecte'],
-				 */
 				model : 'VivreANantes.model.StructureModel',
 				proxy : {
 					type : 'ajax',

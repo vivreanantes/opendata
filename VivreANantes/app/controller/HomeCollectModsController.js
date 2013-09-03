@@ -62,14 +62,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 		console.log('onInitHomeCollectMods');
 
 		var homecollectmodStore = Ext.create(
-				'VivreANantes.store.HomeCollectModStore', {
-					autoLoad : true,
-					listeners : {
-						'load' : function(store, results, successful) {
-						}
-					}
-				});
-
+			'VivreANantes.store.HomeCollectModStore');
 		list.setStore(homecollectmodStore);
 
 	},
@@ -90,13 +83,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			// Bind the record onto the show contact view
 			this.homeCollectModDetail.setData(record.data);
 
-			/*if (record.data.joursCollecteBacsBleus !== "") {
-				var jour = "{joursCollecteBacsBleus}";
-			} else if (record.data.joursCollecteBacsBleus !== "") {
-				var jour = "{joursCollecteBacsBleus}";
-			} else {
-				var jour = "{joursCollecteTriSac}";
-			}*/
 			// this.homeCollectModDetail.setTpl("<div>{denominationCompleteVoie}{complementVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : " + jour + "</div>");
 			//      
 			// Push the show contact view into the navigation view
@@ -123,7 +109,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			filterFn : function(item) {
 				var escaperegex = Ext.String.escapeRegex;
 				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
-				var nomVoie_sansAccents = item.data['nomVoie_sansAccents'];
+				var nomVoie_sansAccents = item.data['nvsa'];
 				return (texttest.test(nomVoie_sansAccents));
 				/*
 				var categorietest = new RegExp(escaperegex(select.getValue()));

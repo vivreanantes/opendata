@@ -149,7 +149,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			result = "label_octobre";
 		} else if (stMonth == "11") {
 			result = "label_novembre";
-		} else if (stMonth == "02") {
+		} else if (stMonth == "12") {
 			result = "label_decembre";
 		}
 		result = this.translate(result);
@@ -187,7 +187,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					var arrayitemsLine = new Array();
 				}
 				arrayitemsLine.push({
-							xtype : 'button',
+							xtype : "button", height : '150px', width : '150px', 
 							id : arrayItemsToShow[i]["id"],
 							// code : arrayItemsToShow[i]["id"],
 							html : arrayItemsToShow[i]["libelle"] + " "
