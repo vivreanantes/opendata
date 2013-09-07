@@ -13,7 +13,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		var datas = store.getData();
 		var dataLength = datas.length;
 		if (dataLength > 0 && datas.items[0].data["type"] != null) {
-			
 			// On parcours tous les éléments pour valoriser "plagesHoraires_prochainsJours", "plagesHoraires_lisible" et "plagesHoraires_periodes"
 			for (var i = 0; i < dataLength; i++) {
 				this.fillAttributs_PlagesHoraires(datas.items[i]);
@@ -78,7 +77,10 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					"structuresDetails_advices", arraysItemsAdvices);
 
 			// Affectation du titre
-			var title = "<I>" + record.data["type"] + "</I>" + " "
+			// TODO il faudrait traduite le type 
+			// var stType = this.utilGetStringFromSplitString(record.data["type"]);
+			var stType = record.data["type"];
+			var title = "<I>" + stType + "</I>" + " "
 					+ this.stringUpperFirstLetter(record.data["libelle"]);
 			this.structuresDetail.setTitle(title);
 			
@@ -240,9 +242,25 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			this.stringUpperFirstLetter(result);
 		}
 		return result;
-	}
+	},
 
-	,
+	/**
+	 * transforme une chaine spliter en chaine traduite. ex : "au,du" + "," renvoie "au du"  
+	 */
+	utilGetStringFromSplitString : function(string) {
+		var result = "";
+		var arElements = string.split(",");
+		for (var i = 0; i < arElements.length; i++) {
+			var element = arElements[i];
+			result = result + this.translate(element) + " ";
+		}
+		if (result.length>0) {
+			result = result.substring(0, result.length-1);
+		}
+		return result;
+	},
+	
+	
 	fillAttributs_PlagesHoraires : function(objStructures) {
 		var stPlagesHoraire = objStructures.get("plagesHoraires");
 

@@ -16,17 +16,12 @@ Ext.define('VivreANantes.controller.CommentsController', {
 	},
 
 	onInitFaq : function(list) {
-		console.log('onInitFaq');
 		var store = Ext.create('VivreANantes.store.CommentsStore');
 		list.setStore(store);
-		
-				
-				// Initialisation du storage
-				var localStorageController= this.getApplication().getController("VivreANantes.controller.LocalStorageController");
-				localStorageController.initLocalStorage();
-				var temp = localStorageController.getLocale();
-				console.log("localStorageController :" + temp);
-				
+		// Initialisation du storage
+		var localStorageController= this.getApplication().getController("VivreANantes.controller.LocalStorageController");
+		localStorageController.initLocalStorage();
+		var temp = localStorageController.getLocale();
 	},
 
 	onListItemTap : function(list, index, element, record) {
@@ -35,7 +30,6 @@ Ext.define('VivreANantes.controller.CommentsController', {
 
 	showComment : function(record) {
 
-		// console.log(record.get('title'));
 		this.getComments().push({
 					title : record.get('libelle'),
 					html : record.get('description')
@@ -60,13 +54,13 @@ Ext.define('VivreANantes.controller.CommentsController', {
 		var dataFaq = this.getCommentsList().getStore().getData();
 		dataFaq.each(function(recordFaq) {
 					// TODO utiliser getArrayFromString à la place
-					var arrayElementsFaq = recordFaq.raw["elements"].replace(
+					var arrayElementsFaq = recordFaq.data["elements"].replace(
 							", /g", ",").replace(" ,/g", ",").split(',');
 					for (i in arrayElementsFaq) {
 						if (arrayElementsFaq[i] === code) {
 							faqTraduit += "<br/>"+ commentLink + " : <B>"
-									+ recordFaq.raw["libelle"] + "</B><BR/>"
-									+ recordFaq.raw["description"];
+									+ recordFaq.data["libelle"] + "</B><BR/>"
+									+ recordFaq.data["description"];
 
 						}
 

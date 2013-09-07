@@ -9,9 +9,6 @@ Ext.define('VivreANantes.view.welcome.WelcomeList', {
 		// grouped : true,
 		// 
 		onItemDisclosure : true
-		/*onItemDisclosure : function() {
-			console.log('onItemDisclosure');
-		}*/
 	}
 	
 });

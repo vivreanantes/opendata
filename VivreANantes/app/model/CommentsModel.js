@@ -10,7 +10,8 @@ Ext.define('VivreANantes.model.CommentsModel', {
 						},{
 							name : 'description'
 						}, {
-							name : 'element'
+							name : 'elements',
+							defaultValue : ''
 						}]
 			}
 

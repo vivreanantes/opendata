@@ -5,6 +5,24 @@
 Ext.define('VivreANantes.controller.AbstractController', {
 	extend : 'Ext.app.Controller',
 
+	/**
+	 * Retire les accents
+	 */
+	utilRetireAccent : function(result) {
+		result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g,"a");
+		result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g,"e");
+		result =  result.replace(/[Çç]/g,"c");
+		result =  result.replace(/[Ð]/g,"d");
+		result =  result.replace(/[ÌÍÎÏìíîï]/g,"i");
+		result =  result.replace(/[ÙÚÛÜùúûü]/g,"u");
+		result =  result.replace(/[Ññ]/g,"n");
+		result =  result.replace(/[ÌÍÎÏìíîï]/g,"i");
+		result =  result.replace(/[Šš]/g,"s");
+		result =  result.replace(/[Ÿÿý]/g,"y");
+		result =  result.replace(/[Žž]/g,"z");
+		return result;
+	},
+
 	/*
 	 * Ajoute les éléments d'un tableau à un tableau existant
 	 */
@@ -274,11 +292,6 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				panel.items.items[item].setHidden(true);
 			}
 		}
-/*			var item = panel.items.keys.indexOf(prefixComplet); 
-		if (item!=-1) {
-				panel.items.items[item].setData({ image: "bac_jaune_petit.png", label: "jaune"})
-			}
-			*/
 	},
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
@@ -299,6 +312,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				.getController("VivreANantes.controller.CommentsController")
 				.getCommentsList().getStore().getData();
 		dataFaq.each(function(recordFaq) {
+			if (recordFaq.raw["elements"]!=null) {
 					// TODO utiliser getArrayFromString à la place
 					var arrayElementsFaq = recordFaq.raw["elements"].replace(
 							", /g", ",").replace(" ,/g", ",").split(',');
@@ -312,7 +326,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 									});
 						}
 					}
-				});
+				}
+			});
 		// TODO Ajout d'un formulaire
 		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
 		var codeValue = "comments_xtype"+this.SEPARATOR + " "+title+" ("+commentsString+")";

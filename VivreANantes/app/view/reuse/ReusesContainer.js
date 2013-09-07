@@ -9,49 +9,14 @@ Ext.define('VivreANantes.view.reuses.ReusesContainer', {
 			config : {
 				layout : 'vbox',
 				title : "Associations et entreprises de réemploi",
-				items : [/*{
-					xtype : 'titlebar',
-					docked : 'top'
-					
-					, items : [
-
-					{
-								xtype : 'segmentedbutton',
-								id : 'reusesButtons',
-								allowDepress : false,
-								items : [{
-											text : '1 jour',
-											id : 'oneday',
-											pressed : 'true'
-										}, {
-											text : '7 jours',
-											id : 'sevendays'
-										}, {
-											text : 'Tous',
-											id : 'all',
-											handler : function() {
-												console.log("pressed 2");
-											}
-										}]
-							}
-
-					]
-
-					},*/
-
-				{
-					xtype : 'reusesForm_xtype',
-					height : 120,
-					scrollable : false
-				},
-
-				{
-					xtype : 'reusesList_xtype',
-					scrollable : 'vertical',
-					flex : 1
-				}
-
-				]
+				items : [{
+							xtype : 'reusesForm_xtype',
+							height : 120,
+							scrollable : false
+						}, {
+							xtype : 'reusesList_xtype',
+							scrollable : 'vertical',
+							flex : 1
+						}]
 			}
-
 		});

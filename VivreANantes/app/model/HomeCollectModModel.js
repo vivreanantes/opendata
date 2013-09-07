@@ -21,11 +21,6 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							name : 'nvsa',
 							type : 'string'
 						},
-						/*{
-							name : 'typeVoie',
-							type : 'string',
-							mapping : 'typeVoie'
-						},*/
 						{
 							name : 'ci',
 							// convert ajoute transforme 'un commentaire' en ' (un commentaire') OU '' en ''

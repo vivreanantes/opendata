@@ -23,21 +23,11 @@ Ext.define('VivreANantes.controller.Welcome', {
 			 * A l'initialisation de la fenêtre d'accueil
 			 */
 			onInitWelcome : function(list) {
-				console.log('onInitWelcome');
 				
 				// Les catégories usuelles
 				var categorieUsuelleStore = Ext.create(
 						'VivreANantes.store.CategorieUsuelleStore');
-						/*, {
-							autoLoad : true,							
-							listeners : {
-								'load' : function(store, results, successful) {
-								}
-							}
-						});*/
 				list.setStore(categorieUsuelleStore);
-
-				console.log(categorieUsuelleStore);
 			},
 			
 			showDetail : function(list, record) {

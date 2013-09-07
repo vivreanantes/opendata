@@ -18,19 +18,12 @@ Ext.define("VivreANantes.controller.StructuresController", {
 		},
 		control : {
 
-			structuresDetail : {
-				updatedata : "onUpdateDataDetail"
-			},
-
 			structuresList : {
 				initialize : "onInitStructures",
 				itemtap : "showStructuresDetail",
 				refresh : "onListRefresh"
 			},
 
-			structuresView : {}
-
-			,
 			structuresFormSelectQuartier : {
 				change : "onStructuresStoreFilter",
 				initialize : "setOptionsQuartier",
@@ -53,45 +46,24 @@ Ext.define("VivreANantes.controller.StructuresController", {
 				tap : 'onTapLinkButton'
 			}
 		}
-	}
+	},
 
-	,
-	onUpdateDataDetail : function(comp, newData, opts) {
-		// if (newData) {
-		// console.log("onUpdateDataDetail" + this);
-		// console.log("onUpdateDataDetail" + this.id);
-		// }
-	}
 
 	/**
 	 * A l"initialisation de la fenêtre d"accueil
 	 */
-	,
 	onInitStructures : function(list) {
 		// 1
 		var homecollectmodStore = Ext.create(
 				"VivreANantes.store.Structure2Store", {
 					filters : [{
-						// property: "type",
 						property : "modesCollecte",
 						// le type correspond aux modes de collectes possibles
 						// voir
 						// http://quentinc.net/javascript/testeur-expressions-regulieres/
-						value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g
-							// value: /modco_reemploi/g
-					}]
-					// autoLoad : true,
-					// listeners : {
-					// "load" : function(store, results, successful) {
-					// }
-					// }
+						value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g					}]
 				});
 		// 2
-		// homecollectmodStore.each(function(record) {
-		// console.log("homecollectmodStore.each" + record.libelle);
-		// });
-
-		// 3
 		list.setStore(homecollectmodStore);
 		this.getStructuresFormSelectQuartier().setValue("all");
 	}

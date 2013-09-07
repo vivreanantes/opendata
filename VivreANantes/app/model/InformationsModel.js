@@ -10,7 +10,8 @@ Ext.define('VivreANantes.model.InformationsModel', {
 						},{
 							name : 'description_fr'
 						}, {
-							name : 'image'
+							name : 'image',
+							defaultValue: 'image_defaut_mini.png'
 						}, {
 							name : 'bouton'
 						}]

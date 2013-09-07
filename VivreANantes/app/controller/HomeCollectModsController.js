@@ -2,7 +2,7 @@
  * Controleur de la partie Mode de collecte à domicile
  */
 Ext.define('VivreANantes.controller.HomeCollectModsController', {
-	extend : 'Ext.app.Controller',
+	extend : 'VivreANantes.controller.AbstractController',
 
 	config : {
 		refs : {
@@ -11,8 +11,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			homeCollectModDetail : 'HomeCollectModsDetails',
 			homeCollectModsForm : 'HomeCollectModsForm',
 			homeCollectModsFormText : '#homeCollectModsFormText'
-			// ,
-			// homeCollectModsFormSelect : '#homeCollectModsFormSelect'
 		},
 		control : {
 
@@ -26,8 +24,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			},
 
 			homeCollectModsView : {
-				initialize : 'onInitHomeCollectModsView',
-				push : 'onHomeCollectModsViewPush'
+				// On maitient ce control pour pouvoir faire this.getHomeCollectModsView().
 			},
 
 			homeCollectModsFormText : {
@@ -35,32 +32,13 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 				change : 'onHomeCollectModStoreFilter',
 				clearicontap : 'onHomeCollectModStoreFilter'
 			}
-			// ,
-			// homeCollectModsFormSelect : {
-			// 	change : 'onHomeCollectModStoreFilter'
-			// }
-
 		}
-	},
-
-	// DEBUG
-	onDebug : function() {
-		console.log('DEBUG');
-	},
-	// FIN DEBUG
-
-	onInitHomeCollectModsView : function() {
-
-		console.log('onInitHomeCollectModsContainer');
-
 	},
 
 	/**
 	 * A l'initialisation de la fenêtre
 	 */
 	onInitHomeCollectMods : function(list) {
-		console.log('onInitHomeCollectMods');
-
 		var homecollectmodStore = Ext.create(
 			'VivreANantes.store.HomeCollectModStore');
 		list.setStore(homecollectmodStore);
@@ -72,7 +50,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	},
 
 	showHomeCollectModsDetail : function(list, index, node, record) {
-		console.log('showHomeCollectModsDetail');
 
 		if (record) {
 			if (!this.homeCollectModDetail) {
@@ -83,7 +60,8 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			// Bind the record onto the show contact view
 			this.homeCollectModDetail.setData(record.data);
 
-			// this.homeCollectModDetail.setTpl("<div>{denominationCompleteVoie}{complementVoie}</div><div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  : " + jour + "</div>");
+			this.homeCollectModDetail.setTpl('<I>Source : Open Data Nantes, valable à partir du 16/09/2013</I><br/><div>{dcv}{ci}</div>' +
+					'<div>Modes de collecte : {modesCollecte}</div><div>Jours de collecte  :  {jct} {jcbb} {jcbj}</div><BR/><UL>Il existe 3 modes de collecte possible : <LI>"sac bleu et sac jaune" (aussi appelé "Trisac") : ils sont à déposer dans le même bac,</LI><LI>"bac bleu et bac jaune" : les déchets recyclables est à déposer dans le bac jaune, les déchets non recyclables dans le bac bleu,</LI><LI>"bac bleu" : il sert pour les déchets non recyclables uniquement. Ce que vous trier doit être emmené au conteneur ou en écopoints/décheteries.</LI></UL> {src}');
 			//      
 			// Push the show contact view into the navigation view
 			this.getHomeCollectModsView().push(this.homeCollectModDetail);
@@ -99,45 +77,19 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	onHomeCollectModStoreFilter : function() {
 
 		var text = this.getHomeCollectModsFormText();
-		// var select = this.getHomeCollectModsFormSelect();
 		var store = this.getHomeCollectModsList().getStore();
-
 		store.clearFilter();
+		thisController = this;
+		
 		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
 		// sur la catégorie
 		var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
 			filterFn : function(item) {
 				var escaperegex = Ext.String.escapeRegex;
-				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+				var texteSansAccents = thisController.utilRetireAccent(text.getValue());
+				var texttest = new RegExp(escaperegex(texteSansAccents), 'ig');
 				var nomVoie_sansAccents = item.data['nvsa'];
 				return (texttest.test(nomVoie_sansAccents));
-				/*
-				var categorietest = new RegExp(escaperegex(select.getValue()));
-				if (select.getValue().indexOf(",") !== -1) {
-					var array = select.getValue().split(',');
-					var expression = '';
-					var i = 0;
-					for (a in array) {
-						if (i == 0) {
-							expression = '(' + array[a];
-						} else {
-							expression = expression + '|' + array[a];
-						}
-						i++;
-					}
-					expression = expression + ')';
-					categorietest = new RegExp(expression);
-					// console.log("expression : " + expression);
-					// console.log("typeVoie : " + item.data.typeVoie);
-					// console.log("res :" +
-					// categorietest.test(item.data.typeVoie));
-				}
-				*/
-				// TODO on pourrait mettre denominationCompleteVoie
-				// return (texttest.test(item.data.nomVoie) && (select
-				//		.getValue() === 'all' || categorietest
-				//		.test(item.data.typeVoie)));
-				// return (texttest.test(item.data.denominationCompleteVoie));
 			}
 		});
 		store.filter(filterHomeCollectMod);

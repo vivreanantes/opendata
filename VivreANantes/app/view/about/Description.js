@@ -11,7 +11,7 @@ Ext.define('VivreANantes.view.about.Description', {
 		styleHtmlContent : true,
 		items : [{
 			html : [
-					'<img src="resources/images/conteneur_verre_petit.png" width="150" align="right" />',
+					'<img src="resources/images/conteneur_verre_mini.png" width="150" align="right" />',
 					'<h2>A propos de l\'application</h2>',
 					'<p>L\'application "Mieux trier à Nantes" est réalisée par des bénévoles.</p>',
 					'<p>C\'est un logiciel libre dont <b>l\'objectif est d\'aider les Nantais à trier</b> :<br/>',

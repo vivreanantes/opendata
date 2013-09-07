@@ -13,8 +13,8 @@ Ext.define('VivreANantes.model.GarbageModel', {
 							type : 'string'
 						}, {
 							name : 'description',
-							type : 'string'
-							// mapping : 'description_fr'
+							type : 'string',
+							defaultValue: ''
 					}	,{
 							name : 'nom_description_sansAccents',
 							type : 'string',
@@ -38,22 +38,14 @@ Ext.define('VivreANantes.model.GarbageModel', {
 								return result + " " + result2;
 							}
 						},
-					
 						{
 							name : 'concerne_aussi',
 							type : 'string'
+							// Vide au chargement, mais remplacé par : label_concerne_aussi : description
 						}, {
 							name : 'image',
 							type : 'string',
-							convert : function(value, record) {
-								if (value == null || value === "") {
-									return "image_defaut.png";
-								}
-								return value;
-							}
-							// Utilisé en remplacement de null, mais pas d'une
-						// chaîne vide
-						// defaultValue : '',
+							defaultValue: 'image_defaut_mini.png'
 					}	, {
 							// 'categoriesUsuelles' dans json,
 							// 'categorie_usuelle' dans js

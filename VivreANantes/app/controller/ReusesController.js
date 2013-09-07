@@ -42,7 +42,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 			}
 		}
 	},
-
+	
 	/**
 	 * A l"initialisation de la fenêtre
 	 */
@@ -56,7 +56,6 @@ Ext.define("VivreANantes.controller.ReusesController", {
 						// possibles
 						// voir
 						// http://quentinc.net/javascript/testeur-expressions-regulieres/
-						// value : /modco_reemploi/g
 						value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
 					}]
 
@@ -93,15 +92,15 @@ Ext.define("VivreANantes.controller.ReusesController", {
 		var filterElements = Ext.create("Ext.util.Filter", {
 			filterFn : function(item) {
 				var stModesDeCollecte = item.data["modesCollecte"];
-				if (stModesDeCollecte !== 'modco_reemploi'
+				/*if (stModesDeCollecte !== 'modco_reemploi'
 						&& stModesDeCollecte !== 'smco_conteneurlerelais') {
 					return false;
-				}
+				}*/
 				var stTypeRegexp = new RegExp(selectType.getValue());
 				var stQuartier = item.data["quartier"];
-				var stSousModesCollecte = item.data["type"];
+				// var stSousModesCollecte = item.data["type"];
 				return (selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) && (stTypeRegexp
-								.test(stSousModesCollecte));
+								.test(stModesDeCollecte));
 			}
 		});
 		store.filter(filterElements);

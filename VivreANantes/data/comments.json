@@ -23,7 +23,6 @@
 		"auteurs" : "Chris-ren",
 		"dates" : "41275",
 		"libelle" : "Ce papier peut-il être trié ?",
-		"description" : "",
 		"elements" : "dec_papierCadeau,dec_papierPeint"
 	}, {
 		"code" : "faq_imagemanquante",
@@ -47,8 +46,7 @@
 		"auteurs" : "Chris-ren",
 		"dates" : "41426",
 		"libelle" : "Quartiers administratifs",
-		"description" : "Contrairement aux informations fournies par Nantes Métropôle, nous avons regroupé les informations de tri selon les 11 quartiers administratifs. Le découpage des quartiers de Nantes Métropôle était en effet différent pour les lieux de distribution des Trisacs, les colonnes enterrées...",
-		"elements" : ""
+		"description" : "Contrairement aux informations fournies par Nantes Métropôle, nous avons regroupé les informations de tri selon les 11 quartiers administratifs. Le découpage des quartiers de Nantes Métropôle était en effet différent pour les lieux de distribution des Trisacs, les colonnes enterrées..."
 	}, {
 		"code" : "faq_fiche_lombricompost",
 		"type" : "appli",
@@ -63,8 +61,7 @@
 		"auteurs" : "Chris-ren",
 		"dates" : "41430",
 		"libelle" : "Données de http://ourecycler.fr/ non exploitables",
-		"description" : "Les données affichées sur http://ourecycler.fr/ sont inexploitables : les associations collectrices sont rarement mentionnées, si l'on regarde précisément les adresses fournies correspondent à des commerces (?), \"recyclage solidaire\" n'est pas une structure de collecte directe mais une société qui récupère auprès d'associations",
-		"elements" : ""
+		"description" : "Les données affichées sur http://ourecycler.fr/ sont inexploitables : les associations collectrices sont rarement mentionnées, si l'on regarde précisément les adresses fournies correspondent à des commerces (?), \"recyclage solidaire\" n'est pas une structure de collecte directe mais une société qui récupère auprès d'associations"
 	}, {
 		"code" : "faq_modco_contmpb",
 		"type" : "modco",
@@ -77,10 +74,8 @@
 		"code" : "faq_pb_plastique",
 		"type" : "appli",
 		"auteurs" : "Chris-ren",
-		"dates" : "",
 		"libelle" : "Pb plastique",
-		"description" : "Les plastiques sont mis dans la catégorie de traitement cat_emr, alors qu'il existe des conteneurs réservés aux plastiques (donc pas à tous les emr)",
-		"elements" : ""
+		"description" : "Les plastiques sont mis dans la catégorie de traitement cat_emr, alors qu'il existe des conteneurs réservés aux plastiques (donc pas à tous les emr)"
 	}, {
 		"code" : "faq_cons_coupant",
 		"type" : "appli",
@@ -89,13 +84,5 @@
 		"libelle" : "Conseil coupant incertain",
 		"description" : "Certaines documentations de Nantes Métropôle signale que l'on peut mettre  les déchets coupants dans les sacs, donc à revoir.",
 		"elements" : "dec_miroir,dec_porcelaine,dec_poterie,dec_vaisselleVerrePorcelaine,dec_vitre"
-	}, {
-		"code" : "",
-		"type" : "",
-		"auteurs" : "",
-		"dates" : "",
-		"libelle" : "",
-		"description" : "",
-		"elements" : ""
-	}]
+	}, {},]
 }

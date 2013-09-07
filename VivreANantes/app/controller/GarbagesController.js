@@ -25,9 +25,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			informationsList : 'informationsList_xtype'
 		},
 		control : {
-			garbageDetail : {
-				updatedata : 'onUpdateDataDetail'
-			},
 			collectModsView : {},
 			collectModsList : {
 				initialize : "onInitCollectModsList"
@@ -47,7 +44,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			},
 
 			garbagesView : {
-				initialize : 'onInitGarbagesView',
 				push : 'onGarbagesViewPush',
 				show : 'onActivate'
 			},
@@ -108,11 +104,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			}*/
 			
 		}
-	},
-
-	// DEBUG
-	onDebug : function() {
-		console.log('DEBUG');
 	},
 
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
@@ -178,27 +169,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		this.getGarbagesFormText().setValue("");
 	},
 
-	/*
-	 * onInitUsualSubCategoriesButtonsPanel : function(container) { var
-	 * arrayItemsToShow = new Array(); arrayItemsToShow.push({ "libelle" :
-	 * "Jardinage", "id" : "scu_toxiquejardin", "image" : "desherbant_petit.png"
-	 * }); arrayItemsToShow.push({ "libelle" : "Garage", "id" :
-	 * "scu_toxiquegarage", "image" : "batterie_voiture_petit.png" });
-	 * arrayItemsToShow.push({ "libelle" : "Cuisine", "id" :
-	 * "scu_toxiquecuisine", "image" : "bouteille_ammoniaque_petit.png" });
-	 * arrayItemsToShow.push({ "libelle" : "Salle de bain", "id" :
-	 * "scu_toxiquesdb", "image" : "desinfectant_toilette_petit.png" });
-	 * arrayItemsToShow.push({ "libelle" : "Bricolage", "id" :
-	 * "scu_toxiquebrico", "image" : "peinture_petit.png" });
-	 * arrayItemsToShow.push({ "libelle" : "Traitement des parasites", "id" :
-	 * "scu_toxiqueparasite", "image" : "mortaurat_petit.png" });
-	 * arrayItemsToShow.push({ "libelle" : "Déchets toxiques divers", "id" :
-	 * "scu_toxiquedivers", "image" : "pile_45_petit.png" });
-	 * 
-	 * var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-	 * container.setItems(arrayItems); },
-	 */
-
+	
 	getArrayFromString : function(string) {
 		string = string.replace(", /g", ",").replace(" ,/g", ",");
 		return string.split(',');
@@ -237,33 +208,12 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		return conseilTraduit;
 	},
 
-	// CRN_FIN
-
-	onUpdateDataDetail : function(comp, newData, opts) {
-		if (newData) {
-			console.log(this);
-			console.log(this.id);
-
-			// this.down('#content').setData(newRecord.data);
-		}
-	},
-
-	onInitGarbagesView : function() {
-	},
-
 	/**
 	 * A l'initialisation de la fenêtre d'accueil : initialisation de la liste
 	 * des déchets
 	 */
 	onInitGarbages : function(list) {
-		var garbageStore = Ext.create('VivreANantes.store.GarbageStore', {
-					autoLoad : true,
-					listeners : {
-						'load' : function(store, results, successful) {
-							console.log('temp');
-						}
-					}
-				});
+		var garbageStore = Ext.create('VivreANantes.store.GarbageStore');
 		list.setStore(garbageStore);
 	},
 
@@ -271,7 +221,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * Initialisation de la liste des conseils
 	 */
 	onInitGarbagesAdvices : function(list) {
-		console.log('onInitGarbagesAdvices');
 		var store = Ext.create('VivreANantes.store.AdviceStore');
 		list.setStore(store);
 	},
@@ -280,7 +229,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * Initialisation de la liste des catégories de traitement
 	 */
 	onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
-		console.log('onInitGarbagesWasteTreatmentsCategoriesList');
 		var store = Ext
 				.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
 		list.setStore(store);
@@ -290,7 +238,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * Initialisation de la liste des modes de collectes
 	 */
 	onInitGarbagesCollectModList : function(list) {
-		console.log('onInitGarbagesCollectModList');
 		var store = Ext.create('VivreANantes.store.CollectModStore');
 		list.setStore(store);
 	},
@@ -299,7 +246,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * Initialisation de la liste des fiches explicatives de collectes
 	 */
 	onInitGarbagesInformationsList : function(list) {
-		console.log('onInitGarbagesInformationsList');
 		var store = Ext.create('VivreANantes.store.InformationsStore');
 		list.setStore(store);
 	},
@@ -308,7 +254,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * Initialisation de la liste des fiches explicatives de collectes
 	 */
 	onInitGarbagesUsualCategoryList : function(list) {
-		console.log('onInitGarbagesUsualCategoryList');
 		var store = Ext.create('VivreANantes.store.CategorieUsuelleStore');
 		list.setStore(store);
 	},
@@ -335,8 +280,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			var title = "<I>" + this.translate("label_dechet") + "</I> "
 					+ record.data["nom"];
 			this.garbageDetail.setTitle(title);
-			console.log(record.data);
-			console.log(this.garbageDetail);
 
 			// var conseilTraduit = "";
 			var conseils = "";

@@ -106,13 +106,15 @@ Ext
 
 		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
 		// TODO récup Trisac OpenData
-		// TODO régler le pb de regexp ampoule qui ne marche pas !		
+		// TODO domicile : déchet vers modesDeCollecte
+		// TODO encombrants : améliorer la macro et le traitement java
+		// TODO manuel développeur
+		// TODO commentaires sur déchets par macro
+		// TODO conseils sur déchets par macro
 		
 		/////////// CRN Long terme //////////
 
 		// TODO Vérif si la capsule bouteille lait
-		// TODO A domicile LONG : faire une relecture des données du tableur 
-		//                 http://www.nantesmetropole.fr/pratique/dechets/les-ordures-menageres-residuelles-23181.kjsp
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
 		// TODO Contacter des assos pour améliorer le contenu de l'appli 
 		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json
