@@ -60,14 +60,15 @@ Ext.define('VivreANantes.model.GarbageModel', {
 							mapping : 'categorieTraitement'
 						}, {
 							name : 'conseils',
-							type : 'string',
-							mapping : 'conseils'
+							type : 'string'
+						}, {
+							name : 'rec',
+							type : 'string'
 						}, {
 							// 'modesdecollecte' dans json, 'modeDeCollecte'
 							// dans js
-							name : 'modesCollecte',
-							type : 'string',
-							mapping : 'modeDeCollecte'
+							name : 'modco',
+							type : 'string'
 						}]
 			}
 

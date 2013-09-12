@@ -19,7 +19,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// usualSubCategoriesButtonsPanel :
 			// 'usualSubCategoriesButtonsPanel_xtype',
 			advicesList : 'advicesList_xtype',
-			wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
+			// wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
 			collectModList : 'collectModList_xtype',
 			usualCategoriesList2 : 'usualCategoriesList2_xtype',
 			informationsList : 'informationsList_xtype'
@@ -63,9 +63,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				initialize : 'onInitGarbagesAdvices'
 			},
 
-			wasteTreatmentsCategoriesList : {
+			/*wasteTreatmentsCategoriesList : {
 				initialize : 'onInitGarbagesWasteTreatmentsCategoriesList'
-			},
+			},*/
 			collectModList : {
 				initialize : 'onInitGarbagesCollectModList'
 			},
@@ -228,11 +228,11 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	/**
 	 * Initialisation de la liste des catégories de traitement
 	 */
-	onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
+	/*onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
 		var store = Ext
 				.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
 		list.setStore(store);
-	},
+	},*/
 
 	/**
 	 * Initialisation de la liste des modes de collectes
@@ -285,7 +285,10 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			var conseils = "";
 			var modesDeCollecte = "";
 			var treatmentCategories = "";
-			if (record.data["conseils"] !== '') {
+			conseils = record.data["conseils"];
+			modesDeCollecte = record.data["modco"];
+			treatmentCategories = record.data["rec"];
+			/*if (record.data["conseils"] !== '') {
 				conseils = record.data["conseils"] + ",";
 			}
 			// conseils de catégories de traitement
@@ -300,7 +303,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 						treatmentCategories += recordCategories.raw["recyclable"];
 					}
 				});
-			}
+			}*/
 			if (treatmentCategories === "OUI") {
 				treatmentCategories = this.translate("label_recyclable")
 						+ " : " + "<FONT COLOR=green size=4>"

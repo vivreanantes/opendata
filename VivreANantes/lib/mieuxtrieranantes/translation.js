@@ -21,7 +21,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_pour_collecte_bac_jaune" : {
 			"en" : "Only for yellow bacs",
-			"fr" : "uniquement pour les bacs jaunes"
+			"fr" : "OUI bac jaune NON sac jaune"
 		},
 		"label_OUI" : {
 			"en" : "YES",
@@ -308,8 +308,8 @@ function _translate(stKey, stLocale) {
 			"fr" : "Divers"
 		},
 		"label_concerne_aussi" : {
-			"en" : "Also concern",
-			"fr" : "Concerne aussi"
+			"en" : "Concern",
+			"fr" : "Concerne"
 		},
 		"label_resultat_recherche" : {
 			"en" : "Search result",

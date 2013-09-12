@@ -1,3 +1,6 @@
+/**
+ * Ceci n'est plus utilisé
+ */
 Ext.define('VivreANantes.view.garbages.WasteTreatmentsCategoriesList', {
 	extend : 'Ext.List',
 	xtype : 'wasteTreatmentsCategoriesList',

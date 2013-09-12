@@ -405,20 +405,6 @@
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00",
 		"quartier" : "???????????????????????????"
 	}, {
-		"code" : "stco_reemploi43",
-		"longitude" : "-1.564511",
-		"modesCollecte" : "modco_decheterie",
-		"type" : "Réemploi",
-		"latitude" : "47.222541",
-		"description_fr" : "Déchets admis : Papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques (D.E.E.E.), batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages, Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...), piles, bouteilles de gaz, les cuves ou jardinières, pneus.",
-		"libelle" : "VIARME",
-		"adresseTemp" : "Quartier Viarme Talensac, Rue du Bourget 44000 VIARME",
-		"numeroTemp" : "02 51 82 31 47",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
-		"horaires" : "Ouvert du Lundi au Samedi de 10h à  18h et Dimanche de 8h30 à  12h (sauf jours fériés)",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-18h00,0101-3112_di_08h30-12h00,sauf_ferie",
-		"quartier" : "Hauts-Paves Saint-Felix"
-	}, {
 		"code" : "stco_reemploi44",
 		"longitude" : "-1.561791",
 		"modesCollecte" : "smco_reempdivers",
@@ -444,34 +430,6 @@
 		"horaires" : "Mardi et jeudi de 9h30 à 12h00 et de 14h00 à 17h00",
 		"plagesHoraires" : "0101-3112_ma+je_09h30-12h00+14h00-17h00",
 		"quartier" : "???????????????????????????"
-	}, {
-		"code" : "stco_reemploi47",
-		"longitude" : "-1.601493",
-		"modesCollecte" : "modco_decheterie",
-		"type" : "Réemploi",
-		"latitude" : "47.198548",
-		"description_fr" : "Déchets admis : Papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques (D.E.E.E.), batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages, Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...), piles, bouteilles de gaz, les cuves ou jardinières, pneus.",
-		"libelle" : "CHANTENAY",
-		"adresseTemp" : "42, bd du Maréchal Juin 44000 CHANTENAY",
-		"numeroTemp" : "02 40 46 61 05",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
-		"horaires" : "Ouvert du Mardi au Samedi de 10h à  17h30 (sauf jours fériés)",
-		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
-		"quartier" : "Bellevue Chantenay"
-	}, {
-		"code" : "stco_reemploi48",
-		"longitude" : "-1.591301",
-		"modesCollecte" : "modco_decheterie",
-		"type" : "Réemploi",
-		"latitude" : "47.225397",
-		"description_fr" : "Déchets admis : Papiers, cartons, encombrants ménagers divers, Déchets d'équipements Electriques et Electroniques (D.E.E.E.), batteries, verre, huiles de moteur, bouteilles et flacons plastique, bois, ferrailles, déchets verts issus des ménages, Déchets Dangereux des Ménages : produits toxiques, dangereux ou instables (peinture, vernis, colle, diluants...), piles, bouteilles de gaz, les cuves ou jardinières, pneus.",
-		"libelle" : "DERVALLIERES",
-		"adresseTemp" : "Quartier Dervallières, Rue J.M. Nattier 44000 DERVALLIERES",
-		"numeroTemp" : "02 40 43 36 69",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
-		"horaires" : "Ouvert du Mardi au Samedi de 10h à  17h30 (sauf jours fériés)",
-		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
-		"quartier" : "Dervallieres Zola"
 	}, {
 		"code" : "stco_reemploi49",
 		"longitude" : "-1.5484173",
@@ -753,9 +711,9 @@
 		"tel" : "02 40 49 43 20",
 		"latitude" : "47.22573520587",
 		"longitude" : "-1.50460810028402",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,140713__10h00-17h45,150813__10h00-17h45,011113__10h00-17h45,111113__10h00-17h45,251213__10h00-17h45",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "1012",
 		"libelle" : " Chantenay",
@@ -765,9 +723,9 @@
 		"tel" : "02 40 46 61 05",
 		"latitude" : "47.1984376431205",
 		"longitude" : "-1.60175179062477",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,150813__10h00-17h45,011113__10h00-17h45,251213__10h00-17h45",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "1013",
 		"libelle" : " La Beaujoire",
@@ -777,9 +735,9 @@
 		"tel" : "02 40 49 62 67",
 		"latitude" : "47.2540041595208",
 		"longitude" : "-1.52324785106304",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,150813__10h00-17h45,011113__10h00-17h45,251213__10h00-17h45",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "1014",
 		"libelle" : " Dervallières",
@@ -789,9 +747,9 @@
 		"tel" : "02 40 43 36 69",
 		"latitude" : "47.2252529348366",
 		"longitude" : "-1.59132968772156",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,150813__10h00-17h45,011113__10h00-17h45,251213__10h00-17h45",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "1015",
 		"libelle" : " Viarme",
@@ -801,9 +759,9 @@
 		"tel" : "02 51 82 31 47",
 		"latitude" : "47.2224088646331",
 		"longitude" : "-1.56463870590524",
-		"plagesHoraires" : ",140713__08h30-12h00,150813__10h00-17h45,011113__10h00-17h45,111113__10h00-17h45,251213__10h00-17h45",
+		"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,140713__08h30-12h00,150813__10h00-17h45,011113__10h00-17h45,111113__10h00-17h45,251213__10h00-17h45",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "2152",
 		"libelle" : " Saint Sébastien",
@@ -813,9 +771,9 @@
 		"tel" : "02 40 03 08 33",
 		"latitude" : "47.1992747714477",
 		"longitude" : "-1.48372892561533",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "2220",
 		"libelle" : " Saint Herblain",
@@ -825,9 +783,9 @@
 		"tel" : "02 51 80 90 27",
 		"latitude" : "47.1966846746915",
 		"longitude" : "-1.64203878129303",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3110_lu+ma+me+je+ve+sa+di_10h00-17h45,140713__10h00-18h00,150813__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3139",
 		"libelle" : " Carquefou",
@@ -837,9 +795,9 @@
 		"tel" : "02 40 93 76 71",
 		"latitude" : "47.2903598677247",
 		"longitude" : "-1.44111343491299",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-2909_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3140",
 		"libelle" : " Saint Jean de Boiseau",
@@ -849,9 +807,9 @@
 		"tel" : "02 40 32 94 22",
 		"latitude" : "47.1864390826324",
 		"longitude" : "-1.7197063767543",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3141",
 		"libelle" : " La Chapelle sur Erdre",
@@ -861,9 +819,9 @@
 		"tel" : "02 40 37 72 21",
 		"latitude" : "47.2586626585741",
 		"longitude" : "-1.55097680217858",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3142",
 		"libelle" : " La Montagne",
@@ -873,9 +831,9 @@
 		"tel" : "02 40 32 94 23",
 		"latitude" : "47.176908197867",
 		"longitude" : "-1.68296122658226",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3143",
 		"libelle" : "Orvault",
@@ -885,9 +843,9 @@
 		"tel" : "02 40 63 06 76",
 		"latitude" : "47.2569694552235",
 		"longitude" : "-1.63332176172048",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3144",
 		"libelle" : " Saint Aignan Grand Lieu",
@@ -896,9 +854,9 @@
 		"adresseTemp" : "Avenue de la Forêt 440150 SAINT-AIGNAN-GRANDLIEU",
 		"latitude" : "47.1494677405852",
 		"longitude" : "-1.62387472739094",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+ve+sa_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3145",
 		"libelle" : " Rezé",
@@ -908,9 +866,9 @@
 		"tel" : "02 51 70 24 04",
 		"latitude" : "47.1582708379875",
 		"longitude" : "-1.53331377718091",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",0212-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3146",
 		"libelle" : " Vertou",
@@ -920,9 +878,9 @@
 		"tel" : "02 40 34 43 74",
 		"latitude" : "47.1785023717599",
 		"longitude" : "-1.46033666089119",
-		"plagesHoraires" : ",",
+		"plagesHoraires" : ",2503-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	}, {
 		"code" : "3148",
 		"libelle" : " Mauves sur Loire",
@@ -931,9 +889,9 @@
 		"adresseTemp" : "RD 31 440094 MAUVES-SUR-LOIRE",
 		"latitude" : "47.3132666046435",
 		"longitude" : "-1.41118791536659",
-		"plagesHoraires" : ",111113__10h00-17h00,251213__10h00-17h00",
+		"plagesHoraires" : ",0101-3112_sa_08h00-12h00,0101-3112_lu+me+sa_14h00-17h00,111113__10h00-17h00,251213__10h00-17h00",
 		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
-		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 	},
 
 	{
@@ -7650,6 +7608,7 @@
 		"latitude" : "47.2461633226959",
 		"longitude" : "-1.51319004085688",
 		"horaires" : "De 14h30 à 19h00. 26 janvier, 13 avril, 7 septembre, 23 novembre",
+		"plagesHoraires" : ",260113_sa_09h00-13h00,130413_sa_09h00-13h00,070913_sa_09h00-13h00,231113_sa_09h00-13h00",
 		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "25",
@@ -7783,6 +7742,7 @@
 		"latitude" : "47.2310649019152",
 		"longitude" : "-1.55588877771744",
 		"horaires" : "De 14h30 à 19h00. 16 février, 25 mai, 28 septembre, 14 décembre",
+		"plagesHoraires" : ",160213_sa_09h00-13h00,250513_sa_09h00-13h00,280913_sa_09h00-13h00,141213_sa_09h00-13h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "37",
@@ -7891,6 +7851,7 @@
 		"latitude" : "47.2009484198633",
 		"longitude" : "-1.54459336106402",
 		"horaires" : "De 14h30 à 19h00. 30 janvier, 17 avril, 11 septembre, 27 novembre",
+		"plagesHoraires" : ",310113_je_14h30-19h00,180413_je_14h30-19h00,120913_je_14h30-19h00,281113_je_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "47",
@@ -7935,6 +7896,7 @@
 		"latitude" : "47.2140541748747",
 		"longitude" : "-1.52755394590332",
 		"horaires" : "De 14h30 à 19h00. 11 mars, 3 juin, 7 octobre",
+		"plagesHoraires" : ",110313_lu_14h30-19h00,030613_lu_14h30-19h00,071013_lu_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "51",
@@ -8109,6 +8071,7 @@
 		"latitude" : "47.238619992713",
 		"longitude" : "-1.58747180633725",
 		"horaires" : "De 14h30 à 19h00. 17 janvier, 4 avril, 27 juin, 14 novembre",
+		"plagesHoraires" : ",170113_je_14h30-19h00,0101-3112_je40413_je_14h30-19h00,270613_je_14h30-19h00,141113_je_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "67",
@@ -8189,7 +8152,6 @@
 		"adresseTemp" : "11 Boulevard de Stalingrad 44000 NANTES",
 		"latitude" : "47.219327316701",
 		"longitude" : "-1.53597100189595",
-		"plagesHoraires" : ",070113_lu_14h30-19h00,250313_lu_14h30-19h00,170613_lu_14h30-19h00,211013_lu_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "74",
@@ -8201,7 +8163,7 @@
 		"latitude" : "47.2205801969752",
 		"longitude" : "-1.54550678204049",
 		"horaires" : "De 14h30 à 19h00. 7 janvier, 25 mars, 17 juin, 21 octobre",
-		"plagesHoraires" : ",0101-3112_me090113_14h30-19h00,0101-3112_me0270313_14h30-19h00,190613_14h30-19h00,231013_14h30-19h00",
+		"plagesHoraires" : ",070113_lu_14h30-19h00,250313_lu_14h30-19h00,170613_lu_14h30-19h00,211013_lu_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "75",
@@ -8213,7 +8175,7 @@
 		"latitude" : "47.2237506960654",
 		"longitude" : "-1.55069595102173",
 		"horaires" : "De 14h30 à 19h00. 9 janvier, 27 mars, 19 juin, 23 octobre",
-		"plagesHoraires" : ",100113_je_14h30-19h00,280313_je_14h30-19h00,200613_je_14h30-19h00,241013_je_14h30-19h00",
+		"plagesHoraires" : ",0101-3112_me090113_14h30-19h00,0101-3112_me0270313_14h30-19h00,190613_14h30-19h00,231013_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "76",
@@ -8225,7 +8187,7 @@
 		"latitude" : "47.2241475694462",
 		"longitude" : "-1.5304882397471",
 		"horaires" : "De 14h30 à 19h00. 10 janvier, 28 mars, 20 juin, 24 octobre",
-		"plagesHoraires" : ",120113_sa_09h00-13h00,0101-3112_sa300313_sa_09h00-13h00,220613_sa_09h00-13h00,261013_sa_09h00-13h00",
+		"plagesHoraires" : ",100113_je_14h30-19h00,280313_je_14h30-19h00,200613_je_14h30-19h00,241013_je_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "77",
@@ -8237,7 +8199,7 @@
 		"latitude" : "47.2287750306491",
 		"longitude" : "-1.54288080522534",
 		"horaires" : "De 14h30 à 19h00. 12 janvier, 30 mars, 22 juin, 26 octobre",
-		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa_08h30-20h30",
+		"plagesHoraires" : ",120113_sa_09h00-13h00,0101-3112_sa300313_sa_09h00-13h00,220613_sa_09h00-13h00,261013_sa_09h00-13h00",
 		"quartier" : "Malakoff Saint-Donatien",
 		"description_fr" : "Horaires du mardi De 08:30 à 20:3 "
 	}, {
@@ -8249,7 +8211,7 @@
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.2241361571251",
 		"longitude" : "-1.55092389659956",
-		"plagesHoraires" : ",0101-3006+0109-3112_lu+ma+me+je+ve+sa_08h30-20h30,0107-3108_lu+ma+me+je+ve+sa_08h30-12h30+14h30-20h30",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa_08h30-20h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "79",
@@ -8260,7 +8222,7 @@
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.2237968372807",
 		"longitude" : "-1.53051590692239",
-		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa_08h30-20h30",
+		"plagesHoraires" : ",0101-3006+0109-3112_lu+ma+me+je+ve+sa_08h30-20h30,0107-3108_lu+ma+me+je+ve+sa_08h30-12h30+14h30-20h30",
 		"quartier" : "Malakoff Saint-Donatien",
 		"description_fr" : "Lundi au samedi  08h30 à 20h30"
 	}, {
@@ -8272,7 +8234,7 @@
 		"adresseTemp" : "2 Rue Edouard Nignon 44300 NANTES",
 		"latitude" : "47.2754117135983",
 		"longitude" : "-1.51029315941679",
-		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa_08h30-20h30",
+		"plagesHoraires" : ",0101-3006+0109-3112_lu+ma+me+je+ve+sa_08h30-20h30,0107-3108_lu+ma+me+je+ve+sa_08h30-12h30+14h30-20h30",
 		"quartier" : "Nantes Erdre",
 		"description_fr" : "Lundi au samedi  08h30 à 20h30"
 	},]

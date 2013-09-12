@@ -6,1136 +6,1727 @@
 				"nom" : "Acides",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "bouteille_acide_chlorhydrique_mini.png"
+				"description" : "acides",
+				"conseils" : "cons_toxique",
+				"image" : "bouteille_acide_chlorhydrique_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_aerosols",
 				"nom" : "Aérosols",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"description" : "bombe aérosol, déodorant",
-				"conseils" : "cons_sansbouchon",
-				"image" : "aerosol_mini.png"
+				"description" : "aérosols, bombe aérosol, déodorant",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "aerosol_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_agenda",
 				"nom" : "Agenda",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "agenda_mini.png"
+				"description" : "agenda",
+				"image" : "agenda_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_ampouleBasseConso",
 				"nom" : "Ampoule basse consommation",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_ampouleseco",
-				"description" : "ampoule à économie d'énergie, lampe à économie d’énergie",
-				"conseils" : "cons_ampoulemercure,cons_recuppdv2",
-				"image" : "ampoules_basse_consommation_mini.png"
+				"description" : "ampoule basse consommation, ampoule à économie d'énergie, lampe à économie d’énergie",
+				"image" : "ampoules_basse_consommation_mini.png",
+				"modco" : "smco_vendeur_lampe_eco",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_ampouleClassique",
 				"nom" : "Ampoule classique",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "ampoule",
-				"image" : "ampoule_mini.png"
+				"description" : "ampoule classique, ampoule",
+				"image" : "ampoule_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_annuaire",
 				"nom" : "Annuaire",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "annuaire_mini.png"
+				"description" : "annuaire",
+				"image" : "annuaire_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_antiFourmis",
 				"nom" : "Anti-fourmis",
 				"categoriesUsuelles" : "scu_toxiqueparasite",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "anti-fourmis",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_antigel",
 				"nom" : "Antigel",
 				"categoriesUsuelles" : "cu_toxique",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "antigel",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_appareilElectronique",
 				"nom" : "Appareil électronique",
 				"categoriesUsuelles" : "cu_electronique",
-				"categorieTraitement" : "cat_d3e"
+				"categorieTraitement" : "cat_d3e",
+				"description" : "appareil électronique",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_appareilsChauffant",
 				"nom" : "Appareils chauffant",
 				"categoriesUsuelles" : "cu_encombrant",
 				"categorieTraitement" : "cat_d3e",
-				"description" : "appareil de chauffage, chauffage, appareil de cuisson, four",
-				"image" : "chauffage_soufflant_mini.png"
+				"description" : "appareils chauffant, appareil de chauffage, chauffage, appareil de cuisson, four",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "chauffage_soufflant_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_appareilsElectromenager",
 				"nom" : "Appareils électroménager",
 				"categoriesUsuelles" : "cu_encombrant",
 				"categorieTraitement" : "cat_encombrant",
-				"image" : "machine_a_cafe_mini.png"
+				"description" : "appareils électroménager",
+				"conseils" : "cons_encombrantpavillon,cons_encombranttour",
+				"image" : "machine_a_cafe_mini.png",
+				"modco" : "modco_encombrant,modco_decheterie,modco_ecopoint",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_barilLessive",
 				"nom" : "Baril de lessive",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "paquets de lessives, barils en carton",
-				"image" : "baril_lessive_mini.png"
+				"description" : "baril de lessive, paquets de lessives, barils en carton",
+				"image" : "baril_lessive_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_barquetteAluminium",
 				"nom" : "Barquette aluminium",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_allu",
-				"description" : "barquette pizza, barquette quiche",
-				"image" : "barquette_aluminium_mini.png"
+				"description" : "barquette aluminium, barquette pizza, barquette quiche",
+				"conseils" : "cons_allu",
+				"image" : "barquette_aluminium_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_barquettePlastique",
 				"nom" : "Barquette plastique",
 				"categoriesUsuelles" : "cu_plastique",
-				"categorieTraitement" : "cat_omr_plastique"
+				"categorieTraitement" : "cat_omr_plastique",
+				"description" : "barquette plastique",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_barquettePolystyrene",
 				"nom" : "Barquette Polystyrène",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"image" : "polystyrene_mini.png"
+				"description" : "barquette Polystyrène",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "polystyrene_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_base",
 				"nom" : "Base",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "Ceci est un produit chimique."
+				"description" : "base, Ceci est un produit chimique.",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_batteriesVoiture",
 				"nom" : "Batteries de voiture",
 				"categoriesUsuelles" : "scu_toxiquegarage",
 				"categorieTraitement" : "cat_batterie",
-				"image" : "batterie_voiture_mini.png"
+				"description" : "batteries de voiture",
+				"conseils" : "cons_toxique",
+				"image" : "batterie_voiture_mini.png",
+				"modco" : "smco_garage,modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bidonDHuileMoteurVide",
 				"nom" : "Bidon d'huile moteur vide",
 				"categoriesUsuelles" : "cu_toxique",
-				"categorieTraitement" : "cat_omr"
+				"categorieTraitement" : "cat_omr",
+				"description" : "bidon d'huile moteur vide",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_bidonMetal",
 				"nom" : "Bidon de métal vide",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"image" : "bidon_metal_mini.png"
+				"description" : "bidon de métal vide",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "bidon_metal_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bocalEnVerre",
 				"nom" : "Bocal en verre",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verre",
-				"conseils" : "cons_coupant,cons_sansbouchon,cons_couverclemetal",
-				"image" : "bocal_verre_mini.png"
+				"description" : "bocal en verre",
+				"conseils" : "cons_verre",
+				"image" : "bocal_verre_mini.png",
+				"modco" : "modco_contverre,modco_decheterie,modco_ecopoint",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_boiteOeufsEnCarton",
 				"nom" : "Boîte à œufs en carton",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "boite_a_oeufs_mini.png"
+				"description" : "boîte à œufs en carton",
+				"image" : "boite_a_oeufs_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_boiteAOeufsEnPlastique",
 				"nom" : "Boîte à œufs en plastique",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"image" : "boite_a_oeufs_plastique_mini.png"
+				"description" : "boîte à œufs en plastique",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "boite_a_oeufs_plastique_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_boiteCamembertEnBois",
 				"nom" : "Boîte camembert en bois",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_omr",
-				"image" : "boite_camembert_mini.png"
+				"description" : "boîte camembert en bois",
+				"image" : "boite_camembert_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_boiteConserve",
 				"nom" : "Boîte de conserve",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"description" : "conserve",
-				"image" : "conserve_ratatouille_mini.png"
+				"description" : "boîte de conserve, conserve",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "conserve_ratatouille_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_boiteMetallique",
 				"nom" : "Boite métallique",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"image" : "boite_metal_mini.png"
+				"description" : "boite métallique",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "boite_metal_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bombePeinture",
 				"nom" : "Bombe de peinture",
 				"categoriesUsuelles" : "cu_toxique",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "peinture aérosol",
-				"conseils" : "cons_sansbouchon,cons_pastoxique",
-				"image" : "peinture_aerosol_mini.png"
+				"description" : "bombe de peinture, peinture aérosol",
+				"conseils" : "cons_toxique",
+				"image" : "peinture_aerosol_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_bombeMousseARaser",
 				"nom" : "Bombe mousse à raser",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"conseils" : "cons_sansbouchon",
-				"image" : "mousse_a_raser_mini.png"
+				"description" : "bombe mousse à raser",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "mousse_a_raser_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouchonLiege",
 				"nom" : "Bouchon de liège",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"image" : "bouchon_liege_mini.png"
+				"description" : "bouchon de liège",
+				"image" : "bouchon_liege_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_bouchonPlastique",
 				"nom" : "Bouchon plastique",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"description" : "bouchon plastique",
-				"conseils" : "cons_bouchonamour",
-				"image" : "bouchon_plastique_mini.png"
+				"description" : "bouchon plastique, bouchon plastique",
+				"image" : "bouchon_plastique_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouteilleDhuileAlimentaire",
 				"nom" : "Bouteille d'huile alimentaire",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"conseils" : "cons_bouchon,cons_bouchonamour",
-				"image" : "grande_bouteille_huile_mini.png"
+				"description" : "bouteille d'huile alimentaire",
+				"image" : "grande_bouteille_huile_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouteilleDhuileEnVerre",
 				"nom" : "Bouteille d'huile en verre",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verre",
-				"conseils" : "cons_coupant,cons_sansbouchon",
-				"image" : "bouteille_huile_olive_mini.png"
+				"description" : "bouteille d'huile en verre",
+				"conseils" : "cons_verre",
+				"image" : "bouteille_huile_olive_mini.png",
+				"modco" : "modco_contverre,modco_decheterie,modco_ecopoint",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouteilleLait",
 				"nom" : "Bouteille de lait",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"conseils" : "cons_bouchon,cons_bouchonamour,cons_capsulelait",
-				"image" : "bouteille_lait_mini.png"
+				"description" : "bouteille de lait",
+				"image" : "bouteille_lait_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouteilleEnPlastique",
 				"nom" : "Bouteille en plastique",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"description" : "bouteille de soda",
-				"conseils" : "cons_bouchon,cons_bouchonamour",
-				"image" : "bouteille_transparente_mini.png"
+				"description" : "bouteille en plastique, bouteille de soda",
+				"image" : "bouteille_transparente_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouteillePlastique",
 				"nom" : "Bouteille plastique",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"description" : "ketchup, vinaigrette",
-				"conseils" : "cons_bouchon,cons_bouchonamour",
+				"description" : "bouteille plastique, ketchup, vinaigrette",
 				"image" : "ketchup_mini.png",
-				"image_secondaire" : "bouteille_vinaigrette_mini.png"
+				"image_secondaire" : "bouteille_vinaigrette_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouteilleProduitMenagerNonVide",
 				"nom" : "Bouteille produit ménager non vide",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"conseils" : "cons_bouchon,cons_bouchonamour"
+				"description" : "bouteille produit ménager non vide",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_bouteilleProduitMenagerVide",
 				"nom" : "Bouteille produit ménager vide",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"conseils" : "cons_bouchon,cons_bouchonamour"
+				"description" : "bouteille produit ménager vide",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_bouteilleVerre",
 				"nom" : "Bouteille en verre",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verre",
-				"conseils" : "cons_sansbouchon",
-				"image" : "bouteille_mini.png"
+				"description" : "bouteille en verre",
+				"conseils" : "cons_verre",
+				"image" : "bouteille_mini.png",
+				"modco" : "modco_contverre,modco_decheterie,modco_ecopoint",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_bouteillesSirop",
 				"nom" : "Bouteilles de sirop (métal)",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"conseils" : "cons_bouchon,cons_bouchonamour",
-				"image" : "bouteille_sirop_mini.png"
+				"description" : "bouteilles de sirop (métal)",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "bouteille_sirop_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_branchage",
 				"nom" : "branchage",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_organiquegros",
-				"image" : "feuillages_mini.png"
+				"description" : "branchage",
+				"conseils" : "cons_compostage",
+				"image" : "feuillages_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_compostage",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_briqueAlimentaire",
 				"nom" : "Brique alimentaire",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_ela",
-				"description" : "brique de lait",
-				"conseils" : "bouchon_brique,cons_tetrapak,cons_bouchon,cons_bouchonamour",
-				"image" : "brique_alimentaire_mini.png"
+				"description" : "brique alimentaire, brique de lait",
+				"image" : "brique_alimentaire_mini.png",
+				"modco" : "modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_cagetteBois",
 				"nom" : "cagette bois",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_omr",
-				"description" : "cageot",
-				"image" : "cagette_mini.png"
+				"description" : "cagette bois, cageot",
+				"image" : "cagette_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_cahier",
 				"nom" : "Cahier",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "cahier, bloc notes (sans spirale), carnet",
+				"description" : "cahier, cahier, bloc notes (sans spirale), carnet",
 				"image" : "bloc_note_mini.png",
-				"image_secondaire" : "cahier_mini.png"
+				"image_secondaire" : "cahier_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_calendrier",
 				"nom" : "Calendrier",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "calendrier_mini.png"
+				"description" : "calendrier",
+				"image" : "calendrier_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_canetteSoda",
 				"nom" : "Canette de soda",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"image" : "cannette_mini.png"
+				"description" : "canette de soda",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "cannette_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_capsuleCafe",
 				"nom" : "capsule de café",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_omr",
-				"description" : "capsule métal ou plastique dosette café",
-				"image" : "dosette_cafe_plastique_mini.png"
+				"description" : "capsule de café, capsule métal ou plastique dosette café",
+				"image" : "dosette_cafe_plastique_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_cartePostale",
 				"nom" : "Carte postale",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "carte_postale_mini.png"
+				"description" : "carte postale",
+				"image" : "carte_postale_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_cartonPetitsOuGrands",
 				"nom" : "Carton (petits ou grands)",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "carton_mini.png"
+				"description" : "carton (petits ou grands)",
+				"image" : "carton_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_cartouchesEncres",
 				"nom" : "Cartouches encres",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_cartouche",
-				"image" : "cartouches_imprimantes_mini.png"
+				"description" : "cartouches encres",
+				"image" : "cartouches_imprimantes_mini.png",
+				"modco" : "smco_vendeurcartoucheencre,modco_decheterie,modco_ecopoint",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_cdDvdK7",
 				"nom" : "CD/DVD/K7",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "cassette audio, cassette vidéo",
+				"description" : "cD/DVD/K7, cassette audio, cassette vidéo",
 				"image" : "cd_sansemballage_mini.png",
-				"image_secondaire" : "pochette_cd_mini.png"
+				"image_secondaire" : "pochette_cd_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_chaussureEnBonEtat",
 				"nom" : "Chaussure en bon état",
 				"categoriesUsuelles" : "cu_vetementtissu",
 				"categorieTraitement" : "cat_vetement",
-				"description" : "bote en bon état",
-				"image" : "chaussures_mini.png"
+				"description" : "chaussure en bon état, bote en bon état",
+				"image" : "chaussures_mini.png",
+				"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_chaussuresUsagees",
 				"nom" : "Chaussures usagées",
 				"categoriesUsuelles" : "cu_vetementtissu",
 				"categorieTraitement" : "cat_omr",
-				"description" : "bote usagée, chaussure en mauvais état"
+				"description" : "chaussures usagées, bote usagée, chaussure en mauvais état",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_cigarette",
 				"nom" : "Cigarette",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "mégot, cigare",
-				"image" : "megot_mini.png"
+				"description" : "cigarette, mégot, cigare",
+				"image" : "megot_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_classeur",
 				"nom" : "Classeur",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_omr",
-				"image" : "classeur_mini.png"
+				"description" : "classeur",
+				"image" : "classeur_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_colles",
 				"nom" : "Colles",
 				"categoriesUsuelles" : "cu_toxique",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "colle_a_bois_mini.png"
+				"description" : "colles",
+				"conseils" : "cons_toxique",
+				"image" : "colle_a_bois_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_congelateurs",
 				"nom" : "congélateurs",
 				"categoriesUsuelles" : "cu_encombrant",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "congelateur_mini.png"
+				"description" : "congélateurs",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "congelateur_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_cotonTige",
 				"nom" : "Coton tige",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"image" : "cotons_tiges_mini.png"
+				"description" : "coton tige",
+				"image" : "cotons_tiges_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_coucheBebe",
 				"nom" : "Couche bébé",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"image" : "couche_bebe_mini.png"
+				"description" : "couche bébé",
+				"image" : "couche_bebe_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_couverclePotEnVerre",
 				"nom" : "Couvercle de pot en verre",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_acier",
-				"description" : "couvercle métallique",
-				"image" : "couvercle_bocal_mini.png"
+				"description" : "couvercle de pot en verre, couvercle métallique",
+				"conseils" : "cons_ferraille,cons_acier",
+				"image" : "couvercle_bocal_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_couverts",
 				"nom" : "Couverts",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_omr",
-				"description" : "couverts, couteau, cuillère, fourchette",
+				"description" : "couverts, couverts, couteau, cuillère, fourchette",
 				"image" : "fourchette_mini.png",
-				"image_secondaire" : "couteau_mini.png, cuillere_mini.png"
+				"image_secondaire" : "couteau_mini.png, cuillere_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_cremeEnTube",
 				"nom" : "Crème en tube",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr",
-				"image" : "creme_main_mini.png"
+				"description" : "crème en tube",
+				"image" : "creme_main_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_cremeEtDentifriceTube",
 				"nom" : "Crème et dentifrice (tube)",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "crème en tube, tube de dentifrice",
+				"description" : "crème et dentifrice (tube), crème en tube, tube de dentifrice",
 				"image" : "dentifrice_mini.png",
-				"image_secondaire" : "creme_main_mini.png"
+				"image_secondaire" : "creme_main_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_deboucheurLiquide",
 				"nom" : "Déboucheur liquide",
 				"categoriesUsuelles" : "scu_toxiquesdb",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "desinfectant_toilette_mini.png"
+				"description" : "déboucheur liquide",
+				"conseils" : "cons_toxique",
+				"image" : "desinfectant_toilette_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_deodorantStick",
 				"nom" : "Déodorant stick",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "déodorant à bille"
+				"description" : "déodorant stick, déodorant à bille",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_detachant",
 				"nom" : "Détachant",
 				"categoriesUsuelles" : "scu_toxiquesdb",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "C'est un produit toxique.",
-				"conseils" : "cons_pasbouchonamou",
-				"image" : "detacheur_universel_vetement_mini.png"
+				"description" : "détachant, C'est un produit toxique.",
+				"conseils" : "cons_toxique",
+				"image" : "detacheur_universel_vetement_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_diluants",
 				"nom" : "Diluants",
 				"categoriesUsuelles" : "scu_toxiquebrico",
 				"categorieTraitement" : "cat_ddm",
-				"conseils" : "cons_pasbouchonamour",
-				"image" : "bouteille_white_spirit_mini.png"
+				"description" : "diluants",
+				"conseils" : "cons_toxique",
+				"image" : "bouteille_white_spirit_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_eauJavel",
 				"nom" : "eau de Javel",
 				"categoriesUsuelles" : "scu_toxiquesdb",
 				"categorieTraitement" : "cat_ddm",
-				"conseils" : "cons_pasbouchonamour",
-				"image" : "bouteille_eau_de_javel_mini.png"
+				"description" : "eau de Javel",
+				"conseils" : "cons_toxique",
+				"image" : "bouteille_eau_de_javel_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_emballagesEnCartonPlat",
 				"nom" : "Emballages en carton plat",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "Suremballage carton, cartonnette, boîte de céréales...",
-				"conseils" : "cons_souille",
-				"image" : "cartonette_mini.png"
+				"description" : "emballages en carton plat, Suremballage carton, cartonnette, boîte de céréales...",
+				"image" : "cartonette_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_enduitsEtVernis",
 				"nom" : "Enduits et vernis",
 				"categoriesUsuelles" : "scu_toxiquebrico",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "vernis_mini.png"
+				"description" : "enduits et vernis",
+				"conseils" : "cons_toxique",
+				"image" : "vernis_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_engraisChimiques",
 				"nom" : "Engrais chimiques",
 				"categoriesUsuelles" : "scu_toxiquejardin",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "engrais chimiques",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_enveloppe",
 				"nom" : "Enveloppe",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"conseils" : "cons_fenetre_enveloppe",
-				"image" : "enveloppes_mini.png"
+				"description" : "enveloppe",
+				"image" : "enveloppes_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_epeluchuresRestesRepas",
 				"nom" : "Épluchures / restes de repas",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_organique",
-				"description" : "épluchures, restes de repas, nourriture",
-				"image" : "epeluchure_mini.png"
+				"description" : "épluchures / restes de repas, épluchures, restes de repas, nourriture",
+				"conseils" : "cons_compostage",
+				"image" : "epeluchure_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_compostage",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_equipementsAudioEtVideo",
 				"nom" : "Équipements audio et vidéo",
 				"categoriesUsuelles" : "cu_electronique",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "chaine_hifi_mini.png"
+				"description" : "équipements audio et vidéo",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "chaine_hifi_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_essenceTerebenthine",
 				"nom" : "Essence de térébenthine",
 				"categoriesUsuelles" : "scu_toxiquedivers",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "essence de térébenthine",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_essuiToutRouleauCarton",
 				"nom" : "Essuie-tout (rouleau carton)",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "le rouleau en carton",
-				"image" : "rouleau_carton_essui_tout_mini.png"
+				"description" : "essuie-tout (rouleau carton), le rouleau en carton",
+				"image" : "rouleau_carton_essui_tout_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_essuiToutSaufRouleauCarton",
 				"nom" : "Essuie-tout (sauf rouleau carton)",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_omr",
-				"description" : "sopalin, papier absorbant",
-				"conseils" : "cons_souille",
-				"image" : "essui_tout_mini.png"
+				"description" : "essuie-tout (sauf rouleau carton), sopalin, papier absorbant",
+				"image" : "essui_tout_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_feuillage",
 				"nom" : "Feuillage",
 				"categoriesUsuelles" : "cu_vertbois",
-				"categorieTraitement" : "cat_organiquegros"
+				"categorieTraitement" : "cat_organiquegros",
+				"description" : "feuillage",
+				"conseils" : "cons_compostage",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_compostage",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_filmPlastique",
 				"nom" : "Film plastique",
 				"categoriesUsuelles" : "cu_plastique",
-				"categorieTraitement" : "cat_omr_plastique"
+				"categorieTraitement" : "cat_omr_plastique",
+				"description" : "film plastique",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_filmsPhotographiques",
 				"nom" : "Films photographiques",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "diapositive, pellicule"
+				"description" : "films photographiques, diapositive, pellicule",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_filtreAHuile",
 				"nom" : "Filtre à huile",
 				"categoriesUsuelles" : "scu_toxiquegarage",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "filtre à huile",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_flaconProduitsDentretien",
 				"nom" : "Flacon de produits d'entretien",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"description" : "Flacon produit ménager vide, flacon de produits d'entretien",
-				"conseils" : "cons_bouchon,cons_bouchonamour",
+				"description" : "flacon de produits d'entretien, Flacon produit ménager vide, flacon de produits d'entretien",
 				"image" : "bouteille_white_spirit_mini.png",
-				"image_secondaire" : "bouteille_pec_citron_mini.png"
+				"image_secondaire" : "bouteille_pec_citron_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_flaconSavon",
 				"nom" : "Flacon de savon",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_emr",
-				"description" : "Flacon en plastique, flacon de savon",
-				"conseils" : "cons_bouchon,cons_bouchonamour",
+				"description" : "flacon de savon, Flacon en plastique, flacon de savon",
 				"image" : "flacon_savon_mini.png",
-				"image_secondaire" : "bouteille_savon_mini.png"
+				"image_secondaire" : "bouteille_savon_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_fongicides",
 				"nom" : "Fongicides",
 				"categoriesUsuelles" : "scu_toxiquejardin",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "fongicides",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_fournituresHorsPapier",
 				"nom" : "Fournitures (hors papier)",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "fournitures de bureau, crayon, stylo, feutre, gomme, agrafeuse, règle, compas, pochette plastique, classeur, trombone, taille-crayon, ciseaux",
-				"image" : "crayon_mini.png"
+				"description" : "fournitures (hors papier), fournitures de bureau, crayon, stylo, feutre, gomme, agrafeuse, règle, compas, pochette plastique, classeur, trombone, taille-crayon, ciseaux",
+				"image" : "crayon_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_gazon",
 				"nom" : "Gazon",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_organiquegros",
-				"description" : "pelouse, herbe",
-				"image" : "pelouse_mini.png"
+				"description" : "gazon, pelouse, herbe",
+				"conseils" : "cons_compostage",
+				"image" : "pelouse_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_compostage",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_gobeletPlastique",
 				"nom" : "Gobelet plastique",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"conseils" : "cons_remplacergobelet, cons_vaissellebiodegradable",
-				"image" : "gobelet_plastique_mini.png"
+				"description" : "gobelet plastique",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "gobelet_plastique_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_gravat",
 				"nom" : "Gravât",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_materiaux",
-				"image" : "gravat_mini.png"
+				"description" : "gravât",
+				"conseils" : "cons_paspoubelle",
+				"image" : "gravat_mini.png",
+				"modco" : "modco_decheterie",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_grillage",
 				"nom" : "Grillage",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_encombrant",
-				"description" : "Clôture",
-				"image" : "grillage_mini.png"
+				"description" : "grillage, Clôture",
+				"conseils" : "cons_encombrantpavillon,cons_encombranttour",
+				"image" : "grillage_mini.png",
+				"modco" : "modco_encombrant,modco_decheterie,modco_ecopoint",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_guitare",
 				"nom" : "guitare",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_instrument",
-				"image" : "guitare_mini.png"
+				"description" : "guitare",
+				"image" : "guitare_mini.png",
+				"modco" : "smco_reempdivers,modco_decheterie,modco_ecopoint,modco_encombrant",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_herbicides",
 				"nom" : "herbicides",
 				"categoriesUsuelles" : "scu_toxiquejardin",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "désherbant",
-				"image" : "desherbant_mini.png"
+				"description" : "herbicides, désherbant",
+				"conseils" : "cons_toxique",
+				"image" : "desherbant_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_huileVidange",
 				"nom" : "Huile de vidange",
 				"categoriesUsuelles" : "scu_toxiquegarage",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "huile de vidange",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_huileMinerale",
 				"nom" : "Huile minérale",
 				"categoriesUsuelles" : "scu_toxiquegarage",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "huile minérale",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_insecticides",
 				"nom" : "Insecticides",
 				"categoriesUsuelles" : "scu_toxiqueparasite",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "insecticides",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_jouetsAlimentesParElectricite",
 				"nom" : "Jouets alimentés par électricité",
 				"categoriesUsuelles" : "cu_electronique",
 				"categorieTraitement" : "cat_jouetpile",
-				"description" : "jeu avec pile, train électrique",
-				"image" : "jeu_enfant_avec_pile_mini.png"
+				"description" : "jouets alimentés par électricité, jeu avec pile, train électrique",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "jeu_enfant_avec_pile_mini.png",
+				"modco" : "smco_reempjouet,modco_decheterie,modco_ecopoint",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_jouetsNonElectroniques",
 				"nom" : "Jouets non électroniques",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_jouet",
-				"description" : "jeu, peluche, poupée, petite voiture",
+				"description" : "jouets non électroniques, jeu, peluche, poupée, petite voiture",
 				"image" : "petite_voiture_mini.png",
-				"image_secondaire" : "jouet_enfant_mini.png"
+				"image_secondaire" : "jouet_enfant_mini.png",
+				"modco" : "smco_reempjouet,modco_bacbleu,modco_sacbleu",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_journal",
 				"nom" : "Journal",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "revue",
-				"image" : "journal_mini.png"
+				"description" : "journal, revue",
+				"image" : "journal_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_laine",
 				"nom" : "Laine",
 				"categoriesUsuelles" : "cu_vetementtissu",
 				"categorieTraitement" : "cat_vetement",
-				"image" : "pelotes_laine_mini.png"
+				"description" : "laine",
+				"image" : "pelotes_laine_mini.png",
+				"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_laineVerre",
 				"nom" : "Laine de verre",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_materiaux",
-				"description" : "laine de verre, laine de roche",
-				"image" : "laine_roche_mini.png"
+				"description" : "laine de verre, laine de verre, laine de roche",
+				"conseils" : "cons_paspoubelle",
+				"image" : "laine_roche_mini.png",
+				"modco" : "modco_decheterie",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_lampe",
 				"nom" : "Lampe",
 				"categoriesUsuelles" : "cu_electronique",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "lampe_chevet_mini.png"
+				"description" : "lampe",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "lampe_chevet_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_laques",
 				"nom" : "Laques",
 				"categoriesUsuelles" : "scu_toxiquebrico",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "laques",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_lingette",
 				"nom" : "Lingette",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"image" : "lingette_mini.png"
+				"description" : "lingette",
+				"image" : "lingette_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_liquideRefroidissement",
 				"nom" : "Liquide de refroidissement",
 				"categoriesUsuelles" : "scu_toxiquegarage",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "liquide de refroidissement",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_litierePourAnimaux",
 				"nom" : "Litière pour animaux",
 				"categoriesUsuelles" : "cu_divers",
-				"categorieTraitement" : "cat_omr"
+				"categorieTraitement" : "cat_omr",
+				"description" : "litière pour animaux",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_livre",
 				"nom" : "Livre",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "livre_mini.png"
+				"description" : "livre",
+				"image" : "livre_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_lunette",
 				"nom" : "Lunette",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_lunette",
-				"image" : "lunette_mini.png"
+				"description" : "lunette",
+				"image" : "lunette_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_magazine",
 				"nom" : "Magazine",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "revue",
-				"image" : "magazines_mini.png"
+				"description" : "magazine, revue",
+				"image" : "magazines_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_masticCarrosserie",
 				"nom" : "Mastic de carrosserie",
 				"categoriesUsuelles" : "scu_toxiquegarage",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "mastic de carrosserie",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_matelas",
 				"nom" : "Matelas",
 				"categoriesUsuelles" : "cu_vetementtissu",
 				"categorieTraitement" : "cat_encombrant",
-				"image" : "matelas_mini.png"
+				"description" : "matelas",
+				"conseils" : "cons_encombrantpavillon,cons_encombranttour",
+				"image" : "matelas_mini.png",
+				"modco" : "modco_encombrant,modco_decheterie,modco_ecopoint",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_medicaments",
 				"nom" : "Médicaments",
 				"categoriesUsuelles" : "scu_medicament",
 				"categorieTraitement" : "cat_medicament",
-				"image" : "medicaments_mini.png"
+				"description" : "médicaments",
+				"image" : "medicaments_mini.png",
+				"modco" : "smco_pharmacie",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_meuble",
 				"nom" : "Meuble",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_encombrant",
-				"image" : "canape_mini.png"
+				"description" : "meuble",
+				"conseils" : "cons_encombrantpavillon,cons_encombranttour",
+				"image" : "canape_mini.png",
+				"modco" : "modco_encombrant,modco_decheterie,modco_ecopoint",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_miroir",
 				"nom" : "Miroir",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
-				"conseils" : "cons_coupant",
-				"image" : "miroir_mini.png"
+				"description" : "miroir",
+				"conseils" : "cons_verre",
+				"image" : "miroir_mini.png",
+				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_moquette",
 				"nom" : "Moquette",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"image" : "moquette_mini.png"
+				"description" : "moquette",
+				"image" : "moquette_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_mortAuxRats",
 				"nom" : "Mort aux rats",
 				"categoriesUsuelles" : "scu_toxiqueparasite",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "raticide ",
-				"image" : "mortaurat_mini.png"
+				"description" : "mort aux rats, raticide ",
+				"conseils" : "cons_toxique",
+				"image" : "mortaurat_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_mouchoir",
 				"nom" : "Mouchoir",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"conseils" : "cons_souille",
-				"image" : "mouchoirs_mini.png"
+				"description" : "mouchoir",
+				"image" : "mouchoirs_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_naphtaline",
 				"nom" : "Naphtaline",
 				"categoriesUsuelles" : "scu_toxiqueparasite",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "naphtaline",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_neons",
 				"nom" : "Néons",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_ampouleseco",
-				"image" : "neon_mini.png"
+				"description" : "néons",
+				"image" : "neon_mini.png",
+				"modco" : "smco_vendeur_lampe_eco",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_nettoyantsALAmmoniac",
 				"nom" : "Nettoyants à l’ammoniac",
 				"categoriesUsuelles" : "scu_toxiquecuisine",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "bouteille_ammoniaque_mini.png"
+				"description" : "nettoyants à l’ammoniac",
+				"conseils" : "cons_toxique",
+				"image" : "bouteille_ammoniaque_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_nettoyantsASol",
 				"nom" : "nettoyants à sol",
 				"categoriesUsuelles" : "scu_toxiquesdb",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "nettoyants à sol",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_nettoyantsCuivreEtArgenterie",
 				"nom" : "Nettoyants cuivre et argenterie",
 				"categoriesUsuelles" : "scu_toxiquecuisine",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "nettoyant_cuivre_mini.png"
+				"description" : "nettoyants cuivre et argenterie",
+				"conseils" : "cons_toxique",
+				"image" : "nettoyant_cuivre_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_objetEnTerreCuite",
 				"nom" : "Objet en terre cuite",
 				"categoriesUsuelles" : "cu_divers",
-				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine"
+				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
+				"description" : "objet en terre cuite",
+				"conseils" : "cons_verre",
+				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_ordinateursPortables",
 				"nom" : "Ordinateurs portables",
 				"categoriesUsuelles" : "scu_medicament",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "ordi_portable_mini.png"
+				"description" : "ordinateurs portables",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "ordi_portable_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_outillageAlimenteParElectricite",
 				"nom" : "Outillage alimenté par électricité",
 				"categoriesUsuelles" : "cu_electronique",
-				"categorieTraitement" : "cat_d3e"
+				"categorieTraitement" : "cat_d3e",
+				"description" : "outillage alimenté par électricité",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_outilsBricolageOuJardinage",
 				"nom" : "outils bricolage ou jardinage",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "marteau, tournevisncisaille, scie, râteau, hache",
+				"description" : "outils bricolage ou jardinage, marteau, tournevisncisaille, scie, râteau, hache",
 				"image" : "tournevis_mini.png",
-				"image_secondaire" : "marteau_2_mini.png"
+				"image_secondaire" : "marteau_2_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_papier",
 				"nom" : "Papier",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "prospectus, publicité, feuille (imprimée ou non)",
-				"image" : "feuilles_petit_2.png"
+				"description" : "papier, prospectus, publicité, feuille (imprimée ou non)",
+				"image" : "feuilles_petit_2.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_papierAluminium",
 				"nom" : "Papier aluminium",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_omr",
-				"conseils" : "cons_papieralu",
-				"image" : "papier_alu_mini.png"
+				"description" : "papier aluminium",
+				"image" : "papier_alu_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_papierCadeau",
 				"nom" : "Papier cadeau",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"image" : "papier_cadeau_mini.png"
+				"description" : "papier cadeau",
+				"image" : "papier_cadeau_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI",
+				"commentaires" : "faq_papierparticulier"
 			}, {
 				"code" : "dec_papierPeint",
 				"nom" : "Papier peint",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_omr",
-				"image" : "papier_peint_mini.png"
+				"description" : "papier peint",
+				"image" : "papier_peint_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON",
+				"commentaires" : "faq_papierparticulier,faq_imagemanquante"
 			}, {
 				"code" : "dec_papierToilette",
 				"nom" : "papier toilette",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"description" : "le rouleau en carton"
+				"description" : "papier toilette, le rouleau en carton",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_parpaing",
 				"nom" : "Parpaing",
 				"categoriesUsuelles" : "cu_encombrant",
 				"categorieTraitement" : "cat_materiaux",
-				"image" : "parpaing_mini.png"
+				"description" : "parpaing",
+				"conseils" : "cons_paspoubelle",
+				"image" : "parpaing_mini.png",
+				"modco" : "modco_decheterie",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_peintureAntirouille",
 				"nom" : "Peinture antirouille",
 				"categoriesUsuelles" : "scu_toxiquegarage",
 				"categorieTraitement" : "cat_ddm",
-				"conseils" : "cons_pastoxique"
+				"description" : "peinture antirouille",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_peinturesHuileEtEau",
 				"nom" : "Peintures huile et eau",
 				"categoriesUsuelles" : "scu_toxiquebrico",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "peinture_mini.png"
+				"description" : "peintures huile et eau",
+				"conseils" : "cons_toxique",
+				"image" : "peinture_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_peripheriquesInformatiques",
 				"nom" : "périphériques informatiques",
 				"categoriesUsuelles" : "cu_electronique",
 				"categorieTraitement" : "cat_info",
-				"description" : "Ecran, clavier, souris, imprimante",
+				"description" : "périphériques informatiques, Ecran, clavier, souris, imprimante",
 				"image" : "clavier_ordi_mini.png",
-				"image_secondaire" : "souris_mini.png"
+				"image_secondaire" : "souris_mini.png",
+				"modco" : "smco_reempinfo,modco_decheterie,modco_ecopoint",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_petitElectromenager",
 				"nom" : "petit électroménager",
 				"categoriesUsuelles" : "cu_electronique",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "chaine_hifi_mini.png"
+				"description" : "petit électroménager",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "chaine_hifi_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_piano",
 				"nom" : "Piano",
 				"categoriesUsuelles" : "cu_divers",
-				"categorieTraitement" : "cat_instrument"
+				"categorieTraitement" : "cat_instrument",
+				"description" : "piano",
+				"modco" : "smco_reempdivers,modco_decheterie,modco_ecopoint,modco_encombrant",
+				"rec" : "REMPLOI",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_piles",
 				"nom" : "Piles",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_pile",
-				"description" : "petits accumulateurs",
-				"conseils" : "cons_pilerechargeable,cons_recuppdv2",
+				"description" : "piles, petits accumulateurs",
 				"image" : "pile_45_mini.png",
-				"image_secondaire" : "pile9v_mini.png"
+				"image_secondaire" : "pile9v_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,smco_vendeurpile",
+				"rec" : "REMPLOI"
 			}, {
 				"code" : "dec_plancheBois",
 				"nom" : "Planche de bois",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_materiaux",
+				"description" : "planche de bois",
+				"conseils" : "cons_paspoubelle",
 				"image" : "planche_bois_mini.png",
-				"image_secondaire" : "morceaux_de_bois_mini.png"
+				"image_secondaire" : "morceaux_de_bois_mini.png",
+				"modco" : "modco_decheterie",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_plante",
 				"nom" : "Plante",
 				"categoriesUsuelles" : "cu_vertbois",
 				"categorieTraitement" : "cat_organiquegros",
-				"image" : "plante_mini.png"
+				"description" : "plante",
+				"conseils" : "cons_compostage",
+				"image" : "plante_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_compostage",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_pneu",
 				"nom" : "Pneu",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_encombrant",
-				"image" : "pneu_mini.png"
+				"description" : "pneu",
+				"conseils" : "cons_encombrantpavillon,cons_encombranttour",
+				"image" : "pneu_mini.png",
+				"modco" : "modco_encombrant,modco_decheterie,modco_ecopoint",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_polystyrene",
 				"nom" : "Polystyrène",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"description" : "barquette de polystyrène",
-				"conseils" : "cons_bouchonamour",
-				"image" : "polystyrene_mini.png"
+				"description" : "polystyrène, barquette de polystyrène",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "polystyrene_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_porcelaine",
 				"nom" : "Porcelaine",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
-				"description" : "vase, ",
-				"conseils" : "cons_coupant",
+				"description" : "porcelaine, vase",
+				"conseils" : "cons_verre",
 				"image" : "vase_mini.png",
-				"image_secondaire" : "theiere_mini.png"
+				"image_secondaire" : "theiere_mini.png",
+				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_potCremeFraîche",
 				"nom" : "Pot de crème fraîche",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"image" : "pot_creme_fraiche_mini.png"
+				"description" : "pot de crème fraîche",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "pot_creme_fraiche_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_potPeinture",
 				"nom" : "Pot de peinture",
 				"categoriesUsuelles" : "cu_toxique",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "peinture, peinture à huile, peinture à l'eau, peinture, acrylique, peinture glycéro",
+				"description" : "pot de peinture, peinture, peinture à huile, peinture à l'eau, peinture, acrylique, peinture glycéro",
+				"conseils" : "cons_toxique",
 				"image" : "peinture_acrylique_mini.png",
-				"image_secondaire" : "pot_peinture_mini.png"
+				"image_secondaire" : "pot_peinture_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_potYaourt",
 				"nom" : "Pot de yaourt",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"image" : "yaourt_mini.png"
+				"description" : "pot de yaourt",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "yaourt_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_potEnVerre",
 				"nom" : "Pot en verre",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verre",
-				"conseils" : "cons_sansbouchon,cons_couverclemetal",
-				"image" : "pot_confiture_mini.png"
+				"description" : "pot en verre",
+				"conseils" : "cons_verre",
+				"image" : "pot_confiture_mini.png",
+				"modco" : "modco_contverre,modco_decheterie,modco_ecopoint",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_poterie",
 				"nom" : "Poterie",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
-				"conseils" : "cons_coupant",
-				"image" : "pot_en_terre_mini.png"
+				"description" : "poterie",
+				"conseils" : "cons_verre",
+				"image" : "pot_en_terre_mini.png",
+				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_produitPhytosanitaire",
 				"nom" : "Produit phytosanitaire",
 				"categoriesUsuelles" : "cu_toxique",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "produit phytosanitaire",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_produitsDEntretien",
 				"nom" : "Produits d’entretien",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "produits_entretien_mini.png"
+				"description" : "produits d’entretien",
+				"conseils" : "cons_toxique",
+				"image" : "produits_entretien_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_produitsBeaute",
 				"nom" : "Produits de beauté",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "cosmétique, rouge à lèvres, maquillage",
-				"image" : "rouge_a_levre_mini.png"
+				"description" : "produits de beauté, cosmétique, rouge à lèvres, maquillage",
+				"image" : "rouge_a_levre_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_produitsTraitementDuBois",
 				"nom" : "produits de traitement du bois",
 				"categoriesUsuelles" : "cu_toxique",
 				"categorieTraitement" : "cat_ddm",
+				"description" : "produits de traitement du bois",
+				"conseils" : "cons_toxique",
 				"image" : "traitement_de_bois_mini.png",
-				"image_secondaire" : "teinte_a_bois_mini.png"
+				"image_secondaire" : "teinte_a_bois_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_radiographie",
 				"nom" : "Radiographie",
 				"categoriesUsuelles" : "scu_toxiquedivers",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "radiographie",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_rasoirJetable",
 				"nom" : "Rasoir jetable",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"image" : "rasoir_jetable_mini.png"
+				"description" : "rasoir jetable",
+				"image" : "rasoir_jetable_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_recurantsPourFour",
 				"nom" : "Récurant pour four...",
 				"categoriesUsuelles" : "scu_toxiquecuisine",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "nettoyant_four_mini.png"
+				"description" : "récurant pour four...",
+				"conseils" : "cons_toxique",
+				"image" : "nettoyant_four_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_recurantsPourToilette",
 				"nom" : "récurants pour toilette",
 				"categoriesUsuelles" : "scu_toxiquesdb",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "récurants pour toilette",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_refrigerateur",
 				"nom" : "réfrigérateur",
 				"categoriesUsuelles" : "cu_encombrant",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "refrigerateur_mini.png"
+				"description" : "réfrigérateur",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "refrigerateur_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_resines",
 				"nom" : "Résines",
 				"categoriesUsuelles" : "scu_toxiquebrico",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "résines",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_revelateurEtFixateurPhoto",
 				"nom" : "Révélateur et fixateur photo",
 				"categoriesUsuelles" : "scu_toxiquedivers",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "révélateur et fixateur photo",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_sacEnPapier",
 				"nom" : "Sac en papier",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_papiercarton",
-				"conseils" : "cons_souille",
-				"image" : "sac_papier_mini.png"
+				"description" : "sac en papier",
+				"image" : "sac_papier_mini.png",
+				"modco" : "modco_contpapiercarton,modco_bacjaune,modco_sacjaune,modco_contembjournmag",
+				"rec" : "OUI"
 			}, {
 				"code" : "dec_sacPlastique",
 				"nom" : "Sac plastique",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"image" : "sac_plastique_mini.png"
+				"description" : "sac plastique",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "sac_plastique_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_scooter",
 				"nom" : "Scooter",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_encombrant",
-				"description" : "mobylette",
-				"image" : "scooter_mini.png"
+				"description" : "scooter, mobylette",
+				"conseils" : "cons_encombrantpavillon,cons_encombranttour",
+				"image" : "scooter_mini.png",
+				"modco" : "modco_encombrant,modco_decheterie,modco_ecopoint",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_solvants",
 				"nom" : "Solvants",
 				"categoriesUsuelles" : "cu_toxique",
-				"categorieTraitement" : "cat_ddm"
+				"categorieTraitement" : "cat_ddm",
+				"description" : "solvants",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_stylo",
 				"nom" : "Stylo",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"image" : "crayon_mini.png"
+				"description" : "stylo",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"image" : "crayon_mini.png",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_tableARepasser",
 				"nom" : "Table à repasser",
 				"categoriesUsuelles" : "cu_encombrant",
 				"categorieTraitement" : "cat_encombrant",
-				"image" : "table_a_repasser_mini.png"
+				"description" : "table à repasser",
+				"conseils" : "cons_encombrantpavillon,cons_encombranttour",
+				"image" : "table_a_repasser_mini.png",
+				"modco" : "modco_encombrant,modco_decheterie,modco_ecopoint",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_tailleDarbre",
 				"nom" : "Taille d'arbre",
 				"categoriesUsuelles" : "cu_vertbois",
-				"categorieTraitement" : "cat_organiquegros"
+				"categorieTraitement" : "cat_organiquegros",
+				"description" : "taille d'arbre",
+				"conseils" : "cons_compostage",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_compostage",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_telephonie",
 				"nom" : "Téléphonie",
 				"categoriesUsuelles" : "cu_electronique",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "telephone_fixe_mini.png"
+				"description" : "téléphonie",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "telephone_fixe_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_televiseurs",
 				"nom" : "Téléviseurs",
 				"categoriesUsuelles" : "cu_electronique",
 				"categorieTraitement" : "cat_d3e",
-				"image" : "televiseur_mini.png"
+				"description" : "téléviseurs",
+				"conseils" : "cons_recuppdv1,cons_ecoparticipation",
+				"image" : "televiseur_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_pointsdevente",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_thermometreAMercure",
 				"nom" : "Thermomètre à mercure",
 				"categoriesUsuelles" : "cu_toxique",
 				"categorieTraitement" : "cat_ddm",
-				"image" : "thermometre_mercure_mini.png"
+				"description" : "thermomètre à mercure",
+				"conseils" : "cons_toxique",
+				"image" : "thermometre_mercure_mini.png",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE"
 			}, {
 				"code" : "dec_trompette",
 				"nom" : "Trompette",
 				"categoriesUsuelles" : "cu_divers",
-				"categorieTraitement" : "cat_instrument"
+				"categorieTraitement" : "cat_instrument",
+				"description" : "trompette",
+				"modco" : "smco_reempdivers,modco_decheterie,modco_ecopoint,modco_encombrant",
+				"rec" : "REMPLOI",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_trottinnette",
 				"nom" : "Trottinette",
 				"categoriesUsuelles" : "cu_metal",
-				"categorieTraitement" : "cat_velo"
+				"categorieTraitement" : "cat_velo",
+				"description" : "trottinette",
+				"modco" : "smco_velo,modco_decheterie,modco_ecopoint",
+				"rec" : "REMPLOI",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_tubeFluorescent",
 				"nom" : "Tube fluorescent",
 				"categoriesUsuelles" : "scu_toxiquedivers",
 				"categorieTraitement" : "cat_ddm",
-				"description" : "tube fluo"
+				"description" : "tube fluorescent, tube fluo",
+				"conseils" : "cons_toxique",
+				"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_tuyauDarrosage",
 				"nom" : "Tuyau d'arrosage",
 				"categoriesUsuelles" : "cu_plastique",
-				"categorieTraitement" : "cat_omr_plastique"
+				"categorieTraitement" : "cat_omr_plastique",
+				"description" : "tuyau d'arrosage",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_UstensileCuisine",
 				"nom" : "Ustensile de cuisine",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_omr",
-				"description" : "casserole, marmite, cocotte, poêle, wok"
+				"description" : "ustensile de cuisine, casserole, marmite, cocotte, poêle, wok",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_vaisselleVerrePorcelaine",
 				"nom" : "Vaisselle (verre, porcelaine...)",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
-				"description" : " assiette, tasse, bol, plat, verre à boire, poterie, porcelaine, faïence, carafe, verre",
-				"conseils" : "cons_coupant",
+				"description" : "vaisselle (verre, porcelaine...),  assiette, tasse, bol, plat, verre à boire, poterie, porcelaine, faïence, carafe, verre",
+				"conseils" : "cons_verre",
 				"image" : "assiette_mini.png",
-				"image_secondaire" : "bol_mini.png, tasse_mini.png, plat_en_faience_mini.png"
+				"image_secondaire" : "bol_mini.png, tasse_mini.png, plat_en_faience_mini.png",
+				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_vaisselleCarton",
 				"nom" : "Vaisselle carton",
 				"categoriesUsuelles" : "cu_papierscartons",
 				"categorieTraitement" : "cat_omr",
-				"description" : "assiette carton, gobelet carton",
-				"image" : "assiette_carton_mini.png"
+				"description" : "vaisselle carton, assiette carton, gobelet carton",
+				"image" : "assiette_carton_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_vaissellePlastique",
 				"nom" : "Vaisselle plastique",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_omr_plastique",
-				"description" : "gobelet plastique, couvert plastique, couteau plastique, fourchette plastique, cuillère plastique"
+				"description" : "vaisselle plastique, gobelet plastique, couvert plastique, couteau plastique, fourchette plastique, cuillère plastique",
+				"conseils" : "cons_pasuniquementbouteilleflacon",
+				"modco" : "modco_bacjaune,modco_bacbleu,modco_sacbleu",
+				"rec" : "OUI_ET_NON"
 			}, {
 				"code" : "dec_velo",
 				"nom" : "Vélo",
 				"categoriesUsuelles" : "cu_metal",
 				"categorieTraitement" : "cat_velo",
-				"description" : "bicyclette, vélo, skateboard",
-				"image_secondaire" : "skateboard_mini.png"
+				"description" : "vélo, bicyclette, vélo, skateboard",
+				"image_secondaire" : "skateboard_mini.png",
+				"modco" : "smco_velo,modco_decheterie,modco_ecopoint",
+				"rec" : "REMPLOI",
+				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_vetementEnBonEtat",
 				"nom" : "Vêtement en bon état",
 				"categoriesUsuelles" : "cu_vetementtissu",
 				"categorieTraitement" : "cat_vetement",
-				"description" : "pantalon,chemise,pull,veste,jupe,robe",
-				"image" : "chemise_mini.png"
+				"description" : "vêtement en bon état, pantalon,chemise,pull,veste,jupe,robe",
+				"image" : "chemise_mini.png",
+				"modco" : "smco_conteneurlerelais,smco_reempvet,modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_vetementUsage",
 				"nom" : "Vêtement usagé",
 				"categoriesUsuelles" : "cu_vetementtissu",
 				"categorieTraitement" : "cat_omr",
-				"description" : "vêtement usagé, vêtement en mauvais état",
-				"image" : "jean_usage_mini.png"
+				"description" : "vêtement usagé, vêtement usagé, vêtement en mauvais état",
+				"image" : "jean_usage_mini.png",
+				"modco" : "modco_bacbleu,modco_sacbleu",
+				"rec" : "NON"
 			}, {
 				"code" : "dec_vitre",
 				"nom" : "Vitre",
 				"categoriesUsuelles" : "cu_verrevaisselle",
 				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
-				"conseils" : "cons_coupant"
+				"description" : "vitre",
+				"conseils" : "cons_verre",
+				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "PAS_POUBELLE",
+				"commentaires" : "faq_imagemanquante,faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_voiture",
 				"nom" : "Voiture",
 				"categoriesUsuelles" : "cu_divers",
 				"categorieTraitement" : "cat_voiture",
-				"image" : "voiture_mini.png"
-			},]
+				"description" : "voiture",
+				"image" : "voiture_mini.png",
+				"modco" : "smco_vendeurvoiture,modco_decheterie,modco_ecopoint",
+				"rec" : "OUI"
+			}]
 }

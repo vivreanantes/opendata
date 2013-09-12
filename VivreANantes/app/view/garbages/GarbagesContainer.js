@@ -5,7 +5,6 @@
 Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 			extend : 'Ext.Container',
 			xtype : 'garbagesContainer',
-
 			config : {
 				layout : 'vbox',
 				title : 'Déchets',
@@ -26,9 +25,9 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 							xtype : 'advicesList_xtype'
 						}, {
 							xtype : 'commentsList_xtype'
-						}, {
+						}, /*{
 							xtype : 'wasteTreatmentsCategoriesList'
-						}, {
+						},*/ {
 							xtype : 'collectModList_xtype'
 						}, {
 							xtype : 'informationsList_xtype'

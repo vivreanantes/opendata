@@ -1,4 +1,7 @@
-Ext.define('VivreANantes.store.WasteTreatmentsCategoriesStore', {
+/**
+ * Ceci n'est plus utilisé
+ */
+ Ext.define('VivreANantes.store.WasteTreatmentsCategoriesStore', {
 			extend : 'Ext.data.Store',			
 			id : 'wastetraitementscategoriesstore', 	
 			config :{

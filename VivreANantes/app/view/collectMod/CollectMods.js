@@ -10,6 +10,7 @@ Ext.define('VivreANantes.view.collectMod.CollectMods', {
 				autoDestroy : false,
 				iconCls : 'maps',
 				title : 'Modes de collectes',
+				scrollable : true,
 				items : [{
 							xtype : 'collectModsButtonsList_xtype'
 						}]

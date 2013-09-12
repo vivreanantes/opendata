@@ -13,7 +13,11 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 				items : [{
 							xtype : 'fieldset',
 							// instructions : '(courriel pas vide)',
-							items : [{
+							items : [
+									{
+										xtype : 'label',
+										html : "<I>Vos commentaires permettent d'améliorer l'application</font></I>"
+									},{
 										xtype : 'emailfield',
 										name : 'email',
 										label : 'Courriel'

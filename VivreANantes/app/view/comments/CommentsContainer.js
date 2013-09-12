@@ -15,11 +15,11 @@ Ext.define('VivreANantes.view.comments.CommentsContainer', {
 							height : 300,
 							// height : 50,
 							scrollable : false
-						}, {
+						}/*, {
 							xtype : 'commentsList_xtype',
 							scrollable : 'vertical',
 							flex : 1
-						}
+						}*/
 
 				]
 			}

@@ -24,7 +24,7 @@ Ext
 			'garbages.GarbageButtonsPanel',
 			'garbages.UsualCategoriesButtonPanel',
 			'garbages.AdvicesList',
-			'garbages.WasteTreatmentsCategoriesList',
+			// 'garbages.WasteTreatmentsCategoriesList',
 			'garbages.CollectModsList',
 			'garbages.InformationsList',
 			'garbages.CommentsList',
@@ -73,9 +73,9 @@ Ext
 			controllers : [ 'Welcome', 'GeoController', 'InformationsController', 'StructuresController', 'ReusesController', 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
 			,'CommentsController', 'LocalStorageController' /*, 'Calendar'*/],
 			
-			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', 'WasteTreatmentsCategories', 'CollectModModel'/*, 'CalendarModel'*/, 'LocaleStorageModel', 'InformationsModel'],
+			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', /*'WasteTreatmentsCategories',*/ 'CollectModModel'/*, 'CalendarModel'*/, 'LocaleStorageModel', 'InformationsModel'],
 			
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', 'WasteTreatmentsCategoriesStore', 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store', 'InformationsStore'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore','StructureStore', 'AdviceStore', /*'WasteTreatmentsCategoriesStore',*/ 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', /*'CalendarStore', */'Structure2Store', 'InformationsStore'],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',
@@ -106,15 +106,13 @@ Ext
 
 		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
 		// TODO récup Trisac OpenData
-		// TODO domicile : déchet vers modesDeCollecte
+		// TODO domicile : lien vers modesDeCollecte
 		// TODO encombrants : améliorer la macro et le traitement java
 		// TODO manuel développeur
-		// TODO commentaires sur déchets par macro
-		// TODO conseils sur déchets par macro
+		// TODO retirer les "scrollable : true,"
 		
 		/////////// CRN Long terme //////////
 
-		// TODO Vérif si la capsule bouteille lait
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
 		// TODO Contacter des assos pour améliorer le contenu de l'appli 
 		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json

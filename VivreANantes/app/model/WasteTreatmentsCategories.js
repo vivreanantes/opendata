@@ -1,3 +1,6 @@
+/**
+ * Ceci n'est plus utilisé
+ */
 Ext.define('VivreANantes.model.WasteTreatmentsCategories', {
 			extend : 'Ext.data.Model',
 			config : {
