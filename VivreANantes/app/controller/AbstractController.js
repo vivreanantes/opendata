@@ -204,11 +204,12 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 					var arrayitemsLine = new Array();
 				}
+				var libelle = "<font size='3'>"+arrayItemsToShow[i]["libelle"]+"</font>";
 				arrayitemsLine.push({
 							xtype : "button", height : '150px', width : '150px', 
 							id : arrayItemsToShow[i]["id"],
 							// code : arrayItemsToShow[i]["id"],
-							html : arrayItemsToShow[i]["libelle"] + " "
+							html :  libelle
 									+ "<br/><img src='resources/images/"
 									+ arrayItemsToShow[i]["image"]
 									+ "' width='60px' />"

@@ -104,12 +104,13 @@ Ext
 		
 		///////////// CRN //////////////////
 
+		// TODO : réparer bug sur "fiche explicative" (lien inactif)
 		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
 		// TODO récup Trisac OpenData
 		// TODO domicile : lien vers modesDeCollecte
 		// TODO encombrants : améliorer la macro et le traitement java
 		// TODO manuel développeur
-		// TODO retirer les "scrollable : true,"
+		// TODO retirer les "scrollable : true," inutiles
 		
 		/////////// CRN Long terme //////////
 
