@@ -13,7 +13,11 @@ Ext.define('VivreANantes.view.Main', {
 			docked : 'bottom',
 			layout : {
 				pack : 'center'
-			}
+			},
+            scrollable: {
+                direction: 'horizontal',
+                indicators: false
+            }
 		},
 		items : [{
 					xclass : 'VivreANantes.view.about.Description'

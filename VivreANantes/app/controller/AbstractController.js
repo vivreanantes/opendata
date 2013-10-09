@@ -185,7 +185,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	getContentButtonsPanel : function(arrayItemsToShow) {
 		var arrayItems = new Array();
 		var arrayitemsLine = new Array();
-		var nbElementsParLines = 4;
+		var nbElementsParLines = 3;
 		if (arrayItemsToShow) {
 			for (var i = 0; i < arrayItemsToShow.length; i++) {
 				// Si je suis sur un multiple de 3 je termine la ligne
