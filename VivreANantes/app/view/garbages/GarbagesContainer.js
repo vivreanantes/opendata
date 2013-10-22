@@ -8,10 +8,10 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 			config : {
 				layout : 'vbox',
 				title : 'Déchets',
+				scrollable : true,
 				items : [{
 							xtype : 'garbagesForm_xtype',
-							height : 100,
-							scrollable : false
+							height : 100
 						}, {
 							xtype : 'usualCategoriesButtonsPanel_xtype'
 							// xtype : 'garbagesContainer2_xtype'

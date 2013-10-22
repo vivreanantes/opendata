@@ -6,13 +6,15 @@
     },
     {
       "path": "app.js",
-      "update": "delta"
+      // CRN pour packaging : "update": "delta"
+      "update" : "full"
     }
   ],
   "css": [
     {
       "path": "resources/css/app.css",
-      "update": "delta"
+      // CRN pour packaging : "update": "delta"
+      "update" : "full"
     }
   ],
   "appCache": {

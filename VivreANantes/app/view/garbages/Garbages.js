@@ -8,7 +8,6 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 				autoDestroy : false,
 				iconCls : 'trash',
 				title:'Déchets',
-				scrollable : true,
 				items : [{
 							xtype : 'garbagesContainer'
 						}

@@ -9,6 +9,7 @@ Ext.define('VivreANantes.view.information.InformationsButtonsList', {
 			xtype : 'informationsButtonsList_xtype',
 			config : {
 				title : 'Fiches',
-				iconCls : 'action'
+				iconCls : 'action',
+				scrollable : true
 			}
 		});
