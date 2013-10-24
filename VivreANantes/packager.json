@@ -61,7 +61,7 @@
 	 * This is where the built application file with be saved. Make sure that output path is not in your input path, you may get into endless recursive copying
 	 */
 	 // CRN pour packaging : la sortie est donc C:\Users\Chris\Documents\GitHub\opendata\build
-	// "outputPath":"../build/",
+	"outputPath":"../build/",
 
 	/**
 	 * @cfg {String} configuration
@@ -104,7 +104,7 @@
 	 * This is required when you are developing for Android or you are developing on Windows.
 	 */
 	 // CRN pour packaging 
-		"certificatePath":"C:/Users/Chris/Documents/GitHub/opendata/VivreANantes/my-release-key.keystore",
+		"certificatePath":"./my-release-key.keystore",
 
 	/**
 	 * @cfg {String} certificateAlias

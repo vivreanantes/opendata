@@ -3,7 +3,7 @@
  */
 Ext.define('VivreANantes.controller.GarbagesController', {
 	extend : 'VivreANantes.controller.AbstractController',
-
+	requires: ['VivreANantes.view.garbages.GarbagesContainer','VivreANantes.view.garbages.GarbagesForm','VivreANantes.view.garbages.GarbagesList'],
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
