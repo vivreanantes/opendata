@@ -60,7 +60,6 @@
 	 * @required
 	 * This is where the built application file with be saved. Make sure that output path is not in your input path, you may get into endless recursive copying
 	 */
-	 // CRN pour packaging : la sortie est donc C:\Users\Chris\Documents\GitHub\opendata\build
 	"outputPath":"../build/",
 
 	/**
@@ -69,7 +68,6 @@
 	 * This is configuration for your application. `Debug` should always be used unless you are submitting your app to an online
 	 * store - in which case `Release` should be specified.
 	 */
-	// CRN pour packaging
 	"configuration":"Debug",
 
 	/**
@@ -81,7 +79,6 @@
 	 *  - Android
 	 *  - AndroidEmulator
 	 */
-	 // CRN pour packaging
 	"platform":"Android",
 
 	/**
@@ -103,8 +100,7 @@
 	 * This is the location of your certificate.
 	 * This is required when you are developing for Android or you are developing on Windows.
 	 */
-	 // CRN pour packaging 
-		"certificatePath":"./my-release-key.keystore",
+		"certificatePath":"./debug.keystore",
 
 	/**
 	 * @cfg {String} certificateAlias
@@ -117,8 +113,6 @@
 	 *
 	 * When using a certificatePath on Windows, you do not need to specify this.
 	 */
-	 // CRN pour packaging
-	 // "certificatePassword":"",
 	"certificatePassword":"android",
 	/**
 	 * @cfg {String} certificatePassword
@@ -134,17 +128,15 @@
 	 * @cfg {String} sdkPath
 	 * This is the path to the Android SDK, if you are developing an Android application.
 	 */
-	 // CRN pour packaging
-	 // "sdkPath":"/path/to/android-sdk",
-	 "sdkPath":"C:/android-sdk/sdk",
-
+	// "sdkPath":"/path/to/android-sdk",
+	"sdkPath":"C:/android-sdk/sdk",
 
 	/**
 	 * @cfg {String} androidAPILevel
 	 * This is android API level, the version of Android SDK to use, you can read more about it here: http://developer.android.com/guide/appendix/api-levels.html.
 	 * Be sure to install corresponding platform API in android SDK manager (android_sdk/tools/android)
 	 */
-	// CRN pour packaging : Androïd 2.3.3 > API Level 10
+	// CRN : Android 2.3.3 > API Level 10
 	"androidAPILevel":"10",
 
 
