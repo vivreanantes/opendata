@@ -96,12 +96,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			'garbagesDetails_xtype button' : {
 				tap : 'onTapLinkButton'
 			}
-
-			// fonctionne comme une CSS selector
-			// (http://www.w3.org/TR/CSS2/selector.html)
-			/*'garbagesdetails_commentaires button' : {
-				tap : 'onTapCommentButton'
-			}*/
+			
 			
 		}
 	},
@@ -410,15 +405,15 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// this.garbageDetail.items.items['2'].setData({'conseils_string' :
 			// conseilTraduit})
 
-			// Ajout des conseils
+			// Ajout des conseils KO
 			var arraysItemsAdvices = this.getItemsAdvices(conseils);
 			this.setItemsElement(this.garbageDetail,
 					"garbagesdetails_conseils", arraysItemsAdvices);
 
-			// Ajout des commentaires
+			// Ajout des commentaires OK
+			var arraysItemsComments = this.getItemsComments(record.data["code"], title)  
 			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_commentaires", this
-							.getItemsComments(record.data["code"], title));
+					"garbagesdetails_commentaires", arraysItemsComments);
 
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);

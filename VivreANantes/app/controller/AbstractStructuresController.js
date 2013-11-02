@@ -453,14 +453,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		var result = "";
 		var stLabelDu = this.translate("label_du");
 		var stLabelLe = this.translate("label_le");
-		var stLabelTouteLAnnee = this.translate("label_toutelannee");
+		// var stLabelTouteLAnnee = this.translate("label_toutelannee");
 		var stLabelAu = this.translate("label_au");
 
 		var stDays = this.getDaysOfWeekString(daysOfWeekZone);
 		if (allDays == true) {
 			if (jourDebut == "01" && moisDebut == "01" && jourFin == "31"
 					&& moisFin == "12") {
-				result = stLabelTouteLAnnee + " (" + stDays + ")";
+				// result = stLabelTouteLAnnee + " (" + stDays + ")";
+				result = stDays;
 			} else if (jourDebut == jourFin && moisDebut == moisFin) {
 				result = stLabelLe + " " + stDays + " " + jourDebut + " "
 						+ this.convertDayNumberToString(moisDebut);

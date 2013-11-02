@@ -53,7 +53,7 @@
 		"auteurs" : "Chris-ren",
 		"dates" : "41430",
 		"libelle" : "Retours d'expériences",
-		"description" : "Retour d'expérience : j'ai tué toute ma colonie une fois avec des poussières d'aspirateur (trop d'éléments synthétiques comme les poussières des vêtements).<br/>je mets l'ail et les mouchoirs usagers<br/>Y a-t-il des choses qui ne doivent pas aller dans le composteur ? Viande, poisson, produits laitiers, gras, huile. Feuilles de rhubarbe, chêne et noyer. La cendre, la litière des chats, les excréments. Le contenu des sacs d’aspirateurs et charpies de la sécheuse, car cela contient trop de résidus synthétiques. Les mauvaises herbes comme l’herbe à puce, à poux. Les végétaux très malades.Feuilles de rhubarbe. Il y a au moins deux manières d'envisager le compostage de ces feuilles. La première suggère de ne pas les composter car ces feuilles contiennent des élèments chimiques qui sont toxiques pour les habitants du sol. La seconde suggère que l'acide oxalique dégagé par la décomposition rabaisse le niveau du pH et inhibe l'activité microbienne, mais dans la mesure ou ces feuilles de rhubarbe sont mélangées à de nombreuses autres matières organiques, elles restent un produit acceptable pour le tas de compost.<br/>http://cecilegladel.wordpress.com/2010/06/21/l%E2%80%99abc-du-compostage-a-domicile/",
+		"description" : "J'ai tué toute ma colonie une fois avec des poussières d'aspirateur (trop d'éléments synthétiques comme les poussières des vêtements).<br/>Je mets l'ail et les mouchoirs usagers<br/>",
 		"elements" : "fiche_lombricompost"
 	}, {
 		"code" : "faq_donnees_ourecycler",
@@ -81,8 +81,8 @@
 		"type" : "appli",
 		"auteurs" : "Chris-ren",
 		"dates" : "41376",
-		"libelle" : "Conseil coupant incertain",
-		"description" : "Certaines documentations de Nantes Métropôle signale que l'on peut mettre  les déchets coupants dans les sacs, donc à revoir.",
+		"libelle" : "Conseil coupant admis",
+		"description" : "Depuis un an les documentations de Nantes Métropôle signalent que l'on peut mettre les déchets coupants dans les sacs.",
 		"elements" : "dec_miroir,dec_porcelaine,dec_poterie,dec_vaisselleVerrePorcelaine,dec_vitre"
 	}, {},]
 }

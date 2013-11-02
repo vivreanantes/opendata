@@ -206,13 +206,13 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				}
 				var libelle = "<font size='3'>"+arrayItemsToShow[i]["libelle"]+"</font>";
 				arrayitemsLine.push({
-							xtype : "button", height : '150px', width : '150px', 
+							xtype : "button", height : '120px', width : '33%', 
 							id : arrayItemsToShow[i]["id"],
 							// code : arrayItemsToShow[i]["id"],
-							html :  libelle
+							html :  "<center>"+libelle
 									+ "<br/><img src='resources/images/"
 									+ arrayItemsToShow[i]["image"]
-									+ "' width='60px' />"
+									+ "' width='60px' /></center>"
 						});
 			}
 			// Si la dernière ligne n'est pas terminée
@@ -321,7 +321,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 						if (arrayElementsFaq[i] === commentsString) {
 							result.push({
 										html : "<B>" + recordFaq.raw["libelle"]
-												+ "</B><BR/>"
+												+ "</B>--------------<BR/>"
 												+ recordFaq.raw["description"]
 												+ "<br/>"
 									});
@@ -411,9 +411,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 											layout : 'vbox',
 											items : [{
 												xtype : 'button',
-												id : "informations"
-														+ thisController.SEPARATOR
-														+ recordAdvice.raw["fiche"],
+												id : "garbagesdetails_informations", 
 												text : "Fiche explicative",
 												data: {
 													code : "informations" + thisController.SEPARATOR + recordAdvice.raw["fiche"]
@@ -637,7 +635,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	decoupe : function(stChaine) {
 		var result = "";
 		if (stChaine != undefined) {
-			var iTailleMax = 15;
+			var iTailleMax = 30;
 
 			// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
 			var array = stChaine.split(/, | ,| -|- |-| /);

@@ -382,7 +382,7 @@
 				"nom" : "Brique alimentaire",
 				"categoriesUsuelles" : "cu_plastique",
 				"categorieTraitement" : "cat_ela",
-				"description" : "brique alimentaire, brique de lait",
+				"description" : "brique alimentaire, brique de lait, tétra pack",
 				"image" : "brique_alimentaire_mini.png",
 				"modco" : "modco_bacjaune,modco_sacjaune,modco_contembjournmag",
 				"rec" : "OUI"
@@ -1055,8 +1055,8 @@
 				"description" : "miroir",
 				"conseils" : "cons_verre",
 				"image" : "miroir_mini.png",
-				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
-				"rec" : "PAS_POUBELLE",
+				"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "OUI",
 				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_moquette",
@@ -1142,8 +1142,8 @@
 				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
 				"description" : "objet en terre cuite",
 				"conseils" : "cons_verre",
-				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
-				"rec" : "PAS_POUBELLE",
+				"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "OUI",
 				"commentaires" : "faq_imagemanquante"
 			}, {
 				"code" : "dec_ordinateursPortables",
@@ -1341,8 +1341,8 @@
 				"conseils" : "cons_verre",
 				"image" : "vase_mini.png",
 				"image_secondaire" : "theiere_mini.png",
-				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
-				"rec" : "PAS_POUBELLE",
+				"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "OUI",
 				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_potCremeFraîche",
@@ -1393,8 +1393,8 @@
 				"description" : "poterie",
 				"conseils" : "cons_verre",
 				"image" : "pot_en_terre_mini.png",
-				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
-				"rec" : "PAS_POUBELLE",
+				"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "OUI",
 				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_produitPhytosanitaire",
@@ -1660,8 +1660,8 @@
 				"conseils" : "cons_verre",
 				"image" : "assiette_mini.png",
 				"image_secondaire" : "bol_mini.png, tasse_mini.png, plat_en_faience_mini.png",
-				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
-				"rec" : "PAS_POUBELLE",
+				"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "OUI",
 				"commentaires" : "faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_vaisselleCarton",
@@ -1716,8 +1716,8 @@
 				"categorieTraitement" : "cat_verrenonvalovaisselleporcelaine",
 				"description" : "vitre",
 				"conseils" : "cons_verre",
-				"modco" : "modco_bacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
-				"rec" : "PAS_POUBELLE",
+				"modco" : "modco_bacbleu,modco_sacbleu,modco_decheterie,modco_ecopoint,smco_vaisselle",
+				"rec" : "OUI",
 				"commentaires" : "faq_imagemanquante,faq_donnees_ourecycler"
 			}, {
 				"code" : "dec_voiture",

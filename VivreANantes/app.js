@@ -104,15 +104,10 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO : réparer bug sur "fiche explicative" (lien inactif)
 		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
 		// TODO domicile : lien vers modesDeCollecte
 		// TODO encombrants : améliorer la macro et le traitement java
 		// TODO manuel développeur
-		// TODO déchet Brique alimentaire (dec_briqueAlimentaire) conseil sur tétrapack
-		// TODO lombricompost : manque espace avant "retour d'expérience"
-		// TODO réemploi Emmanus : trop d'espace avant "source"
-		// TODO déchet Brique alimentaire (dec_briqueAlimentaire)' : il faudrait "tétrapack" dans "concerne "
 		// TODO 'Rendez-vous Place des Dervallières (10)' : des conseils seraient bienvenus
 		// TODO Supermarché (vente) Epicerie Aux 4 saisons (1)' : "Supermarché" et "Epicerie" > incohérent 
 		// TODO 'Mode de collecte Point dépôt encombrant (modco_encombrant)' : "undefined" sur la page

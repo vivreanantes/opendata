@@ -11,7 +11,7 @@
 		"libelle" : "TRAIT D'UNION",
 		"adresseTemp" : "95 rue Robert Schuman 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "06 67 23 03 95",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes nord Loire"
 	}, {
 		"code" : "stco_reemploi3",
@@ -23,7 +23,7 @@
 		"libelle" : "Recyclerie Nord Atlantique",
 		"adresseTemp" : "Point du Jour 44260 SAVENAY",
 		"numeroTemp" : "02 40 05 38 21",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "La boutique est ouverte tous les mercredi et samedi de 9h30 à 12h et de 14h à 16h45. Chacun peut également venir y déposer les objets encore utilisables, aux mêmes jours et heures d’ouverture.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -37,7 +37,7 @@
 		"libelle" : "ATELIER DU RETZ EMPLOI (LE PELLERIN)",
 		"adresseTemp" : "18 rue du docteur Sourdille 44640 LE PELLERIN",
 		"numeroTemp" : "06 71 65 87 20",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "le MERCREDI de 9 h à 12 h, le SAMEDI de 9 h à 12 h 30",
 		"plagesHoraires" : "0101-3112_me_09h00-12h00,0101-3112_sa_09h00-12h30",
 		"quartier" : "Hors ??????????????????????????? sud Loire"
@@ -51,7 +51,7 @@
 		"libelle" : "EMMAUS",
 		"adresseTemp" : "La Guilloterie Rue d'Emmaus 44430 BOUGENAIS",
 		"numeroTemp" : "02 40 75 63 36",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Pour effectuer vos dépôts : du lundi au samedi de 8h00 à  11h30 et de 14h à  17h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-11h30+14h00-17h30",
 		"quartier" : "Hors ??????????????????????????? sud Loire"
@@ -65,7 +65,7 @@
 		"libelle" : "Enfant'y Age",
 		"adresseTemp" : "1 rue etienne de condillac, square de la mutualité 44600 SAINT NAZAIRE",
 		"numeroTemp" : "09 81 48 66 76 / 06 63 76 39 04",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Le magasin est ouvert du mardi au samedi de 9h30 à 12h30 et de 13h30 à 18h",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_09h30-12h30+13h30-18h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -79,7 +79,7 @@
 		"libelle" : "ENVIE 44",
 		"adresseTemp" : "Zone commerciale Océanis, 29 rue de l’étoile du matin 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 53 35 51 90 ",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du mardi au samedi de 10h à 12h30 et de 14h30 à 19h",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_12h00-14h00+14h30-19h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -93,7 +93,7 @@
 		"libelle" : "ESAT Marie Moreau",
 		"adresseTemp" : "40 rue du Docteur Schweitzer 44612 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 53 85 79",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes nord Loire"
 	}, {
 		"code" : "stco_reemploi14",
@@ -105,7 +105,7 @@
 		"libelle" : "ATAO",
 		"adresseTemp" : "7 bis, rue Jacques Cartier 44300 NANTES",
 		"numeroTemp" : "02 40 59 93 68",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "???????????????????????????"
 	}, {
 		"code" : "stco_reemploi15",
@@ -116,7 +116,7 @@
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 		"libelle" : "LEVER L'ENCRE",
 		"adresseTemp" : "14 Boulevard Winston Churchill 44100 NANTES",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "???????????????????????????"
 	}, {
 		"code" : "stco_reemploi16",
@@ -128,7 +128,7 @@
 		"libelle" : "Optique Jean ROYER",
 		"adresseTemp" : "11, place Royale 44000 NANTES",
 		"numeroTemp" : "02 40 48 75 73",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du mardi au samedi de 10h à 19h, le lundi de 14h à 19h",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-19h00,0101-3112_lu_14h00-19h00",
 		"quartier" : "???????????????????????????"
@@ -142,7 +142,7 @@
 		"libelle" : "PAPIERS DE L'ESPOIR",
 		"adresseTemp" : "29 Rue Maladrie 44120 VERTOU",
 		"numeroTemp" : "02 40 34 29 24 ou 06 75 67 98 02 ou 06 37 27 14 22 (St-Nazaire)",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes sud Loire"
 	}, {
 		"code" : "stco_reemploi18",
@@ -154,7 +154,7 @@
 		"libelle" : "DING-FRING Rezé",
 		"adresseTemp" : "75 Rue de la Commune 44400 REZE",
 		"numeroTemp" : "02 51 70 28 35",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h à 19h00. Le samedi de 10h à 12h30 et de 14h à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-18h30",
 		"quartier" : "Hors Nantes sud Loire"
@@ -168,7 +168,7 @@
 		"libelle" : "L'HOMME DEBOUT",
 		"adresseTemp" : "9 rue des Compagnons 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 92 26 91",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ferme le mercredi apres midi et le vendredi. Devis meuble le mardi de 14 a 17h et le jeudi de 9 a 12h.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -182,7 +182,7 @@
 		"libelle" : "PAT'MOUILLE",
 		"adresseTemp" : "8 route de la loire 44330 VALLET",
 		"numeroTemp" : "02 40 36 39 89",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "du lundi au vendredi de 8h à 12h30 et de 14h à 19h ainsi que le samedi matin de 9h à 12h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-12h30+14h00-19h00,0101-3112_sa_09h00-12h30",
 		"quartier" : "Hors Nantes sud Loire"
@@ -196,7 +196,7 @@
 		"libelle" : "ATAO",
 		"adresseTemp" : "4 rue des compagnons 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 92 28 91",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes nord Loire"
 	}, {
 		"code" : "stco_reemploi23",
@@ -208,7 +208,7 @@
 		"libelle" : "CARTRIDGE WORLD",
 		"adresseTemp" : "68 Avenue de la République 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 24 80 09",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Lundi au Samedi de 09H00 à 19H00",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-19h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -222,7 +222,7 @@
 		"libelle" : "ECHANGES ET SOLIDARITE 44",
 		"adresseTemp" : "64 rue de la mairie 44119 TREILLIERES",
 		"numeroTemp" : "02 40 43 84 91",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes nord Loire"
 	}, {
 		"code" : "stco_reemploi26",
@@ -234,7 +234,7 @@
 		"libelle" : "ATELIER BAR'AMEL TRAJET",
 		"adresseTemp" : "9, Route de Brimberne 44880 SAUTRON",
 		"numeroTemp" : "02 51 78 64 62",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes nord Loire"
 	}, {
 		"code" : "stco_reemploi28",
@@ -246,7 +246,7 @@
 		"libelle" : "EMMAUS",
 		"adresseTemp" : "43 bis Rue Jean-Baptiste Marcet 44570 TRIGNAC",
 		"numeroTemp" : "08 99 23 72 78",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Dépôts des dons : Mardi, mercredi, vendredi et le samedi de 9h30 à 11h30 et de 13h30 à 16h30. Salle de vente : Le mercredi de 13h30 à 17h30 et le samedi de 9h30 à 11h30 et de 13h30 à 17h30.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -260,7 +260,7 @@
 		"libelle" : "SNALIS",
 		"adresseTemp" : "61 rue d’Anjou 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "09 50 72 82 51",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert au public le jeudi de 14h à 17h",
 		"plagesHoraires" : "0101-3112_je_14h00-17h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -274,7 +274,7 @@
 		"libelle" : "ALIS44",
 		"adresseTemp" : "60 rue de la Bottière 44300 NANTES",
 		"numeroTemp" : "06.47.98.02.68",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi, 9h-12h et 14h-18h",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-18h00",
 		"quartier" : "???????????????????????????"
@@ -288,7 +288,7 @@
 		"libelle" : "OCE'ENCRE",
 		"adresseTemp" : "7 place Bourse 44000 NANTES",
 		"numeroTemp" : "02 51 88 98 65",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 10h à  13h et de 14h à  19h et le samedi de 10h à  13h et de 14h à  18h",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_10h00-13h00+14h00-19h00,0101-3112_sa_10h00-13h00+14h00-18h00",
 		"quartier" : "???????????????????????????"
@@ -302,7 +302,7 @@
 		"libelle" : "ENVIE 44",
 		"adresseTemp" : "18 rue Bobby Sands 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 43 82 37",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au samedi de 10h à 13h et de 14h à 19h",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-13h00+14h00-19h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -316,7 +316,7 @@
 		"libelle" : "PRAXIS ENVIRONNEMENT",
 		"adresseTemp" : "ZA les 4 Nations 2 rue Henri Farman 44360 VIGNEUX DE BRETAGNE",
 		"numeroTemp" : "02 40 57 44 54",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 9h00 à  18h00.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-18h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -330,7 +330,7 @@
 		"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
 		"adresseTemp" : "3 bis rue Prémion 44015 NANTES",
 		"numeroTemp" : "02 40 47 18 27 (public) / 02 51 82 05 41 (bureau)",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Lundi à Vendredi 9h-13h et 14h30-18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-13h00+14h30-18h30",
 		"quartier" : "???????????????????????????"
@@ -344,7 +344,7 @@
 		"libelle" : "ENCRE STATION",
 		"adresseTemp" : "113 route de Vannes 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 40 74 42 16",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 9h30 à  12h30 et de 14h à  19h et le samedi de 10h à  12h30 et de 14h à  17h",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_09h00-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-17h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -358,7 +358,7 @@
 		"libelle" : "ACTIF OUEST",
 		"adresseTemp" : "8 rue du Charron 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "02 51 80 05 38",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 9h00 à  12h30 et de 14h00 à  18h00.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h30+14h00-18h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -372,7 +372,7 @@
 		"libelle" : "La Pomme et la lionne",
 		"adresseTemp" : "19 avenue Léon Blum 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "06 33 63 35 52",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le mardi, jeudi et vendredi, de 10 h à 12 h et de 14 h à 19 h; le samedi, de 15 h à 18 h.",
 		"plagesHoraires" : "0101-3112_ma+je+ve_10h00-12h00+14h00-19h00,0101-3112_sa_15h00-18h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -386,7 +386,7 @@
 		"libelle" : "ATELIER DU RETZ EMPLOI (SAINTE-PAZANNE)",
 		"adresseTemp" : "28 rue de Bel Air 44640 SAINTE-PAZANNE",
 		"numeroTemp" : "06 71 65 87 20",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "le MERCREDI de 9 h à 17 h 30, le SAMEDI de 9 h à 17 h 30",
 		"plagesHoraires" : "0101-3112_me-sa_09h00-17h30",
 		"quartier" : "Hors Nantes sud Loire"
@@ -400,7 +400,7 @@
 		"libelle" : "DING-FRING Fourré",
 		"adresseTemp" : "32 rue Fourré 44200 NANTES",
 		"numeroTemp" : "02 40 75 46 91",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00",
 		"quartier" : "???????????????????????????"
@@ -414,7 +414,7 @@
 		"libelle" : "LES MARCHANDS DE SABLE",
 		"adresseTemp" : "18 quai du président Wilson 44200 NANTES",
 		"numeroTemp" : "06 81 67 42 06",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "???????????????????????????"
 	}, {
 		"code" : "stco_reemploi45",
@@ -426,7 +426,7 @@
 		"libelle" : "LA CROIX ROUGE / Vestiboutique",
 		"adresseTemp" : "51 bis rue de la Moisdonnière 44300 NANTES",
 		"numeroTemp" : "02 51 89 47 62",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Mardi et jeudi de 9h30 à 12h00 et de 14h00 à 17h00",
 		"plagesHoraires" : "0101-3112_ma+je_09h30-12h00+14h00-17h00",
 		"quartier" : "???????????????????????????"
@@ -440,7 +440,7 @@
 		"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
 		"adresseTemp" : "6 rue Monteil 44000 NANTES",
 		"numeroTemp" : "02 51 82 78 30",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Lundi, mardi, jeudi, vendredi 9h-13h et 14h00-18h00",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve_09h00-13h00+14h00-18h00",
 		"quartier" : "???????????????????????????"
@@ -454,7 +454,7 @@
 		"libelle" : "DING-FRING Brunelière",
 		"adresseTemp" : "5 rue Charles Brunelière 44200 NANTES",
 		"numeroTemp" : "02 40 69 13 89",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 10h à 19h00. Le samedi de 10h à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00,0101-3112_sa_10h00-18h30",
 		"quartier" : "???????????????????????????"
@@ -468,7 +468,7 @@
 		"libelle" : "RELAIS ATLANTIQUE",
 		"adresseTemp" : "3 impasse du Bourrelier, CP 1526 44806 SAINT-HERBLAIN CEDEX",
 		"numeroTemp" : "02 28 03 18 57",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes nord Loire CEDEX"
 	}, {
 		"code" : "stco_reemploi52",
@@ -480,7 +480,7 @@
 		"libelle" : "ARCADE",
 		"adresseTemp" : "Rue Stévin 44700 ORVAULT",
 		"numeroTemp" : "02 40 63 74 20",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Le mardi de 10h à 12 h.",
 		"plagesHoraires" : "0101-3112_ma_10h00-12h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -494,7 +494,7 @@
 		"libelle" : "ECOREV",
 		"adresseTemp" : "90 rue de la basse île 44400 REZE",
 		"numeroTemp" : "02 28 23 64 47",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Dépôt d'objets réutilisables : lundi+samedi de 9h à 12h Boutique solidaire : le samedi de 10h à 18h",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 		"quartier" : "Hors Nantes sud Loire"
@@ -508,7 +508,7 @@
 		"libelle" : "SECOURS POPULAIRE",
 		"adresseTemp" : "14 rue Madame de Sévigné  44604 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 74 48 41",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Le Samedi de 9h30 à 12h, et en semaine selon les horaires suivants : Meubles : Lundi, Mardi, Mercredi, Jeudi de 14h30 à 17h, Vestiaire : Mardi, un  Mercredi sur deux ( non distribution alimentaire ), Jeudi  :  10h à12h et de 14h30 à 16h30, Jouets : Mardi et Jeudi de 10h à 12h et de 14h30 à 16h30, Bibliothèque : Jeudi de 14h30 à 16h30.  Les dépots de vêtements, livres, jouets, vaisselle, bibelots peuvent se faire tous les jours, de 9h à 12 h et de 14h30 à 16h30. De préférence, venez le lundi et le samedi matin. Dépots de meubles toutes les après-midi, du lundi au jeudi, de 14 h à 17 h. ",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -522,7 +522,7 @@
 		"libelle" : "BOUCHON D'AMOUR",
 		"adresseTemp" : "Stockage : Chà¢teau d'eau du MIN de Nantes 44200 NANTES",
 		"numeroTemp" : "02 40 86 57 29",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "???????????????????????????"
 	}, {
 		"code" : "stco_reemploi56",
@@ -534,7 +534,7 @@
 		"libelle" : "DING-FRING Saint-Nazaire",
 		"adresseTemp" : "60 rue de Stalingrad 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 66 10 07",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au jeudi : de 10h à 12h30 et de 14h30 à 19h00 ; Le vendredi : 10h00 à 19h00 ; Le samedi : 10h00 à 12h30 et de 14h30 à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je_10h00-12h30+14h30-19h00,0101-3112_ve_10h00-19h00,0101-3112_sa_10h00-12h30+14h30-18h30",
 		"quartier" : "Hors Nantes nord Loire"
@@ -548,7 +548,7 @@
 		"libelle" : "PIGMENTA",
 		"adresseTemp" : "Tabac presse La Civette,  1 Rue Henri Gautier 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 22 39 20",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "du lundi au vendredi 7h00-19h00 et le samedi 8h00-19h00",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h00,0101-3112_sa_08h00-19h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -562,7 +562,7 @@
 		"libelle" : "SECOURS POPULAIRE",
 		"adresseTemp" : "163 Rue Paul Bellamy 44000 NANTES",
 		"numeroTemp" : "02 40 74 48 41",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Tous les jours du lundi au vendredi de 9h à 12h et de 14h à 17h",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-17h00",
 		"quartier" : "???????????????????????????"
@@ -576,7 +576,7 @@
 		"libelle" : "A.R.B.R.E.S.",
 		"adresseTemp" : "105, Rue des Renards 44300 NANTES",
 		"numeroTemp" : "02 40 40 35 55",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au jeudi de 9h00 à 12h30 et de 14h00 à 17h00. Le vendredi de 9h00 à 12h30 et de 14h00 à 16h00.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je_09h00-12h30+14h00-17h00,0101-3112_ve_09h00-12h30+14h00-16h00",
 		"quartier" : "???????????????????????????"
@@ -590,7 +590,7 @@
 		"libelle" : "POINT ENCRE ET TONER",
 		"adresseTemp" : "13 Rue de l'Hotel de Ville 44000 NANTES",
 		"numeroTemp" : "02 40 35 64 29",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le lundi de 13h à 19h ; du mardi au vendredi de 9h à 12h45 et de 13h45 à 19h ; le samedi de 14h à 19h.",
 		"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve_09h00-12h45+13h45-19h00,0101-3112_sa_14h00-19h00",
 		"quartier" : "???????????????????????????"
@@ -604,7 +604,7 @@
 		"libelle" : "DING-FRING Marsauderies",
 		"adresseTemp" : "15 rue des Marsauderies  44000 NANTES",
 		"numeroTemp" : "02 40 20 87 11",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 12h et de 14h à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00,0101-3112_sa_10h00-12h00+14h00-18h30",
 		"quartier" : "???????????????????????????"
@@ -618,7 +618,7 @@
 		"libelle" : "La grange aux fringues",
 		"adresseTemp" : "48 rue Pitre Grenapin 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 70 35 00",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le lundi de 14h15 à 17h45, le mardi et le jeudi de 9h à 12h30 et de 14h15 à 17h45, le mercredi de 9h à 12h et de 14h15 à 17h45, le vendredi de 9h à 12h30 et de 13h30 à 17h30, le samedi de 9h à 12h.",
 		"plagesHoraires" : "0101-3112_lu_14h15-17h45,0101-3112_ma+je_09h00-12h30+14h15-17h45,0101-3112_me_09h00-12h00+14h15-17h45,0101-3112_ve_09h00-12h30+13h30-17h30,0101-3112_sa_09h00-12h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -632,7 +632,7 @@
 		"libelle" : "RECUPFER44",
 		"adresseTemp" : "1 résidence du parc 44400 REZE",
 		"numeroTemp" : "06 38 39 72 78",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au samedi de 8 heures à 20 heures.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
 		"quartier" : "Hors Nantes sud Loire"
@@ -646,7 +646,7 @@
 		"libelle" : "ORTHOPEDIE SANS FRONTIERE",
 		"adresseTemp" : "Chemin de la métairie 44800 SAINT-HERBLAIN",
 		"numeroTemp" : "06 83 45 78 96",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes nord Loire"
 	}, {
 		"code" : "stco_reemploi66",
@@ -658,7 +658,7 @@
 		"libelle" : "ENCRE ÉCO...LOGIQUE",
 		"adresseTemp" : "91 Avenue de la République 44600 SAINT-NAZAIRE",
 		"numeroTemp" : "02 40 22 11 53",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le lundi de 14h00 à 18h00 - Du mardi au vendredi : 10h00 - 12h30 et de 14h00 à 18h30 - le samedi : 10h00 - 12h30 et de 14h00 à 18h00.",
 		"plagesHoraires" : "0101-3112_lu_14h00-18h00,0101-3112_ma+me+je+ve_10h00-12h30+14h00-18h30,0101-3112_sa_10h00-12h30+14h00-18h00",
 		"quartier" : "Hors Nantes nord Loire"
@@ -672,7 +672,7 @@
 		"libelle" : "PORTE OUVERTE CHAPELAINE",
 		"adresseTemp" : "6 bis route de Sucé 44240 LA CHAPELLE SUR ERDRE",
 		"numeroTemp" : "02 40 72 97 20",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "LA CHAPELLE SUR ERDRE"
 	}, {
 		"code" : "stco_reemploi68",
@@ -684,7 +684,7 @@
 		"libelle" : "OSER FORET VIVANTE",
 		"adresseTemp" : "12 rue Jean-Baptiste Vigier 44400 REZE",
 		"numeroTemp" : "02 51 72 71 00",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"quartier" : "Hors Nantes sud Loire"
 	}, {
 		"code" : "stco_reemploi70",
@@ -696,7 +696,7 @@
 		"libelle" : "RETZ'AGIR",
 		"adresseTemp" : "4 Moulin de la Chaussée 44310 ST PHILBERT DE GRAND LIEU",
 		"numeroTemp" : "02 40 78 84 00",
-		"src" : "<BR/><I>Source : DeuxiemeVie</I>",
+		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 8h à 12h et de 13h à 17h.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-12h00+13h00-17h00",
 		"quartier" : "Hors Nantes sud Loire"
@@ -7334,981 +7334,945 @@
 
 	{
 		"code" : "1",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Epicerie Aux 4 saisons",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "36 Boulevard Churchill 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00+15h00-19h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "2",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "3",
+		"quartierTrisac" : "Dervallières Zola",
 		"libelle" : "Mairie Annexe Dervallières",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Place des Dervallières 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
-		"quartier" : "Dervallieres Zola"
+		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "4",
+		"quartierTrisac" : "Dervallières Zola",
 		"libelle" : "Nantes Habitat Agence Watteau",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "8 Rue Watteau 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
-		"quartier" : "Dervallieres Zola"
+		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "5",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Nantes Habitat Agence Jamet",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "52 Rue du Plessis Gautron 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "6",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Nantes Habitat Agence Feyder",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "6 Rue Feyder 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "7",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Pôle commercial",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 6 février, 15 mai, 18 septembre, 4 décembre",
-		"plagesHoraires" : ",060213_me_14h30-19h00,150513_me_14h30-19h00,180913_me_14h30-19h00,041213_me_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "8",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Ecole Jean Zay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 rue Lucien Aubert 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 4 février, 13 mai, 16 septembre, 2 décembre",
-		"plagesHoraires" : ",040213_lu_14h30-19h00,130513_lu_14h30-19h00,160913_lu_14h30-19h00,021213_lu_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "9",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "47 Rue Georges Mélies",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "47 Rue Georges Mélies 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 7 février, 16 mai, 19 septembre, 5 décembre",
-		"plagesHoraires" : ",070213_je_14h30-19h00,160513_je_14h30-19h00,190913_je_14h30-19h00,051213_je_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "10",
+		"quartierTrisac" : "Dervallières Zola",
 		"libelle" : "Place des Dervallières",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place des Dervallières 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 9 février, 18 mai, 21 septembre, 7 décembre",
-		"plagesHoraires" : ",090213_sa_09h00-13h00,180513_sa_09h00-13h00,210913_sa_09h00-13h00,071213_sa_09h00-13h00",
-		"quartier" : "Dervallieres Zola"
+		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "11",
+		"quartierTrisac" : "Dervallières Zola",
 		"libelle" : "Bar Tabac l'Hebdo",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "91 Quai de la Fosse 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_sa+di_08h00-20h00",
-		"quartier" : "Dervallieres Zola"
+		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "12",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Café la butte",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "2 Rue des garennes 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+je+ve_07h30-20h00,0101-3112_sa_09h00-20h00,0101-3112_di_09h00-14h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "13",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Pôle de proximité Nantes Ouest",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30,0101-3112_lu+ma+me+je+ve_13h30-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "14",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Face à la mairie annexe Chantenay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 18 mars, 10 juin, 14 octobre (13 janvier 2014)",
-		"plagesHoraires" : ",180313_lu_14h30-19h00,100613_lu_14h30-19h00,141013_lu_14h30-19h00,130114_lu_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "15",
+		"quartierTrisac" : "Dervallières Zola",
 		"libelle" : "Maille-Brézé",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 quai de la fosse 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 23 mars, 15 juin, 19 octobre (18 janvier 2014)",
-		"plagesHoraires" : ",230313_sa_09h00-13h00,150613_sa_09h00-13h00,191013_sa_09h00-13h00,180114_sa_09h00-13h00",
-		"quartier" : "Dervallieres Zola"
+		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "16",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Place des Garennes",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place des Garennes 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 20 mars, 12 juin, 16 octobre (15 janvier 2014)",
-		"plagesHoraires" : ",200313_me_14h30-19h00,120613_me_14h30-19h00,161013_me_14h30-19h00,150114_me_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "17",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Mairie annexe Chantenay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "1 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "distri",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "18",
+		"quartierTrisac" : "Nantes Erdre",
 		"libelle" : "Boulangerie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "26 Boulevard Professeur Auvigné 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+ve+sa_06h30-13h15+15h00-19h30,0101-3112_di_07h30-13h00",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "19",
+		"quartierTrisac" : "Nantes Erdre",
 		"libelle" : "Mairie Annexe Ranzay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "249 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00,0101-3112_lu+ma+me+je+ve_13h15-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "20",
+		"quartierTrisac" : "Doulon Bottière",
 		"libelle" : "Mairie Annexe Bottière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "69 Rue de la Bottière 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45,0101-3112_lu+ma+me+je+ve_14h00-17h30",
-		"quartier" : "Doulon Bottiere"
+		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "21",
+		"quartierTrisac" : "Nantes Erdre",
 		"libelle" : "Parking du gymnase Marsauderies",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "1 Rue de Koufra 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 21 janvier, 8 avril, 2 septembre, 18 novembre",
-		"plagesHoraires" : ",210113_lu_14h30-19h00,080413_lu_14h30-19h00,020913_lu_14h30-19h00,181113_lu_14h30-19h00",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "22",
+		"quartierTrisac" : "Nantes Erdre",
 		"libelle" : "22 Boulevard Professeur Auvigné",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Boulevard Professeur Auvigné 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 23 janvier, 10 avril, 4 septembre, 20 novembre",
-		"plagesHoraires" : ",230113_me_14h30-19h00,100413_me_14h30-19h00,040913_me_14h30-19h00,201113_me_14h30-19h00",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "23",
+		"quartierTrisac" : "Doulon Bottière",
 		"libelle" : "Place du Commandant Cousteau",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place du Commandant Cousteau 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 24 janvier, 11 avril, 5 septembre, 21 novembre",
-		"plagesHoraires" : ",240113_je_14h30-19h00,110413_je_14h30-19h00,050913_je_14h30-19h00,211113_je_14h30-19h00",
-		"quartier" : "Doulon Bottiere"
+		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "24",
+		"quartierTrisac" : "Doulon Bottière",
 		"libelle" : "Centre socio-culturel",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "1 Rue Jules Grandjouan 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 26 janvier, 13 avril, 7 septembre, 23 novembre",
-		"plagesHoraires" : ",260113_sa_09h00-13h00,130413_sa_09h00-13h00,070913_sa_09h00-13h00,231113_sa_09h00-13h00",
-		"quartier" : "Doulon Bottiere"
+		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "25",
+		"quartierTrisac" : "Doulon Bottière",
 		"libelle" : "Leclerc Paridis",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "0 Rue du Perray 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "vente",
-		"quartier" : "Doulon Bottiere"
+		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "26",
+		"quartierTrisac" : "Doulon Bottière",
 		"libelle" : "Piscine Jules Verne",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "41 Rue Jules Grandjouan 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "distrib",
-		"quartier" : "Doulon Bottiere"
+		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "27",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Association ADDA",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "5 bis Rue de la carterie 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_je+sa_11h00-14h00,0101-3112_ma+ve_16h30-19h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "28",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Maison de l'Environnement Ecopole",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "17 Rue de Bouillé 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_13h30-18h00,0101-3112_me_09h00-12h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "29",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "24 Rue des Hauts Pavés 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "30",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Carrefour Market",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "31",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "15 Rue Félix Thomas 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "32",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Café tabac le Bel air",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "71 Rue de Bel air 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h45-19h30,0101-3112_sa_08h00-12h30",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "33",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Place de Talensac",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place de Talensac 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 13 février, 22 mai, 25 septembre, 11 décembre",
-		"plagesHoraires" : ",130213_me_14h30-19h00,220513_me_14h30-19h00,250913_me_14h30-19h00,111213_me_14h30-19h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "34",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Devant l'église Saint-Pasquier",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Emile Fritsch 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 11 février, 21 mai, 23 septembre, 9 décembre",
-		"plagesHoraires" : ",110213_lu_14h30-19h00,210513_ma_14h30-19h00,230913_lu_14h30-19h00,091213_lu_14h30-19h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "35",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "TRAM Saint-Mihiel",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Quai de Versailles 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 14 février, 23 mai, 26 septembre, 12 décembre",
-		"plagesHoraires" : ",140213_je_14h30-19h00,230513_je_14h30-19h00,260913_je_14h30-19h00,121213_je_14h30-19h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "36",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Place Saint-Félix",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Saint-Félix 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 16 février, 25 mai, 28 septembre, 14 décembre",
-		"plagesHoraires" : ",160213_sa_09h00-13h00,250513_sa_09h00-13h00,280913_sa_09h00-13h00,141213_sa_09h00-13h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "37",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Carrefour Market",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "38",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Marché de Talensac",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "0 Rue de Talensac 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "distrib",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "39",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "Boulangerie Pain de Sophie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "10 rue Babin-Chevaye 44200 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-20h00,0101-3112_di_07h00-20h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "40",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "Boulangerie, Le Fournil de Mangin",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Place Mangin 44200 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "41",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "Spar",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Boulevard de la prairie au duc 44200 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "42",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "Mairie Annexe Beaulieu",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "43",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "Place de la Galarne",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 2 février, 20 avril, 14 septembre, 30 novembre",
-		"plagesHoraires" : ",020213_sa_09h00-13h00,200413_sa_09h00-13h00,140913_sa_09h00-13h00,301113_sa_09h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "44",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "Ecole Nationale Supérieure d'Architecture",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue La Noue Bras de Fer 44200 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 28 janvier, 15 avril, 9 septembre, 25 novembre",
-		"plagesHoraires" : ",280113_lu_14h30-19h00,150413_lu_14h30-19h00,090913_lu_14h30-19h00,251113 sa_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "45",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "BUSWAY Ile de Nantes",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "15 Boulevard Général de Gaulle 44200 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 31 janvier, 18 avril, 12 septembre, 28 novembre",
-		"plagesHoraires" : ",300113_me_14h30-19h00,170413_me_14h30-19h00,110913_me_14h30-19h00,271113_me_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "46",
+		"quartierTrisac" : "Ile de Nantes",
 		"libelle" : "Place Victor Mangin",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Victor Mangin 44200 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 30 janvier, 17 avril, 11 septembre, 27 novembre",
-		"plagesHoraires" : ",310113_je_14h30-19h00,180413_je_14h30-19h00,120913_je_14h30-19h00,281113_je_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "47",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Mairie Annexe Malakoff",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Rue d'Angleterre 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "48",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Nantes Habitat Agence Angleterre",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Rue Angleterre 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "49",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Piscine Petite Amazonie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Chemin du pont de l'arche de mauves 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 16 mars, 8 juin, 12 octobre",
-		"plagesHoraires" : ",160313_sa_09h00-13h00,080613_sa_09h00-13h00,121013_sa_09h00-13h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "50",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Pôle commercial Malakoff",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Boulevard de Sarrebruck 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 11 mars, 3 juin, 7 octobre",
-		"plagesHoraires" : ",110313_lu_14h30-19h00,030613_lu_14h30-19h00,071013_lu_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "51",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Piscine Petite Amazonie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "15 Rue du Pont de l'Arche de Mauves 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "distrib",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "52",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Velo Campus",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Chem de la Censive du Tertre 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+me_13h30-20h00,0101-3112_ma-je-sa_14h00-18h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "53",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "14 rue Guillaume Grootaers 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_du_08h30-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "54",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Boulangerie La p'tite cantine",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Rue du Moulin des Rochettes 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-19h30",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "55",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Boulangerie Le bon la croute la mie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "18 Rue des Renards 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h00-14h00+16h00-20h00,0101-3112_sa_07h00-14h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "56",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Café tabac Le Sulky",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "39 Boulevard des tribunes 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_du_10h00-17h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "57",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Mairie Annexe Barberie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "103 Rue Pierre Yvernogeau 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "58",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Mairie Annexe Nantes Nord",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "41 Route de la Chapelle sur Erdre 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "59",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Pôle de proximité Erdre et Cens",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "37 Boulevard Albert Einstein 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "60",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "TRAM Santos Dumont",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue des Renards 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 21 février, 30 mai, 3 octobre, 19 décembre",
-		"plagesHoraires" : ",210213_je_14h30-19h00,300513_je_14h30-19h00,031013_je_14h30-19h00,191213_je_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "61",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Ecole Dolto",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "3 Rue de Questembert 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 18 février, 27 mai, 30 septembre, 16 décembre",
-		"plagesHoraires" : ",180213_lu_14h30-19h00,270513lu_14h30-19h00,0101-3112_lu300913lu_14h30-19h00,161213_lu_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "62",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "84, route de la Chapelle",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "84 Route de la Chapelle sur Erdre 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 20 février, 29 mai, 2 octobre, 18 décembre",
-		"plagesHoraires" : ",200213_me_14h30-19h00,290513_me_14h30-19h00,021013_me_14h30-19h00,181213_me_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "63",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Ecole Jonelière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "76 route de la Jonelière 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 14 janvier, 2 avril, 24 juin, 12 novembre",
-		"plagesHoraires" : ",140113_lu_14h30-19h00,ma20413_lu_14h30-19h00,240613_lu_14h30-19h00,ma121113_lu_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "64",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Mairie annexe Barberie/skate parc",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 rue Yvernogeau 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 19 janvier, 6 avril, 29 juin, 16 novembre",
-		"plagesHoraires" : ",190113_sa_09h00-13h00,0101-3112_sa60413_sa_09h00-13h00,290613_sa_09h00-13h00,161113_sa_09h00-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "65",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "Rue de la Fantaisie/Rue Clément Marot",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue de la Fantaisie 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 16 janvier, 3 avril, 26 juin, 13 novembre",
-		"plagesHoraires" : ",160113_me_14h30-19h00,0101-3112_me30413_me_14h30-19h00,260613_me_14h30-19h00,131113_me_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "66",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "Parking Beauséjour",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue du Chêne Vert 44100 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 17 janvier, 4 avril, 27 juin, 14 novembre",
-		"plagesHoraires" : ",170113_je_14h30-19h00,0101-3112_je40413_je_14h30-19h00,270613_je_14h30-19h00,141113_je_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "67",
+		"quartierTrisac" : "Nantes Nord",
 		"libelle" : "TRAM Bourgeonnière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue de la Bourgeonnière 44300 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 23 février, 1 juin, 5 octobre, 21 décembre",
-		"plagesHoraires" : ",230213_sa_09h00-13h00,010613_sa_09h00-13h00,051013_sa_09h00-13h00,211213_sa_09h00-13h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "68",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Super U Dalby",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "vente",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "69",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Shopi",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Boulevard des Professeurs Sourdille 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "70",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "vente",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "71",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Boulangerie Le blé d'or",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "30 Rue de Coulmiers 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-14h00+15h00-20h00,0101-3112_sa_07h15-13h00+15h30-19h30",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "72",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Casino",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "103 Boulevard du Général Buat 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "73",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Pôle Municipal Strasbourg",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "11 Boulevard de Stalingrad 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "74",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Intersection Rues Turpin et Gambetta",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Sophie Trébuchet 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 7 janvier, 25 mars, 17 juin, 21 octobre",
-		"plagesHoraires" : ",070113_lu_14h30-19h00,250313_lu_14h30-19h00,170613_lu_14h30-19h00,211013_lu_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "75",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Rue Pitre Chevalier/Allée Reine Margot",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 9 janvier, 27 mars, 19 juin, 23 octobre",
-		"plagesHoraires" : "090113_me_14h30-19h00,270313_me_14h30-19h00,190613_xx_14h30-19h00,231013_xx_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "76",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "66, bd Dalby",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "66 Boulevard Dalby, parking Super U 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 14h30 à 19h00. 10 janvier, 28 mars, 20 juin, 24 octobre",
-		"plagesHoraires" : "100113_je_14h30-19h00,280313_je_14h30-19h00,200613_je_14h30-19h00,241013_je_14h30-19h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "77",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Place des enfants nantais",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place des enfants nantais 44000 NANTES",
 		"latitude" : "47.20",
 		"horaires" : "De 09h00 à 13h00. 12 janvier, 30 mars, 22 juin, 26 octobre",
-		"plagesHoraires" : "120113_sa_09h00-13h00,300313_sa_09h00-13h00,220613_sa_09h00-13h00,261013_sa_09h00-13h00",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "78",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "vente",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "79",
+		"quartierTrisac" : "Malakoff Saint-Donatien",
 		"libelle" : "Super U Dalby",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "vente",
-		"quartier" : "Malakoff Saint Donatien"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "80",
+		"quartierTrisac" : "Nantes Erdre",
 		"libelle" : "Pôle de Proximité Erdre et Loire",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "2 Rue Edouard Nignon 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "81",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Boulangerie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "25 Rue des Bourderies 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h00+16h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "82",
+		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
 		"libelle" : "Mairie Annexe Bellevue",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Place des Lauriers 44100 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "83",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Aux Délices de Procé",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Boulevard Gaston Serpette 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+je+ve+sa_07h00-20h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "84",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Le Monselet",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Place Emile Sarradin 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h30,0101-3112_sa_08h00-13h00+14h30-18h30",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "85",
+		"quartierTrisac" : "Breil Barberie",
 		"libelle" : "La Cabane à Pain",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "67 Rue Hector Berlioz 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h30",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "86",
+		"quartierTrisac" : "Doulon Bottière",
 		"libelle" : "Mairie Annexe Doulon",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "37 Boulevard Louis Millet 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
-		"quartier" : "Doulon Bottiere"
+		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "87",
+		"quartierTrisac" : "Nantes Erdre",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "173 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "AAA",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "88",
+		"quartierTrisac" : "Nantes Erdre",
 		"libelle" : "Boulangerie Rainard",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+je+ve_06h45-13h30+15h00-19h30",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "89",
+		"quartierTrisac" : "Nantes Sud",
 		"libelle" : "Super U St Jacques",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "75 Boulevard Joliot Curie 44200 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-19h30,0101-3112_di_09h00-12h30",
 		"quartier" : "Nantes Sud"
 	}, {
 		"code" : "90",
+		"quartierTrisac" : "Nantes Sud",
 		"libelle" : "Mairie Annexe Nantes Sud",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "69 Boulevard Joliot Curie 44200 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Sud"
 	}, {
 		"code" : "91",
+		"quartierTrisac" : "Hauts Pavés Saint Félix",
 		"libelle" : "Le Fournil d'Aristide",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "26 Rue Jean Jaurès 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-14h00+16h00-20h00,0101-3112_di_08h00-13h00",
-		"quartier" : "Hauts Paves Saint Felix"
+		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "92",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Mairie Centrale",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "29 Rue de Strasbourg 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "93",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Nantes Métropole, bâtiment Valmy",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "11 Avenue Carnot 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h45-12h00+13h30-17h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "94",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Rue Cassini 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h30-13h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "95",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "6 Avenue Carnot 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "96",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Casino",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "21 Chaussée de la Madeleine 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "97",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Tabac Presse",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "17 Allée Duguay Trouin 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-20h00,0101-3112_sa_09h00-20h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "98",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Tabac Presse Le Voltaire",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "25 Rue Voltaire 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h30-19h30,0101-3112_sa_07h30-19h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "99",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Glubs",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "10 Rue de la Fosse 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+je+ve_11h00-19h00,0101-3112_sa_10h00-19h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "100",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Du Vert en Ville",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "23 Rue Racine 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "101",
+		"quartierTrisac" : "Centre Ville",
 		"libelle" : "Boulangerie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Allée Duquesne 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-19h30",
-		"quartier" : "Centre Ville"
-	}, {
-		"code" : "102",
-		"libelle" : "Papeterie",
-		"modesCollecte" : "modco_distrisac",
-		"type" : "Supermarché (vente)",
-		"adresseTemp" : "4 Rue de l'évêché 44000 NANTES",
-		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-12h00+14h00-19h00",
-		"quartier" : "Centre Ville"
-	}, {
-		"code" : "103",
-		"libelle" : "Tabac Presse",
-		"modesCollecte" : "modco_distrisac",
-		"type" : "Supermarché (vente)",
-		"adresseTemp" : "9 Rue de Budapest 44000 NANTES",
-		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_06h45-19h30",
-		"quartier" : "Centre Ville"
-	}, {
-		"code" : "104",
-		"libelle" : "Tabac Presse du Pilori",
-		"modesCollecte" : "modco_distrisac",
-		"type" : "Supermarché (vente)",
-		"adresseTemp" : "2 Place du Pilori 44000 NANTES",
-		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h30-20h00",
-		"quartier" : "Centre Ville"
-	}, {
-		"code" : "105",
-		"libelle" : "Boulangerie La Mie Câline",
-		"modesCollecte" : "modco_distrisac",
-		"type" : "Supermarché (vente)",
-		"adresseTemp" : "1 Allée Cassard 44000 NANTES",
-		"latitude" : "47.20",
-		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_06h30-21h30",
 		"quartier" : "Centre Ville"
 	},]
 }
