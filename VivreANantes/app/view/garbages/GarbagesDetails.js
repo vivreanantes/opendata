@@ -75,7 +75,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 		{
 			id : "garbagesdetails_description",
 			// style : 'background-color: #119Eaa;',
-			tpl : "{concerne_aussi}",
+			tpl : "<br/>{concerne_aussi}",
 			data : {
 				"concerne_aussi" : "Concerne aussi : divers"
 			}

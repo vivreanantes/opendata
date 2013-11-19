@@ -25,7 +25,8 @@ Ext.define('VivreANantes.view.Main', {
 				{
 					xclass : 'VivreANantes.view.garbages.Garbages'
 				}, {
-					xclass : 'VivreANantes.view.geo.MapOSM'
+					 xclass : 'VivreANantes.view.geo.MapOSM'
+					// xclass : 'VivreANantes.view.geo.MapContainer'
 				}, {
 					xclass : 'VivreANantes.view.information.Informations'
 				}, {

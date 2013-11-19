@@ -7339,7 +7339,9 @@
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "36 Boulevard Churchill 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.208695",
+		"longitude" : "-1.611092",
+		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00+15h00-19h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "2",
@@ -7349,6 +7351,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "3",
@@ -7358,6 +7361,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Place des Dervallières 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "4",
@@ -7367,6 +7371,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "8 Rue Watteau 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "5",
@@ -7376,6 +7381,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "52 Rue du Plessis Gautron 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "6",
@@ -7385,6 +7391,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "6 Rue Feyder 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "7",
@@ -7394,7 +7401,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 6 février, 15 mai, 18 septembre, 4 décembre",
+		"plagesHoraires" : ",060213_me_14h30-19h00,150513_me_14h30-19h00,180913_me_14h30-19h00,041213_me_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "8",
@@ -7404,7 +7411,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 rue Lucien Aubert 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 4 février, 13 mai, 16 septembre, 2 décembre",
+		"plagesHoraires" : ",040213_lu_14h30-19h00,130513_lu_14h30-19h00,160913_lu_14h30-19h00,021213_lu_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "9",
@@ -7414,7 +7421,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "47 Rue Georges Mélies 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 7 février, 16 mai, 19 septembre, 5 décembre",
+		"plagesHoraires" : ",070213_je_14h30-19h00,160513_je_14h30-19h00,190913_je_14h30-19h00,051213_je_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "10",
@@ -7424,7 +7431,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place des Dervallières 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 9 février, 18 mai, 21 septembre, 7 décembre",
+		"plagesHoraires" : ",090213_sa_09h00-13h00,180513_sa_09h00-13h00,210913_sa_09h00-13h00,071213_sa_09h00-13h00",
 		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "11",
@@ -7434,6 +7441,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "91 Quai de la Fosse 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_sa+di_08h00-20h00",
 		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "12",
@@ -7443,6 +7451,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "2 Rue des garennes 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+je+ve_07h30-20h00,0101-3112_sa_09h00-20h00,0101-3112_di_09h00-14h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "13",
@@ -7452,6 +7461,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30,0101-3112_lu+ma+me+je+ve_13h30-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "14",
@@ -7461,7 +7471,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 18 mars, 10 juin, 14 octobre (13 janvier 2014)",
+		"plagesHoraires" : ",180313_lu_14h30-19h00,100613_lu_14h30-19h00,141013_lu_14h30-19h00,130114_lu_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "15",
@@ -7471,7 +7481,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 quai de la fosse 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 23 mars, 15 juin, 19 octobre (18 janvier 2014)",
+		"plagesHoraires" : ",230313_sa_09h00-13h00,150613_sa_09h00-13h00,191013_sa_09h00-13h00,180114_sa_09h00-13h00",
 		"quartier" : "Dervallières Zola"
 	}, {
 		"code" : "16",
@@ -7481,7 +7491,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place des Garennes 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 20 mars, 12 juin, 16 octobre (15 janvier 2014)",
+		"plagesHoraires" : ",200313_me_14h30-19h00,120613_me_14h30-19h00,161013_me_14h30-19h00,150114_me_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "17",
@@ -7491,6 +7501,7 @@
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "1 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "distri",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "18",
@@ -7500,6 +7511,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "26 Boulevard Professeur Auvigné 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+ve+sa_06h30-13h15+15h00-19h30,0101-3112_di_07h30-13h00",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "19",
@@ -7509,6 +7521,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "249 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00,0101-3112_lu+ma+me+je+ve_13h15-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "20",
@@ -7518,6 +7531,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "69 Rue de la Bottière 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45,0101-3112_lu+ma+me+je+ve_14h00-17h30",
 		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "21",
@@ -7527,7 +7541,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "1 Rue de Koufra 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 21 janvier, 8 avril, 2 septembre, 18 novembre",
+		"plagesHoraires" : ",210113_lu_14h30-19h00,080413_lu_14h30-19h00,020913_lu_14h30-19h00,181113_lu_14h30-19h00",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "22",
@@ -7537,7 +7551,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Boulevard Professeur Auvigné 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 23 janvier, 10 avril, 4 septembre, 20 novembre",
+		"plagesHoraires" : ",230113_me_14h30-19h00,100413_me_14h30-19h00,040913_me_14h30-19h00,201113_me_14h30-19h00",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "23",
@@ -7547,7 +7561,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place du Commandant Cousteau 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 24 janvier, 11 avril, 5 septembre, 21 novembre",
+		"plagesHoraires" : ",240113_je_14h30-19h00,110413_je_14h30-19h00,050913_je_14h30-19h00,211113_je_14h30-19h00",
 		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "24",
@@ -7557,7 +7571,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "1 Rue Jules Grandjouan 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 26 janvier, 13 avril, 7 septembre, 23 novembre",
+		"plagesHoraires" : ",260113_sa_09h00-13h00,130413_sa_09h00-13h00,070913_sa_09h00-13h00,231113_sa_09h00-13h00",
 		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "25",
@@ -7567,6 +7581,7 @@
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "0 Rue du Perray 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "vente",
 		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "26",
@@ -7576,6 +7591,7 @@
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "41 Rue Jules Grandjouan 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "distrib",
 		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "27",
@@ -7585,6 +7601,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "5 bis Rue de la carterie 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_je+sa_11h00-14h00,0101-3112_ma+ve_16h30-19h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "28",
@@ -7594,6 +7611,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "17 Rue de Bouillé 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_13h30-18h00,0101-3112_me_09h00-12h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "29",
@@ -7603,6 +7621,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "24 Rue des Hauts Pavés 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "30",
@@ -7612,6 +7631,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "31",
@@ -7621,6 +7641,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "15 Rue Félix Thomas 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "32",
@@ -7630,6 +7651,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "71 Rue de Bel air 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h45-19h30,0101-3112_sa_08h00-12h30",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "33",
@@ -7639,7 +7661,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place de Talensac 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 13 février, 22 mai, 25 septembre, 11 décembre",
+		"plagesHoraires" : ",130213_me_14h30-19h00,220513_me_14h30-19h00,250913_me_14h30-19h00,111213_me_14h30-19h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "34",
@@ -7649,7 +7671,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Emile Fritsch 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 11 février, 21 mai, 23 septembre, 9 décembre",
+		"plagesHoraires" : ",110213_lu_14h30-19h00,210513_ma_14h30-19h00,230913_lu_14h30-19h00,091213_lu_14h30-19h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "35",
@@ -7659,7 +7681,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Quai de Versailles 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 14 février, 23 mai, 26 septembre, 12 décembre",
+		"plagesHoraires" : ",140213_je_14h30-19h00,230513_je_14h30-19h00,260913_je_14h30-19h00,121213_je_14h30-19h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "36",
@@ -7669,7 +7691,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Saint-Félix 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 16 février, 25 mai, 28 septembre, 14 décembre",
+		"plagesHoraires" : ",160213_sa_09h00-13h00,250513_sa_09h00-13h00,280913_sa_09h00-13h00,141213_sa_09h00-13h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "37",
@@ -7679,6 +7701,7 @@
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "38",
@@ -7688,6 +7711,7 @@
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "0 Rue de Talensac 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "distrib",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "39",
@@ -7697,6 +7721,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "10 rue Babin-Chevaye 44200 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-20h00,0101-3112_di_07h00-20h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "40",
@@ -7706,6 +7731,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Place Mangin 44200 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "41",
@@ -7715,6 +7741,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Boulevard de la prairie au duc 44200 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "42",
@@ -7724,6 +7751,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "43",
@@ -7733,7 +7761,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 2 février, 20 avril, 14 septembre, 30 novembre",
+		"plagesHoraires" : ",020213_sa_09h00-13h00,200413_sa_09h00-13h00,140913_sa_09h00-13h00,301113_sa_09h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "44",
@@ -7743,7 +7771,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue La Noue Bras de Fer 44200 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 28 janvier, 15 avril, 9 septembre, 25 novembre",
+		"plagesHoraires" : ",280113_lu_14h30-19h00,150413_lu_14h30-19h00,090913_lu_14h30-19h00,251113 sa_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "45",
@@ -7753,7 +7781,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "15 Boulevard Général de Gaulle 44200 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 31 janvier, 18 avril, 12 septembre, 28 novembre",
+		"plagesHoraires" : ",300113_me_14h30-19h00,170413_me_14h30-19h00,110913_me_14h30-19h00,271113_me_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "46",
@@ -7763,7 +7791,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Victor Mangin 44200 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 30 janvier, 17 avril, 11 septembre, 27 novembre",
+		"plagesHoraires" : ",310113_je_14h30-19h00,180413_je_14h30-19h00,120913_je_14h30-19h00,281113_je_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
 		"code" : "47",
@@ -7773,6 +7801,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Rue d'Angleterre 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "48",
@@ -7782,6 +7811,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Rue Angleterre 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "49",
@@ -7791,7 +7821,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Chemin du pont de l'arche de mauves 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 16 mars, 8 juin, 12 octobre",
+		"plagesHoraires" : ",160313_sa_09h00-13h00,080613_sa_09h00-13h00,121013_sa_09h00-13h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "50",
@@ -7801,7 +7831,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Boulevard de Sarrebruck 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 11 mars, 3 juin, 7 octobre",
+		"plagesHoraires" : ",110313_lu_14h30-19h00,030613_lu_14h30-19h00,071013_lu_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "51",
@@ -7811,6 +7841,7 @@
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "15 Rue du Pont de l'Arche de Mauves 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "distrib",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "52",
@@ -7820,6 +7851,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Chem de la Censive du Tertre 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+me_13h30-20h00,0101-3112_ma-je-sa_14h00-18h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "53",
@@ -7829,6 +7861,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "14 rue Guillaume Grootaers 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_du_08h30-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "54",
@@ -7838,6 +7871,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Rue du Moulin des Rochettes 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-19h30",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "55",
@@ -7847,6 +7881,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "18 Rue des Renards 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h00-14h00+16h00-20h00,0101-3112_sa_07h00-14h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "56",
@@ -7856,6 +7891,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "39 Boulevard des tribunes 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_du_10h00-17h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "57",
@@ -7865,6 +7901,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "103 Rue Pierre Yvernogeau 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "58",
@@ -7874,6 +7911,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "41 Route de la Chapelle sur Erdre 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "59",
@@ -7883,6 +7921,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "37 Boulevard Albert Einstein 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "60",
@@ -7892,7 +7931,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue des Renards 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 21 février, 30 mai, 3 octobre, 19 décembre",
+		"plagesHoraires" : ",210213_je_14h30-19h00,300513_je_14h30-19h00,031013_je_14h30-19h00,191213_je_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "61",
@@ -7902,7 +7941,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "3 Rue de Questembert 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 18 février, 27 mai, 30 septembre, 16 décembre",
+		"plagesHoraires" : ",180213_lu_14h30-19h00,270513lu_14h30-19h00,0101-3112_lu300913lu_14h30-19h00,161213_lu_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "62",
@@ -7912,7 +7951,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "84 Route de la Chapelle sur Erdre 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 20 février, 29 mai, 2 octobre, 18 décembre",
+		"plagesHoraires" : ",200213_me_14h30-19h00,290513_me_14h30-19h00,021013_me_14h30-19h00,181213_me_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "63",
@@ -7922,7 +7961,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "76 route de la Jonelière 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 14 janvier, 2 avril, 24 juin, 12 novembre",
+		"plagesHoraires" : ",140113_lu_14h30-19h00,ma20413_lu_14h30-19h00,240613_lu_14h30-19h00,ma121113_lu_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "64",
@@ -7932,7 +7971,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 rue Yvernogeau 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 19 janvier, 6 avril, 29 juin, 16 novembre",
+		"plagesHoraires" : ",190113_sa_09h00-13h00,0101-3112_sa60413_sa_09h00-13h00,290613_sa_09h00-13h00,161113_sa_09h00-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "65",
@@ -7942,7 +7981,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue de la Fantaisie 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 16 janvier, 3 avril, 26 juin, 13 novembre",
+		"plagesHoraires" : ",160113_me_14h30-19h00,0101-3112_me30413_me_14h30-19h00,260613_me_14h30-19h00,131113_me_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "66",
@@ -7952,7 +7991,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue du Chêne Vert 44100 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 17 janvier, 4 avril, 27 juin, 14 novembre",
+		"plagesHoraires" : ",170113_je_14h30-19h00,0101-3112_je40413_je_14h30-19h00,270613_je_14h30-19h00,141113_je_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "67",
@@ -7962,7 +8001,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue de la Bourgeonnière 44300 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 23 février, 1 juin, 5 octobre, 21 décembre",
+		"plagesHoraires" : ",230213_sa_09h00-13h00,010613_sa_09h00-13h00,051013_sa_09h00-13h00,211213_sa_09h00-13h00",
 		"quartier" : "Nantes Nord"
 	}, {
 		"code" : "68",
@@ -7972,6 +8011,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "69",
@@ -7981,6 +8021,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Boulevard des Professeurs Sourdille 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "70",
@@ -7990,6 +8031,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "71",
@@ -7999,6 +8041,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "30 Rue de Coulmiers 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-14h00+15h00-20h00,0101-3112_sa_07h15-13h00+15h30-19h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "72",
@@ -8008,6 +8051,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "103 Boulevard du Général Buat 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "73",
@@ -8017,6 +8061,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "11 Boulevard de Stalingrad 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "74",
@@ -8026,7 +8071,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Sophie Trébuchet 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 7 janvier, 25 mars, 17 juin, 21 octobre",
+		"plagesHoraires" : ",070113_lu_14h30-19h00,250313_lu_14h30-19h00,170613_lu_14h30-19h00,211013_lu_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "75",
@@ -8036,7 +8081,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 9 janvier, 27 mars, 19 juin, 23 octobre",
+		"plagesHoraires" : "090113_me_14h30-19h00,270313_me_14h30-19h00,190613_xx_14h30-19h00,231013_xx_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "76",
@@ -8046,7 +8091,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "66 Boulevard Dalby, parking Super U 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 14h30 à 19h00. 10 janvier, 28 mars, 20 juin, 24 octobre",
+		"plagesHoraires" : "100113_je_14h30-19h00,280313_je_14h30-19h00,200613_je_14h30-19h00,241013_je_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "77",
@@ -8056,7 +8101,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place des enfants nantais 44000 NANTES",
 		"latitude" : "47.20",
-		"horaires" : "De 09h00 à 13h00. 12 janvier, 30 mars, 22 juin, 26 octobre",
+		"plagesHoraires" : "120113_sa_09h00-13h00,300313_sa_09h00-13h00,220613_sa_09h00-13h00,261013_sa_09h00-13h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "78",
@@ -8066,6 +8111,7 @@
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "79",
@@ -8075,6 +8121,7 @@
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "80",
@@ -8084,6 +8131,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "2 Rue Edouard Nignon 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "81",
@@ -8093,6 +8141,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "25 Rue des Bourderies 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h00+16h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "82",
@@ -8102,6 +8151,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Place des Lauriers 44100 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "83",
@@ -8111,6 +8161,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Boulevard Gaston Serpette 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+je+ve+sa_07h00-20h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "84",
@@ -8120,6 +8171,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Place Emile Sarradin 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h30,0101-3112_sa_08h00-13h00+14h30-18h30",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "85",
@@ -8129,6 +8181,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "67 Rue Hector Berlioz 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h30",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "86",
@@ -8138,6 +8191,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "37 Boulevard Louis Millet 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Doulon Bottière"
 	}, {
 		"code" : "87",
@@ -8147,6 +8201,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "173 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "AAA",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "88",
@@ -8156,6 +8211,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+je+ve_06h45-13h30+15h00-19h30",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "89",
@@ -8165,6 +8221,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "75 Boulevard Joliot Curie 44200 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-19h30,0101-3112_di_09h00-12h30",
 		"quartier" : "Nantes Sud"
 	}, {
 		"code" : "90",
@@ -8174,6 +8231,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "69 Boulevard Joliot Curie 44200 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Sud"
 	}, {
 		"code" : "91",
@@ -8183,6 +8241,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "26 Rue Jean Jaurès 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-14h00+16h00-20h00,0101-3112_di_08h00-13h00",
 		"quartier" : "Hauts Pavés Saint Félix"
 	}, {
 		"code" : "92",
@@ -8192,6 +8251,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "29 Rue de Strasbourg 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "93",
@@ -8201,6 +8261,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "11 Avenue Carnot 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h45-12h00+13h30-17h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "94",
@@ -8210,6 +8271,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Rue Cassini 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h30-13h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "95",
@@ -8219,6 +8281,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "6 Avenue Carnot 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "96",
@@ -8228,6 +8291,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "21 Chaussée de la Madeleine 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "97",
@@ -8237,6 +8301,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "17 Allée Duguay Trouin 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-20h00,0101-3112_sa_09h00-20h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "98",
@@ -8246,6 +8311,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "25 Rue Voltaire 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h30-19h30,0101-3112_sa_07h30-19h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "99",
@@ -8255,6 +8321,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "10 Rue de la Fosse 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+je+ve_11h00-19h00,0101-3112_sa_10h00-19h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "100",
@@ -8264,6 +8331,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "23 Rue Racine 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
 		"code" : "101",
@@ -8273,6 +8341,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Allée Duquesne 44000 NANTES",
 		"latitude" : "47.20",
+		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-19h30",
 		"quartier" : "Centre Ville"
 	},]
 }

@@ -75,7 +75,7 @@
 		"code" : "modco_ecopoint",
 		"libelle" : "Ecopoint",
 		"modesCollecte" : "false",
-		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteus...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20",
 		"bouton" : "modco",
 		"image" : "ecopoint_viarme_mini.png"
@@ -225,6 +225,11 @@
 	}, {
 		"code" : "smco_vendeurpile",
 		"libelle" : "Vendeur de pile",
+		"modesCollecte" : "true",
+		"statut" : "47.20"
+	}, {
+		"code" : "smco_vendeurlunette",
+		"libelle" : "Vendeur de lunette",
 		"modesCollecte" : "true",
 		"statut" : "47.20"
 	}, {
