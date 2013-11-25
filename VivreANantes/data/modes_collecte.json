@@ -113,6 +113,7 @@
 		"libelle" : "Récupération en points de vente",
 		"sous_modes_collecte" : "smco_vendeurcartoucheencre,smco_vendeurpile,smco_reprise,smco_vendeur_lampe_eco,smco_vendeurvoiture,smco_garage",
 		"modesCollecte" : "false",
+		"description" : "Les points de vente de certains produits (piles, cartouches d'encre, médicaments...) ont l'obligation de récupérer les appareils usagers.",
 		"conseils" : "cons_recuppdv1,cons_recuppdv2",
 		"statut" : "47.20",
 		"bouton" : "modco",
@@ -121,7 +122,7 @@
 		"code" : "modco_decheterie",
 		"libelle" : "Déchetteries",
 		"modesCollecte" : "false",
-		"description" : "(on affiche écopoint)",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20",
 		"bouton" : "modco",
 		"image" : "panneau_dechetterie_mini.png"
@@ -136,6 +137,8 @@
 		"code" : "modco_encombrant",
 		"libelle" : "Point dépôt encombrant",
 		"modesCollecte" : "false",
+		"description" : "Ce sont des points de dépôts : des camions passe certains jours de la semaine prendre ces encombrants.",
+		"conseils" : "cons_encombrantpavillon,cons_encombranttour",
 		"statut" : "47.20",
 		"bouton" : "modco",
 		"image" : "encombrant_mini.png"
@@ -152,45 +155,50 @@
 		"code" : "smco_reempelectromenag  ",
 		"libelle" : "Réemploi appareils électroménager",
 		"modesCollecte" : "true",
-		"description" : "Réemploi des appareils électroménager",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reempinfo",
 		"libelle" : "Réemploi des appareils informatique",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reempcartouchetoner",
 		"libelle" : "Réemploi des cartouches d'encres et tuners",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reemplivreCD",
 		"libelle" : "Réemploi des livres, CDs, BDs, DVDs...",
 		"modesCollecte" : "true",
-		"description" : "livre Revue CD BD",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reempjouet",
 		"libelle" : "Réemploi des jouets",
 		"sous_modes_collecte" : "cat_omr",
 		"modesCollecte" : "true",
-		"description" : "jouets jeux",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reempmeuble",
 		"libelle" : "Réemploi des meubles",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reempvet",
 		"libelle" : "Réemploi des vêtements",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reempdivers",
 		"libelle" : "Réemploi d'objets divers",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_batiment",
@@ -200,37 +208,44 @@
 		"code" : "smco_vaisselle",
 		"libelle" : "Réemploi de la vaisselle",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_papier",
 		"libelle" : "Recyclage du papier par des associations.",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"conseils" : "uniquement dans les conseils ??",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_plastique",
 		"libelle" : "Recyclage du plastique par des associations.",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_electrique",
 		"libelle" : "Recyclage du matériel électrique par des associations.",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_vendeurcartoucheencre",
 		"libelle" : "Vendeur de cartouche d'encre",
 		"modesCollecte" : "true",
+		"description" : "Les points de vente de certains produits (piles, cartouches d'encre, médicaments...) ont l'obligation de récupérer les appareils usagers.",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_vendeurpile",
 		"libelle" : "Vendeur de pile",
 		"modesCollecte" : "true",
+		"description" : "Les points de vente de certains produits (piles, cartouches d'encre, médicaments...) ont l'obligation de récupérer les appareils usagers.",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_vendeurlunette",
 		"libelle" : "Vendeur de lunette",
 		"modesCollecte" : "true",
+		"description" : "Les points de vente de certains produits (piles, cartouches d'encre, médicaments...) ont l'obligation de récupérer les appareils usagers.",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_reprise",
@@ -243,27 +258,31 @@
 		"code" : "smco_vendeur_lampe_eco",
 		"libelle" : "Vendeur lampe économie d'énergie",
 		"modesCollecte" : "true",
+		"description" : "Les points de vente de certains produits (piles, cartouches d'encre, médicaments...) ont l'obligation de récupérer les appareils usagers.",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_vendeurvoiture",
 		"libelle" : "Vendeur et casse automobile",
 		"modesCollecte" : "true",
+		"description" : "Vous achetez un appareil neuf, le distributeur est désormais tenu de reprendre  l’ancien à l’achat ou la livraison. C’est le principe de la reprise « un pour un ».  ",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_garage",
 		"libelle" : "Garage, stations services",
 		"modesCollecte" : "true",
-		"description" : "garagistes, stations services",
+		"description" : "Vous achetez un appareil neuf, le distributeur est désormais tenu de reprendre  l’ancien à l’achat ou la livraison. C’est le principe de la reprise « un pour un ».  ",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_velo",
 		"libelle" : "Récupération des vélos",
 		"modesCollecte" : "true",
+		"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 		"statut" : "47.20"
 	}, {
 		"code" : "smco_pharmacie",
 		"libelle" : "Pharmacie",
 		"modesCollecte" : "true",
+		"description" : "Les points de vente de certains produits (piles, cartouches d'encre, médicaments...) ont l'obligation de récupérer les appareils usagers.",
 		"statut" : "47.20"
 	}]
 }

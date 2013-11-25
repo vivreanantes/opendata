@@ -5,7 +5,7 @@
 		"code" : "stco_reemploi1",
 		"longitude" : "-1.624346",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.199656",
 		"description_fr" : "Collecte des déchets et communication sur le tri. Vous avez besoin d'espace, de détruire plafonds, cloisons, toiture, etc. ? Nos spécialistes de la déconstruction interviennent chez vous et vous débarrassent. Nos professionnels peuvent aussi réaliser des petits travaux de maçonnerie ou de bricolage et vous aider à reconstruire ! Vous ne savez que faire de résidus de tonte de pelouses, de coupe de bois? de cartons, plastiques, ferraille, etc. ? Nos spécialistes de la collecte des déchets valorisables viennent chez vous, les récupèrent et les orientent vers les filières de recyclage adaptées.",
 		"libelle" : "TRAIT D'UNION",
@@ -17,7 +17,6 @@
 		"code" : "stco_reemploi3",
 		"longitude" : "-1.888551",
 		"modesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.354684",
 		"description_fr" : "Au Bazar Citoyen, la première boutique de la Recyclerie Nord Atlantique, les habitants du territoire peuvent venir chiner, fouiller, faire de bonnes affaires.",
 		"libelle" : "Recyclerie Nord Atlantique",
@@ -31,7 +30,6 @@
 		"code" : "stco_reemploi5",
 		"longitude" : "-1.754959",
 		"modesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.201260",
 		"description_fr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...",
 		"libelle" : "ATELIER DU RETZ EMPLOI (LE PELLERIN)",
@@ -40,12 +38,11 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "le MERCREDI de 9 h à 12 h, le SAMEDI de 9 h à 12 h 30",
 		"plagesHoraires" : "0101-3112_me_09h00-12h00,0101-3112_sa_09h00-12h30",
-		"quartier" : "Hors ??????????????????????????? sud Loire"
+		"quartier" : "Hors Nantes sud Loire"
 	}, {
 		"code" : "stco_reemploi6",
 		"longitude" : "-1.560690",
 		"modesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.161667",
 		"description_fr" : "Meubles, appareils et ustensiles ménagers, literie, couverture, linge, lustres et luminaires, vêtements, livres, vaisselle...",
 		"libelle" : "EMMAUS",
@@ -54,12 +51,11 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Pour effectuer vos dépôts : du lundi au samedi de 8h00 à  11h30 et de 14h à  17h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-11h30+14h00-17h30",
-		"quartier" : "Hors ??????????????????????????? sud Loire"
+		"quartier" : "Hors Nantes sud Loire"
 	}, {
 		"code" : "stco_reemploi10",
 		"longitude" : "-2.2184136",
 		"modesCollecte" : "smco_reempvet,smco_reempjouet",
-		"type" : "Réemploi",
 		"latitude" : "47.2764666",
 		"description_fr" : "Dépot vente et commerce de vêtements pour enfant et articles de puériculture.",
 		"libelle" : "Enfant'y Age",
@@ -73,7 +69,7 @@
 		"code" : "stco_reemploi12",
 		"longitude" : "-2.2726939",
 		"modesCollecte" : "smco_reempelectromenag",
-		"type" : "Réemploi",
+		"type" : "Réemploi électroménager",
 		"latitude" : "47.2599674",
 		"description_fr" : "Récupération et vente d'électroménager",
 		"libelle" : "ENVIE 44",
@@ -87,7 +83,7 @@
 		"code" : "stco_reemploi13",
 		"longitude" : "-2.161143",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.3264595",
 		"description_fr" : "L'atelier recycle les toiles de voile ou les bâches publicitaires pour en faire des sacs marins, des cabas, des cartables ou des étuis isothermes. Ces articles sont aussi commercialisés dans le magasin Artisan du Monde de Saint-Nazaire.",
 		"libelle" : "ESAT Marie Moreau",
@@ -99,30 +95,30 @@
 		"code" : "stco_reemploi14",
 		"longitude" : "-1.573717",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.258869",
 		"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
 		"libelle" : "ATAO",
 		"adresseTemp" : "7 bis, rue Jacques Cartier 44300 NANTES",
 		"numeroTemp" : "02 40 59 93 68",
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi15",
 		"longitude" : "-1.6133603",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.2062095",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 		"libelle" : "LEVER L'ENCRE",
 		"adresseTemp" : "14 Boulevard Winston Churchill 44100 NANTES",
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi16",
 		"longitude" : "-1.5578842",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.2143672",
 		"description_fr" : "Récupération de lunettes",
 		"libelle" : "Optique Jean ROYER",
@@ -131,12 +127,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du mardi au samedi de 10h à 19h, le lundi de 14h à 19h",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-19h00,0101-3112_lu_14h00-19h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi17",
 		"longitude" : "-1.4852487",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.1842788",
 		"description_fr" : "Collecte de papiers usagés. L'association a pour objectif de financer des actions humanitaires éducatives à partir d'un geste écologique, le tri du papier.",
 		"libelle" : "PAPIERS DE L'ESPOIR",
@@ -148,7 +144,7 @@
 		"code" : "stco_reemploi18",
 		"longitude" : "-1.5515172",
 		"modesCollecte" : "smco_reempvet",
-		"type" : "Réemploi",
+		"type" : "Réemploi vêtement",
 		"latitude" : "47.1879293",
 		"description_fr" : "Boutique du Relais",
 		"libelle" : "DING-FRING Rezé",
@@ -162,7 +158,7 @@
 		"code" : "stco_reemploi19",
 		"longitude" : "-1.641401",
 		"modesCollecte" : "smco_reempmeuble",
-		"type" : "Réemploi",
+		"type" : "Réemploi meuble",
 		"latitude" : "47.224091",
 		"description_fr" : "Récupération de meubles",
 		"libelle" : "L'HOMME DEBOUT",
@@ -176,7 +172,6 @@
 		"code" : "stco_reemploi20",
 		"longitude" : "-1.2710598",
 		"modesCollecte" : "smco_reempvet,smco_reempjouet",
-		"type" : "Réemploi",
 		"latitude" : "47.165074",
 		"description_fr" : "Collecte et vente à petits prix des articles textiles : vêtements adulte et enfant, linge plat, maroquinerie, jouets, bijoux fantaisie...",
 		"libelle" : "PAT'MOUILLE",
@@ -190,7 +185,7 @@
 		"code" : "stco_reemploi21",
 		"longitude" : "-1.641127",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.223984",
 		"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
 		"libelle" : "ATAO",
@@ -202,7 +197,7 @@
 		"code" : "stco_reemploi23",
 		"longitude" : "-2.2117936",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.2803679",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 		"libelle" : "CARTRIDGE WORLD",
@@ -216,7 +211,7 @@
 		"code" : "stco_reemploi24",
 		"longitude" : "-1.621382",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.329666",
 		"description_fr" : "Récupération de ferrailles, voitures, cuivre, batteries, linge, vaisselles, bibelots, fauteuils roulants, machines à  coudre. Récupération possible à  domicile",
 		"libelle" : "ECHANGES ET SOLIDARITE 44",
@@ -228,7 +223,7 @@
 		"code" : "stco_reemploi26",
 		"longitude" : "-1.654222",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.258053",
 		"description_fr" : "Récupération de pain",
 		"libelle" : "ATELIER BAR'AMEL TRAJET",
@@ -240,7 +235,6 @@
 		"code" : "stco_reemploi28",
 		"longitude" : "-2.1881119",
 		"modesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.3108847",
 		"description_fr" : "Meubles, appareils et ustensiles ménagers, literie, couverture, linge, lustres et luminaires, vêtements, livres, vaisselle...",
 		"libelle" : "EMMAUS",
@@ -254,7 +248,7 @@
 		"code" : "stco_reemploi29",
 		"longitude" : "-2.2100357",
 		"modesCollecte" : "smco_reempinfo",
-		"type" : "Réemploi",
+		"type" : "Réemploi info",
 		"latitude" : "47.2774346",
 		"description_fr" : "Récupération, reconditionnement et distribution d'ordinateurs",
 		"libelle" : "SNALIS",
@@ -268,7 +262,7 @@
 		"code" : "stco_reemploi30",
 		"longitude" : "-1.51986",
 		"modesCollecte" : "smco_reempinfo",
-		"type" : "Réemploi",
+		"type" : "Réemploi info",
 		"latitude" : "47.239259",
 		"description_fr" : "Récupération, reconditionnement et distribution d'ordinateurs",
 		"libelle" : "ALIS44",
@@ -277,12 +271,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi, 9h-12h et 14h-18h",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-18h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi31",
 		"longitude" : "-1.5591834",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.2125716",
 		"description_fr" : "Recharge de cartouche d'imprimante",
 		"libelle" : "OCE'ENCRE",
@@ -291,12 +285,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 10h à  13h et de 14h à  19h et le samedi de 10h à  13h et de 14h à  18h",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_10h00-13h00+14h00-19h00,0101-3112_sa_10h00-13h00+14h00-18h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi32",
 		"longitude" : "-1.652637",
 		"modesCollecte" : "smco_reempelectromenag",
-		"type" : "Réemploi",
+		"type" : "Réemploi électroménager",
 		"latitude" : "47.233582",
 		"description_fr" : "Récupération et vente d'électroménager",
 		"libelle" : "ENVIE 44",
@@ -310,7 +304,7 @@
 		"code" : "stco_reemploi33",
 		"longitude" : "-1.766052",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.312759",
 		"description_fr" : "Collecte et recyclage de cartouches d'imprimantes laser et jet d'encre.",
 		"libelle" : "PRAXIS ENVIRONNEMENT",
@@ -324,7 +318,7 @@
 		"code" : "stco_reemploi34",
 		"longitude" : "-1.548943",
 		"modesCollecte" : "smco_reemplivreCD",
-		"type" : "Réemploi",
+		"type" : "Réemploi livre-CD",
 		"latitude" : "47.217117",
 		"description_fr" : "Récupération de livres, revues, BD",
 		"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
@@ -333,12 +327,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Lundi à Vendredi 9h-13h et 14h30-18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-13h00+14h30-18h30",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi35",
 		"longitude" : "-1.608134",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.247658",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 		"libelle" : "ENCRE STATION",
@@ -352,7 +346,7 @@
 		"code" : "stco_reemploi36",
 		"longitude" : "-1.642425",
 		"modesCollecte" : "smco_reempinfo",
-		"type" : "Réemploi",
+		"type" : "Réemploi info",
 		"latitude" : "47.223204",
 		"description_fr" : "Rénovation de micro-ordinateurs réformés et leur revente avec garantie. Démantèlement assuré par un Atelier d'insertion, pour le matériel «obsolète», en panne et les déchets informatiques et électroniques.",
 		"libelle" : "ACTIF OUEST",
@@ -366,7 +360,7 @@
 		"code" : "stco_reemploi37",
 		"longitude" : "-2.2116533",
 		"modesCollecte" : "smco_reempvet",
-		"type" : "Réemploi",
+		"type" : "Réemploi vêtement",
 		"latitude" : "47.2717698",
 		"description_fr" : "En partant de vêtements neufs ou anciens, et en choisissant différents tissus , galons, boutons, perles, ...je transforme, je revisite, pour proposer des pièces originales et uniques; jupes, vestes, sacs, chaussures, chapeaux, étoles, pantalons, etc... revus et corrigés...!",
 		"libelle" : "La Pomme et la lionne",
@@ -380,7 +374,6 @@
 		"code" : "stco_reemploi39",
 		"longitude" : "-1.815695",
 		"modesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.109553",
 		"description_fr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...",
 		"libelle" : "ATELIER DU RETZ EMPLOI (SAINTE-PAZANNE)",
@@ -394,7 +387,7 @@
 		"code" : "stco_reemploi40",
 		"longitude" : "-1.5468354",
 		"modesCollecte" : "smco_reempvet",
-		"type" : "Réemploi",
+		"type" : "Réemploi vêtement",
 		"latitude" : "47.2119882",
 		"description_fr" : "Boutique du Relais",
 		"libelle" : "DING-FRING Fourré",
@@ -403,24 +396,23 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi44",
 		"longitude" : "-1.561791",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.200229",
 		"description_fr" : "Scénographie Architecture Bâti Lieux Expérimentaux. Notre travail trouve son application dans la création d'installation urbaines et constructions temporaires à base d'objets récupérés.",
 		"libelle" : "LES MARCHANDS DE SABLE",
 		"adresseTemp" : "18 quai du président Wilson 44200 NANTES",
 		"numeroTemp" : "06 81 67 42 06",
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi45",
 		"longitude" : "-1.53276",
 		"modesCollecte" : "smco_reempvet,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.23558",
 		"description_fr" : "Récupération et distribution de vêtements, livres, jouets, vaisselle, bibelots",
 		"libelle" : "LA CROIX ROUGE / Vestiboutique",
@@ -429,12 +421,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Mardi et jeudi de 9h30 à 12h00 et de 14h00 à 17h00",
 		"plagesHoraires" : "0101-3112_ma+je_09h30-12h00+14h00-17h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi49",
 		"longitude" : "-1.5484173",
 		"modesCollecte" : "smco_reemplivreCD",
-		"type" : "Réemploi",
+		"type" : "Réemploi livre-CD",
 		"latitude" : "47.213765",
 		"description_fr" : "Récupération de livres, revues, BD et de manuels scolaires",
 		"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
@@ -443,12 +435,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Lundi, mardi, jeudi, vendredi 9h-13h et 14h00-18h00",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve_09h00-13h00+14h00-18h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi50",
 		"longitude" : "-1.5692261",
 		"modesCollecte" : "smco_reempvet",
-		"type" : "Réemploi",
+		"type" : "Réemploi vêtement",
 		"latitude" : "47.2092982",
 		"description_fr" : "Boutique du Relais",
 		"libelle" : "DING-FRING Brunelière",
@@ -457,12 +449,11 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 10h à 19h00. Le samedi de 10h à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00,0101-3112_sa_10h00-18h30",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi51",
 		"longitude" : "-1.643064",
 		"modesCollecte" : "smco_reempvet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.222275",
 		"description_fr" : "Récupération de vêtements, chaussures, linge. Informations sur l'emplacement des conteneur : www.relais-atlantique.fr",
 		"libelle" : "RELAIS ATLANTIQUE",
@@ -474,7 +465,7 @@
 		"code" : "stco_reemploi52",
 		"longitude" : "-1.633449",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.259354",
 		"description_fr" : "Récupération de matériels divers pour le tiers monde",
 		"libelle" : "ARCADE",
@@ -488,7 +479,6 @@
 		"code" : "stco_reemploi53",
 		"longitude" : "-1.565745",
 		"modesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.196638",
 		"description_fr" : "Réemploi d'objets de la vie courante : collecte en déchèterie puis revente à bas prix (mobilier, vaisselle, jouets, livres, vêtements, articles de loisirs, outillage...)",
 		"libelle" : "ECOREV",
@@ -502,7 +492,6 @@
 		"code" : "stco_reemploi54",
 		"longitude" : "-2.206235",
 		"modesCollecte" : "smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.285496",
 		"description_fr" : "Pour tous, qui recherchez des meubles, des vêtements, des livres, des jouets, de la vaisselle, une braderie est à votre disposition",
 		"libelle" : "SECOURS POPULAIRE",
@@ -516,19 +505,19 @@
 		"code" : "stco_reemploi55",
 		"longitude" : "-1.550624",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.201511",
 		"description_fr" : "Récupération de bouchons plastiques",
 		"libelle" : "BOUCHON D'AMOUR",
 		"adresseTemp" : "Stockage : Chà¢teau d'eau du MIN de Nantes 44200 NANTES",
 		"numeroTemp" : "02 40 86 57 29",
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi56",
 		"longitude" : "-2.2100179",
 		"modesCollecte" : "smco_reempvet",
-		"type" : "Réemploi",
+		"type" : "Réemploi vêtement",
 		"latitude" : "47.2774497",
 		"description_fr" : "Boutique du Relais",
 		"libelle" : "DING-FRING Saint-Nazaire",
@@ -542,7 +531,7 @@
 		"code" : "stco_reemploi57",
 		"longitude" : "-2.2065413",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.2735589",
 		"description_fr" : "Rechargez vos cartouches d'encre et toners.",
 		"libelle" : "PIGMENTA",
@@ -556,7 +545,6 @@
 		"code" : "stco_reemploi58",
 		"longitude" : "-1.560953",
 		"modesCollecte" : "smco_reempmeuble,smco_reempvet,smco_reempelectromenag",
-		"type" : "Réemploi",
 		"latitude" : "47.227348",
 		"description_fr" : "Récupération de vêtements, meubles, électroménagers",
 		"libelle" : "SECOURS POPULAIRE",
@@ -565,12 +553,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Tous les jours du lundi au vendredi de 9h à 12h et de 14h à 17h",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-17h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi59",
 		"longitude" : "-1.570404",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.260956",
 		"description_fr" : "Récupération de papier (même pour des volumes moyens)",
 		"libelle" : "A.R.B.R.E.S.",
@@ -579,12 +567,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au jeudi de 9h00 à 12h30 et de 14h00 à 17h00. Le vendredi de 9h00 à 12h30 et de 14h00 à 16h00.",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je_09h00-12h30+14h00-17h00,0101-3112_ve_09h00-12h30+14h00-16h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi60",
 		"longitude" : "-1.556319",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.217781",
 		"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 		"libelle" : "POINT ENCRE ET TONER",
@@ -593,12 +581,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Ouvert le lundi de 13h à 19h ; du mardi au vendredi de 9h à 12h45 et de 13h45 à 19h ; le samedi de 14h à 19h.",
 		"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve_09h00-12h45+13h45-19h00,0101-3112_sa_14h00-19h00",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi61",
 		"longitude" : "-1.5318757",
 		"modesCollecte" : "smco_reempvet",
-		"type" : "Réemploi",
+		"type" : "Réemploi vêtement",
 		"latitude" : "47.2414082",
 		"description_fr" : "Boutique du Relais : Ding Fring",
 		"libelle" : "DING-FRING Marsauderies",
@@ -607,12 +595,12 @@
 		"src" : "<I>Source : 'Deuxième Vie'</I>",
 		"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 12h et de 14h à 18h30",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00,0101-3112_sa_10h00-12h00+14h00-18h30",
-		"quartier" : "???????????????????????????"
+		"quartier" : "Nantes"
 	}, {
 		"code" : "stco_reemploi62",
 		"longitude" : "-2.2577916",
 		"modesCollecte" : "smco_reempvet",
-		"type" : "Réemploi",
+		"type" : "Réemploi vêtement",
 		"latitude" : "47.2615601",
 		"description_fr" : "La grange aux fringues est une bourse permanente de vêtements d'occasion ouvert à tous et porté par un chantier d'insertion. Il est possible de vendre ses vêtements en étant adhérent à une Maison de quartier : 15 articles par mois peuvent être déposés. Les articles non vendus et l'argent des ventes sont ensuite récupérés à la fin du mois. La grange aux fringues devient, à certaines périodes de l'année, la grange ambulante et se déplace dans les différents quartiers de Saint-Nazaire.",
 		"libelle" : "La grange aux fringues",
@@ -626,7 +614,6 @@
 		"code" : "stco_reemploi63",
 		"longitude" : "-1.5324433",
 		"modesCollecte" : "smco_reempelectromenag,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.1819242",
 		"description_fr" : "Récupération de ferraille, métaux, électroménager, voiture, camion, bateau, engins agricole... Déplacement à domicile dans toute la loire-atlantique.",
 		"libelle" : "RECUPFER44",
@@ -640,7 +627,7 @@
 		"code" : "stco_reemploi65",
 		"longitude" : "-1.661669",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.229244",
 		"description_fr" : "Récupération de matériels pour chambre d'hôpital, fauteuils roulant, lunettes, appareils auditifs",
 		"libelle" : "ORTHOPEDIE SANS FRONTIERE",
@@ -652,7 +639,7 @@
 		"code" : "stco_reemploi66",
 		"longitude" : "-2.2115574",
 		"modesCollecte" : "smco_reempcartouchetoner",
-		"type" : "Réemploi",
+		"type" : "Réemploi cartouche tuner",
 		"latitude" : "47.2820733",
 		"description_fr" : "Spécialistes de la recharge de cartouches d'encre pour particuliers et professionnels.",
 		"libelle" : "ENCRE ÉCO...LOGIQUE",
@@ -666,7 +653,6 @@
 		"code" : "stco_reemploi67",
 		"longitude" : "-1.548718",
 		"modesCollecte" : "smco_reempvet,smco_reempdivers",
-		"type" : "Réemploi",
 		"latitude" : "47.301243",
 		"description_fr" : "Récupération de vêtements, chaussures, linge, en bon état et non démodé",
 		"libelle" : "PORTE OUVERTE CHAPELAINE",
@@ -678,7 +664,7 @@
 		"code" : "stco_reemploi68",
 		"longitude" : "-1.545704",
 		"modesCollecte" : "smco_reempdivers",
-		"type" : "Réemploi",
+		"type" : "Réemploi divers",
 		"latitude" : "47.190903",
 		"description_fr" : "Récupération d'emballages triés par les particuliers et les entreprises",
 		"libelle" : "OSER FORET VIVANTE",
@@ -690,7 +676,7 @@
 		"code" : "stco_reemploi70",
 		"longitude" : "-1.634285",
 		"modesCollecte" : "smco_reempmeuble",
-		"type" : "Réemploi",
+		"type" : "Réemploi meuble",
 		"latitude" : "47.048713",
 		"description_fr" : "- Récupération de tous types de meubles en bois, que nous remettons en état. - Ventes des meubles, qui peuvent être peints, lasurés, cirés...selon les goûts de chacun...et à des prix raisonnables. Venez découvrir nos réalisations dans nos ateliers",
 		"libelle" : "RETZ'AGIR",
@@ -5330,6 +5316,7 @@
 		"quartier" : "Port Boyer",
 		"libelle" : "Collecte encombrants Port Boyer",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les mercredis matins, tous les mercredis après-midis"
 	}, {
@@ -5337,6 +5324,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "les 1er et 3ème jeudis matins"
 	}, {
@@ -5344,6 +5332,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les jeudis matins, tous les jeudis après-midis"
 	}, {
@@ -5351,6 +5340,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les mardis matins, tous les mardis après-midis, tous les mercredis après-midis"
 	}, {
@@ -5358,6 +5348,7 @@
 		"quartier" : "Clos Toreau",
 		"libelle" : "Collecte encombrants Clos Toreau",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les lundis matins"
 	}, {
@@ -5365,6 +5356,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les mardis matins, tous les mardis après-midis, tous les vendredis après-midis, tous les vendredis matins"
 	}, {
@@ -5372,6 +5364,7 @@
 		"quartier" : "Halvèque",
 		"libelle" : "Collecte encombrants Halvèque",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les jeudis après-midis, tous les jeudis matins"
 	}, {
@@ -5379,6 +5372,7 @@
 		"quartier" : "Malakoff ",
 		"libelle" : "Collecte encombrants Malakoff ",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les jeudis après-midis"
 	}, {
@@ -5386,6 +5380,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants_resume",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "47.20",
 		"description_fr" : "tous les mardis après-midis, tous les mardis après-midis, tous les mardis après-midis, tous les mardis matins, tous les mercredis après-midis, tous les mercredis matins"
 	}, {
@@ -5393,6 +5388,7 @@
 		"quartier" : "Port Boyer",
 		"libelle" : "Collecte encombrants Port Boyer",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.543354",
 		"latitude" : "47.242146",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5401,6 +5397,7 @@
 		"quartier" : "Port Boyer",
 		"libelle" : "Collecte encombrants Port Boyer",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.543343",
 		"latitude" : "47.239693",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -5409,6 +5406,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.609803",
 		"latitude" : "47.209106",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -5417,6 +5415,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.609540",
 		"latitude" : "47.208305",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -5425,6 +5424,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.609476",
 		"latitude" : "47.210514",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -5433,6 +5433,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.610125",
 		"latitude" : "47.209839",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -5441,6 +5442,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.611782",
 		"latitude" : "47.207748",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -5449,6 +5451,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.608741",
 		"latitude" : "47.206718",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5457,6 +5460,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.609953",
 		"latitude" : "47.207203",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5465,6 +5469,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.607502",
 		"latitude" : "47.207375",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5473,6 +5478,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.607984",
 		"latitude" : "47.206802",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5481,6 +5487,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606724",
 		"latitude" : "47.207077",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5489,6 +5496,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606176",
 		"latitude" : "47.207726",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5497,6 +5505,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606262",
 		"latitude" : "47.208164",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5505,6 +5514,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605425",
 		"latitude" : "47.209137",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5513,6 +5523,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605731",
 		"latitude" : "47.208763",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5521,6 +5532,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606042",
 		"latitude" : "47.209545",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5529,6 +5541,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606504",
 		"latitude" : "47.209732",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5537,6 +5550,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606960",
 		"latitude" : "47.209919",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5545,6 +5559,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.604873",
 		"latitude" : "47.209393",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5553,6 +5568,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.604519",
 		"latitude" : "47.209778",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5561,6 +5577,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.603543",
 		"latitude" : "47.209049",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5569,6 +5586,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.600651",
 		"latitude" : "47.209049",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5577,6 +5595,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.600914",
 		"latitude" : "47.208752",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5585,6 +5604,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602142",
 		"latitude" : "47.208328",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5593,6 +5613,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602598",
 		"latitude" : "47.208778",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
@@ -5601,6 +5622,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.609325",
 		"latitude" : "47.206310",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5609,6 +5631,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.608092",
 		"latitude" : "47.206005",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5617,6 +5640,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.607823",
 		"latitude" : "47.206299",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5625,6 +5649,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606879",
 		"latitude" : "47.206726",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5633,6 +5658,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.607115",
 		"latitude" : "47.206413",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5641,6 +5667,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606820",
 		"latitude" : "47.205887",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5649,6 +5676,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605908",
 		"latitude" : "47.204906",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5657,6 +5685,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.604792",
 		"latitude" : "47.203766",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5665,6 +5694,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.604546",
 		"latitude" : "47.205467",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5673,6 +5703,7 @@
 		"quartier" : "habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredi après-midis de chaque mois.",
 		"libelle" : "habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredi après-midis de chaque mois.",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605442",
 		"latitude" : "47.205490",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5681,6 +5712,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.603923",
 		"latitude" : "47.204731",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5689,6 +5721,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.604632",
 		"latitude" : "47.205021",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5697,6 +5730,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605345",
 		"latitude" : "47.206245",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5705,6 +5739,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605522",
 		"latitude" : "47.206715",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5713,6 +5748,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.604937",
 		"latitude" : "47.207474",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5721,6 +5757,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605780",
 		"latitude" : "47.206127",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -5729,6 +5766,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.598001",
 		"latitude" : "47.206932",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5737,6 +5775,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.598092",
 		"latitude" : "47.207485",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5745,6 +5784,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.599401",
 		"latitude" : "47.206821",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -5753,6 +5793,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.597288",
 		"latitude" : "47.209042",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -5761,6 +5802,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.598103",
 		"latitude" : "47.206043",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5769,6 +5811,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.598366",
 		"latitude" : "47.205345",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5777,6 +5820,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.597191",
 		"latitude" : "47.205250",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5785,6 +5829,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.596429",
 		"latitude" : "47.205334",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5793,6 +5838,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.597905",
 		"latitude" : "47.204868",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5801,6 +5847,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.595330",
 		"latitude" : "47.206646",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5809,6 +5856,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.596440",
 		"latitude" : "47.207253",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5817,6 +5865,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.596488",
 		"latitude" : "47.208115",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
@@ -5825,6 +5874,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.594359",
 		"latitude" : "47.209431",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5833,6 +5883,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.594107",
 		"latitude" : "47.208725",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5841,6 +5892,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.593028",
 		"latitude" : "47.209625",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5849,6 +5901,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.592487",
 		"latitude" : "47.209740",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5857,6 +5910,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.590244",
 		"latitude" : "47.209328",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5865,6 +5919,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.591516",
 		"latitude" : "47.209717",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5873,6 +5928,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.591006",
 		"latitude" : "47.209499",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5881,6 +5937,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.589804",
 		"latitude" : "47.210236",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5889,6 +5946,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.607614",
 		"latitude" : "47.200321",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5897,6 +5955,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.606584",
 		"latitude" : "47.200684",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5905,6 +5964,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.605345",
 		"latitude" : "47.201630",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5913,6 +5973,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.603607",
 		"latitude" : "47.203072",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5921,6 +5982,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602405",
 		"latitude" : "47.202614",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5929,6 +5991,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.600978",
 		"latitude" : "47.203190",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5937,6 +6000,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602083",
 		"latitude" : "47.203331",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5945,6 +6009,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602679",
 		"latitude" : "47.203579",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5953,6 +6018,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.603049",
 		"latitude" : "47.203720",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5961,6 +6027,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602641",
 		"latitude" : "47.204891",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5969,6 +6036,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.603296",
 		"latitude" : "47.204086",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5977,6 +6045,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.603033",
 		"latitude" : "47.204460",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -5985,6 +6054,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.610146",
 		"latitude" : "47.209972",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -5993,6 +6063,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.611139",
 		"latitude" : "47.208851",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -6001,6 +6072,7 @@
 		"quartier" : "Bellevue",
 		"libelle" : "Collecte encombrants Bellevue",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.611841",
 		"latitude" : "47.209599",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
@@ -6009,6 +6081,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519386",
 		"latitude" : "47.242218",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6017,6 +6090,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518356",
 		"latitude" : "47.242970",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6025,6 +6099,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519600",
 		"latitude" : "47.241409",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6033,6 +6108,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.517637",
 		"latitude" : "47.240906",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6041,6 +6117,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.517594",
 		"latitude" : "47.241848",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6049,6 +6126,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521113",
 		"latitude" : "47.240387",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6057,6 +6135,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519257",
 		"latitude" : "47.240005",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6065,6 +6144,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518742",
 		"latitude" : "47.239754",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6073,6 +6153,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.517508",
 		"latitude" : "47.239338",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6081,6 +6162,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.517090",
 		"latitude" : "47.238655",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6089,6 +6171,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518570",
 		"latitude" : "47.238266",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6097,6 +6180,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518136",
 		"latitude" : "47.238369",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6105,6 +6189,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.520442",
 		"latitude" : "47.236340",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6113,6 +6198,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519488",
 		"latitude" : "47.236855",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6121,6 +6207,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521649",
 		"latitude" : "47.235676",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6129,6 +6216,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519895",
 		"latitude" : "47.237782",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6137,6 +6225,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.520668",
 		"latitude" : "47.238323",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6145,6 +6234,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519724",
 		"latitude" : "47.238178",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6153,6 +6243,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.517953",
 		"latitude" : "47.237591",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6161,6 +6252,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.523827",
 		"latitude" : "47.241196",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6169,6 +6261,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521311",
 		"latitude" : "47.240845",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6177,6 +6270,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.522631",
 		"latitude" : "47.241859",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6185,6 +6279,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521998",
 		"latitude" : "47.242607",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6193,6 +6288,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521682",
 		"latitude" : "47.243763",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6201,6 +6297,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.520936",
 		"latitude" : "47.244125",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6209,6 +6306,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519600",
 		"latitude" : "47.243431",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6217,6 +6315,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518865",
 		"latitude" : "47.245064",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6225,6 +6324,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518431",
 		"latitude" : "47.243790",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6233,6 +6333,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.512514",
 		"latitude" : "47.245903",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6241,6 +6342,7 @@
 		"quartier" : "Bottière",
 		"libelle" : "Collecte encombrants Bottière",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.512567",
 		"latitude" : "47.246925",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
@@ -6249,6 +6351,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.590754",
 		"latitude" : "47.231232",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6257,6 +6360,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.590384",
 		"latitude" : "47.230988",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6265,6 +6369,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.587610",
 		"latitude" : "47.232151",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6273,6 +6378,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.587170",
 		"latitude" : "47.231129",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6281,6 +6387,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.587455",
 		"latitude" : "47.230881",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6289,6 +6396,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.588034",
 		"latitude" : "47.231335",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6297,6 +6405,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.588538",
 		"latitude" : "47.230873",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6305,6 +6414,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.588002",
 		"latitude" : "47.231750",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6313,6 +6423,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.586564",
 		"latitude" : "47.231617",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6321,6 +6432,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.586114",
 		"latitude" : "47.232037",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6329,6 +6441,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.586505",
 		"latitude" : "47.233101",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6337,6 +6450,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585169",
 		"latitude" : "47.232716",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6345,6 +6459,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585861",
 		"latitude" : "47.233360",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6353,6 +6468,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585888",
 		"latitude" : "47.233128",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6361,6 +6477,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585368",
 		"latitude" : "47.231560",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6369,6 +6486,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.584386",
 		"latitude" : "47.231300",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6377,6 +6495,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.584021",
 		"latitude" : "47.230919",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6385,6 +6504,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.583270",
 		"latitude" : "47.231407",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6393,6 +6513,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.583694",
 		"latitude" : "47.231655",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6401,6 +6522,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.584263",
 		"latitude" : "47.231983",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6409,6 +6531,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.584848",
 		"latitude" : "47.231964",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6417,6 +6540,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585062",
 		"latitude" : "47.231834",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6425,6 +6549,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585599",
 		"latitude" : "47.229721",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6433,6 +6558,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585416",
 		"latitude" : "47.230080",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6441,6 +6567,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585057",
 		"latitude" : "47.230099",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6449,6 +6576,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.584933",
 		"latitude" : "47.230461",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6457,6 +6585,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.584424",
 		"latitude" : "47.230625",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6465,6 +6594,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.588898",
 		"latitude" : "47.231030",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6473,6 +6603,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.588131",
 		"latitude" : "47.230618",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6481,6 +6612,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.587396",
 		"latitude" : "47.230206",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6489,6 +6621,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.589203",
 		"latitude" : "47.229824",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6497,6 +6630,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.588705",
 		"latitude" : "47.229538",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6505,6 +6639,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.589965",
 		"latitude" : "47.230213",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6513,6 +6648,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.588367",
 		"latitude" : "47.229198",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6521,6 +6657,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585218",
 		"latitude" : "47.229046",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6529,6 +6666,7 @@
 		"quartier" : "Breil",
 		"libelle" : "Collecte encombrants Breil",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.585143",
 		"latitude" : "47.228081",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -6537,6 +6675,7 @@
 		"quartier" : "Clos Toreau",
 		"libelle" : "Collecte encombrants Clos Toreau",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.529235",
 		"latitude" : "47.195530",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
@@ -6545,6 +6684,7 @@
 		"quartier" : "Clos Toreau",
 		"libelle" : "Collecte encombrants Clos Toreau",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.528891",
 		"latitude" : "47.194843",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
@@ -6553,6 +6693,7 @@
 		"quartier" : "Clos Toreau",
 		"libelle" : "Collecte encombrants Clos Toreau",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.530168",
 		"latitude" : "47.196274",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
@@ -6561,6 +6702,7 @@
 		"quartier" : "Clos Toreau",
 		"libelle" : "Collecte encombrants Clos Toreau",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.527647",
 		"latitude" : "47.195984",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
@@ -6569,6 +6711,7 @@
 		"quartier" : "Clos Toreau",
 		"libelle" : "Collecte encombrants Clos Toreau",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.527014",
 		"latitude" : "47.195580",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
@@ -6577,6 +6720,7 @@
 		"quartier" : "Clos Toreau",
 		"libelle" : "Collecte encombrants Clos Toreau",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.526005",
 		"latitude" : "47.195206",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
@@ -6585,6 +6729,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.601923",
 		"latitude" : "47.221069",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6593,6 +6738,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602620",
 		"latitude" : "47.222118",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6601,6 +6747,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.601536",
 		"latitude" : "47.222382",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6609,6 +6756,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.599938",
 		"latitude" : "47.223221",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6617,6 +6765,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.598629",
 		"latitude" : "47.223232",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6625,6 +6774,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.600935",
 		"latitude" : "47.223141",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -6633,6 +6783,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.601965",
 		"latitude" : "47.224888",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6641,6 +6792,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.601290",
 		"latitude" : "47.224552",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6649,6 +6801,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.599391",
 		"latitude" : "47.225258",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6657,6 +6810,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.600860",
 		"latitude" : "47.225426",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6665,6 +6819,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.601086",
 		"latitude" : "47.225082",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6673,6 +6828,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.602373",
 		"latitude" : "47.223839",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6681,6 +6837,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.597878",
 		"latitude" : "47.225552",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6689,6 +6846,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.597663",
 		"latitude" : "47.228428",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6697,6 +6855,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.597062",
 		"latitude" : "47.223423",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -6705,6 +6864,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.596376",
 		"latitude" : "47.223064",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -6713,6 +6873,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.598414",
 		"latitude" : "47.224632",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -6721,6 +6882,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.597760",
 		"latitude" : "47.224224",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -6729,6 +6891,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.598929",
 		"latitude" : "47.224689",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
@@ -6737,6 +6900,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.593329",
 		"latitude" : "47.222080",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
@@ -6745,6 +6909,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.591666",
 		"latitude" : "47.222904",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
@@ -6753,6 +6918,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.589295",
 		"latitude" : "47.224506",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
@@ -6761,6 +6927,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.590282",
 		"latitude" : "47.224136",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
@@ -6769,6 +6936,7 @@
 		"quartier" : "Dervallières",
 		"libelle" : "Collecte encombrants Dervallières",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.591290",
 		"latitude" : "47.223774",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
@@ -6777,6 +6945,7 @@
 		"quartier" : "Halvèque",
 		"libelle" : "Collecte encombrants Halvèque",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521553",
 		"latitude" : "47.255310",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6785,6 +6954,7 @@
 		"quartier" : "Halvèque",
 		"libelle" : "Collecte encombrants Halvèque",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518549",
 		"latitude" : "47.254730",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6793,6 +6963,7 @@
 		"quartier" : "Halvèque ",
 		"libelle" : "Collecte encombrants Halvèque ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518903",
 		"latitude" : "47.256687",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6801,6 +6972,7 @@
 		"quartier" : "Halvèque ",
 		"libelle" : "Collecte encombrants Halvèque ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518586",
 		"latitude" : "47.255676",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6809,6 +6981,7 @@
 		"quartier" : "Halvèque",
 		"libelle" : "Collecte encombrants Halvèque",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.518790",
 		"latitude" : "47.256310",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6817,6 +6990,7 @@
 		"quartier" : "Halvèque",
 		"libelle" : "Collecte encombrants Halvèque",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.519799",
 		"latitude" : "47.257324",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
@@ -6825,6 +6999,7 @@
 		"quartier" : "Malakoff ",
 		"libelle" : "Collecte encombrants Malakoff ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.532260",
 		"latitude" : "47.214024",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6833,6 +7008,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.532561",
 		"latitude" : "47.213959",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6841,6 +7017,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.532362",
 		"latitude" : "47.213787",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6849,6 +7026,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.532276",
 		"latitude" : "47.214752",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6857,6 +7035,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.530908",
 		"latitude" : "47.215000",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6865,6 +7044,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.526767",
 		"latitude" : "47.214931",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6873,6 +7053,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.527126",
 		"latitude" : "47.214840",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6881,6 +7062,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.529342",
 		"latitude" : "47.214291",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6889,6 +7071,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.528307",
 		"latitude" : "47.214420",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6897,6 +7080,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521853",
 		"latitude" : "47.216351",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6905,6 +7089,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521510",
 		"latitude" : "47.216732",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6913,6 +7098,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.521842",
 		"latitude" : "47.216904",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6921,6 +7107,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.522433",
 		"latitude" : "47.217113",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6929,6 +7116,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.523039",
 		"latitude" : "47.217098",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6937,6 +7125,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.523629",
 		"latitude" : "47.216705",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6945,6 +7134,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.524766",
 		"latitude" : "47.216305",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6953,6 +7143,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.524079",
 		"latitude" : "47.216702",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6961,6 +7152,7 @@
 		"quartier" : "Malakoff",
 		"libelle" : "Collecte encombrants Malakoff",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.525785",
 		"latitude" : "47.215378",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
@@ -6969,6 +7161,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.575594",
 		"latitude" : "47.264771",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6977,6 +7170,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.578577",
 		"latitude" : "47.264793",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6985,6 +7179,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.576989",
 		"latitude" : "47.265202",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -6993,6 +7188,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.578512",
 		"latitude" : "47.264843",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -7001,6 +7197,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.575744",
 		"latitude" : "47.264801",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -7009,6 +7206,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.577010",
 		"latitude" : "47.265179",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -7017,6 +7215,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.578791",
 		"latitude" : "47.265491",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -7025,6 +7224,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.577868",
 		"latitude" : "47.264183",
 		"description_fr" : "La collecte des encombrants pour l'habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -7033,6 +7233,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.578083",
 		"latitude" : "47.263454",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -7041,6 +7242,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.575025",
 		"latitude" : "47.265633",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
@@ -7049,6 +7251,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.579027",
 		"latitude" : "47.261314",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7057,6 +7260,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.578094",
 		"latitude" : "47.261517",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7065,6 +7269,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.578416",
 		"latitude" : "47.260067",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7073,6 +7278,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.577289",
 		"latitude" : "47.261082",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7081,6 +7287,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.578265",
 		"latitude" : "47.259071",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7089,6 +7296,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.576678",
 		"latitude" : "47.259640",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7097,6 +7305,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.575905",
 		"latitude" : "47.257965",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7105,6 +7314,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.577890",
 		"latitude" : "47.258392",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7113,6 +7323,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.577343",
 		"latitude" : "47.258015",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7121,6 +7332,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.577268",
 		"latitude" : "47.257542",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
@@ -7129,6 +7341,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.571989",
 		"latitude" : "47.259972",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7137,6 +7350,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.572161",
 		"latitude" : "47.258736",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7145,6 +7359,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.573792",
 		"latitude" : "47.258656",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7153,6 +7368,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.573792",
 		"latitude" : "47.259945",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7161,6 +7377,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.574199",
 		"latitude" : "47.261028",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7169,6 +7386,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.572665",
 		"latitude" : "47.261227",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7177,6 +7395,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.563073",
 		"latitude" : "47.260620",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7185,6 +7404,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.564640",
 		"latitude" : "47.260387",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7193,6 +7413,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.564490",
 		"latitude" : "47.261196",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7201,6 +7422,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.565616",
 		"latitude" : "47.261635",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
@@ -7209,6 +7431,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.569285",
 		"latitude" : "47.256428",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7217,6 +7440,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.567708",
 		"latitude" : "47.254665",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7225,6 +7449,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.568309",
 		"latitude" : "47.255371",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7233,6 +7458,7 @@
 		"quartier" : "Nantes Nord",
 		"libelle" : "Collecte encombrants Nantes Nord",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.569082",
 		"latitude" : "47.254932",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7241,6 +7467,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.566947",
 		"latitude" : "47.255489",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7249,6 +7476,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.569918",
 		"latitude" : "47.253616",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7257,6 +7485,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.569457",
 		"latitude" : "47.254265",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7265,6 +7494,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.569253",
 		"latitude" : "47.253399",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7273,6 +7503,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.567730",
 		"latitude" : "47.253166",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7281,6 +7512,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.566689",
 		"latitude" : "47.253738",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7289,6 +7521,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.566550",
 		"latitude" : "47.253143",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7297,6 +7530,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.566399",
 		"latitude" : "47.252285",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7305,6 +7539,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.575454",
 		"latitude" : "47.254433",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7313,6 +7548,7 @@
 		"quartier" : "Nantes Nord ",
 		"libelle" : "Collecte encombrants Nantes Nord ",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.574135",
 		"latitude" : "47.254562",
 		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
@@ -7321,6 +7557,7 @@
 		"quartier" : "Repère 44",
 		"libelle" : "Repère 44",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.555947",
 		"latitude" : "47.215534"
 	}, {
@@ -7328,6 +7565,7 @@
 		"quartier" : "Repère 45",
 		"libelle" : "Repère 45",
 		"modesCollecte" : "modco_encombrants",
+		"type" : "Point de collecte encombrants",
 		"longitude" : "-1.555148",
 		"latitude" : "47.219975"
 	},
@@ -7341,6 +7579,7 @@
 		"adresseTemp" : "36 Boulevard Churchill 44100 NANTES",
 		"latitude" : "47.208695",
 		"longitude" : "-1.611092",
+		"horaires" : "47.208695,-1.611092",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00+15h00-19h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7351,28 +7590,31 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.228567, -1.587267",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "3",
-		"quartierTrisac" : "Dervallières Zola",
+		"quartierTrisac" : "Dervallieres Zola",
 		"libelle" : "Mairie Annexe Dervallières",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Place des Dervallières 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.223969,-1.598346",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
-		"quartier" : "Dervallières Zola"
+		"quartier" : "Dervallieres Zola"
 	}, {
 		"code" : "4",
-		"quartierTrisac" : "Dervallières Zola",
+		"quartierTrisac" : "Dervallieres Zola",
 		"libelle" : "Nantes Habitat Agence Watteau",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "8 Rue Watteau 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.224275,-1.599505",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
-		"quartier" : "Dervallières Zola"
+		"quartier" : "Dervallieres Zola"
 	}, {
 		"code" : "5",
 		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
@@ -7381,6 +7623,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "52 Rue du Plessis Gautron 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.206158,-1.604784",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7391,6 +7634,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "6 Rue Feyder 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.230119,-1.585772",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7425,24 +7669,25 @@
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "10",
-		"quartierTrisac" : "Dervallières Zola",
+		"quartierTrisac" : "Dervallieres Zola",
 		"libelle" : "Place des Dervallières",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place des Dervallières 44100 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",090213_sa_09h00-13h00,180513_sa_09h00-13h00,210913_sa_09h00-13h00,071213_sa_09h00-13h00",
-		"quartier" : "Dervallières Zola"
+		"quartier" : "Dervallieres Zola"
 	}, {
 		"code" : "11",
-		"quartierTrisac" : "Dervallières Zola",
+		"quartierTrisac" : "Dervallieres Zola",
 		"libelle" : "Bar Tabac l'Hebdo",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "91 Quai de la Fosse 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.208535,-1.570129",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_sa+di_08h00-20h00",
-		"quartier" : "Dervallières Zola"
+		"quartier" : "Dervallieres Zola"
 	}, {
 		"code" : "12",
 		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
@@ -7451,6 +7696,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "2 Rue des garennes 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.201956, -1.578117",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve_07h30-20h00,0101-3112_sa_09h00-20h00,0101-3112_di_09h00-14h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7461,6 +7707,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.206522, -1.587746",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30,0101-3112_lu+ma+me+je+ve_13h30-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7475,14 +7722,14 @@
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "15",
-		"quartierTrisac" : "Dervallières Zola",
+		"quartierTrisac" : "Dervallieres Zola",
 		"libelle" : "Maille-Brézé",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 quai de la fosse 44100 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",230313_sa_09h00-13h00,150613_sa_09h00-13h00,191013_sa_09h00-13h00,180114_sa_09h00-13h00",
-		"quartier" : "Dervallières Zola"
+		"quartier" : "Dervallieres Zola"
 	}, {
 		"code" : "16",
 		"quartierTrisac" : "Bellevue Chantenay Sainte Anne",
@@ -7501,6 +7748,7 @@
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "1 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.206552,-1.588304",
 		"plagesHoraires" : "distri",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7511,6 +7759,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "26 Boulevard Professeur Auvigné 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.254495,-1.518062",
 		"plagesHoraires" : "0101-3112_lu+ma+me+ve+sa_06h30-13h15+15h00-19h30,0101-3112_di_07h30-13h00",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -7521,18 +7770,20 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "249 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.25398,-1.530325",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00,0101-3112_lu+ma+me+je+ve_13h15-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "20",
-		"quartierTrisac" : "Doulon Bottière",
+		"quartierTrisac" : "Doulon Bottiere",
 		"libelle" : "Mairie Annexe Bottière",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "69 Rue de la Bottière 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.239866,-1.518953",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45,0101-3112_lu+ma+me+je+ve_14h00-17h30",
-		"quartier" : "Doulon Bottière"
+		"quartier" : "Doulon Bottiere"
 	}, {
 		"code" : "21",
 		"quartierTrisac" : "Nantes Erdre",
@@ -7555,74 +7806,79 @@
 		"quartier" : "Nantes Erdre"
 	}, {
 		"code" : "23",
-		"quartierTrisac" : "Doulon Bottière",
+		"quartierTrisac" : "Doulon Bottiere",
 		"libelle" : "Place du Commandant Cousteau",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place du Commandant Cousteau 44300 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",240113_je_14h30-19h00,110413_je_14h30-19h00,050913_je_14h30-19h00,211113_je_14h30-19h00",
-		"quartier" : "Doulon Bottière"
+		"quartier" : "Doulon Bottiere"
 	}, {
 		"code" : "24",
-		"quartierTrisac" : "Doulon Bottière",
+		"quartierTrisac" : "Doulon Bottiere",
 		"libelle" : "Centre socio-culturel",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "1 Rue Jules Grandjouan 44300 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",260113_sa_09h00-13h00,130413_sa_09h00-13h00,070913_sa_09h00-13h00,231113_sa_09h00-13h00",
-		"quartier" : "Doulon Bottière"
+		"quartier" : "Doulon Bottiere"
 	}, {
 		"code" : "25",
-		"quartierTrisac" : "Doulon Bottière",
+		"quartierTrisac" : "Doulon Bottiere",
 		"libelle" : "Leclerc Paridis",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "0 Rue du Perray 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.248941,-1.515942",
 		"plagesHoraires" : "vente",
-		"quartier" : "Doulon Bottière"
+		"quartier" : "Doulon Bottiere"
 	}, {
 		"code" : "26",
-		"quartierTrisac" : "Doulon Bottière",
+		"quartierTrisac" : "Doulon Bottiere",
 		"libelle" : "Piscine Jules Verne",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "41 Rue Jules Grandjouan 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.248446,-1.517279",
 		"plagesHoraires" : "distrib",
-		"quartier" : "Doulon Bottière"
+		"quartier" : "Doulon Bottiere"
 	}, {
 		"code" : "27",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Association ADDA",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "5 bis Rue de la carterie 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.226651,-1.5591",
 		"plagesHoraires" : "0101-3112_je+sa_11h00-14h00,0101-3112_ma+ve_16h30-19h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "28",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Maison de l'Environnement Ecopole",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "17 Rue de Bouillé 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.225995,-1.556157",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_13h30-18h00,0101-3112_me_09h00-12h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "29",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Carrefour City",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "24 Rue des Hauts Pavés 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.22359,-1.563499",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "30",
 		"quartierTrisac" : "Breil Barberie",
@@ -7631,68 +7887,71 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.230017,-1.572786",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "31",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "15 Rue Félix Thomas 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.230439,-1.553907",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "32",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Café tabac le Bel air",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "71 Rue de Bel air 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.225208,-1.559207",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h45-19h30,0101-3112_sa_08h00-12h30",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "33",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Place de Talensac",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place de Talensac 44000 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",130213_me_14h30-19h00,220513_me_14h30-19h00,250913_me_14h30-19h00,111213_me_14h30-19h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "34",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Devant l'église Saint-Pasquier",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Emile Fritsch 44000 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",110213_lu_14h30-19h00,210513_ma_14h30-19h00,230913_lu_14h30-19h00,091213_lu_14h30-19h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "35",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "TRAM Saint-Mihiel",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Quai de Versailles 44000 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",140213_je_14h30-19h00,230513_je_14h30-19h00,260913_je_14h30-19h00,121213_je_14h30-19h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "36",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Place Saint-Félix",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Place Saint-Félix 44000 NANTES",
 		"latitude" : "47.20",
 		"plagesHoraires" : ",160213_sa_09h00-13h00,250513_sa_09h00-13h00,280913_sa_09h00-13h00,141213_sa_09h00-13h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "37",
 		"quartierTrisac" : "Breil Barberie",
@@ -7701,18 +7960,20 @@
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.230017,-1.572786",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "38",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Marché de Talensac",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "0 Rue de Talensac 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "distrib",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"horaires" : "47.221263,-1.55785",
+		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00",
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "39",
 		"quartierTrisac" : "Ile de Nantes",
@@ -7721,6 +7982,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "10 rue Babin-Chevaye 44200 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.206392,-1.549165",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-20h00,0101-3112_di_07h00-20h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -7731,6 +7993,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Place Mangin 44200 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.201202,-1.544766",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -7741,6 +8004,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Boulevard de la prairie au duc 44200 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.20543,-1.556375",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -7751,6 +8015,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.208812,-1.529832",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -7801,6 +8066,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "0 Rue d'Angleterre 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.214431,-1.527221",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -7811,6 +8077,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Rue Angleterre 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.214904,-1.526814",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -7821,6 +8088,7 @@
 		"type" : "Rendez-vous",
 		"adresseTemp" : "0 Chemin du pont de l'arche de mauves 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.216697,-1.531692",
 		"plagesHoraires" : ",160313_sa_09h00-13h00,080613_sa_09h00-13h00,121013_sa_09h00-13h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -7841,7 +8109,7 @@
 		"type" : "Distributeur automatique",
 		"adresseTemp" : "15 Rue du Pont de l'Arche de Mauves 44000 NANTES",
 		"latitude" : "47.20",
-		"plagesHoraires" : "distrib",
+		"horaires" : "47.216697,-1.531692",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "52",
@@ -7851,6 +8119,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Chem de la Censive du Tertre 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.243624,-1.554894",
 		"plagesHoraires" : "0101-3112_lu+me_13h30-20h00,0101-3112_ma-je-sa_14h00-18h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -7861,6 +8130,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "14 rue Guillaume Grootaers 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.238817,-1.585472",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_du_08h30-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7871,6 +8141,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Rue du Moulin des Rochettes 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.261859,-1.582704",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-19h30",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -7881,6 +8152,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "18 Rue des Renards 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.255262,-1.56558",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h00-14h00+16h00-20h00,0101-3112_sa_07h00-14h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -7891,6 +8163,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "39 Boulevard des tribunes 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.248999,-1.568499",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_du_10h00-17h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -7901,6 +8174,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "103 Rue Pierre Yvernogeau 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.241905,-1.571867",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7911,6 +8185,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "41 Route de la Chapelle sur Erdre 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.257082,-1.575923",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -7921,6 +8196,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "37 Boulevard Albert Einstein 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.264582,-1.572082",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8011,6 +8287,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.224203, -1.530538",
 		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8021,6 +8298,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "1 Boulevard des Professeurs Sourdille 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.240783,-1.547012",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8031,6 +8309,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.224538,-1.550946",
 		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8041,6 +8320,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "30 Rue de Coulmiers 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.221441,-1.535972",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-14h00+15h00-20h00,0101-3112_sa_07h15-13h00+15h30-19h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8051,6 +8331,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "103 Boulevard du Général Buat 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.226432,-1.543024",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8061,6 +8342,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "11 Boulevard de Stalingrad 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.219087,-1.536952",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8111,6 +8393,7 @@
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.223896,-1.550663",
 		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8121,6 +8404,7 @@
 		"type" : "Magasin (dépôt)",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.224203, -1.530538",
 		"plagesHoraires" : "vente",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8131,6 +8415,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "2 Rue Edouard Nignon 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.276143,-1.510645",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -8141,6 +8426,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "25 Rue des Bourderies 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.206421,-1.59699",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h00+16h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -8151,28 +8437,31 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Place des Lauriers 44100 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.204322,-1.60523",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
 		"code" : "83",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Aux Délices de Procé",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Boulevard Gaston Serpette 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.224494,-1.576885",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve+sa_07h00-20h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "84",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Le Monselet",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Place Emile Sarradin 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.220982,-1.570362",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h30,0101-3112_sa_08h00-13h00+14h30-18h30",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "85",
 		"quartierTrisac" : "Breil Barberie",
@@ -8181,18 +8470,20 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "67 Rue Hector Berlioz 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.239676,-1.579138",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h30",
 		"quartier" : "Breil Barberie"
 	}, {
 		"code" : "86",
-		"quartierTrisac" : "Doulon Bottière",
+		"quartierTrisac" : "Doulon Bottiere",
 		"libelle" : "Mairie Annexe Doulon",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "37 Boulevard Louis Millet 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.227321,-1.519013",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
-		"quartier" : "Doulon Bottière"
+		"quartier" : "Doulon Bottiere"
 	}, {
 		"code" : "87",
 		"quartierTrisac" : "Nantes Erdre",
@@ -8201,6 +8492,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "173 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.245561,-1.534377",
 		"plagesHoraires" : "AAA",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -8211,6 +8503,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Route de Saint Joseph 44300 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.235204,-1.541222",
 		"plagesHoraires" : "0101-3112_lu+je+ve_06h45-13h30+15h00-19h30",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -8221,6 +8514,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "75 Boulevard Joliot Curie 44200 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.194043,-1.530214",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-19h30,0101-3112_di_09h00-12h30",
 		"quartier" : "Nantes Sud"
 	}, {
@@ -8231,18 +8525,20 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "69 Boulevard Joliot Curie 44200 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.194481,-1.53163",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Sud"
 	}, {
 		"code" : "91",
-		"quartierTrisac" : "Hauts Pavés Saint Félix",
+		"quartierTrisac" : "Hauts Paves Saint Felix",
 		"libelle" : "Le Fournil d'Aristide",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "26 Rue Jean Jaurès 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.218592,-1.5618",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-14h00+16h00-20h00,0101-3112_di_08h00-13h00",
-		"quartier" : "Hauts Pavés Saint Félix"
+		"quartier" : "Hauts Paves Saint Felix"
 	}, {
 		"code" : "92",
 		"quartierTrisac" : "Centre Ville",
@@ -8251,6 +8547,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "29 Rue de Strasbourg 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.219,-1.553582",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8261,6 +8558,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "11 Avenue Carnot 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.214001,-1.544741",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h45-12h00+13h30-17h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8271,6 +8569,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "3 Rue Cassini 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.215691,-1.564482",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h30-13h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8281,6 +8580,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "6 Avenue Carnot 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.214146,-1.545299",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8291,6 +8591,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "21 Chaussée de la Madeleine 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.211042,-1.551221",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8301,6 +8602,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "17 Allée Duguay Trouin 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.213286,-1.556672",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-20h00,0101-3112_sa_09h00-20h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8311,6 +8613,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "25 Rue Voltaire 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.211916,-1.566842",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h30-19h30,0101-3112_sa_07h30-19h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8321,6 +8624,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "10 Rue de la Fosse 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.214001,-1.558796",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+je+ve_11h00-19h00,0101-3112_sa_10h00-19h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8331,6 +8635,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "23 Rue Racine 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.214452,-1.565255",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8341,6 +8646,7 @@
 		"type" : "Supermarché (vente)",
 		"adresseTemp" : "4 Allée Duquesne 44000 NANTES",
 		"latitude" : "47.20",
+		"horaires" : "47.217484,-1.556586",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-19h30",
 		"quartier" : "Centre Ville"
 	},]

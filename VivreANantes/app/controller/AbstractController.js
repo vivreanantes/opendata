@@ -305,42 +305,74 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	getItemsComments : function(commentsString, title) {
 		var result = new Array();
 		var thisController = this;
-		// TODO mettre un bouton à la place du HREF
-		// commentLink =
-		// this.getApplication().getController("VivreANantes.controller.CommentsController").makeLink("commentsPanel");
+	
 		// On parcours les remarques de la faq
 		var dataFaq = this.getApplication()
 				.getController("VivreANantes.controller.CommentsController")
 				.getCommentsList().getStore().getData();
+		var nombre = 0;
 		dataFaq.each(function(recordFaq) {
 			if (recordFaq.raw["elements"]!=null) {
 					// TODO utiliser getArrayFromString à la place
 					var arrayElementsFaq = recordFaq.raw["elements"].replace(
 							", /g", ",").replace(" ,/g", ",").split(',');
 					for (i in arrayElementsFaq) {
+					
 						if (arrayElementsFaq[i] === commentsString) {
 							result.push({
-										html : "<B>" + recordFaq.raw["libelle"]
-												+ "</B>--------------<BR/>"
+										html : "<B>" + recordFaq.raw["libelle"]	+ "</B><BR/>"
 												+ recordFaq.raw["description"]
-												+ "<br/>"
-									});
+												+ "<br/>",
+										style: "background-color:" + thisController.getColorPairImpair(nombre)
+									}
+									);
+							nombre ++;
 						}
+						
 					}
 				}
 			});
 		// TODO Ajout d'un formulaire
 		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
 		var codeValue = "comments_xtype"+this.SEPARATOR + " "+title+" ("+commentsString+")";
-		result.push({
+		result.push(
+			/*{
 					xtype : 'button',
 					text : 'Envoyez un commentaire',
 					centered : 'true',
 					data : {
 						code : codeValue
 					}
-				});
+				}*/
+				
+				{
+					xtype : 'container',
+					layout : 'vbox',
+					padding: '20 200 20 200',
+					style: "background-color:" + thisController.getColorPairImpair(nombre),
+					items : [{
+						xtype : 'button',
+						id : "garbagesdetails_informations", 
+						text : "Envoyez un commentaire",
+						data : {
+							code : codeValue
+						}	
+					}]
+				}
+				);
 		return result;
+	},
+	
+	getColorPairImpair : function(nombre) {
+		if (nombre%2 == 0)
+		{  //pair 
+			return color = "#5E99AA";		
+		}
+		else
+		{  //impair
+			return color = "#5E99EE";
+		
+		}
 	},
 
 	/**
@@ -392,13 +424,13 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			dataAdvices.each(function(recordAdvice) {
 				for (i in arrayConseils) {
 					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-						if (recordAdvice.raw["fiche"] != "") {
+						if (recordAdvice.raw["fiche"]!=null && recordAdvice.raw["fiche"] != "") {
 							// lien vers une fiche
 							result.push({
 										xtype : 'container',
 										layout : 'hbox',
 										// style : 'background-color: #759E60;',
-										id : "garbagesdetails_commentaires",
+										id : "garbagesdetails_commentaires_"+recordAdvice.raw["code"],
 										items : [{
 											html : "<b>"
 													+ recordAdvice.raw["libelle"]
@@ -424,6 +456,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 						// pas de lien vers une fiche
 						else {
 							result.push({
+										id : "garbagesdetails_commentaires_"+recordAdvice.raw["code"],
 										html : "<b>"
 												+ recordAdvice.raw["libelle"]
 												+ "<br/></b>"

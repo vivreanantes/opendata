@@ -137,16 +137,16 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 					value : "Dervallieres Zola"
 				}, {
 					text : "Doulon Bottière",
-					value : "Doulon Bottière"
+					value : "Doulon Bottiere"
 				}, {
 					text : "Hauts Pavés - Saint Félix",
 					value : "Hauts Paves Saint Felix"
 				}, {
 					text : "Ile De Nantes",
-					value : "Ile De Nantes"
+					value : "Ile de Nantes"
 				}, {
-					text : "Malakoff Saint-Donatien",
-					value : "Malakoff Saint Donatien"
+					text : "Malakoff - Saint-Donatien",
+					value : "Malakoff Saint-Donatien"
 				}, {
 					text : "Nantes Erdre",
 					value : "Nantes Erdre"

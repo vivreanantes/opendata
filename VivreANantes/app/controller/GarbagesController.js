@@ -406,14 +406,22 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// conseilTraduit})
 
 			// Ajout des conseils KO
+			/*var arraysItemsAdvices = this.getItemsAdvices(conseils);
+			this.setItemsElement(this.garbageDetail,
+					"garbagesdetails_conseils", arraysItemsAdvices);*/
 			var arraysItemsAdvices = this.getItemsAdvices(conseils);
 			this.setItemsElement(this.garbageDetail,
 					"garbagesdetails_conseils", arraysItemsAdvices);
 
 			// Ajout des commentaires OK
+			var code = record.data["code"];
+			this.setItemsElement(this.garbageDetail,
+					"garbagesdetails_commentaires", this
+							.getItemsComments(code, title));
+			/*		
 			var arraysItemsComments = this.getItemsComments(record.data["code"], title)  
 			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_commentaires", arraysItemsComments);
+					"garbagesdetails_commentaires", arraysItemsComments);*/
 
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);
@@ -482,12 +490,17 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			var text = this.getGarbagesFormText();
 			var category = this.getGarbagesFormSelect();
 			var escaperegex = Ext.String.escapeRegex;
-			var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+			// var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
+			// var temp = text.getValue();
+			// var texttest = new RegExp(/vaisselle/gi);
+			
 			var categorietest = new RegExp(category.getValue());
 
 			var theItems = arrayItemsToShow.items;
 			for (var i = 0; i < theItems.length; i++) {
 				var aData = theItems[i].data;
+				// Important : il faut recréer l'expression régulière à chaque fois sinon les résultats sont faux !
+				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
 				var nom_description_sansAccents = aData["nom_description_sansAccents"];
 				if ((aData["categorie_usuelle"] === category.getValue() || category
 						.getValue() === "all")

@@ -56,12 +56,6 @@
 				"statut" : "Vérif le 03/2013",
 				"bouton" : "cu"
 			}, {
-				"code" : "cu_nourriture",
-				"nom" : "Nourriture",
-				"sousCategories" : "false",
-				"image" : "epeluchure_mini.png",
-				"statut" : "Vérif le 03/2013"
-			}, {
 				"code" : "cu_electronique",
 				"nom" : "Électronique",
 				"sousCategories" : "false",
@@ -138,6 +132,6 @@
 				"sousCategories" : "false",
 				"image" : "batterie_voiture_mini.png",
 				"statut" : "Vérif le 03/2013",
-				"bouton" : "cu_toxique"
+				"bouton" : "cu"
 			},]
 }

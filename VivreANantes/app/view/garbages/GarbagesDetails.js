@@ -86,6 +86,9 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 		},
 
 		{
+				id : "garbagesdetails_commentaires"
+		}
+		/*
 			xtype : 'container',
 			layout : 'hbox',
 			style : 'background-color: #759E60;',
@@ -99,15 +102,15 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 			}, {
 				xtype : 'container',
 				layout : 'vbox'
-				/*,items : [{
+				,items : [{
 							xtype : 'button',
 							text : 'bacs bleus'
 						}, {
 							xtype : 'button',
 							text : 'bacs jaunes'
-						}]*/
-			}]
-		}]
+						}]
+			}]*/
+		]
 
 		// items : [
 		// {

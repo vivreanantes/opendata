@@ -109,11 +109,7 @@ Ext
 		// TODO manuel développeur
 		// TODO 'Rendez-vous Place des Dervallières (10)' : des conseils seraient bienvenus
 		// TODO Supermarché (vente) Epicerie Aux 4 saisons (1)' : "Supermarché" et "Epicerie" > incohérent 
-		// TODO 'Mode de collecte Point dépôt encombrant (modco_encombrant)' : "undefined" sur la page
-		// TODO Bouton en bas : Les boutons du bas sont trop petits pour être bien vu et les couleurs ton sur ton ne permettent pas de bien voir sur un téléphone android (avec Chrome bien sur).
 		// TODO Boutons sur la carte
-		// ' déchet Bombe mousse à raser (dec_bombeMousseARaser)' le commentaire "sans_bouchon" n'est pas visible !
-		// ' déchet Vaisselle plastique (dec_vaissellePlastique)'  ceci n'est pas renvoyé par la recherche "vaisselle"
 		// bouton retour
 		
 		// TODO Remettre les lieux sur Trisacs
@@ -122,6 +118,7 @@ Ext
 		// Mineur : marché de talensac ouvert les lundis uniquement si férié !
 		// http://www.nantes.fr/piscine-petite-amazonie horaires trop compliqués !
 		
+		// http://forums.mediabox.fr/wiki/tutoriaux/javascript/language/regex
 		
 		/////////// CRN Long terme //////////
 
@@ -131,6 +128,7 @@ Ext
 		//      http://data.nantes.fr/forum/?tx_mmforum_pi1[action]=list_post&tx_mmforum_pi1[tid]=166
 		// TODO photos : visiter (et ajouter des photos) de Valorena et Arc-En-Ciel...
 		// TODO Modes des collecte listing des lieux les plus proches sur la page des modes de collecte
+		// TODO le texte des modes de collecte est dupliqué. Il faudrait les récupérer.
 
 		///////////// CED ////////////////// 
 
