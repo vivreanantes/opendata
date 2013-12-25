@@ -12,6 +12,7 @@ Ext.define('VivreANantes.view.comments.Comments', {
 				items : [{
 							xtype : 'commentsContainer_xtype'
 						}
-				]
+				],
+				defaultBackButtonText : "Retour"
 			}
 		});

@@ -24,7 +24,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 
 			reusesFormSelectQuartier : {
 				change : "onReusesControllerStoreFilter",
-				initialize : "setOptionsQuartierReemploi"
+				initialize : "setOptionsQuartiers"
 			},
 
 			reusesFormSelectType : {
@@ -104,26 +104,6 @@ Ext.define("VivreANantes.controller.ReusesController", {
 			}
 		});
 		store.filter(filterElements);
-	},
-
-	/**
-	 * Valorise les options des listes déroulantes "quartier"
-	 */
-	setOptionsQuartierReemploi : function(selectField) {
-
-		selectField.setOptions([{
-					text : 'Tous',
-					value : 'all'
-				}, {
-					text : "Nantes",
-					value : "Nantes"
-				}, {
-					text : "Hors Nantes : Sud Loire",
-					value : "Hors Nantes sud Loire"
-				}, {
-					text : "Hors Nantes : Nord Loire",
-					value : "Hors Nantes nord Loire"
-				}]);
-
 	}
+
 });

@@ -9,8 +9,11 @@ Ext.define('VivreANantes.view.structures.Structures', {
 				autoDestroy : false,
 				iconCls : 'maps',
 				title : 'Structures',
-				items : [{
-							xtype : 'structuresContainer_xtype'
-						}]
+				items : [
+					{
+						xtype : 'structuresContainer_xtype'
+					}
+				],
+				defaultBackButtonText : "Retour"
 			}
 		});

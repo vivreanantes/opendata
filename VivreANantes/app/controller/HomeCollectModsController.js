@@ -37,9 +37,15 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'homecollectmodsdetails_xtype button' : {
-				tap : 'onTapLinkButton'
+				tap : 'onTapLinkButton',
+				back : 'onPushBackButton9'
 			}
 		}
+	},
+	
+	onPushBackButton9 : function() {
+			// console.log("onPushBackButton9");
+			// this.onPushBackButton();
 	},
 
 	/**
@@ -125,6 +131,8 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	
 	onTapLinkButton : function(button, e, eOpts) {
 		this.manageLinkButtons(button._data["code"]);
+		// console.log("saveBackButton 2");
+		// this.saveBackButton("HomeCollectModsView", false);
 	}
 
 });

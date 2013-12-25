@@ -2,7 +2,6 @@ Ext.Loader.setPath({
 	'Ext' : 'touch/src'
 });
    
-console.log("Application");
 Ext
 		.application({
 			name : 'VivreANantes',
@@ -104,24 +103,23 @@ Ext
 		
 		///////////// CRN //////////////////
 
-		// TODO : quartier pb  sur "Loire, Sèvre et Vignoble"
+		// TODO le bouton retour
+
+		// On prend 3 quartiers : Nantes, Hors Nantes Nord Loire, Hors Nantes Sud Loire,   
+		// Réemploi : quartier
+		// Ecotox : quartier_admin, quartier
+		// Le relais : quartier_admin, quartier
+		// Encombrant : quartier_admin et quartier
+		// DecheterieEcopoint : quartier
+		// Colonnes enterrées : à faire
+		
 		// TODO encombrants : améliorer la macro et le traitement java
-		// TODO manuel développeur
 		// TODO 'Rendez-vous Place des Dervallières (10)' : des conseils seraient bienvenus
 		// TODO Supermarché (vente) Epicerie Aux 4 saisons (1)' : "Supermarché" et "Epicerie" > incohérent 
-		// TODO Boutons sur la carte
-		// bouton retour
-		
-		// TODO Remettre les lieux sur Trisacs
-		// http://leafletjs.com/examples/layers-control.html
-		
-		// Mineur : marché de talensac ouvert les lundis uniquement si férié !
-		// http://www.nantes.fr/piscine-petite-amazonie horaires trop compliqués !
-		
-		// http://forums.mediabox.fr/wiki/tutoriaux/javascript/language/regex
-		
+			
 		/////////// CRN Long terme //////////
 
+		// TODO Mineur : marché de talensac ouvert les lundis uniquement si férié !
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
 		// TODO Contacter des assos pour améliorer le contenu de l'appli 
 		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json

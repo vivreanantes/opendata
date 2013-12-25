@@ -33,15 +33,21 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 
 			trisacFormSelect : {
 				change : "onTrisacStoreFilter",
-				initialize : "setOptionsQuartierTrisac"
+				initialize : "setOptionsQuartiersAdmin"
 			},
 
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'TrisacDetails_xtype button' : {
-				tap : 'onTapLinkButton'
+				tap : 'onTapLinkButton',
+				back : 'onPushBackButton12'
 			}
 		}
+	},
+	
+		onPushBackButton12 : function() {
+			//console.log("onPushBackButton12");
+			//	this.onPushBackButton();
 	},
 	/**
 	 * A l"initialisation de la fenêtre
@@ -94,7 +100,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 						"ig");
 				// var stQuartierRexexp = new RegExp(selectQuartier.getValue());
 				var stType = item.data["modesCollecte"];
-				var stQuartier = item.data["quartier"];
+				var stQuartier = item.data["quartier_admin"];
 				return (stType == 'modco_distrisac'
 						&& stTextRexexp.test(item.data["libelle"]) && (selectQuartier
 						.getValue() === "all" || stQuartier === selectQuartier
@@ -102,61 +108,6 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 			}
 		});
 		store.filter(filterHomeCollectMod);
-	},
-
-	/**
-	 * Valorise les options des listes déroulantes "quartier"
-	 */
-	setOptionsQuartierTrisac : function(selectField) {
-
-		
-		
-
-
-
-
-
-
-
-
-
-		selectField.setOptions([{
-					text : 'Tous',
-					value : 'all'
-				}, {
-					text : "Bellevue Chantenay Sainte-Anne",
-					value : "Bellevue Chantenay Sainte Anne"
-				}, {
-					text : "Breil Barberie",
-					value : "Breil Barberie"
-				}, {
-					text : "Centre Ville",
-					value : "Centre Ville"
-				}, {
-					text : "Dervallières Zola",
-					value : "Dervallieres Zola"
-				}, {
-					text : "Doulon Bottière",
-					value : "Doulon Bottiere"
-				}, {
-					text : "Hauts Pavés - Saint Félix",
-					value : "Hauts Paves Saint Felix"
-				}, {
-					text : "Ile De Nantes",
-					value : "Ile de Nantes"
-				}, {
-					text : "Malakoff - Saint-Donatien",
-					value : "Malakoff Saint-Donatien"
-				}, {
-					text : "Nantes Erdre",
-					value : "Nantes Erdre"
-				}, {
-					text : "Nantes Nord",
-					value : "Nantes Nord"
-				}, {
-					text : "Nantes Sud",
-					value : "Nantes Sud"
-				}]);
 	}
 
 });

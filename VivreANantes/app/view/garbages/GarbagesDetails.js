@@ -24,50 +24,76 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 						items : [{
 							id : "garbagesdetails_recyclable",
 							tpl : "{recyclable_string}<br/><br/>Modes de collecte : ",
-							//,tpl : 'Recyclable {recyclable_string}<br/><br/>Modes de collecte :',
+							// ,tpl : 'Recyclable
+							// {recyclable_string}<br/><br/>Modes de collecte
+							// :',
 							data : {
 								recyclable_string : ""
 							}
-						},
-						{
+						}, {
 							id : "garbagesdetails_collectmod_1",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
-						},
-						{
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
+						}, {
 							id : "garbagesdetails_collectmod_2",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
-						},
-						{
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
+						}, {
 							id : "garbagesdetails_collectmod_3",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
-						},
-						{
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
+						}, {
 							id : "garbagesdetails_collectmod_4",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
-						},
-						{
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
+						}, {
 							id : "garbagesdetails_collectmod_5",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
-						},
-						{
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
+						}, {
 							id : "garbagesdetails_collectmod_6",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
-						},
-						{
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
+						}, {
 							id : "garbagesdetails_collectmod_7",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
-						},
-						{
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
+						}, {
 							id : "garbagesdetails_collectmod_8",
 							xtype : "button",
-							tpl : "<img src='resources/images/{image}' width='20px' /> {label}", data : { label:"", image : ""}
+							tpl : "<img src='resources/images/{image}' width='20px' /> {label}",
+							data : {
+								label : "",
+								image : ""
+							}
 						}]
 					}]
 		},
@@ -83,55 +109,52 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 
 		{
 			id : "garbagesdetails_conseils"
-		},
-
-		{
-				id : "garbagesdetails_commentaires"
-		}
-		/*
+		}, {
+			// Le premier conseil
 			xtype : 'container',
 			layout : 'hbox',
-			style : 'background-color: #759E60;',
-			id : "garbagesdetails_commentaires",
+			width : '100%',
+			id : "garbagesdetails_conseils_1",
 			items : [{
-				tpl : "{commentaire_string}",
-				data : {
-					"commentaire_string" : "Commentaire <B>Image manquante ou incorrecte</B><br/>Anti-fourmis, Antigel, appareil électronique, Barquette plastique, Base, Bidon d'huile moteur vide, Bouteille produit ménager non vide, Bouteille produit ménager vide, Chaussures usagées, déodorant stick, Engrais chimiques, Essence de térébenthine, Feuillage, Feuille, Film plastique, Filtre à huile, Fongicides, Huile de vidange, Huile minérale, Insecticides, Laques, Liquide de refroidissement, Litière pour animaux, Mastic de carrosserie, Naphtaline, nettoyants à sol, Objet en terre cuite, outillage alimenté par électricité, Papier peint, papier toilette, Peinture antirouille, piano, Produit phytosanitaire, Produits d’entretien, Radiographie, récurrants pour toilette, Résines, Révélateur et fixateur photo,  solvants, Taille d'arbre, trompette, Trottinette, Tube fluorescent, Tuyau d'arrosage, Ustensile de cuisine,Vélo, Vitre commentaire_string"
-				},
-				flex : 1
-			}, {
-				xtype : 'container',
-				layout : 'vbox'
-				,items : [{
-							xtype : 'button',
-							text : 'bacs bleus'
-						}, {
-							xtype : 'button',
-							text : 'bacs jaunes'
-						}]
-			}]*/
-		]
-
-		// items : [
-		// {
-		// id : 'content',
-		// tpl : [ '<div class="top">',
-		// '<div>{nom} | {description}{imageComplete}</div>',
-		// '</div>' ].join('')
-		// }
-		// //
-		// // , {
-		// // xtype : 'map',
-		// // flex : 1,
-		// // mapOptions : {
-		// // zoomControl : false,
-		// // panControl : false,
-		// // rotateControl : false,
-		// // streetViewControl : false,
-		// // mapTypeControl : false,
-		// // zoom : 13
-		// // }}
-		// ],
+						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
+						id : "garbagesdetails_conseils_1_libelle"
+					}, {
+						xtype : 'button',
+						id : "garbagesdetails_conseils_1_bouton",
+						text : "Fiche<br/>explicative",
+						width:"150px"
+					}]
+		}, {
+			// Le deuxieme conseil
+			xtype : 'container',
+			layout : 'hbox',
+			width : '100%',
+			id : "garbagesdetails_conseils_2",
+			items : [{
+						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
+						id : "garbagesdetails_conseils_2_libelle"
+					}, {
+						xtype : 'button',
+						id : "garbagesdetails_conseils_2_bouton",
+						text : "Fiche<br/>explicative",
+						width:"150px"
+					}]
+		}, {
+			id : "garbagesdetails_commentaires"
+		}, {
+			id : "garbagesdetails_commentaires_1",
+			tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+		}, {
+			id : "garbagesdetails_commentaires_2",
+			tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+		}, {
+			id : "garbagesdetails_commentaires_3",
+			tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+		}, {
+			xtype : 'button',
+			id : "garbagesdetails_envoyer",
+			text : "Envoyez un commentaire"
+		}]
 
 	}
 

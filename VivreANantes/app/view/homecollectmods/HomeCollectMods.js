@@ -12,6 +12,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectMods', {
 				items : [{
 							xtype : 'HomeCollectModsContainer'
 						}
-				]
+				],
+				defaultBackButtonText : "Retour"
 			}
 		});

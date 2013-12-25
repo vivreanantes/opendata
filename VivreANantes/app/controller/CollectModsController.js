@@ -10,24 +10,46 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				},
 				control : {
 					collectModsView : {
-						activate : 'onActivate'
+						activate : 'onActivate',
+						back : 'onPushBackButton1'
 					},
 					collectModsList : {
-						initialize : "onInitCollectModsList"
+						initialize : "onInitCollectModsList",
+						back : 'onPushBackButton2'
 					},
-					collectModsDetails : {},
+					collectModsDetails : {
+						back : 'onPushBackButton3'
+					},
 					// fonctionne comme une CSS selecteur
 					'collectModsButtonsList_xtype button' : {
-						tap : 'onShowDetails'
+						tap : 'onShowDetails',
+						back : 'onPushBackButton4'
 					},
 					// fonctionne comme une CSS selector
 					// (http://www.w3.org/TR/CSS2/selector.html)
 					'collectModsDetails_xtype button' : {
-						tap : 'onTapLinkButton'
+						tap : 'onTapLinkButton',
+						back : 'onPushBackButton5'
 					}
 				}
 			},
 
+			onPushBackButton1 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton2 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton3 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton4 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton5 : function() {
+				// this.onPushBackButton();
+			},
+			
 			onActivate : function(newActiveItem, container, oldActiveItem,
 					eOpts) {
 				var dataCollectMods = this
@@ -40,7 +62,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 			},
 
 			onTapLinkButton : function(button, e, eOpts) {
-				this.manageLinkButtons(button._data["code"]);
+				// this.manageLinkButtons(button._data["code"]);
 			},
 			
 			onShowDetails : function(button, e, eOpts) {

@@ -306,7 +306,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		var result = new Array();
 		var thisController = this;
 	
-		// On parcours les remarques de la faq
+		// On parcourt les remarques de la faq
 		var dataFaq = this.getApplication()
 				.getController("VivreANantes.controller.CommentsController")
 				.getCommentsList().getStore().getData();
@@ -402,6 +402,124 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			}
 		};
 	},
+	
+	/**
+	 * Renvoie les items (les éléments fils d'un container) correspondant à la
+	 * partie "conseils" d'une page
+	 * 
+	 * @params advicesString chaine de caractère listant les codes des conseils
+	 *         (ex : ",cons_1,cons2,cons3")
+	 */
+	getArrayItemsToShowAdvices : function(advicesString) {
+		var result1 = new Array();
+		var result2 = new Array();
+		var thisController = this;
+		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
+				",").split(',');
+		// On parcourt les conseils
+		if (arrayConseils.length > 0) {
+			var dataAdvices = this
+					.getApplication()
+					.getController("VivreANantes.controller.GarbagesController")
+					.getAdvicesList().getStore().getData();
+			var thisController = this;
+			dataAdvices.each(function(recordAdvice) {
+				for (i in arrayConseils) {
+					if (recordAdvice.raw["code"] === arrayConseils[i]) {
+						result1.push({
+									libelle : recordAdvice.raw["libelle"],
+									description : recordAdvice.raw["description"]
+								});
+						if (recordAdvice.raw["fiche"] != null
+								&& recordAdvice.raw["fiche"] != "") {
+							result2.push({
+										"libelle" : recordAdvice.raw["libelle"],
+										code : "informations"
+												+ thisController.SEPARATOR
+												+ recordAdvice.raw["fiche"]
+									});
+						}
+					}
+				}
+			});
+		}
+		return {
+			les_libelles : result1,
+			les_boutons : result2
+		};
+	},
+	
+	setDatasConseils : function(panel, prefix, prefix2, arrayItems,
+			nbMaxElements, nbElementsPerLine) {
+
+		// 1. les libellés
+		var idElementToChange = 0;
+		for (var i = 0; i < arrayItems.length; i++) {
+			var element = arrayItems[i];
+			var idElementToChange = i + 1;
+			// On retrouve l'index de l'élément parent
+			var indexParent = panel.keys.indexOf(prefix + "_"
+					+ idElementToChange);
+			if (indexParent != -1) {
+				var panelParent = panel.items[indexParent];
+				panelParent.setHidden(false);
+				var prefixComplet = prefix + "_" + idElementToChange + "_"
+						+ prefix2;
+				var index = panelParent.items.keys.indexOf(prefixComplet);
+				if (index != -1) {
+					panelParent.items.items[index].setData(element);
+					panelParent.items.items[index].setHidden(false);
+				}
+			}
+		}
+		// Cache les éléments restants
+		for (var i = idElementToChange; i < nbMaxElements; i++) {
+			var idElementToChange = idElementToChange + 1;
+			// On retrouve l'index de l'élément parent
+			var indexParent = panel.keys.indexOf(prefix + "_"
+					+ idElementToChange);
+			if (indexParent != -1) {
+				var panelParent = panel.items[indexParent];
+				panelParent.setHidden(true);
+			}
+		}
+
+	},
+	
+	getArrayItemsToShowComments : function(commentsString, title) {
+		var result = new Array();
+		var thisController = this;
+
+		// On parcourt les remarques de la faq
+		var dataFaq = this.getApplication()
+				.getController("VivreANantes.controller.CommentsController")
+				.getCommentsList().getStore().getData();
+		dataFaq.each(function(recordFaq) {
+					if (recordFaq.raw["elements"] != null) {
+						// TODO utiliser getArrayFromString à la place
+						var arrayElementsFaq = recordFaq.raw["elements"]
+								.replace(", /g", ",").replace(" ,/g", ",")
+								.split(',');
+						for (i in arrayElementsFaq) {
+
+							if (arrayElementsFaq[i] === commentsString) {
+								result.push({
+											libelle : recordFaq.raw["libelle"],
+											description : recordFaq.raw["description"]
+										});
+							}
+
+						}
+					}
+				});
+		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
+		var codeValue = "comments_xtype"+this.SEPARATOR + " "+title+" ("+commentsString+")";
+		return {
+			les_libelles : result,
+			le_titre : codeValue
+		};
+	},
+	
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "conseils" d'une page
@@ -414,7 +532,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		var thisController = this;
 		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
 				",").split(',');
-		// On parcours les conseils
+		// On parcourt les conseils
 		if (arrayConseils.length > 0) {
 			var dataAdvices = this
 					.getApplication()
@@ -543,18 +661,34 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return res;
 	},
 
-	/**
-	 * Créer la chaine de caractère d'envoie de mail.
-	 * 
-	 * @param {}
-	 *            id
-	 * @return {}
-	 */
-	makeSendLink_old : function(id) {
-		return "<a href='#' onClick='Javascript:sendMail(id)'>"
-				+ this.translate("label_comment") + "</a>";
+
+	saveBackButton : function(buttonId, mainOrNot) {
+		Ext.getCmp("mainView").stBackButton = buttonId;
+		Ext.getCmp("mainView").stBackButtonMain = mainOrNot;
 	},
 
+	onPushBackButton : function() {
+		if (Ext.getCmp("mainView").stBackButton) {
+			this.manageBackButton(Ext.getCmp("mainView").stBackButton,
+								  Ext.getCmp("mainView").stBackButtonMain);
+		}
+	},
+	
+	manageBackButton : function(mainPageXtype, mainOrNot) {
+		
+		// On recherche la page dont le xtype correspond au buttonId
+		var mainItems = Ext.getCmp("mainView").items.items;
+		for (var i = 0; i < mainItems.length; i++) {
+			if (mainItems[i].xtype == mainPageXtype) {
+				// if (mainOrNot) {
+				// 	Ext.getCmp("mainView").items.items[i-1].setActiveItem(0);
+				// }
+				// Cet élément devient actif
+				Ext.getCmp("mainView").setActiveItem(i - 1);
+			}
+		};
+	},
+	
 	/**
 	 * Effectue le changement de page
 	 * 
@@ -563,7 +697,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *            "garbagesView-dec_aerosols")
 	 */
 	manageLinkButtons : function(buttonId) {
-
+		
 		// On décompose buttonId pour initialiser mainPageXtype et
 		// elementToShowInPage
 		var arrayButtonsId = buttonId.split(this.SEPARATOR);
@@ -572,6 +706,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			var elementToShowInPage = arrayButtonsId[1];
 		}
 
+		
+		
 		// On affiche le déchet
 		if (mainPageXtype == "garbages_xtype") {
 			var myController = this

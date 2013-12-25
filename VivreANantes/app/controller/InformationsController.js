@@ -15,13 +15,17 @@ Ext.define('VivreANantes.controller.InformationsController', {
 			},
 			// fonctionne comme une CSS selecteur
 			'informationsButtonsList_xtype button' : {
-				tap : 'onShowDetails'
+				tap : 'onShowDetails',
+				back : 'onPushBackButton10'
 			}
 		}
 	},
-
 	onShowDetails : function(button, e, eOpts) {
 		this.showDetails(button.id);
+	},
+	onPushBackButton10 : function() {
+		// console.log("onPushBackButton10");
+		// this.onPushBackButton();
 	},
 
 	showDetails : function(elementId) {

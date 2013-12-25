@@ -23,10 +23,10 @@ Ext.define('VivreANantes.model.StructureModel', {
 				}, {
 					name : 'quartier',
 					type : 'string'
-				}/*, {
-					name : 'sousModesCollecte',
+				}, {
+					name : 'quartier_admin',
 					type : 'string'
-				}*/, {
+				}, {
 					name : 'description_fr',
 					type : 'string'
 				}, {

@@ -9,8 +9,9 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 				iconCls : 'trash',
 				title:'Déchets',
 				items : [{
-							xtype : 'garbagesContainer'
+							xtype : 'garbagescontainer_xtype'
 						}
-				]
+				],
+				defaultBackButtonText : "Retour"
 			}
 		});

@@ -379,6 +379,7 @@ function _translate(stKey, stLocale) {
 		"label_samedi" : { "en" : "saturday", "fr" : "samedi" },
 		"label_dimanche" : { "en" : "sunday", "fr" : "dimanche" },
 		"label_adresse" : { "en" : "address", "fr" : "adresse" },
+		"label_type" : { "en" : "type", "fr" : "type" },
 		"label_telephone" : { "en" : "phone number", "fr" : "téléphone" },
 		"label_horaires" : { "en" : "schedules", "fr" : "horaires" },
 		

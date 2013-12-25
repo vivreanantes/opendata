@@ -46,19 +46,19 @@ Ext.define('VivreANantes.view.geo.LeafletMap', {
 			},
 
 			constructor : function() {
-				console.log('constructor');
+				// console.log('constructor');
 				this.callParent(arguments);
 				this.element.setVisibilityMode(Ext.Element.OFFSETS);
 				if (!window.L) {
 					this.setHtml('Leaflet is required');
 				} else {
-					console.log('constpaint');
+					// console.log('constpaint');
 					this.on('painted', this.renderMap, this);
 				}
 
 			},
 			renderMap : function() {
-				console.log('rendermap');
+				// console.log('rendermap');
 				var me = this;
 				if (me.map) {
 					return true;

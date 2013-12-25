@@ -35,7 +35,7 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 									}]
 						}, {
 							xtype : 'button',
-							text : 'Envoyez un commentaire',
+							text : 'Envoyez',
 							iu : 'confirm',
 							handler : function() {
 

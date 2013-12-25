@@ -12,6 +12,7 @@ Ext.define('VivreANantes.view.collectMod.CollectMods', {
 				title : 'Modes de collectes',
 				items : [{
 							xtype : 'collectModsButtonsList_xtype'
-						}]
+						}],
+				defaultBackButtonText : "Retour_"
 			}
 		});

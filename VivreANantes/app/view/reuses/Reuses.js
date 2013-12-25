@@ -12,6 +12,7 @@ Ext.define('VivreANantes.view.reuses.Reuses', {
 				items : [{
 							xtype : 'reusesContainer_xtype'
 						}
-				]
+				],
+				defaultBackButtonText : "Retour"
 			}
 		});

@@ -1,0 +1,2550 @@
+{
+	'structures' : [
+	{
+		"code" : "1011",
+		"libelle" : " La Prairie de Mauves",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Rue Vulcain 440109 NANTES",
+		"tel" : "02 40 49 43 20",
+		"latitude" : "47.22573520587",
+		"longitude" : "-1.50460810028402",
+		"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,140713__10h00-17h45,150813__10h00-17h45,011113__10h00-17h45,111113__10h00-17h45,251213__10h00-17h45",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "1012",
+		"libelle" : " Chantenay",
+		"modesCollecte" : "modco_ecopoint",
+		"type" : "Ecopoint",
+		"adresseTemp" : "42 Boulevard Maréchal Alphonse Juin 440109 NANTES",
+		"tel" : "02 40 46 61 05",
+		"latitude" : "47.1984376431205",
+		"longitude" : "-1.60175179062477",
+		"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,150813__10h00-17h45,011113__10h00-17h45,251213__10h00-17h45",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "1013",
+		"libelle" : " La Beaujoire",
+		"modesCollecte" : "modco_ecopoint",
+		"type" : "Ecopoint",
+		"adresseTemp" : "29 Avenue de la Gare de Saint Joseph 440109 NANTES",
+		"tel" : "02 40 49 62 67",
+		"latitude" : "47.2540041595208",
+		"longitude" : "-1.52324785106304",
+		"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,150813__10h00-17h45,011113__10h00-17h45,251213__10h00-17h45",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "1014",
+		"libelle" : " Dervallières",
+		"modesCollecte" : "modco_ecopoint",
+		"type" : "Ecopoint",
+		"adresseTemp" : "22 Rue Jean Marc Nattier 440109 NANTES",
+		"tel" : "02 40 43 36 69",
+		"latitude" : "47.2252529348366",
+		"longitude" : "-1.59132968772156",
+		"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,150813__10h00-17h45,011113__10h00-17h45,251213__10h00-17h45",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "1015",
+		"libelle" : " Viarme",
+		"modesCollecte" : "modco_ecopoint",
+		"type" : "Ecopoint",
+		"adresseTemp" : "14 Rue du Bourget 440109 NANTES",
+		"tel" : "02 51 82 31 47",
+		"latitude" : "47.2224088646331",
+		"longitude" : "-1.56463870590524",
+		"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,140713__08h30-12h00,150813__10h00-17h45,011113__10h00-17h45,111113__10h00-17h45,251213__10h00-17h45",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "2152",
+		"libelle" : " Saint Sébastien",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Rue de la Pyramide 440190 ST-SEBASTIEN",
+		"tel" : "02 40 03 08 33",
+		"latitude" : "47.1992747714477",
+		"longitude" : "-1.48372892561533",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "2220",
+		"libelle" : " Saint Herblain",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "RD 107 440162 ST-HERBLAIN",
+		"tel" : "02 51 80 90 27",
+		"latitude" : "47.1966846746915",
+		"longitude" : "-1.64203878129303",
+		"plagesHoraires" : ",0101-3110_lu+ma+me+je+ve+sa+di_10h00-17h45,140713__10h00-18h00,150813__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3139",
+		"libelle" : " Carquefou",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "RD 209 440026 CARQUEFOU",
+		"tel" : "02 40 93 76 71",
+		"latitude" : "47.2903598677247",
+		"longitude" : "-1.44111343491299",
+		"plagesHoraires" : ",0101-2909_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3140",
+		"libelle" : " Saint Jean de Boiseau",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Rue de la Poterie 440166 SAINT-JEAN-DE-BOISEAU",
+		"tel" : "02 40 32 94 22",
+		"latitude" : "47.1864390826324",
+		"longitude" : "-1.7197063767543",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3141",
+		"libelle" : " La Chapelle sur Erdre",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Rue Ampère 440035 LA-CHAPELLE-SUR-ERDRE",
+		"tel" : "02 40 37 72 21",
+		"latitude" : "47.2586626585741",
+		"longitude" : "-1.55097680217858",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3142",
+		"libelle" : " La Montagne",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Chemin du Pérou 440101 LA-MONTAGNE",
+		"tel" : "02 40 32 94 23",
+		"latitude" : "47.176908197867",
+		"longitude" : "-1.68296122658226",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3143",
+		"libelle" : "Orvault",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Rue René Panhard 440114 ORVAULT",
+		"tel" : "02 40 63 06 76",
+		"latitude" : "47.2569694552235",
+		"longitude" : "-1.63332176172048",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3144",
+		"libelle" : " Saint Aignan Grand Lieu",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Avenue de la Forêt 440150 SAINT-AIGNAN-GRANDLIEU",
+		"latitude" : "47.1494677405852",
+		"longitude" : "-1.62387472739094",
+		"plagesHoraires" : ",0101-3112_lu+ma+me+ve+sa_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3145",
+		"libelle" : " Rezé",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Rue Pierre Legendre 440143 REZE",
+		"tel" : "02 51 70 24 04",
+		"latitude" : "47.1582708379875",
+		"longitude" : "-1.53331377718091",
+		"plagesHoraires" : ",0212-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3146",
+		"libelle" : " Vertou",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "Rond-Point de la Foresterie 440215 VERTOU",
+		"tel" : "02 40 34 43 74",
+		"latitude" : "47.1785023717599",
+		"longitude" : "-1.46033666089119",
+		"plagesHoraires" : ",2503-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,140713__10h00-18h00,150813__10h00-18h00,011113__10h00-18h00,111113__10h00-18h00,251213__10h00-18h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	}, {
+		"code" : "3148",
+		"libelle" : " Mauves sur Loire",
+		"modesCollecte" : "modco_decheterie",
+		"type" : "Déchèterie",
+		"adresseTemp" : "RD 31 440094 MAUVES-SUR-LOIRE",
+		"latitude" : "47.3132666046435",
+		"longitude" : "-1.41118791536659",
+		"plagesHoraires" : ",0101-3112_sa_08h00-12h00,0101-3112_lu+me+sa_14h00-17h00,111113__10h00-17h00,251213__10h00-17h00",
+		"src" : "<BR/><I>Source : OpenDataNantes 09/2013</I>",
+		"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+	},
+
+	{
+		"code" : "sco_ecotox_1",
+		"quartier" : "Breil Barberie",
+		"libelle" : "Breil Malville",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "2 rue Suzanne Lenglen",
+		"latitude" : "47.228922",
+		"longitude" : "-1.587603",
+		"plagesHoraires" : "210313_je_08h00-12h00,180413_je_08h00-12h00,160513_je_08h00-12h00,200613_je_08h00-12h00,180713_je_08h00-12h00,190913_je_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_2",
+		"quartier" : "Bellevue Chantenay",
+		"libelle" : "Bellevue",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "Place des Lauriers",
+		"latitude" : "47.204438",
+		"longitude" : "-1.604703",
+		"plagesHoraires" : "200313_me_08h00-12h00,170413_me_08h00-12h00,220513_me_08h00-12h00,190613_me_08h00-12h00,170713_me_08h00-12h00,180913_me_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_3",
+		"quartier" : "Dervallieres Zola",
+		"libelle" : "Dervallières",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "Place des Dervallières",
+		"latitude" : "47.223627",
+		"longitude" : "-1.598394",
+		"plagesHoraires" : "260313_ma_08h00-12h00,230413_ma_08h00-12h00,280513_ma_08h00-12h00,250613_ma_08h00-12h00,230713_ma_08h00-12h00,240913_ma_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_4",
+		"quartier" : "Malakoff Saint-Donatien",
+		"libelle" : "Malakoff",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "Parking mairie annexe, centre commercial",
+		"latitude" : "47.214431",
+		"longitude" : "-1.527221",
+		"plagesHoraires" : "250313_lu_08h00-12h00,220413_lu_08h00-12h00,270513_lu_08h00-12h00,240613_lu_08h00-12h00,290713_lu_08h00-12h00,230913_lu_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_5",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Quartier Nord",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "1 rue Jaques Cartier",
+		"latitude" : "47.258852",
+		"longitude" : "-1.573804",
+		"plagesHoraires" : "120313_ma_08h00-12h00,090413_ma_08h00-12h00,070513_ma_08h00-12h00,110613_ma_08h00-12h00,090713_ma_08h00-12h00,100913_ma_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_6",
+		"quartier" : "Doulon Bottiere",
+		"libelle" : "Bottière",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "Parking mairie annexe",
+		"latitude" : "47.239866",
+		"longitude" : "-1.518953",
+		"plagesHoraires" : "070313_je_08h00-12h00,040413_je_08h00-12h00,020513_je_08h00-12h00,060613_je_08h00-12h00,040713_je_08h00-12h00,050913_je_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_7",
+		"quartier" : "Nantes Sud",
+		"libelle" : "Clos Toreau",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "Haut du parking de la rue de Biarritz",
+		"latitude" : "47.19615",
+		"longitude" : "-1.529773",
+		"plagesHoraires" : "060313_me_08h00-12h00,030413_me_08h00-12h00,150513_me_08h00-12h00,050613_me_08h00-12h00,030713_me_08h00-12h00,040913_me_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_8",
+		"quartier" : "Nantes Erdre",
+		"libelle" : "Port Boyer",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "Parking rue du Pouliguen",
+		"latitude" : "47.239887",
+		"longitude" : "-1.543323",
+		"plagesHoraires" : "150313_ve_08h00-12h00,120413_ve_08h00-12h00,030513_ve_08h00-12h00,140613_ve_08h00-12h00,120713_ve_08h00-12h00,130913_ve_08h00-12h00"
+	}, {
+		"code" : "sco_ecotox_9",
+		"quartier" : "Nantes Erdre",
+		"libelle" : "Quartier Halvèque",
+		"modesCollecte" : "modco_ecotox",
+		"type" : "Camion Ecotox",
+		"adresseTemp" : "Parking rue Léon Serpolet",
+		"latitude" : "47.254825",
+		"longitude" : "-1.519806",
+		"plagesHoraires" : "290313_ve_08h00-12h00,260413_ve_08h00-12h00,240513_ve_08h00-12h00,280613_ve_08h00-12h00,260713_ve_08h00-12h00,270913_ve_08h00-12h00"
+	},
+
+	{
+		"code" : "sco_lerelais_1",
+		"libelle" : "Ecopoint Dervallières",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Jean Marc Nattier 44000 Nantes",
+		"latitude" : "47.225135",
+		"longitude" : "-1.591476",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_2",
+		"libelle" : "Ecopoint Beaujoire",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Avenue Gare Saint Joseph 44000 Nantes",
+		"latitude" : "47.254009",
+		"longitude" : "-1.522983",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_3",
+		"libelle" : "Ecopoint Chantenay",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Boulevard Maréchal Juin 44000 Nantes",
+		"latitude" : "47.198286",
+		"longitude" : "-1.600188",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_4",
+		"libelle" : "Sobreda",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Route Nantes 44340 Bouguenais",
+		"latitude" : "47.187356",
+		"longitude" : "-1.587713",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_5",
+		"libelle" : "Déchetterie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Ampère 44240 La Chapelle sur Erdre",
+		"latitude" : "47.25851",
+		"longitude" : "-1.551393",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_6",
+		"libelle" : "Decathlon",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Grands Châtaigniers 44120 Vertou",
+		"latitude" : "47.179522",
+		"longitude" : "-1.501329",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_7",
+		"libelle" : "Auchan",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Mendès France 44230 Saint Sébastien sur Loire",
+		"latitude" : "47.191739",
+		"longitude" : "-1.493016",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_8",
+		"libelle" : "Déchetterie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Pyramide 44230 Saint Sébastien sur Loire",
+		"latitude" : "47.199361",
+		"longitude" : "-1.483869",
+		"conseils" : "cons_lerelais",
+		"description_fr" : "La déchèterie, située rue de la Pyramide, est ouverte tous les jours de la semaine (sauf jours fériés). L'amplitude des heures d'ouverture va de 10h à 18h."
+	}, {
+		"code" : "sco_lerelais_9",
+		"libelle" : "Déchetterie CLÉ",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Vulcain 44000 Nantes",
+		"latitude" : "47.225689",
+		"longitude" : "-1.504958",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_10",
+		"libelle" : "Carrefour",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Boulevard Beaujoire 44000 Nantes",
+		"latitude" : "47.258396",
+		"longitude" : "-1.511795",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_11",
+		"libelle" : "Déchetterie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "L'Ebaupin 44470 Carquefou",
+		"latitude" : "47.29035",
+		"longitude" : "-1.4408",
+		"conseils" : "cons_lerelais",
+		"description_fr" : "Lundi au dimanche, 10h-18h sauf jours fériés"
+	}, {
+		"code" : "sco_lerelais_12",
+		"libelle" : "Déchetterie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rond point Lacroix, 44470 Mauves-sur-Loire",
+		"latitude" : "47.31266",
+		"longitude" : "-1.410673",
+		"conseils" : "cons_lerelais",
+		"description_fr" : "Tel. : +33 6 61 66 42 39 Ouverte Le lundi et le mercredi de 14h à 18h et le samedi de 10h à 18h...."
+	}, {
+		"code" : "sco_lerelais_13",
+		"libelle" : "Auchan",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Route Vannes 44800 Saint Herblain",
+		"latitude" : "47.247149",
+		"longitude" : "-1.607827",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_14",
+		"libelle" : "Polyclinique",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Bas Moulin 44800 Saint Herblain",
+		"latitude" : "47.22614",
+		"longitude" : "-1.608814",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_15",
+		"libelle" : "Leclerc Atout-Sud",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Ordronneau 44400 Rezé",
+		"latitude" : "47.193139",
+		"longitude" : "-1.574458",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_16",
+		"libelle" : "Déchetterie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Panhard 44700 Orvault",
+		"latitude" : "47.257024",
+		"longitude" : "-1.633254",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_17",
+		"libelle" : "Déchetterie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Avenue Forêt 44860 Saint Aignan de Grandlieu",
+		"latitude" : "47.148488",
+		"longitude" : "-1.632353",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_18",
+		"libelle" : "Jardiland",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Gustavburg 44340 Bouguenais",
+		"latitude" : "47.174902",
+		"longitude" : "-1.609906",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_19",
+		"libelle" : "Lidl",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Allende 44340 Bouguenais",
+		"latitude" : "47.174186",
+		"longitude" : "-1.624009",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_20",
+		"libelle" : "Déchetterie de Tougas ",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Route Départementale 107 44800 Saint Herblain",
+		"latitude" : "47.194879",
+		"longitude" : "-1.638412",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_21",
+		"libelle" : "Le Relais Atlantique",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Impasse Bourrelier 44800 Saint Herblain",
+		"latitude" : "47.222149",
+		"longitude" : "-1.64214",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_22",
+		"libelle" : "Capellia",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Chemin Roche Blanche 44240 La Chapelle sur Erdre",
+		"latitude" : "47.279802",
+		"longitude" : "-1.557053",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_23",
+		"libelle" : "Géant",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Ultrecht 44240 La Chapelle sur Erdre",
+		"latitude" : "47.284521",
+		"longitude" : "-1.5523",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_24",
+		"libelle" : "Boulangerie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "20 Rue Louis Blériot, 44980 Sainte-Luce-Sur-Loire",
+		"latitude" : "47.273775",
+		"longitude" : "-1.466391",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_25",
+		"libelle" : "Boulangerie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Nantes 44470 Thouaré sur Loire",
+		"latitude" : "47.258604",
+		"longitude" : "-1.452927",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_26",
+		"libelle" : "Leclerc Pôle-Sud",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Route Clisson 44115 Basse Goulaine",
+		"latitude" : "47.18501",
+		"longitude" : "-1.463962",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_27",
+		"libelle" : "Chronodrive (arrière)",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Atlantique 44115 Basse Goulaine",
+		"latitude" : "47.18692",
+		"longitude" : "-1.46144",
+		"conseils" : "cons_lerelais"
+	}, {
+		"code" : "sco_lerelais_28",
+		"libelle" : "Déchetterie",
+		"modesCollecte" : "smco_conteneurlerelais",
+		"type" : "Conteneur Le Relais",
+		"adresseTemp" : "Rue Legendre 44400 Rezé",
+		"latitude" : "47.158541",
+		"longitude" : "-1.533561",
+		"conseils" : "cons_lerelais"
+	},
+
+	{
+		"code" : "stco_er_1",
+		"quartier" : "Port Boyer",
+		"libelle" : "Collecte encombrants Port Boyer",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les mercredis matins, tous les mercredis après-midis"
+	}, {
+		"code" : "stco_er_2",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "les 1er et 3ème jeudis matins"
+	}, {
+		"code" : "stco_er_3",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les jeudis matins, tous les jeudis après-midis"
+	}, {
+		"code" : "stco_er_4",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les mardis matins, tous les mardis après-midis, tous les mercredis après-midis"
+	}, {
+		"code" : "stco_er_5",
+		"quartier" : "Clos Toreau",
+		"libelle" : "Collecte encombrants Clos Toreau",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les lundis matins"
+	}, {
+		"code" : "stco_er_6",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les mardis matins, tous les mardis après-midis, tous les vendredis après-midis, tous les vendredis matins"
+	}, {
+		"code" : "stco_er_7",
+		"quartier" : "Halvèque",
+		"libelle" : "Collecte encombrants Halvèque",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les jeudis après-midis, tous les jeudis matins"
+	}, {
+		"code" : "stco_er_8",
+		"quartier" : "Malakoff ",
+		"libelle" : "Collecte encombrants Malakoff ",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les jeudis après-midis"
+	}, {
+		"code" : "stco_er_9",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants_resume",
+		"longitude" : "47.20",
+		"description_fr" : "tous les mardis après-midis, tous les mardis après-midis, tous les mardis après-midis, tous les mardis matins, tous les mercredis après-midis, tous les mercredis matins"
+	}, {
+		"code" : "stco_encombrants1",
+		"quartier" : "Port Boyer",
+		"libelle" : "Collecte encombrants Port Boyer",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.543354",
+		"latitude" : "47.242146",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants2",
+		"quartier" : "Port Boyer",
+		"libelle" : "Collecte encombrants Port Boyer",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.543343",
+		"latitude" : "47.239693",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants3",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.609803",
+		"latitude" : "47.209106",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants4",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.609540",
+		"latitude" : "47.208305",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants5",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.609476",
+		"latitude" : "47.210514",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants6",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.610125",
+		"latitude" : "47.209839",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants7",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.611782",
+		"latitude" : "47.207748",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants8",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.608741",
+		"latitude" : "47.206718",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants9",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.609953",
+		"latitude" : "47.207203",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants10",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.607502",
+		"latitude" : "47.207375",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants11",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.607984",
+		"latitude" : "47.206802",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants12",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606724",
+		"latitude" : "47.207077",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants13",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606176",
+		"latitude" : "47.207726",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants14",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606262",
+		"latitude" : "47.208164",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants15",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605425",
+		"latitude" : "47.209137",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants16",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605731",
+		"latitude" : "47.208763",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants17",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606042",
+		"latitude" : "47.209545",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants18",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606504",
+		"latitude" : "47.209732",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants19",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606960",
+		"latitude" : "47.209919",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants20",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.604873",
+		"latitude" : "47.209393",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants21",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.604519",
+		"latitude" : "47.209778",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants22",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.603543",
+		"latitude" : "47.209049",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants23",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.600651",
+		"latitude" : "47.209049",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants24",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.600914",
+		"latitude" : "47.208752",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants25",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602142",
+		"latitude" : "47.208328",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants26",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602598",
+		"latitude" : "47.208778",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins du mois."
+	}, {
+		"code" : "stco_encombrants27",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.609325",
+		"latitude" : "47.206310",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants28",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.608092",
+		"latitude" : "47.206005",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants29",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.607823",
+		"latitude" : "47.206299",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants30",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606879",
+		"latitude" : "47.206726",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants31",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.607115",
+		"latitude" : "47.206413",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants32",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606820",
+		"latitude" : "47.205887",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants33",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605908",
+		"latitude" : "47.204906",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants34",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.604792",
+		"latitude" : "47.203766",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants35",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.604546",
+		"latitude" : "47.205467",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants36",
+		"quartier" : "habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredi après-midis de chaque mois.",
+		"libelle" : "habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredi après-midis de chaque mois.",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605442",
+		"latitude" : "47.205490",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants37",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.603923",
+		"latitude" : "47.204731",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants38",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.604632",
+		"latitude" : "47.205021",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants39",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605345",
+		"latitude" : "47.206245",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants40",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605522",
+		"latitude" : "47.206715",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants41",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.604937",
+		"latitude" : "47.207474",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants42",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605780",
+		"latitude" : "47.206127",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants43",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.598001",
+		"latitude" : "47.206932",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants44",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.598092",
+		"latitude" : "47.207485",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants45",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.599401",
+		"latitude" : "47.206821",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants46",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.597288",
+		"latitude" : "47.209042",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants47",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.598103",
+		"latitude" : "47.206043",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants48",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.598366",
+		"latitude" : "47.205345",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants49",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.597191",
+		"latitude" : "47.205250",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants50",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.596429",
+		"latitude" : "47.205334",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants51",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.597905",
+		"latitude" : "47.204868",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants52",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.595330",
+		"latitude" : "47.206646",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants53",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.596440",
+		"latitude" : "47.207253",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants54",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.596488",
+		"latitude" : "47.208115",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 2ème et 4ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants55",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.594359",
+		"latitude" : "47.209431",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants56",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.594107",
+		"latitude" : "47.208725",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants57",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.593028",
+		"latitude" : "47.209625",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants58",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.592487",
+		"latitude" : "47.209740",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants59",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.590244",
+		"latitude" : "47.209328",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants60",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.591516",
+		"latitude" : "47.209717",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants61",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.591006",
+		"latitude" : "47.209499",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants62",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.589804",
+		"latitude" : "47.210236",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants63",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.607614",
+		"latitude" : "47.200321",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants64",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.606584",
+		"latitude" : "47.200684",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants65",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.605345",
+		"latitude" : "47.201630",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants66",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.603607",
+		"latitude" : "47.203072",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants67",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602405",
+		"latitude" : "47.202614",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants68",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.600978",
+		"latitude" : "47.203190",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants69",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602083",
+		"latitude" : "47.203331",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants70",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602679",
+		"latitude" : "47.203579",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants71",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.603049",
+		"latitude" : "47.203720",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants72",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602641",
+		"latitude" : "47.204891",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants73",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.603296",
+		"latitude" : "47.204086",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants74",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.603033",
+		"latitude" : "47.204460",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants75",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.610146",
+		"latitude" : "47.209972",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants76",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.611139",
+		"latitude" : "47.208851",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants77",
+		"quartier" : "Bellevue",
+		"libelle" : "Collecte encombrants Bellevue",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.611841",
+		"latitude" : "47.209599",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse les 1er et 3ème jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants78",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519386",
+		"latitude" : "47.242218",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants79",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518356",
+		"latitude" : "47.242970",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants80",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519600",
+		"latitude" : "47.241409",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants81",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.517637",
+		"latitude" : "47.240906",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants82",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.517594",
+		"latitude" : "47.241848",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants83",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521113",
+		"latitude" : "47.240387",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants84",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519257",
+		"latitude" : "47.240005",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants85",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518742",
+		"latitude" : "47.239754",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants86",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.517508",
+		"latitude" : "47.239338",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants87",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.517090",
+		"latitude" : "47.238655",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants88",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518570",
+		"latitude" : "47.238266",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants89",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518136",
+		"latitude" : "47.238369",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants90",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.520442",
+		"latitude" : "47.236340",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants91",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519488",
+		"latitude" : "47.236855",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants92",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521649",
+		"latitude" : "47.235676",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants93",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519895",
+		"latitude" : "47.237782",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants94",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.520668",
+		"latitude" : "47.238323",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants95",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519724",
+		"latitude" : "47.238178",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants96",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.517953",
+		"latitude" : "47.237591",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants97",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.523827",
+		"latitude" : "47.241196",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants98",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521311",
+		"latitude" : "47.240845",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants99",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.522631",
+		"latitude" : "47.241859",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants100",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521998",
+		"latitude" : "47.242607",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants101",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521682",
+		"latitude" : "47.243763",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants102",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.520936",
+		"latitude" : "47.244125",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants103",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519600",
+		"latitude" : "47.243431",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants104",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518865",
+		"latitude" : "47.245064",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants105",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518431",
+		"latitude" : "47.243790",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants106",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.512514",
+		"latitude" : "47.245903",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants107",
+		"quartier" : "Bottière",
+		"libelle" : "Collecte encombrants Bottière",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.512567",
+		"latitude" : "47.246925",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants108",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.590754",
+		"latitude" : "47.231232",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants109",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.590384",
+		"latitude" : "47.230988",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants110",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.587610",
+		"latitude" : "47.232151",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants111",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.587170",
+		"latitude" : "47.231129",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants112",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.587455",
+		"latitude" : "47.230881",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants113",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.588034",
+		"latitude" : "47.231335",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants114",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.588538",
+		"latitude" : "47.230873",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants115",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.588002",
+		"latitude" : "47.231750",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants116",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.586564",
+		"latitude" : "47.231617",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants117",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.586114",
+		"latitude" : "47.232037",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants118",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.586505",
+		"latitude" : "47.233101",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants119",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585169",
+		"latitude" : "47.232716",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants120",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585861",
+		"latitude" : "47.233360",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants121",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585888",
+		"latitude" : "47.233128",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants122",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585368",
+		"latitude" : "47.231560",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants123",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.584386",
+		"latitude" : "47.231300",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants124",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.584021",
+		"latitude" : "47.230919",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants125",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.583270",
+		"latitude" : "47.231407",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants126",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.583694",
+		"latitude" : "47.231655",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants127",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.584263",
+		"latitude" : "47.231983",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants128",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.584848",
+		"latitude" : "47.231964",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants129",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585062",
+		"latitude" : "47.231834",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants130",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585599",
+		"latitude" : "47.229721",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants131",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585416",
+		"latitude" : "47.230080",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants132",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585057",
+		"latitude" : "47.230099",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants133",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.584933",
+		"latitude" : "47.230461",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants134",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.584424",
+		"latitude" : "47.230625",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants135",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.588898",
+		"latitude" : "47.231030",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants136",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.588131",
+		"latitude" : "47.230618",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants137",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.587396",
+		"latitude" : "47.230206",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants138",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.589203",
+		"latitude" : "47.229824",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants139",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.588705",
+		"latitude" : "47.229538",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants140",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.589965",
+		"latitude" : "47.230213",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants141",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.588367",
+		"latitude" : "47.229198",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants142",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585218",
+		"latitude" : "47.229046",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants143",
+		"quartier" : "Breil",
+		"libelle" : "Collecte encombrants Breil",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.585143",
+		"latitude" : "47.228081",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants144",
+		"quartier" : "Clos Toreau",
+		"libelle" : "Collecte encombrants Clos Toreau",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.529235",
+		"latitude" : "47.195530",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants145",
+		"quartier" : "Clos Toreau",
+		"libelle" : "Collecte encombrants Clos Toreau",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.528891",
+		"latitude" : "47.194843",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants146",
+		"quartier" : "Clos Toreau",
+		"libelle" : "Collecte encombrants Clos Toreau",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.530168",
+		"latitude" : "47.196274",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants147",
+		"quartier" : "Clos Toreau",
+		"libelle" : "Collecte encombrants Clos Toreau",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.527647",
+		"latitude" : "47.195984",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants148",
+		"quartier" : "Clos Toreau",
+		"libelle" : "Collecte encombrants Clos Toreau",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.527014",
+		"latitude" : "47.195580",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants149",
+		"quartier" : "Clos Toreau",
+		"libelle" : "Collecte encombrants Clos Toreau",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.526005",
+		"latitude" : "47.195206",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les lundis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants150",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.601923",
+		"latitude" : "47.221069",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants151",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602620",
+		"latitude" : "47.222118",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants152",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.601536",
+		"latitude" : "47.222382",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants153",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.599938",
+		"latitude" : "47.223221",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants154",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.598629",
+		"latitude" : "47.223232",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants155",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.600935",
+		"latitude" : "47.223141",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants156",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.601965",
+		"latitude" : "47.224888",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants157",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.601290",
+		"latitude" : "47.224552",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants158",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.599391",
+		"latitude" : "47.225258",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants159",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.600860",
+		"latitude" : "47.225426",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants160",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.601086",
+		"latitude" : "47.225082",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants161",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.602373",
+		"latitude" : "47.223839",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants162",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.597878",
+		"latitude" : "47.225552",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants163",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.597663",
+		"latitude" : "47.228428",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants164",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.597062",
+		"latitude" : "47.223423",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants165",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.596376",
+		"latitude" : "47.223064",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants166",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.598414",
+		"latitude" : "47.224632",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants167",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.597760",
+		"latitude" : "47.224224",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants168",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.598929",
+		"latitude" : "47.224689",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants169",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.593329",
+		"latitude" : "47.222080",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants170",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.591666",
+		"latitude" : "47.222904",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants171",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.589295",
+		"latitude" : "47.224506",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants172",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.590282",
+		"latitude" : "47.224136",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants173",
+		"quartier" : "Dervallières",
+		"libelle" : "Collecte encombrants Dervallières",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.591290",
+		"latitude" : "47.223774",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les vendredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants174",
+		"quartier" : "Halvèque",
+		"libelle" : "Collecte encombrants Halvèque",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521553",
+		"latitude" : "47.255310",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants175",
+		"quartier" : "Halvèque",
+		"libelle" : "Collecte encombrants Halvèque",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518549",
+		"latitude" : "47.254730",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants176",
+		"quartier" : "Halvèque ",
+		"libelle" : "Collecte encombrants Halvèque ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518903",
+		"latitude" : "47.256687",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants177",
+		"quartier" : "Halvèque ",
+		"libelle" : "Collecte encombrants Halvèque ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518586",
+		"latitude" : "47.255676",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants178",
+		"quartier" : "Halvèque",
+		"libelle" : "Collecte encombrants Halvèque",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.518790",
+		"latitude" : "47.256310",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants179",
+		"quartier" : "Halvèque",
+		"libelle" : "Collecte encombrants Halvèque",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.519799",
+		"latitude" : "47.257324",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants180",
+		"quartier" : "Malakoff ",
+		"libelle" : "Collecte encombrants Malakoff ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.532260",
+		"latitude" : "47.214024",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants181",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.532561",
+		"latitude" : "47.213959",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants182",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.532362",
+		"latitude" : "47.213787",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants183",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.532276",
+		"latitude" : "47.214752",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants184",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.530908",
+		"latitude" : "47.215000",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants185",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.526767",
+		"latitude" : "47.214931",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants186",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.527126",
+		"latitude" : "47.214840",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants187",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.529342",
+		"latitude" : "47.214291",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants188",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.528307",
+		"latitude" : "47.214420",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants189",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521853",
+		"latitude" : "47.216351",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants190",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521510",
+		"latitude" : "47.216732",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants191",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.521842",
+		"latitude" : "47.216904",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants192",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.522433",
+		"latitude" : "47.217113",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants193",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.523039",
+		"latitude" : "47.217098",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants194",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.523629",
+		"latitude" : "47.216705",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants195",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.524766",
+		"latitude" : "47.216305",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants196",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.524079",
+		"latitude" : "47.216702",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants197",
+		"quartier" : "Malakoff",
+		"libelle" : "Collecte encombrants Malakoff",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.525785",
+		"latitude" : "47.215378",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les jeudis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants198",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.575594",
+		"latitude" : "47.264771",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants199",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.578577",
+		"latitude" : "47.264793",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants200",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.576989",
+		"latitude" : "47.265202",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants201",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.578512",
+		"latitude" : "47.264843",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants202",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.575744",
+		"latitude" : "47.264801",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants203",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.577010",
+		"latitude" : "47.265179",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants204",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.578791",
+		"latitude" : "47.265491",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants205",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.577868",
+		"latitude" : "47.264183",
+		"description_fr" : "La collecte des encombrants pour l'habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants206",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.578083",
+		"latitude" : "47.263454",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants207",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.575025",
+		"latitude" : "47.265633",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants208",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.579027",
+		"latitude" : "47.261314",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants209",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.578094",
+		"latitude" : "47.261517",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants210",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.578416",
+		"latitude" : "47.260067",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants211",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.577289",
+		"latitude" : "47.261082",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants212",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.578265",
+		"latitude" : "47.259071",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants213",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.576678",
+		"latitude" : "47.259640",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants214",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.575905",
+		"latitude" : "47.257965",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants215",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.577890",
+		"latitude" : "47.258392",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants216",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.577343",
+		"latitude" : "47.258015",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants217",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.577268",
+		"latitude" : "47.257542",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mardis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants218",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.571989",
+		"latitude" : "47.259972",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants219",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.572161",
+		"latitude" : "47.258736",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants220",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.573792",
+		"latitude" : "47.258656",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants221",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.573792",
+		"latitude" : "47.259945",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants222",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.574199",
+		"latitude" : "47.261028",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants223",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.572665",
+		"latitude" : "47.261227",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants224",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.563073",
+		"latitude" : "47.260620",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants225",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.564640",
+		"latitude" : "47.260387",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants226",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.564490",
+		"latitude" : "47.261196",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants227",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.565616",
+		"latitude" : "47.261635",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis après-midis de chaque mois."
+	}, {
+		"code" : "stco_encombrants228",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.569285",
+		"latitude" : "47.256428",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants229",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.567708",
+		"latitude" : "47.254665",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants230",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.568309",
+		"latitude" : "47.255371",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants231",
+		"quartier" : "Nantes Nord",
+		"libelle" : "Collecte encombrants Nantes Nord",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.569082",
+		"latitude" : "47.254932",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants232",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.566947",
+		"latitude" : "47.255489",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants233",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.569918",
+		"latitude" : "47.253616",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants234",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.569457",
+		"latitude" : "47.254265",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants235",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.569253",
+		"latitude" : "47.253399",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants236",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.567730",
+		"latitude" : "47.253166",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants237",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.566689",
+		"latitude" : "47.253738",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants238",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.566550",
+		"latitude" : "47.253143",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants239",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.566399",
+		"latitude" : "47.252285",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants240",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.575454",
+		"latitude" : "47.254433",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants241",
+		"quartier" : "Nantes Nord ",
+		"libelle" : "Collecte encombrants Nantes Nord ",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.574135",
+		"latitude" : "47.254562",
+		"description_fr" : "La collecte des encombrants pour l&#39;habitat vertical ou habitat collectif a lieu à cette adresse tous les mercredis matins de chaque mois."
+	}, {
+		"code" : "stco_encombrants242",
+		"quartier" : "Repère 44",
+		"libelle" : "Repère 44",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.555947",
+		"latitude" : "47.215534"
+	}, {
+		"code" : "stco_encombrants244",
+		"quartier" : "Repère 45",
+		"libelle" : "Repère 45",
+		"modesCollecte" : "modco_encombrants",
+		"longitude" : "-1.555148",
+		"latitude" : "47.219975"
+	},]
+}

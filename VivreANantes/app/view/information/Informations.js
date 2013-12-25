@@ -14,7 +14,8 @@ Ext.define('VivreANantes.view.information.Informations', {
 				scrollable : true,
 				items : [{
 							xtype : 'informationsButtonsList_xtype'
-						}]
+						}],
+				defaultBackButtonText : "Retour"
 
 			}
 		});

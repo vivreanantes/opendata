@@ -12,6 +12,7 @@ Ext.define('VivreANantes.view.trisac.Trisacs', {
 				items : [{
 							xtype : 'TrisacContainer_xtype'
 						}
-				]
+				],
+				defaultBackButtonText : "Retour"
 			}
 		});

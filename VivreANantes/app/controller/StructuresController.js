@@ -26,7 +26,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
 
 			structuresFormSelectQuartier : {
 				change : "onStructuresStoreFilter",
-				initialize : "setOptionsQuartier",
+				initialize : "setOptionsQuartiers",
 				show : "selectFirstOptionsQuartier"
 			}
 
@@ -43,12 +43,17 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'structuresDetails_xtype button' : {
-				tap : 'onTapLinkButton'
+				tap : 'onTapLinkButton',
+				back : 'onPushBackButton11'
 			}
 		}
 	},
 
-
+	onPushBackButton11 : function() {
+		// console.log("onPushBackButton11");
+		// this.onPushBackButton();
+	},
+	
 	/**
 	 * A l"initialisation de la fenêtre d"accueil
 	 */

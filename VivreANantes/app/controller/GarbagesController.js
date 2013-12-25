@@ -7,7 +7,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
-			garbagesContainer2 : 'garbagesContainer2_xtype',
+			garbagesContainer : 'garbagescontainer_xtype',
 			garbagesList : 'garbagesList_xtype',
 			garbageDetail : 'garbagesDetails_xtype',
 			garbagesForm : 'garbagesForm_xtype',
@@ -16,10 +16,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			garbagesFormButton : '#garbagesFormButton',
 			garbagesButtonsPanel : 'garbagesButtonsPanel_xtype',
 			usualCategoriesButtonsPanel : 'usualCategoriesButtonsPanel_xtype',
-			// usualSubCategoriesButtonsPanel :
-			// 'usualSubCategoriesButtonsPanel_xtype',
 			advicesList : 'advicesList_xtype',
-			// wasteTreatmentsCategoriesList : 'wasteTreatmentsCategoriesList',
 			collectModList : 'collectModList_xtype',
 			usualCategoriesList2 : 'usualCategoriesList2_xtype',
 			informationsList : 'informationsList_xtype'
@@ -45,7 +42,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 			garbagesView : {
 				push : 'onGarbagesViewPush',
-				show : 'onActivate'
+				show : 'onActivate',
+				back : 'onPushBackButton1'
 			},
 
 			garbagesFormText : {
@@ -57,7 +55,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			
 			},
 			garbagesFormButton : {
-				tap : 'onTapGarbagesFormButton'
+				tap : 'onTapGarbagesFormButton',
+				back : 'onPushBackButton2'
 			},
 			advicesList : {
 				initialize : 'onInitGarbagesAdvices'
@@ -78,29 +77,64 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'usualCategoriesButtonsPanel_xtype button' : {
-				tap : 'onShowDetails'
+				tap : 'onShowDetails',
+				back : 'onPushBackButton3'
 			},
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'usualSubCategoriesButtonsPanel_xtype button' : {
-				tap : 'onShowDetails'
+				tap : 'onShowDetails',
+				back : 'onPushBackButton4'
 			},
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'garbagesButtonsPanel_xtype button' : {
-				tap : 'showGarbagesDetail'
+				tap : 'showGarbagesDetail',
+				back : 'onPushBackButton5'
 			},
 
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'garbagesDetails_xtype button' : {
-				tap : 'onTapLinkButton'
+				tap : 'onTapLinkButton',
+				back : 'onPushBackButton6'
 			}
 			
 			
 		}
 	},
+	
+	
+			onPushBackButton1 : function() {
+				// console.log("onPushBackButton1");
+				// this.onPushBackButton();
+				
+				// Retour sur la page principale de "déchets"
+				// this.getGarbagesView().setActiveItem(0);
+				// this.manageBackButton("garbages_xtype", true);
 
+			},
+			onPushBackButton2 : function() {
+				// console.log("onPushBackButton2");
+				// this.onPushBackButton();
+			},
+			onPushBackButton3 : function() {
+				// console.log("onPushBackButton3");
+				// this.onPushBackButton();
+			},
+			onPushBackButton4 : function() {
+				// console.log("onPushBackButton4");
+				// this.onPushBackButton();
+			},
+			onPushBackButton5 : function() {
+				// console.log("onPushBackButton5");
+				// this.onPushBackButton();
+			},
+			onPushBackButton6 : function() {
+				// console.log("onPushBackButton6");
+				// this.onPushBackButton();
+			},
+			
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
 		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
 		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu");
@@ -109,6 +143,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	onTapLinkButton : function(button, e, eOpts) {
+		console.log("saveBackButton 1");
+		this.saveBackButton("garbages_xtype", false);
 		this.manageLinkButtons(button._data["code"]);
 	},
 
@@ -119,7 +155,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		} else {
 			this.showDetails(button.id);
 		}
-
+		console.log("saveBackButton 4");
+		this.saveBackButton("garbages_xtype", true);
 	},
 
 	/**
@@ -132,20 +169,25 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		this.getGarbagesFormText().setValue("");
 		this.getGarbagesFormSelect().setValue(collectModId);
 		this.filter2();
-		// this.getGarbagesContainer2().push(this.garbagesButtonsPanel);
 		this.getGarbagesView().push(this.garbagesButtonsPanel);
+		console.log("saveBackButton 5");
+		this.saveBackButton("garbages_xtype", true);
 	},
 
 	showSubCategory : function(collectModId) {
-		if (this.usualSubCategoriesButtonsPanel == null) {
-			// this.usualSubCategoriesButtonsPanel =
-			// Ext.create('VivreANantes.view.garbages.UsualSubCategoriesButtonsPanel');
-			this.usualSubCategoriesButtonsPanel = Ext
-					.create('VivreANantes.view.garbages.UsualCategoriesButtonPanel');
-
-		}
-		// this.getGarbagesContainer2().push(this.usualSubCategoriesButtonsPanel);
-		this.getGarbagesView().push(this.usualSubCategoriesButtonsPanel);
+		// if (this.usualSubCategoriesButtonsPanel == null) {
+		// 	// this.usualSubCategoriesButtonsPanel =
+		// 	// Ext.create('VivreANantes.view.garbages.UsualSubCategoriesButtonsPanel');
+		// 	this.usualSubCategoriesButtonsPanel = Ext
+		// 			.create('VivreANantes.view.garbages.UsualCategoriesButtonPanel');
+		// }
+		// // this.getGarbagesContainer2().push(this.usualSubCategoriesButtonsPanel);
+		// this.getGarbagesView().push(this.usualSubCategoriesButtonsPanel);
+					
+		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
+		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu_toxique");
+		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+		this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
 	},
 
 	onInitUsualCategoriesButtonsPanel : function(container) {
@@ -384,9 +426,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// Affecte les modes de collecte
 			
 			// this.garbageDetail.items.items['0'].items.items['1'].setItems(arrayItemsToShow);
-			var nbGarbagesdetailsCollectmodsMax = 8;	// la page GarbagesDetails.js affiche 8 éléments
+			var nbElementsMax = 8;	// la page GarbagesDetails.js affiche 8 éléments
 			this.setDataInButtons(this.garbageDetail.items.items['0'].items.items['1'], 
-									"garbagesdetails_collectmod", arrayItemsToShow, nbGarbagesdetailsCollectmodsMax);
+									"garbagesdetails_collectmod", arrayItemsToShow, nbElementsMax);
 			//this.setItemsElement(this.garbageDetail,
 			//		"garbagesdetails_recyclableetmodesdecollecte",
 			//		arrayItemsToShow);
@@ -409,25 +451,46 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			/*var arraysItemsAdvices = this.getItemsAdvices(conseils);
 			this.setItemsElement(this.garbageDetail,
 					"garbagesdetails_conseils", arraysItemsAdvices);*/
-			var arraysItemsAdvices = this.getItemsAdvices(conseils);
-			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_conseils", arraysItemsAdvices);
+			var nbElementsMax = 2;	// la page GarbagesDetails.js affiche 2 éléments
+			var arraysConseils = this.getArrayItemsToShowAdvices(conseils);
+			this.setDatasConseils(this.garbageDetail.items, 
+									"garbagesdetails_conseils", "libelle", arraysConseils.les_libelles, nbElementsMax);
+			this.setDatasConseils(this.garbageDetail.items, 
+									"garbagesdetails_conseils", "bouton", arraysConseils.les_boutons, nbElementsMax);
+			// var arraysItemsAdvices = this.getItemsAdvices(conseils);
+			// this.setItemsElement(this.garbageDetail,
+			// "garbagesdetails_conseils", arraysItemsAdvices);
 
 			// Ajout des commentaires OK
 			var code = record.data["code"];
-			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_commentaires", this
-							.getItemsComments(code, title));
-			/*		
-			var arraysItemsComments = this.getItemsComments(record.data["code"], title)  
-			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_commentaires", arraysItemsComments);*/
+			// this.setItemsElement(this.garbageDetail,
+			// "garbagesdetails_commentaires", this.getItemsComments(code,
+			// title));
+			var arraysCommentaires = this.getArrayItemsToShowComments(code,
+					title);
+			var nbElementsMax = 3; 
+			// la page GarbagesDetails.js  affiche 3 éléments
+			this.setDataInButtons(this.garbageDetail,
+					"garbagesdetails_commentaires",
+					arraysCommentaires.les_libelles, nbElementsMax);
+			var index = this.garbageDetail.items.keys
+					.indexOf("garbagesdetails_envoyer");
+			this.garbageDetail.items.items[index].setData({
+						code : arraysCommentaires.le_titre
+					});
+			/*
+			 * var arraysItemsComments =
+			 * this.getItemsComments(record.data["code"], title)
+			 * this.setItemsElement(this.garbageDetail,
+			 * "garbagesdetails_commentaires", arraysItemsComments);
+			 */
 
 			// Bind the record onto the show contact view
 			this.garbageDetail.setData(record.data);
 
 			// Push the show contact view into the navigation view
 			this.getGarbagesView().push(this.garbageDetail);
+			
 		}
 	},
 
