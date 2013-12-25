@@ -114,8 +114,6 @@ Ext
 		// Colonnes enterrées : à faire
 		
 		// TODO encombrants : améliorer la macro et le traitement java
-		// TODO 'Rendez-vous Place des Dervallières (10)' : des conseils seraient bienvenus
-		// TODO Supermarché (vente) Epicerie Aux 4 saisons (1)' : "Supermarché" et "Epicerie" > incohérent 
 			
 		/////////// CRN Long terme //////////
 

@@ -62,7 +62,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 			},
 
 			onTapLinkButton : function(button, e, eOpts) {
-				// this.manageLinkButtons(button._data["code"]);
+				this.manageLinkButtons(button._data["code"]);
 			},
 			
 			onShowDetails : function(button, e, eOpts) {

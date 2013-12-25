@@ -139,6 +139,10 @@ function _translate(stKey, stLocale) {
 			"en" : "bulky waste",
 			"fr" : "Encombrant"
 		},
+		"label_modco_encombrants_resume" : {
+			"en" : "bulky waste",
+			"fr" : "Encombrant"
+		},
 		"label_smco_conteneurlerelais" : {
 			"en" : "Contener Le Relais",
 			"fr" : "Conteneur Le Relais"

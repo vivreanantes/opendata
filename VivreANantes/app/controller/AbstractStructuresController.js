@@ -5,7 +5,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	extend : "VivreANantes.controller.AbstractController",
 
 	onTapLinkButton : function(button, e, eOpts) {
-		// this.manageLinkButtons(button._data["code"]);
+		this.manageLinkButtons(button._data["code"]);
 	},
 	
 	
@@ -19,9 +19,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			}
 		}
 		return store;
-	}
+	},
 
-	,
 	showStructuresDetail : function(list, index, node, record) {
 		if (record) {
 			if (!this.structuresDetail) {
@@ -30,18 +29,30 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			}
 			// Ajout du type
 			var descriptionTraduit = "";
-			if ((record.data["type"] != null && record.data["type"] !== "")
-					|| (record.data["modesCollecte"] != null && record.data["modesCollecte"] !== "")) {
+			if (record.data["modesCollecte"] != null && record.data["modesCollecte"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_type"));
+				var modeCollecteTraduit = "";
+				var typeTraduit = "";
 				if (record.data["modesCollecte"] != null
 						&& record.data["modesCollecte"] !== "") {
-					var modeCollecteTraduit = this
-							.stringUpperFirstLetter("label_"
-									+ record.data["modesCollecte"]);
+					// On découpe modesCollecte, puis on traduit
+					var arModesCollecte = record.data["modesCollecte"].split(",");
+					for (var i = 0; i < arModesCollecte.length; i++) {
+						var unModeCollecte = arModesCollecte[i];
+						if (i>0) {
+							modeCollecteTraduit = modeCollecteTraduit + ", ";
+						}
+						modeCollecteTraduit = modeCollecteTraduit + this.translate("label_"	+ unModeCollecte);
+					}
+					// Dans le cas de distribution Trisac on ajoute le type
+					if (record.data["modesCollecte"]==="modco_distrisac") {
+						typeTraduit = " - " + record.data["type"];
+					}
 				}
+				
 				descriptionTraduit += label + " : " + modeCollecteTraduit + " "
-						+ record.data["type"] + "<br/><br/>";
+						+ typeTraduit + "<br/><br/>";
 			}
 			// Ajout de la description
 			if (record.data["description_fr"] != null
@@ -92,8 +103,6 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					"structuresDetails_advices", arraysItemsAdvices);
 
 			// Affectation du titre
-			// TODO il faudrait traduite le type 
-			// var stType = this.utilGetStringFromSplitString(record.data["type"]);
 			var stType = record.data["type"];
 			var title = "<I>" + stType + "</I>" + " "
 					+ this.stringUpperFirstLetter(record.data["libelle"]);

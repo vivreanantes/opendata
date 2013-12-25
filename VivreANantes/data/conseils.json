@@ -145,6 +145,10 @@
 		"description" : "Les Tétra Pak se recyclent : le carton est récupéré, le reste est très rarement récupéré. Préféré les emballages en verre.",
 		"fiche" : "fiche_tetrapak"
 	}, {
+		"code" : "cons_plusieurstrisac",
+		"libelle" : "Plusieurs moyens pour récupérer des sacs",
+		"description" : "<li>- les \"rendez-vous\" dans le quartier d'habitation.<li>- les \"relais\" : vous pouvez retirer 3 rouleaux de sacs (bleus et/ou jaunes). Vous pouvez vous y rendre 2 fois par an.<li>- les acheter : en supermarché ou dans des distributeurs automatiques."
+	}, {
 		"code" : "cons_distrisac_relais",
 		"libelle" : "Retrait de sacs en relais (3 rouleaux par retrait, 2 retraits par an)",
 		"description" : "Les relais sont des lieux de réapprovisionnement destinés à dépanner si on ne peut se rendre aux rendez-vous : vous pouvez retirer 3 rouleaux de sacs (bleus et/ou jaunes). Vous pouvez vous y rendre 2 fois par an."
@@ -158,7 +162,7 @@
 		"description" : "- en supermarché : Leclerc Paridis, Super U Dalby, Carrefour Market Rond Point de Vannes, Intermarché Pitre Chevalier.<br/>- dans des distributeurs automatiques : devant la mairie de Chantenay, sous le marché de Talensac, dans le hall de la piscine Jules Verne, dans le hall de la piscine petite Amazonie."
 	}, {
 		"code" : "cons_distrisac_piecesobligatoires",
-		"libelle" : "Amener carte retrait",
+		"libelle" : "Amener carte retrait pour  \"dépôt\" et  \"rendez-vous\"",
 		"description" : "Pour le retrait, munissez-vous de votre carte de retrait, envoyée par courrier."
 	}, {
 		"code" : "cons_vider_paslaver",
