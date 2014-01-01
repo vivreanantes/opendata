@@ -8,13 +8,14 @@
  * </p>
  * 
  * 
- * TODO : - Gérer un nombre d'objets restreints à afficher - Gérer un
- * enregistrement dans le localStorage
- * 
  * 
  * 
  * 
  */
+ 
+ 
+/* Controlleur Carte */
+
 Ext.define('VivreANantes.controller.GeoController', {
     extend : 'VivreANantes.controller.AbstractController',
     requires : ['Ext.MessageBox'],
@@ -30,30 +31,13 @@ Ext.define('VivreANantes.controller.GeoController', {
             vanmaposm : {
                 activate : 'onMapActivate',
                 maplrender : 'onMapRender'
-            },
-            mapContainer : {
-                initialize : 'onInitMapContainer',
-                activate : 'onMapContainerActivate'
-
             }
+         
         }
     },
 
     init : function() {
-        var me = this;
-        var LeafIcon = L.Icon.extend({});
-        me.greenIcon = new LeafIcon({
-                    iconUrl : 'resources/icons/marker-icon-green.png'
-                });
-        me.pinkIcon = new LeafIcon({
-                    iconUrl : 'resources/icons/marker-icon-pink.png'
-                });
-        me.redIcon = new LeafIcon({
-                    iconUrl : 'resources/icons/marker-icon-red.png'
-                });
-        me.blueIcon = new LeafIcon({
-                    iconUrl : 'resources/icons/marker-icon-blue.png'
-                })
+      
     },
 
     resetCenter : function(geo) {
@@ -103,21 +87,6 @@ Ext.define('VivreANantes.controller.GeoController', {
 
     },
 
-    /**
-     * A l'initialisation du container (au démarrage de l'application, comme le
-     * container est dans le Viewport)
-     */
-    onInitMapContainer : function() {
-        console.log('onInitMapContainer');
-    },
-
-    /**
-     * A la première activation de la Carte, on crée l'objet Ext.Map
-     */
-    onMapContainerActivate : function(pContainer) {
-        console.log('onMapContainerActivate');
-
-    },
 
     /**
      * Action à l'initialisation de la Carte
@@ -148,12 +117,20 @@ Ext.define('VivreANantes.controller.GeoController', {
      * Positionner les structures
      * 
      */
-    positionnerStructures : function() {
+    onLoadStructureStore : function() {
+
+        console.log('onLoadStructureStore');
         var me = this;
+        var map = this.getVanmaposm();
+        
+        this.structureStore.each(function(record,index, count) {
 
-        console.log('positionnerStructures');
-
-        me.refreshMarkers();
+             	map.addStructure(record);
+     
+             
+         });
+         
+         map.render();
 
     },
 
@@ -168,24 +145,16 @@ Ext.define('VivreANantes.controller.GeoController', {
      *            eOpts
      */
     onMapRender : function(extmap, map, eOpts) {
-        var me = this;
-        if (!Ext.isDefined(me.cloudmade)) {
-            me.cloudmade = new L.TileLayer(
-                    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution : 'OpenStreetMap - VivreANantes',
-                        // attribution : 'Map data &copy; <a
-                        // href="http://openstreetmap.org">OpenStreetMap</a>
-                        // contributors, <a
-                        // href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
-                        // Imagery © <a
-                        // href="http://cloudmade.com">CloudMade</a>',
-                        maxZoom : 18
-                    });
-        }
+    	
+    	console.log('onMapRender');
+    	var map = this.getVanmaposm(); 
+        map.init();
 
-        // A l'initialisation de la carte, on crée une variable du
+        // GEOLOCALISATION DESACTIVEE pour l'instant
+        //A l'initialisation de la carte, on crée une variable du
         // controller pour gérer la modification de localisation
         // gérant la réactualisation en fonction de la postion
+    	/*
         if (!Ext.isDefined(me.geolocate)) {
             me.geolocate = Ext.create('Ext.util.Geolocation', {
                         autoUpdate : true,
@@ -204,20 +173,18 @@ Ext.define('VivreANantes.controller.GeoController', {
                             }
                         }
                     });
-        }
+        } */
 
-        if (!Ext.isDefined(me.structureStore)) {
-            me.structureStore = Ext.create('VivreANantes.store.StructureStore',
+        var me = this;
+        
+        if (!Ext.isDefined(this.structureStore)) {
+            this.structureStore = Ext.create('VivreANantes.store.StructureStore',
                     {
                         autoLoad : true,
                         listeners : {
                             'load' : function(store, results, successful) {
-                                // console.log("Chargement du structure store");
-                                // console.log(store);
-                                // console.log(results);
-                                // console.log(successful);
-
-                                me.positionnerStructures();
+                                console.log("Loading StructureStore");
+                                me.onLoadStructureStore();
                             }
 
                         }
@@ -230,8 +197,10 @@ Ext.define('VivreANantes.controller.GeoController', {
      * Action réalisée lorsqu'on active le panel Carte
      */
     onMapActivate : function(container, newc) {
-        console.log('onMapActivate');
-        this.verifyFirstTimeMap();
+        console.log('onMapActivate');     
+
+        
+        //this.verifyFirstTimeMap();
     },
 
     /**
@@ -248,84 +217,7 @@ Ext.define('VivreANantes.controller.GeoController', {
                             Ext.emptyFn);
             localStorage.setItem('alreadyAccessMap', 'true');
         }
-    },
-
-    /**
-     * 
-     */
-    onStructureStoreFilter : function() {
-        var me = this;
-
-        // var text = this.getGarbagesFormText();
-        // var select = this.getGarbagesFormSelect();
-        // var store = this.getGarbagesList().getStore();
-
-        // MOCK
-        var filter = "modco_decheterie";
-        // MOCK
-
-        if (filter === 'all') {
-            me.structureStore.clearFilter();
-
-        } else {
-            me.structureStore.filter('modesCollecte', filter);
-        }
-
-        // me.fireEvent('filterstructure',store);
-
-        me.refreshMarkers();
-    },
-
-    refreshMarkers : function() {
-        var me = this;
-        var map = me.getVanmaposm().map;
-
-        //map.clearLayers();
-        var labelDistrisac = this.translate("label_modco_distrisac");
-        var labelReemploi = this.translate("label_modco_reemploi");
-        var labelEncombrants = this.translate("label_modco_encombrants");
-        var labelEcotox = this.translate("label_modco_ecotox");
-
-        if (!map.hasLayer(me.cloudmade)) {
-            map.addLayer(me.cloudmade);
-        }
-        // Centrer à Nantes, la localisation fera le reste
-        map.setView(new L.LatLng(47.21837100000001, -1.553620999999985), 15);
-        // TODO : JSON des maps association : icone + categorie
-
-        me.structureStore.each(function(record) {
-                    var position = new L.LatLng(record.get('latitude'), record
-                                    .get('longitude'));
-                    var marker = new L.Marker(position);
-
-                    var icon;
-                    // MOCK
-                    if (record.get('modesCollecte') !=null && 
-                        record.get('modesCollecte')=="modco_distrisac") {
-                        var type = labelDistrisac+ "<br/>";
-                        icon = me.greenIcon;
-                    } else if (record.get('modesCollecte') !=null && 
-                        record.get('modesCollecte')=="modco_ecotox") {
-                        var type = labelEcotox+ "<br/>";	
-                        icon = me.redIcon;
-                    } else if (record.get('modesCollecte') !=null && 
-                        record.get('modesCollecte')=="modco_encombrants") {
-                        	var type = labelEncombrants+ "<br/>";
-                        icon = me.redIcon;
-                    } else if (record.get('modesCollecte') !=null && 
-                        record.get('modesCollecte')=="modco_reemploi") {
-                        var type = labelReemploi+ "<br/>";
-                        icon = me.pinkIcon;
-                    } else {
-                    	var type = "";
-                        icon = me.blueIcon;
-                       //  marker-icon-blue.png
-                    }
-                    marker.setIcon(icon);
-                    map.addLayer(marker);
-                    var label = type + record.get('libelle');
-                    marker.bindPopup(label).openPopup();
-                });
     }
+
 
 });
