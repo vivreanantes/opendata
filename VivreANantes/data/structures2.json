@@ -7643,7 +7643,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.228567",
+		"longitude" : " -1.587267",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7654,7 +7655,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "1 Place des Dervallières 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.223969",
+		"longitude" : "-1.598346",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Dervallieres Zola"
 	}, {
@@ -7665,7 +7667,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "8 Rue Watteau 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.224275",
+		"longitude" : "-1.599505",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Dervallieres Zola"
 	}, {
@@ -7676,7 +7679,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "52 Rue du Plessis Gautron 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206158",
+		"longitude" : "-1.604784",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7687,7 +7691,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "6 Rue Feyder 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.230119",
+		"longitude" : "-1.585772",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h00+13h30-17h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7698,7 +7703,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.228562",
+		"longitude" : "-1.587268",
+		"horaires" : "47.228562,-1.587268",
 		"plagesHoraires" : ",060213_me_14h30-19h00,150513_me_14h30-19h00,180913_me_14h30-19h00,041213_me_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7709,7 +7716,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 rue Lucien Aubert 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206581",
+		"longitude" : "-1.607891",
+		"horaires" : "47.206581,-1.607891",
 		"plagesHoraires" : ",040213_lu_14h30-19h00,130513_lu_14h30-19h00,160913_lu_14h30-19h00,021213_lu_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7720,7 +7729,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "47 Rue Georges Mélies 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.233033",
+		"longitude" : "-1.585983",
+		"horaires" : "47.233033,-1.585983",
 		"plagesHoraires" : ",070213_je_14h30-19h00,160513_je_14h30-19h00,190913_je_14h30-19h00,051213_je_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7731,7 +7742,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place des Dervallières 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.2204",
+		"longitude" : "-1.573487",
+		"horaires" : "47.2204,-1.573487",
 		"plagesHoraires" : ",090213_sa_09h00-13h00,180513_sa_09h00-13h00,210913_sa_09h00-13h00,071213_sa_09h00-13h00",
 		"quartier" : "Dervallieres Zola"
 	}, {
@@ -7742,7 +7755,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "91 Quai de la Fosse 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.208535",
+		"longitude" : "-1.570129",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_sa+di_08h00-20h00",
 		"quartier" : "Dervallieres Zola"
 	}, {
@@ -7753,7 +7767,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "2 Rue des garennes 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.201956",
+		"longitude" : " -1.578117",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve_07h30-20h00,0101-3112_sa_09h00-20h00,0101-3112_di_09h00-14h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7764,7 +7779,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206522",
+		"longitude" : " -1.587746",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30,0101-3112_lu+ma+me+je+ve_13h30-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7775,7 +7791,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.198766",
+		"longitude" : "-1.588641",
+		"horaires" : "47.198766,-1.588641",
 		"plagesHoraires" : ",180313_lu_14h30-19h00,100613_lu_14h30-19h00,141013_lu_14h30-19h00,130114_lu_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7786,7 +7804,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 quai de la fosse 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206975",
+		"longitude" : "-1.571797",
+		"horaires" : "47.206975,-1.571797",
 		"plagesHoraires" : ",230313_sa_09h00-13h00,150613_sa_09h00-13h00,191013_sa_09h00-13h00,180114_sa_09h00-13h00",
 		"quartier" : "Dervallieres Zola"
 	}, {
@@ -7797,7 +7817,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place des Garennes 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.201714",
+		"longitude" : "-1.57758",
+		"horaires" : "47.201714,-1.57758",
 		"plagesHoraires" : ",200313_me_14h30-19h00,120613_me_14h30-19h00,161013_me_14h30-19h00,150114_me_14h30-19h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7808,7 +7830,8 @@
 		"type" : "Distributeur automatique",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "1 Place de la Liberté 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206552",
+		"longitude" : "-1.588304",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00,0101-3112_sa_09h00-12h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -7819,7 +7842,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "26 Boulevard Professeur Auvigné 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.254495",
+		"longitude" : "-1.518062",
 		"plagesHoraires" : "0101-3112_lu+ma+me+ve+sa_06h30-13h15+15h00-19h30,0101-3112_di_07h30-13h00",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -7830,7 +7854,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "249 Route de Saint Joseph 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.25398",
+		"longitude" : "-1.530325",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00,0101-3112_lu+ma+me+je+ve_13h15-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -7841,7 +7866,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "69 Rue de la Bottière 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.239866",
+		"longitude" : "-1.518953",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45,0101-3112_lu+ma+me+je+ve_14h00-17h30",
 		"quartier" : "Doulon Bottiere"
 	}, {
@@ -7852,7 +7878,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "1 Rue de Koufra 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.242344",
+		"longitude" : "-1.528769",
+		"horaires" : "47.242344,-1.528769",
 		"plagesHoraires" : ",210113_lu_14h30-19h00,080413_lu_14h30-19h00,020913_lu_14h30-19h00,181113_lu_14h30-19h00",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -7863,7 +7891,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Boulevard Professeur Auvigné 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.254396",
+		"longitude" : "-1.517892",
+		"horaires" : "47.254396,-1.517892",
 		"plagesHoraires" : ",230113_me_14h30-19h00,100413_me_14h30-19h00,040913_me_14h30-19h00,201113_me_14h30-19h00",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -7874,7 +7904,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place du Commandant Cousteau 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.24031",
+		"longitude" : "-1.513201",
+		"horaires" : "47.24031,-1.513201",
 		"plagesHoraires" : ",240113_je_14h30-19h00,110413_je_14h30-19h00,050913_je_14h30-19h00,211113_je_14h30-19h00",
 		"quartier" : "Doulon Bottiere"
 	}, {
@@ -7885,7 +7917,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "1 Rue Jules Grandjouan 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.247732",
+		"longitude" : "-1.513306",
+		"horaires" : "47.247732,-1.513306",
 		"plagesHoraires" : ",260113_sa_09h00-13h00,130413_sa_09h00-13h00,070913_sa_09h00-13h00,231113_sa_09h00-13h00",
 		"quartier" : "Doulon Bottiere"
 	}, {
@@ -7896,7 +7930,8 @@
 		"type" : "Magasin",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "0 Rue du Perray 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.248941",
+		"longitude" : "-1.515942",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h45",
 		"quartier" : "Doulon Bottiere"
 	}, {
@@ -7907,7 +7942,8 @@
 		"type" : "Distributeur automatique",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "41 Rue Jules Grandjouan 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.248446",
+		"longitude" : "-1.517279",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_00h00-23h59",
 		"quartier" : "Doulon Bottiere",
 		"description_fr" : "consulter les horaires dans les piscines"
@@ -7919,7 +7955,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "5 bis Rue de la carterie 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.226651",
+		"longitude" : "-1.5591",
 		"plagesHoraires" : "0101-3112_je+sa_11h00-14h00,0101-3112_ma+ve_16h30-19h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -7930,7 +7967,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "17 Rue de Bouillé 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.225995",
+		"longitude" : "-1.556157",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_13h30-18h00,0101-3112_me_09h00-12h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -7941,7 +7979,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "24 Rue des Hauts Pavés 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.22359",
+		"longitude" : "-1.563499",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -7952,7 +7991,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.230017",
+		"longitude" : "-1.572786",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -7963,7 +8003,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "15 Rue Félix Thomas 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.230439",
+		"longitude" : "-1.553907",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -7974,7 +8015,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "71 Rue de Bel air 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.225208",
+		"longitude" : "-1.559207",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h45-19h30,0101-3112_sa_08h00-12h30",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -7985,7 +8027,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place de Talensac 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.221179",
+		"longitude" : "-1.55572",
+		"horaires" : "47.221179,-1.55572",
 		"plagesHoraires" : ",130213_me_14h30-19h00,220513_me_14h30-19h00,250913_me_14h30-19h00,111213_me_14h30-19h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -7996,7 +8040,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place Emile Fritsch 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.228971",
+		"longitude" : "-1.565874",
+		"horaires" : "47.228971,-1.565874",
 		"plagesHoraires" : ",110213_lu_14h30-19h00,210513_ma_14h30-19h00,230913_lu_14h30-19h00,091213_lu_14h30-19h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -8007,7 +8053,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Quai de Versailles 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.228649",
+		"longitude" : "-1.553174",
+		"horaires" : "47.228649,-1.553174",
 		"plagesHoraires" : ",140213_je_14h30-19h00,230513_je_14h30-19h00,260913_je_14h30-19h00,121213_je_14h30-19h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -8018,7 +8066,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place Saint-Félix 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.231028",
+		"longitude" : "-1.555727",
+		"horaires" : "47.231028,-1.555727",
 		"plagesHoraires" : ",160213_sa_09h00-13h00,250513_sa_09h00-13h00,280913_sa_09h00-13h00,141213_sa_09h00-13h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -8029,7 +8079,8 @@
 		"type" : "Magasin",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.230017",
+		"longitude" : "-1.572786",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -8040,7 +8091,8 @@
 		"type" : "Distributeur automatique",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "0 Rue de Talensac 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.221263",
+		"longitude" : "-1.55785",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00",
 		"quartier" : "Hauts Paves Saint-Felix",
 		"description_fr" : "ouvert les lundis uniquement si férié"
@@ -8052,7 +8104,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "10 rue Babin-Chevaye 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206392",
+		"longitude" : "-1.549165",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-20h00,0101-3112_di_07h00-20h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8063,7 +8116,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "1 Place Mangin 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.201202",
+		"longitude" : "-1.544766",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8074,7 +8128,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "1 Boulevard de la prairie au duc 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.20543",
+		"longitude" : "-1.556375",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-21h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8085,7 +8140,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.208812",
+		"longitude" : "-1.529832",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8096,7 +8152,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.208539",
+		"longitude" : "-1.529289",
+		"horaires" : "47.208539,-1.529289",
 		"plagesHoraires" : ",020213_sa_09h00-13h00,200413_sa_09h00-13h00,140913_sa_09h00-13h00,301113_sa_09h00-13h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8107,7 +8165,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rue La Noue Bras de Fer 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.207499",
+		"longitude" : "-1.557124",
+		"horaires" : "47.207499,-1.557124",
 		"plagesHoraires" : ",280113_lu_14h30-19h00,150413_lu_14h30-19h00,090913_lu_14h30-19h00,251113 sa_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8118,7 +8178,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "15 Boulevard Général de Gaulle 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206069",
+		"longitude" : "-1.538601",
+		"horaires" : "47.206069,-1.538601",
 		"plagesHoraires" : ",300113_me_14h30-19h00,170413_me_14h30-19h00,110913_me_14h30-19h00,271113_me_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8129,7 +8191,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place Victor Mangin 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.201491",
+		"longitude" : "-1.543754",
+		"horaires" : "47.201491,-1.543754",
 		"plagesHoraires" : ",310113_je_14h30-19h00,180413_je_14h30-19h00,120913_je_14h30-19h00,281113_je_14h30-19h00",
 		"quartier" : "Ile de Nantes"
 	}, {
@@ -8140,7 +8204,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rue d'Angleterre 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.214431",
+		"longitude" : "-1.527221",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8151,7 +8216,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "1 Rue Angleterre 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.214904",
+		"longitude" : "-1.526814",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8162,7 +8228,8 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Chemin du pont de l'arche de mauves 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.216697",
+		"longitude" : "-1.531692",
 		"plagesHoraires" : ",160313_sa_09h00-13h00,080613_sa_09h00-13h00,121013_sa_09h00-13h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8173,7 +8240,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Boulevard de Sarrebruck 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.213225",
+		"longitude" : "-1.534507",
+		"horaires" : "47.213225,-1.534507",
 		"plagesHoraires" : ",110313_lu_14h30-19h00,030613_lu_14h30-19h00,071013_lu_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8184,7 +8253,8 @@
 		"type" : "Distributeur automatique",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "15 Rue du Pont de l'Arche de Mauves 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.216697",
+		"longitude" : "-1.531692",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_00h00-23h59",
 		"quartier" : "Malakoff Saint-Donatien",
 		"description_fr" : "ouvert les lundis uniquement si férié"
@@ -8196,7 +8266,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "3 Chem de la Censive du Tertre 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.243624",
+		"longitude" : "-1.554894",
 		"plagesHoraires" : "0101-3112_lu+me_13h30-20h00,0101-3112_ma-je-sa_14h00-18h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8207,7 +8278,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "14 rue Guillaume Grootaers 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.238817",
+		"longitude" : "-1.585472",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-21h00,0101-3112_du_08h30-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -8218,7 +8290,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "4 Rue du Moulin des Rochettes 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.261859",
+		"longitude" : "-1.582704",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+di_07h00-19h30",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8229,7 +8302,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "18 Rue des Renards 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.255262",
+		"longitude" : "-1.56558",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h00-14h00+16h00-20h00,0101-3112_sa_07h00-14h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8240,7 +8314,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "39 Boulevard des tribunes 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.248999",
+		"longitude" : "-1.568499",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-20h00,0101-3112_du_10h00-17h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8251,7 +8326,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "103 Rue Pierre Yvernogeau 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.241905",
+		"longitude" : "-1.571867",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -8262,7 +8338,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "41 Route de la Chapelle sur Erdre 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.257082",
+		"longitude" : "-1.575923",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8273,7 +8350,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "37 Boulevard Albert Einstein 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.264582",
+		"longitude" : "-1.572082",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8284,7 +8362,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rue des Renards 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.253566",
+		"longitude" : "-1.561977",
+		"horaires" : "47.253566,-1.561977",
 		"plagesHoraires" : ",210213_je_14h30-19h00,300513_je_14h30-19h00,031013_je_14h30-19h00,191213_je_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8295,7 +8375,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "3 Rue de Questembert 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.661168",
+		"longitude" : "-2.455203",
+		"horaires" : "47.661168,-2.455203",
 		"plagesHoraires" : ",180213_lu_14h30-19h00,270513lu_14h30-19h00,0101-3112_lu300913lu_14h30-19h00,161213_lu_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8306,7 +8388,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "84 Route de la Chapelle sur Erdre 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.258917",
+		"longitude" : "-1.575061",
+		"horaires" : "47.258917,-1.575061",
 		"plagesHoraires" : ",200213_me_14h30-19h00,290513_me_14h30-19h00,021013_me_14h30-19h00,181213_me_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8317,7 +8401,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "76 route de la Jonelière 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.252406",
+		"longitude" : "-1.546334",
+		"horaires" : "47.252406,-1.546334",
 		"plagesHoraires" : ",140113_lu_14h30-19h00,ma20413_lu_14h30-19h00,240613_lu_14h30-19h00,ma121113_lu_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8328,7 +8414,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 rue Yvernogeau 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.241496",
+		"longitude" : "-1.569058",
+		"horaires" : "47.241496,-1.569058",
 		"plagesHoraires" : ",190113_sa_09h00-13h00,0101-3112_sa60413_sa_09h00-13h00,290613_sa_09h00-13h00,161113_sa_09h00-13h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -8339,7 +8427,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rue de la Fantaisie 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.253373",
+		"longitude" : "-1.571788",
+		"horaires" : "47.253373,-1.571788",
 		"plagesHoraires" : ",160113_me_14h30-19h00,0101-3112_me30413_me_14h30-19h00,260613_me_14h30-19h00,131113_me_14h30-19h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8350,7 +8440,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rue du Chêne Vert 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.200088",
+		"longitude" : "-1.755946",
+		"horaires" : "47.200088,-1.755946",
 		"plagesHoraires" : ",170113_je_14h30-19h00,0101-3112_je40413_je_14h30-19h00,270613_je_14h30-19h00,141113_je_14h30-19h00",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -8361,7 +8453,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rue de la Bourgeonnière 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.252313",
+		"longitude" : "-1.549385",
+		"horaires" : "47.252313,-1.549385",
 		"plagesHoraires" : ",230213_sa_09h00-13h00,010613_sa_09h00-13h00,051013_sa_09h00-13h00,211213_sa_09h00-13h00",
 		"quartier" : "Nantes Nord"
 	}, {
@@ -8372,7 +8466,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.224203",
+		"longitude" : " -1.530538",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8383,7 +8478,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "1 Boulevard des Professeurs Sourdille 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.240783",
+		"longitude" : "-1.547012",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8394,7 +8490,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.224538",
+		"longitude" : "-1.550946",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-20h00",
 		"quartier" : "Malakoff Saint-Donatien",
 		"description_fr" : "Juillet/Août fermeture entre 12h30 et 14h30"
@@ -8406,7 +8503,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "30 Rue de Coulmiers 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.221441",
+		"longitude" : "-1.535972",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-14h00+15h00-20h00,0101-3112_sa_07h15-13h00+15h30-19h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8417,7 +8515,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "103 Boulevard du Général Buat 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.226432",
+		"longitude" : "-1.543024",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h45-20h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8428,7 +8527,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "11 Boulevard de Stalingrad 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.219087",
+		"longitude" : "-1.536952",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8439,7 +8539,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place Sophie Trébuchet 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.220443",
+		"longitude" : "-1.545419",
+		"horaires" : "47.220443,-1.545419",
 		"plagesHoraires" : ",070113_lu_14h30-19h00,250313_lu_14h30-19h00,170613_lu_14h30-19h00,211013_lu_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8450,7 +8552,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Rue Pitre Chevalier 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.224887",
+		"longitude" : "-1.549293",
+		"horaires" : "47.224887,-1.549293",
 		"plagesHoraires" : "090113_me_14h30-19h00,270313_me_14h30-19h00,190613_xx_14h30-19h00,231013_xx_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8461,7 +8565,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "66 Boulevard Dalby, parking Super U 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.224297",
+		"longitude" : "-1.530588",
+		"horaires" : "47.224297,-1.530588",
 		"plagesHoraires" : "100113_je_14h30-19h00,280313_je_14h30-19h00,200613_je_14h30-19h00,241013_je_14h30-19h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8472,7 +8578,9 @@
 		"type" : "Rendez-vous",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "0 Place des enfants nantais 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.228914",
+		"longitude" : "-1.542437",
+		"horaires" : "47.228914,-1.542437",
 		"plagesHoraires" : "120113_sa_09h00-13h00,300313_sa_09h00-13h00,220613_sa_09h00-13h00,261013_sa_09h00-13h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8483,7 +8591,8 @@
 		"type" : "Magasin",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.223896",
+		"longitude" : "-1.550663",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-20h15,0101-3112_sa_09h00-20h00",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8494,7 +8603,8 @@
 		"type" : "Magasin",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.224203",
+		"longitude" : " -1.530538",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h30",
 		"quartier" : "Malakoff Saint-Donatien"
 	}, {
@@ -8505,7 +8615,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "2 Rue Edouard Nignon 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.276143",
+		"longitude" : "-1.510645",
 		"plagesHoraires" : "0101-3112_lu-ma-me-je-ve_08h30-12h30+13h30-17h30",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -8516,7 +8627,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "25 Rue des Bourderies 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.206421",
+		"longitude" : "-1.59699",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h00+16h00-19h00,0101-3112_di_07h00-13h00",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -8527,7 +8639,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "4 Place des Lauriers 44100 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.204322",
+		"longitude" : "-1.60523",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h45+14h00-17h30",
 		"quartier" : "Bellevue Chantenay Sainte Anne"
 	}, {
@@ -8538,7 +8651,8 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "3 Boulevard Gaston Serpette 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.224494",
+		"longitude" : "-1.576885",
 		"plagesHoraires" : "0101-3112_lu+ma+je+ve+sa_07h00-20h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -8549,7 +8663,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "3 Place Emile Sarradin 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.220982",
+		"longitude" : "-1.570362",
+		"horaires" : "47.220982,-1.570362",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h30,0101-3112_sa_08h00-13h00+14h30-18h30",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -8560,7 +8676,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "67 Rue Hector Berlioz 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.239676",
+		"longitude" : "-1.579138",
+		"horaires" : "47.239676,-1.579138",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-13h30+15h30-19h30,0101-3112_sa_07h00-13h30",
 		"quartier" : "Breil Barberie"
 	}, {
@@ -8571,7 +8689,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "37 Boulevard Louis Millet 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.227321",
+		"longitude" : "-1.519013",
+		"horaires" : "47.227321,-1.519013",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Doulon Bottiere"
 	}, {
@@ -8582,7 +8702,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "173 Route de Saint Joseph 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.245561",
+		"longitude" : "-1.534377",
+		"horaires" : "47.245561,-1.534377",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h30",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -8593,7 +8715,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "3 Route de Saint Joseph 44300 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.235204",
+		"longitude" : "-1.541222",
+		"horaires" : "47.235204,-1.541222",
 		"plagesHoraires" : "0101-3112_lu+je+ve_06h45-13h30+15h00-19h30",
 		"quartier" : "Nantes Erdre"
 	}, {
@@ -8604,7 +8728,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "75 Boulevard Joliot Curie 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.194043",
+		"longitude" : "-1.530214",
+		"horaires" : "47.194043,-1.530214",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-19h30,0101-3112_di_09h00-12h30",
 		"quartier" : "Nantes Sud"
 	}, {
@@ -8615,7 +8741,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "69 Boulevard Joliot Curie 44200 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.194481",
+		"longitude" : "-1.53163",
+		"horaires" : "47.194481,-1.53163",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+13h15-17h30",
 		"quartier" : "Nantes Sud"
 	}, {
@@ -8626,7 +8754,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "26 Rue Jean Jaurès 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.218592",
+		"longitude" : "-1.5618",
+		"horaires" : "47.218592,-1.5618",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-14h00+16h00-20h00,0101-3112_di_08h00-13h00",
 		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
@@ -8637,7 +8767,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "29 Rue de Strasbourg 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.219",
+		"longitude" : "-1.553582",
+		"horaires" : "47.219,-1.553582",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h30-18h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8648,7 +8780,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "11 Avenue Carnot 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.214001",
+		"longitude" : "-1.544741",
+		"horaires" : "47.214001,-1.544741",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h45-12h00+13h30-17h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8659,7 +8793,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "3 Rue Cassini 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.215691",
+		"longitude" : "-1.564482",
+		"horaires" : "47.215691,-1.564482",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h30-13h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8670,7 +8806,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "6 Avenue Carnot 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.214146",
+		"longitude" : "-1.545299",
+		"horaires" : "47.214146,-1.545299",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8681,7 +8819,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "21 Chaussée de la Madeleine 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.211042",
+		"longitude" : "-1.551221",
+		"horaires" : "47.211042,-1.551221",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h30-20h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8692,7 +8832,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "17 Allée Duguay Trouin 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.213286",
+		"longitude" : "-1.556672",
+		"horaires" : "47.213286,-1.556672",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-20h00,0101-3112_sa_09h00-20h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8703,7 +8845,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "25 Rue Voltaire 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.211916",
+		"longitude" : "-1.566842",
+		"horaires" : "47.211916,-1.566842",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_06h30-19h30,0101-3112_sa_07h30-19h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8714,7 +8858,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "10 Rue de la Fosse 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.214001",
+		"longitude" : "-1.558796",
+		"horaires" : "47.214001,-1.558796",
 		"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+je+ve_11h00-19h00,0101-3112_sa_10h00-19h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8725,7 +8871,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "23 Rue Racine 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.214452",
+		"longitude" : "-1.565255",
+		"horaires" : "47.214452,-1.565255",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-22h00,0101-3112_di_09h00-13h00",
 		"quartier" : "Centre Ville"
 	}, {
@@ -8736,7 +8884,9 @@
 		"type" : "Relais",
 		"conseils" : "cons_plusieurstrisac,cons_distrisac_relais,cons_distrisac_piecesobligatoires",
 		"adresseTemp" : "4 Allée Duquesne 44000 NANTES",
-		"latitude" : "47.20",
+		"latitude" : "47.217484",
+		"longitude" : "-1.556586",
+		"horaires" : "47.217484,-1.556586",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_07h00-19h30",
 		"quartier" : "Centre Ville"
 	},]
