@@ -526,7 +526,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		// this.getGarbagesFormSelect().setValue("");
 		// this.filter();
 		// this.getGarbagesView().push(this.garbagesList);
-
 		this.getGarbagesFormSelect().setValue("all");
 		this.filter2();
 		this.getGarbagesView().push(this.garbagesButtonsPanel);

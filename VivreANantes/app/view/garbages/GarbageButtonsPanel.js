@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.garbages.GarbageButtonsPanel', {
 	extend : 'Ext.Container',
 	xtype : 'garbagesButtonsPanel_xtype',
 	config : {
-		title : "Déchets toxiques",
+		title : "Déchets",
 		layout : {
 			type : 'vbox'
 		},

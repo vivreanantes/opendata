@@ -7,9 +7,9 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	config : {
 		refs : {
 			homeCollectModsView : 'HomeCollectModsView',
-			homeCollectModsList : 'HomeCollectModsList',
+			homeCollectModsList : 'homecollectmodslist_xtype',
 			homeCollectModDetail : 'homecollectmodsdetails_xtype',
-			homeCollectModsForm : 'HomeCollectModsForm',
+			homeCollectModsForm : 'homecollectmodsform_xtype',
 			homeCollectModsFormText : '#homeCollectModsFormText',
 			collectModList : 'collectModList_xtype'
 		},

@@ -7828,7 +7828,7 @@
 		"libelle" : "Mairie annexe Chantenay",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "1 Place de la Liberté 44100 NANTES",
 		"latitude" : "47.206552",
 		"longitude" : "-1.588304",
@@ -7928,7 +7928,7 @@
 		"libelle" : "Leclerc Paridis",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "0 Rue du Perray 44300 NANTES",
 		"latitude" : "47.248941",
 		"longitude" : "-1.515942",
@@ -7940,13 +7940,12 @@
 		"libelle" : "Piscine Jules Verne",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "41 Rue Jules Grandjouan 44300 NANTES",
 		"latitude" : "47.248446",
 		"longitude" : "-1.517279",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_00h00-23h59",
-		"quartier" : "Doulon Bottiere",
-		"description_fr" : "consulter les horaires dans les piscines"
+		"quartier" : "Doulon Bottiere"
 	}, {
 		"code" : "27",
 		"quartier_admin" : "Hauts Paves Saint-Felix",
@@ -8077,7 +8076,7 @@
 		"libelle" : "Carrefour Market",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "0 Rond Point de Vannes 44100 NANTES",
 		"latitude" : "47.230017",
 		"longitude" : "-1.572786",
@@ -8089,13 +8088,12 @@
 		"libelle" : "Marché de Talensac",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "0 Rue de Talensac 44000 NANTES",
 		"latitude" : "47.221263",
 		"longitude" : "-1.55785",
 		"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_07h00-13h00",
-		"quartier" : "Hauts Paves Saint-Felix",
-		"description_fr" : "ouvert les lundis uniquement si férié"
+		"quartier" : "Hauts Paves Saint-Felix"
 	}, {
 		"code" : "39",
 		"quartier_admin" : "Ile de Nantes",
@@ -8251,13 +8249,12 @@
 		"libelle" : "Piscine Petite Amazonie",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Distributeur automatique",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "15 Rue du Pont de l'Arche de Mauves 44000 NANTES",
 		"latitude" : "47.216697",
 		"longitude" : "-1.531692",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_00h00-23h59",
-		"quartier" : "Malakoff Saint-Donatien",
-		"description_fr" : "ouvert les lundis uniquement si férié"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "52",
 		"quartier_admin" : "Nantes Nord",
@@ -8493,8 +8490,7 @@
 		"latitude" : "47.224538",
 		"longitude" : "-1.550946",
 		"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-20h00",
-		"quartier" : "Malakoff Saint-Donatien",
-		"description_fr" : "Juillet/Août fermeture entre 12h30 et 14h30"
+		"quartier" : "Malakoff Saint-Donatien"
 	}, {
 		"code" : "71",
 		"quartier_admin" : "Malakoff Saint-Donatien",
@@ -8589,7 +8585,7 @@
 		"libelle" : "Intermarché",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "20 Rue Pitre Chevalier 44000 NANTES",
 		"latitude" : "47.223896",
 		"longitude" : "-1.550663",
@@ -8601,7 +8597,7 @@
 		"libelle" : "Super U Dalby",
 		"modesCollecte" : "modco_distrisac",
 		"type" : "Magasin",
-		"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv",
+		"conseils" : "cons_plusieurstrisac,cons_distrisac_achat",
 		"adresseTemp" : "66 Boulevard Dalby 44000 NANTES",
 		"latitude" : "47.224203",
 		"longitude" : " -1.530538",

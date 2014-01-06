@@ -114,9 +114,11 @@ Ext
 		// Colonnes enterrées : à faire
 		
 		// TODO encombrants : améliorer la macro et le traitement java
+		// HomeCollectModModel.js
 			
 		/////////// CRN Long terme //////////
 
+		// TODO Mineur Function TestHoraires(PlageHoraire as String) : controle sur les heures
 		// TODO Mineur : marché de talensac ouvert les lundis uniquement si férié !
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
 		// TODO Contacter des assos pour améliorer le contenu de l'appli 

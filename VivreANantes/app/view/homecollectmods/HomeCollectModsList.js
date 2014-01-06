@@ -1,6 +1,6 @@
 Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsList', {
 	extend : 'Ext.List',
-	xtype : 'HomeCollectModsList',
+	xtype : 'homecollectmodslist_xtype',
 	config : {
 		iconCls : 'trash', // icône en forme de poubelle
 		title : 'Modes de collecte à domicile',
