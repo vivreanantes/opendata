@@ -24,6 +24,10 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 				itemtap : "showStructuresDetail",
 				refresh : "onListRefresh"
 			},
+			
+			structuresView : {
+				show : 'onShowTrisac'
+			},
 
 			trisacFormText : {
 				keyup : "onTrisacStoreFilter",
@@ -53,22 +57,18 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 	 * A l"initialisation de la fenêtre
 	 */
 	onInitTrisacsController : function(list) {
-		// 1
-		var homecollectmodStore = Ext.create(
-				"VivreANantes.store.Structure2Store", {
+		this.getTrisacFormSelect().setValue("all");
+	},
+	
+	onShowTrisac : function() {
+		var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
 					filters : [{
 								property : "modesCollecte",
-								// le type correspond aux modes de collectes
-								// possibles
-								// voir
-								// http://quentinc.net/javascript/testeur-expressions-regulieres/
 								value : /modco_distrisac/g
 							}]
-
 				});
-
-		list.setStore(homecollectmodStore);
-		this.getTrisacFormSelect().setValue("all");
+		this.getTrisacList().setStore(structureStore);
+		structureStore.load();
 	},
 
 	// Méthodes invoquées par le formulaire
@@ -88,26 +88,27 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 		var selectQuartier = this.getTrisacFormSelect();
 		var store = this.getTrisacList().getStore();
 
-		// FIXME : Ceci est un traitement trop long
-
-		store.clearFilter();
-		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
-		// sur la catégorie
-		var filterHomeCollectMod = Ext.create("Ext.util.Filter", {
-			filterFn : function(item) {
-				var escaperegex = Ext.String.escapeRegex;
-				var stTextRexexp = new RegExp(escaperegex(text.getValue()),
-						"ig");
-				// var stQuartierRexexp = new RegExp(selectQuartier.getValue());
-				var stType = item.data["modesCollecte"];
-				var stQuartier = item.data["quartier_admin"];
-				return (stType == 'modco_distrisac'
-						&& stTextRexexp.test(item.data["libelle"]) && (selectQuartier
-						.getValue() === "all" || stQuartier === selectQuartier
-						.getValue()));
-			}
-		});
-		store.filter(filterHomeCollectMod);
+		if (store!=null) {
+			// FIXME : Ceci est un traitement trop long
+			store.clearFilter();
+			// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
+			// sur la catégorie
+			var filterHomeCollectMod = Ext.create("Ext.util.Filter", {
+				filterFn : function(item) {
+					var escaperegex = Ext.String.escapeRegex;
+					var stTextRexexp = new RegExp(escaperegex(text.getValue()),
+							"ig");
+					// var stQuartierRexexp = new RegExp(selectQuartier.getValue());
+					var stType = item.data["modesCollecte"];
+					var stQuartier = item.data["quartier_admin"];
+					return (stType == 'modco_distrisac'
+							&& stTextRexexp.test(item.data["libelle"]) && (selectQuartier
+							.getValue() === "all" || stQuartier === selectQuartier
+							.getValue()));
+				}
+			});
+			store.filter(filterHomeCollectMod);
+		}
 	}
 
 });

@@ -2,9 +2,8 @@
  * Controleur de la partie Structures
  */
 Ext.define("VivreANantes.controller.StructuresController", {
-	extend : "VivreANantes.controller.AbstractStructuresController"
+	extend : "VivreANantes.controller.AbstractStructuresController",
 
-	,
 	config : {
 		refs : {
 			structuresView : "structuresView_xtype",
@@ -23,7 +22,11 @@ Ext.define("VivreANantes.controller.StructuresController", {
 				itemtap : "showStructuresDetail",
 				refresh : "onListRefresh"
 			},
-
+			
+			structuresView : {
+				show : 'onShowStructures'
+			},
+			
 			structuresFormSelectQuartier : {
 				change : "onStructuresStoreFilter",
 				initialize : "setOptionsQuartiers",
@@ -59,21 +62,32 @@ Ext.define("VivreANantes.controller.StructuresController", {
 	 */
 	onInitStructures : function(list) {
 		// 1
-		var homecollectmodStore = Ext.create(
-				"VivreANantes.store.Structure2Store", {
-					filters : [{
-						property : "modesCollecte",
-						// le type correspond aux modes de collectes possibles
-						// voir
-						// http://quentinc.net/javascript/testeur-expressions-regulieres/
-						value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g					}]
-				});
+		// var homecollectmodStore = Ext.create(
+		// 		"VivreANantes.store.Structure2Store", {
+		// 			filters : [{
+		// 				property : "modesCollecte",
+		// 				// le type correspond aux modes de collectes possibles
+		// 				// voir
+		// 				// http://quentinc.net/javascript/testeur-expressions-regulieres/
+		// 				value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g					}]
+		// 		});
+		// list.setStore(homecollectmodStore);
 		// 2
-		list.setStore(homecollectmodStore);
 		this.getStructuresFormSelectQuartier().setValue("all");
-	}
+	},
 
-	,
+	
+	onShowStructures : function() {
+		var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+			filters : [{
+				property : "modesCollecte",
+				value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g
+			}]
+		});
+		this.getStructuresList().setStore(structureStore);
+		structureStore.load();
+	},
+	
 	onListRefresh : function(list, eOpts) {
 		store = this.calculateDatas(list.getStore());
 	}
@@ -95,18 +109,19 @@ Ext.define("VivreANantes.controller.StructuresController", {
 		var selectType = this.getStructuresFormSelectType();
 
 		var store = this.getStructuresList().getStore();
-		store.clearFilter();
-
-		var filterElements = Ext.create("Ext.util.Filter", {
-			filterFn : function(item) {
-				var stTypeRegexp = new RegExp(selectType.getValue());
-				var stQuartier = item.data["quartier"];
-				var stType = item.data["modesCollecte"];
-				return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
-						.getValue()) && (stTypeRegexp.test(stType)));
-			}
-		});
-		store.filter(filterElements);
+		if (store!=null) {
+			store.clearFilter();
+			var filterElements = Ext.create("Ext.util.Filter", {
+				filterFn : function(item) {
+					var stTypeRegexp = new RegExp(selectType.getValue());
+					var stQuartier = item.data["quartier"];
+					var stType = item.data["modesCollecte"];
+					return ((selectQuartier.getValue() === "all" || stQuartier === selectQuartier
+							.getValue()) && (stTypeRegexp.test(stType)));
+				}
+			});
+			store.filter(filterElements);
+		}
 	}
 
 });

@@ -22,6 +22,11 @@ Ext.define("VivreANantes.controller.ReusesController", {
 				refresh : "onListRefresh"
 			},
 
+			
+			structuresView : {
+				show : 'onShowReuse'
+			},
+
 			reusesFormSelectQuartier : {
 				change : "onReusesControllerStoreFilter",
 				initialize : "setOptionsQuartiers"
@@ -48,24 +53,34 @@ Ext.define("VivreANantes.controller.ReusesController", {
 	 */
 	onInitReusesController : function(list) {
 		// 1
-		var homecollectmodStore = Ext.create(
-				"VivreANantes.store.Structure2Store", {
-					filters : [{
-						property : "modesCollecte",
-						// le type correspond aux modes de collectes
-						// possibles
-						// voir
-						// http://quentinc.net/javascript/testeur-expressions-regulieres/
-						value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
-					}]
-
-				});
-
-		list.setStore(homecollectmodStore);
+		// var homecollectmodStore = Ext.create(
+		// 		"VivreANantes.store.Structure2Store", {
+		// 			filters : [{
+		// 				property : "modesCollecte",
+		// 				// le type correspond aux modes de collectes
+		// 				// possibles
+		// 				// voir
+		// 				// http://quentinc.net/javascript/testeur-expressions-regulieres/
+		// 				value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
+		// 			}]
+		// 		});
+		//  list.setStore(homecollectmodStore);
 		this.getReusesFormSelectQuartier().setValue("all");
-	}
-
-	,
+	},
+	
+	
+	onShowReuse : function() {
+		var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+			filters : [{
+				property : "modesCollecte",
+				value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
+			}]
+		});
+		this.getReusesList().setStore(structureStore);
+		structureStore.load();
+	},
+	
+	
 	onListRefresh : function(list, eOpts) {
 		store = this.calculateDatas(list.getStore());
 	}
@@ -87,23 +102,24 @@ Ext.define("VivreANantes.controller.ReusesController", {
 		var selectType = this.getReusesFormSelectType();
 
 		var store = this.getReusesList().getStore();
-		store.clearFilter();
-
-		var filterElements = Ext.create("Ext.util.Filter", {
-			filterFn : function(item) {
-				var stModesDeCollecte = item.data["modesCollecte"];
-				/*if (stModesDeCollecte !== 'modco_reemploi'
-						&& stModesDeCollecte !== 'smco_conteneurlerelais') {
-					return false;
-				}*/
-				var stTypeRegexp = new RegExp(selectType.getValue());
-				var stQuartier = item.data["quartier"];
-				// var stSousModesCollecte = item.data["type"];
-				return (selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) && (stTypeRegexp
-								.test(stModesDeCollecte));
-			}
-		});
-		store.filter(filterElements);
+		if (store!=null) {
+			store.clearFilter();
+			var filterElements = Ext.create("Ext.util.Filter", {
+				filterFn : function(item) {
+					var stModesDeCollecte = item.data["modesCollecte"];
+					/*if (stModesDeCollecte !== 'modco_reemploi'
+							&& stModesDeCollecte !== 'smco_conteneurlerelais') {
+						return false;
+					}*/
+					var stTypeRegexp = new RegExp(selectType.getValue());
+					var stQuartier = item.data["quartier"];
+					// var stSousModesCollecte = item.data["type"];
+					return (selectQuartier.getValue() === "all" || stQuartier === selectQuartier.getValue()) && (stTypeRegexp
+									.test(stModesDeCollecte));
+				}
+			});
+			store.filter(filterElements);
+		}
 	}
 
 });

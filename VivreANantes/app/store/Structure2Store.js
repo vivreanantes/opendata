@@ -2,7 +2,7 @@ Ext.define('VivreANantes.store.Structure2Store', {
 			extend : 'Ext.data.Store',			
 
 			config :{
-				autoLoad : true,
+				autoLoad : false,
 				model : 'VivreANantes.model.StructureModel',
 				proxy : {
 					type : 'ajax',

@@ -26,6 +26,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 
 			homeCollectModsView : {
 				// On maitient ce control pour pouvoir faire this.getHomeCollectModsView().
+				show : 'onShowHomeCollectModsView'
 			},
 
 			homeCollectModsFormText : {
@@ -52,10 +53,18 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	 * A l'initialisation de la fenêtre
 	 */
 	onInitHomeCollectMods : function(list) {
+		// var homecollectmodStore = Ext.create('VivreANantes.store.HomeCollectModStore');
+		// list.setStore(homecollectmodStore);
+
+	},
+	
+	onShowHomeCollectModsView : function() {
 		var homecollectmodStore = Ext.create(
 			'VivreANantes.store.HomeCollectModStore');
-		list.setStore(homecollectmodStore);
+		this.getHomeCollectModsList().setStore(homecollectmodStore);
+		homecollectmodStore.load();
 
+		// list.setStore(homecollectmodStore);
 	},
 
 	onHomeCollectModsViewPush : function(view, item) {
@@ -113,20 +122,23 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 		var text = this.getHomeCollectModsFormText();
 		var store = this.getHomeCollectModsList().getStore();
 		store.clearFilter();
-		thisController = this;
-		
-		// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
-		// sur la catégorie
-		var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
-			filterFn : function(item) {
-				var escaperegex = Ext.String.escapeRegex;
-				var texteSansAccents = thisController.utilRetireAccent(text.getValue());
-				var texttest = new RegExp(escaperegex(texteSansAccents), 'ig');
-				var nomVoie_sansAccents = item.data['nvsa'];
-				return (texttest.test(nomVoie_sansAccents));
-			}
-		});
-		store.filter(filterHomeCollectMod);
+		if (store!=null) {
+
+			thisController = this;
+			
+			// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
+			// sur la catégorie
+			var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
+				filterFn : function(item) {
+					var escaperegex = Ext.String.escapeRegex;
+					var texteSansAccents = thisController.utilRetireAccent(text.getValue());
+					var texttest = new RegExp(escaperegex(texteSansAccents), 'ig');
+					var nomVoie_sansAccents = item.data['nvsa'];
+					return (texttest.test(nomVoie_sansAccents));
+				}
+			});
+			store.filter(filterHomeCollectMod);
+		}
 	},
 	
 	onTapLinkButton : function(button, e, eOpts) {
