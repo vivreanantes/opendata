@@ -13,7 +13,7 @@ Ext.define('VivreANantes.view.information.Informations', {
 				iconCls : 'action',
 				scrollable : true,
 				items : [{
-							xtype : 'informationsButtonsList_xtype'
+							xtype : 'informationsbuttonslist_xtype'
 						}],
 				defaultBackButtonText : "Retour"
 

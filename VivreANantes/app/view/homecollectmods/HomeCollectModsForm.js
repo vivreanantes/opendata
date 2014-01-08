@@ -15,9 +15,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
 				},
 				{
 					xtype : 'label',
-					html : '<I>Source : Open Data Nantes, valable <font color=red>à partir du 16/09/2013</font></I>'
+					html : '<I>Source <font color=red>Open Data Nantes</font></I>'
 				}
-				]
-	}
-
+		]}
 });

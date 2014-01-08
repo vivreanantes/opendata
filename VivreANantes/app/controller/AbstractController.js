@@ -212,7 +212,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 							html :  "<center>"+libelle
 									+ "<br/><img src='resources/images/"
 									+ arrayItemsToShow[i]["image"]
-									+ "' width='60px' /></center>"
+									+ "' /></center>"
 						});
 			}
 			// Si la dernière ligne n'est pas terminée

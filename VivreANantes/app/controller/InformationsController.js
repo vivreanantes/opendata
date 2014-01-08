@@ -4,7 +4,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 	config : {
 		refs : {
 			informations : 'informations',
-			informationsList : 'informationsButtonsList_xtype'
+			informationsList : 'informationsbuttonslist_xtype'
 		},
 		control : {
 			/*
@@ -14,14 +14,14 @@ Ext.define('VivreANantes.controller.InformationsController', {
 				activate : 'onActivate'
 			},
 			// fonctionne comme une CSS selecteur
-			'informationsButtonsList_xtype button' : {
+			'informationsbuttonslist_xtype button' : {
 				tap : 'onShowDetails',
 				back : 'onPushBackButton10'
 			}
 		}
 	},
 	onShowDetails : function(button, e, eOpts) {
-		this.showDetails(button.id);
+		this.showDetails(button._data.code);
 	},
 	onPushBackButton10 : function() {
 		// console.log("onPushBackButton10");
@@ -101,7 +101,25 @@ Ext.define('VivreANantes.controller.InformationsController', {
 		var datas = myController.getInformationsList().getStore();
 
 		var arrayItemsToShow = this.getDatasForButtons(datas, "fiche");
-		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		this.removeAllAndSetItems(this.getInformationsList(), arrayItems);
+	
+		var result = new Array();
+		if (arrayItemsToShow.length > 0) {
+
+			var theItems = arrayItemsToShow;
+			for (var i = 0; i < theItems.length; i++) {
+				var stLibelle = this.decoupe(theItems[i].libelle);
+				result.push({
+					code : theItems[i].id,
+						label : stLibelle,
+						image : theItems[i].image
+				});
+			}
+		}
+
+		var nbGarbagesMax = 39;	// la page UsualCategoriesButtonPanel.js affiche 39 éléments
+		this.setDataInButtonsWithManyLines(this.getInformationsList(),"informationsButtonsList", result, nbGarbagesMax, 3);
+		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+		// this.removeAllAndSetItems(this.getInformationsList(), arrayItems);
 	}
+	
 });

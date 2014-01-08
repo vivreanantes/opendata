@@ -136,10 +136,31 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			},
 			
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
+		this.putInButtonsPanel("cu");
+	},
+	
+	putInButtonsPanel : function(stringFilter) {
 		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
-		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu");
-		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
+		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, stringFilter);
+		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+		// this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
+		
+		var result = new Array();
+		if (arrayItemsToShow.length > 0) {
+
+			var theItems = arrayItemsToShow;
+			for (var i = 0; i < theItems.length; i++) {
+				var stLibelle = this.decoupe(theItems[i].libelle);
+				result.push({
+					code : theItems[i].id,
+						label : stLibelle,
+						image : theItems[i].image
+				});
+			}
+		}
+
+		var nbGarbagesMax = 39;	// la page UsualCategoriesButtonPanel.js affiche 39 éléments
+		this.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);
 	},
 
 	onTapLinkButton : function(button, e, eOpts) {
@@ -175,19 +196,13 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	showSubCategory : function(collectModId) {
-		// if (this.usualSubCategoriesButtonsPanel == null) {
-		// 	// this.usualSubCategoriesButtonsPanel =
-		// 	// Ext.create('VivreANantes.view.garbages.UsualSubCategoriesButtonsPanel');
-		// 	this.usualSubCategoriesButtonsPanel = Ext
-		// 			.create('VivreANantes.view.garbages.UsualCategoriesButtonPanel');
-		// }
-		// // this.getGarbagesContainer2().push(this.usualSubCategoriesButtonsPanel);
-		// this.getGarbagesView().push(this.usualSubCategoriesButtonsPanel);
-					
-		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
-		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu_toxique");
-		var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
+	
+		// var usualCategoryStore = this.getUsualCategoriesList2().getStore();
+		// var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu_toxique");
+		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+		// this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
+		
+		this.putInButtonsPanel("cu_toxique");
 	},
 
 	onInitUsualCategoriesButtonsPanel : function(container) {

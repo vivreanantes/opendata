@@ -14,7 +14,6 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 							xtype : 'garbagesForm_xtype',
 							height : 100
 						}, {
-							// xtype : 'usualCategoriesButtonsPanel_xtype'
 							xtype : 'usualCategoriesButtonsPanel_xtype'
 						},
 						/////////////////////////////////////////

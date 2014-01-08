@@ -121,7 +121,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_1_bouton",
-						text : "Fiche<br/>explicative",
+						text : "Fiche explicative",
 						width:"150px"
 					}]
 		}, {
@@ -136,7 +136,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_2_bouton",
-						text : "Fiche<br/>explicative",
+						text : "Fiche explicative",
 						width:"150px"
 					}]
 		}, {
