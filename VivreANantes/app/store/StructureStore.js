@@ -1,8 +1,8 @@
-Ext.define('VivreANantes.store.StructureStore', {
+Ext.define('VivreANantes.store.Structure2Store', {
 			extend : 'Ext.data.Store',			
-			id : 'structurestore', 	
+
 			config :{
-				autoLoad : true,
+				autoLoad : false,
 				model : 'VivreANantes.model.StructureModel',
 				proxy : {
 					type : 'ajax',
@@ -11,6 +11,6 @@ Ext.define('VivreANantes.store.StructureStore', {
 						type : 'json',
 						rootProperty : 'structures'
 					}
-				}	
+				}
 			}
 		});

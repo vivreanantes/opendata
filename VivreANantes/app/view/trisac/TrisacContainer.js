@@ -11,7 +11,7 @@ Ext.define('VivreANantes.view.trisac.TrisacContainer', {
 				title : 'Distribution de Trisac',
 				items : [{
 							xtype : 'TrisacForm_xtype',
-							height : 120,
+							height : 140,
 							scrollable : false
 						},
 

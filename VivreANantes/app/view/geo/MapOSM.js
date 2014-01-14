@@ -27,6 +27,7 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
      		this.layermapping['modco_distrisac'] = { name : 'Distrisac' , iconurl : 'resources/icons/marker-icon-red.png' , label : '<img style="width:10%" src="resources/icons/marker-icon-red.png"> Distrisac' };
      		this.layermapping['modco_ecotox'] = { name : 'Ecotox' , iconurl : 'resources/icons/marker-icon-pink.png' , label : '<img style="width:10%" src="resources/icons/marker-icon-pink.png"> Ecotox' };
      		this.layermapping['modco_encombrants'] = { name : 'Encombrants' , iconurl : 'resources/icons/marker-icon-blue.png' , label : '<img style="width:10%" src="resources/icons/marker-icon-blue.png"> Encombrants' };
+     		this.layermapping['modco_conteneur'] = { name : 'Conteneurs' , iconurl : 'resources/icons/marker-icon-brown.png' , label : '<img style="width:10%" src="resources/icons/marker-icon-brown.png"> Conteneurs' };
      			
 	    	//INIT MAX BOUNDS (Nantes et agglo)
 	    	//bounds = new L.LatLngBounds([47, -1.8], [47.4, -1.3]);
@@ -57,8 +58,11 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
     		var re=new RegExp("^smco_reemp.+$", "i");
     		if (re.test(modesCollecte)) modesCollecte='modco_reemploi'; 			
 			
+    		var re=new RegExp("^modco_cont.+$", "i");
+    		if (re.test(modesCollecte)) modesCollecte='modco_conteneur';
+    		
     		//FILTER STRUCTURES   		
-    		if (modesCollecte!='modco_distrisac' && modesCollecte!='modco_ecotox' && modesCollecte!='modco_encombrants' && modesCollecte!='modco_reemploi')  return;			
+    		if (modesCollecte!='modco_distrisac' && modesCollecte!='modco_ecotox' && modesCollecte!='modco_encombrants' && modesCollecte!='modco_reemploi'  && modesCollecte!='modco_conteneur' )  return;			
 
     		layerId=modesCollecte;
     		latitude=record.get('latitude');

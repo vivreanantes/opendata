@@ -159,7 +159,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			}
 		}
 
-		var nbGarbagesMax = 39;	// la page UsualCategoriesButtonPanel.js affiche 39 éléments
+		var nbGarbagesMax = 18;	// la page UsualCategoriesButtonPanel.js affiche 18 éléments
 		this.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);
 	},
 
