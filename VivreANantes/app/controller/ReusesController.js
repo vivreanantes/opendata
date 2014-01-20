@@ -70,14 +70,16 @@ Ext.define("VivreANantes.controller.ReusesController", {
 	
 	
 	onShowReuse : function() {
-		var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
-			filters : [{
-				property : "modesCollecte",
-				value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
-			}]
-		});
-		this.getReusesList().setStore(structureStore);
-		structureStore.load();
+		if (this.getReusesList().getStore()==null) {
+			var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+				filters : [{
+					property : "modesCollecte",
+					value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
+				}]
+			});
+			this.getReusesList().setStore(structureStore);
+			structureStore.load();
+		}
 	},
 	
 	

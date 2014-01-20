@@ -78,14 +78,16 @@ Ext.define("VivreANantes.controller.StructuresController", {
 
 	
 	onShowStructures : function() {
-		var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
-			filters : [{
-				property : "modesCollecte",
-				value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g
-			}]
-		});
-		this.getStructuresList().setStore(structureStore);
-		structureStore.load();
+		if (this.getStructuresList().getStore()==null) {
+			var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+				filters : [{
+					property : "modesCollecte",
+					value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g
+				}]
+			});
+			this.getStructuresList().setStore(structureStore);
+			structureStore.load();
+		}
 	},
 	
 	onListRefresh : function(list, eOpts) {

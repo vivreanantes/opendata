@@ -61,14 +61,16 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 	},
 	
 	onShowTrisac : function() {
-		var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
-					filters : [{
-								property : "modesCollecte",
-								value : /modco_distrisac/g
-							}]
-				});
-		this.getTrisacList().setStore(structureStore);
-		structureStore.load();
+		if (this.getTrisacList().getStore()==null) {
+			var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+						filters : [{
+									property : "modesCollecte",
+									value : /modco_distrisac/g
+								}]
+					});
+			this.getTrisacList().setStore(structureStore);
+			structureStore.load();
+		}
 	},
 
 	// Méthodes invoquées par le formulaire

@@ -59,10 +59,12 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	},
 	
 	onShowHomeCollectModsView : function() {
-		var homecollectmodStore = Ext.create(
-			'VivreANantes.store.HomeCollectModStore');
-		this.getHomeCollectModsList().setStore(homecollectmodStore);
-		homecollectmodStore.load();
+		if (this.getHomeCollectModsList().getStore()==null) {
+			var homecollectmodStore = Ext.create(
+				'VivreANantes.store.HomeCollectModStore');
+			this.getHomeCollectModsList().setStore(homecollectmodStore);
+			homecollectmodStore.load();
+		}
 
 		// list.setStore(homecollectmodStore);
 	},
