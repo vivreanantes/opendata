@@ -47,7 +47,7 @@ Ext.define('VivreANantes.controller.Welcome', {
 						"(elle ne fonctionnera pas avec Internet Explorer, Firefox, Opéra ou Safari).</font><br/><br/>";
 				var titre = "<h2>\"Mieux trier à Nantes\"</h2>";
 				var text = "<img src='resources/images/conteneur_verre_mini.png' width='120px' height='120px' align='right' />" +
-						"<p>Cette application est réalisée par des bénévoles. Elle est <font color='blue'>en phase de développement</font>. Version 0.13121 (dec. 2013)</p>" +
+						"<p>Cette application est réalisée par des bénévoles. Elle est <font color='blue'>en phase de développement</font>. Version 0.14021 (fèv. 2014)</p>" +
 						"<p>C\'est un logiciel libre dont <b>l'objectif est d\'aider les Nantais à trier</b> : modes de collecte par déchets, distribution Trisac, " +
 						"jours de collecte à domicile, coordonnées des assos de récupération...<br/>Les données viennent de 'Open Data Nantes', 'Deuxième vie', " +
 						"du site de 'Nantes Métropôle' et de 'Allo Propreté'.</p><p>Plus d'infos sur " +

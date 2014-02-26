@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+	<SCRIPT type='text/javascript' src='..\lib\mieuxtrieranantes\plageshoraires.js'></SCRIPT>
+	<SCRIPT type='text/javascript' src='..\lib\mieuxtrieranantes\translation.js'></SCRIPT>
+	
+	<SCRIPT>
+	function chargementDesDonnees()
+	{
+
+		var h1 = _traduitEnsemblePlageHoraire( "0101-3112_me_09h00-12h00,0101-3112_sa_09h00-12h30", 'fr');
+		var h2 = _traduitEnsemblePlageHoraire( "0101-3112_lu+ma+me+je+ve_12h00-14h00", 'fr');
+		var h3 = _traduitEnsemblePlageHoraire( "0103-3112_lu+ma+me+je+ve+sa_07h00-19h30", 'fr');
+		document.getElementById("content").innerHTML = h1 + "<br/><br/>" + h2 + "<br/><br/>" + h3 + "<br/><br/>" 
+	}
+	
+	
+	</SCRIPT>
+</HEAD>
+
+<BODY onload ="chargementDesDonnees()">
+  <div id="content"></div>
+</BODY>
+
+</BODY>

@@ -55,7 +55,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Allée Claude Cahun",
 				"nvsa" : "Claude Cahun ",
-				"ci" : "le numéro 1",
+				"ci" : " (le numéro 1)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -63,7 +63,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Allée Claude Cahun",
 				"nvsa" : "Claude Cahun ",
-				"ci" : "tous les numéros sauf le numéro 1",
+				"ci" : " (tous les numéros sauf le numéro 1)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2048",
@@ -2178,7 +2178,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Avenue des Epicéas",
 				"nvsa" : "Epiceas",
-				"ci" : "les numéros 37 et 39",
+				"ci" : " (les numéros 37 et 39)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -2186,7 +2186,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Avenue des Epicéas",
 				"nvsa" : "Epiceas",
-				"ci" : "tous les numéros sauf les numéros 37 et 39",
+				"ci" : " (tous les numéros sauf les numéros 37 et 39)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "3049",
@@ -2398,7 +2398,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Avenue des Mimosas",
 				"nvsa" : "Mimosas",
-				"ci" : "numéros pairs (impairs =orvault)",
+				"ci" : " (numéros pairs (impairs =orvault))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5903",
@@ -2777,14 +2777,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Avenue du Fruitier",
 				"nvsa" : "Fruitier",
-				"ci" : "les numéros 30 et 32",
+				"ci" : " (les numéros 30 et 32)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "3395",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Avenue du Fruitier",
 				"nvsa" : "Fruitier",
-				"ci" : "les numéros 1-3-5",
+				"ci" : " (les numéros 1-3-5)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -2889,7 +2889,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Avenue du Patis Vert",
 				"nvsa" : "Patis Vert ",
-				"ci" : "numéros 25 à 27 et 26 à 28 (autres = vertou), Collecté par SITA",
+				"ci" : " (numéros 25 à 27 et 26 à 28 (autres = vertou), Collecté par SITA)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -3452,7 +3452,7 @@
 				"code" : "5078",
 				"dcv" : "Avenue Louis De Broglie",
 				"nvsa" : "Louis De Broglie ",
-				"ci" : "Pas de collecte sélective en porte à porte"
+				"ci" : " (Pas de collecte sélective en porte à porte)"
 			}, {
 				"code" : "5142",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -3947,7 +3947,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Albert Einstein",
 				"nvsa" : "Albert Einstein",
-				"ci" : "sauf le centre pénitenciaire (collecté uniquement en OM)",
+				"ci" : " (sauf le centre pénitenciaire (collecté uniquement en OM))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0084",
@@ -3978,14 +3978,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Auguste Pageot",
 				"nvsa" : "Auguste Pageot ",
-				"ci" : "jusqu'aux numéros 13 et 12",
+				"ci" : " (jusqu'aux numéros 13 et 12)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0446",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Auguste Pageot",
 				"nvsa" : "Auguste Pageot ",
-				"ci" : "à partir des numéros 15 et 14",
+				"ci" : " (à partir des numéros 15 et 14)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -4019,14 +4019,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Boulay Paty",
 				"nvsa" : "Boulay Paty ",
-				"ci" : "des numéros 1 à 13",
+				"ci" : " (des numéros 1 à 13)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "1116",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Boulay Paty",
 				"nvsa" : "Boulay Paty ",
-				"ci" : "des numéros 37 à 57 et tous les numéros pairs",
+				"ci" : " (des numéros 37 à 57 et tous les numéros pairs)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -4053,7 +4053,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard de Chantenay",
 				"nvsa" : "Chantenay",
-				"ci" : "tous les numéros impairs, numéros pairs à partir du numéro 24",
+				"ci" : " (tous les numéros impairs, numéros pairs à partir du numéro 24)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -4061,7 +4061,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard de Chantenay",
 				"nvsa" : "Chantenay",
-				"ci" : "des numéros 2 à 22",
+				"ci" : " (des numéros 2 à 22)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2572",
@@ -4075,7 +4075,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard de l'Egalité",
 				"nvsa" : "Egalite",
-				"ci" : "à partir des numéros 47 et 42",
+				"ci" : " (à partir des numéros 47 et 42)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -4083,7 +4083,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard de l'Egalité",
 				"nvsa" : "Egalite",
-				"ci" : "jusqu'aux numéros 37 et 38",
+				"ci" : " (jusqu'aux numéros 37 et 38)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -4103,7 +4103,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard de la Beaujoire",
 				"nvsa" : "Beaujoire",
-				"ci" : "jusqu'au numéro 47 et à partir du numéro 38",
+				"ci" : " (jusqu'au numéro 47 et à partir du numéro 38)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -4111,7 +4111,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard de la Beaujoire",
 				"nvsa" : "Beaujoire",
-				"ci" : "à partir du numéro 49 et jusqu'au numéro 36B",
+				"ci" : " (à partir du numéro 49 et jusqu'au numéro 36B)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "1820",
@@ -4131,7 +4131,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard de la Liberté",
 				"nvsa" : "Liberte",
-				"ci" : "tous les numéros sauf le numéro 2",
+				"ci" : " (tous les numéros sauf le numéro 2)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -4139,7 +4139,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard de la Liberté",
 				"nvsa" : "Liberte",
-				"ci" : "le numéro 2",
+				"ci" : " (le numéro 2)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5017",
@@ -4223,14 +4223,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard des Anglais",
 				"nvsa" : "Anglais",
-				"ci" : "jusqu'aux numéros 51 et 28",
+				"ci" : " (jusqu'aux numéros 51 et 28)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0288",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard des Anglais",
 				"nvsa" : "Anglais",
-				"ci" : "des numéros 53 à 79 et 30 à 64",
+				"ci" : " (des numéros 53 à 79 et 30 à 64)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -4238,7 +4238,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard des Anglais",
 				"nvsa" : "Anglais",
-				"ci" : "à partir des numéros 81 et 64B",
+				"ci" : " (à partir des numéros 81 et 64B)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0318",
@@ -4315,7 +4315,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard du Massacre",
 				"nvsa" : "Massacre",
-				"ci" : "numéros impairs (pairs = st herblain)",
+				"ci" : " (numéros impairs (pairs = st herblain))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "6479",
@@ -4328,7 +4328,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard du Tertre",
 				"nvsa" : "Tertre",
-				"ci" : "numéros impairs (pairs = st herblain)",
+				"ci" : " (numéros impairs (pairs = st herblain))",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -4336,14 +4336,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Emile Gabory",
 				"nvsa" : "Emile Gabory ",
-				"ci" : "tous les numéros sauf 1-26-30",
+				"ci" : " (tous les numéros sauf 1-26-30)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2785",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Emile Gabory",
 				"nvsa" : "Emile Gabory ",
-				"ci" : "les numéros 1-26-30",
+				"ci" : " (les numéros 1-26-30)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -4358,7 +4358,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Ernest Dalby",
 				"nvsa" : "Ernest Dalby ",
-				"ci" : "jusqu'aux numéros 37 et 52",
+				"ci" : " (jusqu'aux numéros 37 et 52)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -4366,7 +4366,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Ernest Dalby",
 				"nvsa" : "Ernest Dalby ",
-				"ci" : "à partir des numéros 39 et 54",
+				"ci" : " (à partir des numéros 39 et 54)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2976",
@@ -4479,14 +4479,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Jean Moulin",
 				"nvsa" : "Jean Moulin",
-				"ci" : "les numéros 13 et 15",
+				"ci" : " (les numéros 13 et 15)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "4503",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Jean Moulin",
 				"nvsa" : "Jean Moulin",
-				"ci" : "tous les numéros sauf 13 et 15",
+				"ci" : " (tous les numéros sauf 13 et 15)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -4514,7 +4514,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Jules Verne",
 				"nvsa" : "Jules Verne ",
-				"ci" : "tous les numéros sauf les numéros 129B-157-159",
+				"ci" : " (tous les numéros sauf les numéros 129B-157-159)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -4522,7 +4522,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Jules Verne",
 				"nvsa" : "Jules Verne ",
-				"ci" : "les numéros 129B-157-159",
+				"ci" : " (les numéros 129B-157-159)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "4884",
@@ -4542,7 +4542,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Léon Jouhaux",
 				"nvsa" : "Leon Jouhaux ",
-				"ci" : "tous les numéros sauf 1 et 3",
+				"ci" : " (tous les numéros sauf 1 et 3)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -4550,7 +4550,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Léon Jouhaux",
 				"nvsa" : "Leon Jouhaux ",
-				"ci" : "numéros 1 et 3",
+				"ci" : " (numéros 1 et 3)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -4621,14 +4621,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Pasteur",
 				"nvsa" : "Pasteur",
-				"ci" : "jusqu'aux numéros 27 et 14",
+				"ci" : " (jusqu'aux numéros 27 et 14)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "6168",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Pasteur",
 				"nvsa" : "Pasteur",
-				"ci" : "à partir des numéros 29 et 18",
+				"ci" : " (à partir des numéros 29 et 18)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -4649,7 +4649,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Pierre De Coubertin",
 				"nvsa" : "Pierre De Coubertin ",
-				"ci" : "sauf les numéros 82 à 84 (st herblain)",
+				"ci" : " (sauf les numéros 82 à 84 (st herblain))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "6953",
@@ -4674,14 +4674,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Robert Schuman",
 				"nvsa" : "Robert Schuman ",
-				"ci" : "des numéros 105 à 143 et 98 à 142",
+				"ci" : " (des numéros 105 à 143 et 98 à 142)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7357",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Boulevard Robert Schuman",
 				"nvsa" : "Robert Schuman ",
-				"ci" : "jusqu'aux numéros 103 et 96",
+				"ci" : " (jusqu'aux numéros 103 et 96)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -4689,21 +4689,21 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Robert Schuman",
 				"nvsa" : "Robert Schuman ",
-				"ci" : "à partir des numéros 147 et 166",
+				"ci" : " (à partir des numéros 147 et 166)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7528",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Saint Aignan",
 				"nvsa" : "Saint Aignan ",
-				"ci" : "jusqu'aux numéros 65 et 62",
+				"ci" : " (jusqu'aux numéros 65 et 62)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "7528",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Saint Aignan",
 				"nvsa" : "Saint Aignan ",
-				"ci" : "à partir des numéros 75 et 82",
+				"ci" : " (à partir des numéros 75 et 82)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7803",
@@ -4734,7 +4734,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Boulevard Winston Churchill",
 				"nvsa" : "Winston Churchill",
-				"ci" : "numéros pairs (impairs = st herblain)",
+				"ci" : " (numéros pairs (impairs = st herblain))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5188",
@@ -4951,7 +4951,7 @@
 				"code" : "4690",
 				"dcv" : "Chemin de la Justice",
 				"nvsa" : "Justice",
-				"ci" : "Pas de collecte sélective en porte à porte"
+				"ci" : " (Pas de collecte sélective en porte à porte)"
 			}, {
 				"code" : "4776",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
@@ -4964,7 +4964,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Chemin de la Mainguais",
 				"nvsa" : "Mainguais",
-				"ci" : "les numéros 198 à 202 (sinon=carquefou)",
+				"ci" : " (les numéros 198 à 202 (sinon=carquefou))",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -5098,7 +5098,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Chemin des Garniers",
 				"nvsa" : "Garniers",
-				"ci" : "tous les numéros sauf le numéro 96",
+				"ci" : " (tous les numéros sauf le numéro 96)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -5106,7 +5106,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Chemin des Garniers",
 				"nvsa" : "Garniers",
-				"ci" : "uniquement le numéro 96"
+				"ci" : " (uniquement le numéro 96)"
 			}, {
 				"code" : "3757",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -5253,7 +5253,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Chemin du Champ de Manoeuvre",
 				"nvsa" : "Champ de Manoeuvre ",
-				"ci" : "numéros pairs - partie Sud (impairs=carquefou)",
+				"ci" : " (numéros pairs - partie Sud (impairs=carquefou))",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -7459,7 +7459,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Place Aristide Briand",
 				"nvsa" : "Aristide Briand",
-				"ci" : "le numéro 5",
+				"ci" : " (le numéro 5)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0360",
@@ -7485,14 +7485,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Place Canclaux",
 				"nvsa" : "Canclaux",
-				"ci" : "des numéros 1 à 2B et 8 à 14 (pairs et impairs",
+				"ci" : " (des numéros 1 à 2B et 8 à 14 (pairs et impairs)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "1392",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Place Canclaux",
 				"nvsa" : "Canclaux",
-				"ci" : "des numéros 4 à 7",
+				"ci" : " (des numéros 4 à 7)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -7680,7 +7680,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Place de la Nation",
 				"nvsa" : "Nation",
-				"ci" : "sauf le numéro 3",
+				"ci" : " (sauf le numéro 3)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -7688,7 +7688,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Place de la Nation",
 				"nvsa" : "Nation",
-				"ci" : "le numéro 3",
+				"ci" : " (le numéro 3)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -8242,7 +8242,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Place Pierre Mendès France",
 				"nvsa" : "Pierre Mendes France",
-				"ci" : "numéros pairs (impairs = st herblain)",
+				"ci" : " (numéros pairs (impairs = st herblain))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7058",
@@ -8445,14 +8445,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Quai de la Fosse",
 				"nvsa" : "Fosse",
-				"ci" : "jusqu'au numéro 76",
+				"ci" : " (jusqu'au numéro 76)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "3232",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Quai de la Fosse",
 				"nvsa" : "Fosse",
-				"ci" : "à partir du numéro 84",
+				"ci" : " (à partir du numéro 84)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4543",
@@ -8653,14 +8653,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Carquefou",
 				"nvsa" : "Carquefou",
-				"ci" : "des numéros 17 à 33 et des numéros 42 à 58",
+				"ci" : " (des numéros 17 à 33 et des numéros 42 à 58)",
 				"jct" : "mardi"
 			}, {
 				"code" : "1452",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Route de Carquefou",
 				"nvsa" : "Carquefou",
-				"ci" : "numéros impairs jusqu'au 15 et à partir du 37, numéros pairs du 4 au 40 et du 60 au 124 (après = Carquefou)",
+				"ci" : " (numéros impairs jusqu'au 15 et à partir du 37, numéros pairs du 4 au 40 et du 60 au 124 (après = Carquefou))",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -8668,14 +8668,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Carquefou",
 				"nvsa" : "Carquefou",
-				"ci" : "le numéro 2",
+				"ci" : " (le numéro 2)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "1972",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Route de Clisson",
 				"nvsa" : "Clisson",
-				"ci" : "tous les numéros pairs, numéros impairs jusqu'au numéro 49 (après = St seb)",
+				"ci" : " (tous les numéros pairs, numéros impairs jusqu'au numéro 49 (après = St seb))",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -8702,7 +8702,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Route de Paris",
 				"nvsa" : "Paris",
-				"ci" : "les numéros 79 à 87",
+				"ci" : " (les numéros 79 à 87)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -8710,7 +8710,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Paris",
 				"nvsa" : "Paris",
-				"ci" : "tous les numéros pairs et numéros impairs jusqu'au 45",
+				"ci" : " (tous les numéros pairs et numéros impairs jusqu'au 45)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "6748",
@@ -8724,7 +8724,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Rennes",
 				"nvsa" : "Rennes",
-				"ci" : "numéros pairs (impairs =orvault)",
+				"ci" : " (numéros pairs (impairs =orvault))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7380",
@@ -8745,7 +8745,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Route de Saint Joseph",
 				"nvsa" : "Saint Joseph",
-				"ci" : "tous les numéros sauf 184 à 190 et 320 à 330",
+				"ci" : " (tous les numéros sauf 184 à 190 et 320 à 330)",
 				"jcbb" : "mixte : voir précisions",
 				"jcbj" : "mixte : voir précisions"
 			}, {
@@ -8753,7 +8753,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Saint Joseph",
 				"nvsa" : "Saint Joseph",
-				"ci" : "des numéros 184 à 190 et 320 à 330",
+				"ci" : " (des numéros 184 à 190 et 320 à 330)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "7744",
@@ -8767,7 +8767,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Route de Sainte Luce",
 				"nvsa" : "Sainte Luce ",
-				"ci" : "jusqu'aux numéros 171 et 168 et à partir des numéros 279 et 272",
+				"ci" : " (jusqu'aux numéros 171 et 168 et à partir des numéros 279 et 272)",
 				"jcbb" : "mixte : voir précisions",
 				"jcbj" : "mixte : voir précisions"
 			}, {
@@ -8775,21 +8775,21 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Sainte Luce",
 				"nvsa" : "Sainte Luce ",
-				"ci" : "des numéros 173 à 261 et 182 à 266",
+				"ci" : " (des numéros 173 à 261 et 182 à 266)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "8304",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Vannes",
 				"nvsa" : "Vannes",
-				"ci" : "numéros pairs à partir du numéro 82",
+				"ci" : " (numéros pairs à partir du numéro 82)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "8304",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Route de Vannes",
 				"nvsa" : "Vannes",
-				"ci" : "numéros 78 et 80",
+				"ci" : " (numéros 78 et 80)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -8797,7 +8797,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Route de Vannes",
 				"nvsa" : "Vannes",
-				"ci" : "jusqu'aux numéros 85 (impairs qui suivent =st herblain) et 76 et du 138 au 160 (puis orvault)",
+				"ci" : " (jusqu'aux numéros 85 (impairs qui suivent =st herblain) et 76 et du 138 au 160 (puis orvault))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "8392",
@@ -9033,14 +9033,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Amiral Du Chaffault",
 				"nvsa" : "Amiral Du Chaffault ",
-				"ci" : "le numéro 55",
+				"ci" : " (le numéro 55)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0236",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Amiral Du Chaffault",
 				"nvsa" : "Amiral Du Chaffault ",
-				"ci" : "jusqu'aux numéros 51 et 56",
+				"ci" : " (jusqu'aux numéros 51 et 56)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -9048,7 +9048,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Amiral Du Chaffault",
 				"nvsa" : "Amiral Du Chaffault ",
-				"ci" : "à partir des numéros 57 et 62",
+				"ci" : " (à partir des numéros 57 et 62)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0239",
@@ -9302,14 +9302,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Babonneau",
 				"nvsa" : "Babonneau",
-				"ci" : "le numéro 30 seulement",
+				"ci" : " (le numéro 30 seulement)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0500",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Babonneau",
 				"nvsa" : "Babonneau",
-				"ci" : "sauf le numéro 30",
+				"ci" : " (sauf le numéro 30)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0516",
@@ -9540,14 +9540,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Bonne Garde",
 				"nvsa" : "Bonne Garde ",
-				"ci" : "numéros impairs jus'au numéro 117 (pairs jusqu'au 82=st seb)",
+				"ci" : " (numéros impairs jus'au numéro 117 (pairs jusqu'au 82=st seb))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "1012",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Bonne Garde",
 				"nvsa" : "Bonne Garde ",
-				"ci" : "à partir des numéros 119 et 112",
+				"ci" : " (à partir des numéros 119 et 112)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -9668,14 +9668,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Casimir Perier",
 				"nvsa" : "Casimir Perier ",
-				"ci" : "à partir des numéros 9 et 8",
+				"ci" : " (à partir des numéros 9 et 8)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "1484",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Casimir Perier",
 				"nvsa" : "Casimir Perier ",
-				"ci" : "jusqu'aux numéros 5 et 6",
+				"ci" : " (jusqu'aux numéros 5 et 6)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "1492",
@@ -9816,7 +9816,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Charles le Goffic",
 				"nvsa" : "Charles le Goffic",
-				"ci" : "le numéro 13",
+				"ci" : " (le numéro 13)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -9824,7 +9824,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Charles le Goffic",
 				"nvsa" : "Charles le Goffic",
-				"ci" : "tous les numéros sauf le numéro 13",
+				"ci" : " (tous les numéros sauf le numéro 13)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "1720",
@@ -10109,14 +10109,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Copernic",
 				"nvsa" : "Copernic",
-				"ci" : "à partir des numéros 5B et 10B",
+				"ci" : " (à partir des numéros 5B et 10B)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "2140",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Copernic",
 				"nvsa" : "Copernic",
-				"ci" : "les numéros 5 et 6",
+				"ci" : " (les numéros 5 et 6)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "2148",
@@ -10245,13 +10245,13 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue d'Ascain",
 				"nvsa" : "Ascain",
-				"ci" : "le numéro 2 seulement"
+				"ci" : " (le numéro 2 seulement)"
 			}, {
 				"code" : "0414",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue d'Ascain",
 				"nvsa" : "Ascain",
-				"ci" : "tous les numéros sauf le numéro 2",
+				"ci" : " (tous les numéros sauf le numéro 2)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -10607,14 +10607,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Concarneau",
 				"nvsa" : "Concarneau",
-				"ci" : "les numéros 11 et 12",
+				"ci" : " (les numéros 11 et 12)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2107",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Concarneau",
 				"nvsa" : "Concarneau",
-				"ci" : "tous les numéros sauf les numéros 11 et 12"
+				"ci" : " (tous les numéros sauf les numéros 11 et 12)"
 			}, {
 				"code" : "2116",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -10725,14 +10725,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Gigant",
 				"nvsa" : "Gigant",
-				"ci" : "jusqu'aux numéros 23 et 36",
+				"ci" : " (jusqu'aux numéros 23 et 36)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "3720",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Gigant",
 				"nvsa" : "Gigant",
-				"ci" : "à partir des numéros 25 et 40",
+				"ci" : " (à partir des numéros 25 et 40)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "3768",
@@ -10972,14 +10972,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de l'Eraudière",
 				"nvsa" : "Eraudiere",
-				"ci" : "des numéros 1 à 29 et 2 à 24",
+				"ci" : " (des numéros 1 à 29 et 2 à 24)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "2865",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de l'Eraudière",
 				"nvsa" : "Eraudiere",
-				"ci" : "à partir des numéros 37 et 32",
+				"ci" : " (à partir des numéros 37 et 32)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -10994,14 +10994,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de l'Etang",
 				"nvsa" : "Etang",
-				"ci" : "le numéro 1",
+				"ci" : " (le numéro 1)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "2912",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de l'Etang",
 				"nvsa" : "Etang",
-				"ci" : "tous les numéros sauf le 1",
+				"ci" : " (tous les numéros sauf le 1)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -11016,7 +11016,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de l'Europe",
 				"nvsa" : "Europe",
-				"ci" : "le numéro 2 seulement (sinon=carquefou)",
+				"ci" : " (le numéro 2 seulement (sinon=carquefou))",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -11068,7 +11068,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de l'Houmaille",
 				"nvsa" : "Houmaille",
-				"ci" : "les numéros 7-13-15 (autres=rezé)",
+				"ci" : " (les numéros 7-13-15 (autres=rezé))",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -11083,7 +11083,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de l'Ile aux Moutons",
 				"nvsa" : "Ile aux Moutons ",
-				"ci" : "le numéro 1",
+				"ci" : " (le numéro 1)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -11116,7 +11116,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de l'Ile Pointière",
 				"nvsa" : "Ile Pointiere ",
-				"ci" : "les numéros 2-98-99 (autres=bouguenais)",
+				"ci" : " (les numéros 2-98-99 (autres=bouguenais))",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -11124,14 +11124,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de l'Indre",
 				"nvsa" : "Indre",
-				"ci" : "tous les numéros sauf les numéros 4-6-8",
+				"ci" : " (tous les numéros sauf les numéros 4-6-8)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "4276",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de l'Indre",
 				"nvsa" : "Indre",
-				"ci" : "les numéros 4-6-8"
+				"ci" : " (les numéros 4-6-8)"
 			}, {
 				"code" : "4280",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -11230,7 +11230,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Basse Chénaie",
 				"nvsa" : "Basse Chenaie ",
-				"ci" : "numéros impairs jusqu'au numéro 19 et tous les numéros pairs",
+				"ci" : " (numéros impairs jusqu'au numéro 19 et tous les numéros pairs)",
 				"jcbb" : "mixte : voir précisions",
 				"jcbj" : "mixte : voir précisions"
 			}, {
@@ -11238,21 +11238,21 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Basse Chénaie",
 				"nvsa" : "Basse Chenaie ",
-				"ci" : "numéros impairs à partir du numéro 35",
+				"ci" : " (numéros impairs à partir du numéro 35)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0616",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Bastille",
 				"nvsa" : "Bastille",
-				"ci" : "jusqu'aux numéros 39 et 58",
+				"ci" : " (jusqu'aux numéros 39 et 58)",
 				"jct" : "mixte : voir précisions"
 			}, {
 				"code" : "0616",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Bastille",
 				"nvsa" : "Bastille",
-				"ci" : "à partir des numéros 45 et 62",
+				"ci" : " (à partir des numéros 45 et 62)",
 				"jct" : "mixte : voir précisions"
 			}, {
 				"code" : "0752",
@@ -11302,14 +11302,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Bottière",
 				"nvsa" : "Bottiere",
-				"ci" : "des numéros 49A à 69 et 60 à 64",
+				"ci" : " (des numéros 49A à 69 et 60 à 64)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "1072",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Bottière",
 				"nvsa" : "Bottiere",
-				"ci" : "jusqu'aux numéros 49 et 14",
+				"ci" : " (jusqu'aux numéros 49 et 14)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -11317,7 +11317,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Bottière",
 				"nvsa" : "Bottiere",
-				"ci" : "des numéros 32 à 56 et 70 à 82",
+				"ci" : " (des numéros 32 à 56 et 70 à 82)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "1088",
@@ -11444,14 +11444,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Conardière",
 				"nvsa" : "Conardiere",
-				"ci" : "numéros impairs à partir du numéro 29",
+				"ci" : " (numéros impairs à partir du numéro 29)",
 				"jct" : "mardi"
 			}, {
 				"code" : "2106",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Conardière",
 				"nvsa" : "Conardiere",
-				"ci" : "numéros impairs jusqu'au numéro 27 et tous les numéros pairs",
+				"ci" : " (numéros impairs jusqu'au numéro 27 et tous les numéros pairs)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -11486,7 +11486,7 @@
 				"code" : "2132",
 				"dcv" : "Rue de la Convention",
 				"nvsa" : "Convention",
-				"ci" : "le numéro 51",
+				"ci" : " (le numéro 51)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -11494,7 +11494,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Convention",
 				"nvsa" : "Convention",
-				"ci" : "tous les numéros sauf le numéro 51",
+				"ci" : " (tous les numéros sauf le numéro 51)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -11606,7 +11606,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Favrie",
 				"nvsa" : "Favrie",
-				"ci" : "numéros impairs (pairs = st herblain)",
+				"ci" : " (numéros impairs (pairs = st herblain))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "3048",
@@ -11640,7 +11640,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Fonderie",
 				"nvsa" : "Fonderie",
-				"ci" : "numéros pairs (impairs = st sebastien)",
+				"ci" : " (numéros pairs (impairs = st sebastien))",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -11681,7 +11681,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Garde",
 				"nvsa" : "Garde",
-				"ci" : "jusqu'aux numéros 93 et 82",
+				"ci" : " (jusqu'aux numéros 93 et 82)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -11689,7 +11689,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Garde",
 				"nvsa" : "Garde",
-				"ci" : "à partir des numéros 95 et 84",
+				"ci" : " (à partir des numéros 95 et 84)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "3467",
@@ -11703,14 +11703,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Gaudinière",
 				"nvsa" : "Gaudiniere",
-				"ci" : "les numéros impairs à partir du numéro 71",
+				"ci" : " (les numéros impairs à partir du numéro 71)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "3526",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Gaudinière",
 				"nvsa" : "Gaudiniere",
-				"ci" : "les numéros impairs jusqu'au numéro 69 et tous les numéros pairs",
+				"ci" : " (les numéros impairs jusqu'au numéro 69 et tous les numéros pairs)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -11738,7 +11738,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Grande Bretagne",
 				"nvsa" : "Grande Bretagne",
-				"ci" : "jusqu'aux numéros 11 et 20 (après =carquefou)",
+				"ci" : " (jusqu'aux numéros 11 et 20 (après =carquefou))",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -11746,14 +11746,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Grange au Loup",
 				"nvsa" : "Grange au Loup ",
-				"ci" : "numéros pairs à partir du numéro 34",
+				"ci" : " (numéros pairs à partir du numéro 34)",
 				"jct" : "mardi"
 			}, {
 				"code" : "3825",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Grange au Loup",
 				"nvsa" : "Grange au Loup ",
-				"ci" : "numéros impairs et numéros pairs jusqu'au numéro 21",
+				"ci" : " (numéros impairs et numéros pairs jusqu'au numéro 21)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -11761,7 +11761,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Grèneraie",
 				"nvsa" : "Greneraie",
-				"ci" : "numéros pairs (impairs = st sebastien)",
+				"ci" : " (numéros pairs (impairs = st sebastien))",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -11838,7 +11838,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Jalotterie",
 				"nvsa" : "Jalotterie",
-				"ci" : "jusqu'aux numéros 7 et 12 (après = st herblain)",
+				"ci" : " (jusqu'aux numéros 7 et 12 (après = st herblain))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4344",
@@ -11878,13 +11878,13 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Maison Blanche",
 				"nvsa" : "Maison Blanche",
-				"ci" : "uniquement les numéros 15B à 25"
+				"ci" : " (uniquement les numéros 15B à 25)"
 			}, {
 				"code" : "5228",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Maison Blanche",
 				"nvsa" : "Maison Blanche ",
-				"ci" : "tous les numéros sauf les numéros du 15B au 25",
+				"ci" : " (tous les numéros sauf les numéros du 15B au 25)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5408",
@@ -11925,14 +11925,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Mélinière",
 				"nvsa" : "Meliniere",
-				"ci" : "Tous sauf les numéros 2 et 4",
+				"ci" : " (Tous sauf les numéros 2 et 4)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5576",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Mélinière",
 				"nvsa" : "Meliniere",
-				"ci" : "seulement les numéros 2 et 4",
+				"ci" : " (seulement les numéros 2 et 4)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5604",
@@ -11966,14 +11966,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Montagne",
 				"nvsa" : "Montagne",
-				"ci" : "jusqu'aux numéros 57 et 60",
+				"ci" : " (jusqu'aux numéros 57 et 60)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "5740",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Montagne",
 				"nvsa" : "Montagne",
-				"ci" : "à partir des numéros 59 et 62",
+				"ci" : " (à partir des numéros 59 et 62)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -12048,14 +12048,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Patouillerie",
 				"nvsa" : "Patouillerie",
-				"ci" : "le numéro 2",
+				"ci" : " (le numéro 2)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "6185",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Patouillerie",
 				"nvsa" : "Patouillerie",
-				"ci" : "tous les numéros sauf le numéro 2 (ext TS) et le numéro 67 (orvault)",
+				"ci" : " (tous les numéros sauf le numéro 2 (ext TS) et le numéro 67 (orvault))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "6192",
@@ -12155,14 +12155,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Planche au Gué",
 				"nvsa" : "Planche au Gue ",
-				"ci" : "uniquement le n°3 (crèche)",
+				"ci" : " (uniquement le n°3 (crèche))",
 				"jct" : "mardi"
 			}, {
 				"code" : "5555",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Planche au Gué",
 				"nvsa" : "Planche au Gue ",
-				"ci" : "tous les numéros sauf le numéro 3"
+				"ci" : " (tous les numéros sauf le numéro 3)"
 			}, {
 				"code" : "6712",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -12415,7 +12415,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de la Ville en Pierre",
 				"nvsa" : "Ville en Pierre ",
-				"ci" : "jusqu'aux numéros 59B et 86",
+				"ci" : " (jusqu'aux numéros 59B et 86)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -12423,7 +12423,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de la Ville en Pierre",
 				"nvsa" : "Ville en Pierre ",
-				"ci" : "à partir des numéros 61 et 92",
+				"ci" : " (à partir des numéros 61 et 92)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4808",
@@ -12637,14 +12637,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Pont Aven",
 				"nvsa" : "Pont Aven ",
-				"ci" : "numéros 13 et 15",
+				"ci" : " (numéros 13 et 15)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "6757",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Pont Aven",
 				"nvsa" : "Pont Aven ",
-				"ci" : "tous les numéros sauf 13 et 15"
+				"ci" : " (tous les numéros sauf 13 et 15)"
 			}, {
 				"code" : "6772",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -12668,14 +12668,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Port la Blanche",
 				"nvsa" : "Port la Blanche ",
-				"ci" : "numéros impairs jusqu'au numéro 21",
+				"ci" : " (numéros impairs jusqu'au numéro 21)",
 				"jct" : "mardi"
 			}, {
 				"code" : "6864",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de Port la Blanche",
 				"nvsa" : "Port la Blanche ",
-				"ci" : "numéros impairs à partir du 23, tous les numéros paris",
+				"ci" : " (numéros impairs à partir du 23, tous les numéros paris)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -12739,14 +12739,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Richebourg",
 				"nvsa" : "Richebourg",
-				"ci" : "le numéro 47",
+				"ci" : " (le numéro 47)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "7304",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Richebourg",
 				"nvsa" : "Richebourg",
-				"ci" : "tous sauf le numéro 47",
+				"ci" : " (tous sauf le numéro 47)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7324",
@@ -12784,7 +12784,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue de Saint Jean de Luz",
 				"nvsa" : "Saint Jean de Luz ",
-				"ci" : "les numéros 3 et 5",
+				"ci" : " (les numéros 3 et 5)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -12792,7 +12792,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue de Saint Jean de Luz",
 				"nvsa" : "Saint Jean de Luz ",
-				"ci" : "tous les numéros sauf les 3 et 5"
+				"ci" : " (tous les numéros sauf les 3 et 5)"
 			}, {
 				"code" : "7708",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -12995,14 +12995,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Agenets",
 				"nvsa" : "Agenets",
-				"ci" : "des numéros 33 à 81 et 36 à 78",
+				"ci" : " (des numéros 33 à 81 et 36 à 78)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0048",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Agenets",
 				"nvsa" : "Agenets",
-				"ci" : "les numéros 29-31-32 et à partir des numéros 93 et 80",
+				"ci" : " (les numéros 29-31-32 et à partir des numéros 93 et 80)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -13023,14 +13023,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Alouettes",
 				"nvsa" : "Alouettes",
-				"ci" : "les numéros 42 et 44",
+				"ci" : " (les numéros 42 et 44)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0184",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Alouettes",
 				"nvsa" : "Alouettes",
-				"ci" : "tous les numéros sauf 42 et 44",
+				"ci" : " (tous les numéros sauf 42 et 44)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -13083,14 +13083,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Boers",
 				"nvsa" : "Boers",
-				"ci" : "numéros 39 et 42",
+				"ci" : " (numéros 39 et 42)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0908",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Boers",
 				"nvsa" : "Boers",
-				"ci" : "jusqu'aux numéros 37 et 40",
+				"ci" : " (jusqu'aux numéros 37 et 40)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "0913",
@@ -13122,14 +13122,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Bourderies",
 				"nvsa" : "Bourderies",
-				"ci" : "des numéros 13 à 29 et 12 à 30",
+				"ci" : " (des numéros 13 à 29 et 12 à 30)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "1130",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Bourderies",
 				"nvsa" : "Bourderies",
-				"ci" : "les numéros 2-4-6 et à partir des numéros 45 et 32",
+				"ci" : " (les numéros 2-4-6 et à partir des numéros 45 et 32)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -13350,14 +13350,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Dervallières",
 				"nvsa" : "Dervallieres",
-				"ci" : "jusqu'aux numéros 9 et 12",
+				"ci" : " (jusqu'aux numéros 9 et 12)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2412",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Dervallières",
 				"nvsa" : "Dervallieres",
-				"ci" : "à partir des numéros 11 et 14",
+				"ci" : " (à partir des numéros 11 et 14)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -13552,13 +13552,13 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Grands Pâtis",
 				"nvsa" : "Grands Patis",
-				"ci" : "jusqu'aux numéros 21 et 34"
+				"ci" : " (jusqu'aux numéros 21 et 34)"
 			}, {
 				"code" : "3813",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Grands Pâtis",
 				"nvsa" : "Grands Patis",
-				"ci" : "à partir des numéros 23 et 36",
+				"ci" : " (à partir des numéros 23 et 36)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -13599,7 +13599,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Halliers",
 				"nvsa" : "Halliers",
-				"ci" : "les numéros pairs",
+				"ci" : " (les numéros pairs)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -13607,7 +13607,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Halliers",
 				"nvsa" : "Halliers",
-				"ci" : "le numéro 17 (autres numéros impairs = Vertou), Collecté par SITA",
+				"ci" : " (le numéro 17 (autres numéros impairs = Vertou), Collecté par SITA)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -13686,14 +13686,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Martyrs",
 				"nvsa" : "Martyrs",
-				"ci" : "jusqu'aux numéros 13 et 14",
+				"ci" : " (jusqu'aux numéros 13 et 14)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "5444",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Martyrs",
 				"nvsa" : "Martyrs",
-				"ci" : "à partir des numéros 13B et 16",
+				"ci" : " (à partir des numéros 13B et 16)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -13769,7 +13769,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Pavillons",
 				"nvsa" : "Pavillons",
-				"ci" : "jusqu'aux numéros 77 et 112",
+				"ci" : " (jusqu'aux numéros 77 et 112)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -13777,7 +13777,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Pavillons",
 				"nvsa" : "Pavillons",
-				"ci" : "à partir des numéros 79 et 116",
+				"ci" : " (à partir des numéros 79 et 116)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -13837,7 +13837,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Pivoines",
 				"nvsa" : "Pivoines",
-				"ci" : "le numéro 1 (autres = vertou), Collecté par SITA",
+				"ci" : " (le numéro 1 (autres = vertou), Collecté par SITA)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -13845,14 +13845,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Plantes",
 				"nvsa" : "Plantes",
-				"ci" : "tous les numéros impairs sauf des numéros 27 à 43, numéros pairs à partir du 68C (avant=st herblain)",
+				"ci" : " (tous les numéros impairs sauf des numéros 27 à 43, numéros pairs à partir du 68C (avant=st herblain))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "6678",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Plantes",
 				"nvsa" : "Plantes",
-				"ci" : "des numéros 27 à 43"
+				"ci" : " (des numéros 27 à 43)"
 			}, {
 				"code" : "6680",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
@@ -13978,14 +13978,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Roses",
 				"nvsa" : "Roses",
-				"ci" : "jusqu'aux numéros 13 et 16",
+				"ci" : " (jusqu'aux numéros 13 et 16)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "7464",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue des Roses",
 				"nvsa" : "Roses",
-				"ci" : "à partir des numéros 15 et 26",
+				"ci" : " (à partir des numéros 15 et 26)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -14011,14 +14011,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Salorges",
 				"nvsa" : "Salorges",
-				"ci" : "tous les numéros sauf les numéros 13-13B-18",
+				"ci" : " (tous les numéros sauf les numéros 13-13B-18)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7804",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue des Salorges",
 				"nvsa" : "Salorges",
-				"ci" : "les numéros 13-13B-18"
+				"ci" : " (les numéros 13-13B-18)"
 			}, {
 				"code" : "7825",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -14258,7 +14258,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Docteur Paul Macé",
 				"nvsa" : "Docteur Paul Mace",
-				"ci" : "à partir des numéros 15 et 18",
+				"ci" : " (à partir des numéros 15 et 18)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -14266,7 +14266,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Docteur Paul Macé",
 				"nvsa" : "Docteur Paul Mace ",
-				"ci" : "jusqu'aux numéros 11 et 10",
+				"ci" : " (jusqu'aux numéros 11 et 10)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -14372,14 +14372,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Bêle",
 				"nvsa" : "Bele",
-				"ci" : "numéros pairs du numéro 38 au 68",
+				"ci" : " (numéros pairs du numéro 38 au 68)",
 				"jct" : "mardi"
 			}, {
 				"code" : "0700",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Bêle",
 				"nvsa" : "Bele",
-				"ci" : "numéros impairs et numéros pairs jusqu'au 36B et à partir du numéro 70",
+				"ci" : " (numéros impairs et numéros pairs jusqu'au 36B et à partir du numéro 70)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -14461,14 +14461,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Bois Hercé",
 				"nvsa" : "Bois Herce ",
-				"ci" : "des numéros 17 à 27 et 36 à 46",
+				"ci" : " (des numéros 17 à 27 et 36 à 46)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0970",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Bois Hercé",
 				"nvsa" : "Bois Herce ",
-				"ci" : "jusqu'aux numéros 5 et 20",
+				"ci" : " (jusqu'aux numéros 5 et 20)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -14476,7 +14476,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Bois Hercé",
 				"nvsa" : "Bois Herce ",
-				"ci" : "à partir des numéros 33 et 56",
+				"ci" : " (à partir des numéros 33 et 56)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -14495,7 +14495,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Bois Robillard",
 				"nvsa" : "Bois Robillard ",
-				"ci" : "tous les numéros sauf 40-42-44",
+				"ci" : " (tous les numéros sauf 40-42-44)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -14503,7 +14503,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Bois Robillard",
 				"nvsa" : "Bois Robillard ",
-				"ci" : "les numéros 40-42-44",
+				"ci" : " (les numéros 40-42-44)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "0988",
@@ -14547,14 +14547,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Breil",
 				"nvsa" : "Breil",
-				"ci" : "tous les numéros sauf des numéros 51 à 57",
+				"ci" : " (tous les numéros sauf des numéros 51 à 57)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "1213",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Breil",
 				"nvsa" : "Breil",
-				"ci" : "uniquement les numéros 51 à 57"
+				"ci" : " (uniquement les numéros 51 à 57)"
 			}, {
 				"code" : "1267",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
@@ -14657,7 +14657,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Cher",
 				"nvsa" : "Cher",
-				"ci" : "colonnes pour les particuliers, bacs pour les professionneles",
+				"ci" : " (colonnes pour les particuliers, bacs pour les professionneles)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "1847",
@@ -14683,7 +14683,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Clos Toreau",
 				"nvsa" : " Clos Toreau ",
-				"ci" : "numéros pairs (impairs=st sebastien)",
+				"ci" : " (numéros pairs (impairs=st sebastien))",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -14743,14 +14743,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Doubs",
 				"nvsa" : "Doubs",
-				"ci" : "sauf le numéro 1 (Collège Claude Debussy)",
+				"ci" : " (sauf le numéro 1 (Collège Claude Debussy))",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "2570",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Doubs",
 				"nvsa" : "Doubs",
-				"ci" : "uniquement le numéro 1 (Collège Claude Debussy)",
+				"ci" : " (uniquement le numéro 1 (Collège Claude Debussy))",
 				"jcbb" : "mardi, vendredi",
 				"jcbj" : "mardi, vendredi"
 			}, {
@@ -14758,14 +14758,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Douet Garnier",
 				"nvsa" : "Douet Garnier ",
-				"ci" : "jusqu'aux numéros 57 et 60",
+				"ci" : " (jusqu'aux numéros 57 et 60)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2569",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Douet Garnier",
 				"nvsa" : "Douet Garnier ",
-				"ci" : "seulement les numéros 59-61-63",
+				"ci" : " (seulement les numéros 59-61-63)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -14902,14 +14902,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Jamet",
 				"nvsa" : "Jamet",
-				"ci" : "tous les numéros impairs et les numéros pairs à partir du numéro 34",
+				"ci" : " (tous les numéros impairs et les numéros pairs à partir du numéro 34)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "4340",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Jamet",
 				"nvsa" : "Jamet",
-				"ci" : "uniquement des numéros 2 à 32"
+				"ci" : " (uniquement des numéros 2 à 32)"
 			}, {
 				"code" : "4712",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
@@ -15016,7 +15016,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Moulin de la Garde",
 				"nvsa" : "Moulin de la Garde",
-				"ci" : "jusqu'aux numéros 11 et 16 (après =carquefou)",
+				"ci" : " (jusqu'aux numéros 11 et 16 (après =carquefou))",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -15235,14 +15235,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Plessis Gautron",
 				"nvsa" : "Plessis Gautron ",
-				"ci" : "à partir des numéros 29 et 52",
+				"ci" : " (à partir des numéros 29 et 52)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "6698",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Plessis Gautron",
 				"nvsa" : "Plessis Gautron ",
-				"ci" : "jusqu'aux numéros 27 et 46",
+				"ci" : " (jusqu'aux numéros 27 et 46)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -15302,14 +15302,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Port Boyer",
 				"nvsa" : "Port Boyer ",
-				"ci" : "des numéros 75 à 93",
+				"ci" : " (des numéros 75 à 93)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "6813",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue du Port Boyer",
 				"nvsa" : "Port Boyer ",
-				"ci" : "tous les numéros pairs et côté impair jusqu'au numéro 73 + le numéro 111",
+				"ci" : " (tous les numéros pairs et côté impair jusqu'au numéro 73 + le numéro 111)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -15526,14 +15526,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Trépied",
 				"nvsa" : "Trepied",
-				"ci" : "le numéro 2",
+				"ci" : " (le numéro 2)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "8198",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue du Trépied",
 				"nvsa" : "Trepied",
-				"ci" : "tous les numéros sauf le numéro 2",
+				"ci" : " (tous les numéros sauf le numéro 2)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "8201",
@@ -15799,7 +15799,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Eric Tabarly",
 				"nvsa" : "Eric Tabarly ",
-				"ci" : "numéros 1-2-3-4 (après = rezé)",
+				"ci" : " (numéros 1-2-3-4 (après = rezé))",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -15825,7 +15825,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Etienne Coutan",
 				"nvsa" : "Etienne Coutan ",
-				"ci" : "jusqu'aux numéros 17 et 24, sauf le numéro 4",
+				"ci" : " (jusqu'aux numéros 17 et 24, sauf le numéro 4)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -15833,14 +15833,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Etienne Coutan",
 				"nvsa" : "Etienne Coutan ",
-				"ci" : "à partir des numéros 21 et 26",
+				"ci" : " (à partir des numéros 21 et 26)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "2918",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Etienne Coutan",
 				"nvsa" : "Etienne Coutan ",
-				"ci" : "le numéro 4"
+				"ci" : " (le numéro 4)"
 			}, {
 				"code" : "2920",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
@@ -15866,14 +15866,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Etienne Hervais",
 				"nvsa" : "Etienne Hervais ",
-				"ci" : "à partir des numéros 15 et 16",
+				"ci" : " (à partir des numéros 15 et 16)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "2936",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Etienne Hervais",
 				"nvsa" : "Etienne Hervais ",
-				"ci" : "jusqu'aux numéros 11 et 8",
+				"ci" : " (jusqu'aux numéros 11 et 8)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -16000,7 +16000,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Félix Faure",
 				"nvsa" : "Felix Faure ",
-				"ci" : "à partir des numéros 39 et 30",
+				"ci" : " (à partir des numéros 39 et 30)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -16008,7 +16008,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Félix Faure",
 				"nvsa" : "Felix Faure ",
-				"ci" : "jusqu'aux numéros 37 et 28",
+				"ci" : " (jusqu'aux numéros 37 et 28)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "3072",
@@ -16027,14 +16027,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Félix Ménétrier",
 				"nvsa" : "Felix Menetrier ",
-				"ci" : "à partir des numéros 53 et 54",
+				"ci" : " (à partir des numéros 53 et 54)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "3080",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Félix Ménétrier",
 				"nvsa" : "Felix Menetrier ",
-				"ci" : "jusqu'aux numéros 47 et 48",
+				"ci" : " (jusqu'aux numéros 47 et 48)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -16358,7 +16358,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Gabriel Goudy",
 				"nvsa" : "Gabriel Goudy ",
-				"ci" : "Les numéros 11-16-18-20",
+				"ci" : " (Les numéros 11-16-18-20)",
 				"jcbb" : "jeudi",
 				"jcbj" : "jeudi"
 			}, {
@@ -16366,7 +16366,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Gabriel Goudy",
 				"nvsa" : "Gabriel Goudy ",
-				"ci" : "tous les numéros sauf 11-16-18-20"
+				"ci" : " (tous les numéros sauf 11-16-18-20)"
 			}, {
 				"code" : "3418",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -16670,14 +16670,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Georges Lafont",
 				"nvsa" : "Georges Lafont ",
-				"ci" : "à partir des numéros 31 et 54",
+				"ci" : " (à partir des numéros 31 et 54)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "3676",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Georges Lafont",
 				"nvsa" : "Georges Lafont ",
-				"ci" : "jusqu'aux numéros 29 et 52",
+				"ci" : " (jusqu'aux numéros 29 et 52)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -16704,7 +16704,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Georges Meynieu",
 				"nvsa" : "Georges Meynieu ",
-				"ci" : "tous les numéros sauf 16-38-40-42",
+				"ci" : " (tous les numéros sauf 16-38-40-42)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -16712,7 +16712,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Georges Meynieu",
 				"nvsa" : "Georges Meynieu ",
-				"ci" : "les numéros 16-38-40-42",
+				"ci" : " (les numéros 16-38-40-42)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "3687",
@@ -16991,7 +16991,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Henri Matisse",
 				"nvsa" : "Henri Matisse ",
-				"ci" : "numéros 1-5-7",
+				"ci" : " (numéros 1-5-7)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -16999,7 +16999,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Henri Matisse",
 				"nvsa" : "Henri Matisse ",
-				"ci" : "numéros 3 et 8",
+				"ci" : " (numéros 3 et 8)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4148",
@@ -17107,13 +17107,13 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Jacques Feyder",
 				"nvsa" : "Jacques Feyder",
-				"ci" : "uniquement les numéros 1-3-5"
+				"ci" : " (uniquement les numéros 1-3-5)"
 			}, {
 				"code" : "4312",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Jacques Feyder",
 				"nvsa" : "Jacques Feyder",
-				"ci" : "tous les numéros sauf les numéros 1-3-5",
+				"ci" : " (tous les numéros sauf les numéros 1-3-5)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4321",
@@ -17204,7 +17204,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Jean Chiappe",
 				"nvsa" : "Jean Chiappe ",
-				"ci" : "tous les numéros sauf les numéros 28 et 30 (orvault)",
+				"ci" : " (tous les numéros sauf les numéros 28 et 30 (orvault))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4428",
@@ -17482,7 +17482,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Josette Bocq",
 				"nvsa" : "Josette Bocq ",
-				"ci" : "tous les numéros sauf le numéro 21",
+				"ci" : " (tous les numéros sauf le numéro 21)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -17490,7 +17490,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Josette Bocq",
 				"nvsa" : "Josette Bocq ",
-				"ci" : "le numéro 21",
+				"ci" : " (le numéro 21)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4602",
@@ -17530,7 +17530,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Jules Launey",
 				"nvsa" : "Jules Launey ",
-				"ci" : "à partir du numéro 12 (pairs et impairs du même côté de rue)",
+				"ci" : " (à partir du numéro 12 (pairs et impairs du même côté de rue))",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -17538,7 +17538,7 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Jules Launey",
 				"nvsa" : "Jules Launey ",
-				"ci" : "jusqu'au numéro 9T (pairs et impairs du même côté de rue)",
+				"ci" : " (jusqu'au numéro 9T (pairs et impairs du même côté de rue))",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "4630",
@@ -17725,14 +17725,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Lamartine",
 				"nvsa" : "Lamartine",
-				"ci" : "jusqu'aux numéros 15 et 18",
+				"ci" : " (jusqu'aux numéros 15 et 18)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "4752",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Lamartine",
 				"nvsa" : "Lamartine",
-				"ci" : "à partir des numéros 17 et 20",
+				"ci" : " (à partir des numéros 17 et 20)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -17770,28 +17770,28 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Le Nôtre",
 				"nvsa" : "Le Notre",
-				"ci" : "le numéro 15",
+				"ci" : " (le numéro 15)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "4896",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Le Nôtre",
 				"nvsa" : "Le Notre",
-				"ci" : "tous les numéros sauf le numéro 15",
+				"ci" : " (tous les numéros sauf le numéro 15)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "4852",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Lebrun",
 				"nvsa" : "Lebrun",
-				"ci" : "numéros 1 et 4",
+				"ci" : " (numéros 1 et 4)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "4852",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Lebrun",
 				"nvsa" : "Lebrun",
-				"ci" : "numéro 2",
+				"ci" : " (numéro 2)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "4864",
@@ -18033,14 +18033,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Louis Guiotton",
 				"nvsa" : "Louis Guiotton ",
-				"ci" : "à partir des numéros 43 et 44",
+				"ci" : " (à partir des numéros 43 et 44)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "5094",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Louis Guiotton",
 				"nvsa" : "Louis Guiotton ",
-				"ci" : "jusqu'aux numéros 39 et 22",
+				"ci" : " (jusqu'aux numéros 39 et 22)",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -18085,14 +18085,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Louis Lumière",
 				"nvsa" : "Louis Lumiere ",
-				"ci" : "le numéro 1",
+				"ci" : " (le numéro 1)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5122",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Louis Lumière",
 				"nvsa" : "Louis Lumiere ",
-				"ci" : "tous sauf le numéro 1",
+				"ci" : " (tous sauf le numéro 1)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -18303,14 +18303,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Maréchal Joffre",
 				"nvsa" : "Marechal Joffre ",
-				"ci" : "jusqu'aux numéros 39 et 34",
+				"ci" : " (jusqu'aux numéros 39 et 34)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "5368",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Maréchal Joffre",
 				"nvsa" : "Marechal Joffre ",
-				"ci" : "à partir des numéros 41 et 36",
+				"ci" : " (à partir des numéros 41 et 36)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "5377",
@@ -18343,14 +18343,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Marie Anne du Boccage",
 				"nvsa" : "Marie Anne du Boccage ",
-				"ci" : "jusqu'aux numéros 5 et 6B",
+				"ci" : " (jusqu'aux numéros 5 et 6B)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "5387",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Marie Anne du Boccage",
 				"nvsa" : "Marie Anne du Boccage ",
-				"ci" : "à partir des numéros 7 et 8",
+				"ci" : " (à partir des numéros 7 et 8)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "5384",
@@ -18540,14 +18540,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Mellier",
 				"nvsa" : "Mellier",
-				"ci" : "jusqu'aux numéros 21 et 28",
+				"ci" : " (jusqu'aux numéros 21 et 28)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "5580",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Mellier",
 				"nvsa" : "Mellier",
-				"ci" : "à partir des numéros 23 et 30",
+				"ci" : " (à partir des numéros 23 et 30)",
 				"jcbb" : "mardi",
 				"jcbj" : "mardi"
 			}, {
@@ -18959,14 +18959,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Paul Théry",
 				"nvsa" : "Paul Thery ",
-				"ci" : "toute la rue sauf le numéro 1",
+				"ci" : " (toute la rue sauf le numéro 1)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "6253",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Paul Théry",
 				"nvsa" : "Paul Valery ",
-				"ci" : "uniquement le numéro 1"
+				"ci" : " (uniquement le numéro 1)"
 			}, {
 				"code" : "6252",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
@@ -19033,7 +19033,7 @@
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
 				"dcv" : "Rue Philippe Lebon",
 				"nvsa" : "Philippe Lebon",
-				"ci" : "numéros pairs (impairs=st herblain)",
+				"ci" : " (numéros pairs (impairs=st herblain))",
 				"jcbb" : "vendredi",
 				"jcbj" : "vendredi"
 			}, {
@@ -19247,14 +19247,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Racine",
 				"nvsa" : "Racine",
-				"ci" : "à partir des numéros 25 et 28",
+				"ci" : " (à partir des numéros 25 et 28)",
 				"jct" : "mardi, vendredi"
 			}, {
 				"code" : "7100",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Racine",
 				"nvsa" : "Racine",
-				"ci" : "jusqu'aux numéros 23B et 24",
+				"ci" : " (jusqu'aux numéros 23B et 24)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "7120",
@@ -19414,14 +19414,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Romain Rolland",
 				"nvsa" : "Romain Rolland ",
-				"ci" : "tous les numéros sauf des numéros 7 à 23",
+				"ci" : " (tous les numéros sauf des numéros 7 à 23)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "7446",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Romain Rolland",
 				"nvsa" : "Romain Rolland ",
-				"ci" : "des numéros 7 à 23"
+				"ci" : " (des numéros 7 à 23)"
 			}, {
 				"code" : "7448",
 				"modesCollecte" : "modco_bacbleu,modco_bacjaune",
@@ -19742,14 +19742,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Sully",
 				"nvsa" : "Sully",
-				"ci" : "jusqu'au numéro 7 (pairs et impairs",
+				"ci" : " (jusqu'au numéro 7 (pairs et impairs)",
 				"jct" : "lundi, mercredi, vendredi"
 			}, {
 				"code" : "8000",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Sully",
 				"nvsa" : "Sully",
-				"ci" : "à partir du numéro 8",
+				"ci" : " (à partir du numéro 8)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "8004",
@@ -19813,14 +19813,14 @@
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Tiriau",
 				"nvsa" : "Tiriau",
-				"ci" : "les numéros 1 et 2",
+				"ci" : " (les numéros 1 et 2)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "8116",
 				"modesCollecte" : "modco_sacjaune,modco_sacbleu",
 				"dcv" : "Rue Tiriau",
 				"nvsa" : "Tiriau",
-				"ci" : "à partir des numéros 3 et 4",
+				"ci" : " (à partir des numéros 3 et 4)",
 				"jct" : "lundi, jeudi"
 			}, {
 				"code" : "8118",

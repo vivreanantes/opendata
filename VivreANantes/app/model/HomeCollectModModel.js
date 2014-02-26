@@ -23,15 +23,17 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 						},
 						{
 							name : 'ci',
+							type : 'string'
+							// ,
 							// convert ajoute transforme 'un commentaire' en ' (un commentaire') OU '' en ''
-							convert: function(value, record) {
-								// if not blank
-								if (value!=null && value.replace(/\s/g,"") != "") {
-									// TODO : mettre à la fin .replace(" )", ")")
-									value = " ("+value+") ";
-								}
-								return value;
-							}
+							// convert: function(value, record) {
+							// 	// if not blank
+							// 	if (value!=null && value.replace(/\s/g,"") != "") {
+							// 		// TODO : mettre à la fin .replace(" )", ")")
+							// 		value = " ("+value+") ";
+							// 	}
+							// 	return value;
+							// }
 						},
 						{
 							name : 'jct',

@@ -116,6 +116,11 @@ Ext
 		// TODO encombrants : améliorer la macro et le traitement java
 		// HomeCollectModModel.js
 			
+		// AbstractStructureModel.js
+		// CollectModModel.js
+		// GarbageModel.js
+		// HomeCollectModModel.js
+		
 		/////////// CRN Long terme //////////
 
 		// TODO Mineur Function TestHoraires(PlageHoraire as String) : controle sur les heures

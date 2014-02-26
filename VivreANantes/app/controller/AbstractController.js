@@ -6,73 +6,63 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	extend : 'Ext.app.Controller',
 
 	/**
-	 * Retire les accents
+	 * Retire les accents d'une chaîne de caractère
 	 */
 	utilRetireAccent : function(result) {
-		result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g,"a");
-		result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g,"e");
-		result =  result.replace(/[Çç]/g,"c");
-		result =  result.replace(/[Ð]/g,"d");
-		result =  result.replace(/[ÌÍÎÏìíîï]/g,"i");
-		result =  result.replace(/[ÙÚÛÜùúûü]/g,"u");
-		result =  result.replace(/[Ññ]/g,"n");
-		result =  result.replace(/[ÌÍÎÏìíîï]/g,"i");
-		result =  result.replace(/[Šš]/g,"s");
-		result =  result.replace(/[Ÿÿý]/g,"y");
-		result =  result.replace(/[Žž]/g,"z");
+		result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g, "a");
+		result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g, "e");
+		result = result.replace(/[Çç]/g, "c");
+		result = result.replace(/[Ð]/g, "d");
+		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
+		result = result.replace(/[ÙÚÛÜùúûü]/g, "u");
+		result = result.replace(/[Ññ]/g, "n");
+		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
+		result = result.replace(/[Šš]/g, "s");
+		result = result.replace(/[Ÿÿý]/g, "y");
+		result = result.replace(/[Žž]/g, "z");
 		return result;
 	},
 
-	/*
-	 * Ajoute les éléments d'un tableau à un tableau existant
+	/**
+	 * Ajoute les éléments d'un tableau arraySrc  à un tableau existant arrayTarget
 	 */
-
-	utilPushArray : function(arSrc, arTarget) {
-		arTarget.push.apply(arTarget, arSrc);
+	utilPushArray : function(arraySrc, arrayTarget) {
+		arTarget.push.apply(arrayTarget, arraySrc);
 		return;
 	},
 
-	utilArrayContainObject : function(a, obj) {
-		return _utilArrayContainObject(a, obj);
+	/**
+	 * Vérifie si un tableau arraySrc contient un objet obj
+	 */
+	utilArrayContainObject : function(arraySrc, obj) {
+		return _utilArrayContainObject(arraySrc, obj);
 	},
 
 	/**
 	 * Met la première lettre en majuscule
 	 */
 	stringUpperFirstLetter : function(result) {
-		if (result != null && result.length > 1) {
-			result = result.substring(0, 1).toUpperCase() + result.substring(1);
-		}
-		return result;
+		return _stringUpperFirstLetter(result);
 	},
 
 	/**
 	 * Traduit et met la première lettre en majuscule
 	 */
 	translateWithUpperFirstLetter : function(result) {
-		return this.stringUpperFirstLetter(this.translate(result));
+		return translateWithUpperFirstLetter(result);
 	},
-	/*
+
+	/**
 	 * Retourne un objet String correspondant à l'année actuelle. Exemple "2014"
 	 */
-
 	utilGetStringCurrentYearAAAA : function() {
-		return (new Date()).getFullYear();
+		return _utilGetStringCurrentYearAAAA();
 	},
 
 	utilGetDateTodayWithoutSeconds : function() {
-		// var today = new Date();
-		// return today;
-		var today = new Date();
-		today.setHours(0);
-		today.setMinutes(0, 0, 0);
-		return today;
+		return _utilGetDateTodayWithoutSeconds();
 	},
 
-	utilGetDateTomorrowWithoutSeconds : function() {
-		var today = this.utilGetDateTodayWithoutSeconds();
-		return this.addDays(today, 1);
-	},
 	/*
 	 * Retourne sous forme d'une chaîne de caractère le jour de la semaine d'une
 	 * date
@@ -93,18 +83,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return result;
 	},
 
-	utilGetDayOfWeekTwoCharacters : function(d) {
-
-		var weekday = new Array(7);
-		weekday[0] = "di";
-		weekday[1] = "lu";
-		weekday[2] = "ma";
-		weekday[3] = "me";
-		weekday[4] = "je";
-		weekday[5] = "ve";
-		weekday[6] = "sa";
-
-		return weekday[d.getDay()];
+	utilGetDayOfWeekTwoCharacters : function(day) {
+		return utilGetDayOfWeekTwoCharacters(day);
 	},
 
 	utilReplace : function(strSrc, avant, apres) {
@@ -137,7 +117,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	},
 
 	IMAGE_DIR : "resources/images/",
-	
+
 	SEPARATOR : "#",
 
 	/**
@@ -173,14 +153,10 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		result = this.translate(result);
 		return result;
 	},
-	
-	/*onTapCommentButton : function(button) {
-		alert(button.id);
-	},*/
 
-	addDays : function(d, j) {
-		return new Date(d.getTime() + (1000 * 60 * 60 * 24 * j));
-	},
+	/*
+	 * onTapCommentButton : function(button) { alert(button.id); },
+	 */
 
 	getContentButtonsPanel : function(arrayItemsToShow) {
 		var arrayItems = new Array();
@@ -204,12 +180,15 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 					var arrayitemsLine = new Array();
 				}
-				var libelle = "<font size='3'>"+arrayItemsToShow[i]["libelle"]+"</font>";
+				var libelle = "<font size='3'>"
+						+ arrayItemsToShow[i]["libelle"] + "</font>";
 				arrayitemsLine.push({
-							xtype : "button", height : '120px', width : '33%', 
+							xtype : "button",
+							height : '120px',
+							width : '33%',
 							id : arrayItemsToShow[i]["id"],
 							// code : arrayItemsToShow[i]["id"],
-							html :  "<center>"+libelle
+							html : "<center>" + libelle
 									+ "<br/><img src='resources/images/"
 									+ arrayItemsToShow[i]["image"]
 									+ "' /></center>"
@@ -229,67 +208,69 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		return arrayItems;
 	},
-	
+
 	removeAllAndSetItems : function(panel, arrayItems) {
 		panel.removeAll(true, true);
 		panel.setItems(arrayItems);
 	},
-	
-	setDataInButtonsWithManyLines : function(panel, prefix, arrayItems, nbMaxElements, nbElementsPerLine) {
+
+	setDataInButtonsWithManyLines : function(panel, prefix, arrayItems,
+			nbMaxElements, nbElementsPerLine) {
 		var idElementToChange = 0;
 		for (var i = 0; i < arrayItems.length; i++) {
 			var element = arrayItems[i];
-			var idElementToChange = i+1;
-			var prefixComplet = prefix + "_"+idElementToChange;
-			var nbLine = Math.floor(i/nbElementsPerLine);
+			var idElementToChange = i + 1;
+			var prefixComplet = prefix + "_" + idElementToChange;
+			var nbLine = Math.floor(i / nbElementsPerLine);
 			// Si la ligne n'existe pas
-			if ( panel.items.items[nbLine]==null) {
+			if (panel.items.items[nbLine] == null) {
 				item = -1;
 			} else {
-				var item = panel.items.items[nbLine].items.keys.indexOf(prefixComplet);
+				var item = panel.items.items[nbLine].items.keys
+						.indexOf(prefixComplet);
 			}
-			if (item!=-1) {
+			if (item != -1) {
 				panel.items.items[nbLine].items.items[item].setData(element);
 				panel.items.items[nbLine].items.items[item].setHidden(false);
 			}
 		};
 		for (var i = idElementToChange; i < nbMaxElements; i++) {
-		// Cache les éléments restants
-			var idElementToChange = i+1;
-			var prefixComplet = prefix + "_"+idElementToChange;
-			var nbLine = Math.floor(i/nbElementsPerLine);
+			// Cache les éléments restants
+			var idElementToChange = i + 1;
+			var prefixComplet = prefix + "_" + idElementToChange;
+			var nbLine = Math.floor(i / nbElementsPerLine);
 			// Si la ligne n'existe pas
-			if ( panel.items.items[nbLine]==null) {
+			if (panel.items.items[nbLine] == null) {
 				item = -1;
 			} else {
-				var item = panel.items.items[nbLine].items.keys.indexOf(prefixComplet);
+				var item = panel.items.items[nbLine].items.keys
+						.indexOf(prefixComplet);
 			}
-			if (item!=-1) {
+			if (item != -1) {
 				panel.items.items[nbLine].items.items[item].setHidden(true);
 			}
 		}
 	},
-	
-	
+
 	setDataInButtons : function(panel, prefix, arrayItems, nbMaxElements) {
 
 		var idElementToChange = 0;
 		for (var i = 0; i < arrayItems.length; i++) {
 			var element = arrayItems[i];
-			var idElementToChange = i+1;
-			var prefixComplet = prefix + "_"+idElementToChange;
-			var item = panel.items.keys.indexOf(prefixComplet); 
-			if (item!=-1) {
+			var idElementToChange = i + 1;
+			var prefixComplet = prefix + "_" + idElementToChange;
+			var item = panel.items.keys.indexOf(prefixComplet);
+			if (item != -1) {
 				panel.items.items[item].setData(element);
 				panel.items.items[item].setHidden(false);
 			}
 		};
 		// Cache les éléments restants
 		for (var i = idElementToChange; i < nbMaxElements; i++) {
-			var idElementToChange = idElementToChange+1;
-			var prefixComplet = prefix + "_"+idElementToChange;
-			var item = panel.items.keys.indexOf(prefixComplet); 
-			if (item!=-1) {
+			var idElementToChange = idElementToChange + 1;
+			var prefixComplet = prefix + "_" + idElementToChange;
+			var item = panel.items.keys.indexOf(prefixComplet);
+			if (item != -1) {
 				panel.items.items[item].setHidden(true);
 			}
 		}
@@ -305,73 +286,72 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	getItemsComments : function(commentsString, title) {
 		var result = new Array();
 		var thisController = this;
-	
+
 		// On parcourt les remarques de la faq
 		var dataFaq = this.getApplication()
 				.getController("VivreANantes.controller.CommentsController")
 				.getCommentsList().getStore().getData();
 		var nombre = 0;
 		dataFaq.each(function(recordFaq) {
-			if (recordFaq.raw["elements"]!=null) {
-					// TODO utiliser getArrayFromString à la place
-					var arrayElementsFaq = recordFaq.raw["elements"].replace(
-							", /g", ",").replace(" ,/g", ",").split(',');
-					for (i in arrayElementsFaq) {
-					
-						if (arrayElementsFaq[i] === commentsString) {
-							result.push({
-										html : "<B>" + recordFaq.raw["libelle"]	+ "</B><BR/>"
-												+ recordFaq.raw["description"]
-												+ "<br/>",
-										style: "background-color:" + thisController.getColorPairImpair(nombre)
-									}
-									);
-							nombre ++;
+					if (recordFaq.raw["elements"] != null) {
+						// TODO utiliser getArrayFromString à la place
+						var arrayElementsFaq = recordFaq.raw["elements"]
+								.replace(", /g", ",").replace(" ,/g", ",")
+								.split(',');
+						for (i in arrayElementsFaq) {
+
+							if (arrayElementsFaq[i] === commentsString) {
+								result.push({
+											html : "<B>"
+													+ recordFaq.raw["libelle"]
+													+ "</B><BR/>"
+													+ recordFaq.raw["description"]
+													+ "<br/>",
+											style : "background-color:"
+													+ thisController
+															.getColorPairImpair(nombre)
+										});
+								nombre++;
+							}
+
 						}
-						
 					}
-				}
-			});
+				});
 		// TODO Ajout d'un formulaire
-		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
-		var codeValue = "comments_xtype"+this.SEPARATOR + " "+title+" ("+commentsString+")";
+		title = title.replace("-/g", "_").replace("<I>", "")
+				.replace("</I>", "");
+		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " ("
+				+ commentsString + ")";
 		result.push(
-			/*{
-					xtype : 'button',
-					text : 'Envoyez un commentaire',
-					centered : 'true',
-					data : {
-						code : codeValue
-					}
-				}*/
-				
+				/*
+				 * { xtype : 'button', text : 'Envoyez un commentaire', centered :
+				 * 'true', data : { code : codeValue } }
+				 */
+
 				{
-					xtype : 'container',
-					layout : 'vbox',
-					padding: '20 200 20 200',
-					style: "background-color:" + thisController.getColorPairImpair(nombre),
-					items : [{
+			xtype : 'container',
+			layout : 'vbox',
+			padding : '20 200 20 200',
+			style : "background-color:"
+					+ thisController.getColorPairImpair(nombre),
+			items : [{
 						xtype : 'button',
-						id : "garbagesdetails_informations", 
+						id : "garbagesdetails_informations",
 						text : "Envoyez un commentaire",
 						data : {
 							code : codeValue
-						}	
+						}
 					}]
-				}
-				);
+		});
 		return result;
 	},
-	
+
 	getColorPairImpair : function(nombre) {
-		if (nombre%2 == 0)
-		{  //pair 
-			return color = "#5E99AA";		
-		}
-		else
-		{  //impair
+		if (nombre % 2 == 0) { // pair
+			return color = "#5E99AA";
+		} else { // impair
 			return color = "#5E99EE";
-		
+
 		}
 	},
 
@@ -402,7 +382,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			}
 		};
 	},
-	
+
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "conseils" d'une page
@@ -448,7 +428,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			les_boutons : result2
 		};
 	},
-	
+
 	setDatasConseils : function(panel, prefix, prefix2, arrayItems,
 			nbMaxElements, nbElementsPerLine) {
 
@@ -485,7 +465,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 
 	},
-	
+
 	getArrayItemsToShowComments : function(commentsString, title) {
 		var result = new Array();
 		var thisController = this;
@@ -512,14 +492,16 @@ Ext.define('VivreANantes.controller.AbstractController', {
 						}
 					}
 				});
-		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
-		var codeValue = "comments_xtype"+this.SEPARATOR + " "+title+" ("+commentsString+")";
+		title = title.replace("-/g", "_").replace("<I>", "")
+				.replace("</I>", "");
+		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " ("
+				+ commentsString + ")";
 		return {
 			les_libelles : result,
 			le_titre : codeValue
 		};
 	},
-	
+
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "conseils" d'une page
@@ -542,13 +524,15 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			dataAdvices.each(function(recordAdvice) {
 				for (i in arrayConseils) {
 					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-						if (recordAdvice.raw["fiche"]!=null && recordAdvice.raw["fiche"] != "") {
+						if (recordAdvice.raw["fiche"] != null
+								&& recordAdvice.raw["fiche"] != "") {
 							// lien vers une fiche
 							result.push({
 										xtype : 'container',
 										layout : 'hbox',
 										// style : 'background-color: #759E60;',
-										id : "garbagesdetails_commentaires_"+recordAdvice.raw["code"],
+										id : "garbagesdetails_commentaires_"
+												+ recordAdvice.raw["code"],
 										items : [{
 											html : "<b>"
 													+ recordAdvice.raw["libelle"]
@@ -561,10 +545,12 @@ Ext.define('VivreANantes.controller.AbstractController', {
 											layout : 'vbox',
 											items : [{
 												xtype : 'button',
-												id : "garbagesdetails_informations", 
+												id : "garbagesdetails_informations",
 												text : "Fiche explicative",
-												data: {
-													code : "informations" + thisController.SEPARATOR + recordAdvice.raw["fiche"]
+												data : {
+													code : "informations"
+															+ thisController.SEPARATOR
+															+ recordAdvice.raw["fiche"]
 												}
 											}]
 										}]
@@ -574,7 +560,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 						// pas de lien vers une fiche
 						else {
 							result.push({
-										id : "garbagesdetails_commentaires_"+recordAdvice.raw["code"],
+										id : "garbagesdetails_commentaires_"
+												+ recordAdvice.raw["code"],
 										html : "<b>"
 												+ recordAdvice.raw["libelle"]
 												+ "<br/></b>"
@@ -661,7 +648,6 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return res;
 	},
 
-
 	saveBackButton : function(buttonId, mainOrNot) {
 		Ext.getCmp("mainView").stBackButton = buttonId;
 		Ext.getCmp("mainView").stBackButtonMain = mainOrNot;
@@ -669,26 +655,26 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 	onPushBackButton : function() {
 		if (Ext.getCmp("mainView").stBackButton) {
-			this.manageBackButton(Ext.getCmp("mainView").stBackButton,
-								  Ext.getCmp("mainView").stBackButtonMain);
+			this.manageBackButton(Ext.getCmp("mainView").stBackButton, Ext
+							.getCmp("mainView").stBackButtonMain);
 		}
 	},
-	
+
 	manageBackButton : function(mainPageXtype, mainOrNot) {
-		
+
 		// On recherche la page dont le xtype correspond au buttonId
 		var mainItems = Ext.getCmp("mainView").items.items;
 		for (var i = 0; i < mainItems.length; i++) {
 			if (mainItems[i].xtype == mainPageXtype) {
 				// if (mainOrNot) {
-				// 	Ext.getCmp("mainView").items.items[i-1].setActiveItem(0);
+				// Ext.getCmp("mainView").items.items[i-1].setActiveItem(0);
 				// }
 				// Cet élément devient actif
 				Ext.getCmp("mainView").setActiveItem(i - 1);
 			}
 		};
 	},
-	
+
 	/**
 	 * Effectue le changement de page
 	 * 
@@ -697,7 +683,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *            "garbagesView-dec_aerosols")
 	 */
 	manageLinkButtons : function(buttonId) {
-		
+
 		// On décompose buttonId pour initialiser mainPageXtype et
 		// elementToShowInPage
 		var arrayButtonsId = buttonId.split(this.SEPARATOR);
@@ -706,8 +692,6 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			var elementToShowInPage = arrayButtonsId[1];
 		}
 
-		
-		
 		// On affiche le déchet
 		if (mainPageXtype == "garbages_xtype") {
 			var myController = this
@@ -753,7 +737,8 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		// OU On affiche le commentaire
 		else if (mainPageXtype == "comments_xtype") {
-			Ext.getCmp("commentsFormTextfield").setValue("A propos de '"+elementToShowInPage+"'");
+			Ext.getCmp("commentsFormTextfield").setValue("A propos de '"
+					+ elementToShowInPage + "'");
 			Ext.getCmp("commentsFormTextareafield").setValue("");
 		}
 

@@ -75,6 +75,10 @@ function _translate(stKey, stLocale) {
 			"en" : "from",
 			"fr" : "de"
 		},
+		"label_modco_contomr" : {
+			"en" : "",
+			"fr" : "Conteneur Ordures Ménagères Résiduelles"
+		},
 		"label_modco_contmpb" : {
 			"en" : "",
 			"fr" : "Conteneur plastique"
@@ -90,6 +94,10 @@ function _translate(stKey, stLocale) {
 		"label_modco_contverre" : {
 			"en" : "",
 			"fr" : "Conteneur verre"
+		},
+		"label_modco_contdechetssecs" : {
+			"en" : "",
+			"fr" : "Conteneur déchets secs"
 		},
 		"label_modco_bacbleu" : {
 			"en" : "",
