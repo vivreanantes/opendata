@@ -109,7 +109,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	},
 
 	/**
-	 * Pour des données 'structure' (stockées dans 'structures2.json' et stockés dans un 'Structure2Store.js') calcule les data à partir du store.
+	 * Pour des données 'structure' (stockées dans 'structures.json' et stockés dans un 'StructureStore.js') calcule les data à partir du store.
 	 * Invoque getAttributsPlagesHoraires sur toutes les plages horaires
 	 */
 	calculateDatas : function(store) {

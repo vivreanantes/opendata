@@ -140,6 +140,29 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 	
 	putInButtonsPanel : function(stringFilter) {
+	/*	var thisController = this;
+		Ext.getStore('VivreANantes.store.CategorieUsuelleStore').on('load', function (store, records, successful, operation, eOpts) {         
+			var usualCategoryStore = store;
+			var arrayItemsToShow = thisController.getDatasForButtons(usualCategoryStore, stringFilter);
+			
+			var result = new Array();
+			if (arrayItemsToShow.length > 0) {
+
+				var theItems = arrayItemsToShow;
+				for (var i = 0; i < theItems.length; i++) {
+					var stLibelle = thisController.decoupe(theItems[i].libelle);
+					result.push({
+						code : theItems[i].id,
+							label : stLibelle,
+							image : theItems[i].image
+					});
+				}
+			}
+
+			var nbGarbagesMax = 18;	// la page UsualCategoriesButtonPanel.js affiche 18 éléments
+			thisController.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);			
+		});*/
+		
 		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
 		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, stringFilter);
 		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
@@ -160,11 +183,10 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		}
 
 		var nbGarbagesMax = 18;	// la page UsualCategoriesButtonPanel.js affiche 18 éléments
-		this.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);
+		this.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);	
 	},
 
 	onTapLinkButton : function(button, e, eOpts) {
-		console.log("saveBackButton 1");
 		this.saveBackButton("garbages_xtype", false);
 		this.manageLinkButtons(button._data["code"]);
 	},
@@ -176,7 +198,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		} else {
 			this.showDetails(button.id);
 		}
-		console.log("saveBackButton 4");
 		this.saveBackButton("garbages_xtype", true);
 	},
 
@@ -191,7 +212,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		this.getGarbagesFormSelect().setValue(collectModId);
 		this.filter2();
 		this.getGarbagesView().push(this.garbagesButtonsPanel);
-		console.log("saveBackButton 5");
 		this.saveBackButton("garbages_xtype", true);
 	},
 

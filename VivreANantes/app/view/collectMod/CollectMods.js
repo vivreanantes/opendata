@@ -8,7 +8,7 @@ Ext.define('VivreANantes.view.collectMod.CollectMods', {
 			xtype : 'collectMods_xtype',
 			config : {
 				autoDestroy : false,
-				iconCls : 'maps',
+				iconCls : 'trash', // icône en forme de poubelle
 				title : 'Modes de collectes',
 				items : [{
 							xtype : 'collectModsButtonsList_xtype'

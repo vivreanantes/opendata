@@ -71,7 +71,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 	
 	onShowReuse : function() {
 		if (this.getReusesList().getStore()==null) {
-			var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+			var structureStore = Ext.create("VivreANantes.store.StructureStore", {
 				filters : [{
 					property : "modesCollecte",
 					value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g

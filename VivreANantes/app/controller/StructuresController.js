@@ -79,7 +79,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
 	
 	onShowStructures : function() {
 		if (this.getStructuresList().getStore()==null) {
-			var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+			var structureStore = Ext.create("VivreANantes.store.StructureStore", {
 				filters : [{
 					property : "modesCollecte",
 					value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants/g

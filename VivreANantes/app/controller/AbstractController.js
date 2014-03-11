@@ -323,12 +323,22 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " ("
 				+ commentsString + ")";
 		result.push(
+				
+				{
+					xtype : 'button',
+					width: 200,
+					id : "garbagesdetails_informations",
+					text : "Envoyez un commentaire",
+					data : {
+						code : codeValue
+					}
+				}
 				/*
 				 * { xtype : 'button', text : 'Envoyez un commentaire', centered :
 				 * 'true', data : { code : codeValue } }
 				 */
 
-				{
+				/*{
 			xtype : 'container',
 			layout : 'vbox',
 			padding : '20 200 20 200',
@@ -336,13 +346,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					+ thisController.getColorPairImpair(nombre),
 			items : [{
 						xtype : 'button',
+						width: 200,
 						id : "garbagesdetails_informations",
 						text : "Envoyez un commentaire",
 						data : {
 							code : codeValue
 						}
-					}]
-		});
+					}]*/
+		);
 		return result;
 	},
 
@@ -546,7 +557,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 											items : [{
 												xtype : 'button',
 												id : "garbagesdetails_informations",
-												text : "Fiche explicative",
+												text : "Plus d'infos",
 												data : {
 													code : "informations"
 															+ thisController.SEPARATOR

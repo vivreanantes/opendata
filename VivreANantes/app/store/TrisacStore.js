@@ -6,7 +6,7 @@ Ext.define('VivreANantes.store.TrisacStore', {
 				model : 'VivreANantes.model.StructureModel',
 				proxy : {
 					type : 'ajax',
-					url : 'data/structures2.json',
+					url : 'data/structures.json',
 					reader : {
 						type : 'json',
 						rootProperty : 'structures'

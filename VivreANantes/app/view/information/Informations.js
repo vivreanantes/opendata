@@ -10,7 +10,7 @@ Ext.define('VivreANantes.view.information.Informations', {
 				// Titre dans barre de bouton principale
 				title : 'Fiches',
 				// Icone dans la barre de bouton principale
-				iconCls : 'action',
+				iconCls : 'info', // icône en forme de 'i'
 				scrollable : true,
 				items : [{
 							xtype : 'informationsbuttonslist_xtype'

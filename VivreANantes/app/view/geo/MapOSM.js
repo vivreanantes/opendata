@@ -78,10 +78,18 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 	 */
 	addStructure : function(record) {
 
-		var modesCollecteTraduit = '';
+		// On découpe modesCollecte, puis on traduit
+		var modesCollecteTraduit = "";
 		if (record.get('modesCollecte')!=null) {
-			modesCollecteTraduit = translate('label_'+record.get('modesCollecte'));
-		}
+			var arModesCollecte = record.get('modesCollecte').split(",");
+			for (var i = 0; i < arModesCollecte.length; i++) {
+				var unModeCollecte = arModesCollecte[i];
+				if (i>0) {
+					modesCollecteTraduit = modesCollecteTraduit + ", ";
+				}
+				modesCollecteTraduit = modesCollecteTraduit + _translate("label_"	+ unModeCollecte, "fr");
+			}
+		}		
 		
 		// VERIFICATION que toutes les données nécessaires sont présentes
 		if (record.get('modesCollecte') != null

@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.about.Description', {
 	xtype : 'xtype_description',
 	config : {
 		title : 'A propos',
-		iconCls : 'info',
+		iconCls : 'team', // icône représentant plusieurs visages
 		styleHtmlContent : true,
 		items : [{
 			html : ""

@@ -13,8 +13,13 @@ Ext.define('VivreANantes.store.CategorieUsuelleStore', {
 				model : 'VivreANantes.model.CategorieUsuelleModel',
 				
 				autoLoad : true,
-				sorters : 'nom'
+				sorters : 'nom',
+					listeners : {
+                        'load' : function(store, results, successful) {
+                            console.log("Loading CategorieUsuelleStore");
+                        }
 
+                    }
 				
 			}
 			

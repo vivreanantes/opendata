@@ -62,7 +62,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 	
 	onShowTrisac : function() {
 		if (this.getTrisacList().getStore()==null) {
-			var structureStore = Ext.create("VivreANantes.store.Structure2Store", {
+			var structureStore = Ext.create("VivreANantes.store.StructureStore", {
 						filters : [{
 									property : "modesCollecte",
 									value : /modco_distrisac/g
