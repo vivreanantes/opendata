@@ -140,40 +140,15 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 	
 	putInButtonsPanel : function(stringFilter) {
-	/*	var thisController = this;
-		Ext.getStore('VivreANantes.store.CategorieUsuelleStore').on('load', function (store, records, successful, operation, eOpts) {         
-			var usualCategoryStore = store;
-			var arrayItemsToShow = thisController.getDatasForButtons(usualCategoryStore, stringFilter);
-			
-			var result = new Array();
-			if (arrayItemsToShow.length > 0) {
 
-				var theItems = arrayItemsToShow;
-				for (var i = 0; i < theItems.length; i++) {
-					var stLibelle = thisController.decoupe(theItems[i].libelle);
-					result.push({
-						code : theItems[i].id,
-							label : stLibelle,
-							image : theItems[i].image
-					});
-				}
-			}
-
-			var nbGarbagesMax = 18;	// la page UsualCategoriesButtonPanel.js affiche 18 éléments
-			thisController.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);			
-		});*/
-		
 		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
 		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, stringFilter);
-		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		// this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
-		
 		var result = new Array();
 		if (arrayItemsToShow.length > 0) {
 
 			var theItems = arrayItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-				var stLibelle = this.decoupe(theItems[i].libelle);
+				var stLibelle = this.decoupeAvecTaille(theItems[i].libelle, 20);
 				result.push({
 					code : theItems[i].id,
 						label : stLibelle,
@@ -192,12 +167,14 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	onShowDetails : function(button, e, eOpts) {
+		// Suppression des sous-catégories de toxique
 		// La catégorie "cu_toxique" possède des sous-catégories
-		if (button.id == "cu_toxique") {
-			this.showSubCategory(button.id);
-		} else {
-			this.showDetails(button.id);
-		}
+		// if (button._data["code"] == "cu_toxique") {
+		//	this.showSubCategory(button._data["code"]);
+		// } else {
+		//	this.showDetails(button._data["code"]);
+		// }
+		this.showDetails(button._data["code"]);
 		this.saveBackButton("garbages_xtype", true);
 	},
 
@@ -216,13 +193,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	showSubCategory : function(collectModId) {
-	
-		// var usualCategoryStore = this.getUsualCategoriesList2().getStore();
-		// var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu_toxique");
-		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		// this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
-		
-		this.putInButtonsPanel("cu_toxique");
+		// Suppression des sous-catégories de toxique	
+		// this.putInButtonsPanel("cu_toxique");
 	},
 
 	onInitUsualCategoriesButtonsPanel : function(container) {
@@ -230,7 +202,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	translateWithUpperFirstLetterAndDecoupe : function(stLabel) {
-		return this.decoupe(this.translateWithUpperFirstLetter(stLabel));
+		return this.decoupeAvecTaille(this.translateWithUpperFirstLetter(stLabel), 20);
 	},
 
 	/*
@@ -378,20 +350,20 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			}*/
 			if (treatmentCategories === "OUI") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR=green size=4>"
+						+ " : " + "<FONT COLOR=green size='4'>"
 						+ this.translate("label_OUI") + "</FONT>";
 			} else if (treatmentCategories === "NON") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='red' size=4>"
+						+ " : " + "<FONT COLOR='red' size='4'>"
 						+ this.translate("label_NON") + "</FONT>";
 			} else if (treatmentCategories === "PAS_POUBELLE") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='orange' size=4>"
+						+ " : " + "<FONT COLOR='orange' size='4'>"
 						+ this.translate("label_NON") + "</FONT>"
 						+ this.translate("label_pas_poubelle");
 			} else if (treatmentCategories === "OUI_ET_NON") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='orange' size=4>"
+						+ " : " + "<FONT COLOR='orange' size='4'>"
 						+ this.translate("label_pour_collecte_bac_jaune")
 						+ "</FONT>";
 			} else {
@@ -444,7 +416,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 */
 			// image
 			var imageComplet = "<img src='resources/images/"
-					+ record.data["image"] + "' width='150px' />";
+					+ record.data["image"] + "' width='120px' />";
 			// this.setDataElement(this.garbageDetail,"garbagesdetails_image",
 			// {'image' : imageComplet})
 			this.garbageDetail.items.items['0'].items.items['0'].setData({
@@ -457,7 +429,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// var items = "{ xtype : 'container', layout : 'vbox', id :
 			// 'garbagesdetails_recyclableetmodesdecollecte', items : [ { id :
 			// 'garbagesdetails_recyclable', html: 'recyclable : <FONT
-			// COLOR=green size=4>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
+			// COLOR=green size='3'>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
 			// Affecte les modes de collecte
 			
 			// this.garbageDetail.items.items['0'].items.items['1'].setItems(arrayItemsToShow);
@@ -552,15 +524,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * catégorie sélectionnée
 	 */
 	onGarbageStoreFilter : function() {
-		// if (this.garbagesList == null) {
-		// this.garbagesList = Ext
-		// .create('VivreANantes.view.garbages.GarbagesList');
-		// }
-		// var title = this.translate("label_resultat_recherche");
-		// this.garbagesList.setTitle(title);
-		// this.getGarbagesFormSelect().setValue("");
-		// this.filter();
-		// this.getGarbagesView().push(this.garbagesList);
 		this.getGarbagesFormSelect().setValue("all");
 		this.filter2();
 		this.getGarbagesView().push(this.garbagesButtonsPanel);
@@ -603,7 +566,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 						.getValue() === "all")
 						&& texttest.test(nom_description_sansAccents)) {
 					// Ajoute les <br/>
-					var stLibelle = this.decoupe(aData["nom"]);
+					var stLibelle = this.decoupeAvecTaille(aData["nom"], 20);
 					result.push({
 								// id : aData["code"],
 								//code : aData["code"],

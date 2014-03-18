@@ -57,8 +57,31 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 						.getController("VivreANantes.controller.GarbagesController")
 						.getCollectModList().getStore();
 				var arrayItemsToShow = this.getDatasForButtons(dataCollectMods, "modco");
-				var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-				this.removeAllAndSetItems(this.getCollectModsList(), arrayItems);
+				
+
+		var result = new Array();
+		if (arrayItemsToShow.length > 0) {
+
+			var theItems = arrayItemsToShow;
+			for (var i = 0; i < theItems.length; i++) {
+				var stLibelle = this.decoupe(theItems[i].libelle);
+				result.push({
+					code : theItems[i].id,
+					label : stLibelle,
+					image : theItems[i].image
+				});
+			}
+		}
+
+		var nbMax = 18;	// la page affiche 18 éléments
+		this.setDataInButtonsWithManyLines(this.getCollectModsList(),"collectModsButtonsList", result, nbMax, 3);
+				
+				
+				
+				
+				
+			//	var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
+			// 	this.removeAllAndSetItems(this.getCollectModsList(), arrayItems);
 			},
 
 			onTapLinkButton : function(button, e, eOpts) {
@@ -66,7 +89,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 			},
 			
 			onShowDetails : function(button, e, eOpts) {
-				this.showDetails(button.id);
+				// this.showDetails(button.id);
+				this.showDetails(button._data["code"]);
 			},
 
 			showDetails : function(elementId) {

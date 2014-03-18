@@ -10,13 +10,16 @@ Ext.define(
 
 					config : {
 						layout : 'vbox',
-						title : "Commentaires sur l'application et la filière tri",
+						title : "Commenter",
 						scrollable : 'true',
 						items : [
-								{
+								/*{
 									xtype : 'label',
 									html : "<p>Application réalisées par des bénévoles <font color='blue'>en phase de développement</font>. Version 0.1403 (mars 2014). <a href='hhtp://www.mieuxtrieranantes.fr' target=_blank>www.mieuxtrieranantes.fr</a></p>"
-								}, {
+								},*/{
+										xtype : 'label',
+										html : "<I>Sur l'application ou la filière tri.</I>"
+									}, {
 									xtype : 'commentsForm_xtype',
 									height : 400,
 									scrollable : false

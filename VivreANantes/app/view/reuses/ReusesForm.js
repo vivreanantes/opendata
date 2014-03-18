@@ -38,7 +38,7 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 			}]
 		}, {
 			xtype : 'selectfield',
-			label : 'Nantes / Hors Nantes',
+			label : 'Ville',
 			id : 'reusesFormSelectQuartier',
 			options : [{}]
 

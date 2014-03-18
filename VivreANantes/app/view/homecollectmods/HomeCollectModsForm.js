@@ -9,13 +9,13 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
 		items : [{
 					xtype : 'textfield',
 					name : 'name',
-					label : 'Adresse recherchée',
+					label : 'Adresse',
 					id : 'homeCollectModsFormText',
-					placeHolder : 'Sans dénomination. Exemple : Alain Gerbault'
-				},
+					placeHolder : 'Sans dénomination. Ex : Alain Gerbault'
+				}/*,
 				{
 					xtype : 'label',
 					html : '<I>Source <font color=red>Open Data Nantes</font></I>'
-				}
+				}*/
 		]}
 });

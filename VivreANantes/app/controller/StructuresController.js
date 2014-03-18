@@ -29,7 +29,7 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			
 			structuresFormSelectQuartier : {
 				change : "onStructuresStoreFilter",
-				initialize : "setOptionsQuartiers",
+				initialize : "setOptionsVilles",
 				show : "selectFirstOptionsQuartier"
 			}
 

@@ -20,8 +20,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			// Ajout du type
 			var descriptionTraduit = "";
 			if (record.data["modesCollecte"] != null && record.data["modesCollecte"] !== "") {
-				var label = this.stringUpperFirstLetter(this
-						.translate("label_type"));
+				// var label = this.stringUpperFirstLetter(this.translate("label_type"));
 				var modeCollecteTraduit = "";
 				var typeTraduit = "";
 				if (record.data["modesCollecte"] != null
@@ -41,7 +40,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					}
 				}
 				
-				descriptionTraduit += label + " : " + modeCollecteTraduit + " "
+				descriptionTraduit += /*label + " : " +*/ modeCollecteTraduit + " "
 						+ typeTraduit + "<br/><br/>";
 			}
 			// Ajout de la description
@@ -54,27 +53,29 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					&& record.data["adresseTemp"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_adresse"));
-				descriptionTraduit += label + " : "
+				descriptionTraduit += "<b>"+label + "</b>: "
 						+ record.data["adresseTemp"] + "<br/><br/>";
 			}
 			if (record.data["numeroTemp"] != null
 					&& record.data["numeroTemp"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_telephone"));
-				descriptionTraduit += label + " : " + record.data["numeroTemp"]
+				descriptionTraduit += "<b>" + label + " </b>: " + record.data["numeroTemp"]
 						+ "<br/><br/>";
 			}
 			if (record.data["plagesHoraires_lisible"] != null
 					&& record.data["plagesHoraires_lisible"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_horaires"));
-				descriptionTraduit += label + " : "
+				descriptionTraduit += "<b>" + label + "</b>: "
 						+ record.data["plagesHoraires_prochainsJours"]
 						+ "<br/>" + record.data["plagesHoraires_lisible"]
 						+ "<br/><br/>";
 			}
 			if (record.data["src"] != null && record.data["src"] !== "") {
-				descriptionTraduit += record.data["src"] + "<br/><br/>";
+				var label = this.stringUpperFirstLetter(this
+					.translate("label_source"));
+				descriptionTraduit += "<b>" + label + "</b> : " + record.data["src"] + "<br/><br/>";
 			}
 			this.setDataElement(this.structuresDetail,
 					"structuresDetails_description", {
@@ -142,8 +143,9 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		if (obAujoudhuiDemain["bOuvertDemain"] == true) {
 			bOuvertDemain = true;
 		}
+		var stOuvertAujourdhuiEtDemain = "";
 		if (bOuvertAujourdhui == true && bOuvertDemain == true) {
-			var stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
 					+ this.translate("label_ouvert_aujourdhui_et_demain")
 					+ "</FONT>"
 		} else if (bOuvertAujourdhui == true && bOuvertDemain == false) {
@@ -208,12 +210,12 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	},
 	
 	/**
-	 * Valorise les options des listes déroulantes "quartier"
+	 * Valorise les options des listes déroulantes "ville"
 	 */
-	setOptionsQuartiers : function(selectField) {
+	setOptionsVilles : function(selectField) {
 
 		selectField.setOptions([{
-					text : 'Tous',
+					text : 'Toutes',
 					value : 'all'
 				}, {
 					text : "Nantes",
