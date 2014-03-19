@@ -32,8 +32,8 @@ function _translate(stKey, stLocale) {
 			"fr" : "NON"
 		},
 		"label_pas_poubelle" : {
-			"en" : ", nut do not put on the trash",
-			"fr" : ", mais ne pas mettre à la poubelle"
+			"en" : ", but <br/>do not put on the trash",
+			"fr" : ", mais <br/>ne pas mettre à la poubelle"
 		},
 		"label_comment" : {
 			"en" : "Comment",
@@ -85,7 +85,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_modco_contembjournmag" : {
 			"en" : "",
-			"fr" : "Conteneur emballages journaux magazines"
+			"fr" : "Conteneur embal. journ. mag."
 		},
 		"label_modco_contpapiercarton" : {
 			"en" : "",

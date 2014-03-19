@@ -1,11 +1,11 @@
 Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 	extend : 'Ext.Container',
 	xtype : 'garbagesDetails_xtype',
-	scrollable : true,
 	record : null,
 	config : {
 		title : 'Détails',
 		styleHtmlContent : true,
+		scrollable : true,
 		layout : 'vbox',
 		items : [{
 			xtype : 'container',
@@ -128,7 +128,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 			// Le deuxieme conseil
 			xtype : 'container',
 			layout : 'hbox',
-			width : '100%',
+
 			id : "garbagesdetails_conseils_2",
 			items : [{
 						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
@@ -137,7 +137,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_2_bouton",
 						text : "Fiche",
-						width:"150px"
+						width:"100px", height:"50px"
 					}]
 		}, {
 			id : "garbagesdetails_commentaires"

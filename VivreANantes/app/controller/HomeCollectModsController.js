@@ -82,8 +82,8 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 
 				this.homeCollectModDetail.items.items['0'].setTpl('Source : Open Data Nantes, valable <font color=red>à partir du 16/09/2013</font></I><br/><br/><div>Adresse : {dcv}{ci}</div><br/>' +
 					'<div>Modes de collecte : <b>{modesCollecte}</b></div><div>Jours de collecte  : <b> {jct} {jcbb} {jcbj} </b></div><BR/>' +
-					'<UL><LI>si vous êtes en <B>"sac bleu et sac jaune"</B> (appelés "Trisac") : les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.</LI>'+
-					'<LI>si vous êtes en <B>"bac bleu et bac jaune"</B> : les déchets recyclables est à déposer dans le bac jaune, les déchets non recyclables dans le bac bleu.</LI></UL> {src}');
+					'<UL><LI>si vous êtes en <B>"sacs jaune et sacs bleu"</B> (appelés "Trisac") : les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.</LI>'+
+					'<LI>si vous êtes en <B>"bac jaune et bac bleu"</B> : les déchets recyclables est à déposer dans le bac jaune, les déchets non recyclables dans le bac bleu.</LI></UL> {src}');
 			}
 			
 			// Récupère les modes de collecte

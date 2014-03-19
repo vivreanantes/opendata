@@ -13,7 +13,6 @@ Ext.define("VivreANantes.controller.StructuresController", {
 			structuresFormSelectQuartier : "#structuresFormSelectQuartier",
 			structuresFormSelectType : "#structuresFormSelectType",
 			structuresButtons : "#structuresButtons"
-
 		},
 		control : {
 

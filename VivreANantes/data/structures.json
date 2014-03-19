@@ -4,7 +4,7 @@
 			"code" : "stco_reemploi1",
 			"longitude" : "-1.624346",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.199656",
 			"description_fr" : "Collecte des déchets et communication sur le tri. Vous avez besoin d'espace, de détruire plafonds, cloisons, toiture, etc. ? Nos spécialistes de la déconstruction interviennent chez vous et vous débarrassent. Nos professionnels peuvent aussi réaliser des petits travaux de maçonnerie ou de bricolage et vous aider à reconstruire ! Vous ne savez que faire de résidus de tonte de pelouses, de coupe de bois? de cartons, plastiques, ferraille, etc. ? Nos spécialistes de la collecte des déchets valorisables viennent chez vous, les récupèrent et les orientent vers les filières de recyclage adaptées.",
 			"libelle" : "TRAIT D'UNION",
@@ -16,21 +16,21 @@
 			"code" : "stco_reemploi3",
 			"longitude" : "-1.888551",
 			"modesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi meuble, livres/CD/BD, jouets, divers",
 			"latitude" : "47.354684",
 			"description_fr" : "Au Bazar Citoyen, la première boutique de la Recyclerie Nord Atlantique, les habitants du territoire peuvent venir chiner, fouiller, faire de bonnes affaires.",
 			"libelle" : "Recyclerie Nord Atlantique",
 			"adresseTemp" : "Point du Jour 44260 SAVENAY",
 			"numeroTemp" : "02 40 05 38 21",
 			"src" : "deuxiemeVie",
-			"horaires" : "La boutique est ouverte tous les mercredi et samedi de 9h30 à 12h et de 14h à 16h45. Chacun peut également venir y déposer les objets encore utilisables, aux mêmes jours et heures d?ouverture.",
+			"horaires" : "La boutique est ouverte tous les mercredi et samedi de 9h30 à 12h et de 14h à 16h45. Chacun peut également venir y déposer les objets encore utilisables, aux mêmes jours et heures d’ouverture.",
 			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
 			"code" : "stco_reemploi5",
 			"longitude" : "-1.754959",
 			"modesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi meuble, livres/CD/BD, jouets, vêtement, divers",
 			"latitude" : "47.201260",
 			"description_fr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...",
 			"libelle" : "ATELIER DU RETZ EMPLOI (LE PELLERIN)",
@@ -44,7 +44,7 @@
 			"code" : "stco_reemploi6",
 			"longitude" : "-1.560690",
 			"modesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi électroménager, meuble, vêtement, livres/CD/BD, divers",
 			"latitude" : "47.161667",
 			"description_fr" : "Meubles, appareils et ustensiles ménagers, literie, couverture, linge, lustres et luminaires, vêtements, livres, vaisselle...",
 			"libelle" : "EMMAUS",
@@ -58,7 +58,7 @@
 			"code" : "stco_reemploi10",
 			"longitude" : "-2.2184136",
 			"modesCollecte" : "smco_reempvet,smco_reempjouet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement, jouets",
 			"latitude" : "47.2764666",
 			"description_fr" : "Dépot vente et commerce de vêtements pour enfant et articles de puériculture.",
 			"libelle" : "Enfant'y Age",
@@ -72,11 +72,11 @@
 			"code" : "stco_reemploi12",
 			"longitude" : "-2.2726939",
 			"modesCollecte" : "smco_reempelectromenag",
-			"type" : "Réemploi",
+			"type" : "Réemploi électroménager",
 			"latitude" : "47.2599674",
 			"description_fr" : "Récupération et vente d'électroménager",
 			"libelle" : "ENVIE 44",
-			"adresseTemp" : "Zone commerciale Océanis, 29 rue de l?étoile du matin 44600 SAINT-NAZAIRE",
+			"adresseTemp" : "Zone commerciale Océanis, 29 rue de l’étoile du matin 44600 SAINT-NAZAIRE",
 			"numeroTemp" : "02 53 35 51 90 ",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du mardi au samedi de 10h à 12h30 et de 14h30 à 19h",
@@ -86,7 +86,7 @@
 			"code" : "stco_reemploi13",
 			"longitude" : "-2.161143",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.3264595",
 			"description_fr" : "L'atelier recycle les toiles de voile ou les bâches publicitaires pour en faire des sacs marins, des cabas, des cartables ou des étuis isothermes. Ces articles sont aussi commercialisés dans le magasin Artisan du Monde de Saint-Nazaire.",
 			"libelle" : "ESAT Marie Moreau",
@@ -98,7 +98,7 @@
 			"code" : "stco_reemploi14",
 			"longitude" : "-1.573717",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.258869",
 			"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
 			"libelle" : "ATAO",
@@ -110,7 +110,7 @@
 			"code" : "stco_reemploi15",
 			"longitude" : "-1.6133603",
 			"modesCollecte" : "smco_reempcartouchetoner",
-			"type" : "Réemploi",
+			"type" : "Réemploi cartouches encres/tuners",
 			"latitude" : "47.2062095",
 			"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 			"libelle" : "LEVER L'ENCRE",
@@ -121,7 +121,7 @@
 			"code" : "stco_reemploi16",
 			"longitude" : "-1.5578842",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.2143672",
 			"description_fr" : "Récupération de lunettes",
 			"libelle" : "Optique Jean ROYER",
@@ -132,23 +132,23 @@
 			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-19h00,0101-3112_lu_14h00-19h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi18",
+			"code" : "stco_reemploi17",
 			"longitude" : "-1.4852487",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.1842788",
 			"description_fr" : "Collecte de papiers usagés. L'association a pour objectif de financer des actions humanitaires éducatives à partir d'un geste écologique, le tri du papier.",
 			"libelle" : "PAPIERS DE L'ESPOIR",
 			"adresseTemp" : "29 Rue Maladrie 44120 VERTOU",
 			"numeroTemp" : "02 40 34 29 24 ou 06 75 67 98 02 ou 06 37 27 14 22 (St-Nazaire)",
 			"src" : "deuxiemeVie",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-18h30",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 			"quartier" : "Hors Nantes sud Loire"
 		}, {
-			"code" : "stco_reemploi19",
+			"code" : "stco_reemploi18",
 			"longitude" : "-1.5515172",
 			"modesCollecte" : "smco_reempvet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement",
 			"latitude" : "47.1879293",
 			"description_fr" : "Boutique du Relais",
 			"libelle" : "DING-FRING Rezé",
@@ -156,13 +156,12 @@
 			"numeroTemp" : "02 51 70 28 35",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au vendredi de 10h à 12h30 et de 14h à 19h00. Le samedi de 10h à 12h30 et de 14h à 18h30",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 			"quartier" : "Hors Nantes sud Loire"
 		}, {
-			"code" : "stco_reemploi20",
+			"code" : "stco_reemploi19",
 			"longitude" : "-1.641401",
 			"modesCollecte" : "smco_reempmeuble",
-			"type" : "Réemploi",
+			"type" : "Réemploi meuble",
 			"latitude" : "47.224091",
 			"description_fr" : "Récupération de meubles",
 			"libelle" : "L'HOMME DEBOUT",
@@ -170,13 +169,13 @@
 			"numeroTemp" : "02 40 92 26 91",
 			"src" : "deuxiemeVie",
 			"horaires" : "Ferme le mercredi apres midi et le vendredi. Devis meuble le mardi de 14 a 17h et le jeudi de 9 a 12h.",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-12h30+14h00-19h00,0101-3112_sa_09h00-12h30",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-18h30",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi21",
+			"code" : "stco_reemploi20",
 			"longitude" : "-1.2710598",
 			"modesCollecte" : "smco_reempvet,smco_reempjouet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement, jouets",
 			"latitude" : "47.165074",
 			"description_fr" : "Collecte et vente à petits prix des articles textiles : vêtements adulte et enfant, linge plat, maroquinerie, jouets, bijoux fantaisie...",
 			"libelle" : "PAT'MOUILLE",
@@ -184,26 +183,26 @@
 			"numeroTemp" : "02 40 36 39 89",
 			"src" : "deuxiemeVie",
 			"horaires" : "du lundi au vendredi de 8h à 12h30 et de 14h à 19h ainsi que le samedi matin de 9h à 12h30",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-12h30+14h00-19h00,0101-3112_sa_09h00-12h30",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 			"quartier" : "Hors Nantes sud Loire"
 		}, {
-			"code" : "stco_reemploi22",
+			"code" : "stco_reemploi21",
 			"longitude" : "-1.641127",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.223984",
 			"description_fr" : "Récupération et vente de vélo et de cyclomoteurs",
 			"libelle" : "ATAO",
 			"adresseTemp" : "4 rue des compagnons 44800 SAINT-HERBLAIN",
 			"numeroTemp" : "02 40 92 28 91",
 			"src" : "deuxiemeVie",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-12h30+14h00-19h00,0101-3112_sa_09h00-12h30",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi24",
+			"code" : "stco_reemploi23",
 			"longitude" : "-2.2117936",
 			"modesCollecte" : "smco_reempcartouchetoner",
-			"type" : "Réemploi",
+			"type" : "Réemploi cartouches encres/tuners",
 			"latitude" : "47.2803679",
 			"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 			"libelle" : "CARTRIDGE WORLD",
@@ -211,39 +210,39 @@
 			"numeroTemp" : "02 40 24 80 09",
 			"src" : "deuxiemeVie",
 			"horaires" : "Lundi au Samedi de 09H00 à 19H00",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-19h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,sauf_ferie",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi25",
+			"code" : "stco_reemploi24",
 			"longitude" : "-1.621382",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.329666",
 			"description_fr" : "Récupération de ferrailles, voitures, cuivre, batteries, linge, vaisselles, bibelots, fauteuils roulants, machines à  coudre. Récupération possible à  domicile",
 			"libelle" : "ECHANGES ET SOLIDARITE 44",
 			"adresseTemp" : "64 rue de la mairie 44119 TREILLIERES",
 			"numeroTemp" : "02 40 43 84 91",
 			"src" : "deuxiemeVie",
-			"plagesHoraires" : "0101-3112_lu+me+sa_14h00-18h00,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-19h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi27",
+			"code" : "stco_reemploi26",
 			"longitude" : "-1.654222",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.258053",
 			"description_fr" : "Récupération de pain",
 			"libelle" : "ATELIER BAR'AMEL TRAJET",
 			"adresseTemp" : "9, Route de Brimberne 44880 SAUTRON",
 			"numeroTemp" : "02 51 78 64 62",
 			"src" : "deuxiemeVie",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+me+sa_14h00-18h00,sauf_ferie",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi29",
+			"code" : "stco_reemploi28",
 			"longitude" : "-2.1881119",
 			"modesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi électroménager, meuble, vêtement, livres/CD/BD, divers",
 			"latitude" : "47.3108847",
 			"description_fr" : "Meubles, appareils et ustensiles ménagers, literie, couverture, linge, lustres et luminaires, vêtements, livres, vaisselle...",
 			"libelle" : "EMMAUS",
@@ -251,27 +250,27 @@
 			"numeroTemp" : "08 99 23 72 78",
 			"src" : "deuxiemeVie",
 			"horaires" : "Dépôts des dons : Mardi, mercredi, vendredi et le samedi de 9h30 à 11h30 et de 13h30 à 16h30. Salle de vente : Le mercredi de 13h30 à 17h30 et le samedi de 9h30 à 11h30 et de 13h30 à 17h30.",
-			"plagesHoraires" : "0101-3112_je_14h00-17h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,sauf_ferie",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi30",
+			"code" : "stco_reemploi29",
 			"longitude" : "-2.2100357",
 			"modesCollecte" : "smco_reempinfo",
-			"type" : "Réemploi",
+			"type" : "Réemploi informatique",
 			"latitude" : "47.2774346",
 			"description_fr" : "Récupération, reconditionnement et distribution d'ordinateurs",
 			"libelle" : "SNALIS",
-			"adresseTemp" : "61 rue d?Anjou 44600 SAINT-NAZAIRE",
+			"adresseTemp" : "61 rue d’Anjou 44600 SAINT-NAZAIRE",
 			"numeroTemp" : "09 50 72 82 51",
 			"src" : "deuxiemeVie",
 			"horaires" : "Ouvert au public le jeudi de 14h à 17h",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-18h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi31",
+			"code" : "stco_reemploi30",
 			"longitude" : "-1.51986",
 			"modesCollecte" : "smco_reempinfo",
-			"type" : "Réemploi",
+			"type" : "Réemploi informatique",
 			"latitude" : "47.239259",
 			"description_fr" : "Récupération, reconditionnement et distribution d'ordinateurs",
 			"libelle" : "ALIS44",
@@ -279,13 +278,13 @@
 			"numeroTemp" : "06.47.98.02.68",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au vendredi, 9h-12h et 14h-18h",
-			"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_10h00-13h00+14h00-19h00,0101-3112_sa_10h00-13h00+14h00-18h00",
+			"plagesHoraires" : "0101-3112_je_14h00-17h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi32",
+			"code" : "stco_reemploi31",
 			"longitude" : "-1.5591834",
 			"modesCollecte" : "smco_reempcartouchetoner",
-			"type" : "Réemploi",
+			"type" : "Réemploi cartouches encres/tuners",
 			"latitude" : "47.2125716",
 			"description_fr" : "Recharge de cartouche d'imprimante",
 			"libelle" : "OCE'ENCRE",
@@ -293,13 +292,13 @@
 			"numeroTemp" : "02 51 88 98 65",
 			"src" : "deuxiemeVie",
 			"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 10h à  13h et de 14h à  19h et le samedi de 10h à  13h et de 14h à  18h",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-13h00+14h00-19h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-18h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi33",
+			"code" : "stco_reemploi32",
 			"longitude" : "-1.558127",
 			"modesCollecte" : "smco_reempinfo,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi informatique, divers",
 			"latitude" : "47.209536",
 			"description_fr" : "Ouverture d'une boutique Ecophone 44 au 2 rue Deurbroucq à Nantes. 2 entreprises : Ecophone 44 et SAFETY PC 44 et nous récupérons les téléphones et les ordinateurs hors d'usage.",
 			"libelle" : "Ecophone 44",
@@ -307,13 +306,13 @@
 			"numeroTemp" : "02 52 10 37 71",
 			"src" : "deuxiemeVie",
 			"horaires" : "du lundi au samedi de 10h à 18h30",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-18h00",
+			"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_10h00-13h00+14h00-19h00,0101-3112_sa_10h00-13h00+14h00-18h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi34",
+			"code" : "stco_reemploi33",
 			"longitude" : "-1.652637",
 			"modesCollecte" : "smco_reempelectromenag",
-			"type" : "Réemploi",
+			"type" : "Réemploi électroménager",
 			"latitude" : "47.233582",
 			"description_fr" : "Récupération et vente d'électroménager",
 			"libelle" : "ENVIE 44",
@@ -321,13 +320,13 @@
 			"numeroTemp" : "02 40 43 82 37",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au samedi de 10h à 13h et de 14h à 19h",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-13h00+14h30-18h30",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-18h30",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi35",
+			"code" : "stco_reemploi34",
 			"longitude" : "-1.766052",
 			"modesCollecte" : "smco_reempcartouchetoner",
-			"type" : "Réemploi",
+			"type" : "Réemploi cartouches encres/tuners",
 			"latitude" : "47.312759",
 			"description_fr" : "Collecte et recyclage de cartouches d'imprimantes laser et jet d'encre.",
 			"libelle" : "PRAXIS ENVIRONNEMENT",
@@ -335,13 +334,13 @@
 			"numeroTemp" : "02 40 57 44 54",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au vendredi de 9h00 à  18h00.",
-			"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_09h00-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-17h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-13h00+14h00-19h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi36",
+			"code" : "stco_reemploi35",
 			"longitude" : "-1.548943",
 			"modesCollecte" : "smco_reemplivreCD",
-			"type" : "Réemploi",
+			"type" : "Réemploi livres/CD/BD",
 			"latitude" : "47.217117",
 			"description_fr" : "Récupération de livres, revues, BD",
 			"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
@@ -349,13 +348,13 @@
 			"numeroTemp" : "02 40 47 18 27 (public) / 02 51 82 05 41 (bureau)",
 			"src" : "deuxiemeVie",
 			"horaires" : "Lundi à Vendredi 9h-13h et 14h30-18h30",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h30+14h00-18h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-18h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi37",
+			"code" : "stco_reemploi36",
 			"longitude" : "-1.608134",
 			"modesCollecte" : "smco_reempcartouchetoner",
-			"type" : "Réemploi",
+			"type" : "Réemploi cartouches encres/tuners",
 			"latitude" : "47.247658",
 			"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 			"libelle" : "ENCRE STATION",
@@ -363,13 +362,13 @@
 			"numeroTemp" : "02 40 74 42 16",
 			"src" : "deuxiemeVie",
 			"horaires" : "Ouvert le Lundi de 14h à  19h, du Mardi au Vendredi de 9h30 à  12h30 et de 14h à  19h et le samedi de 10h à  12h30 et de 14h à  17h",
-			"plagesHoraires" : "0101-3112_ma+je+ve_10h00-12h00+14h00-19h00,0101-3112_sa_15h00-18h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-13h00+14h30-18h30",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi38",
+			"code" : "stco_reemploi37",
 			"longitude" : "-1.642425",
 			"modesCollecte" : "smco_reempinfo",
-			"type" : "Réemploi",
+			"type" : "Réemploi informatique",
 			"latitude" : "47.223204",
 			"description_fr" : "Rénovation de micro-ordinateurs réformés et leur revente avec garantie. Démantèlement assuré par un Atelier d'insertion, pour le matériel «obsolète», en panne et les déchets informatiques et électroniques.",
 			"libelle" : "ACTIF OUEST",
@@ -377,13 +376,13 @@
 			"numeroTemp" : "02 51 80 05 38",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au vendredi de 9h00 à  12h30 et de 14h00 à  18h00.",
-			"plagesHoraires" : "0101-3103+3009-3112_lu+ma+me+je+ve+sa_10h00-12h15+14h30-19h00,0104-3009_lu+ma+me+je+ve+sa_09h00-12h15+14h30-18h00,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu_14h00-19h00,0101-3112_ma+me+je+ve_09h00-12h30+14h00-19h00,0101-3112_sa_10h00-12h30+14h00-17h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi39",
+			"code" : "stco_reemploi38",
 			"longitude" : "-2.2116533",
 			"modesCollecte" : "smco_reempvet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement",
 			"latitude" : "47.2717698",
 			"description_fr" : "En partant de vêtements neufs ou anciens, et en choisissant différents tissus , galons, boutons, perles, ...je transforme, je revisite, pour proposer des pièces originales et uniques; jupes, vestes, sacs, chaussures, chapeaux, étoles, pantalons, etc... revus et corrigés...!",
 			"libelle" : "La Pomme et la lionne",
@@ -391,13 +390,13 @@
 			"numeroTemp" : "06 33 63 35 52",
 			"src" : "deuxiemeVie",
 			"horaires" : "Ouvert le mardi, jeudi et vendredi, de 10 h à 12 h et de 14 h à 19 h; le samedi, de 15 h à 18 h.",
-			"plagesHoraires" : "0101-3112_me+sa_09h00-17h30",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h30+14h00-18h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi41",
+			"code" : "stco_reemploi40",
 			"longitude" : "-1.815695",
 			"modesCollecte" : "smco_reempelectromenag,smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi électroménager, meuble, livres/CD/BD, jouets, vêtement, divers",
 			"latitude" : "47.109553",
 			"description_fr" : "Collecte, revente à petit prix de ce qui est récupérable, tri en vue de recyclage : vaisselle, jouets, livres, disques, électroménager en état de fonctionnement, outils, vêtements, chaussures, bibelots, meubles...",
 			"libelle" : "ATELIER DU RETZ EMPLOI (SAINTE-PAZANNE)",
@@ -405,13 +404,13 @@
 			"numeroTemp" : "06 71 65 87 20",
 			"src" : "deuxiemeVie",
 			"horaires" : "le MERCREDI de 9 h à 17 h 30, le SAMEDI de 9 h à 17 h 30",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,sauf_ferie",
+			"plagesHoraires" : "0101-3103+3009-3112_lu+ma+me+je+ve+sa_10h00-12h15+14h30-19h00,0104-3009_lu+ma+me+je+ve+sa_09h00-12h15+14h30-18h00,sauf_ferie",
 			"quartier" : "Hors Nantes sud Loire"
 		}, {
-			"code" : "stco_reemploi42",
+			"code" : "stco_reemploi41",
 			"longitude" : "-1.5468354",
 			"modesCollecte" : "smco_reempvet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement",
 			"latitude" : "47.2119882",
 			"description_fr" : "Boutique du Relais",
 			"libelle" : "DING-FRING Fourré",
@@ -419,13 +418,13 @@
 			"numeroTemp" : "02 40 75 46 91",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 18h30",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa+di_10h00-18h00,sauf_ferie",
+			"plagesHoraires" : "0101-3112_me+sa_09h00-17h30",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi43",
+			"code" : "stco_reemploi42",
 			"longitude" : "-1.237721",
 			"modesCollecte" : "smco_reempmeuble,smco_reempinfo,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers,smco_reempelectromenag",
-			"type" : "Réemploi",
+			"type" : "Réemploi meuble, informatique, livres/CD/BD, jouets, vêtement, divers, électroménager",
 			"latitude" : "47.491830",
 			"description_fr" : "3 boutiques du réemploi sur le Pays d'Ancenis Au CELLIER, à PANNECE, à BELLIGNE.",
 			"libelle" : "TroCantons",
@@ -433,26 +432,26 @@
 			"numeroTemp" : "02 40 97 78 55",
 			"src" : "deuxiemeVie",
 			"horaires" : "Boutiques PANNECE - jeudi 14h/17h30 et samedi 9h30/12h30 Boutique BELLIGNE - Lundi 9h/12h et samedi 9h/12h Boutique LE CELLIER - Vendredi 14h/17h et samedi 9h/12h horaires dépots: du mardi au samedi de 9h30 à 12h30 et le jeudi de 14h à 17h30 Possibilité de collecte à domicile",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-18h00,0101-3112_di_08h30-12h00,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-18h30",
 			"quartier" : "PANNECE"
 		}, {
-			"code" : "stco_reemploi47",
+			"code" : "stco_reemploi46",
 			"longitude" : "-1.561791",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.200229",
 			"description_fr" : "Scénographie Architecture Bâti Lieux Expérimentaux. Notre travail trouve son application dans la création d'installation urbaines et constructions temporaires à base d'objets récupérés.",
 			"libelle" : "LES MARCHANDS DE SABLE",
 			"adresseTemp" : "18 quai du président Wilson 44200 NANTES",
 			"numeroTemp" : "06 81 67 42 06",
 			"src" : "deuxiemeVie",
-			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_10h00-18h00,0101-3112_di_08h30-12h00,sauf_ferie",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi48",
+			"code" : "stco_reemploi47",
 			"longitude" : "-1.53276",
 			"modesCollecte" : "smco_reempvet,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement, livres/CD/BD, jouets, divers",
 			"latitude" : "47.23558",
 			"description_fr" : "Récupération et distribution de vêtements, livres, jouets, vaisselle, bibelots",
 			"libelle" : "LA CROIX ROUGE / Vestiboutique",
@@ -460,13 +459,12 @@
 			"numeroTemp" : "02 51 89 47 62",
 			"src" : "deuxiemeVie",
 			"horaires" : "Mardi et jeudi de 9h30 à 12h00 et de 14h00 à 17h00",
-			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi53",
+			"code" : "stco_reemploi51",
 			"longitude" : "-1.5484173",
 			"modesCollecte" : "smco_reemplivreCD",
-			"type" : "Réemploi",
+			"type" : "Réemploi livres/CD/BD",
 			"latitude" : "47.213765",
 			"description_fr" : "Récupération de livres, revues, BD et de manuels scolaires",
 			"libelle" : "NANTES ÉCOLOGIE, L'AIR LIVRE",
@@ -474,13 +472,13 @@
 			"numeroTemp" : "02 51 82 78 30",
 			"src" : "deuxiemeVie",
 			"horaires" : "Lundi, mardi, jeudi, vendredi 9h-13h et 14h00-18h00",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-12h00,0101-3112_sa_10h00-18h00",
+			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi54",
+			"code" : "stco_reemploi52",
 			"longitude" : "-1.5692261",
 			"modesCollecte" : "smco_reempvet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement",
 			"latitude" : "47.2092982",
 			"description_fr" : "Boutique du Relais",
 			"libelle" : "DING-FRING Brunelière",
@@ -488,26 +486,26 @@
 			"numeroTemp" : "02 40 69 13 89",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au vendredi de 10h à 19h00. Le samedi de 10h à 18h30",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_00h00-23h59",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00,0101-3112_sa_10h00-18h30",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi55",
+			"code" : "stco_reemploi53",
 			"longitude" : "-1.643064",
 			"modesCollecte" : "smco_reempvet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement, divers",
 			"latitude" : "47.222275",
 			"description_fr" : "Récupération de vêtements, chaussures, linge. Informations sur l'emplacement des conteneur : www.relais-atlantique.fr",
 			"libelle" : "RELAIS ATLANTIQUE",
 			"adresseTemp" : "3 impasse du Bourrelier, CP 1526 44806 SAINT-HERBLAIN CEDEX",
 			"numeroTemp" : "02 28 03 18 57",
 			"src" : "deuxiemeVie",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je_10h00-12h30+14h30-19h00,0101-3112_ve_10h00-19h00,0101-3112_sa_10h00-12h30+14h30-18h30",
+			"plagesHoraires" : "0101-3112_lu+ma+je+ve_09h00-13h00+14h00-18h00",
 			"quartier" : "Hors Nantes nord Loire CEDEX"
 		}, {
-			"code" : "stco_reemploi56",
+			"code" : "stco_reemploi54",
 			"longitude" : "-1.633449",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.259354",
 			"description_fr" : "Récupération de matériels divers pour le tiers monde",
 			"libelle" : "ARCADE",
@@ -515,13 +513,13 @@
 			"numeroTemp" : "02 40 63 74 20",
 			"src" : "deuxiemeVie",
 			"horaires" : "Le mardi de 10h à 12 h.",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je_10h00-12h30+14h30-19h00,0101-3112_ve_10h00-19h00,0101-3112_sa_10h00-12h30+14h30-18h30",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00,0101-3112_sa_10h00-18h30",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi57",
+			"code" : "stco_reemploi55",
 			"longitude" : "-1.565745",
 			"modesCollecte" : "smco_reempmeuble,smco_reemplivreCD,smco_reempjouet,smco_reempvet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi meuble, livres/CD/BD, jouets, vêtement, divers",
 			"latitude" : "47.196638",
 			"description_fr" : "Réemploi d'objets de la vie courante : collecte en déchèterie puis revente à bas prix (mobilier, vaisselle, jouets, livres, vêtements, articles de loisirs, outillage...)",
 			"libelle" : "ECOREV",
@@ -529,13 +527,12 @@
 			"numeroTemp" : "02 28 23 64 47",
 			"src" : "deuxiemeVie",
 			"horaires" : "Dépôt d'objets réutilisables : lundi-samedi de 9h à 12h Boutique solidaire : le samedi de 10h à 18h",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h00,0101-3112_sa_08h00-19h00",
 			"quartier" : "Hors Nantes sud Loire"
 		}, {
-			"code" : "stco_reemploi58",
+			"code" : "stco_reemploi56",
 			"longitude" : "-2.206235",
 			"modesCollecte" : "smco_reempmeuble,smco_reempvet,smco_reemplivreCD,smco_reempjouet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi meuble, vêtement, livres/CD/BD, jouets, divers",
 			"latitude" : "47.285496",
 			"description_fr" : "Pour tous, qui recherchez des meubles, des vêtements, des livres, des jouets, de la vaisselle, une braderie est à votre disposition",
 			"libelle" : "SECOURS POPULAIRE",
@@ -543,26 +540,26 @@
 			"numeroTemp" : "02 40 74 48 41",
 			"src" : "deuxiemeVie",
 			"horaires" : "Le Samedi de 9h30 à 12h, et en semaine selon les horaires suivants : Meubles : Lundi, Mardi, Mercredi, Jeudi de 14h30 à 17h, Vestiaire : Mardi, un  Mercredi sur deux ( non distribution alimentaire ), Jeudi  :  10h à12h et de 14h30 à 16h30, Jouets : Mardi et Jeudi de 10h à 12h et de 14h30 à 16h30, Bibliothèque : Jeudi de 14h30 à 16h30.  Les dépots de vêtements, livres, jouets, vaisselle, bibelots peuvent se faire tous les jours, de 9h à 12 h et de 14h30 à 16h30. De préférence, venez le lundi et le samedi matin. Dépots de meubles toutes les après-midi, du lundi au jeudi, de 14 h à 17 h. ",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-17h00",
+			"plagesHoraires" : "0101-3112_ma_10h00-12h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi59",
+			"code" : "stco_reemploi57",
 			"longitude" : "-1.550624",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.201511",
 			"description_fr" : "Récupération de bouchons plastiques",
 			"libelle" : "BOUCHON D'AMOUR",
 			"adresseTemp" : "Stockage : Chà¢teau d'eau du MIN de Nantes 44200 NANTES",
 			"numeroTemp" : "02 40 86 57 29",
 			"src" : "deuxiemeVie",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je_09h00-12h30+13h30-19h00,0101-3112_ve_09h00-12h30+13h30-17h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_09h00-12h00,0101-3112_sa_10h00-18h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi60",
+			"code" : "stco_reemploi58",
 			"longitude" : "-2.2100179",
 			"modesCollecte" : "smco_reempvet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement",
 			"latitude" : "47.2774497",
 			"description_fr" : "Boutique du Relais",
 			"libelle" : "DING-FRING Saint-Nazaire",
@@ -570,13 +567,13 @@
 			"numeroTemp" : "02 40 66 10 07",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au jeudi : de 10h à 12h30 et de 14h30 à 19h00 ; Le vendredi : 10h00 à 19h00 ; Le samedi : 10h00 à 12h30 et de 14h30 à 18h30",
-			"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve_09h00-12h45+13h45-19h00,0101-3112_sa_14h00-19h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_00h00-23h59",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi61",
+			"code" : "stco_reemploi59",
 			"longitude" : "-2.2065413",
 			"modesCollecte" : "smco_reempcartouchetoner",
-			"type" : "Réemploi",
+			"type" : "Réemploi cartouches encres/tuners",
 			"latitude" : "47.2735589",
 			"description_fr" : "Rechargez vos cartouches d'encre et toners.",
 			"libelle" : "PIGMENTA",
@@ -584,27 +581,26 @@
 			"numeroTemp" : "02 40 22 39 20",
 			"src" : "deuxiemeVie",
 			"horaires" : "du lundi au vendredi 7h00-19h00 et le samedi 8h00-19h00",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00,0101-3112_sa_10h00-12h00+14h00-18h30",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi62",
+			"code" : "stco_reemploi60",
 			"longitude" : "-1.5801384",
 			"modesCollecte" : "smco_reempelectromenag,smco_reemplivreCD,smco_reempjouet,smco_reempmeuble,smco_reempvet,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi électroménager, livres/CD/BD, jouets, meuble, vêtement, divers",
 			"latitude" : "47.2097351",
-			"description_fr" : "Les petits frères des Pauvres accompagnent des personnes ? en priorité de plus de cinquante ans - souffrant d'isolement, de pauvreté, de maladie, d'exclusions.",
+			"description_fr" : "Les petits frères des Pauvres accompagnent des personnes – en priorité de plus de cinquante ans - souffrant d'isolement, de pauvreté, de maladie, d'exclusions.",
 			"libelle" : "LA FRATERNITE",
 			"adresseTemp" : "5 rue Amiral Duchaffault 44000 NANTES",
 			"numeroTemp" : "02 40 68 96 96",
 			"src" : "deuxiemeVie",
 			"horaires" : "du lundi au jeudi de 9h à 12h30 et de 13h30 à 18h et le vendredi à 17h",
-			"plagesHoraires" : "0101-3112_lu_14h15-17h45,0101-3112_ma+je_09h00-12h30+14h15-17h45,0101-3112_me_09h00-12h00+14h15-17h45,0101-3112_ve_09h00-12h30+13h30-17h30,0101-3112_sa_09h00-12h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je_10h00-12h30+14h30-19h00,0101-3112_ve_10h00-19h00,0101-3112_sa_10h00-12h30+14h30-18h30",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi63",
+			"code" : "stco_reemploi61",
 			"longitude" : "-1.560953",
 			"modesCollecte" : "smco_reempmeuble,smco_reempvet,smco_reempelectromenag",
-			"type" : "Réemploi",
+			"type" : "Réemploi meuble, vêtement, électroménager",
 			"latitude" : "47.227348",
 			"description_fr" : "Récupération de vêtements, meubles, électroménagers",
 			"libelle" : "SECOURS POPULAIRE",
@@ -612,13 +608,13 @@
 			"numeroTemp" : "02 40 74 48 41",
 			"src" : "deuxiemeVie",
 			"horaires" : "Tous les jours du lundi au vendredi de 9h à 12h et de 14h à 17h",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_07h00-19h00,0101-3112_sa_08h00-19h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi64",
+			"code" : "stco_reemploi62",
 			"longitude" : "-1.570404",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.260956",
 			"description_fr" : "Récupération de papier (même pour des volumes moyens)",
 			"libelle" : "A.R.B.R.E.S.",
@@ -626,13 +622,13 @@
 			"numeroTemp" : "02 40 40 35 55",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au jeudi de 9h00 à 12h30 et de 14h00 à 17h00. Le vendredi de 9h00 à 12h30 et de 14h00 à 16h00.",
-			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je_09h00-12h30+13h30-19h00,0101-3112_ve_09h00-12h30+13h30-17h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi65",
+			"code" : "stco_reemploi63",
 			"longitude" : "-1.556319",
 			"modesCollecte" : "smco_reempcartouchetoner",
-			"type" : "Réemploi",
+			"type" : "Réemploi cartouches encres/tuners",
 			"latitude" : "47.217781",
 			"description_fr" : "Recharge de cartouche d'imprimante et remanufacturation de toner",
 			"libelle" : "POINT ENCRE ET TONER",
@@ -640,13 +636,13 @@
 			"numeroTemp" : "02 40 35 64 29",
 			"src" : "deuxiemeVie",
 			"horaires" : "Ouvert le lundi de 13h à 19h ; du mardi au vendredi de 9h à 12h45 et de 13h45 à 19h ; le samedi de 14h à 19h.",
-			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_09h00-12h00+14h00-17h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi66",
+			"code" : "stco_reemploi64",
 			"longitude" : "-1.5318757",
 			"modesCollecte" : "smco_reempvet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement",
 			"latitude" : "47.2414082",
 			"description_fr" : "Boutique du Relais : Ding Fring",
 			"libelle" : "DING-FRING Marsauderies",
@@ -654,13 +650,13 @@
 			"numeroTemp" : "02 40 20 87 11",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au vendredi de 10h à 19h00 et le samedi de 10h à 12h et de 14h à 18h30",
-			"plagesHoraires" : "0101-3112_lu_14h00-18h00,0101-3112_ma+me+je+ve_10h00-12h30+14h00-18h30,0101-3112_sa_10h00-12h30+14h00-18h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_12h00-14h00",
 			"quartier" : "Nantes"
 		}, {
-			"code" : "stco_reemploi67",
+			"code" : "stco_reemploi65",
 			"longitude" : "-2.2577916",
 			"modesCollecte" : "smco_reempvet",
-			"type" : "Réemploi",
+			"type" : "Réemploi vêtement",
 			"latitude" : "47.2615601",
 			"description_fr" : "La grange aux fringues est une bourse permanente de vêtements d'occasion ouvert à tous et porté par un chantier d'insertion. Il est possible de vendre ses vêtements en étant adhérent à une Maison de quartier : 15 articles par mois peuvent être déposés. Les articles non vendus et l'argent des ventes sont ensuite récupérés à la fin du mois. La grange aux fringues devient, à certaines périodes de l'année, la grange ambulante et se déplace dans les différents quartiers de Saint-Nazaire.",
 			"libelle" : "La grange aux fringues",
@@ -668,13 +664,13 @@
 			"numeroTemp" : "02 40 70 35 00",
 			"src" : "deuxiemeVie",
 			"horaires" : "Ouvert le lundi de 14h15 à 17h45, le mardi et le jeudi de 9h à 12h30 et de 14h15 à 17h45, le mercredi de 9h à 12h et de 14h15 à 17h45, le vendredi de 9h à 12h30 et de 13h30 à 17h30, le samedi de 9h à 12h.",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
+			"plagesHoraires" : "0101-3112_lu_13h00-19h00,0101-3112_ma+me+je+ve_09h00-12h45+13h45-19h00,0101-3112_sa_14h00-19h00",
 			"quartier" : "Hors Nantes nord Loire"
 		}, {
-			"code" : "stco_reemploi68",
+			"code" : "stco_reemploi66",
 			"longitude" : "-1.5324433",
 			"modesCollecte" : "smco_reempelectromenag,smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi électroménager, divers",
 			"latitude" : "47.1819242",
 			"description_fr" : "Récupération de ferraille, métaux, électroménager, voiture, camion, bateau, engins agricole... Déplacement à domicile dans toute la loire-atlantique.",
 			"libelle" : "RECUPFER44",
@@ -682,13 +678,13 @@
 			"numeroTemp" : "06 38 39 72 78",
 			"src" : "deuxiemeVie",
 			"horaires" : "Du lundi au samedi de 8 heures à 20 heures.",
-			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_10h00-19h00,0101-3112_sa_10h00-12h00+14h00-18h30",
 			"quartier" : "Hors Nantes sud Loire"
 		}, {
-			"code" : "stco_reemploi70",
+			"code" : "stco_reemploi68",
 			"longitude" : "-1.661669",
 			"modesCollecte" : "smco_reempdivers",
-			"type" : "Réemploi",
+			"type" : "Réemploi divers",
 			"latitude" : "47.229244",
 			"description_fr" : "Récupération de matériels pour chambre d'hôpital, fauteuils roulant, lunettes, appareils auditifs",
 			"libelle" : "ORTHOPEDIE SANS FRONTIERE",
@@ -696,7 +692,34 @@
 			"numeroTemp" : "06 64 24 08 77",
 			"src" : "deuxiemeVie",
 			"horaires" : "Le jeudi de 9h à 12h et de 14h à 17h30 ",
-			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve_08h00-12h00+13h00-17h00",
+			"plagesHoraires" : "0101-3112_lu+ma+me+je+ve+sa_08h00-20h00",
+			"quartier" : "Hors Nantes nord Loire"
+		}, {
+			"code" : "stco_reemploi69",
+			"longitude" : "-2.2115574",
+			"modesCollecte" : "smco_reempcartouchetoner",
+			"type" : "Réemploi cartouches encres/tuners",
+			"latitude" : "47.2820733",
+			"description_fr" : "Spécialistes de la recharge de cartouches d'encre pour particuliers et professionnels.",
+			"libelle" : "ENCRE ÉCO...LOGIQUE",
+			"adresseTemp" : "91 Avenue de la République 44600 SAINT-NAZAIRE",
+			"numeroTemp" : "02 40 22 11 53",
+			"src" : "deuxiemeVie",
+			"horaires" : "Ouvert le lundi de 14h00 à 18h00 - Du mardi au vendredi : 10h00 - 12h30 et de 14h00 à 18h30 - le samedi : 10h00 - 12h30 et de 14h00 à 18h00.",
+			"plagesHoraires" : "0101-3112_ma+me+je+ve+sa_10h00-17h30,sauf_ferie",
+			"quartier" : "Hors Nantes nord Loire"
+		}, {
+			"code" : "stco_reemploi70",
+			"longitude" : "-1.548718",
+			"modesCollecte" : "smco_reempvet,smco_reempdivers",
+			"type" : "Réemploi vêtement, divers",
+			"latitude" : "47.301243",
+			"description_fr" : "Récupération de vêtements, chaussures, linge, en bon état et non démodé",
+			"libelle" : "PORTE OUVERTE CHAPELAINE",
+			"adresseTemp" : "6 bis route de Sucé 44240 LA CHAPELLE SUR ERDRE",
+			"numeroTemp" : "02 40 72 97 20",
+			"src" : "deuxiemeVie",
+			"plagesHoraires" : "0101-3112_je_09h00-12h00+140h00-17h30",
 			"quartier" : "Hors Nantes nord Loire"
 		},
 		{
@@ -709,7 +732,7 @@
 			"tel" : "02 40 49 43 20",
 			"latitude" : "47.22573520587",
 			"longitude" : "-1.50460810028402",
-			"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,sauf_ferie,210414_me_10h00-17h45,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,090614_me_10h00-17h45,140714_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
+			"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,sauf_ferie,210414_je_10h00-17h45,010514_je_10h00-17h45,080514_je_10h00-17h45,290514_je_10h00-17h45,090614_je_10h00-17h45,140714_je_10h00-17h45,150814_je_10h00-17h45,011114_je_10h00-17h45,111114_je_10h00-17h45,251214_je_10h00-17h45",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -722,7 +745,7 @@
 			"tel" : "02 40 46 61 05",
 			"latitude" : "47.1984376431205",
 			"longitude" : "-1.60175179062477",
-			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
+			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_je_10h00-17h45,080514_je_10h00-17h45,290514_je_10h00-17h45,150814_je_10h00-17h45,011114_je_10h00-17h45,111114_je_10h00-17h45,251214_je_10h00-17h45",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -735,7 +758,7 @@
 			"tel" : "02 40 49 62 67",
 			"latitude" : "47.2540041595208",
 			"longitude" : "-1.52324785106304",
-			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
+			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_je_10h00-17h45,080514_je_10h00-17h45,290514_je_10h00-17h45,150814_je_10h00-17h45,011114_je_10h00-17h45,111114_je_10h00-17h45,251214_je_10h00-17h45",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -748,7 +771,7 @@
 			"tel" : "02 40 43 36 69",
 			"latitude" : "47.2252529348366",
 			"longitude" : "-1.59132968772156",
-			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
+			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_je_10h00-17h45,080514_je_10h00-17h45,290514_je_10h00-17h45,150814_je_10h00-17h45,011114_je_10h00-17h45,111114_je_10h00-17h45,251214_je_10h00-17h45",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -761,7 +784,7 @@
 			"tel" : "02 51 82 31 47",
 			"latitude" : "47.2224088646331",
 			"longitude" : "-1.56463870590524",
-			"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,sauf_ferie,210414_me_10h00-17h45,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,090614_me_10h00-17h45,140714_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
+			"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,sauf_ferie,210414_je_10h00-17h45,010514_je_10h00-17h45,080514_je_10h00-17h45,290514_je_10h00-17h45,090614_je_10h00-17h45,140714_je_10h00-17h45,150814_je_10h00-17h45,011114_je_10h00-17h45,111114_je_10h00-17h45,251214_je_10h00-17h45",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -774,7 +797,7 @@
 			"tel" : "02 40 03 08 33",
 			"latitude" : "47.1992747714477",
 			"longitude" : "-1.48372892561533",
-			"plagesHoraires" : ",2704-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",2704-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -787,7 +810,7 @@
 			"tel" : "02 51 80 90 27",
 			"latitude" : "47.1966846746915",
 			"longitude" : "-1.64203878129303",
-			"plagesHoraires" : ",1301-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",1301-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -800,7 +823,7 @@
 			"tel" : "02 40 93 76 71",
 			"latitude" : "47.2903598677247",
 			"longitude" : "-1.44111343491299",
-			"plagesHoraires" : ",2402-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",2402-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -813,7 +836,7 @@
 			"tel" : "02 40 32 94 22",
 			"latitude" : "47.1864390826324",
 			"longitude" : "-1.7197063767543",
-			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -826,7 +849,7 @@
 			"tel" : "02 40 37 72 21",
 			"latitude" : "47.2586626585741",
 			"longitude" : "-1.55097680217858",
-			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -839,7 +862,7 @@
 			"tel" : "02 40 32 94 23",
 			"latitude" : "47.176908197867",
 			"longitude" : "-1.68296122658226",
-			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -852,7 +875,7 @@
 			"tel" : "02 40 63 06 76",
 			"latitude" : "47.2569694552235",
 			"longitude" : "-1.63332176172048",
-			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -864,7 +887,7 @@
 			"adresseTemp" : "Avenue de la Forêt 440150 SAINT-AIGNAN-GRANDLIEU",
 			"latitude" : "47.1494677405852",
 			"longitude" : "-1.62387472739094",
-			"plagesHoraires" : ",0101-3112_lu+ma+me+ve+sa_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00",
+			"plagesHoraires" : ",0101-3112_lu+ma+me+ve+sa_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -877,7 +900,7 @@
 			"tel" : "02 51 70 24 04",
 			"latitude" : "47.1582708379875",
 			"longitude" : "-1.53331377718091",
-			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -890,7 +913,7 @@
 			"tel" : "02 40 34 43 74",
 			"latitude" : "47.1785023717599",
 			"longitude" : "-1.46033666089119",
-			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
+			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,010514_je_10h00-18h00,080514_je_10h00-18h00,290514_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,150814_je_10h00-18h00,011114_je_10h00-18h00,111114_je_10h00-18h00,251214_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
@@ -902,7 +925,7 @@
 			"adresseTemp" : "RD 31 440094 MAUVES-SUR-LOIRE",
 			"latitude" : "47.3132666046435",
 			"longitude" : "-1.41118791536659",
-			"plagesHoraires" : ",0101-2302_lu+me+sa+di_10h00-17h45,2402-3112_lu+me_14h00-17h45,2402-3112_sa_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,011114_me_10h00-18h00",
+			"plagesHoraires" : ",0101-2302_lu+me+sa+di_10h00-17h45,2402-3112_lu+me_14h00-17h45,2402-3112_sa_10h00-17h45,sauf_ferie,210414_je_10h00-18h00,090614_je_10h00-18h00,140714_je_10h00-18h00,011114_je_10h00-18h00",
 			"src" : "OpenDataNantes 01/2014",
 			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		},
@@ -6287,7 +6310,7 @@
 			"latitude" : "47.2285238429887",
 			"longitude" : "-1.58713886334568",
 			"horaires" : "De 14h30 à 19h00. 19 mars, 2 juillet, 3 décembre",
-			"plagesHoraires" : ",190314_me_14h30-19h00,020714_me_14h30-19h00,031214_me_14h30-19h00",
+			"plagesHoraires" : ",190314_je_14h30-19h00,020714_je_14h30-19h00,031214_je_14h30-19h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "12",
@@ -6300,7 +6323,7 @@
 			"latitude" : "47.2085657577645",
 			"longitude" : "-1.60694146844681",
 			"horaires" : "De 14h30 à 19h00. 16 janvier, 17 avril, 25 septembre",
-			"plagesHoraires" : ",160114_me_14h30-19h00,170414_me_14h30-19h00,250914_me_14h30-19h00",
+			"plagesHoraires" : ",160114_je_14h30-19h00,170414_je_14h30-19h00,250914_je_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "17",
@@ -6313,7 +6336,7 @@
 			"latitude" : "47.2332091642992",
 			"longitude" : "-1.58579021535481",
 			"horaires" : "De 14h30 à 19h00. 17 mars, 30 juin, 1 décembre",
-			"plagesHoraires" : ",170314_me_14h30-19h00,300614_me_14h30-19h00,011214_me_14h30-19h00",
+			"plagesHoraires" : ",170314_je_14h30-19h00,300614_je_14h30-19h00,011214_je_14h30-19h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "18",
@@ -6326,7 +6349,7 @@
 			"latitude" : "47.2242121712555",
 			"longitude" : "-1.59771687336643",
 			"horaires" : "De 09h00 à 13h00. 22 mars, 5 juillet, 6 décembre",
-			"plagesHoraires" : ",220314_me_09h00-13h00,050714_me_09h00-13h00,061214_me_09h00-13h00",
+			"plagesHoraires" : ",220314_je_09h00-13h00,050714_je_09h00-13h00,061214_je_09h00-13h00",
 			"quartier" : "Dervallieres Zola"
 		}, {
 			"code" : "8",
@@ -6339,7 +6362,7 @@
 			"latitude" : "47.2067589115724",
 			"longitude" : "-1.5878950804801",
 			"horaires" : "De 14h30 à 19h00. 13 janvier, 14 avril, 22 septembre",
-			"plagesHoraires" : ",130114_me_14h30-19h00,140414_me_14h30-19h00,220914_me_14h30-19h00",
+			"plagesHoraires" : ",130114_je_14h30-19h00,140414_je_14h30-19h00,220914_je_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "9",
@@ -6352,7 +6375,7 @@
 			"latitude" : "47.2070549676964",
 			"longitude" : "-1.57198669874414",
 			"horaires" : "De 09h00 à 13h00. 18 janvier, 19 avril, 27 septembre",
-			"plagesHoraires" : ",180114_me_09h00-13h00,190414_me_09h00-13h00,270914_me_09h00-13h00",
+			"plagesHoraires" : ",180114_je_09h00-13h00,190414_je_09h00-13h00,270914_je_09h00-13h00",
 			"quartier" : "Dervallieres Zola"
 		}, {
 			"code" : "10",
@@ -6365,7 +6388,7 @@
 			"latitude" : "47.2017006961536",
 			"longitude" : "-1.57775516968493",
 			"horaires" : "De 14h30 à 19h00. 15 janvier, 16 avril, 24 septembre",
-			"plagesHoraires" : ",150114_me_14h30-19h00,160414_me_14h30-19h00,240914_me_14h30-19h00",
+			"plagesHoraires" : ",150114_je_14h30-19h00,160414_je_14h30-19h00,240914_je_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "55",
@@ -6378,7 +6401,7 @@
 			"latitude" : "47.245637014142",
 			"longitude" : "-1.5283399998071",
 			"horaires" : "De 14h30 à 19h00. 17 février, 16 juin, 17 novembre",
-			"plagesHoraires" : ",170214_me_14h30-19h00,160614_me_14h30-19h00,171114_me_14h30-19h00",
+			"plagesHoraires" : ",170214_je_14h30-19h00,160614_je_14h30-19h00,171114_je_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "50",
@@ -6391,7 +6414,7 @@
 			"latitude" : "47.2545247830002",
 			"longitude" : "-1.51799911755854",
 			"horaires" : "De 14h30 à 19h00. 19 février, 18 juin, 19 novembre",
-			"plagesHoraires" : ",190214_me_14h30-19h00,180614_me_14h30-19h00,191114_me_14h30-19h00",
+			"plagesHoraires" : ",190214_je_14h30-19h00,180614_je_14h30-19h00,191114_je_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "51",
@@ -6404,7 +6427,7 @@
 			"latitude" : "47.2401034784519",
 			"longitude" : "-1.51309028430617",
 			"horaires" : "De 14h30 à 19h00. 20 février, 19 juin, 20 novembre",
-			"plagesHoraires" : ",200214_me_14h30-19h00,190614_me_14h30-19h00,201114_me_14h30-19h00",
+			"plagesHoraires" : ",200214_je_14h30-19h00,190614_je_14h30-19h00,201114_je_14h30-19h00",
 			"quartier" : "Doulon Bottiere"
 		}, {
 			"code" : "52",
@@ -6417,7 +6440,7 @@
 			"latitude" : "47.2461633226959",
 			"longitude" : "-1.51319004085688",
 			"horaires" : "De 09h00 à 13h00. 22 février, 21 juin, 22 novembre",
-			"plagesHoraires" : ",220214_me_09h00-13h00,210614_me_09h00-13h00,221114_me_09h00-13h00",
+			"plagesHoraires" : ",220214_je_09h00-13h00,210614_je_09h00-13h00,221114_je_09h00-13h00",
 			"quartier" : "Doulon Bottiere"
 		}, {
 			"code" : "71",
@@ -6430,7 +6453,7 @@
 			"latitude" : "47.2210157384752",
 			"longitude" : "-1.55685571664186",
 			"horaires" : "De 14h30 à 19h00. 26 mars, 3 septembre, 10 décembre",
-			"plagesHoraires" : ",260314_me_14h30-19h00,030914_me_14h30-19h00,101214_me_14h30-19h00",
+			"plagesHoraires" : ",260314_je_14h30-19h00,030914_je_14h30-19h00,101214_je_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "66",
@@ -6443,7 +6466,7 @@
 			"latitude" : "47.2288980938558",
 			"longitude" : "-1.56577469386022",
 			"horaires" : "De 14h30 à 19h00. 24 mars, 1 septembre, 8 décembre",
-			"plagesHoraires" : ",240314_me_14h30-19h00,010914_me_14h30-19h00,081214_me_14h30-19h00",
+			"plagesHoraires" : ",240314_je_14h30-19h00,010914_je_14h30-19h00,081214_je_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "67",
@@ -6456,7 +6479,7 @@
 			"latitude" : "47.2245848205917",
 			"longitude" : "-1.55383600362569",
 			"horaires" : "De 14h30 à 19h00. 27 mars, 4 septembre, 11 décembre",
-			"plagesHoraires" : ",270314_me_14h30-19h00,040914_me_14h30-19h00,111214_me_14h30-19h00",
+			"plagesHoraires" : ",270314_je_14h30-19h00,040914_je_14h30-19h00,111214_je_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "68",
@@ -6469,7 +6492,7 @@
 			"latitude" : "47.2310649019152",
 			"longitude" : "-1.55588877771744",
 			"horaires" : "De 09h00 à 13h00. 29 mars, 6 septembre, 13 décembre",
-			"plagesHoraires" : ",290314_me_09h00-13h00,060914_me_09h00-13h00,131214_me_09h00-13h00",
+			"plagesHoraires" : ",290314_je_09h00-13h00,060914_je_09h00-13h00,131214_je_09h00-13h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "81",
@@ -6482,7 +6505,7 @@
 			"latitude" : "47.2085362258834",
 			"longitude" : "-1.52935429124361",
 			"horaires" : "De 09h00 à 13h00. 1 mars, 28 juin, 29 novembre",
-			"plagesHoraires" : ",010314_me_09h00-13h00,280614_me_09h00-13h00,291114_me_09h00-13h00",
+			"plagesHoraires" : ",010314_je_09h00-13h00,280614_je_09h00-13h00,291114_je_09h00-13h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "78",
@@ -6495,7 +6518,7 @@
 			"latitude" : "47.2074615533588",
 			"longitude" : "-1.55735377242907",
 			"horaires" : "De 14h30 à 19h00. 24 février, 23 juin, 24 novembre",
-			"plagesHoraires" : ",240214_me_14h30-19h00,230614_me_14h30-19h00,241114_me_14h30-19h00",
+			"plagesHoraires" : ",240214_je_14h30-19h00,230614_je_14h30-19h00,241114_je_14h30-19h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "79",
@@ -6508,7 +6531,7 @@
 			"latitude" : "47.2060894902992",
 			"longitude" : "-1.53854590781718",
 			"horaires" : "De 14h30 à 19h00. 27 février, 26 juin, 27 novembre",
-			"plagesHoraires" : ",270214_me_14h30-19h00,260614_me_14h30-19h00,271114_me_14h30-19h00",
+			"plagesHoraires" : ",270214_je_14h30-19h00,260614_je_14h30-19h00,271114_je_14h30-19h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "80",
@@ -6521,7 +6544,7 @@
 			"latitude" : "47.2009484198633",
 			"longitude" : "-1.54459336106402",
 			"horaires" : "De 14h30 à 19h00. 26 février, 25 juin, 26 novembre",
-			"plagesHoraires" : ",260214_me_14h30-19h00,250614_me_14h30-19h00,261114_me_14h30-19h00",
+			"plagesHoraires" : ",260214_je_14h30-19h00,250614_je_14h30-19h00,261114_je_14h30-19h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "85",
@@ -6534,7 +6557,7 @@
 			"latitude" : "47.2162745514945",
 			"longitude" : "-1.53235917330598",
 			"horaires" : "De 14h30 à 19h00. 10 janvier, 11 avril, 19 septembre",
-			"plagesHoraires" : ",100114_me_14h30-19h00,110414_me_14h30-19h00,190914_me_14h30-19h00",
+			"plagesHoraires" : ",100114_je_14h30-19h00,110414_je_14h30-19h00,190914_je_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "84",
@@ -6547,7 +6570,7 @@
 			"latitude" : "47.2140541748747",
 			"longitude" : "-1.52755394590332",
 			"horaires" : "De 14h30 à 19h00. 6 janvier, 7 avril, 15 septembre",
-			"plagesHoraires" : ",060114_me_14h30-19h00,070414_me_14h30-19h00,150914_me_14h30-19h00",
+			"plagesHoraires" : ",060114_je_14h30-19h00,070414_je_14h30-19h00,150914_je_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "95",
@@ -6560,7 +6583,7 @@
 			"latitude" : "47.2596471391834",
 			"longitude" : "-1.5679125622189",
 			"horaires" : "De 14h30 à 19h00. 3 avril, 11 septembre, 18 décembre",
-			"plagesHoraires" : ",030414_me_14h30-19h00,110914_me_14h30-19h00,181214_me_14h30-19h00",
+			"plagesHoraires" : ",030414_je_14h30-19h00,110914_je_14h30-19h00,181214_je_14h30-19h00",
 			"quartier" : "Nantes Nord",
 			"description_fr" : "consulter les horaires dans les piscines"
 		}, {
@@ -6574,7 +6597,7 @@
 			"latitude" : "47.2649104117402",
 			"longitude" : "-1.58006934317071",
 			"horaires" : "De 14h30 à 19h00. 31 mars, 8 septembre, 15 décembre",
-			"plagesHoraires" : ",310314_me_14h30-19h00,080914_me_14h30-19h00,151214_me_14h30-19h00",
+			"plagesHoraires" : ",310314_je_14h30-19h00,080914_je_14h30-19h00,151214_je_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "92",
@@ -6587,7 +6610,7 @@
 			"latitude" : "47.2592431633445",
 			"longitude" : "-1.57520707985812",
 			"horaires" : "De 14h30 à 19h00. 2 avril, 10 septembre, 17 décembre",
-			"plagesHoraires" : ",020414_me_14h30-19h00,100914_me_14h30-19h00,171214_me_14h30-19h00",
+			"plagesHoraires" : ",020414_je_14h30-19h00,100914_je_14h30-19h00,171214_je_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "104",
@@ -6600,7 +6623,7 @@
 			"latitude" : "47.2523238818019",
 			"longitude" : "-1.54648492508947",
 			"horaires" : "De 14h30 à 19h00. 10 février, 2 juin, 20 octobre",
-			"plagesHoraires" : ",100214_me_14h30-19h00,020614_me_14h30-19h00,201014_me_14h30-19h00",
+			"plagesHoraires" : ",100214_je_14h30-19h00,020614_je_14h30-19h00,201014_je_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "101",
@@ -6613,7 +6636,7 @@
 			"latitude" : "47.2416819425104",
 			"longitude" : "-1.57269702373803",
 			"horaires" : "De 09h00 à 13h00. 15 février, 7 juin, 25 octobre",
-			"plagesHoraires" : ",150214_me_09h00-13h00,070614_me_09h00-13h00,251014_me_09h00-13h00",
+			"plagesHoraires" : ",150214_je_09h00-13h00,070614_je_09h00-13h00,251014_je_09h00-13h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "102",
@@ -6626,7 +6649,7 @@
 			"latitude" : "47.2530157668934",
 			"longitude" : "-1.5698775521509",
 			"horaires" : "De 14h30 à 19h00. 12 février, 4 juin, 22 octobre",
-			"plagesHoraires" : ",120214_me_14h30-19h00,040614_me_14h30-19h00,221014_me_14h30-19h00",
+			"plagesHoraires" : ",120214_je_14h30-19h00,040614_je_14h30-19h00,221014_je_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "103",
@@ -6639,7 +6662,7 @@
 			"latitude" : "47.238619992713",
 			"longitude" : "-1.58747180633725",
 			"horaires" : "De 14h30 à 19h00. 13 février, 5 juin, 23 octobre",
-			"plagesHoraires" : ",130214_me_14h30-19h00,050614_me_14h30-19h00,231014_me_14h30-19h00",
+			"plagesHoraires" : ",130214_je_14h30-19h00,050614_je_14h30-19h00,231014_je_14h30-19h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "93",
@@ -6652,7 +6675,7 @@
 			"latitude" : "47.2535014483975",
 			"longitude" : "-1.55972844633941",
 			"horaires" : "De 09h00 à 13h00. 5 avril, 13 septembre, 20 décembre",
-			"plagesHoraires" : ",050414_me_09h00-13h00,130914_me_09h00-13h00,201214_me_09h00-13h00",
+			"plagesHoraires" : ",050414_je_09h00-13h00,130914_je_09h00-13h00,201214_je_09h00-13h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "121",
@@ -6665,7 +6688,7 @@
 			"latitude" : "47.2205801969752",
 			"longitude" : "-1.54550678204049",
 			"horaires" : "De 14h30 à 19h00. 3 février, 19 mai, 13 octobre",
-			"plagesHoraires" : ",030214_me_14h30-19h00,190514_me_14h30-19h00,131014_me_14h30-19h00",
+			"plagesHoraires" : ",030214_je_14h30-19h00,190514_je_14h30-19h00,131014_je_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "117",
@@ -6678,7 +6701,7 @@
 			"latitude" : "47.2237506960654",
 			"longitude" : "-1.55069595102173",
 			"horaires" : "De 14h30 à 19h00. 5 février, 21 mai, 15 octobre",
-			"plagesHoraires" : ",050214_me_14h30-19h00,210514_me_14h30-19h00,151014_me_14h30-19h00",
+			"plagesHoraires" : ",050214_je_14h30-19h00,210514_je_14h30-19h00,151014_je_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "118",
@@ -6691,7 +6714,7 @@
 			"latitude" : "47.2241475694462",
 			"longitude" : "-1.5304882397471",
 			"horaires" : "De 14h30 à 19h00. 6 février, 22 mai, 16 octobre",
-			"plagesHoraires" : ",060214_me_14h30-19h00,220514_me_14h30-19h00,161014_me_14h30-19h00",
+			"plagesHoraires" : ",060214_je_14h30-19h00,220514_je_14h30-19h00,161014_je_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "119",
@@ -6704,7 +6727,7 @@
 			"latitude" : "47.2287750306491",
 			"longitude" : "-1.54288080522534",
 			"horaires" : "De 09h00 à 13h00. 8 février, 24 mai, 18 octobre",
-			"plagesHoraires" : ",080214_me_09h00-13h00,240514_me_09h00-13h00,181014_me_09h00-13h00",
+			"plagesHoraires" : ",080214_je_09h00-13h00,240514_je_09h00-13h00,181014_je_09h00-13h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "109",
@@ -6717,7 +6740,7 @@
 			"latitude" : "47.1965881376402",
 			"longitude" : "-1.54172925456256",
 			"horaires" : "De 14h30 à 19h00. 8 janvier, 9 avril, 17 septembre",
-			"plagesHoraires" : ",080114_me_14h30-19h00,090414_me_14h30-19h00,170914_me_14h30-19h00",
+			"plagesHoraires" : ",080114_je_14h30-19h00,090414_je_14h30-19h00,170914_je_14h30-19h00",
 			"quartier" : "Nantes Sud",
 			"description_fr" : "ouvert les lundis uniquement si férié"
 		}, {
@@ -6731,7 +6754,7 @@
 			"latitude" : "47.1943572452049",
 			"longitude" : "-1.52879967553758",
 			"horaires" : "De 09h00 à 13h00. 11 janvier, 12 avril, 20 septembre",
-			"plagesHoraires" : ",110114_me_09h00-13h00,120414_me_09h00-13h00,200914_me_09h00-13h00",
+			"plagesHoraires" : ",110114_je_09h00-13h00,120414_je_09h00-13h00,200914_je_09h00-13h00",
 			"quartier" : "Nantes Sud"
 		}, {
 			"code" : "11",
@@ -6744,7 +6767,7 @@
 			"latitude" : "47.2067125842139",
 			"longitude" : "-1.59582342337165",
 			"horaires" : "De 14h30 à 19h00. 17 janvier, 18 avril, 26 septembre",
-			"plagesHoraires" : ",170114_me_14h30-19h00,180414_me_14h30-19h00,260914_me_14h30-19h00",
+			"plagesHoraires" : ",170114_je_14h30-19h00,180414_je_14h30-19h00,260914_je_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "120",
@@ -6757,7 +6780,7 @@
 			"latitude" : "47.238645194009",
 			"longitude" : "-1.54504959881403",
 			"horaires" : "De 14h30 à 19h00. 7 février, 23 mai, 17 octobre",
-			"plagesHoraires" : ",070214_me_14h30-19h00,230514_me_14h30-19h00,171014_me_14h30-19h00",
+			"plagesHoraires" : ",070214_je_14h30-19h00,230514_je_14h30-19h00,171014_je_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "53",
@@ -6770,7 +6793,7 @@
 			"latitude" : "47.2404395996232",
 			"longitude" : "-1.51834930812782",
 			"horaires" : "De 14h30 à 19h00. 18 février, 17 juin, 18 novembre",
-			"plagesHoraires" : ",180214_me_14h30-19h00,170614_me_14h30-19h00,181114_me_14h30-19h00",
+			"plagesHoraires" : ",180214_je_14h30-19h00,170614_je_14h30-19h00,181114_je_14h30-19h00",
 			"quartier" : "Doulon Bottiere"
 		}, {
 			"code" : "54",
@@ -6783,7 +6806,7 @@
 			"latitude" : "47.2689928765624",
 			"longitude" : "-1.52190435780587",
 			"horaires" : "De 14h30 à 19h00. 21 février, 20 juin, 21 novembre",
-			"plagesHoraires" : ",210214_me_14h30-19h00,200614_me_14h30-19h00,211114_me_14h30-19h00",
+			"plagesHoraires" : ",210214_je_14h30-19h00,200614_je_14h30-19h00,211114_je_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "69",
@@ -6796,7 +6819,7 @@
 			"latitude" : "47.2205952970888",
 			"longitude" : "-1.57339371320505",
 			"horaires" : "De 14h30 à 19h00. 25 mars, 2 septembre, 9 décembre",
-			"plagesHoraires" : ",250314_me_14h30-19h00,020914_me_14h30-19h00,091214_me_14h30-19h00",
+			"plagesHoraires" : ",250314_je_14h30-19h00,020914_je_14h30-19h00,091214_je_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "70",
@@ -6809,7 +6832,7 @@
 			"latitude" : "47.2288414804835",
 			"longitude" : "-1.57551422401674",
 			"horaires" : "De 14h30 à 19h00. 28 mars, 5 septembre, 12 décembre",
-			"plagesHoraires" : ",280314_me_14h30-19h00,050914_me_14h30-19h00,121214_me_14h30-19h00",
+			"plagesHoraires" : ",280314_je_14h30-19h00,050914_je_14h30-19h00,121214_je_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "94",
@@ -6822,7 +6845,7 @@
 			"latitude" : "47.2618224406621",
 			"longitude" : "-1.56626305344391",
 			"horaires" : "De 14h30 à 19h00. 4 avril, 12 septembre, 19 décembre",
-			"plagesHoraires" : ",040414_me_14h30-19h00,120914_me_14h30-19h00,191214_me_14h30-19h00",
+			"plagesHoraires" : ",040414_je_14h30-19h00,120914_je_14h30-19h00,191214_je_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "43",
@@ -6835,7 +6858,7 @@
 			"latitude" : "47.2139678600975",
 			"longitude" : "-1.54651886318017",
 			"horaires" : "De 14h30 à 19h00. 20 janvier, 22 avril, 29 septembre",
-			"plagesHoraires" : ",200114_me_14h30-19h00,220414_me_14h30-19h00,290914_me_14h30-19h00",
+			"plagesHoraires" : ",200114_je_14h30-19h00,220414_je_14h30-19h00,290914_je_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "35",
@@ -6848,7 +6871,7 @@
 			"latitude" : "47.209924940714",
 			"longitude" : "-1.56107045739244",
 			"horaires" : "De 14h30 à 19h00. 22 janvier, 23 avril, 1 octobre",
-			"plagesHoraires" : ",220114_me_14h30-19h00,230414_me_14h30-19h00,011014_me_14h30-19h00",
+			"plagesHoraires" : ",220114_je_14h30-19h00,230414_je_14h30-19h00,011014_je_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "36",
@@ -6861,7 +6884,7 @@
 			"latitude" : "47.2147674483194",
 			"longitude" : "-1.55328591629599",
 			"horaires" : "De 14h30 à 19h00. 23 janvier, 24 avril, 2 octobre",
-			"plagesHoraires" : ",230114_me_14h30-19h00,240414_me_14h30-19h00,021014_me_14h30-19h00",
+			"plagesHoraires" : ",230114_je_14h30-19h00,240414_je_14h30-19h00,021014_je_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "37",
@@ -6874,7 +6897,7 @@
 			"latitude" : "47.2175064328734",
 			"longitude" : "-1.55911151379809",
 			"horaires" : "De 14h30 à 19h00. 24 janvier, 25 avril, 3 octobre",
-			"plagesHoraires" : ",240114_me_14h30-19h00,250414_me_14h30-19h00,031014_me_14h30-19h00",
+			"plagesHoraires" : ",240114_je_14h30-19h00,250414_je_14h30-19h00,031014_je_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "38",
@@ -6887,7 +6910,7 @@
 			"latitude" : "47.2169571645123",
 			"longitude" : "-1.55444617450992",
 			"horaires" : "De 09h00 à 13h00. 25 janvier, 26 avril, 4 octobre",
-			"plagesHoraires" : ",250114_me_09h00-13h00,260414_me_09h00-13h00,041014_me_09h00-13h00",
+			"plagesHoraires" : ",250114_je_09h00-13h00,260414_je_09h00-13h00,041014_je_09h00-13h00",
 			"quartier" : "Centre Ville",
 			"description_fr" : "ouvert les lundis uniquement si férié"
 		}, {
@@ -6901,7 +6924,7 @@
 			"latitude" : "47.2128189777156",
 			"longitude" : "-1.55414986696141",
 			"horaires" : "De 14h30 à 19h00. 27 janvier, 12 mai, 6 octobre",
-			"plagesHoraires" : ",270114_me_14h30-19h00,120514_me_14h30-19h00,061014_me_14h30-19h00",
+			"plagesHoraires" : ",270114_je_14h30-19h00,120514_je_14h30-19h00,061014_je_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "40",
@@ -6914,7 +6937,7 @@
 			"latitude" : "47.214293051504",
 			"longitude" : "-1.56914562067294",
 			"horaires" : "De 14h30 à 19h00. 29 janvier, 14 mai, 8 octobre",
-			"plagesHoraires" : ",290114_me_14h30-19h00,140514_me_14h30-19h00,081014_me_14h30-19h00",
+			"plagesHoraires" : ",290114_je_14h30-19h00,140514_je_14h30-19h00,081014_je_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "41",
@@ -6927,7 +6950,7 @@
 			"latitude" : "47.2191674356457",
 			"longitude" : "-1.54955272355555",
 			"horaires" : "De 14h30 à 19h00. 30 janvier, 15 mai, 9 octobre",
-			"plagesHoraires" : ",300114_me_14h30-19h00,150514_me_14h30-19h00,091014_me_14h30-19h00",
+			"plagesHoraires" : ",300114_je_14h30-19h00,150514_je_14h30-19h00,091014_je_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "42",
@@ -6940,7 +6963,7 @@
 			"latitude" : "47.2124318278172",
 			"longitude" : "-1.56246151143316",
 			"horaires" : "De 09h00 à 13h00. 1 février, 17 mai, 11 octobre",
-			"plagesHoraires" : ",010214_me_09h00-13h00,170514_me_09h00-13h00,111014_me_09h00-13h00",
+			"plagesHoraires" : ",010214_je_09h00-13h00,170514_je_09h00-13h00,111014_je_09h00-13h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "106",

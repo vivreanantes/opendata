@@ -178,12 +178,12 @@ Ext.define('VivreANantes.controller.GeoController', {
         var me = this;
         
         if (!Ext.isDefined(this.structureStore)) {
-            this.structureStore = Ext.create('VivreANantes.store.StructureStore',
+            this.structureStore = Ext.create('VivreANantes.store.StructureStoreGeo',
                     {
                         autoLoad : true,
                         listeners : {
                             'load' : function(store, results, successful) {
-                                console.log("Loading StructureStore");
+                                console.log("Loading StructureStoreGeo");
                                 me.onLoadStructureStore();
                             }
 

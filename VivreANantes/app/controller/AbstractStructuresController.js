@@ -36,12 +36,12 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					}
 					// Dans le cas de distribution Trisac on ajoute le type
 					if (record.data["modesCollecte"]==="modco_distrisac") {
-						typeTraduit = " - " + record.data["type"];
+						typeTraduit = this.translate("label_" + record.data["modesCollecte"]) + " - " + record.data["type"] + "<br/><br/>";
 					}
 				}
 				
-				descriptionTraduit += /*label + " : " +*/ modeCollecteTraduit + " "
-						+ typeTraduit + "<br/><br/>";
+				descriptionTraduit += /*label + " : " +*/ /*modeCollecteTraduit + " "*/
+						typeTraduit;
 			}
 			// Ajout de la description
 			if (record.data["description_fr"] != null
