@@ -8,7 +8,7 @@ Ext.define('VivreANantes.view.reuses.ReusesContainer', {
 			xtype : 'reusesContainer_xtype',
 			config : {
 				layout : 'vbox',
-				title : "Associations et entreprises de réemploi",
+				title : "Récupétation",
 				items : [{
 							xtype : 'reusesForm_xtype',
 							height : 120,

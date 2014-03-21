@@ -21,7 +21,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_pour_collecte_bac_jaune" : {
 			"en" : "Only for yellow bacs",
-			"fr" : "OUI bac jaune NON sac jaune"
+			"fr" : "OUI bac jaune<br/>&nbsp;&nbsp;&nbsp; NON sac jaune"
 		},
 		"label_OUI" : {
 			"en" : "YES",

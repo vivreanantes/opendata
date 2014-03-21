@@ -22,7 +22,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			if (record.data["modesCollecte"] != null && record.data["modesCollecte"] !== "") {
 				// var label = this.stringUpperFirstLetter(this.translate("label_type"));
 				var modeCollecteTraduit = "";
-				var typeTraduit = "";
+				var typeTraduit = record.data["type"];
 				if (record.data["modesCollecte"] != null
 						&& record.data["modesCollecte"] !== "") {
 					// On découpe modesCollecte, puis on traduit
@@ -36,12 +36,11 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					}
 					// Dans le cas de distribution Trisac on ajoute le type
 					if (record.data["modesCollecte"]==="modco_distrisac") {
-						typeTraduit = this.translate("label_" + record.data["modesCollecte"]) + " - " + record.data["type"] + "<br/><br/>";
+						typeTraduit += " - " + this.translate("label_" + record.data["modesCollecte"]);
 					}
 				}
 				
-				descriptionTraduit += /*label + " : " +*/ /*modeCollecteTraduit + " "*/
-						typeTraduit;
+				descriptionTraduit += typeTraduit + "<br/><br/>";
 			}
 			// Ajout de la description
 			if (record.data["description_fr"] != null
@@ -92,15 +91,14 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					"structuresDetails_advices", arraysItemsAdvices);
 
 			// Affectation du titre
-			var stType = record.data["type"];
-			var title = "<I>" + stType + "</I>" + " "
-					+ this.stringUpperFirstLetter(record.data["libelle"]);
-			this.structuresDetail.setTitle(title);
+			//var stType = record.data["type"];
+			// var title = "<I>" + stType + "</I>" + " "+ this.stringUpperFirstLetter(record.data["libelle"]);
+			this.structuresDetail.setTitle(this.stringUpperFirstLetter(record.data["libelle"]));
 			
 			// Ajout des commentaires
 			var code = record.data["code"];
 			this.setItemsElement(this.structuresDetail,
-					"structuresDetails_comments", this.getItemsComments(code, title));
+					"structuresDetails_comments", this.getItemsComments(code, record.data["libelle"]));
 
 			// Bind the record onto the show contact view
 			this.structuresDetail.setData(record.data);

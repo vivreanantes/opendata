@@ -30,14 +30,10 @@ Ext.define('VivreANantes.controller.InformationsController', {
 
 	showDetails : function(elementId) {
 		// Récupère l'élément à partir du store
-		var myElement = this.getElementFromStore(elementId);
+		var myElement = this.getElement(elementId);
 
 		var description = myElement["description"];
-		var description = description
-				+ this
-						.getApplication()
-						.getController("VivreANantes.controller.CommentsController")
-						.getCommentString(myElement["code"]);
+		var description = description+ this.getApplication().getController("VivreANantes.controller.CommentsController").getCommentString(myElement["code"]);
 		var title = "<I>" + this.translateWithUpperFirstLetter("label_fiche")
 				+ "</I> " + myElement["libelle"];
 		// Met l'élément dans le détail
@@ -67,24 +63,37 @@ Ext.define('VivreANantes.controller.InformationsController', {
 	/*
 	 * Renvoie le mode de collecte
 	 */
-	getElementFromStore : function(idElement) {
+	getElement : function(idElement) {
 		var description = "";
 		var faq = "";
 		var libelle = "";
 		var image = "";
 		var bouton = "";
-		var dataInformations = this.getApplication()
-				.getController("VivreANantes.controller.GarbagesController")
-				.getInformationsList().getStore().getData();
-		dataInformations.each(function(record) {
-					if (record.data["code"] === idElement) {
-						description = record.data["description_fr"];
-						libelle = record.data["libelle"];
-						image = record.data["image"];
-						bouton = record.data["bouton"];
-						faq = record.data["faq"];
-					}
-				});
+		
+//		// STORE Informations
+//		var dataInformations = this.getApplication()
+//				.getController("VivreANantes.controller.GarbagesController")
+//				.getInformationsList().getStore().getData();
+//		dataInformations.each(function(record) {
+//					if (record.data["code"] === idElement) {
+//						description = record.data["description_fr"];
+//						libelle = record.data["libelle"];
+//						image = record.data["image"];
+//						bouton = record.data["bouton"];
+//						faq = record.data["faq"];
+//					}
+//				});
+
+		for (j in commonDatasInformations) {
+			if (commonDatasInformations[j]["code"] === idElement) {
+				description = commonDatasInformations[j]["description_fr"];
+				libelle = commonDatasInformations[j]["libelle"];
+				image = commonDatasInformations[j]["image"];
+				bouton = commonDatasInformations[j]["bouton"];
+				faq = commonDatasInformations[j]["faq"];
+			}
+		}
+
 		return {
 			"code" : idElement,
 			"faq" : faq,
@@ -96,18 +105,20 @@ Ext.define('VivreANantes.controller.InformationsController', {
 	},
 
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
-		var myController = this.getApplication()
-				.getController("VivreANantes.controller.GarbagesController");
-		var datas = myController.getInformationsList().getStore();
-
-		var arrayItemsToShow = this.getDatasForButtons(datas, "fiche");
-	
+		
+		// STORE GarbageStore
+		// var myController = this.getApplication().getController("VivreANantes.controller.GarbagesController");
+		// var datasInformations = myController.getInformationsList().getStore();
+		// var arrayItemsToShow = this.getDatasForButtons_old(datasInformations, "fiche");
+		
+		// commonDatasInformations
+		var arrayItemsToShow = this.getArrayItemsToShowForButtons(commonDatasInformations,  "fiche");
+		
 		var result = new Array();
 		if (arrayItemsToShow.length > 0) {
-
 			var theItems = arrayItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-				var stLibelle = this.decoupe(theItems[i].libelle);
+				var stLibelle = this.decoupe(theItems[i]["libelle"]);
 				result.push({
 					code : theItems[i].id,
 						label : stLibelle,
@@ -116,10 +127,9 @@ Ext.define('VivreANantes.controller.InformationsController', {
 			}
 		}
 
+		// commonDatasInformations
 		var nbGarbagesMax = 18;	// la page UsualCategoriesButtonPanel.js affiche 18 éléments
 		this.setDataInButtonsWithManyLines(this.getInformationsList(),"informationsButtonsList", result, nbGarbagesMax, 3);
-		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		// this.removeAllAndSetItems(this.getInformationsList(), arrayItems);
 	}
 	
 });

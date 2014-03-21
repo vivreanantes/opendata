@@ -28,7 +28,9 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 										xtype : 'textareafield',
 										name : 'message',
 										label : 'Message',
-										id : 'commentsFormTextareafield'
+										id : 'commentsFormTextareafield',
+										placeHolder : "Commentaires sur l'application ou la filière tri"
+											
 									}]
 						}, {
 							xtype : 'button',

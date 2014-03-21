@@ -16,7 +16,8 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 				name : 'name',
 				// label : 'Recherche',
 				width : 190,
-				id : 'garbagesFormText'
+				id : 'garbagesFormText',
+				placeHolder : "Déchet"
 			}, {
 				xtype : 'button',
 				id : 'garbagesFormButton',

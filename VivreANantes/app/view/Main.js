@@ -19,9 +19,9 @@ Ext.define('VivreANantes.view.Main', {
                 indicators: false
             }
 		},
-		items : [{
+		items : [/*{
 					xclass : 'VivreANantes.view.about.Description'
-				},
+				},*/
 				{
 					xclass : 'VivreANantes.view.garbages.Garbages'
 				}, {

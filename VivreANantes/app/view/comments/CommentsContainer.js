@@ -3,27 +3,23 @@
  * cette recherche en dessous
  */
 Ext.define(
-				'VivreANantes.view.comments.CommentsContainer',
-				{
-					extend : 'Ext.Container',
-					xtype : 'commentsContainer_xtype',
+	'VivreANantes.view.comments.CommentsContainer', {
+	extend : 'Ext.Container',
+	xtype : 'commentsContainer_xtype',
+	config : {
+		layout : 'vbox',
+		title : "Contacts", // Titre de la page
+		scrollable : 'true',
+		items : [{
 
-					config : {
-						layout : 'vbox',
-						title : "Commenter",
-						scrollable : 'true',
-						items : [
-								/*{
-									xtype : 'label',
-									html : "<p>Application réalisées par des bénévoles <font color='blue'>en phase de développement</font>. Version 0.1403 (mars 2014). <a href='hhtp://www.mieuxtrieranantes.fr' target=_blank>www.mieuxtrieranantes.fr</a></p>"
-								},*/{
-										xtype : 'label',
-										html : "<I>Sur l'application ou la filière tri.</I>"
-									}, {
-									xtype : 'commentsForm_xtype',
-									height : 400,
-									scrollable : false
-								} ]
-					}
+				xtype : 'label',
+				html : "<p>Application réalisée par des bénévoles <font color='blue'>en développement</font> (mars 2014). <a href='http://www.mieuxtrieranantes.fr' target=_blank>www.mieuxtrieranantes.fr</a></p>"
+			}, {
+				xtype : 'commentsForm_xtype',
+				height : 400,
+				scrollable : false
+			}
+		]
+	}
 
-				});
+});

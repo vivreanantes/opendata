@@ -16,8 +16,10 @@ Ext.define('VivreANantes.controller.CommentsController', {
 	},
 
 	onInitFaq : function(list) {
-		var store = Ext.create('VivreANantes.store.CommentsStore');
-		list.setStore(store);
+		// STORE CommentsStore
+		// var store = Ext.create('VivreANantes.store.CommentsStore');
+		// list.setStore(store);
+
 		// Initialisation du storage
 		var localStorageController= this.getApplication().getController("VivreANantes.controller.LocalStorageController");
 		localStorageController.initLocalStorage();
@@ -50,32 +52,41 @@ Ext.define('VivreANantes.controller.CommentsController', {
 
 		var faqTraduit = "";
 		var commentLink = this.makeLink("commentsPanel");
+
 		// On parcours les remarques de la faq
-		var dataFaq = this.getCommentsList().getStore().getData();
-		dataFaq.each(function(recordFaq) {
+
+//		var dataFaq = this.getCommentsList().getStore().getData();
+//		dataFaq.each(function(recordFaq) {
+//					// TODO utiliser getArrayFromString à la place
+//					var arrayElementsFaq = recordFaq.data["elements"].replace(
+//							", /g", ",").replace(" ,/g", ",").split(',');
+//					for (i in arrayElementsFaq) {
+//						if (arrayElementsFaq[i] === code) {
+//							faqTraduit += "<br/>"+ commentLink + " : <B>"
+//									+ recordFaq.data["libelle"] + "</B><BR/>"
+//									+ recordFaq.data["description"];
+//
+//						}
+//
+//					}
+//				});
+		
+		// commonDatasComments
+		for (j in commonDatasComments) {
+			if (commonDatasComments[j]["elements"]!=null) {
 					// TODO utiliser getArrayFromString à la place
-					var arrayElementsFaq = recordFaq.data["elements"].replace(
-							", /g", ",").replace(" ,/g", ",").split(',');
-					for (i in arrayElementsFaq) {
-						if (arrayElementsFaq[i] === code) {
-							faqTraduit += "<br/>"+ commentLink + " : <B>"
-									+ recordFaq.data["libelle"] + "</B><BR/>"
-									+ recordFaq.data["description"];
-
-						}
-
+				var arrayElementsFaq = commonDatasComments[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+				for (i in arrayElementsFaq) {
+					if (arrayElementsFaq[i] === code) {
+						faqTraduit += "<br/>"+ commentLink + " : <B>" + commonDatasComments[j]["libelle"] + "</B><BR/>" + commonDatasComments[j]["description"];
 					}
-				});
-				if (faqTraduit!="") {
-					faqTraduit += "<br/>";
 				}
-		/*if (faqTraduit != "") {
-			return "<span class='x-button-icon trash' style='visibility: visible !important;' id='ext-element-102'>"+faqTraduit+"</span>"
-		}*/
-		/*
-		 * if (faqTraduit !== "") { faqTraduit = "<BR/><BR/>Commentaires
-		 * (extraits FAQ) : " + faqTraduit; }
-		 */
+			}
+		}
+
+		if (faqTraduit!="") {
+			faqTraduit += "<br/>";
+		}
 		return faqTraduit;
 	}
 });
