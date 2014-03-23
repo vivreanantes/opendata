@@ -29,7 +29,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 
 			reusesFormSelectQuartier : {
 				change : "onReusesControllerStoreFilter",
-				initialize : "setOptionsVilles"
+				initialize : "setOptionsQuartiers"
 			},
 
 			reusesFormSelectType : {

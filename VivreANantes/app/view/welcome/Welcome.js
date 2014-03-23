@@ -9,10 +9,10 @@ Ext.define('VivreANantes.view.welcome.Welcome', {
 	
 	],
 	config : {
-		// title : 'Vivre A Nantes',
+		title : 'Vivre A Nantes',
 		iconCls : 'home',
 		autoDestroy : false,
-		// html : 'Application Vivre A Nantes',
+		html : 'Application Vivre A Nantes',
 		items : [
 		         {
 		        	 xtype:'toolbar',

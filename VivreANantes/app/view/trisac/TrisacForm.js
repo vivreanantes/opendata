@@ -17,11 +17,11 @@ Ext.define('VivreANantes.view.trisac.TrisacForm', {
 							label : 'Quartier',
 							id : 'trisacFormSelect'
 							,options : [{}]
-						}/*,
+						},
 				{
 					xtype : 'label',
 					html : '<I><font color=red>Open Data Nantes</font>, à partir de 01/2014</I>'
-				}*/]
+				}]
 			}
 
 		});

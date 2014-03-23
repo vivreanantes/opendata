@@ -15,9 +15,12 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 							// instructions : '(courriel pas vide)',
 							items : [
 									{
+										xtype : 'label',
+										html : "<I>Nous recevons vos commentaires par mail. Merci.</I>"
+									},{
 										xtype : 'emailfield',
 										name : 'email',
-										label : 'Email *'
+										label : 'Courriel *'
 									},
 									{
 										xtype : 'textfield',
@@ -32,20 +35,20 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 									}]
 						}, {
 							xtype : 'button',
-							text : 'Envoyer',
+							text : 'Envoyez',
 							iu : 'confirm',
 							handler : function() {
 
 								this.up("commentsForm_xtype").submit({
 										failure : function(form, result) {
 										if (result.failure != null) {
-											 Ext.Msg.alert("Envoi", "Echec de l'envoie : " + result.failure);
+											 Ext.Msg.alert("Envoi message", "Echec de l'envoie : " + result.failure);
 										} else {
-											 Ext.Msg.alert("Envoi", "Echec de l'envoie.");
+											 Ext.Msg.alert("Envoi message", "Echec de l'envoie.");
 										}
 									},
 									success : function(form, result) {
-										 Ext.Msg.alert("Envoi", "Votre message a bien été envoyé.");
+										 Ext.Msg.alert("Envoi message", "Votre message a bien été envoyé.");
 										
 
 									/*					var panel = Ext.create('Ext.Panel', {     

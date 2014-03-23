@@ -180,15 +180,16 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 					var arrayitemsLine = new Array();
 				}
-				var libelle = this.decoupeAvecTaille(arrayItemsToShow[i]["libelle"], 20);
+				var libelle = "<font size='3'>"
+						+ arrayItemsToShow[i]["libelle"] + "</font>";
 				arrayitemsLine.push({
 							xtype : "button",
-							height : '100px',
+							height : '120px',
 							width : '33%',
 							id : arrayItemsToShow[i]["id"],
 							// code : arrayItemsToShow[i]["id"],
-							html : "<center><font size='3'>" + libelle
-									+ "</font><br/><img src='resources/images/"
+							html : "<center>" + libelle
+									+ "<br/><img src='resources/images/"
 									+ arrayItemsToShow[i]["image"]
 									+ "' /></center>"
 						});
@@ -327,13 +328,13 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					xtype : 'button',
 					width: 200,
 					id : "garbagesdetails_informations",
-					text : "Envoyer un commentaire",
+					text : "Envoyez un commentaire",
 					data : {
 						code : codeValue
 					}
 				}
 				/*
-				 * { xtype : 'button', text : 'Envoyer un commentaire', centered :
+				 * { xtype : 'button', text : 'Envoyez un commentaire', centered :
 				 * 'true', data : { code : codeValue } }
 				 */
 
@@ -347,7 +348,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 						xtype : 'button',
 						width: 200,
 						id : "garbagesdetails_informations",
-						text : "Envoyer un commentaire",
+						text : "Envoyez un commentaire",
 						data : {
 							code : codeValue
 						}
@@ -792,26 +793,41 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				});
 		return arrayItemsToShow;
 	},
-	
 	/**
 	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
-	 * des balises "<br/>". La taille est fournie.
-	 */
-	decoupeAvecTaille : function(stChaine, iTailleMax) {
-		return _decoupe(stChaine, iTailleMax);
-	},
-	
-	/**
-	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
-	 * des balises "<br/>. La taille est celle par défaut.
+	 * des balises "<br/>
 	 */
 	decoupe : function(stChaine) {
-		return _decoupe(stChaine, 30);
-	}
-	
-});
-	
+		var result = "";
+		if (stChaine != undefined) {
+			var iTailleMax = 30;
 
+			// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
+			var array = stChaine.split(/, | ,| -|- |-| /);
+			var tailleRestanteLigne = iTailleMax;
+			for (var i = 0; i < array.length; i++) {
+				result += array[i];
+				tailleRestanteLigne = tailleRestanteLigne - array[i].length;
+				// Si il reste des mots
+				if (i + 1 < array.length) {
+					// Si le prochain mot n'est pas trop long, on ajoute juste
+					// un
+					// espace
+					if (array[i + 1].length <= tailleRestanteLigne) {
+						result += " ";
+						tailleRestanteLigne = tailleRestanteLigne - 1;
+					}
+					// Sinon on ajoute un retour à la ligne
+					else {
+						result += "<br/>";
+						tailleRestanteLigne = iTailleMax;
+					}
+				}
+			}
+		}
+		return result;
+	}
+});
 
 function showGarbagePanel(id) {
 	Ext.getCmp("mainView").setActiveItem(0);

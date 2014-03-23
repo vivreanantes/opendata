@@ -710,8 +710,8 @@
 			"latitude" : "47.22573520587",
 			"longitude" : "-1.50460810028402",
 			"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,sauf_ferie,210414_me_10h00-17h45,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,090614_me_10h00-17h45,140714_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, pneus, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "1012",
 			"quartier" : "Nantes",
@@ -723,8 +723,8 @@
 			"latitude" : "47.1984376431205",
 			"longitude" : "-1.60175179062477",
 			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "1013",
 			"quartier" : "Nantes",
@@ -736,8 +736,8 @@
 			"latitude" : "47.2540041595208",
 			"longitude" : "-1.52324785106304",
 			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "1014",
 			"quartier" : "Nantes",
@@ -749,8 +749,8 @@
 			"latitude" : "47.2252529348366",
 			"longitude" : "-1.59132968772156",
 			"plagesHoraires" : ",0101-3112_ma+me+je+ve+sa_10h00-17h15,sauf_ferie,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "1015",
 			"quartier" : "Nantes",
@@ -762,8 +762,8 @@
 			"latitude" : "47.2224088646331",
 			"longitude" : "-1.56463870590524",
 			"plagesHoraires" : ",0101-3112_di_08h30-11h45,0101-3112_lu+ma+me+je+ve+sa_10h00-17h45,sauf_ferie,210414_me_10h00-17h45,010514_me_10h00-17h45,080514_me_10h00-17h45,290514_me_10h00-17h45,090614_me_10h00-17h45,140714_me_10h00-17h45,150814_me_10h00-17h45,011114_me_10h00-17h45,111114_me_10h00-17h45,251214_me_10h00-17h45",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "2152",
 			"quartier" : "Hors Nantes sud Loire",
@@ -775,8 +775,8 @@
 			"latitude" : "47.1992747714477",
 			"longitude" : "-1.48372892561533",
 			"plagesHoraires" : ",2704-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "2220",
 			"quartier" : "Hors Nantes nord Loire",
@@ -788,8 +788,8 @@
 			"latitude" : "47.1966846746915",
 			"longitude" : "-1.64203878129303",
 			"plagesHoraires" : ",1301-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3139",
 			"quartier" : "Hors Nantes nord Loire",
@@ -801,8 +801,8 @@
 			"latitude" : "47.2903598677247",
 			"longitude" : "-1.44111343491299",
 			"plagesHoraires" : ",2402-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3140",
 			"quartier" : "Hors Nantes sud Loire",
@@ -814,8 +814,8 @@
 			"latitude" : "47.1864390826324",
 			"longitude" : "-1.7197063767543",
 			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3141",
 			"quartier" : "Hors Nantes nord Loire",
@@ -827,8 +827,8 @@
 			"latitude" : "47.2586626585741",
 			"longitude" : "-1.55097680217858",
 			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3142",
 			"quartier" : "Hors Nantes sud Loire",
@@ -840,8 +840,8 @@
 			"latitude" : "47.176908197867",
 			"longitude" : "-1.68296122658226",
 			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3143",
 			"quartier" : "Hors Nantes nord Loire",
@@ -853,8 +853,8 @@
 			"latitude" : "47.2569694552235",
 			"longitude" : "-1.63332176172048",
 			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3144",
 			"quartier" : "Hors Nantes sud Loire",
@@ -865,8 +865,8 @@
 			"latitude" : "47.1494677405852",
 			"longitude" : "-1.62387472739094",
 			"plagesHoraires" : ",0101-3112_lu+ma+me+ve+sa_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3145",
 			"quartier" : "Hors Nantes nord Loire",
@@ -878,8 +878,8 @@
 			"latitude" : "47.1582708379875",
 			"longitude" : "-1.53331377718091",
 			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3146",
 			"quartier" : "Hors Nantes sud Loire",
@@ -891,8 +891,8 @@
 			"latitude" : "47.1785023717599",
 			"longitude" : "-1.46033666089119",
 			"plagesHoraires" : ",0101-3112_lu+ma+me+je+ve+sa+di_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,010514_me_10h00-18h00,080514_me_10h00-18h00,290514_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,150814_me_10h00-18h00,011114_me_10h00-18h00,111114_me_10h00-18h00,251214_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		}, {
 			"code" : "3148",
 			"quartier" : "Hors Nantes nord Loire",
@@ -903,8 +903,8 @@
 			"latitude" : "47.3132666046435",
 			"longitude" : "-1.41118791536659",
 			"plagesHoraires" : ",0101-2302_lu+me+sa+di_10h00-17h45,2402-3112_lu+me_14h00-17h45,2402-3112_sa_10h00-17h45,sauf_ferie,210414_me_10h00-18h00,090614_me_10h00-18h00,140714_me_10h00-18h00,011114_me_10h00-18h00",
-			"src" : "OpenDataNantes 01/2014",
-			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/><b>Déchets admis</b> : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/><b>Déchets interdits</b> : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/><b>Déchets admis sous conditions</b> : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
+			"src" : "<BR/><I>Source : OpenDataNantes 01/2014</I>",
+			"description_fr" : "Réservé aux particuliers habitant Nantes Métropole.<br/><br/>Déchets admis : batteries, bois, cartons, déblais et gravats issus du bricolage familial, déchets d'équipement électrique et électronique, encombrants ménagers divers, ferrailles, huiles moteur, papiers-journaux-livres, plastiques ménagers, textiles, tontes de pelouse-produits d'élagage-branchages de jardin (production admissible pour un ménage, et branchages de longueur inférieure à 1 mètre), verre.<br/><br/>Déchets interdits : cadavres d'animaux, déblais-gravats autres que ceux issus du bricolage familial, déchets anatomiques ou infectieux, déchets hospitaliers, éléments entiers de carrosserie de voiture ou camion, médicaments, ordures ménagères, pneus, produits explosifs-inflammables-radioactifs, résidus de fabrication industrielle.<br/><br/>Déchets admis sous conditions : se renseigner à la déchèterie AVANT les dépôts : déchets d'amiante liée, tontes de pelouse-produits d'élagage-branchages de jardin en grande quantité."
 		},
 		{
 			"code" : "stco_conteneur_1",
@@ -6151,81 +6151,72 @@
 			"code" : "stco_er_1",
 			"quartier_admin" : "Nantes Erdre",
 			"quartier" : "Nantes",
-			"libelle" : " Port Boyer",
+			"libelle" : "Collecte encombrants Port Boyer",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les mercredis matins, tous les mercredis après-midis"
 		}, {
 			"code" : "stco_er_2",
 			"quartier_admin" : "Bellevue Chantenay Sainte-Anne",
 			"quartier" : "Nantes",
-			"libelle" : " Bellevue",
+			"libelle" : "Collecte encombrants Bellevue",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "les 1er et 3ème jeudis matins"
 		}, {
 			"code" : "stco_er_3",
 			"quartier_admin" : "Doulon Bottiere",
 			"quartier" : "Nantes",
-			"libelle" : " Bottière",
+			"libelle" : "Collecte encombrants Bottière",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les jeudis matins, tous les jeudis après-midis"
 		}, {
 			"code" : "stco_er_4",
 			"quartier_admin" : "Breil Barberie",
 			"quartier" : "Nantes",
-			"libelle" : " Breil",
+			"libelle" : "Collecte encombrants Breil",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les mardis matins, tous les mardis après-midis, tous les mercredis après-midis"
 		}, {
 			"code" : "stco_er_5",
 			"quartier_admin" : "Nantes Sud",
 			"quartier" : "Nantes",
-			"libelle" : " Clos Toreau",
+			"libelle" : "Collecte encombrants Clos Toreau",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les lundis matins"
 		}, {
 			"code" : "stco_er_6",
 			"quartier_admin" : "Dervallieres Zola",
 			"quartier" : "Nantes",
-			"libelle" : " Dervallières",
+			"libelle" : "Collecte encombrants Dervallières",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les mardis matins, tous les mardis après-midis, tous les vendredis après-midis, tous les vendredis matins"
 		}, {
 			"code" : "stco_er_7",
 			"quartier_admin" : "Nantes Erdre",
 			"quartier" : "Nantes",
-			"libelle" : " Halvèque",
+			"libelle" : "Collecte encombrants Halvèque",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les jeudis après-midis, tous les jeudis matins"
 		}, {
 			"code" : "stco_er_8",
 			"quartier_admin" : "Malakoff Saint-Donatien",
 			"quartier" : "Nantes",
-			"libelle" : " Malakoff ",
+			"libelle" : "Collecte encombrants Malakoff ",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les jeudis après-midis"
 		}, {
 			"code" : "stco_er_9",
 			"quartier_admin" : "Nantes Nord",
 			"quartier" : "Nantes",
-			"libelle" : " Nantes Nord",
+			"libelle" : "Collecte encombrants Nantes Nord",
 			"modesCollecte" : "modco_encombrants_resume",
-			"type" : "Collecte encombrants",
 			"longitude" : "47.20",
 			"description_fr" : "tous les mardis après-midis, tous les mardis après-midis, tous les mardis après-midis, tous les mardis matins, tous les mercredis après-midis, tous les mercredis matins"
 		},
@@ -6282,12 +6273,12 @@
 			"libelle" : "Pôle commercial Coubertin",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "52 Boulevard Pierre de Coubertin 44100 NANTES",
 			"latitude" : "47.2285238429887",
 			"longitude" : "-1.58713886334568",
 			"horaires" : "De 14h30 à 19h00. 19 mars, 2 juillet, 3 décembre",
-			"plagesHoraires" : ",190314_me_14h30-19h00,020714_me_14h30-19h00,031214_me_14h30-19h00",
+			"plagesHoraires" : ",191914_me_14h30-19h00,020214_me_14h30-19h00,030314_me_14h30-19h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "12",
@@ -6295,12 +6286,12 @@
 			"libelle" : "Ecole Jean Zay",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue Lucien Aubert 44100 NANTES",
 			"latitude" : "47.2085657577645",
 			"longitude" : "-1.60694146844681",
 			"horaires" : "De 14h30 à 19h00. 16 janvier, 17 avril, 25 septembre",
-			"plagesHoraires" : ",160114_me_14h30-19h00,170414_me_14h30-19h00,250914_me_14h30-19h00",
+			"plagesHoraires" : ",161614_me_14h30-19h00,171714_me_14h30-19h00,252514_me_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "17",
@@ -6308,12 +6299,12 @@
 			"libelle" : "47 Rue Georges Mélies",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "47 Rue Georges Mélies 44100 NANTES",
 			"latitude" : "47.2332091642992",
 			"longitude" : "-1.58579021535481",
 			"horaires" : "De 14h30 à 19h00. 17 mars, 30 juin, 1 décembre",
-			"plagesHoraires" : ",170314_me_14h30-19h00,300614_me_14h30-19h00,011214_me_14h30-19h00",
+			"plagesHoraires" : ",171714_me_14h30-19h00,303014_me_14h30-19h00,010114_me_14h30-19h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "18",
@@ -6321,12 +6312,12 @@
 			"libelle" : "Place des Dervallières",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place des Dervallières 44100 NANTES",
 			"latitude" : "47.2242121712555",
 			"longitude" : "-1.59771687336643",
 			"horaires" : "De 09h00 à 13h00. 22 mars, 5 juillet, 6 décembre",
-			"plagesHoraires" : ",220314_me_09h00-13h00,050714_me_09h00-13h00,061214_me_09h00-13h00",
+			"plagesHoraires" : ",222214_me_09h00-13h00,050514_me_09h00-13h00,060614_me_09h00-13h00",
 			"quartier" : "Dervallieres Zola"
 		}, {
 			"code" : "8",
@@ -6334,12 +6325,12 @@
 			"libelle" : "Face à la mairie annexe Chantenay",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place de la Liberté 44100 NANTES",
 			"latitude" : "47.2067589115724",
 			"longitude" : "-1.5878950804801",
 			"horaires" : "De 14h30 à 19h00. 13 janvier, 14 avril, 22 septembre",
-			"plagesHoraires" : ",130114_me_14h30-19h00,140414_me_14h30-19h00,220914_me_14h30-19h00",
+			"plagesHoraires" : ",131314_me_14h30-19h00,141414_me_14h30-19h00,222214_me_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "9",
@@ -6347,12 +6338,12 @@
 			"libelle" : "Musée bateau Maille-Brézé",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Quai de la Fosse 44100 NANTES",
 			"latitude" : "47.2070549676964",
 			"longitude" : "-1.57198669874414",
 			"horaires" : "De 09h00 à 13h00. 18 janvier, 19 avril, 27 septembre",
-			"plagesHoraires" : ",180114_me_09h00-13h00,190414_me_09h00-13h00,270914_me_09h00-13h00",
+			"plagesHoraires" : ",181814_me_09h00-13h00,191914_me_09h00-13h00,272714_me_09h00-13h00",
 			"quartier" : "Dervallieres Zola"
 		}, {
 			"code" : "10",
@@ -6360,12 +6351,12 @@
 			"libelle" : "Place des Garennes",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place des Garennes 44100 NANTES",
 			"latitude" : "47.2017006961536",
 			"longitude" : "-1.57775516968493",
 			"horaires" : "De 14h30 à 19h00. 15 janvier, 16 avril, 24 septembre",
-			"plagesHoraires" : ",150114_me_14h30-19h00,160414_me_14h30-19h00,240914_me_14h30-19h00",
+			"plagesHoraires" : ",151514_me_14h30-19h00,161614_me_14h30-19h00,242414_me_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "55",
@@ -6373,12 +6364,12 @@
 			"libelle" : "Parking du gymnase Marsauderies",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "1 Rue de Koufra 44300 NANTES",
 			"latitude" : "47.245637014142",
 			"longitude" : "-1.5283399998071",
 			"horaires" : "De 14h30 à 19h00. 17 février, 16 juin, 17 novembre",
-			"plagesHoraires" : ",170214_me_14h30-19h00,160614_me_14h30-19h00,171114_me_14h30-19h00",
+			"plagesHoraires" : ",171714_me_14h30-19h00,161614_me_14h30-19h00,171714_me_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "50",
@@ -6386,12 +6377,12 @@
 			"libelle" : "22 Boulevard Professeur René Auvigné",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "22 Boulevard Professeur René Auvigné 44300 NANTES",
 			"latitude" : "47.2545247830002",
 			"longitude" : "-1.51799911755854",
 			"horaires" : "De 14h30 à 19h00. 19 février, 18 juin, 19 novembre",
-			"plagesHoraires" : ",190214_me_14h30-19h00,180614_me_14h30-19h00,191114_me_14h30-19h00",
+			"plagesHoraires" : ",191914_me_14h30-19h00,181814_me_14h30-19h00,191914_me_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "51",
@@ -6399,12 +6390,12 @@
 			"libelle" : "Place du Commandant Cousteau",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place du Commandant Cousteau 44300 NANTES",
 			"latitude" : "47.2401034784519",
 			"longitude" : "-1.51309028430617",
 			"horaires" : "De 14h30 à 19h00. 20 février, 19 juin, 20 novembre",
-			"plagesHoraires" : ",200214_me_14h30-19h00,190614_me_14h30-19h00,201114_me_14h30-19h00",
+			"plagesHoraires" : ",202014_me_14h30-19h00,191914_me_14h30-19h00,202014_me_14h30-19h00",
 			"quartier" : "Doulon Bottiere"
 		}, {
 			"code" : "52",
@@ -6412,12 +6403,12 @@
 			"libelle" : "Parking du Centre socio-culturel",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "1 Rue Jules Grandjouan 44300 NANTES",
 			"latitude" : "47.2461633226959",
 			"longitude" : "-1.51319004085688",
 			"horaires" : "De 09h00 à 13h00. 22 février, 21 juin, 22 novembre",
-			"plagesHoraires" : ",220214_me_09h00-13h00,210614_me_09h00-13h00,221114_me_09h00-13h00",
+			"plagesHoraires" : ",222214_me_09h00-13h00,212114_me_09h00-13h00,222214_me_09h00-13h00",
 			"quartier" : "Doulon Bottiere"
 		}, {
 			"code" : "71",
@@ -6425,12 +6416,12 @@
 			"libelle" : "Place de Talensac",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place de Talensac 44000 NANTES",
 			"latitude" : "47.2210157384752",
 			"longitude" : "-1.55685571664186",
 			"horaires" : "De 14h30 à 19h00. 26 mars, 3 septembre, 10 décembre",
-			"plagesHoraires" : ",260314_me_14h30-19h00,030914_me_14h30-19h00,101214_me_14h30-19h00",
+			"plagesHoraires" : ",262614_me_14h30-19h00,030314_me_14h30-19h00,101014_me_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "66",
@@ -6438,12 +6429,12 @@
 			"libelle" : "Devant l'église Saint-Pasquier",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place Emile Fritsch 44000 NANTES",
 			"latitude" : "47.2288980938558",
 			"longitude" : "-1.56577469386022",
 			"horaires" : "De 14h30 à 19h00. 24 mars, 1 septembre, 8 décembre",
-			"plagesHoraires" : ",240314_me_14h30-19h00,010914_me_14h30-19h00,081214_me_14h30-19h00",
+			"plagesHoraires" : ",242414_me_14h30-19h00,010114_me_14h30-19h00,080814_me_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "67",
@@ -6451,12 +6442,12 @@
 			"libelle" : "TRAM Saint-Mihiel",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Quai de Versailles 44000 NANTES",
 			"latitude" : "47.2245848205917",
 			"longitude" : "-1.55383600362569",
 			"horaires" : "De 14h30 à 19h00. 27 mars, 4 septembre, 11 décembre",
-			"plagesHoraires" : ",270314_me_14h30-19h00,040914_me_14h30-19h00,111214_me_14h30-19h00",
+			"plagesHoraires" : ",272714_me_14h30-19h00,040414_me_14h30-19h00,111114_me_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "68",
@@ -6464,12 +6455,12 @@
 			"libelle" : "Place Saint-Félix",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place Saint-Félix 44000 NANTES",
 			"latitude" : "47.2310649019152",
 			"longitude" : "-1.55588877771744",
 			"horaires" : "De 09h00 à 13h00. 29 mars, 6 septembre, 13 décembre",
-			"plagesHoraires" : ",290314_me_09h00-13h00,060914_me_09h00-13h00,131214_me_09h00-13h00",
+			"plagesHoraires" : ",292914_me_09h00-13h00,060614_me_09h00-13h00,131314_me_09h00-13h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "81",
@@ -6477,12 +6468,12 @@
 			"libelle" : "Place de la Galarne",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place de la Galarne 44200 NANTES",
 			"latitude" : "47.2085362258834",
 			"longitude" : "-1.52935429124361",
 			"horaires" : "De 09h00 à 13h00. 1 mars, 28 juin, 29 novembre",
-			"plagesHoraires" : ",010314_me_09h00-13h00,280614_me_09h00-13h00,291114_me_09h00-13h00",
+			"plagesHoraires" : ",010114_me_09h00-13h00,282814_me_09h00-13h00,292914_me_09h00-13h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "78",
@@ -6490,12 +6481,12 @@
 			"libelle" : "Rue La Noue Bras de Fer (Ecole d'Architecture)",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue La Noue Bras de Fer 44200 NANTES",
 			"latitude" : "47.2074615533588",
 			"longitude" : "-1.55735377242907",
 			"horaires" : "De 14h30 à 19h00. 24 février, 23 juin, 24 novembre",
-			"plagesHoraires" : ",240214_me_14h30-19h00,230614_me_14h30-19h00,241114_me_14h30-19h00",
+			"plagesHoraires" : ",242414_me_14h30-19h00,232314_me_14h30-19h00,242414_me_14h30-19h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "79",
@@ -6503,12 +6494,12 @@
 			"libelle" : "BUSWAY Ile de Nantes",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "15 Boulevard Général de Gaulle 44200 NANTES",
 			"latitude" : "47.2060894902992",
 			"longitude" : "-1.53854590781718",
 			"horaires" : "De 14h30 à 19h00. 27 février, 26 juin, 27 novembre",
-			"plagesHoraires" : ",270214_me_14h30-19h00,260614_me_14h30-19h00,271114_me_14h30-19h00",
+			"plagesHoraires" : ",272714_me_14h30-19h00,262614_me_14h30-19h00,272714_me_14h30-19h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "80",
@@ -6516,12 +6507,12 @@
 			"libelle" : "Place Victor Mangin",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place Victor Mangin 44200 NANTES",
 			"latitude" : "47.2009484198633",
 			"longitude" : "-1.54459336106402",
 			"horaires" : "De 14h30 à 19h00. 26 février, 25 juin, 26 novembre",
-			"plagesHoraires" : ",260214_me_14h30-19h00,250614_me_14h30-19h00,261114_me_14h30-19h00",
+			"plagesHoraires" : ",262614_me_14h30-19h00,252514_me_14h30-19h00,262614_me_14h30-19h00",
 			"quartier" : "Ile de Nantes"
 		}, {
 			"code" : "85",
@@ -6529,12 +6520,12 @@
 			"libelle" : "Piscine Petite Amazonie, Parvis du péage sauvage",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "15 Rue du Pont de l'Arche de Mauves 44000 NANTES",
 			"latitude" : "47.2162745514945",
 			"longitude" : "-1.53235917330598",
 			"horaires" : "De 14h30 à 19h00. 10 janvier, 11 avril, 19 septembre",
-			"plagesHoraires" : ",100114_me_14h30-19h00,110414_me_14h30-19h00,190914_me_14h30-19h00",
+			"plagesHoraires" : ",101014_me_14h30-19h00,111114_me_14h30-19h00,191914_me_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "84",
@@ -6542,12 +6533,12 @@
 			"libelle" : "Pôle commercial Malakoff",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Boulevard de Sarrebruck 44000 NANTES",
 			"latitude" : "47.2140541748747",
 			"longitude" : "-1.52755394590332",
 			"horaires" : "De 14h30 à 19h00. 6 janvier, 7 avril, 15 septembre",
-			"plagesHoraires" : ",060114_me_14h30-19h00,070414_me_14h30-19h00,150914_me_14h30-19h00",
+			"plagesHoraires" : ",060614_me_14h30-19h00,070714_me_14h30-19h00,151514_me_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "95",
@@ -6555,12 +6546,12 @@
 			"libelle" : "TRAM Santos Dumont",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue des Renards 44300 NANTES",
 			"latitude" : "47.2596471391834",
 			"longitude" : "-1.5679125622189",
 			"horaires" : "De 14h30 à 19h00. 3 avril, 11 septembre, 18 décembre",
-			"plagesHoraires" : ",030414_me_14h30-19h00,110914_me_14h30-19h00,181214_me_14h30-19h00",
+			"plagesHoraires" : ",030314_me_14h30-19h00,111114_me_14h30-19h00,181814_me_14h30-19h00",
 			"quartier" : "Nantes Nord",
 			"description_fr" : "consulter les horaires dans les piscines"
 		}, {
@@ -6569,12 +6560,12 @@
 			"libelle" : "Ecole Françoise Dolto",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "3 Rue de Questembert 44300 NANTES",
 			"latitude" : "47.2649104117402",
 			"longitude" : "-1.58006934317071",
 			"horaires" : "De 14h30 à 19h00. 31 mars, 8 septembre, 15 décembre",
-			"plagesHoraires" : ",310314_me_14h30-19h00,080914_me_14h30-19h00,151214_me_14h30-19h00",
+			"plagesHoraires" : ",313114_me_14h30-19h00,080814_me_14h30-19h00,151514_me_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "92",
@@ -6582,12 +6573,12 @@
 			"libelle" : "84, route de la Chapelle",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "84 Route de la Chapelle sur Erdre 44300 NANTES",
 			"latitude" : "47.2592431633445",
 			"longitude" : "-1.57520707985812",
 			"horaires" : "De 14h30 à 19h00. 2 avril, 10 septembre, 17 décembre",
-			"plagesHoraires" : ",020414_me_14h30-19h00,100914_me_14h30-19h00,171214_me_14h30-19h00",
+			"plagesHoraires" : ",020214_me_14h30-19h00,101014_me_14h30-19h00,171714_me_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "104",
@@ -6595,12 +6586,12 @@
 			"libelle" : "Ecole Jonelière",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "76 Route de la Jonelière 44300 NANTES",
 			"latitude" : "47.2523238818019",
 			"longitude" : "-1.54648492508947",
 			"horaires" : "De 14h30 à 19h00. 10 février, 2 juin, 20 octobre",
-			"plagesHoraires" : ",100214_me_14h30-19h00,020614_me_14h30-19h00,201014_me_14h30-19h00",
+			"plagesHoraires" : ",101014_me_14h30-19h00,020214_me_14h30-19h00,202014_me_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "101",
@@ -6608,12 +6599,12 @@
 			"libelle" : "Mairie annexe Barberie/skate parc",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue Pierre Yvernogeau 44300 NANTES",
 			"latitude" : "47.2416819425104",
 			"longitude" : "-1.57269702373803",
 			"horaires" : "De 09h00 à 13h00. 15 février, 7 juin, 25 octobre",
-			"plagesHoraires" : ",150214_me_09h00-13h00,070614_me_09h00-13h00,251014_me_09h00-13h00",
+			"plagesHoraires" : ",151514_me_09h00-13h00,070714_me_09h00-13h00,252514_me_09h00-13h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "102",
@@ -6621,12 +6612,12 @@
 			"libelle" : "Rue de la Fantaisie/Rue Clément Marot",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue de la Fantaisie 44300 NANTES",
 			"latitude" : "47.2530157668934",
 			"longitude" : "-1.5698775521509",
 			"horaires" : "De 14h30 à 19h00. 12 février, 4 juin, 22 octobre",
-			"plagesHoraires" : ",120214_me_14h30-19h00,040614_me_14h30-19h00,221014_me_14h30-19h00",
+			"plagesHoraires" : ",121214_me_14h30-19h00,040414_me_14h30-19h00,222214_me_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "103",
@@ -6634,12 +6625,12 @@
 			"libelle" : "Parking Beauséjour",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue du Chêne Vert 44100 NANTES",
 			"latitude" : "47.238619992713",
 			"longitude" : "-1.58747180633725",
 			"horaires" : "De 14h30 à 19h00. 13 février, 5 juin, 23 octobre",
-			"plagesHoraires" : ",130214_me_14h30-19h00,050614_me_14h30-19h00,231014_me_14h30-19h00",
+			"plagesHoraires" : ",131314_me_14h30-19h00,050514_me_14h30-19h00,232314_me_14h30-19h00",
 			"quartier" : "Breil Barberie"
 		}, {
 			"code" : "93",
@@ -6647,12 +6638,12 @@
 			"libelle" : "TRAM Bourgeonnière",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue de la Bourgeonnière 44300 NANTES",
 			"latitude" : "47.2535014483975",
 			"longitude" : "-1.55972844633941",
 			"horaires" : "De 09h00 à 13h00. 5 avril, 13 septembre, 20 décembre",
-			"plagesHoraires" : ",050414_me_09h00-13h00,130914_me_09h00-13h00,201214_me_09h00-13h00",
+			"plagesHoraires" : ",050514_me_09h00-13h00,131314_me_09h00-13h00,202014_me_09h00-13h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "121",
@@ -6660,12 +6651,12 @@
 			"libelle" : "Intersection Rues Turpin et Gambetta",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place Sophie Trébuchet 44000 NANTES",
 			"latitude" : "47.2205801969752",
 			"longitude" : "-1.54550678204049",
 			"horaires" : "De 14h30 à 19h00. 3 février, 19 mai, 13 octobre",
-			"plagesHoraires" : ",030214_me_14h30-19h00,190514_me_14h30-19h00,131014_me_14h30-19h00",
+			"plagesHoraires" : ",030314_me_14h30-19h00,191914_me_14h30-19h00,131314_me_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "117",
@@ -6673,12 +6664,12 @@
 			"libelle" : "Rue Pitre Chevalier/Allée Reine Margot",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue Pitre Chevalier 44000 NANTES",
 			"latitude" : "47.2237506960654",
 			"longitude" : "-1.55069595102173",
 			"horaires" : "De 14h30 à 19h00. 5 février, 21 mai, 15 octobre",
-			"plagesHoraires" : ",050214_me_14h30-19h00,210514_me_14h30-19h00,151014_me_14h30-19h00",
+			"plagesHoraires" : ",050514_me_14h30-19h00,212114_me_14h30-19h00,151514_me_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "118",
@@ -6686,12 +6677,12 @@
 			"libelle" : "Boulevard Ernest Dalby -  parking Super U",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "66 Boulevard Ernest Dalby 44000 NANTES",
 			"latitude" : "47.2241475694462",
 			"longitude" : "-1.5304882397471",
 			"horaires" : "De 14h30 à 19h00. 6 février, 22 mai, 16 octobre",
-			"plagesHoraires" : ",060214_me_14h30-19h00,220514_me_14h30-19h00,161014_me_14h30-19h00",
+			"plagesHoraires" : ",060614_me_14h30-19h00,222214_me_14h30-19h00,161614_me_14h30-19h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "119",
@@ -6699,12 +6690,12 @@
 			"libelle" : "Place des enfants nantais",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place des Enfants Nantais 44000 NANTES",
 			"latitude" : "47.2287750306491",
 			"longitude" : "-1.54288080522534",
 			"horaires" : "De 09h00 à 13h00. 8 février, 24 mai, 18 octobre",
-			"plagesHoraires" : ",080214_me_09h00-13h00,240514_me_09h00-13h00,181014_me_09h00-13h00",
+			"plagesHoraires" : ",080814_me_09h00-13h00,242414_me_09h00-13h00,181814_me_09h00-13h00",
 			"quartier" : "Malakoff Saint-Donatien"
 		}, {
 			"code" : "109",
@@ -6712,12 +6703,12 @@
 			"libelle" : "Pirmil - Gare routière",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue Esnoult des Châtelets 44200 NANTES",
 			"latitude" : "47.1965881376402",
 			"longitude" : "-1.54172925456256",
 			"horaires" : "De 14h30 à 19h00. 8 janvier, 9 avril, 17 septembre",
-			"plagesHoraires" : ",080114_me_14h30-19h00,090414_me_14h30-19h00,170914_me_14h30-19h00",
+			"plagesHoraires" : ",080814_me_14h30-19h00,090914_me_14h30-19h00,171714_me_14h30-19h00",
 			"quartier" : "Nantes Sud",
 			"description_fr" : "ouvert les lundis uniquement si férié"
 		}, {
@@ -6726,12 +6717,12 @@
 			"libelle" : "Place du Muguet Nantais",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place du Muguet Nantais 44200 NANTES",
 			"latitude" : "47.1943572452049",
 			"longitude" : "-1.52879967553758",
 			"horaires" : "De 09h00 à 13h00. 11 janvier, 12 avril, 20 septembre",
-			"plagesHoraires" : ",110114_me_09h00-13h00,120414_me_09h00-13h00,200914_me_09h00-13h00",
+			"plagesHoraires" : ",111114_me_09h00-13h00,121214_me_09h00-13h00,202014_me_09h00-13h00",
 			"quartier" : "Nantes Sud"
 		}, {
 			"code" : "11",
@@ -6739,12 +6730,12 @@
 			"libelle" : "Centre Socioculturel Bourderies",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "12 Rue des Bourderies 44100 NANTES",
 			"latitude" : "47.2067125842139",
 			"longitude" : "-1.59582342337165",
 			"horaires" : "De 14h30 à 19h00. 17 janvier, 18 avril, 26 septembre",
-			"plagesHoraires" : ",170114_me_14h30-19h00,180414_me_14h30-19h00,260914_me_14h30-19h00",
+			"plagesHoraires" : ",171714_me_14h30-19h00,181814_me_14h30-19h00,262614_me_14h30-19h00",
 			"quartier" : "Bellevue Chantenay Sainte Anne"
 		}, {
 			"code" : "120",
@@ -6752,12 +6743,12 @@
 			"libelle" : "Eglise Saint Augustin",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue des Roches Grises 44300 NANTES",
 			"latitude" : "47.238645194009",
 			"longitude" : "-1.54504959881403",
 			"horaires" : "De 14h30 à 19h00. 7 février, 23 mai, 17 octobre",
-			"plagesHoraires" : ",070214_me_14h30-19h00,230514_me_14h30-19h00,171014_me_14h30-19h00",
+			"plagesHoraires" : ",070714_me_14h30-19h00,232314_me_14h30-19h00,171714_me_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "53",
@@ -6765,12 +6756,12 @@
 			"libelle" : "Place de la Bottière",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place de la Bottière 44300 NANTES",
 			"latitude" : "47.2404395996232",
 			"longitude" : "-1.51834930812782",
 			"horaires" : "De 14h30 à 19h00. 18 février, 17 juin, 18 novembre",
-			"plagesHoraires" : ",180214_me_14h30-19h00,170614_me_14h30-19h00,181114_me_14h30-19h00",
+			"plagesHoraires" : ",181814_me_14h30-19h00,171714_me_14h30-19h00,181814_me_14h30-19h00",
 			"quartier" : "Doulon Bottiere"
 		}, {
 			"code" : "54",
@@ -6778,12 +6769,12 @@
 			"libelle" : "Rue de la Planche au Gué (à côté du multi accueil)",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "3 Rue de la Planche au Gué 44300 NANTES",
 			"latitude" : "47.2689928765624",
 			"longitude" : "-1.52190435780587",
 			"horaires" : "De 14h30 à 19h00. 21 février, 20 juin, 21 novembre",
-			"plagesHoraires" : ",210214_me_14h30-19h00,200614_me_14h30-19h00,211114_me_14h30-19h00",
+			"plagesHoraires" : ",212114_me_14h30-19h00,202014_me_14h30-19h00,212114_me_14h30-19h00",
 			"quartier" : "Nantes Erdre"
 		}, {
 			"code" : "69",
@@ -6791,12 +6782,12 @@
 			"libelle" : "Angle Rue des Dervallières/Rue Octave Feuillet",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue Octave Feuillet 44000 NANTES",
 			"latitude" : "47.2205952970888",
 			"longitude" : "-1.57339371320505",
 			"horaires" : "De 14h30 à 19h00. 25 mars, 2 septembre, 9 décembre",
-			"plagesHoraires" : ",250314_me_14h30-19h00,020914_me_14h30-19h00,091214_me_14h30-19h00",
+			"plagesHoraires" : ",252514_me_14h30-19h00,020214_me_14h30-19h00,090914_me_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "70",
@@ -6804,12 +6795,12 @@
 			"libelle" : "Angle Boulevard Gaston Serpette/Boulevard des Anglais",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Boulevard Gaston Serpette 44100 NANTES",
 			"latitude" : "47.2288414804835",
 			"longitude" : "-1.57551422401674",
 			"horaires" : "De 14h30 à 19h00. 28 mars, 5 septembre, 12 décembre",
-			"plagesHoraires" : ",280314_me_14h30-19h00,050914_me_14h30-19h00,121214_me_14h30-19h00",
+			"plagesHoraires" : ",282814_me_14h30-19h00,050514_me_14h30-19h00,121214_me_14h30-19h00",
 			"quartier" : "Hauts Paves Saint-Felix"
 		}, {
 			"code" : "94",
@@ -6817,12 +6808,12 @@
 			"libelle" : "19 rue du Paraguay",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "19 Rue du Paraguay 44300 NANTES",
 			"latitude" : "47.2618224406621",
 			"longitude" : "-1.56626305344391",
 			"horaires" : "De 14h30 à 19h00. 4 avril, 12 septembre, 19 décembre",
-			"plagesHoraires" : ",040414_me_14h30-19h00,120914_me_14h30-19h00,191214_me_14h30-19h00",
+			"plagesHoraires" : ",040414_me_14h30-19h00,121214_me_14h30-19h00,191914_me_14h30-19h00",
 			"quartier" : "Nantes Nord"
 		}, {
 			"code" : "43",
@@ -6830,12 +6821,12 @@
 			"libelle" : "Angle Rue Emile Masson/Rue Fouré",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue Emile Masson 44000 NANTES",
 			"latitude" : "47.2139678600975",
 			"longitude" : "-1.54651886318017",
 			"horaires" : "De 14h30 à 19h00. 20 janvier, 22 avril, 29 septembre",
-			"plagesHoraires" : ",200114_me_14h30-19h00,220414_me_14h30-19h00,290914_me_14h30-19h00",
+			"plagesHoraires" : ",202014_me_14h30-19h00,222214_me_14h30-19h00,292914_me_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "35",
@@ -6843,12 +6834,12 @@
 			"libelle" : "Piscine Léo Lagrange",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Boulevard des Nations Unies 44000 NANTES",
 			"latitude" : "47.209924940714",
 			"longitude" : "-1.56107045739244",
 			"horaires" : "De 14h30 à 19h00. 22 janvier, 23 avril, 1 octobre",
-			"plagesHoraires" : ",220114_me_14h30-19h00,230414_me_14h30-19h00,011014_me_14h30-19h00",
+			"plagesHoraires" : ",222214_me_14h30-19h00,232314_me_14h30-19h00,010114_me_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "36",
@@ -6856,12 +6847,12 @@
 			"libelle" : "Place du Bouffay",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place du Bouffay 44000 NANTES",
 			"latitude" : "47.2147674483194",
 			"longitude" : "-1.55328591629599",
 			"horaires" : "De 14h30 à 19h00. 23 janvier, 24 avril, 2 octobre",
-			"plagesHoraires" : ",230114_me_14h30-19h00,240414_me_14h30-19h00,021014_me_14h30-19h00",
+			"plagesHoraires" : ",232314_me_14h30-19h00,242414_me_14h30-19h00,020214_me_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "37",
@@ -6869,12 +6860,12 @@
 			"libelle" : "Place de Bretagne",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place de Bretagne 44000 NANTES",
 			"latitude" : "47.2175064328734",
 			"longitude" : "-1.55911151379809",
 			"horaires" : "De 14h30 à 19h00. 24 janvier, 25 avril, 3 octobre",
-			"plagesHoraires" : ",240114_me_14h30-19h00,250414_me_14h30-19h00,031014_me_14h30-19h00",
+			"plagesHoraires" : ",242414_me_14h30-19h00,252514_me_14h30-19h00,030314_me_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "38",
@@ -6882,12 +6873,12 @@
 			"libelle" : "Place Dulcie September",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Place Dulcie September 44000 NANTES",
 			"latitude" : "47.2169571645123",
 			"longitude" : "-1.55444617450992",
 			"horaires" : "De 09h00 à 13h00. 25 janvier, 26 avril, 4 octobre",
-			"plagesHoraires" : ",250114_me_09h00-13h00,260414_me_09h00-13h00,041014_me_09h00-13h00",
+			"plagesHoraires" : ",252514_me_09h00-13h00,262614_me_09h00-13h00,040414_me_09h00-13h00",
 			"quartier" : "Centre Ville",
 			"description_fr" : "ouvert les lundis uniquement si férié"
 		}, {
@@ -6896,12 +6887,12 @@
 			"libelle" : "Esplanade des Victimes des Bombardements",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Quai Turenne 44000 NANTES",
 			"latitude" : "47.2128189777156",
 			"longitude" : "-1.55414986696141",
 			"horaires" : "De 14h30 à 19h00. 27 janvier, 12 mai, 6 octobre",
-			"plagesHoraires" : ",270114_me_14h30-19h00,120514_me_14h30-19h00,061014_me_14h30-19h00",
+			"plagesHoraires" : ",272714_me_14h30-19h00,121214_me_14h30-19h00,060614_me_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "40",
@@ -6909,12 +6900,12 @@
 			"libelle" : "Angle Rue Huchette/Rue Gigant",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "2 Rue Huchette 44100 NANTES",
 			"latitude" : "47.214293051504",
 			"longitude" : "-1.56914562067294",
 			"horaires" : "De 14h30 à 19h00. 29 janvier, 14 mai, 8 octobre",
-			"plagesHoraires" : ",290114_me_14h30-19h00,140514_me_14h30-19h00,081014_me_14h30-19h00",
+			"plagesHoraires" : ",292914_me_14h30-19h00,141414_me_14h30-19h00,080814_me_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "41",
@@ -6922,12 +6913,12 @@
 			"libelle" : "Cours Saint Pierre",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Cours Saint Pierre 44000 NANTES",
 			"latitude" : "47.2191674356457",
 			"longitude" : "-1.54955272355555",
 			"horaires" : "De 14h30 à 19h00. 30 janvier, 15 mai, 9 octobre",
-			"plagesHoraires" : ",300114_me_14h30-19h00,150514_me_14h30-19h00,091014_me_14h30-19h00",
+			"plagesHoraires" : ",303014_me_14h30-19h00,151514_me_14h30-19h00,090914_me_14h30-19h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "42",
@@ -6935,12 +6926,12 @@
 			"libelle" : "Cours Cambronne",
 			"modesCollecte" : "modco_distrisac",
 			"type" : "Rendez-vous",
-			"conseils" : "cons_plusieurstrisac,cons_distrisac_piecesobligatoires",
+			"conseils" : "cons_plusieurstrisac,cons_distrisac_rdv,cons_distrisac_piecesobligatoires",
 			"adresseTemp" : "0 Rue des Cadeniers 44000 NANTES",
 			"latitude" : "47.2124318278172",
 			"longitude" : "-1.56246151143316",
 			"horaires" : "De 09h00 à 13h00. 1 février, 17 mai, 11 octobre",
-			"plagesHoraires" : ",010214_me_09h00-13h00,170514_me_09h00-13h00,111014_me_09h00-13h00",
+			"plagesHoraires" : ",010114_me_09h00-13h00,171714_me_09h00-13h00,111114_me_09h00-13h00",
 			"quartier" : "Centre Ville"
 		}, {
 			"code" : "106",

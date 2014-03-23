@@ -105,6 +105,7 @@ Ext
 
 		// TODO le bouton retour
 
+		// On prend 3 quartiers : Nantes, Hors Nantes Nord Loire, Hors Nantes Sud Loire,   
 		// Réemploi : quartier
 		// Ecotox : quartier_admin, quartier
 		// Le relais : quartier_admin, quartier

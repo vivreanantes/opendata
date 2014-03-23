@@ -121,7 +121,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_1_bouton",
-						text : "Fiche",
+						text : "Plus d'infos",
 						width:"150px"
 					}]
 		}, {
@@ -136,7 +136,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_2_bouton",
-						text : "Fiche",
+						text : "Plus d'infos",
 						width:"150px"
 					}]
 		}, {
@@ -154,7 +154,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 			xtype : 'button',
 			width : '200px',
 			id : "garbagesdetails_envoyer",
-			text : "Envoyer un commentaire"
+			text : "Envoyez un commentaire"
 		}]
 
 	}

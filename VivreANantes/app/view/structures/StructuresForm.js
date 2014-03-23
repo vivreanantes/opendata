@@ -25,7 +25,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 									}]
 						}, {
 							xtype : 'selectfield',
-							label : 'Ville',
+							label : 'Nantes / Hors Nantes',
 							id : 'structuresFormSelectQuartier'
 							,options : [{}]
 							/*options : [{

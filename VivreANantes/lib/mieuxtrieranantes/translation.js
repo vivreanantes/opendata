@@ -328,12 +328,12 @@ function _translate(stKey, stLocale) {
 			"fr" : "Résultat de la recherche"
 		},
 		"label_structure_template_detail" : {
-			"en" : "<B>{type}</B> - {soustype} <BR/>{description_fr} <BR/><B>Schedules</B> : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/><B>Phone</B> : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
-			"fr" : "<B>{type}</B> - {soustype} <BR/>{description_fr} <BR/><BR/><B>Horaires</B> : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/><B>Adresse</B> : {adresseTemp} '+ ' <BR/>Téléphone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
+			"en" : "Type : {type} - {soustype} <BR/>{description_fr} <BR/>Schedules : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>Phone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
+			"fr" : "Type : {type} - {soustype} <BR/>{description_fr} <BR/><BR/>Horaires : {plagesHoraires2} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>Téléphone : {telephoneTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
 		},
 		"label_trisac_template_detail" : {
-			"en" : "{description_fr} <BR/><B>Schedules</B> : {horaires} {ouvertAujourdhuiEtDemain} <BR/><B>Address</B> : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
-			"fr" : "{description_fr} <BR/><B>Horaires</B> : {horaires} {ouvertAujourdhuiEtDemain} <BR/><B>Adresse</B> : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
+			"en" : "{description_fr} <BR/>Schedules : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Address : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}",
+			"fr" : "{description_fr} <BR/>Horaires : {horaires} {ouvertAujourdhuiEtDemain} <BR/>Adresse : {adresseTemp} '+ ' <BR/>TEMPO HORAIRES {horaires}"
 		},
 		"label_janvier" : {
 			"en" : "january",
