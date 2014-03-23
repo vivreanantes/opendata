@@ -322,12 +322,6 @@
 			"modco" : "modco_contverre,modco_decheterie,modco_ecopoint",
 			"rec" : "OUI"
 		}, {
-			"code" : "dec_bouteilleGaz",
-			"nom" : "Bouteille de gaz",
-			"categoriesUsuelles" : "cu_metal",
-			"description" : "bouteille de gaz",
-			"nom_description_sansAccents" : "bouteille de gaz"
-		}, {
 			"code" : "dec_bouteilleLait",
 			"nom" : "Bouteille lait",
 			"categoriesUsuelles" : "cu_plastique",
@@ -503,8 +497,8 @@
 			"nom" : "CD/DVD/K7",
 			"categoriesUsuelles" : "cu_divers",
 			"categorieTraitement" : "cat_omr",
-			"description" : "CD/DVD/K7, cassette audio, cassette vidéo",
-			"nom_description_sansAccents" : "CD/DVD/K7, cassette audio, cassette video",
+			"description" : "cD/DVD/K7, cassette audio, cassette vidéo",
+			"nom_description_sansAccents" : "cD/DVD/K7, cassette audio, cassette video",
 			"image" : "cd_sansemballage_mini.png",
 			"image_secondaire" : "pochette_cd_mini.png",
 			"modco" : "modco_bacbleu,modco_sacbleu",
@@ -1606,11 +1600,11 @@
 			"rec" : "NON"
 		}, {
 			"code" : "dec_recurantsPourFour",
-			"nom" : "Récurant pour four",
+			"nom" : "Récurant pour four...",
 			"categoriesUsuelles" : "cu_toxique",
 			"categorieTraitement" : "cat_ddm",
-			"description" : "récurant pour four",
-			"nom_description_sansAccents" : "recurant pour four",
+			"description" : "récurant pour four...",
+			"nom_description_sansAccents" : "recurant pour four...",
 			"conseils" : "cons_toxique",
 			"image" : "nettoyant_four_mini.png",
 			"modco" : "modco_decheterie,modco_ecopoint,modco_ecotox",

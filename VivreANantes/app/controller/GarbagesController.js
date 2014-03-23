@@ -547,21 +547,20 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 		if (arrayItemsToShow.length > 0) {
 
-			var text = this.utilRetireAccent(this.getGarbagesFormText().getValue());
+			var text = this.getGarbagesFormText();
 			var category = this.getGarbagesFormSelect();
 			var escaperegex = Ext.String.escapeRegex;
 			// var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
 			// var temp = text.getValue();
 			// var texttest = new RegExp(/vaisselle/gi);
 			
-			// var categorietest = new RegExp(category.getValue());
+			var categorietest = new RegExp(category.getValue());
 
 			var theItems = arrayItemsToShow.items;
 			for (var i = 0; i < theItems.length; i++) {
 				var aData = theItems[i].data;
 				// Important : il faut recréer l'expression régulière à chaque fois sinon les résultats sont faux !
-				// var text = text.getValue());
-				var texttest = new RegExp(escaperegex(text), 'ig');
+				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
 				var nom_description_sansAccents = aData["nom_description_sansAccents"];
 				if ((aData["categorie_usuelle"] === category.getValue() || category
 						.getValue() === "all")

@@ -1,6 +1,6 @@
-Ext.define('VivreANantes.store.StructureStoreGeo', {
+Ext.define('VivreANantes.store.StructureStore', {
 			extend : 'Ext.data.Store',			
-			id : 'structurestoregeo', 	
+			id : 'structurestore', 	
 			config :{
 				autoLoad : true,
 				model : 'VivreANantes.model.StructureModel',

@@ -26,7 +26,7 @@
 		}, {
 			"code" : "fiche_arcenciel",
 			"libelle" : "Usine Arc-en-ciel",
-			"description_fr" : "<IMG SRC='resources/images/usine_arcenciel.png' ALIGN='left' />Ce dispositif a été mis en service en mars 1994 et il comprend 4 unités : <UL><LI>le centre de traitement et de valorisation des déchets,</LI><LI>le centre de tri et de conditionnement des déchets ménagers recyclables,</LI><LI> le centre de tri des déchets industriels et commerciaux, situé à Couëron,</LI><LI> l'unité de compostage de déchets verts située à Saint-Herblain.,</LI></UL><BR/>Vous pouvez visiter l'usine.",
+			"description_fr" : "Ce dispositif a été mis en service en mars 1994 et il comprend 4 unités : <UL><LI>le centre de traitement et de valorisation des déchets,</LI><LI>le centre de tri et de conditionnement des déchets ménagers recyclables,</LI><LI> le centre de tri des déchets industriels et commerciaux, situé à Couëron,</LI><LI> l'unité de compostage de déchets verts située à Saint-Herblain.,</LI></UL><BR/>Vous pouvez visiter l'usine.",
 			"bouton" : "fiche",
 			"image" : "usine_arcenciel_mini.png"
 		}, {

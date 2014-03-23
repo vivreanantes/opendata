@@ -28,7 +28,7 @@
 			"image" : "conteneur_verre_mini.png"
 		}, {
 			"code" : "modco_contembjournmag",
-			"libelle" : "Conteneur embal. journ. mag.",
+			"libelle" : "Conteneur emballages journaux magazines",
 			"modesCollecte" : "false",
 			"description" : "<IMG SRC='resources/images/conteneur_emballages_journaux_magazines_instructions.png' WIDTH='100%' /> <IMG SRC='resources/images/conteneur_emballages_journaux_magazines_instructions2.png' WIDTH='100%' /><BR/>On peut mettre dans le conteneur emballages journaux magazines : boîte de conserve, barquette aluminium, cannette, aérosol, bouteille métal sirop, bouteilles d'eau, flacon, brique (jus de fruit, lait), cartonnettes, papier, journaux, magazines",
 			"conseils" : "cons_sans_bouchon_ni_couvercle",
