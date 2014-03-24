@@ -50,6 +50,10 @@ local.properties
 .settings/
 .loadpath
 
+# Javascript #
+##########
+*.apk
+
 # Grails #
 ##########
 *.iws

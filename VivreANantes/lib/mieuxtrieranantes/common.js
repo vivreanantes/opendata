@@ -44,3 +44,37 @@ function _utilGetStringCurrentYearAAAA () {
 function translateWithUpperFirstLetter (result) {
 	return _stringUpperFirstLetter(_translate(result));
 }
+
+
+/**
+ * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
+ * des balises "<br/>
+ */
+function _decoupe(stChaine, iTailleMax) {
+	var result = "";
+	if (stChaine != undefined) {
+		// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
+		var array = stChaine.split(/, | ,| -|- |-| /);
+		var tailleRestanteLigne = iTailleMax;
+		for (var i = 0; i < array.length; i++) {
+			result += array[i];
+			tailleRestanteLigne = tailleRestanteLigne - array[i].length;
+			// Si il reste des mots
+			if (i + 1 < array.length) {
+				// Si le prochain mot n'est pas trop long, on ajoute juste
+				// un
+				// espace
+				if (array[i + 1].length <= tailleRestanteLigne) {
+					result += " ";
+					tailleRestanteLigne = tailleRestanteLigne - 1;
+				}
+				// Sinon on ajoute un retour à la ligne
+				else {
+					result += "<br/>";
+					tailleRestanteLigne = iTailleMax;
+				}
+			}
+		}
+	}
+	return result;
+}

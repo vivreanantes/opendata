@@ -9,10 +9,10 @@ Ext.define('VivreANantes.view.collectMod.CollectMods', {
 			config : {
 				autoDestroy : false,
 				iconCls : 'trash', // icône en forme de poubelle
-				title : 'Modes de collectes',
+				title : 'Modes',
 				items : [{
 							xtype : 'collectModsButtonsList_xtype'
 						}],
-				defaultBackButtonText : "Retour_"
+				defaultBackButtonText : "Retour"
 			}
 		});

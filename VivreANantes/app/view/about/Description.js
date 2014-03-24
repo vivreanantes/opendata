@@ -6,7 +6,8 @@ Ext.define('VivreANantes.view.about.Description', {
 	extend : 'Ext.Container',
 	xtype : 'xtype_description',
 	config : {
-		title : 'A propos',
+		title : 'A<br/>propos',
+		scrollable : true,
 		iconCls : 'team', // icône représentant plusieurs visages
 		styleHtmlContent : true,
 		items : [{

@@ -4,10 +4,10 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
 
 	config : {
 		title : 'Collecte à domicile',
+		scrollable : true,
 		layout : 'hbox',
 		items : [{
-					// html : '<I>Source : Open Data Nantes, valable à partir du
-					// 16/09/2013</I><br/>',
+					// html : '<I>Source : Open Data Nantes, valable à partir du 16/09/2013</I><br/>',
 					id : 'homecollectmodsdetails_description',
 					tpl : "{image}",
 					styleHtmlContent : true,

@@ -74,8 +74,12 @@ Ext
 			
 			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', /*'WasteTreatmentsCategories',*/ 'CollectModModel'/*, 'CalendarModel'*/, 'LocaleStorageModel', 'InformationsModel'],
 			
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore', 'AdviceStore', /*'WasteTreatmentsCategoriesStore',*/ 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', 'StructureStore', 'InformationsStore'],
+			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore', 'AdviceStore', /*'WasteTreatmentsCategoriesStore',*/ 'CollectModStore', 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', 'StructureStore', 'StructureStoreGeo', 'InformationsStore'],
 
+			// models : [/*'CategorieUsuelleModel'*//*, 'GarbageModel'*/, 'HomeCollectModModel','StructureModel'/*,'AdviceModel'*//*, 'CommentsModel'*//*, 'CollectModModel'*/, 'LocaleStorageModel'/*, 'InformationsModel'*/],
+			
+			// stores : [/*'CategorieUsuelleStore'*//*, 'GarbageStore',*/ 'HomeCollectModStore'/*, 'AdviceStore'*//*,'CollectModStore'*//*, 'CommentsStore'*/, 'TrisacStore', 'StructureStore', 'StructureStoreGeo'/*, 'InformationsStore'*/],
+			
 			icon : {
 				57 : 'resources/icons/Icon.png',
 				72 : 'resources/icons/Icon~ipad.png',
@@ -105,7 +109,6 @@ Ext
 
 		// TODO le bouton retour
 
-		// On prend 3 quartiers : Nantes, Hors Nantes Nord Loire, Hors Nantes Sud Loire,   
 		// Réemploi : quartier
 		// Ecotox : quartier_admin, quartier
 		// Le relais : quartier_admin, quartier
@@ -113,30 +116,14 @@ Ext
 		// DecheterieEcopoint : quartier
 		// Colonnes enterrées : à faire
 		
-		// TODO encombrants : améliorer la macro et le traitement java
-		// HomeCollectModModel.js
-			
-		// AbstractStructureModel.js
-		// CollectModModel.js
-		// GarbageModel.js
-		// HomeCollectModModel.js
-		
-		/////////// CRN Long terme //////////
+		/////////// Long terme //////////
 
-		// TODO Mineur Function TestHoraires(PlageHoraire as String) : controle sur les heures
 		// TODO Mineur : marché de talensac ouvert les lundis uniquement si férié !
 		// TODO Utiliser les paramètres de la page de configuration sur toutes les pages de l'appli
-		// TODO Contacter des assos pour améliorer le contenu de l'appli 
 		// TODO Suivi la question posée sur le FORUM sur les conteneurs dans structures2.json
 		//      http://data.nantes.fr/forum/?tx_mmforum_pi1[action]=list_post&tx_mmforum_pi1[tid]=166
 		// TODO photos : visiter (et ajouter des photos) de Valorena et Arc-En-Ciel...
 		// TODO Modes des collecte listing des lieux les plus proches sur la page des modes de collecte
-		// TODO le texte des modes de collecte est dupliqué. Il faudrait les récupérer.
-
-		///////////// CED ////////////////// 
-
-		// TODO Carte : utiliser le localstorage pour mémoriser les structures affichées, et les quartiers 
-		// TODO Carte : filtrer sur les structures et les quartiers
 		// TODO Carte : permettre la bascule de la carte vers StructuresDetails (utiliser AbstractController.makeLink)
 
 		// TODO Calendrier - DUR : intégrer le composant Ext.ux.TouchCalendar (on utilisera Ext.ux.TouchCalendarView)

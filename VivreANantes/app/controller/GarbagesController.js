@@ -3,7 +3,9 @@
  */
 Ext.define('VivreANantes.controller.GarbagesController', {
 	extend : 'VivreANantes.controller.AbstractController',
-	requires: ['VivreANantes.view.garbages.GarbagesContainer','VivreANantes.view.garbages.GarbagesForm','VivreANantes.view.garbages.GarbagesList'],
+	requires : ['VivreANantes.view.garbages.GarbagesContainer',
+			'VivreANantes.view.garbages.GarbagesForm',
+			'VivreANantes.view.garbages.GarbagesList'],
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
@@ -47,13 +49,13 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			},
 
 			garbagesFormText : {
-				// keyup : 'onGarbageStoreFilter',
-				// change : 'onGarbageStoreFilter',
-				// clearicontap : 'onGarbageStoreFilter'
+// keyup : 'onGarbageStoreFilter',
+			// change : 'onGarbageStoreFilter',
+			// clearicontap : 'onGarbageStoreFilter'
 			},
 			garbagesFormSelect : {
-			
-			},
+
+}			,
 			garbagesFormButton : {
 				tap : 'onTapGarbagesFormButton',
 				back : 'onPushBackButton2'
@@ -62,9 +64,10 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				initialize : 'onInitGarbagesAdvices'
 			},
 
-			/*wasteTreatmentsCategoriesList : {
-				initialize : 'onInitGarbagesWasteTreatmentsCategoriesList'
-			},*/
+			/*
+			 * wasteTreatmentsCategoriesList : { initialize :
+			 * 'onInitGarbagesWasteTreatmentsCategoriesList' },
+			 */
 			collectModList : {
 				initialize : 'onInitGarbagesCollectModList'
 			},
@@ -99,91 +102,69 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				tap : 'onTapLinkButton',
 				back : 'onPushBackButton6'
 			}
-			
-			
+
 		}
 	},
-	
-	
-			onPushBackButton1 : function() {
-				// console.log("onPushBackButton1");
-				// this.onPushBackButton();
-				
-				// Retour sur la page principale de "déchets"
-				// this.getGarbagesView().setActiveItem(0);
-				// this.manageBackButton("garbages_xtype", true);
 
-			},
-			onPushBackButton2 : function() {
-				// console.log("onPushBackButton2");
-				// this.onPushBackButton();
-			},
-			onPushBackButton3 : function() {
-				// console.log("onPushBackButton3");
-				// this.onPushBackButton();
-			},
-			onPushBackButton4 : function() {
-				// console.log("onPushBackButton4");
-				// this.onPushBackButton();
-			},
-			onPushBackButton5 : function() {
-				// console.log("onPushBackButton5");
-				// this.onPushBackButton();
-			},
-			onPushBackButton6 : function() {
-				// console.log("onPushBackButton6");
-				// this.onPushBackButton();
-			},
-			
+	onPushBackButton1 : function() {
+		// console.log("onPushBackButton1");
+		// this.onPushBackButton();
+
+		// Retour sur la page principale de "déchets"
+		// this.getGarbagesView().setActiveItem(0);
+		// this.manageBackButton("garbages_xtype", true);
+
+	},
+	onPushBackButton2 : function() {
+		// console.log("onPushBackButton2");
+		// this.onPushBackButton();
+	},
+	onPushBackButton3 : function() {
+		// console.log("onPushBackButton3");
+		// this.onPushBackButton();
+	},
+	onPushBackButton4 : function() {
+		// console.log("onPushBackButton4");
+		// this.onPushBackButton();
+	},
+	onPushBackButton5 : function() {
+		// console.log("onPushBackButton5");
+		// this.onPushBackButton();
+	},
+	onPushBackButton6 : function() {
+		// console.log("onPushBackButton6");
+		// this.onPushBackButton();
+	},
+
 	onActivate : function(newActiveItem, container, oldActiveItem, eOpts) {
 		this.putInButtonsPanel("cu");
 	},
-	
+
 	putInButtonsPanel : function(stringFilter) {
-	/*	var thisController = this;
-		Ext.getStore('VivreANantes.store.CategorieUsuelleStore').on('load', function (store, records, successful, operation, eOpts) {         
-			var usualCategoryStore = store;
-			var arrayItemsToShow = thisController.getDatasForButtons(usualCategoryStore, stringFilter);
-			
-			var result = new Array();
-			if (arrayItemsToShow.length > 0) {
 
-				var theItems = arrayItemsToShow;
-				for (var i = 0; i < theItems.length; i++) {
-					var stLibelle = thisController.decoupe(theItems[i].libelle);
-					result.push({
-						code : theItems[i].id,
-							label : stLibelle,
-							image : theItems[i].image
-					});
-				}
-			}
-
-			var nbGarbagesMax = 18;	// la page UsualCategoriesButtonPanel.js affiche 18 éléments
-			thisController.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);			
-		});*/
-		
-		var usualCategoryStore = this.getUsualCategoriesList2().getStore();
-		var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, stringFilter);
-		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		// this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
-		
+		// var datasUsualCategory = this.getUsualCategoriesList2().getStore();
+		// utilisation de commonDatasUsualCategory
+		var arrayItemsToShow = this.getArrayItemsToShowForButtons(
+				commonDatasUsualCategory, stringFilter);
 		var result = new Array();
 		if (arrayItemsToShow.length > 0) {
 
 			var theItems = arrayItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-				var stLibelle = this.decoupe(theItems[i].libelle);
+				var stLibelle = this.decoupe(theItems[i]["libelle"]);
 				result.push({
-					code : theItems[i].id,
-						label : stLibelle,
-						image : theItems[i].image
-				});
+							code : theItems[i].id,
+							label : stLibelle,
+							image : theItems[i].image
+						});
 			}
 		}
 
-		var nbGarbagesMax = 18;	// la page UsualCategoriesButtonPanel.js affiche 18 éléments
-		this.setDataInButtonsWithManyLines(this.getUsualCategoriesButtonsPanel(),"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);	
+		var nbGarbagesMax = 18; // la page UsualCategoriesButtonPanel.js affiche
+								// 18 éléments
+		this.setDataInButtonsWithManyLines(this
+						.getUsualCategoriesButtonsPanel(),
+				"usualCategoriesButtonsPanel", result, nbGarbagesMax, 3);
 	},
 
 	onTapLinkButton : function(button, e, eOpts) {
@@ -192,12 +173,14 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	onShowDetails : function(button, e, eOpts) {
+		// Suppression des sous-catégories de toxique
 		// La catégorie "cu_toxique" possède des sous-catégories
-		if (button.id == "cu_toxique") {
-			this.showSubCategory(button.id);
-		} else {
-			this.showDetails(button.id);
-		}
+		// if (button._data["code"] == "cu_toxique") {
+		// this.showSubCategory(button._data["code"]);
+		// } else {
+		// this.showDetails(button._data["code"]);
+		// }
+		this.showDetails(button._data["code"]);
 		this.saveBackButton("garbages_xtype", true);
 	},
 
@@ -216,17 +199,19 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	showSubCategory : function(collectModId) {
-	
+
 		// var usualCategoryStore = this.getUsualCategoriesList2().getStore();
-		// var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore, "cu_toxique");
+		// var arrayItemsToShow = this.getDatasForButtons(usualCategoryStore,
+		// "cu_toxique");
 		// var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
 		// this.getUsualCategoriesButtonsPanel().setItems(arrayItems);
-		
-		this.putInButtonsPanel("cu_toxique");
+
+		// Suppression des sous-catégories de toxique
+		// this.putInButtonsPanel("cu_toxique");
 	},
 
 	onInitUsualCategoriesButtonsPanel : function(container) {
-	
+
 	},
 
 	translateWithUpperFirstLetterAndDecoupe : function(stLabel) {
@@ -241,41 +226,59 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		this.getGarbagesFormText().setValue("");
 	},
 
-	
 	getArrayFromString : function(string) {
 		string = string.replace(", /g", ",").replace(" ,/g", ",");
 		return string.split(',');
 	},
 
 	getAdviceString_old : function(conseils) {
-		var thisController = this;
 		// var conseilTraduit = "";
 		// var arrayConseils = conseils.split(',');
 		// TODO utiliser getArrayFromString à la place
 		var arrayConseils = conseils.replace(", /g", ",").replace(" ,/g", ",")
 				.split(',');
+
 		// On parcours les conseils
 		if (arrayConseils.length > 0) {
+			// commonDatasAdvices
 			var dataAdvices = this.getAdvicesList().getStore().getData();
 			var thisController = this;
-			dataAdvices.each(function(recordAdvice) {
-				for (i in arrayConseils) {
-					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-						conseilTraduit = conseilTraduit + "<BR/>"
-								+ thisController.translate("label_Conseil")
-								+ " : <B>" + recordAdvice.raw["libelle"]
-								+ "</B><BR/>" + recordAdvice.raw["description"];
-						if (recordAdvice.raw["fiche"] !== "") {
-							conseilTraduit += thisController
-									.makeTextLink_old("informationsPanel");
 
-						}
+			for (j in commonDatasAdvices) {
+				if (commonDatasAdvices[j]["code"] === arrayConseils[i]) {
+					conseilTraduit = conseilTraduit + "<BR/>"
+							+ thisController.translate("label_Conseil")
+							+ " : <B>" + commonDatasAdvices[j]["libelle"]
+							+ "</B><BR/>"
+							+ commonDatasAdvices[j]["description"];
+					if (commonDatasAdvices[j]["fiche"] !== "") {
+						conseilTraduit += thisController
+								.makeTextLink_old("informationsPanel");
 					}
 				}
-			});
+			}
+
+			// // STORE adiveStore
+			// // var thisController = this;
+			// dataAdvices.each(function (recordAdvice) {
+			// for (i in arrayConseils) {
+			// if (recordAdvice.raw["code"] === arrayConseils[i]) {
+			// conseilTraduit = conseilTraduit + "<BR/>"
+			// + thisController.translate("label_Conseil")
+			// + " : <B>" + recordAdvice.raw["libelle"]
+			// + "</B><BR/>" + recordAdvice.raw["description"];
+			// if (recordAdvice.raw["fiche"] !== "") {
+			// conseilTraduit += thisController
+			// .makeTextLink_old("informationsPanel");
+			//
+			// }
+			// }
+			// }
+			// });
 		}
 		if (conseilTraduit !== "") {
-			conseilTraduit = "<BR/><BR/>"/* Conseils : " */+ conseilTraduit;
+			conseilTraduit = "<BR/><BR/>" /* Conseils : " */
+					+ conseilTraduit;
 		}
 		return conseilTraduit;
 	},
@@ -285,57 +288,54 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * des déchets
 	 */
 	onInitGarbages : function(list) {
-		var garbageStore = Ext.create('VivreANantes.store.GarbageStore');
-		list.setStore(garbageStore);
+		// var garbageStore = Ext.create('VivreANantes.store.GarbageStore');
 	},
 
 	/**
 	 * Initialisation de la liste des conseils
 	 */
 	onInitGarbagesAdvices : function(list) {
-		var store = Ext.create('VivreANantes.store.AdviceStore');
-		list.setStore(store);
+		// var store = Ext.create('VivreANantes.store.AdviceStore');
+		// list.setStore(store);
 	},
 
 	/**
 	 * Initialisation de la liste des catégories de traitement
 	 */
-	/*onInitGarbagesWasteTreatmentsCategoriesList : function(list) {
-		var store = Ext
-				.create('VivreANantes.store.WasteTreatmentsCategoriesStore');
-		list.setStore(store);
-	},*/
+	/*
+	 * onInitGarbagesWasteTreatmentsCategoriesList : function(list) { var store =
+	 * Ext .create('VivreANantes.store.WasteTreatmentsCategoriesStore');
+	 * list.setStore(store); },
+	 */
 
 	/**
 	 * Initialisation de la liste des modes de collectes
 	 */
 	onInitGarbagesCollectModList : function(list) {
-		var store = Ext.create('VivreANantes.store.CollectModStore');
-		list.setStore(store);
+		// var store = Ext.create('VivreANantes.store.CollectModStore');
+		// list.setStore(store);
 	},
 
 	/**
 	 * Initialisation de la liste des fiches explicatives de collectes
 	 */
 	onInitGarbagesInformationsList : function(list) {
-		var store = Ext.create('VivreANantes.store.InformationsStore');
-		list.setStore(store);
+		// var store = Ext.create('VivreANantes.store.InformationsStore');
+		// list.setStore(store);
 	},
 
 	/**
 	 * Initialisation de la liste des fiches explicatives de collectes
 	 */
 	onInitGarbagesUsualCategoryList : function(list) {
-		var store = Ext.create('VivreANantes.store.CategorieUsuelleStore');
-		list.setStore(store);
+		// var store = Ext.create('VivreANantes.store.CategorieUsuelleStore');
+		// list.setStore(store);
 	},
 	onGarbagesViewPush : function(view, item) {
 
 		// this.garbagesList().deselectAll();
 
 	},
-
-	
 
 	showGarbagesDetail : function(button, e, eOpts) {
 
@@ -349,87 +349,111 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				this.garbageDetail = Ext
 						.create('VivreANantes.view.garbages.GarbagesDetails');
 			}
-			var title = "<I>" + this.translate("label_dechet") + "</I> "
-					+ record.data["nom"];
-			this.garbageDetail.setTitle(title);
+			// var title = "<I>" + this.translate("label_dechet") + "</I> " +
+			// record["nom"];
+			// this.garbageDetail.setTitle(title);
+			this.garbageDetail.setTitle(record["nom"]);
 
 			// var conseilTraduit = "";
 			var conseils = "";
 			var modesDeCollecte = "";
 			var treatmentCategories = "";
-			conseils = record.data["conseils"];
-			modesDeCollecte = record.data["modco"];
-			treatmentCategories = record.data["rec"];
-			/*if (record.data["conseils"] !== '') {
-				conseils = record.data["conseils"] + ",";
-			}
-			// conseils de catégories de traitement
-			if (record.data["categorie_traitement"] !== '') {
-				var dataWasteTreatmentsCategories = this
-						.getWasteTreatmentsCategoriesList().getStore()
-						.getData();
-				dataWasteTreatmentsCategories.each(function(recordCategories) {
-					if (recordCategories.raw["code"] === record.data["categorie_traitement"]) {
-						conseils += recordCategories.raw["conseils"];
-						modesDeCollecte += recordCategories.raw["modesCollecte"];
-						treatmentCategories += recordCategories.raw["recyclable"];
-					}
-				});
-			}*/
+			conseils = record["conseils"];
+			modesDeCollecte = record["modco"];
+			treatmentCategories = record["rec"];
+			/*
+			 * if (record.data["conseils"] !== '') { conseils =
+			 * record.data["conseils"] + ","; } // conseils de catégories de
+			 * traitement if (record.data["categorie_traitement"] !== '') { var
+			 * dataWasteTreatmentsCategories = this
+			 * .getWasteTreatmentsCategoriesList().getStore() .getData();
+			 * dataWasteTreatmentsCategories.each(function(recordCategories) {
+			 * if (recordCategories.raw["code"] ===
+			 * record.data["categorie_traitement"]) { conseils +=
+			 * recordCategories.raw["conseils"]; modesDeCollecte +=
+			 * recordCategories.raw["modesCollecte"]; treatmentCategories +=
+			 * recordCategories.raw["recyclable"]; } }); }
+			 */
 			if (treatmentCategories === "OUI") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR=green size=4>"
+						+ " : " + "<FONT COLOR=green size='4'>"
 						+ this.translate("label_OUI") + "</FONT>";
 			} else if (treatmentCategories === "NON") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='red' size=4>"
+						+ " : " + "<FONT COLOR='red' size='4'>"
 						+ this.translate("label_NON") + "</FONT>";
 			} else if (treatmentCategories === "PAS_POUBELLE") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='orange' size=4>"
+						+ " : " + "<FONT COLOR='orange' size='4'>"
 						+ this.translate("label_NON") + "</FONT>"
 						+ this.translate("label_pas_poubelle");
 			} else if (treatmentCategories === "OUI_ET_NON") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR='orange' size=4>"
+						+ " : " + "<FONT COLOR='orange' size='4'>"
 						+ this.translate("label_pour_collecte_bac_jaune")
 						+ "</FONT>";
 			} else {
 				treatmentCategories = "";
 			}
-			treatmentCategories = this.stringUpperFirstLetter(treatmentCategories);
+			treatmentCategories = this
+					.stringUpperFirstLetter(treatmentCategories);
 
 			// Modes de collecte
-			this.garbageDetail.items.items['0'].items.items['1'].items.items['0'].setData({recyclable_string:treatmentCategories});
+			this.garbageDetail.items.items['0'].items.items['1'].items.items['0']
+					.setData({
+								recyclable_string : treatmentCategories
+							});
 			var modesDeCollecteTraduit = "";
-			
+
 			var arrayItemsToShow = new Array();
-			/*arrayItemsToShow.push({
-						"html" : treatmentCategories
-								+ "<br/><br/>Modes de collecte :",
-						"id" : "garbagesdetails_recyclable"
-					});
-					*/
+			/*
+			 * arrayItemsToShow.push({ "html" : treatmentCategories + "<br/><br/>Modes
+			 * de collecte :", "id" : "garbagesdetails_recyclable" });
+			 */
 			var arrayModesDeCollecte = modesDeCollecte.split(',');
 			// On parcours les modes de collecte
 			if (arrayModesDeCollecte.length > 0) {
-				var dataCollectMods = this.getCollectModList().getStore()
-						.getData();
-				var numModCollect = 0;
-				dataCollectMods.each(function(recordCollectMod) {
+
+				for (j in commonDatasCollectMods) {
 					for (i in arrayModesDeCollecte) {
-						if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
-							var imageValue = recordCollectMod.data['image'];
-							var codeValue = "collectMods_xtype" + thisController.SEPARATOR + recordCollectMod.data['code'];
-							var libelleValue = thisController.stringUpperFirstLetter(recordCollectMod.data['libelle']);
-							arrayItemsToShow.push({image:imageValue,code:codeValue,label:libelleValue});
-							/*arrayItemsToShow.push(thisController
-									.makeLinkButton("collectMods_xtype",
-											arrayModesDeCollecte[i]));
-							*/
+						if (commonDatasCollectMods[j]["code"] === arrayModesDeCollecte[i]) {
+							var imageValue = commonDatasCollectMods[j]["image"];
+							var codeValue = "collectMods_xtype"
+									+ thisController.SEPARATOR
+									+ commonDatasCollectMods[j]["code"];
+							var libelleValue = this
+									.stringUpperFirstLetter(commonDatasCollectMods[j]["libelle"]);
+							arrayItemsToShow.push({
+										image : imageValue,
+										code : codeValue,
+										label : libelleValue
+									});
+
 						}
 					}
-				});
+				}
+
+				// // STORE dataCollectMods
+				// var dataCollectMods =
+				// this.getCollectModList().getStore().getData();
+				// var numModCollect = 0;
+				// dataCollectMods.each(function(recordCollectMod) {
+				// for (i in arrayModesDeCollecte) {
+				// if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i])
+				// {
+				// var imageValue = recordCollectMod.data['image'];
+				// var codeValue = "collectMods_xtype" +
+				// thisController.SEPARATOR + recordCollectMod.data['code'];
+				// var libelleValue =
+				// thisController.stringUpperFirstLetter(recordCollectMod.data['libelle']);
+				// arrayItemsToShow.push({image:imageValue,code:codeValue,label:libelleValue});
+				// /*arrayItemsToShow.push(thisController
+				// .makeLinkButton("collectMods_xtype",
+				// arrayModesDeCollecte[i]));
+				// */
+				// }
+				// }
+				// });
 			}
 			if (modesDeCollecteTraduit !== "") {
 				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
@@ -443,8 +467,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 * descriptionTraduit + "</div>" +
 			 */
 			// image
-			var imageComplet = "<img src='resources/images/"
-					+ record.data["image"] + "' width='150px' />";
+			var imageComplet = "<img src='resources/images/" + record["image"]
+					+ "' width='120px' />";
 			// this.setDataElement(this.garbageDetail,"garbagesdetails_image",
 			// {'image' : imageComplet})
 			this.garbageDetail.items.items['0'].items.items['0'].setData({
@@ -457,21 +481,25 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// var items = "{ xtype : 'container', layout : 'vbox', id :
 			// 'garbagesdetails_recyclableetmodesdecollecte', items : [ { id :
 			// 'garbagesdetails_recyclable', html: 'recyclable : <FONT
-			// COLOR=green size=4>OUI</FONT>'<br/><br/>Modes de collecte :'}]}"
+			// COLOR=green size='3'>OUI</FONT>'<br/><br/>Modes de collecte
+			// :'}]}"
 			// Affecte les modes de collecte
-			
+
 			// this.garbageDetail.items.items['0'].items.items['1'].setItems(arrayItemsToShow);
-			var nbElementsMax = 8;	// la page GarbagesDetails.js affiche 8 éléments
-			this.setDataInButtons(this.garbageDetail.items.items['0'].items.items['1'], 
-									"garbagesdetails_collectmod", arrayItemsToShow, nbElementsMax);
-			//this.setItemsElement(this.garbageDetail,
-			//		"garbagesdetails_recyclableetmodesdecollecte",
-			//		arrayItemsToShow);
+			var nbElementsMax = 8; // la page GarbagesDetails.js affiche 8
+									// éléments
+			this.setDataInButtons(
+					this.garbageDetail.items.items['0'].items.items['1'],
+					"garbagesdetails_collectmod", arrayItemsToShow,
+					nbElementsMax);
+			// this.setItemsElement(this.garbageDetail,
+			// "garbagesdetails_recyclableetmodesdecollecte",
+			// arrayItemsToShow);
 			// Ajout de la description
 			var descriptionTraduit = "";
-			if (record.data["description"] != "") {
+			if (record["description"] != "") {
 				descriptionTraduit = this.translate("label_concerne_aussi")
-						+ " : " + record.data["description"] + "<br/><br/>";
+						+ " : " + record["description"] + "<br/><br/>";
 			}
 			this.setDataElement(this.garbageDetail,
 					"garbagesdetails_description", {
@@ -483,28 +511,33 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// conseilTraduit})
 
 			// Ajout des conseils KO
-			/*var arraysItemsAdvices = this.getItemsAdvices(conseils);
-			this.setItemsElement(this.garbageDetail,
-					"garbagesdetails_conseils", arraysItemsAdvices);*/
-			var nbElementsMax = 2;	// la page GarbagesDetails.js affiche 2 éléments
+			/*
+			 * var arraysItemsAdvices = this.getItemsAdvices(conseils);
+			 * this.setItemsElement(this.garbageDetail,
+			 * "garbagesdetails_conseils", arraysItemsAdvices);
+			 */
+			var nbElementsMax = 2; // la page GarbagesDetails.js affiche 2
+									// éléments
 			var arraysConseils = this.getArrayItemsToShowAdvices(conseils);
-			this.setDatasConseils(this.garbageDetail.items, 
-									"garbagesdetails_conseils", "libelle", arraysConseils.les_libelles, nbElementsMax);
-			this.setDatasConseils(this.garbageDetail.items, 
-									"garbagesdetails_conseils", "bouton", arraysConseils.les_boutons, nbElementsMax);
+			this.setDatasConseils(this.garbageDetail.items,
+					"garbagesdetails_conseils", "libelle",
+					arraysConseils.les_libelles, nbElementsMax);
+			this.setDatasConseils(this.garbageDetail.items,
+					"garbagesdetails_conseils", "bouton",
+					arraysConseils.les_boutons, nbElementsMax);
 			// var arraysItemsAdvices = this.getItemsAdvices(conseils);
 			// this.setItemsElement(this.garbageDetail,
 			// "garbagesdetails_conseils", arraysItemsAdvices);
 
 			// Ajout des commentaires OK
-			var code = record.data["code"];
+			var code = record["code"];
 			// this.setItemsElement(this.garbageDetail,
 			// "garbagesdetails_commentaires", this.getItemsComments(code,
 			// title));
 			var arraysCommentaires = this.getArrayItemsToShowComments(code,
-					title);
-			var nbElementsMax = 3; 
-			// la page GarbagesDetails.js  affiche 3 éléments
+					record["nom"]);
+			var nbElementsMax = 3;
+			// la page GarbagesDetails.js affiche 3 éléments
 			this.setDataInButtons(this.garbageDetail,
 					"garbagesdetails_commentaires",
 					arraysCommentaires.les_libelles, nbElementsMax);
@@ -521,11 +554,11 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 */
 
 			// Bind the record onto the show contact view
-			this.garbageDetail.setData(record.data);
+			this.garbageDetail.setData(record);
 
 			// Push the show contact view into the navigation view
 			this.getGarbagesView().push(this.garbageDetail);
-			
+
 		}
 	},
 
@@ -533,15 +566,22 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	 * Renvoie le mode de collecte
 	 */
 	getElementFromStore : function(idElement) {
-		var result;
-		var datas = this.getApplication()
-				.getController("VivreANantes.controller.GarbagesController")
-				.getGarbagesList().getStore().getData();
-		datas.each(function(record) {
-					if (record.data["code"] === idElement) {
-						result = record;
-					}
-				});
+
+		var result = '';
+
+		for (j in commonDatasGarbages) {
+			if (commonDatasGarbages[j]["code"] === idElement) {
+				result = commonDatasGarbages[j];
+			}
+		}
+		// // STORE datasGarbages
+		// var datas =
+		// this.getApplication().getController("VivreANantes.controller.GarbagesController").getGarbagesList().getStore().getData();
+		// datas.each(function (record) {
+		// if (record.data["code"] === idElement) {
+		// result = record;
+		// }
+		// });
 		return result;
 	},
 
@@ -565,13 +605,12 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		this.filter2();
 		this.getGarbagesView().push(this.garbagesButtonsPanel);
 	},
-	
+
 	onTapGarbagesFormButton : function(button, e, eOpts) {
 		this.getGarbagesFormSelect().setValue('all');
 		this.filter2();
 		this.getGarbagesView().push(this.garbagesButtonsPanel);
 	},
-
 
 	filter2 : function() {
 		var result = new Array();
@@ -580,52 +619,74 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			this.garbagesList = Ext
 					.create('VivreANantes.view.garbages.GarbagesList');
 		}
-		var arrayItemsToShow = this.getGarbagesList().getStore().getData();
 
-		if (arrayItemsToShow.length > 0) {
+		var text = this.utilRetireAccent(this.getGarbagesFormText().getValue());
+		var category = this.getGarbagesFormSelect();
+		var escaperegex = Ext.String.escapeRegex;
 
-			var text = this.getGarbagesFormText();
-			var category = this.getGarbagesFormSelect();
-			var escaperegex = Ext.String.escapeRegex;
-			// var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
-			// var temp = text.getValue();
-			// var texttest = new RegExp(/vaisselle/gi);
-			
-			var categorietest = new RegExp(category.getValue());
+		for (var j = 0; j < commonDatasGarbages.length; j++) {
 
-			var theItems = arrayItemsToShow.items;
-			for (var i = 0; i < theItems.length; i++) {
-				var aData = theItems[i].data;
-				// Important : il faut recréer l'expression régulière à chaque fois sinon les résultats sont faux !
-				var texttest = new RegExp(escaperegex(text.getValue()), 'ig');
-				var nom_description_sansAccents = aData["nom_description_sansAccents"];
-				if ((aData["categorie_usuelle"] === category.getValue() || category
-						.getValue() === "all")
-						&& texttest.test(nom_description_sansAccents)) {
-					// Ajoute les <br/>
-					var stLibelle = this.decoupe(aData["nom"]);
-					result.push({
-								// id : aData["code"],
-								//code : aData["code"],
-								code : aData["code"],
-								// libelle : stLibelle,
-								label : stLibelle,
-								image : aData["image"]
-							});
-				}
+			// Important : il faut recréer l'expression régulière à chaque fois
+			// sinon les résultats sont faux !
+			// var text = text.getValue());
+			var texttest = new RegExp(escaperegex(text), 'ig');
+			var nom_description_sansAccents = commonDatasGarbages[j]["nom_description_sansAccents"];
+			if ((commonDatasGarbages[j]["categoriesUsuelles"] === category
+					.getValue() || category.getValue() === "all")
+					&& texttest.test(nom_description_sansAccents)) {
+				// Ajoute les <br/>
+				var stLibelle = this.decoupe(commonDatasGarbages[j]["nom"]);
+				result.push({
+							code : commonDatasGarbages[j]["code"],
+							label : stLibelle,
+							image : commonDatasGarbages[j]["image"]
+						});
 			}
 		}
-			if (this.garbagesButtonsPanel == null) {
-				this.garbagesButtonsPanel = Ext
-						.create('VivreANantes.view.garbages.GarbageButtonsPanel');
-			}
-			// var arrayItems = this.getContentButtonsPanel(result);
-			
-			// this.removeAllAndSetItems(this.garbagesButtonsPanel, arrayItems);
-			var nbGarbagesMax = 39;	// la page GarbageButtonsPanel.js affiche 39 éléments
-			this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel, 
-									"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);
-			
+
+		// // STORE datasGarbages
+		// var arrayItemsToShow = this.getGarbagesList().getStore().getData();
+		// if (arrayItemsToShow.length > 0) {
+		//
+		// var text =
+		// this.utilRetireAccent(this.getGarbagesFormText().getValue());
+		// var category = this.getGarbagesFormSelect();
+		// var escaperegex = Ext.String.escapeRegex;
+		//
+		// var theItems = arrayItemsToShow.items;
+		// for (var i = 0; i < theItems.length; i++) {
+		// var aData = theItems[i].data;
+		// // Important : il faut recréer l'expression régulière à chaque fois
+		// sinon les résultats sont faux !
+		// // var text = text.getValue());
+		// var texttest = new RegExp(escaperegex(text), 'ig');
+		// var nom_description_sansAccents =
+		// aData["nom_description_sansAccents"];
+		// if ((aData["categorie_usuelle"] === category.getValue() || category
+		// .getValue() === "all")
+		// && texttest.test(nom_description_sansAccents)) {
+		// // Ajoute les <br/>
+		// var stLibelle = this.decoupeAvecTaille(aData["nom"], 20);
+		// result.push({
+		// code : aData["code"],
+		// label : stLibelle,
+		// image : aData["image"]
+		// });
+		// }
+		// }
+		// }
+		if (this.garbagesButtonsPanel == null) {
+			this.garbagesButtonsPanel = Ext
+					.create('VivreANantes.view.garbages.GarbageButtonsPanel');
+		}
+		// var arrayItems = this.getContentButtonsPanel(result);
+
+		// this.removeAllAndSetItems(this.garbagesButtonsPanel, arrayItems);
+		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39
+								// éléments
+		this.setDataInButtonsWithManyLines(this.garbagesButtonsPanel,
+				"garbagesButtonsPanel_garbage", result, nbGarbagesMax, 3);
+
 	}
 
 });

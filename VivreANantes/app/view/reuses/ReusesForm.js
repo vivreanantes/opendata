@@ -15,7 +15,7 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 				// value : 'all'
 				value : /smco_reempdivers|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempinfo|smco_reempjouet|smco_reemplivreCD|smco_reempmeuble|smco_reemplunettes|smco_reempvet|smco_conteneurlerelais/g
 			}, {
-				text : "Cartouches d'encres, tuners",
+				text : "Cartouches encres/tuners",
 				value : "smco_reempcartouchetoner"
 			}, {
 				text : "Electroménager, meubles",
@@ -27,7 +27,7 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 				text : "Jouets",
 				value : "smco_reempjouet"
 			}, {
-				text : "Livres, CDs, BDs...",
+				text : "Livres/BD/CD/DVD...",
 				value : "smco_reemplivreCD"
 			}, {
 				text : "Vêtements (dont Le Relais)",

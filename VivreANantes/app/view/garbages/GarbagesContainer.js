@@ -12,7 +12,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesContainer', {
 				scrollable : true,
 				items : [{
 							xtype : 'garbagesForm_xtype',
-							height : 100
+							height : 70
 						}, {
 							xtype : 'usualCategoriesButtonsPanel_xtype'
 						},

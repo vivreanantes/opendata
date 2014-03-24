@@ -184,12 +184,12 @@ Ext.define('VivreANantes.controller.AbstractController', {
 						+ arrayItemsToShow[i]["libelle"] + "</font>";
 				arrayitemsLine.push({
 							xtype : "button",
-							height : '120px',
+							height : '100px',
 							width : '33%',
 							id : arrayItemsToShow[i]["id"],
 							// code : arrayItemsToShow[i]["id"],
-							html : "<center>" + libelle
-									+ "<br/><img src='resources/images/"
+							html : "<center><font size='3'>" + libelle
+					 + "</font><br/><img src='resources/images/"
 									+ arrayItemsToShow[i]["image"]
 									+ "' /></center>"
 						});
@@ -283,76 +283,84 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *         l'élément dont on recherche des commentaires (ex :
 	 *         "dec_bouchons")
 	 */
-	getItemsComments : function(commentsString, title) {
+		getItemsComments : function (commentsString, title) {
 		var result = new Array();
-		var thisController = this;
 
 		// On parcourt les remarques de la faq
-		var dataFaq = this.getApplication()
-				.getController("VivreANantes.controller.CommentsController")
-				.getCommentsList().getStore().getData();
-		var nombre = 0;
-		dataFaq.each(function(recordFaq) {
-					if (recordFaq.raw["elements"] != null) {
-						// TODO utiliser getArrayFromString à la place
-						var arrayElementsFaq = recordFaq.raw["elements"]
-								.replace(", /g", ",").replace(" ,/g", ",")
-								.split(',');
-						for (i in arrayElementsFaq) {
+		for (j in commonDatasComments) {
+			if (commonDatasComments[j]["elements"] != null) {
 
-							if (arrayElementsFaq[i] === commentsString) {
-								result.push({
-											html : "<B>"
-													+ recordFaq.raw["libelle"]
-													+ "</B><BR/>"
-													+ recordFaq.raw["description"]
-													+ "<br/>",
-											style : "background-color:"
-													+ thisController
-															.getColorPairImpair(nombre)
-										});
-								nombre++;
-							}
-
+				if (commonDatasComments[j]["elements"]!=null) {
+					// TODO utiliser getArrayFromString à la place
+					var arrayElementsFaq = commonDatasComments[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+					for (i in arrayElementsFaq) {
+	
+						if (arrayElementsFaq[i] === commentsString) {
+							result.push({
+								html : "<B>" + commonDatasComments[j]["libelle"] + "</B><BR/>" + commonDatasComments[j]["description"] + "<br/>"
+								//, style : "background-color:" + this.getColorPairImpair(nombre)
+							});
+							// nombre++;
 						}
-					}
-				});
-		// TODO Ajout d'un formulaire
-		title = title.replace("-/g", "_").replace("<I>", "")
-				.replace("</I>", "");
-		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " ("
-				+ commentsString + ")";
-		result.push(
-				
-				{
-					xtype : 'button',
-					width: 200,
-					id : "garbagesdetails_informations",
-					text : "Envoyez un commentaire",
-					data : {
-						code : codeValue
-					}
-				}
-				/*
-				 * { xtype : 'button', text : 'Envoyez un commentaire', centered :
-				 * 'true', data : { code : codeValue } }
-				 */
 
-				/*{
+				}
+				}
+			}
+		}
+
+		//		// STORE datasComments
+		//		var thisController = this;
+		//		var dataFaq = this.getApplication().getController("VivreANantes.controller.CommentsController").getCommentsList().getStore().getData();
+		//		var nombre = 0;
+		//		dataFaq.each(function (recordFaq) {
+		//			if (recordFaq.raw["elements"] != null) {
+		//				// TODO utiliser getArrayFromString à la place
+		//				var arrayElementsFaq = recordFaq.raw["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+		//				for (i in arrayElementsFaq) {
+		//
+		//					if (arrayElementsFaq[i] === commentsString) {
+		//						result.push({
+		//							html : "<B>" + recordFaq.raw["libelle"] + "</B><BR/>" + recordFaq.raw["description"] + "<br/>",
+		//							style : "background-color:" + thisController.getColorPairImpair(nombre)
+		//						});
+		//						nombre++;
+		//					}
+		//
+		//				}
+		//			}
+		//		});
+		// TODO Ajout d'un formulaire
+		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
+		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " (" + commentsString + ")";
+		result.push({
+			xtype : 'button',
+			width : 200,
+			id : "garbagesdetails_informations",
+			text : "Envoyer un commentaire",
+			data : {
+				code : codeValue
+			}
+		}
+			/*
+			 * { xtype : 'button', text : 'Envoyer un commentaire', centered :
+			 * 'true', data : { code : codeValue } }
+			 */
+
+			/*{
 			xtype : 'container',
 			layout : 'vbox',
 			padding : '20 200 20 200',
 			style : "background-color:"
-					+ thisController.getColorPairImpair(nombre),
+			+ thisController.getColorPairImpair(nombre),
 			items : [{
-						xtype : 'button',
-						width: 200,
-						id : "garbagesdetails_informations",
-						text : "Envoyez un commentaire",
-						data : {
-							code : codeValue
-						}
-					}]*/
+			xtype : 'button',
+			width: 200,
+			id : "garbagesdetails_informations",
+			text : "Envoyer un commentaire",
+			data : {
+			code : codeValue
+			}
+			}]*/
 		);
 		return result;
 	},
@@ -401,39 +409,57 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 * @params advicesString chaine de caractère listant les codes des conseils
 	 *         (ex : ",cons_1,cons2,cons3")
 	 */
-	getArrayItemsToShowAdvices : function(advicesString) {
+		getArrayItemsToShowAdvices : function (advicesString) {
 		var result1 = new Array();
 		var result2 = new Array();
-		var thisController = this;
-		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
-				",").split(',');
-		// On parcourt les conseils
-		if (arrayConseils.length > 0) {
-			var dataAdvices = this
-					.getApplication()
-					.getController("VivreANantes.controller.GarbagesController")
-					.getAdvicesList().getStore().getData();
-			var thisController = this;
-			dataAdvices.each(function(recordAdvice) {
-				for (i in arrayConseils) {
-					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-						result1.push({
-									libelle : recordAdvice.raw["libelle"],
-									description : recordAdvice.raw["description"]
+		if (advicesString!=null) {
+			var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g", ",").split(',');
+			
+			// On parcourt les conseils
+			if (arrayConseils.length > 0) {
+				for (j in commonDatasAdvices) {
+					for (i in arrayConseils) {
+						if (commonDatasAdvices[j]["code"] === arrayConseils[i]) {
+							result1.push({
+								libelle : commonDatasAdvices[j]["libelle"],
+								description : commonDatasAdvices[j]["description"]
+							});
+							if (commonDatasAdvices[j]["fiche"] != null
+								 && commonDatasAdvices[j]["fiche"] != "") {
+								result2.push({
+									"libelle" : commonDatasAdvices[j]["libelle"],
+									code : "informations" + this.SEPARATOR + commonDatasAdvices[j]["fiche"]
 								});
-						if (recordAdvice.raw["fiche"] != null
-								&& recordAdvice.raw["fiche"] != "") {
-							result2.push({
-										"libelle" : recordAdvice.raw["libelle"],
-										code : "informations"
-												+ thisController.SEPARATOR
-												+ recordAdvice.raw["fiche"]
-									});
+							}
 						}
 					}
 				}
-			});
+			}
 		}
+
+		//		var thisController = this;
+		//		if (arrayConseils.length > 0) {
+		//			// STORE datasAdvices
+		//			var dataAdvices = this.getApplication()getController("VivreANantes.controller.GarbagesController").getAdvicesList().getStore().getData();
+		//			var thisController = this;
+		//			dataAdvices.each(function (recordAdvice) {
+		//				for (i in arrayConseils) {
+		//					if (recordAdvice.raw["code"] === arrayConseils[i]) {
+		//						result1.push({
+		//							libelle : recordAdvice.raw["libelle"],
+		//							description : recordAdvice.raw["description"]
+		//						});
+		//						if (recordAdvice.raw["fiche"] != null
+		//							 && recordAdvice.raw["fiche"] != "") {
+		//							result2.push({
+		//								"libelle" : recordAdvice.raw["libelle"],
+		//								code : "informations" + thisController.SEPARATOR + recordAdvice.raw["fiche"]
+		//							});
+		//						}
+		//					}
+		//				}
+		//			});
+		//		}
 		return {
 			les_libelles : result1,
 			les_boutons : result2
@@ -477,36 +503,47 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 	},
 
-	getArrayItemsToShowComments : function(commentsString, title) {
+	getArrayItemsToShowComments : function (commentsString, title) {
 		var result = new Array();
-		var thisController = this;
 
 		// On parcourt les remarques de la faq
-		var dataFaq = this.getApplication()
-				.getController("VivreANantes.controller.CommentsController")
-				.getCommentsList().getStore().getData();
-		dataFaq.each(function(recordFaq) {
-					if (recordFaq.raw["elements"] != null) {
-						// TODO utiliser getArrayFromString à la place
-						var arrayElementsFaq = recordFaq.raw["elements"]
-								.replace(", /g", ",").replace(" ,/g", ",")
-								.split(',');
-						for (i in arrayElementsFaq) {
+		for (j in commonDatasComments) {
+			if (commonDatasComments[j]["elements"] != null) {
+				// TODO utiliser getArrayFromString à la place
+				var arrayElementsFaq = commonDatasComments[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+				for (i in arrayElementsFaq) {
 
-							if (arrayElementsFaq[i] === commentsString) {
-								result.push({
-											libelle : recordFaq.raw["libelle"],
-											description : recordFaq.raw["description"]
-										});
-							}
-
-						}
+					if (arrayElementsFaq[i] === commentsString) {
+						result.push({
+							libelle : commonDatasComments[j]["libelle"],
+							description : commonDatasComments[j]["description"]
+						});
 					}
-				});
-		title = title.replace("-/g", "_").replace("<I>", "")
-				.replace("</I>", "");
-		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " ("
-				+ commentsString + ")";
+				}
+			}
+		}
+
+		//		// STORE datasComments
+		//		var thisController = this;
+		//		var dataFaq = this.getApplication().getController("VivreANantes.controller.CommentsController").getCommentsList().getStore().getData();
+		//		dataFaq.each(function (recordFaq) {
+		//			if (recordFaq.raw["elements"] != null) {
+		//				// TODO utiliser getArrayFromString à la place
+		//				var arrayElementsFaq = recordFaq.raw["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+		//				for (i in arrayElementsFaq) {
+		//
+		//					if (arrayElementsFaq[i] === commentsString) {
+		//						result.push({
+		//							libelle : recordFaq.raw["libelle"],
+		//							description : recordFaq.raw["description"]
+		//						});
+		//					}
+		//
+		//				}
+		//			}
+		//		});
+		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
+		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " (" + commentsString + ")";
 		return {
 			les_libelles : result,
 			le_titre : codeValue
@@ -520,69 +557,58 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 * @params advicesString chaine de caractère listant les codes des conseils
 	 *         (ex : ",cons_1,cons2,cons3")
 	 */
-	getItemsAdvices : function(advicesString) {
+	getItemsAdvices : function (advicesString) {
 		var result = new Array();
 		var thisController = this;
 		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
 				",").split(',');
 		// On parcourt les conseils
 		if (arrayConseils.length > 0) {
-			var dataAdvices = this
-					.getApplication()
-					.getController("VivreANantes.controller.GarbagesController")
-					.getAdvicesList().getStore().getData();
-			var thisController = this;
-			dataAdvices.each(function(recordAdvice) {
+
+			for (j in commonDatasAdvices) {
+				// STORE datasAdvices
+				// var dataAdvices = this.getApplication().getController("VivreANantes.controller.GarbagesController").getAdvicesList().getStore().getData();
+				// var thisController = this;
+				// dataAdvices.each(function (recordAdvice) {
 				for (i in arrayConseils) {
-					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-						if (recordAdvice.raw["fiche"] != null
-								&& recordAdvice.raw["fiche"] != "") {
+					if (commonDatasAdvices[j]["code"] === arrayConseils[i]) {
+						if (commonDatasAdvices[j]["fiche"] != null && commonDatasAdvices[j]["fiche"] != "") {
 							// lien vers une fiche
 							result.push({
+								xtype : 'container',
+								layout : 'hbox',
+								id : "garbagesdetails_commentaires_" + commonDatasAdvices[j]["code"],
+								items : [{
+										html : "<b>" + commonDatasAdvices[j]["libelle"] + "</b><br/>" + commonDatasAdvices[j]["description"] + "<br/><br/>",
+										flex : 1
+									}, {
 										xtype : 'container',
-										layout : 'hbox',
-										// style : 'background-color: #759E60;',
-										id : "garbagesdetails_commentaires_"
-												+ recordAdvice.raw["code"],
+										layout : 'vbox',
 										items : [{
-											html : "<b>"
-													+ recordAdvice.raw["libelle"]
-													+ "</b><br/>"
-													+ recordAdvice.raw["description"]
-													+ "<br/><br/>",
-											flex : 1
-										}, {
-											xtype : 'container',
-											layout : 'vbox',
-											items : [{
 												xtype : 'button',
 												id : "garbagesdetails_informations",
 												text : "Plus d'infos",
 												data : {
-													code : "informations"
-															+ thisController.SEPARATOR
-															+ recordAdvice.raw["fiche"]
+													code : "informations" + thisController.SEPARATOR + commonDatasAdvices[j]["fiche"]
 												}
-											}]
-										}]
-									});
+											}
+										]
+									}
+								]
+							});
 						}
 
 						// pas de lien vers une fiche
 						else {
 							result.push({
-										id : "garbagesdetails_commentaires_"
-												+ recordAdvice.raw["code"],
-										html : "<b>"
-												+ recordAdvice.raw["libelle"]
-												+ "<br/></b>"
-												+ recordAdvice.raw["description"]
-												+ "<br/><br/>"
-									});
+								id : "garbagesdetails_commentaires_" + commonDatasAdvices[j]["code"],
+								html : "<b>" + commonDatasAdvices[j]["libelle"] + "<br/></b>" + commonDatasAdvices[j]["description"] + "<br/><br/>"
+							});
 						}
 					}
 				}
-			});
+				// });
+			}
 		}
 		return result;
 	},
@@ -693,63 +719,73 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *            buttonId : mainPageXtype + elementToShowInPage (ex :
 	 *            "garbagesView-dec_aerosols")
 	 */
-	manageLinkButtons : function(buttonId) {
+		manageLinkButtons : function (buttonId) {
 
 		// On décompose buttonId pour initialiser mainPageXtype et
 		// elementToShowInPage
 		var arrayButtonsId = buttonId.split(this.SEPARATOR);
 		var mainPageXtype = arrayButtonsId[0];
+
+		var elementToShowInPage = "";
 		if (arrayButtonsId.length > 1) {
-			var elementToShowInPage = arrayButtonsId[1];
+			elementToShowInPage = arrayButtonsId[1];
 		}
 
 		// On affiche le déchet
 		if (mainPageXtype == "garbages_xtype") {
-			var myController = this
-					.getApplication()
-					.getController("VivreANantes.controller.GarbagesController");
-			var datas = myController.getGarbagesList().getStore().getData();
-			datas.each(function(record) {
-						if (record.data["code"] == elementToShowInPage) {
-							// On doit effacer le filtre pour être sur que la
-							// liste contient bien l'élément
-							store.clearFilter();
-							myController.showGarbagesDetail(null, null, null,
-									record);
-						}
-					});
+
+			var garbagesController = this.getApplication().getController("VivreANantes.controller.GarbagesController");
+			for (j in commonDatasGarbages) {
+				if (commonDatasGarbages[j]["code"] == elementToShowInPage) {
+					// On doit effacer le filtre pour être sur que la liste contient bien l'élément
+					store.clearFilter();
+					garbagesController.showGarbagesDetail(null, null, null, commonDatasGarbages[j]);
+				}
+			}
+			//			// STORE datasGarbages
+			//			var myController = this.getApplication().getController("VivreANantes.controller.GarbagesController");
+			//			var datas = myController.getGarbagesList().getStore().getData();
+			//			datas.each(function (record) {
+			//				if (record.data["code"] == elementToShowInPage) {
+			//					// On doit effacer le filtre pour être sur que la liste contient bien l'élément
+			//					store.clearFilter();
+			//					myController.showGarbagesDetail(null, null, null, record);
+			//				}
+			//			});
 		}
 		// OU On affiche le mode de collecte
 		else if (mainPageXtype == "collectMods_xtype") {
-			var myController = this
-					.getApplication()
-					.getController("VivreANantes.controller.CollectModsController");
+			var myController = this.getApplication().getController("VivreANantes.controller.CollectModsController");
 			if (elementToShowInPage != null) {
 				myController.showDetails(elementToShowInPage);
 			}
 		}
 		// OU On affiche la fiche explicative
 		else if (mainPageXtype == "informations") {
-			var myController = this
-					.getApplication()
-					.getController("VivreANantes.controller.GarbagesController");
-			var datas = myController.getInformationsList().getStore().getData();
-			myController = this
-					.getApplication()
-					.getController("VivreANantes.controller.InformationsController");
-			// CRN_TEMPO
-			datas.each(function(record) {
-						// bascule vers la page
-						if (record.data["code"] == elementToShowInPage) {
-							myController.showDetails(elementToShowInPage);
-						}
-					});
+
+			informationsController = this.getApplication().getController("VivreANantes.controller.InformationsController");
+			for (j in commonDatasInformations) {
+				if (commonDatasInformations[j]["code"] == elementToShowInPage) {
+					informationsController.showDetails(elementToShowInPage);
+				}
+			}
+
+			//			// STORE datasInformations
+			//			var myController = this	.getApplication().getController("VivreANantes.controller.GarbagesController");
+			//			var datas = myController.getInformationsList().getStore().getData();
+			//			myController = this.getApplication().getController("VivreANantes.controller.InformationsController");
+			//			// CRN_TEMPO
+			//			datas.each(function (record) {
+			//				// bascule vers la page
+			//				if (record.data["code"] == elementToShowInPage) {
+			//					myController.showDetails(elementToShowInPage);
+			//				}
+			//			});
 
 		}
 		// OU On affiche le commentaire
 		else if (mainPageXtype == "comments_xtype") {
-			Ext.getCmp("commentsFormTextfield").setValue("A propos de '"
-					+ elementToShowInPage + "'");
+			Ext.getCmp("commentsFormTextfield").setValue("A propos de '" + elementToShowInPage + "'");
 			Ext.getCmp("commentsFormTextareafield").setValue("");
 		}
 
@@ -774,58 +810,61 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *         créer des boutons)
 	 */
 	getDatasForButtons : function(datas, buttonLabel) {
-		var arrayItemsToShow = new Array();
+			var arrayItemsToShow = new Array();
 		var thisController = this;
-		datas.each(function(record) {
-					if (record.data["bouton"] == buttonLabel) {
+		datas.each(function (record) {
+			if (record.data["bouton"] == buttonLabel) {
 
-						// Ajoute les <br/>
-						var stLibelle = thisController
-								.decoupe(record.data["libelle"]);
+				// Ajoute les <br/>
+				var stLibelle = thisController.decoupe(record.data["libelle"]);
 
-						arrayItemsToShow.push({
-									"libelle" : stLibelle,
-									"image" : record.data["image"],
-									"id" : record.data["code"]
-								});
-					}
-
+				arrayItemsToShow.push({
+					"libelle" : stLibelle,
+					"image" : record.data["image"],
+					"id" : record.data["code"]
 				});
+			}
+
+		});
 		return arrayItemsToShow;
 	},
+	
+	
+	
+	/**
+	 * Renvoie les boutons d'après le data
+	 *
+	 * @param {Array} data objet correspond aux boutons
+	 * @param {string} buttonLabel le label du bouton a affiche (exemple "cu"
+	 *            pour "catégories usuelles")
+	 * @return {Array} tableau des items (les items sont des objets permettant de
+	 *         créer des boutons)
+	 */
+	getArrayItemsToShowForButtons : function (datas, buttonLabel) {
+		var arrayItemsToShow = new Array();
+		for (var i = 0; i < datas.length; i++) {
+			if (datas[i].bouton == buttonLabel) {
+				var stLibelle = this.decoupe(datas[i]["libelle"]); // Ajoute les <br/>
+				arrayItemsToShow.push({
+					"libelle" : stLibelle,
+					"image" : datas[i].image,
+					"id" : datas[i].code
+				});
+			}
+		};
+		return arrayItemsToShow;
+	},
+	
 	/**
 	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
 	 * des balises "<br/>
 	 */
-	decoupe : function(stChaine) {
-		var result = "";
-		if (stChaine != undefined) {
-			var iTailleMax = 30;
-
-			// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
-			var array = stChaine.split(/, | ,| -|- |-| /);
-			var tailleRestanteLigne = iTailleMax;
-			for (var i = 0; i < array.length; i++) {
-				result += array[i];
-				tailleRestanteLigne = tailleRestanteLigne - array[i].length;
-				// Si il reste des mots
-				if (i + 1 < array.length) {
-					// Si le prochain mot n'est pas trop long, on ajoute juste
-					// un
-					// espace
-					if (array[i + 1].length <= tailleRestanteLigne) {
-						result += " ";
-						tailleRestanteLigne = tailleRestanteLigne - 1;
-					}
-					// Sinon on ajoute un retour à la ligne
-					else {
-						result += "<br/>";
-						tailleRestanteLigne = iTailleMax;
-					}
-				}
-			}
-		}
-		return result;
+	/**
+	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
+	 * des balises "<br/>. La taille est celle par défaut.
+	 */
+	decoupe : function (stChaine) {
+		return _decoupe(stChaine, 30);
 	}
 });
 

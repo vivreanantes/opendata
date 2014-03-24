@@ -8,7 +8,8 @@ Ext.define('VivreANantes.view.comments.Comments', {
 			config : {
 				autoDestroy : false,
 				iconCls : 'compose', // icône en forme de crayon
-				title : 'Commentaires',
+				title : 'Contacts', // Titre de l'icône
+				scrollable : 'true',
 				items : [{
 							xtype : 'commentsContainer_xtype'
 						}

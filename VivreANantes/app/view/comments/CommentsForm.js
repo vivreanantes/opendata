@@ -1,5 +1,5 @@
 /**
- * Formulaire d'envoie d'un commentaire
+ * Formulaire d'envoi d'un commentaire
  */
 Ext.define('VivreANantes.view.comments.CommentsForm', {
 			extend : 'Ext.form.FormPanel',
@@ -13,14 +13,10 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 				items : [{
 							xtype : 'fieldset',
 							// instructions : '(courriel pas vide)',
-							items : [
-									{
-										xtype : 'label',
-										html : "<I>Nous recevons vos commentaires par mail. Merci.</I>"
-									},{
+							items : [{
 										xtype : 'emailfield',
 										name : 'email',
-										label : 'Courriel *'
+										label : 'Email *'
 									},
 									{
 										xtype : 'textfield',
@@ -31,20 +27,21 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 										xtype : 'textareafield',
 										name : 'message',
 										label : 'Message',
-										id : 'commentsFormTextareafield'
+										id : 'commentsFormTextareafield',
+										placeHolder : "Commentaires sur l'application ou la filière tri"
 									}]
 						}, {
 							xtype : 'button',
-							text : 'Envoyez',
+							text : 'Envoyer',
 							iu : 'confirm',
 							handler : function() {
 
 								this.up("commentsForm_xtype").submit({
 										failure : function(form, result) {
 										if (result.failure != null) {
-											 Ext.Msg.alert("Envoi message", "Echec de l'envoie : " + result.failure);
+											 Ext.Msg.alert("Envoi message", "Echec de l'envoi : " + result.failure);
 										} else {
-											 Ext.Msg.alert("Envoi message", "Echec de l'envoie.");
+											 Ext.Msg.alert("Envoi message", "Echec de l'envoi.");
 										}
 									},
 									success : function(form, result) {

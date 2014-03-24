@@ -8,7 +8,7 @@ Ext.define('VivreANantes.view.reuses.Reuses', {
 			config : {
 				autoDestroy : false,
 				iconCls : 'reply', // icône en forme de flèche vers la gauche
-				title : 'Réemploi',
+				title : 'Récup',
 				items : [{
 							xtype : 'reusesContainer_xtype'
 						}

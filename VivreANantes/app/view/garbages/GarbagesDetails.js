@@ -1,11 +1,11 @@
 Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 	extend : 'Ext.Container',
 	xtype : 'garbagesDetails_xtype',
-	scrollable : true,
 	record : null,
 	config : {
 		title : 'Détails',
 		styleHtmlContent : true,
+		scrollable : true,
 		layout : 'vbox',
 		items : [{
 			xtype : 'container',
@@ -13,7 +13,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 			items : [{
 						id : "garbagesdetails_image",
 						tpl : "{image}",
-						styleHtmlContent : true,
+						// styleHtmlContent : true,
 						data : {
 							image : ""
 						}
@@ -121,8 +121,9 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_1_bouton",
-						text : "Plus d'infos",
-						width:"150px"
+						text : "+",
+						width:"150px",
+						height:"50px"
 					}]
 		}, {
 			// Le deuxieme conseil
@@ -136,8 +137,9 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_2_bouton",
-						text : "Plus d'infos",
-						width:"150px"
+						text : "+",
+						width:"150px",
+						height:"50px"
 					}]
 		}, {
 			id : "garbagesdetails_commentaires"
