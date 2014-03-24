@@ -2,7 +2,7 @@ var commonDatasCollectMods = [{
 	"code" : "modco_contmpb",
 	"libelle" : "Conteneur plastique",
 	"modesCollecte" : "false",
-	"description" : "<IMG SRC='resources/images/conteneur_plastique_instructions_mini.png' width='250px' /><IMG SRC='resources/images/conteneur_plastique_instructions_2.png' width='250px' /><BR/>On peut mettre dans le conteneur plastique tous les bouteilles transparentes (eau, soda), les bouteilles de lait, bouteille d'huile (en plastique), les flacons (lessive, javel, nettoyant ménager...) sauf ceux ayant contenus des produits toxiques (ayant une croix rouge) ou inflammables (flamme rouge). On ne doit pas mettre les barquettes en polystyrène, les pots de yaourts, les sacs plastiques de supermarchén.",
+	"description" : "<IMG SRC='resources/images/conteneur_plastique_instructions_mini.png' width='250px' /><IMG SRC='resources/images/conteneur_plastique_instructions_2.jpg' width='250px' /><BR/>On peut mettre dans le conteneur plastique tous les bouteilles transparentes (eau, soda), les bouteilles de lait, bouteille d'huile (en plastique), les flacons (lessive, javel, nettoyant ménager...) sauf ceux ayant contenus des produits toxiques (ayant une croix rouge) ou inflammables (flamme rouge). On ne doit pas mettre les barquettes en polystyrène, les pots de yaourts, les sacs plastiques de supermarchén.",
 	"bouton" : "modco",
 	"image" : "conteneur_plastique_mini.png",
 	"commentaire" : "faq_fiche_lombricompost"
@@ -10,7 +10,7 @@ var commonDatasCollectMods = [{
 	"code" : "modco_contpapiercarton",
 	"libelle" : "Conteneur papier carton",
 	"modesCollecte" : "false",
-	"description" : "<IMG SRC='resources/images/conteneur_carton_instructions.png' width='250px' /> <IMG SRC='resources/images/conteneur_carton_instructions_2.png' width='250px' /><BR/>On peut mettre dans le conteneur papier et carton : cartons (bruns), cartonnettes, emballage en carton, enveloppe, feuilles, journaux, magazines, prospectus,  boîte à œuf en carton.",
+	"description" : "<IMG SRC='resources/images/conteneur_carton_instructions.jpg' width='250px' /> <IMG SRC='resources/images/conteneur_carton_instructions_2.jpg' width='250px' /><BR/>On peut mettre dans le conteneur papier et carton : cartons (bruns), cartonnettes, emballage en carton, enveloppe, feuilles, journaux, magazines, prospectus,  boîte à œuf en carton.",
 	"conseils" : "cons_souille",
 	"bouton" : "modco",
 	"image" : "conteneur_carton_mini.png"
@@ -18,7 +18,7 @@ var commonDatasCollectMods = [{
 	"code" : "modco_contverre",
 	"libelle" : "Conteneur verre",
 	"modesCollecte" : "false",
-	"description" : "<IMG SRC='resources/images/conteneur_verre_instructions_2.png' WIDTH='200px' /> <IMG SRC='resources/images/conteneur_verre_instructions.png' WIDTH='200px' /><BR/>On peut mettre dans le conteneur verre tour le verre ménager : bouteilles, pots, bocaux. En revanche il ne faut pas mettre la vaisselle, les pôts, les ampoules.",
+	"description" : "<IMG SRC='resources/images/conteneur_verre_instructions_2.jpg' WIDTH='200px' /> <IMG SRC='resources/images/conteneur_verre_instructions.jpg' WIDTH='200px' /><BR/>On peut mettre dans le conteneur verre tour le verre ménager : bouteilles, pots, bocaux. En revanche il ne faut pas mettre la vaisselle, les pôts, les ampoules.",
 	"conseils" : "cons_verre,cons_sans_bouchon_ni_couvercle,cons_nbconteneurverre",
 	"bouton" : "modco",
 	"image" : "conteneur_verre_mini.png"
@@ -26,7 +26,7 @@ var commonDatasCollectMods = [{
 	"code" : "modco_contembjournmag",
 	"libelle" : "Conteneur embal. journ. mag.",
 	"modesCollecte" : "false",
-	"description" : "<IMG SRC='resources/images/conteneur_emballages_journaux_magazines_instructions.png' width='250px' /> <IMG SRC='resources/images/conteneur_emballages_journaux_magazines_instructions2.png' width='250px' /><BR/>On peut mettre dans le conteneur emballages journaux magazines : boîte de conserve, barquette aluminium, cannette, aérosol, bouteille métal sirop, bouteilles d'eau, flacon, brique (jus de fruit, lait), cartonnettes, papier, journaux, magazines",
+	"description" : "<IMG SRC='resources/images/conteneur_emballages_journaux_magazines_instructions.jpg' width='250px' /> <IMG SRC='resources/images/conteneur_emballages_journaux_magazines_instructions2.jpg' width='250px' /><BR/>On peut mettre dans le conteneur emballages journaux magazines : boîte de conserve, barquette aluminium, cannette, aérosol, bouteille métal sirop, bouteilles d'eau, flacon, brique (jus de fruit, lait), cartonnettes, papier, journaux, magazines",
 	"conseils" : "cons_sans_bouchon_ni_couvercle",
 	"bouton" : "modco",
 	"image" : "conteneur_emballages_journaux_magazines_mini.png"
@@ -66,7 +66,7 @@ var commonDatasCollectMods = [{
 	"code" : "modco_ecopoint",
 	"libelle" : "Ecopoint",
 	"modesCollecte" : "false",
-	"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.png' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
+	"description" : "<IMG SRC='resources/images/ecopoint_panneau_labeaujoire.jpg' WIDTH='300px' ALIGN='right' /><IMG SRC='resources/images/ecopoint_viarme_mini.png' WIDTH='200px' /><BR/>Les déchetteries et les écopoints sont <B>réservés aux particuliers habitant la Communauté Urbaine de Nantes</B>.<BR/>Les Ecopoints sont des mini-déchetteries où seuls les gravats ne sont pas admis. Il y en a 4 sur Nantes.<BR/><UL>Les déchets suivants sont admis :<LI>déblais, gravats, encombrants</LI><LI>les appareils électriques</LI><LI>les déchets toxiques (en petites quantités dans les écopoints) : peinture, vernis, colle, diluants, batteries, huiles moteur...</LI><LI>les déchets verts</LI><LI>les bouteilles et les flacons plastiques</LI><LI>papiers, cartons, cartonnettes</LI><LI>le verre (uniquement le verre ménager) : pôts, bouteilles</LI><LI>le métal</LI></UL>",
 	"bouton" : "modco",
 	"image" : "ecopoint_viarme_mini.png"
 }, {
@@ -127,7 +127,7 @@ var commonDatasCollectMods = [{
 	"code" : "smco_conteneurlerelais",
 	"libelle" : "Conteneur Le Relay",
 	"modesCollecte" : "false",
-	"description" : "<IMG SRC='resources/images/conteneur_lerelais_mini.png' WIDTH='150px' /> <IMG SRC='resources/images/conteneur_le_relais_instructions.png' WIDTH='150px' /><BR/>",
+	"description" : "<IMG SRC='resources/images/conteneur_lerelais_mini.png' WIDTH='150px' /> <IMG SRC='resources/images/conteneur_le_relais_instructions.jpg' WIDTH='150px' /><BR/>",
 	"conseils" : "cons_lerelais",
 	"bouton" : "modco",
 	"image" : "conteneur_lerelais_mini.png"
