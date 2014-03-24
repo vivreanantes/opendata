@@ -30,14 +30,10 @@ Ext.define('VivreANantes.controller.InformationsController', {
 
 	showDetails : function(elementId) {
 		// Récupère l'élément à partir du store
-		var myElement = this.getElementFromStore(elementId);
+		var myElement = this.getElement(elementId);
 
 		var description = myElement["description"];
-		var description = description
-				+ this
-						.getApplication()
-						.getController("VivreANantes.controller.CommentsController")
-						.getCommentString(myElement["code"]);
+		var description = description+ this.getApplication().getController("VivreANantes.controller.CommentsController").getCommentString(myElement["code"]);
 		var title = "<I>" + this.translateWithUpperFirstLetter("label_fiche")
 				+ "</I> " + myElement["libelle"];
 		// Met l'élément dans le détail
@@ -61,12 +57,13 @@ Ext.define('VivreANantes.controller.InformationsController', {
 	/*
 	 * Renvoie le mode de collecte
 	 */
-	getElementFromStore : function(idElement) {
+	getElement : function(idElement) {
 		var description = "";
 		var faq = "";
 		var libelle = "";
 		var image = "";
 		var bouton = "";
+
 
 		// // STORE Informations
 		// var dataInformations = this.getApplication()
@@ -81,6 +78,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 		// faq = record.data["faq"];
 		// }
 		// });
+
 
 		for (j in commonDatasInformations) {
 			if (commonDatasInformations[j]["code"] === idElement) {
@@ -113,6 +111,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 		// commonDatasInformations
 		var arrayItemsToShow = this.getArrayItemsToShowForButtons(
 				commonDatasInformations, "fiche");
+
 
 		var result = new Array();
 		if (arrayItemsToShow.length > 0) {

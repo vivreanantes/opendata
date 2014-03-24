@@ -113,11 +113,12 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 			// Le premier conseil
 			xtype : 'container',
 			layout : 'hbox',
-			width : '100%',
+			// width : '100%',
 			id : "garbagesdetails_conseils_1",
 			items : [{
 						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
-						id : "garbagesdetails_conseils_1_libelle"
+						id : "garbagesdetails_conseils_1_libelle",
+						width:"250px"
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_1_bouton",
@@ -133,7 +134,8 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 			id : "garbagesdetails_conseils_2",
 			items : [{
 						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
-						id : "garbagesdetails_conseils_2_libelle"
+						id : "garbagesdetails_conseils_2_libelle",
+						width:"250px"
 					}, {
 						xtype : 'button',
 						id : "garbagesdetails_conseils_2_bouton",

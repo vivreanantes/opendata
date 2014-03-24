@@ -88,5 +88,4 @@ Ext.define('VivreANantes.view.garbages.GarbagesForm', {
 									}]
 						}]
 			}
-
 		});

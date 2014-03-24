@@ -56,7 +56,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 		// var homecollectmodStore =
 		// Ext.create('VivreANantes.store.HomeCollectModStore');
 		// list.setStore(homecollectmodStore);
-
 	},
 
 	onShowHomeCollectModsView : function() {
@@ -70,16 +69,14 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 		// list.setStore(homecollectmodStore);
 	},
 
-	onHomeCollectModsViewPush : function(view, item) {
+	onHomeCollectModsViewPush : function (view, item) {},
 
-	},
-
-	showHomeCollectModsDetail : function(list, index, node, record) {
+	showHomeCollectModsDetail : function (list, index, node, record) {
 
 		if (record) {
 			if (!this.homeCollectModDetail) {
 				this.homeCollectModDetail = Ext
-						.create('VivreANantes.view.homecollectmods.HomeCollectModsDetails');
+					.create('VivreANantes.view.homecollectmods.HomeCollectModsDetails');
 
 				this.homeCollectModDetail.items.items['0']
 						.setTpl('Source : Open Data Nantes, valable <font color=red>à partir du 16/09/2013</font></I><br/><br/><div>Adresse : {dcv}{ci}</div><br/>'
@@ -92,6 +89,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			var thisController = this;
 			var arrayModesDeCollecte = record.raw["modesCollecte"].split(',');
 			var arrayItemsToShow = new Array();
+
 
 			// STORE dataCollectMods
 			// var dataCollectMods =
@@ -154,7 +152,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	 * Filtre sur les déchets, en fonction de la chaine saisie et de la
 	 * catégorie sélectionnée
 	 */
-	onHomeCollectModStoreFilter : function() {
+	onHomeCollectModStoreFilter : function () {
 
 		var text = this.getHomeCollectModsFormText();
 		var store = this.getHomeCollectModsList().getStore();

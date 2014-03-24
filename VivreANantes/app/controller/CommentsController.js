@@ -85,12 +85,15 @@ Ext.define('VivreANantes.controller.CommentsController', {
 								+ commonDatasComments[j]["libelle"]
 								+ "</B><BR/>"
 								+ commonDatasComments[j]["description"];
+
 					}
 				}
 			}
 		}
 
+
 		if (faqTraduit != "") {
+
 			faqTraduit += "<br/>";
 		}
 		return faqTraduit;

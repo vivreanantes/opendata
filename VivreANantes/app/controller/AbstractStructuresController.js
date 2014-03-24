@@ -91,7 +91,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					"structuresDetails_advices", arraysItemsAdvices);
 
 			// Affectation du titre
-				//var stType = record.data["type"];
+			//var stType = record.data["type"];
 			// var title = "<I>" + stType + "</I>" + " "+ this.stringUpperFirstLetter(record.data["libelle"]);
 			this.structuresDetail.setTitle(this.stringUpperFirstLetter(record.data["libelle"]));
 			
