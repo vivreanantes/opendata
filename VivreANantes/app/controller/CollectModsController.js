@@ -1,58 +1,58 @@
 Ext.define('VivreANantes.controller.CollectModsController', {
-	extend : 'VivreANantes.controller.AbstractController',
-	id : 'collectModsController',
-	config : {
-		refs : {
-			collectModsView : 'collectMods_xtype',
-			collectModsList : 'collectModsButtonsList_xtype',
-			collectModsDetails : 'collectModsDetails_xtype',
-			buttonConteneurPapierCarton : '#modco_contpapiercarton'
-		},
-		control : {
-			collectModsView : {
-				activate : 'onActivate',
-				back : 'onPushBackButton1'
+			extend : 'VivreANantes.controller.AbstractController',
+			id : 'collectModsController',
+			config : {
+				refs : {
+					collectModsView : 'collectMods_xtype',
+					collectModsList : 'collectModsButtonsList_xtype',
+					collectModsDetails : 'collectModsDetails_xtype',
+					buttonConteneurPapierCarton : '#modco_contpapiercarton'
+				},
+				control : {
+					collectModsView : {
+						activate : 'onActivate',
+						back : 'onPushBackButton1'
+					},
+					collectModsList : {
+						initialize : "onInitCollectModsList",
+						back : 'onPushBackButton2'
+					},
+					collectModsDetails : {
+						back : 'onPushBackButton3'
+					},
+					// fonctionne comme une CSS selecteur
+					'collectModsButtonsList_xtype button' : {
+						tap : 'onShowDetails',
+						back : 'onPushBackButton4'
+					},
+					// fonctionne comme une CSS selector
+					// (http://www.w3.org/TR/CSS2/selector.html)
+					'collectModsDetails_xtype button' : {
+						tap : 'onTapLinkButton',
+						back : 'onPushBackButton5'
+					}
+				}
 			},
-			collectModsList : {
-				initialize : "onInitCollectModsList",
-				back : 'onPushBackButton2'
-			},
-			collectModsDetails : {
-				back : 'onPushBackButton3'
-			},
-			// fonctionne comme une CSS selecteur
-			'collectModsButtonsList_xtype button' : {
-				tap : 'onShowDetails',
-				back : 'onPushBackButton4'
-			},
-			// fonctionne comme une CSS selector
-			// (http://www.w3.org/TR/CSS2/selector.html)
-			'collectModsDetails_xtype button' : {
-				tap : 'onTapLinkButton',
-				back : 'onPushBackButton5'
-			}
-		}
-	},
 
-	onPushBackButton1 : function () {
-		// this.onPushBackButton();
-	},
-	onPushBackButton2 : function () {
-		// this.onPushBackButton();
-	},
-	onPushBackButton3 : function () {
-		// this.onPushBackButton();
-	},
-	onPushBackButton4 : function () {
-		// this.onPushBackButton();
-	},
-	onPushBackButton5 : function () {
-		// this.onPushBackButton();
-	},
-
-	onActivate : function (newActiveItem, container, oldActiveItem, eOpts) {
-
-		//		// STORE dataCollectMods
+			onPushBackButton1 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton2 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton3 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton4 : function() {
+				// this.onPushBackButton();
+			},
+			onPushBackButton5 : function() {
+				// this.onPushBackButton();
+			},
+			
+			onActivate : function(newActiveItem, container, oldActiveItem,
+					eOpts) {
+				//		// STORE dataCollectMods
 		//		var dataCollectMods = this.getApplication().getController("VivreANantes.controller.GarbagesController").getCollectModList().getStore();
 		//		var arrayItemsToShow = this.getDatasForButtons_old(dataCollectMods, "modco");
 
@@ -63,7 +63,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 
 			var theItems = arrayItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-				var stLibelle = this.decoupe(theItems[i]["libelle"]);
+				var stLibelle = _decoupe(theItems[i]["libelle"]);
 				result.push({
 					code : theItems[i].id,
 					label : stLibelle,
@@ -77,65 +77,76 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 
 		//	var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
 		// 	this.removeAllAndSetItems(this.getCollectModsList(), arrayItems);
-	},
+			},
 
-	onTapLinkButton : function (button, e, eOpts) {
-		this.manageLinkButtons(button._data["code"]);
-	},
+			onTapLinkButton : function(button, e, eOpts) {
+				this.manageLinkButtons(button._data["code"]);
+			},
+			
+			onShowDetails : function(button, e, eOpts) {
+				this.showDetails(button.id);
+			},
 
-	onShowDetails : function (button, e, eOpts) {
-		// this.showDetails(button.id);
-		this.showDetails(button._data["code"]);
-	},
+			showDetails : function(elementId) {
 
-	showDetails : function (elementId) {
+				// Crée la page si elle n'existe pas encode
+				if (this.collectModsDetails == null) {
+					this.collectModsDetails = Ext
+							.create("VivreANantes.view.collectMod.CollectModsDetails");
+				}
 
-		// Crée la page si elle n'existe pas encode
-		if (this.collectModsDetails == null) {
-			this.collectModsDetails = Ext.create("VivreANantes.view.collectMod.CollectModsDetails");
-		}
+				// Récupère l'élément à partir du store
+				var collectModFromStore = this.getElementFromStore(elementId);
 
-		// Récupère l'élément à partir du store
-		var collectModFromStore = this.getElementFromStore(elementId);
+				// Ajout de la description
+				var descriptionTraduit = "";
+				if (collectModFromStore["description"] != "") {
+					descriptionTraduit = collectModFromStore["description"]
+							+ "<br/><br/>";
+				}
+				this.setDataElement(this.collectModsDetails,
+						"collectModsDetails_description", {
+							'description' : descriptionTraduit
+						})
 
-		// Ajout de la description
-		var descriptionTraduit = "";
-		if (collectModFromStore["description"] != "") {
-			descriptionTraduit = collectModFromStore["description"] + "<br/><br/>";
-		}
-		this.setDataElement(this.collectModsDetails, "collectModsDetails_description", {
-			'description' : descriptionTraduit
-		})
+				// Ajout des conseils
+				var conseils = "";
+				if (collectModFromStore["conseils"] !== "") {
+					conseils = collectModFromStore["conseils"] + ",";
+				}
+				var arraysItemsAdvices = this.getItemsAdvices(conseils);
+				this.setItemsElement(this.collectModsDetails,
+						"collectModsDetails_advices", arraysItemsAdvices);
 
-		// Ajout des conseils
-		var conseils = "";
-		if (collectModFromStore["conseils"] !== "") {
-			conseils = collectModFromStore["conseils"] + ",";
-		}
-		var arraysItemsAdvices = this.getItemsAdvices(conseils);
-		this.setItemsElement(this.collectModsDetails, "collectModsDetails_advices", arraysItemsAdvices);
+				// Affectation du titre
+				var title = "<I>"
+						+ this
+								.translateWithUpperFirstLetter("label_modeDeCollecte")
+						+ "</I> "
+						+ this
+								.stringUpperFirstLetter(collectModFromStore["libelle"]);
+				this.collectModsDetails.setTitle(title);
+				
+				// Ajout des commentaires
+				var code = collectModFromStore["code"];
+				this.setItemsElement(this.collectModsDetails,
+						"collectModsDetails_comments", this
+								.getItemsComments(code, title));
 
-		// Affectation du titre
-		// var title = "<I>" + this.translateWithUpperFirstLetter("label_modeDeCollecte") + "</I> " + this.stringUpperFirstLetter(collectModFromStore["libelle"]);
-		// this.collectModsDetails.setTitle(title);
-		this.collectModsDetails.setTitle(this.stringUpperFirstLetter(collectModFromStore["libelle"]));
 
-		// Ajout des commentaires
-		var code = collectModFromStore["code"];
-		this.setItemsElement(this.collectModsDetails, "collectModsDetails_comments", this.getItemsComments(code, collectModFromStore["libelle"]));
+				// Bind the record onto the show contact view
+				this.collectModsDetails.setData(collectModFromStore.data);
 
-		// Bind the record onto the show contact view
-		this.collectModsDetails.setData(collectModFromStore);
+				this.getCollectModsView().push(this.collectModsDetails);
 
-		this.getCollectModsView().push(this.collectModsDetails);
+			},
+			onInitCollectModsList : function(container) {
+			},
 
-	},
-	onInitCollectModsList : function (container) {},
-
-	/*
-	 * Renvoie le mode de collecte
-	 */
-	getElementFromStore : function (idElement) {
+			/*
+			 * Renvoie le mode de collecte
+			 */
+			getElementFromStore : function(idElement) {
 		var description = "";
 		var conseils = "";
 		var faq = "";
@@ -173,5 +184,4 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 			"libelle" : libelle
 		}
 	}
-
-});
+		});

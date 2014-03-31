@@ -4,13 +4,13 @@
 Ext.define('VivreANantes.controller.LocalStorageController', {
 			extend : 'VivreANantes.controller.AbstractController',
 			config : {
-// initialize : this.onInit
+				//initialize : this.onInit
 			},
 
-			/*
-			 * onInit : function() { this.initLocalStorage(); },
-			 */
-
+			/*onInit : function() {
+				this.initLocalStorage();
+			},*/
+			
 			initLocalStorage : function() {
 				// our Store automatically picks up the LocalStorageProxy
 				// defined on the Search model
@@ -29,18 +29,19 @@ Ext.define('VivreANantes.controller.LocalStorageController', {
 				// finally, save our Search data to localStorage
 				this.store.sync();
 			},
-
+			
+			
 			getLocale : function() {
 				return this.getVariableFromLocalStorage("locale", "fr");
 			},
-
+			
 			getVariableFromLocalStorage : function(dataName, defaultValue) {
 				var result = defaultValue;
-				if (this.store != null) {
-					var datas = this.store.getData();
+				if (this.store!=null) {
+					var datas = this.store.getData();		
 					datas.each(function(record) {
-								result = (record.data[dataName]);
-							});
+						result = (record.data[dataName]);
+					});
 				}
 				return result;
 			}

@@ -1,4 +1,3 @@
-
 /**
  * Traduit un libellé. Si on ne le trouve pas renvoie la clé.
  */
@@ -41,7 +40,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_sauf_ferie" : {
 			"en" : "except official holiday",
-			"fr" : "sauf jours fériés"
+			"fr" : "pas jours fériés"
 		},
 		"label_le" : {
 			"en" : " ",
@@ -157,23 +156,23 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_reempelectromenag" : {
 			"en" : "Re-employment household appliances ",
-			"fr" : "Réemploi électroménager"
+			"fr" : "Récup. électroménager"
 		},
 		"label_smco_reempcartouchetoner" : {
 			"en" : "Re-employment ",
-			"fr" : "Réemploi cartouches d'encres/tuners imprimantes"
+			"fr" : "Récup. cartouches d'encres/tuners imprimantes"
 		},
 		"label_smco_reempjouet" : {
 			"en" : "Re-employment toy",
-			"fr" : "Réemploi de jouets"
+			"fr" : "Récup. de jouets"
 		},
 		"label_smco_reempmeuble" : {
 			"en" : "Re-employment pieces of furniture",
-			"fr" : "Réemploi de meuble"
+			"fr" : "Récup. de meuble"
 		},
 		"label_smco_reempinfo" : {
 			"en" : "Re-employment computer",
-			"fr" : "Réemploi informatique"
+			"fr" : "Récup. informatique"
 		},
 		"label_smco_vendeurvoiture" : {
 			"en" : "",
@@ -181,15 +180,15 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_reemplivreCD" : {
 			"en" : "Re-employment books, CDs, comics, DVDs",
-			"fr" : "Réemploi des livres, CDs, BDs, DVDs..."
+			"fr" : "Récup. des livres, CDs, BDs, DVDs..."
 		},
 		"label_smco_reempvet" : {
 			"en" : "Re-employment clothes",
-			"fr" : "Réemploi des vêtements"
+			"fr" : "Récup. des vêtements"
 		},
 		"label_smco_reempdivers" : {
 			"en" : "Re-employment divers",
-			"fr" : "Réemploi d'objets divers"
+			"fr" : "Récup. d'objets divers"
 		},
 		"label_smco_batiment" : {
 			"en" : "",
@@ -197,7 +196,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_vaisselle" : {
 			"en" : "Re-employment ",
-			"fr" : "Réemploi de la vaisselle"
+			"fr" : "Récup. de la vaisselle"
 		},
 		"label_smco_papier" : {
 			"en" : "",
@@ -233,11 +232,11 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_recupsupermarche" : {
 			"en" : "",
-			"fr" : "Réemploi dans les supermarchés"
+			"fr" : "Récup. dans les supermarchés"
 		},
 		"label_smco_recupmagasinbrico" : {
 			"en" : "",
-			"fr" : "Réemploi dans les magasins de bricolage"
+			"fr" : "Récup. dans les magasins de bricolage"
 		},
 		"label_smco_garage" : {
 			"en" : "",
@@ -245,7 +244,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_velo" : {
 			"en" : "",
-			"fr" : "Réemploi des vélos"
+			"fr" : "Récup. des vélos"
 		},
 		"label_smco_pharmacie" : {
 			"en" : "",
@@ -394,8 +393,8 @@ function _translate(stKey, stLocale) {
 		"label_type" : { "en" : "type", "fr" : "type" },
 		"label_telephone" : { "en" : "phone number", "fr" : "téléphone" },
 		"label_horaires" : { "en" : "schedules", "fr" : "horaires" },
-		
-		
+
+
 		"label_ouvert_aujourdhui_et_demain" : { "en" : "Open today and tomorrow", "fr" : "Ouvert aujourd'hui et demain" },
 		"label_ouvert_aujourdhui" : { "en" : "Open today", "fr" : "Ouvert aujourd'hui" },
 		"label_ouvert_demain" : { "en" : "Open tomorrow", "fr" : "Ouvert demain" },
@@ -423,7 +422,7 @@ function _translate(stKey, stLocale) {
 		"label_" : { "en" : "", "fr" : "" },
 		"label_" : { "en" : "", "fr" : "" },
 		"label_" : { "en" : "", "fr" : "" }
-		
+
 	};
 	if (map[stKey] == null) {
 		result = stKey;

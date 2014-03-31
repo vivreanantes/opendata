@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.structures.Structures', {
 			id : 'structuresView',
 			config : {
 				autoDestroy : false,
-				iconCls : 'maps', // icône en forme de carte
+				iconCls : 'maps',
 				title : 'Lieux',
 				items : [
 					{

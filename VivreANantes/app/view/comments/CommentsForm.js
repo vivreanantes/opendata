@@ -1,5 +1,5 @@
 /**
- * Formulaire d'envoi d'un commentaire
+ * Formulaire d'envoie d'un commentaire
  */
 Ext.define('VivreANantes.view.comments.CommentsForm', {
 			extend : 'Ext.form.FormPanel',
@@ -13,7 +13,8 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 				items : [{
 							xtype : 'fieldset',
 							// instructions : '(courriel pas vide)',
-							items : [{
+							items : [
+									{
 										xtype : 'emailfield',
 										name : 'email',
 										label : 'Email *'
@@ -32,16 +33,16 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 									}]
 						}, {
 							xtype : 'button',
-							text : 'Envoyer',
+							text : 'Envoyez',
 							iu : 'confirm',
 							handler : function() {
 
 								this.up("commentsForm_xtype").submit({
 										failure : function(form, result) {
 										if (result.failure != null) {
-											 Ext.Msg.alert("Envoi message", "Echec de l'envoi : " + result.failure);
+											 Ext.Msg.alert("Envoi message", "Échec de l'envoi : " + result.failure);
 										} else {
-											 Ext.Msg.alert("Envoi message", "Echec de l'envoi.");
+											 Ext.Msg.alert("Envoi message", "Échec de l'envoi.");
 										}
 									},
 									success : function(form, result) {

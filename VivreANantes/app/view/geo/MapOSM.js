@@ -28,9 +28,9 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 
 		// INFOS LAYERS
 		this.layermapping['modco_reemploi'] = {
-			name : 'Réemploi',
+			name : 'Récup',
 			iconurl : 'resources/icons/marker-icon-green.png',
-			label : '<img style="width:10%" src="resources/icons/marker-icon-green.png"> Réemploi'
+			label : '<img style="width:10%" src="resources/icons/marker-icon-green.png"> Récup.'
 		};
 		this.layermapping['modco_distrisac'] = {
 			name : 'Distrisac',
@@ -123,7 +123,7 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 			if (modesCollecteTraduit != null) {
 				popuptext = popuptext + modesCollecteTraduit + '<br/>';
 			}
-			if (record.get('libelle') != null) {
+			if (record.get('libelle') != null && record.get('libelle')!='') {
 				popuptext = popuptext + '<b>' + record.get('libelle') + '</b>';
 			}
 			if (record.get('adresseTemp') != null) {

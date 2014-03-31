@@ -168,18 +168,18 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 	var result = '';
 
 	var stLabelDe = _translate("label_de");
-	var stLabelLe = _translate("label_le");
+	// var stLabelLe = _translate("label_le");
 	var stLabelH = _translate("label_h");
 	var stLabelA = _translate("label_a");
 	var stLabelAu = _translate("label_au");
 	var stLabelEt = _translate("label_et");
-	var stLabelDu = _translate("label_du");
+	// var stLabelDu = _translate("label_du");
 	var stLabelTouteLAnnee = _translate("label_toutelannee");
 	
 
 	// Cas des "sauf_"
 	if (plageHoraire.substring(0, 5) == "sauf_") {
-		result = _stringUpperFirstLetter(_translate("label_sauf_ferie") + " " + " (à l'exception des dates ci-dessous)");
+		result = _stringUpperFirstLetter(_translate("label_sauf_ferie") + " " + " (sauf dates ci-dessous)");
 	}
 	// Cas des plages
 	else {
@@ -196,14 +196,14 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 			}
 			// Si on est de type "de .. à "
 			else if (jours.indexOf(separatorJusquA, 0) != -1) {
-				result = result + stLabelDu + " " + jours.substring(0, 2) + " "
+				result = result + /*stLabelDu + " " + */jours.substring(0, 2) + " "
 						+ __getMonthString(jours.substring(2, 4), stLocale)
 						+ " " + stLabelAu + " " + jours.substring(5, 7) + " "
 						+ __getMonthString(jours.substring(7, 9), stLocale);
 			}
 			// Cas des jours précis
 			else {
-				result = result + stLabelLe + " " + jours.substring(0, 2) + " "
+				result = result + /*stLabelLe + " "*/ + jours.substring(0, 2) + " "
 						+ __getMonthString(jours.substring(2, 4), stLocale)
 						+ " " + "20" + jours.substring(4, 6);
 			}
@@ -216,14 +216,14 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 			if (jourDeLaSemaine === "lu+ma+me+je+ve+sa+di") {
 				result = result + "tous les jours"
 			} else if (jourDeLaSemaine === "ma+me+je+ve+sa") {
-				result = result + "du mardi au samedi"
+				result = result + "mardi au samedi"
 			} else if (jourDeLaSemaine === "lu+ma+me+je+ve") {
-				result = result + "du lundi au vendredi"
+				result = result + "lundi au vendredi"
 			} else if (jourDeLaSemaine === "lu+ma+me+je+ve+sa") {
-				result = result + "du lundi au samedi"
+				result = result + "lundi au samedi"
 			} else if (jourDeLaSemaine.length == 5) {
 				// Renvoie par exemple "du lundi au samedi"
-				result = result + stLabelDu + " "
+				result = result + /stLabelDu + " "/
 						+ __getDayString(jourDeLaSemaine.substring(0, 2), 0)
 						+ " " + stLabelAu + " "
 						+ __getDayString(jourDeLaSemaine.substring(3, 5), 0)

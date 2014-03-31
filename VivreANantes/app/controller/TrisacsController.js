@@ -24,7 +24,7 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 				itemtap : "showStructuresDetail",
 				refresh : "onListRefresh"
 			},
-
+			
 			structuresView : {
 				show : 'onShowTrisac'
 			},
@@ -48,10 +48,10 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 			}
 		}
 	},
-
-	onPushBackButton12 : function() {
-		// console.log("onPushBackButton12");
-		// this.onPushBackButton();
+	
+		onPushBackButton12 : function() {
+			//console.log("onPushBackButton12");
+			//	this.onPushBackButton();
 	},
 	/**
 	 * A l"initialisation de la fenêtre
@@ -59,11 +59,10 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 	onInitTrisacsController : function(list) {
 		this.getTrisacFormSelect().setValue("all");
 	},
-
+	
 	onShowTrisac : function() {
-		if (this.getTrisacList().getStore() == null) {
-			var structureStore = Ext.create(
-					"VivreANantes.store.StructureStore", {
+		if (this.getTrisacList().getStore()==null) {
+			var structureStore = Ext.create("VivreANantes.store.StructureStore", {
 						filters : [{
 									property : "modesCollecte",
 									value : /modco_distrisac/g
@@ -91,19 +90,17 @@ Ext.define("VivreANantes.controller.TrisacsController", {
 		var selectQuartier = this.getTrisacFormSelect();
 		var store = this.getTrisacList().getStore();
 
-		if (store != null) {
+		if (store!=null) {
 			// FIXME : Ceci est un traitement trop long
 			store.clearFilter();
-			// Filtrer sans casse, en cherchant la chaine dans le nom, en
-			// filtrant
+			// Filtrer sans casse, en cherchant la chaine dans le nom, en filtrant
 			// sur la catégorie
 			var filterHomeCollectMod = Ext.create("Ext.util.Filter", {
 				filterFn : function(item) {
 					var escaperegex = Ext.String.escapeRegex;
 					var stTextRexexp = new RegExp(escaperegex(text.getValue()),
 							"ig");
-					// var stQuartierRexexp = new
-					// RegExp(selectQuartier.getValue());
+					// var stQuartierRexexp = new RegExp(selectQuartier.getValue());
 					var stType = item.data["modesCollecte"];
 					var stQuartier = item.data["quartier_admin"];
 					return (stType == 'modco_distrisac'

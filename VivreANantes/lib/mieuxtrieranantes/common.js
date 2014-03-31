@@ -47,10 +47,31 @@ function translateWithUpperFirstLetter (result) {
 
 
 /**
+ * Retire les accents d'une chaîne de caractère
+ */
+function _utilRetireAccent (result) {
+		result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g, "a");
+		result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g, "e");
+		result = result.replace(/[Çç]/g, "c");
+		result = result.replace(/[Ð]/g, "d");
+		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
+		result = result.replace(/[ÙÚÛÜùúûü]/g, "u");
+		result = result.replace(/[Ññ]/g, "n");
+		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
+		result = result.replace(/[Šš]/g, "s");
+		result = result.replace(/[Ÿÿý]/g, "y");
+		result = result.replace(/[Žž]/g, "z");
+		return result;
+}
+
+function _decoupe(stChaine) {
+	return _decoupeAvecTaille(stChaine, 30);
+}
+/**
  * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
  * des balises "<br/>
  */
-function _decoupe(stChaine, iTailleMax) {
+function _decoupeAvecTaille(stChaine, iTailleMax) {
 	var result = "";
 	if (stChaine != undefined) {
 		// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "

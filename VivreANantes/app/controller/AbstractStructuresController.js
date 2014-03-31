@@ -20,9 +20,10 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			// Ajout du type
 			var descriptionTraduit = "";
 			if (record.data["modesCollecte"] != null && record.data["modesCollecte"] !== "") {
-				// var label = this.stringUpperFirstLetter(this.translate("label_type"));
+				var label = this.stringUpperFirstLetter(this
+						.translate("label_type"));
 				var modeCollecteTraduit = "";
-				var typeTraduit = record.data["type"];
+				var typeTraduit = "";
 				if (record.data["modesCollecte"] != null
 						&& record.data["modesCollecte"] !== "") {
 					// On découpe modesCollecte, puis on traduit
@@ -36,11 +37,12 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					}
 					// Dans le cas de distribution Trisac on ajoute le type
 					if (record.data["modesCollecte"]==="modco_distrisac") {
-						typeTraduit += " - " + this.translate("label_" + record.data["modesCollecte"]);
+						typeTraduit = " - " + record.data["type"];
 					}
 				}
 				
-				descriptionTraduit += typeTraduit + "<br/><br/>";
+				descriptionTraduit += "<b>"+label + "</b>: " + modeCollecteTraduit + " "
+						+ typeTraduit + "<br/><br/>";
 			}
 			// Ajout de la description
 			if (record.data["description_fr"] != null
@@ -59,22 +61,21 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					&& record.data["numeroTemp"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_telephone"));
-				descriptionTraduit += "<b>" + label + " </b>: " + record.data["numeroTemp"]
+				descriptionTraduit += "<b>"+label + "</b>: " + record.data["numeroTemp"]
 						+ "<br/><br/>";
 			}
 			if (record.data["plagesHoraires_lisible"] != null
 					&& record.data["plagesHoraires_lisible"] !== "") {
 				var label = this.stringUpperFirstLetter(this
 						.translate("label_horaires"));
-				descriptionTraduit += "<b>" + label + "</b>: "
+				descriptionTraduit += "<b>"+label + "</b>: "
 						+ record.data["plagesHoraires_prochainsJours"]
 						+ "<br/>" + record.data["plagesHoraires_lisible"]
 						+ "<br/><br/>";
 			}
 			if (record.data["src"] != null && record.data["src"] !== "") {
-				var label = this.stringUpperFirstLetter(this
-					.translate("label_source"));
-				descriptionTraduit += "<b>" + label + "</b> : " + record.data["src"] + "<br/><br/>";
+				var label = _stringUpperFirstLetter(_translate("label_source"));
+				descriptionTraduit += "<b>" + label + "</b> : <font color='red'>" + record.data["src"] + "</font><br/><br/>";
 			}
 			this.setDataElement(this.structuresDetail,
 					"structuresDetails_description", {
@@ -91,14 +92,15 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					"structuresDetails_advices", arraysItemsAdvices);
 
 			// Affectation du titre
-			//var stType = record.data["type"];
-			// var title = "<I>" + stType + "</I>" + " "+ this.stringUpperFirstLetter(record.data["libelle"]);
-			this.structuresDetail.setTitle(this.stringUpperFirstLetter(record.data["libelle"]));
+			var stType = record.data["type"];
+			var title = "<I>" + stType + "</I>" + " "
+					+ this.stringUpperFirstLetter(record.data["libelle"]);
+			this.structuresDetail.setTitle(title);
 			
 			// Ajout des commentaires
 			var code = record.data["code"];
 			this.setItemsElement(this.structuresDetail,
-					"structuresDetails_comments", this.getItemsComments(code, record.data["libelle"]));
+					"structuresDetails_comments", this.getItemsComments(code, title));
 
 			// Bind the record onto the show contact view
 			this.structuresDetail.setData(record.data);
@@ -141,9 +143,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		if (obAujoudhuiDemain["bOuvertDemain"] == true) {
 			bOuvertDemain = true;
 		}
-		var stOuvertAujourdhuiEtDemain = "";
 		if (bOuvertAujourdhui == true && bOuvertDemain == true) {
-			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+			var stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
 					+ this.translate("label_ouvert_aujourdhui_et_demain")
 					+ "</FONT>"
 		} else if (bOuvertAujourdhui == true && bOuvertDemain == false) {
@@ -208,7 +209,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	},
 	
 	/**
-	 * Valorise les options des listes déroulantes "ville"
+	 * Valorise les options des listes déroulantes "quartier"
 	 */
 	setOptionsQuartiers : function(selectField) {
 

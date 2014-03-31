@@ -31,11 +31,11 @@ Ext.define('VivreANantes.view.Main', {
 					xclass : 'VivreANantes.view.information.Informations'
 				}, {
 					xclass : 'VivreANantes.view.structures.Structures'
-				}, {
+				}/*, {
 					xclass : 'VivreANantes.view.reuses.Reuses'
-				}, {
+				}*//*, {
 					xclass : 'VivreANantes.view.collectMod.CollectMods'
-				}, {
+				}*/, {
 					xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
 				}, {
 					xclass : 'VivreANantes.view.trisac.Trisacs'
