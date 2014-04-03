@@ -8,7 +8,7 @@ Ext.define('VivreANantes.view.structures.StructuresContainer', {
 
 			config : {
 				layout : 'vbox',
-				title : 'Lieux de collecte et récup',
+				title : 'Lieux de collecte et récup.',
 				items : [/*{
 							xtype : 'titlebar',
 							docked : 'top'

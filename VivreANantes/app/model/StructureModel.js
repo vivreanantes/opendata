@@ -7,7 +7,8 @@ Ext.define('VivreANantes.model.StructureModel', {
 					type : 'string'
 				}, {
 					name : 'libelle',
-					type : 'string'
+					type : 'string',
+					defaultValue : ''
 				}, {
 					name : 'type',
 					type : 'string'
@@ -22,7 +23,8 @@ Ext.define('VivreANantes.model.StructureModel', {
 					type : 'string'
 				}, {
 					name : 'quartier',
-					type : 'string'
+					type : 'string',
+					defaultValue : ''
 				}, {
 					name : 'quartier_admin',
 					type : 'string'

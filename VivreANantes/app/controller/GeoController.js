@@ -150,12 +150,14 @@ Ext.define('VivreANantes.controller.GeoController', {
     	var map = this.getVanmaposm(); 
         map.init();
 
+        var me = this;
+        
         // GEOLOCALISATION DESACTIVEE pour l'instant
         //A l'initialisation de la carte, on crée une variable du
         // controller pour gérer la modification de localisation
         // gérant la réactualisation en fonction de la postion
-    	/*
-        if (!Ext.isDefined(me.geolocate)) {
+    	
+       if (!Ext.isDefined(me.geolocate)) {
             me.geolocate = Ext.create('Ext.util.Geolocation', {
                         autoUpdate : true,
                         listeners : {
@@ -166,16 +168,16 @@ Ext.define('VivreANantes.controller.GeoController', {
                                     bPermissionDenied, bLocationUnavailable,
                                     message) {
                                 if (bTimeout) {
-                                    console.error('Timeout');
+                                    console.error('locationerror Timeout');
                                 } else {
-                                    console.error('Erreur :(');
+                                    console.error('locationerror Erreur');
                                 }
                             }
                         }
                     });
-        } */
+             
+        }
 
-        var me = this;
         
         if (!Ext.isDefined(this.structureGeoStore)) {
             this.structureGeoStore = Ext.create('VivreANantes.store.StructureStore',
@@ -185,12 +187,13 @@ Ext.define('VivreANantes.controller.GeoController', {
                             'load' : function(store, results, successful) {
                                 console.log("Loading StructureGeoStore");
                                 me.onLoadStructureStore();
+                                me.geolocate.updateLocation();
                             }
 
                         }
                     });
         };
-
+		
     },
 
     /**
@@ -200,7 +203,7 @@ Ext.define('VivreANantes.controller.GeoController', {
         console.log('onMapActivate');     
 
         
-        //this.verifyFirstTimeMap();
+       this.verifyFirstTimeMap();
     },
 
     /**
@@ -210,11 +213,11 @@ Ext.define('VivreANantes.controller.GeoController', {
     verifyFirstTimeMap : function() {
         console.log('verifier');
         if (localStorage.getItem('alreadyAccessMap') != 'true') {
-            Ext.Msg
+           /* Ext.Msg
                     .alert(
                             'Carte',
                             'C\'est la première fois que vous accédez à la carte (pour la maquette de VAN). On peut mettre une aide ici.',
-                            Ext.emptyFn);
+                            Ext.emptyFn);*/
             localStorage.setItem('alreadyAccessMap', 'true');
         }
     }

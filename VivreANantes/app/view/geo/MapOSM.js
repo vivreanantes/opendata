@@ -42,15 +42,15 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 			iconurl : 'resources/icons/marker-icon-pink.png',
 			label : '<img style="width:10%" src="resources/icons/marker-icon-pink.png"> Ecotox'
 		};
-		this.layermapping['modco_encombrants'] = {
+		/*this.layermapping['modco_encombrants'] = {
 			name : 'Encombrants',
 			iconurl : 'resources/icons/marker-icon-blue.png',
 			label : '<img style="width:10%" src="resources/icons/marker-icon-blue.png"> Encombrants'
-		};
+		};*/
 		this.layermapping['modco_conteneur'] = {
-			name : 'Conteneurs',
+			name : 'Conteneur',
 			iconurl : 'resources/icons/marker-icon-brown.png',
-			label : '<img style="width:10%" src="resources/icons/marker-icon-brown.png"> Conteneurs'
+			label : '<img style="width:10%" src="resources/icons/marker-icon-brown.png"> Conteneur'
 		};
 
 		// INIT MAX BOUNDS (Nantes et agglo)
@@ -79,17 +79,17 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 	addStructure : function(record) {
 
 		// On découpe modesCollecte, puis on traduit
-		var modesCollecteTraduit = "";
-		if (record.get('modesCollecte')!=null) {
-			var arModesCollecte = record.get('modesCollecte').split(",");
-			for (var i = 0; i < arModesCollecte.length; i++) {
-				var unModeCollecte = arModesCollecte[i];
-				if (i>0) {
-					modesCollecteTraduit = modesCollecteTraduit + ", ";
-				}
-				modesCollecteTraduit = modesCollecteTraduit + _translate("label_"	+ unModeCollecte, "fr");
-			}
-		}		
+		// var modesCollecteTraduit = "";
+		// if (record.get('modesCollecte')!=null) {
+		// 	var arModesCollecte = record.get('modesCollecte').split(",");
+		// 	for (var i = 0; i < arModesCollecte.length; i++) {
+		// 		var unModeCollecte = arModesCollecte[i];
+		// 		if (i>0) {
+		// 			modesCollecteTraduit = modesCollecteTraduit + ", ";
+		// 		}
+		// 		modesCollecteTraduit = modesCollecteTraduit + _translate("label_"	+ unModeCollecte, "fr");
+		// 	}
+		// }		
 		
 		// VERIFICATION que toutes les données nécessaires sont présentes
 		if (record.get('modesCollecte') != null
@@ -120,14 +120,18 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 			longitude = record.get('longitude');
 
 			popuptext = '';
-			if (modesCollecteTraduit != null) {
-				popuptext = popuptext + modesCollecteTraduit + '<br/>';
+			// if (modesCollecteTraduit != null) {
+			//	popuptext = popuptext + modesCollecteTraduit + '<br/>';
+			// }
+			if (record.get('type') != null && record.get('type')!='') {
+				popuptext = popuptext + '<b>' + record.get('type') + '</b><br/>';
 			}
 			if (record.get('libelle') != null && record.get('libelle')!='') {
-				popuptext = popuptext + '<b>' + record.get('libelle') + '</b>';
+				popuptext = popuptext + record.get('libelle') + '<br/>';
 			}
+			
 			if (record.get('adresseTemp') != null) {
-				popuptext = popuptext + '<br/>' + record.get('adresseTemp');
+				popuptext = popuptext + record.get('adresseTemp');
 			}
 
 
@@ -146,9 +150,9 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 					// PointToLayer
 					pointToLayer : function(feature, latlng) {
 
-						if (myobj.layermapping[feature.properties.type] != 'undefined')
+						if (myobj.layermapping[feature.properties.type] != 'undefined') {
 							iconUrl = myobj.layermapping[feature.properties.type].iconurl;
-
+						}
 						myIcon = L.icon({
 									iconUrl : iconUrl
 								});

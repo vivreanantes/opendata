@@ -27,16 +27,16 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 									}, {
 										xtype : 'textareafield',
 										name : 'message',
-										label : 'Message',
+										label : 'Texte',
 										id : 'commentsFormTextareafield',
 										placeHolder : "Commentaires sur l'application ou la filière tri"
 									}]
-						}, {
+						},
+						{
 							xtype : 'button',
 							text : 'Envoyez',
 							iu : 'confirm',
 							handler : function() {
-
 								this.up("commentsForm_xtype").submit({
 										failure : function(form, result) {
 										if (result.failure != null) {
@@ -44,10 +44,11 @@ Ext.define('VivreANantes.view.comments.CommentsForm', {
 										} else {
 											 Ext.Msg.alert("Envoi message", "Échec de l'envoi.");
 										}
+										// this.hide();
 									},
 									success : function(form, result) {
 										 Ext.Msg.alert("Envoi message", "Votre message a bien été envoyé.");
-										
+										// this.hide();
 
 									/*					var panel = Ext.create('Ext.Panel', {     
 				    floating: true,

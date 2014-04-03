@@ -123,6 +123,42 @@ Ext.define('VivreANantes.view.information.InformationsButtonsList', {
 				xtype : "button", height : '120px', width : '33%', 
 				tpl : "<center>{label}<br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
+		}, {
+			layout : {
+				type : 'hbox',
+				align : 'strech'
+			},
+			items : [{
+				id : "informationsButtonsList_19",
+				xtype : "button", height : '120px', width : '33%', 
+				tpl : "<center>{label}<br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsList_20",
+				xtype : "button", height : '120px', width : '33%', 
+				tpl : "<center>{label}<br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsList_21",
+				xtype : "button", height : '120px', width : '33%', 
+				tpl : "<center>{label}<br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}]
+		}, {
+			layout : {
+				type : 'hbox',
+				align : 'strech'
+			},
+			items : [{
+				id : "informationsButtonsList_22",
+				xtype : "button", height : '120px', width : '33%', 
+				tpl : "<center>{label}<br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsList_23",
+				xtype : "button", height : '120px', width : '33%', 
+				tpl : "<center>{label}<br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsList_24",
+				xtype : "button", height : '120px', width : '33%', 
+				tpl : "<center>{label}<br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}]
 		}]
 	}
 		});

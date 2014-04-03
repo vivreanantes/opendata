@@ -120,9 +120,9 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
 						id : "garbagesdetails_conseils_1_libelle"
 					}, {
-						xtype : 'button',
+						xtype : 'label',
 						id : "garbagesdetails_conseils_1_bouton",
-						text : "Plus d'infos",
+						text : "Voir fiche",
 						width:"150px"
 					}]
 		}, {
@@ -135,9 +135,9 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
 						id : "garbagesdetails_conseils_2_libelle"
 					}, {
-						xtype : 'button',
+						xtype : 'label',
 						id : "garbagesdetails_conseils_2_bouton",
-						text : "Plus d'infos",
+						text : "Voir fiche",
 						width:"150px"
 					}]
 		}, {

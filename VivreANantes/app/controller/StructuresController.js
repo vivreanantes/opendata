@@ -110,9 +110,21 @@ Ext.define("VivreANantes.controller.StructuresController", {
 		var selectQuartier = this.getStructuresFormSelectQuartier();
 		var selectType = this.getStructuresFormSelectType();
 
+		/*
+		if (store!=null) {
+			store.clearFilter(true); // true sinon cela plante dans la version android
+			store.filter([
+				{filterFn: function(item) { 
+					return item.get("modesCollecte")!=null && item.get("modesCollecte")==="all" && item.get("modesCollecte").indexOf(selectType.getValue())!=-1; }
+				},
+				{filterFn: function(item) { 
+					return  item.get("quartier")!=null && item.get("quartier")==="all" && item.get("quartier").indexOf(selectQuartier.getValue())!=-1; }
+				}
+			]);
+		}*/
 		var store = this.getStructuresList().getStore();
 		if (store!=null) {
-			store.clearFilter();
+			store.clearFilter(true);  // true sinon cela plante dans la version android
 			var filterElements = Ext.create("Ext.util.Filter", {
 				filterFn : function(item) {
 					var stTypeRegexp = new RegExp(selectType.getValue());

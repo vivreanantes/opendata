@@ -116,7 +116,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 						var codeValue = "collectMods_xtype"
 								+ thisController.SEPARATOR
 								+ commonDatasCollectMods[j]["code"];
-						var libelleValue = _stringUpperFirstLetter(commonDatasCollectMods[j]["libelle"]);
+						var libelleValue = _stringUpperFirstLetter(commonDatasCollectMods[j]["libelleBouton"]);
 						arrayItemsToShow.push({
 									image : imageValue,
 									code : codeValue,
@@ -149,7 +149,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 
 		var text = this.getHomeCollectModsFormText();
 		var store = this.getHomeCollectModsList().getStore();
-		store.clearFilter();
+		store.clearFilter(true); // true sinon cela plante dans la version android
 		if (store!=null) {
 
 			thisController = this;

@@ -8,6 +8,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 			config : {
 				items : [{
 							xtype : 'selectfield',
+							usePicker: false,
 							label : 'Type',
 							id : 'structuresFormSelectType',
 							options : [{
@@ -43,6 +44,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 									}]
 						}, {
 							xtype : 'selectfield',
+							usePicker: false,
 							label : 'Ville',
 							id : 'structuresFormSelectQuartier'
 							,options : [{}]

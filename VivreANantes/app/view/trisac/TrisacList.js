@@ -5,7 +5,7 @@ Ext.define('VivreANantes.view.trisac.TrisacList', {
 		iconCls : 'action', // icône en forme de ?
 		title : 'Modes de collecte à domicile',
 		//itemTpl : 'Quartiers : {quartier} <div>{libelle}</div>Type de distribution : {soustype} ',
-		itemTpl : '<div>{type} - {libelle} {plagesHoraires_prochainsJours} <br/>{plagesHoraires_lisible}</div>'
+		itemTpl : '<div>{type}<br/>{libelle}<br/>{plagesHoraires_prochainsJours}</div>'
 	}
 
 	

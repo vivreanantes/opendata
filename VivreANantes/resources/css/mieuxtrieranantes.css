@@ -1,0 +1,15 @@
+.distrisacclass {
+	-webkit-mask-box-image: url('../icons/icones_trisacs.png');
+}
+.homecollectclass {
+	-webkit-mask-box-image: url('../icons/icone_camion_poubelle.png');
+}
+.garbageclass {
+	-webkit-mask-box-image: url('../icons/icone_dechets.png');
+}
+.structureclass {
+	-webkit-mask-box-image: url('../icons/icone_direction.png');
+}
+.livreclass {
+	-webkit-mask-box-image: url('../icons/icone_livre.png');
+}

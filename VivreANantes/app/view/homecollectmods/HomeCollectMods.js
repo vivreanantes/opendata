@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectMods', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'home', // icône en forme de maison
+				iconCls : 'homecollectclass', // icône en forme de camion
 				title:'A domicile',
 				items : [{
 							xtype : 'HomeCollectModsContainer'

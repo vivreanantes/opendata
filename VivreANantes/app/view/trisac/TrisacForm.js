@@ -14,6 +14,7 @@ Ext.define('VivreANantes.view.trisac.TrisacForm', {
 						}
 						, {
 							xtype : 'selectfield',
+							usePicker: false,
 							label : 'Quartier',
 							id : 'trisacFormSelect'
 							,options : [{}]

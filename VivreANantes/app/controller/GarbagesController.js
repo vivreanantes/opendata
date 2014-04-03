@@ -168,8 +168,26 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	},
 
 	onTapLinkButton : function(button, e, eOpts) {
-		this.saveBackButton("garbages_xtype", false);
-		this.manageLinkButtons(button._data["code"]);
+		
+		// this.saveBackButton("garbages_xtype", false);
+		// this.manageLinkButtons(button._data["code"]);
+		
+		var arrayButtonsId = button._data["code"].split(this.SEPARATOR);
+		if (arrayButtonsId[0]==="collectMods_xtype") {
+			if (arrayButtonsId.length > 1) {
+				var myController = this.getApplication().getController("VivreANantes.controller.CollectModsController");
+				var element = myController.getElementFromStore(arrayButtonsId[1]);
+				if (element!=null) {
+					Ext.Msg.alert(element['libelle'], element['description'], Ext.emptyFn);
+				}
+			}
+		}
+		else if (arrayButtonsId[0]==="comments_xtype") { 
+			// Ext.Viewport.add({xtype:'commentsModal_xtype'});
+			 Ext.Viewport.add({xtype:'modalpanel'});
+		}
+		 
+		
 	},
 
 	onShowDetails : function(button, e, eOpts) {
@@ -332,8 +350,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 				this.garbageDetail = Ext
 						.create('VivreANantes.view.garbages.GarbagesDetails');
 			}
-			var title = "<I>" + this.translate("label_dechet") + "</I> "
-					+ record.data["nom"];
+			var title = /*"<I>" + this.translate("label_dechet") + "</I> + "*/
+					record.data["nom"];
 			this.garbageDetail.setTitle(title);
 
 			// var conseilTraduit = "";
@@ -404,7 +422,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 							var codeValue = "collectMods_xtype"
 									+ thisController.SEPARATOR
 									+ commonDatasCollectMods[j]["code"];
-							var libelleValue = _stringUpperFirstLetter(commonDatasCollectMods[j]["libelle"]);
+							var libelleValue = _stringUpperFirstLetter(commonDatasCollectMods[j]["libelleBouton"]);
 							arrayItemsToShow.push({
 										image : imageValue,
 										code : codeValue,
@@ -452,7 +470,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 */
 			// image
 			var imageComplet = "<img src='resources/images/"
-					+ record.data["image"] + "' width='150px' />";
+					+ record.data["image"] + "' width='120px' />";
 			// this.setDataElement(this.garbageDetail,"garbagesdetails_image",
 			// {'image' : imageComplet})
 			this.garbageDetail.items.items['0'].items.items['0'].setData({

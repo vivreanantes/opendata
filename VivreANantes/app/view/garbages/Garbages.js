@@ -6,7 +6,7 @@ Ext.define('VivreANantes.view.garbages.Garbages', {
 			xtype : 'garbages_xtype',
 			config : {
 				autoDestroy : false,
-				iconCls : 'search', // icône en forme de loupe 
+				iconCls : 'garbageclass', // icône en forme de loupe 
 				title:'Déchets',
 				items : [{
 							xtype : 'garbagescontainer_xtype'

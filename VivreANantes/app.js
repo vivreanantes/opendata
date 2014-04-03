@@ -1,7 +1,23 @@
 Ext.Loader.setPath({
 	'Ext' : 'touch/src'
 });
-   
+
+/*Ext.regApplication('App', {
+
+    icon: 'resources/icons/Icon.png',
+
+    tabletStartupScreen: 'resources/icons/Icon~ipad.png',
+
+    phoneStartupScreen: 'resources/icons/Icon@2x.png',
+
+    glossOnIcon: true,
+
+    fullscreen: true,
+
+    launch: function() {
+    }
+});*/
+
 Ext
 		.application({
 			name : 'VivreANantes',
@@ -37,6 +53,7 @@ Ext
 			'comments.CommentsContainer',
 			'comments.CommentsForm',
 			'comments.CommentsDetails',
+			'comments.CommentsModal',
 			// Calendar,
 			// 'calendar.Calendar',
 			/*'calendar.Ext.ux.TouchCalendarView',*/

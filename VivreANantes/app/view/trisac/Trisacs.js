@@ -7,7 +7,7 @@ Ext.define('VivreANantes.view.trisac.Trisacs', {
 
 			config : {
 				autoDestroy : false,
-				iconCls : 'action',
+				iconCls : 'distrisacclass',
 				title:'Trisac',
 				items : [{
 							xtype : 'TrisacContainer_xtype'

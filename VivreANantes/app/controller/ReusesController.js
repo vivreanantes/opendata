@@ -105,7 +105,7 @@ Ext.define("VivreANantes.controller.ReusesController", {
 
 		var store = this.getReusesList().getStore();
 		if (store!=null) {
-			store.clearFilter();
+			store.clearFilter(true); // true sinon cela plante dans la version android
 			var filterElements = Ext.create("Ext.util.Filter", {
 				filterFn : function(item) {
 					var stModesDeCollecte = item.data["modesCollecte"];

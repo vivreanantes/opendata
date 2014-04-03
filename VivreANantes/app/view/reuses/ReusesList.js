@@ -4,7 +4,7 @@ Ext.define('VivreANantes.view.reuses.ReusesList', {
 	config : {
 		// title : 'Modes de collecte à domicile',
 		// TODO : initialiser ce template avec translate 
-		itemTpl : '<I>{type}</I><br/><div>{libelle} {plagesHoraires_prochainsJours}<br/>{plagesHoraires_lisible}</div>'
+		itemTpl : '<I>{type}</I><br/><div>{libelle}<br/>{plagesHoraires_prochainsJours}</div>'
 	}
 
 	
