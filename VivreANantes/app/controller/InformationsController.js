@@ -21,7 +21,11 @@ Ext.define('VivreANantes.controller.InformationsController', {
 		}
 	},
 	onShowDetails : function(button, e, eOpts) {
-		this.showDetails(button._data.code);
+		if (button.id==='envoyez') {
+			 Ext.Viewport.add({xtype:'modalpanel'});
+		} else {
+			this.showDetails(button._data.code);
+		}
 	},
 	onPushBackButton10 : function() {
 		// console.log("onPushBackButton10");
@@ -47,6 +51,11 @@ Ext.define('VivreANantes.controller.InformationsController', {
 							html : description,
 							scrollable : true,
 							styleHtmlContent : true
+						}, {
+							xtype : 'button',
+							width : '200px',
+							id : "commentez",
+							text : "Commentez"
 						});
 		/*this.getInformations().push({
 					layout : 'vbox',

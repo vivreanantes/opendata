@@ -328,7 +328,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					xtype : 'button',
 					width: 200,
 					id : "garbagesdetails_informations",
-					text : "Envoyez un commentaire",
+					text : "Commente",
 					data : {
 						code : codeValue
 					}
@@ -459,7 +459,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				var index = panelParent.items.keys.indexOf(prefixComplet);
 				if (index != -1) {
 					panelParent.items.items[index].setData(element);
-					panelParent.items.items[index].setHidden(false);
+					// panelParent.items.items[index].setHidden(false);
 				}
 			}
 		}

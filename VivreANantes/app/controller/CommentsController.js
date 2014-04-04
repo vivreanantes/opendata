@@ -48,34 +48,33 @@ Ext.define('VivreANantes.controller.CommentsController', {
 	 */
 	getCommentString : function(code) {
 
-		var faqTraduit = "";
+var faqTraduit = "";
 		var commentLink = this.makeLink("commentsPanel");
-		// On parcours les remarques de la faq
-		var dataFaq = this.getCommentsList().getStore().getData();
-		dataFaq.each(function(recordFaq) {
-					// TODO utiliser getArrayFromString à la place
-					var arrayElementsFaq = recordFaq.data["elements"].replace(
-							", /g", ",").replace(" ,/g", ",").split(',');
-					for (i in arrayElementsFaq) {
-						if (arrayElementsFaq[i] === code) {
-							faqTraduit += "<br/>"+ commentLink + " : <B>"
-									+ recordFaq.data["libelle"] + "</B><BR/>"
-									+ recordFaq.data["description"];
 
-						}
+		// On parcours les remarques de la faq
+		// commonDatasComments
+		for (var j = 0; j < commonDatasComments.length; j++) {
+			if (commonDatasComments[j]["elements"] != null) {
+				// TODO utiliser getArrayFromString à la place
+				var arrayElementsFaq = commonDatasComments[j]["elements"]
+						.replace(", /g", ",").replace(" ,/g", ",").split(',');
+				for (var i = 0; i < arrayElementsFaq.length; i++) {
+					if (arrayElementsFaq[i] === code) {
+						faqTraduit += "<br/>" + commentLink + " : <B>"
+								+ commonDatasComments[j]["libelle"]
+								+ "</B><BR/>"
+								+ commonDatasComments[j]["description"];
 
 					}
-				});
-				if (faqTraduit!="") {
-					faqTraduit += "<br/>";
 				}
-		/*if (faqTraduit != "") {
-			return "<span class='x-button-icon trash' style='visibility: visible !important;' id='ext-element-102'>"+faqTraduit+"</span>"
-		}*/
-		/*
-		 * if (faqTraduit !== "") { faqTraduit = "<BR/><BR/>Commentaires
-		 * (extraits FAQ) : " + faqTraduit; }
-		 */
+			}
+		}
+
+
+		if (faqTraduit != "") {
+
+			faqTraduit += "<br/>";
+		}
 		return faqTraduit;
 	}
 });

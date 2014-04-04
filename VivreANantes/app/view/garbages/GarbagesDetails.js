@@ -155,7 +155,7 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 			xtype : 'button',
 			width : '200px',
 			id : "garbagesdetails_envoyer",
-			text : "Envoyez un commentaire"
+			text : "Commentez"
 		}]
 
 	}

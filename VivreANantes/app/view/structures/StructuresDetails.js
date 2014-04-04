@@ -19,7 +19,10 @@ Ext.define('VivreANantes.view.structures.StructuresDetails', {
 						}, {
 							id : "structuresDetails_advices"
 						}, {
-							id : "structuresDetails_comments"
+							xtype : 'button',
+							width : '200px',
+							id : "commentez",
+							text : "Commentez"
 						}]
 			}
 

@@ -5,7 +5,13 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	extend : "VivreANantes.controller.AbstractController",
 
 	onTapLinkButton : function(button, e, eOpts) {
-		this.manageLinkButtons(button._data["code"]);
+		
+		if (button.id==="commentez") {
+			// Panneau commentez
+			 Ext.Viewport.add({xtype:'modalpanel'});
+		} else {
+			this.manageLinkButtons(button._data["code"]);
+		}
 	},
 	
 	/**
@@ -93,8 +99,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 
 			// Affectation du titre
 			var stType = record.data["type"];
-			var title = "<I>" + stType + "</I>" + " "
-					+ this.stringUpperFirstLetter(record.data["libelle"]);
+			var title = /*"<I>" + stType + "</I>" + " "*/
+					this.stringUpperFirstLetter(record.data["libelle"]);
 			this.structuresDetail.setTitle(title);
 			
 			// Ajout des commentaires

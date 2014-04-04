@@ -39,8 +39,8 @@ Ext.define('VivreANantes.view.Main', {
 					xclass : 'VivreANantes.view.homecollectmods.HomeCollectMods'
 				}, {
 					xclass : 'VivreANantes.view.trisac.Trisacs'
-				}, {
+				}/*, {
 					xclass : 'VivreANantes.view.comments.Comments'
-				}]
+				}*/]
 	}
 });

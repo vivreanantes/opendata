@@ -180,7 +180,7 @@ Ext.define('VivreANantes.controller.GeoController', {
 
         
         if (!Ext.isDefined(this.structureGeoStore)) {
-            this.structureGeoStore = Ext.create('VivreANantes.store.StructureStore',
+            this.structureGeoStore = Ext.create('VivreANantes.store.StructureGeoStore',
                     {
                         autoLoad : true,
                         listeners : {

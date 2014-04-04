@@ -516,8 +516,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			var arraysConseils = this.getArrayItemsToShowAdvices(conseils);
 			this.setDatasConseils(this.garbageDetail.items, 
 									"garbagesdetails_conseils", "libelle", arraysConseils.les_libelles, nbElementsMax);
-			this.setDatasConseils(this.garbageDetail.items, 
-									"garbagesdetails_conseils", "bouton", arraysConseils.les_boutons, nbElementsMax);
+			// this.setDatasConseils(this.garbageDetail.items, "garbagesdetails_conseils", "bouton", arraysConseils.les_boutons, nbElementsMax);
 			// var arraysItemsAdvices = this.getItemsAdvices(conseils);
 			// this.setItemsElement(this.garbageDetail,
 			// "garbagesdetails_conseils", arraysItemsAdvices);
