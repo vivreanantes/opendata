@@ -10,60 +10,40 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				},
 				control : {
 					collectModsView : {
-						activate : 'onActivate',
-						back : 'onPushBackButton1'
+						activate : 'onActivate'
 					},
 					collectModsList : {
-						initialize : "onInitCollectModsList",
-						back : 'onPushBackButton2'
+						// initialize : "onInitCollectModsList"
 					},
 					collectModsDetails : {
 						back : 'onPushBackButton3'
 					},
 					// fonctionne comme une CSS selecteur
 					'collectModsButtonsList_xtype button' : {
-						tap : 'onShowDetails',
-						back : 'onPushBackButton4'
+						tap : 'onShowDetails'
 					},
 					// fonctionne comme une CSS selector
 					// (http://www.w3.org/TR/CSS2/selector.html)
 					'collectModsDetails_xtype button' : {
-						tap : 'onTapLinkButton',
-						back : 'onPushBackButton5'
+						tap : 'onTapLinkButton'
 					}
 				}
-			},
-
-			onPushBackButton1 : function() {
-				// this.onPushBackButton();
-			},
-			onPushBackButton2 : function() {
-				// this.onPushBackButton();
-			},
-			onPushBackButton3 : function() {
-				// this.onPushBackButton();
-			},
-			onPushBackButton4 : function() {
-				// this.onPushBackButton();
-			},
-			onPushBackButton5 : function() {
-				// this.onPushBackButton();
 			},
 			
 			onActivate : function(newActiveItem, container, oldActiveItem,
 					eOpts) {
 				//		// STORE dataCollectMods
 		//		var dataCollectMods = this.getApplication().getController("VivreANantes.controller.GarbagesController").getCollectModList().getStore();
-		//		var arrayItemsToShow = this.getDatasForButtons_old(dataCollectMods, "modco");
+		//		var arItemsToShow = this.getDatasForButtons_old(dataCollectMods, "modco");
 
-		var arrayItemsToShow = this.getArrayItemsToShowForButtons(commonDatasCollectMods, "modco");
+		var arItemsToShow = this.getArrayItemsToShowForButtons(_objCollectMods, "modco");
 
 		var result = new Array();
-		if (arrayItemsToShow.length > 0) {
+		if (arItemsToShow.length > 0) {
 
-			var theItems = arrayItemsToShow;
+			var theItems = arItemsToShow;
 			for (var i = 0; i < theItems.length; i++) {
-				var stLibelle = _decoupe(theItems[i]["libelle"]);
+				var stLibelle = _cutWithBr(theItems[i]["libelle"]);
 				result.push({
 					code : theItems[i].id,
 					label : stLibelle,
@@ -75,8 +55,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 		var nbMax = 18; // la page affiche 18 éléments
 		this.setDataInButtonsWithManyLines(this.getCollectModsList(), "collectModsButtonsList", result, nbMax, 3);
 
-		//	var arrayItems = this.getContentButtonsPanel(arrayItemsToShow);
-		// 	this.removeAllAndSetItems(this.getCollectModsList(), arrayItems);
+		//	var arItems = this.getContentButtonsPanel(arItemsToShow);
+		// 	this.removeAllAndSetItems(this.getCollectModsList(), arItems);
 			},
 
 			onTapLinkButton : function(button, e, eOpts) {
@@ -95,8 +75,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 							.create("VivreANantes.view.collectMod.CollectModsDetails");
 				}
 
-				// Récupère l'élément à partir du store
-				var collectModFromStore = this.getElementFromStore(elementId);
+				// Récupère l'élément
+				var collectModFromStore = _getCollectMod(elementId);
 
 				// Ajout de la description
 				var descriptionTraduit = "";
@@ -114,9 +94,9 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 				if (collectModFromStore["conseils"] !== "") {
 					conseils = collectModFromStore["conseils"] + ",";
 				}
-				var arraysItemsAdvices = this.getItemsAdvices(conseils);
+				var arsItemsAdvices = _getAdvicesBlock(conseils);
 				this.setItemsElement(this.collectModsDetails,
-						"collectModsDetails_advices", arraysItemsAdvices);
+						"collectModsDetails_advices", arsItemsAdvices);
 
 				// Affectation du titre
 				var title = "<I>"
@@ -139,49 +119,8 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 
 				this.getCollectModsView().push(this.collectModsDetails);
 
-			},
+			}/*,
 			onInitCollectModsList : function(container) {
-			},
+			}*/
 
-			/*
-			 * Renvoie le mode de collecte
-			 */
-			getElementFromStore : function(idElement) {
-		var description = "";
-		var conseils = "";
-		var faq = "";
-		var image = "";
-		var libelle = "";
-
-//		// STORE dataCollectMods
-//		var datas = this.getApplication().getController("VivreANantes.controller.GarbagesController").getCollectModList().getStore().getData();
-//		datas.each(function (record) {
-//			if (record.data["code"] === idElement) {
-//				description = record.data["description"];
-//				conseils = record.data["conseils"];
-//				faq = record.data["faq"];
-//				libelle = record.data["libelle"];
-//				image = record.data["image"];
-//			}
-//		});
-				
-		for (j in commonDatasCollectMods) {
-			if (commonDatasCollectMods[j].code === idElement) {
-				description = commonDatasCollectMods[j]["description"];
-				conseils = commonDatasCollectMods[j]["conseils"];
-				faq = commonDatasCollectMods[j]["faq"];
-				libelle = commonDatasCollectMods[j]["libelle"];
-				image = commonDatasCollectMods[j]["image"];
-			}
-		}
-		
-		return {
-			"code" : idElement,
-			"description" : description,
-			"conseils" : conseils,
-			"faq" : faq,
-			"image" : image,
-			"libelle" : libelle
-		}
-	}
 		});

@@ -4,29 +4,29 @@ Ext.define('VivreANantes.controller.CommentsController', {
 	config : {
 		refs : {
 			comments : 'comments_xtype',
-			commentDetail : "commentsDetails_xtype",
-			commentsList : "commentsList_xtype"
+			commentDetail : "commentsDetails_xtype"
+			// , commentsList : "commentsList_xtype"
 		},
 		control : {
-			commentsList : {
-				initialize : 'onInitFaq',
+			/*commentsList : {
+				// initialize : 'onInitFaq',
 				itemtap : 'onListItemTap'
-			}
+			}*/
 		}
 	},
 
-	onInitFaq : function(list) {
+	/*onInitFaq : function(list) {
 		var store = Ext.create('VivreANantes.store.CommentsStore');
 		list.setStore(store);
 		// Initialisation du storage
 		var localStorageController= this.getApplication().getController("VivreANantes.controller.LocalStorageController");
 		localStorageController.initLocalStorage();
 		var temp = localStorageController.getLocale();
-	},
+	},*/
 
-	onListItemTap : function(list, index, element, record) {
+	/*onListItemTap : function(list, index, element, record) {
 		this.showComment(record);
-	},
+	},*/
 
 	showComment : function(record) {
 
@@ -46,7 +46,7 @@ Ext.define('VivreANantes.controller.CommentsController', {
 	 * 
 	 * @return {}
 	 */
-	getCommentString : function(code) {
+	old_getCommentString : function(code) {
 
 var faqTraduit = "";
 		var commentLink = this.makeLink("commentsPanel");
@@ -56,10 +56,10 @@ var faqTraduit = "";
 		for (var j = 0; j < commonDatasComments.length; j++) {
 			if (commonDatasComments[j]["elements"] != null) {
 				// TODO utiliser getArrayFromString à la place
-				var arrayElementsFaq = commonDatasComments[j]["elements"]
+				var arElementsFaq = commonDatasComments[j]["elements"]
 						.replace(", /g", ",").replace(" ,/g", ",").split(',');
-				for (var i = 0; i < arrayElementsFaq.length; i++) {
-					if (arrayElementsFaq[i] === code) {
+				for (var i = 0; i < arElementsFaq.length; i++) {
+					if (arElementsFaq[i] === code) {
 						faqTraduit += "<br/>" + commentLink + " : <B>"
 								+ commonDatasComments[j]["libelle"]
 								+ "</B><BR/>"

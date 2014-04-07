@@ -1,5 +1,6 @@
 
-
+var _SEPARATOR = "#";
+	
 function _utilArrayContainObject(a, obj) {
 	for (var i = 0; i < a.length; i++) {
 		if (a[i] === obj) {
@@ -64,7 +65,7 @@ function _utilRetireAccent (result) {
 		return result;
 }
 
-function _decoupe(stChaine) {
+function _cutWithBr(stChaine) {
 	return _decoupeAvecTaille(stChaine, 30);
 }
 /**
@@ -75,17 +76,17 @@ function _decoupeAvecTaille(stChaine, iTailleMax) {
 	var result = "";
 	if (stChaine != undefined) {
 		// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
-		var array = stChaine.split(/, | ,| -|- |-| /);
+		var ar = stChaine.split(/, | ,| -|- |-| /);
 		var tailleRestanteLigne = iTailleMax;
-		for (var i = 0; i < array.length; i++) {
-			result += array[i];
-			tailleRestanteLigne = tailleRestanteLigne - array[i].length;
+		for (var i = 0; i < ar.length; i++) {
+			result += ar[i];
+			tailleRestanteLigne = tailleRestanteLigne - ar[i].length;
 			// Si il reste des mots
-			if (i + 1 < array.length) {
+			if (i + 1 < ar.length) {
 				// Si le prochain mot n'est pas trop long, on ajoute juste
 				// un
 				// espace
-				if (array[i + 1].length <= tailleRestanteLigne) {
+				if (ar[i + 1].length <= tailleRestanteLigne) {
 					result += " ";
 					tailleRestanteLigne = tailleRestanteLigne - 1;
 				}

@@ -1,4 +1,4 @@
-var commonDatasCollectMods = [{
+var _objCollectMods = [{
 	"code" : "modco_contmpb",
 	"libelle" : "Conteneur plastique",
 	"libelleBouton" : "Conteneur plastique",
@@ -9,8 +9,8 @@ var commonDatasCollectMods = [{
 	"commentaire" : "faq_fiche_lombricompost"
 }, {
 	"code" : "modco_contpapiercarton",
-	"libelle" : "Conteneur papier carton",
-	"libelleBouton" : "Conteneur papier carton",
+	"libelle" : "Conteneurpapier carton",
+	"libelleBouton" : "Conteneur<br/>papier carton",
 	"modesCollecte" : "false",
 	"description" : "<IMG SRC='resources/images/conteneur_carton_instructions.jpg' width='150px' /> <IMG SRC='resources/images/conteneur_carton_instructions_2.jpg' width='150px' /><BR/>On peut mettre : cartons (bruns), cartonnettes, emballage en carton, enveloppe, feuilles, journaux, magazines, prospectus,  boîte à œuf en carton.",
 	"conseils" : "cons_souille",
@@ -27,8 +27,8 @@ var commonDatasCollectMods = [{
 	"image" : "conteneur_verre_mini.png"
 }, {
 	"code" : "modco_contembjournmag",
-	"libelle" : "Conteneur emballages journaux magazines",
-	"libelleBouton" : "Conteneur emballages<br/> journaux magazines",
+	"libelle" : "Conteneuremballagesjournaux magazines",
+	"libelleBouton" : "Conteneur<br/>emballages<br/>journaux magazines",
 	"modesCollecte" : "false",
 	"description" : "<IMG SRC='resources/images/conteneur_emballages_journaux_magazines_instructions.jpg' width='150px' /><BR/>On peut mettre : boîte de conserve, barquette aluminium, cannette, aérosol, bouteille métal sirop, bouteilles d'eau, flacon, brique (jus de fruit, lait), cartonnettes, papier, journaux, magazines.<BR/>Plus d'infos : <I>fiche 'Conteneur emballages journaux magazines'</I>",
 	"conseils" : "cons_sans_bouchon_ni_couvercle",
@@ -164,14 +164,14 @@ var commonDatasCollectMods = [{
 	"image" : "image_defaut_mini.png"
 }, {
 	"code" : "smco_reempcartouchetoner",
-	"libelle" : "Récup. cartouches d'encres et tuners",
-	"libelleBouton" : "Récup. cartouches d'encres et tuners",
+	"libelle" : "Récup. cartouches encres et tuners",
+	"libelleBouton" : "Récup. cartouches encres et tuners",
 	"modesCollecte" : "true",
 	"image" : "image_defaut_mini.png"
 }, {
 	"code" : "smco_reemplivreCD",
-	"libelle" : "Récup. livres, CDs, BDs, DVDs...",
-	"libelleBouton" : "Récup. livres, CDs, BDs, DVDs...",
+	"libelle" : "Récup. livre/BD/CD/DVD",
+	"libelleBouton" : "Récup. livre/BD/CD/DVD",
 	"modesCollecte" : "true",
 	"description" : "livre Revue CD BD",
 	"image" : "image_defaut_mini.png"
@@ -197,8 +197,8 @@ var commonDatasCollectMods = [{
 	"image" : "image_defaut_mini.png"
 }, {
 	"code" : "smco_reempdivers",
-	"libelle" : "Récup. d'objets divers",
-	"libelleBouton" : "Récup. d'objets divers",
+	"libelle" : "Récup. Objets divers",
+	"libelleBouton" : "Récup. Objets divers",
 	"modesCollecte" : "true",
 	"image" : "image_defaut_mini.png"
 }, {
@@ -207,8 +207,8 @@ var commonDatasCollectMods = [{
 	"image" : "image_defaut_mini.png"
 }, {
 	"code" : "smco_vaisselle",
-	"libelle" : "Récup. de la vaisselle",
-	"libelleBouton" : "Récup. de la vaisselle",
+	"libelle" : "Récup. Vaisselle",
+	"libelleBouton" : "Récup. Vaisselle",
 	"modesCollecte" : "true",
 	"image" : "image_defaut_mini.png"
 }, {
@@ -287,4 +287,4 @@ var commonDatasCollectMods = [{
 	"libelleBouton" : "Pharmacie",
 	"modesCollecte" : "true",
 	"image" : "image_defaut_mini.png"
-}];
+}, {}];

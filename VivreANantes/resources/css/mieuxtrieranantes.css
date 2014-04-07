@@ -13,3 +13,6 @@
 .livreclass {
 	-webkit-mask-box-image: url('../icons/icone_livre.png');
 }
+.searchclass {
+	-webkit-mask-box-image: url('../icons/search.png');
+}

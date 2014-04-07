@@ -13,7 +13,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 							id : 'structuresFormSelectType',
 							options : [{
 										text : 'Tous',
-										value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants_resume/g
+										value : /modco_ecopoint|modco_ecotox|modco_decheterie|modco_encombrants_resume|modco_encombrants_resume|smco_reempcartouchetoner|smco_reempelectromenag|smco_reempmeuble|smco_reempjouet|smco_reempinfo|smco_reemplivreCD|smco_reempvet|smco_conteneurlerelais|smco_reempdivers|smco_reemplunettes/g
 									}, {
 										text : "Ecotox",
 										value : "modco_ecotox"

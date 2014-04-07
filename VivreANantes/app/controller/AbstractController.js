@@ -6,36 +6,18 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	extend : 'Ext.app.Controller',
 
 	/**
-	 * Retire les accents d'une chaîne de caractère
+	 * Ajoute les éléments d'un tableau arSrc  à un tableau existant arTarget
 	 */
-	utilRetireAccent : function(result) {
-		result = result.replace(/[ÀàÁáÂâÃãÄäÅåÆæĀāĂăĄą]/g, "a");
-		result = result.replace(/[ÈèÉéÊêËëĒēĔĕĖėĘęĚě]/g, "e");
-		result = result.replace(/[Çç]/g, "c");
-		result = result.replace(/[Ð]/g, "d");
-		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
-		result = result.replace(/[ÙÚÛÜùúûü]/g, "u");
-		result = result.replace(/[Ññ]/g, "n");
-		result = result.replace(/[ÌÍÎÏìíîï]/g, "i");
-		result = result.replace(/[Šš]/g, "s");
-		result = result.replace(/[Ÿÿý]/g, "y");
-		result = result.replace(/[Žž]/g, "z");
-		return result;
-	},
-
-	/**
-	 * Ajoute les éléments d'un tableau arraySrc  à un tableau existant arrayTarget
-	 */
-	utilPushArray : function(arraySrc, arrayTarget) {
-		arTarget.push.apply(arrayTarget, arraySrc);
+	utilPushArray : function(arSrc, arTarget) {
+		arTarget.push.apply(arTarget, arSrc);
 		return;
 	},
 
 	/**
-	 * Vérifie si un tableau arraySrc contient un objet obj
+	 * Vérifie si un tableau arSrc contient un objet obj
 	 */
-	utilArrayContainObject : function(arraySrc, obj) {
-		return _utilArrayContainObject(arraySrc, obj);
+	utilArrayContainObject : function(arSrc, obj) {
+		return _utilArrayContainObject(arSrc, obj);
 	},
 
 	/**
@@ -118,8 +100,6 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 	IMAGE_DIR : "resources/images/",
 
-	SEPARATOR : "#",
-
 	/**
 	 * Convertit un jour dans sa chaine de caractère. Ex "01" devient "janvier".
 	 */
@@ -158,67 +138,67 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 * onTapCommentButton : function(button) { alert(button.id); },
 	 */
 
-	getContentButtonsPanel : function(arrayItemsToShow) {
-		var arrayItems = new Array();
-		var arrayitemsLine = new Array();
+	getContentButtonsPanel : function(arItemsToShow) {
+		var arItems = new Array();
+		var aritemsLine = new Array();
 		var nbElementsParLines = 3;
-		if (arrayItemsToShow) {
-			for (var i = 0; i < arrayItemsToShow.length; i++) {
+		if (arItemsToShow) {
+			for (var i = 0; i < arItemsToShow.length; i++) {
 				// Si je suis sur un multiple de 3 je termine la ligne
 				if (i / nbElementsParLines == Math
 						.round(i / nbElementsParLines)) {
-					if (arrayitemsLine != null) {
+					if (aritemsLine != null) {
 						var objectItem1 = {
 							'layout' : {
 								type : 'hbox',
 								align : 'stretch'
 							},
-							'items' : arrayitemsLine
+							'items' : aritemsLine
 						};
-						arrayItems.push(objectItem1);
+						arItems.push(objectItem1);
 					}
 
-					var arrayitemsLine = new Array();
+					var aritemsLine = new Array();
 				}
 				var libelle = "<font size='3'>"
-						+ arrayItemsToShow[i]["libelle"] + "</font>";
-				arrayitemsLine.push({
+						+ arItemsToShow[i]["libelle"] + "</font>";
+				aritemsLine.push({
 							xtype : "button",
 							height : '120px',
 							width : '33%',
-							id : arrayItemsToShow[i]["id"],
-							// code : arrayItemsToShow[i]["id"],
+							id : arItemsToShow[i]["id"],
+							// code : arItemsToShow[i]["id"],
 							html : "<center>" + libelle
 									+ "<br/><img src='resources/images/"
-									+ arrayItemsToShow[i]["image"]
+									+ arItemsToShow[i]["image"]
 									+ "' /></center>"
 						});
 			}
 			// Si la dernière ligne n'est pas terminée
-			if (arrayitemsLine.length != 0) {
+			if (aritemsLine.length != 0) {
 				var objectItem1 = {
 					'layout' : {
 						type : 'hbox',
 						align : 'stretch'
 					},
-					'items' : arrayitemsLine
+					'items' : aritemsLine
 				};
-				arrayItems.push(objectItem1);
+				arItems.push(objectItem1);
 			}
 		}
-		return arrayItems;
+		return arItems;
 	},
 
-	removeAllAndSetItems : function(panel, arrayItems) {
+	removeAllAndSetItems : function(panel, arItems) {
 		panel.removeAll(true, true);
-		panel.setItems(arrayItems);
+		panel.setItems(arItems);
 	},
 
-	setDataInButtonsWithManyLines : function(panel, prefix, arrayItems,
+	setDataInButtonsWithManyLines : function(panel, prefix, arItems,
 			nbMaxElements, nbElementsPerLine) {
 		var idElementToChange = 0;
-		for (var i = 0; i < arrayItems.length; i++) {
-			var element = arrayItems[i];
+		for (var i = 0; i < arItems.length; i++) {
+			var element = arItems[i];
 			var idElementToChange = i + 1;
 			var prefixComplet = prefix + "_" + idElementToChange;
 			var nbLine = Math.floor(i / nbElementsPerLine);
@@ -252,11 +232,11 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 	},
 
-	setDataInButtons : function(panel, prefix, arrayItems, nbMaxElements) {
+	setDataInButtons : function(panel, prefix, arItems, nbMaxElements) {
 
 		var idElementToChange = 0;
-		for (var i = 0; i < arrayItems.length; i++) {
-			var element = arrayItems[i];
+		for (var i = 0; i < arItems.length; i++) {
+			var element = arItems[i];
 			var idElementToChange = i + 1;
 			var prefixComplet = prefix + "_" + idElementToChange;
 			var item = panel.items.keys.indexOf(prefixComplet);
@@ -278,81 +258,44 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "commentaires" d'une page
-	 * 
+	 *
 	 * @params commentsString chaine de caractère correspondant au code de
 	 *         l'élément dont on recherche des commentaires (ex :
 	 *         "dec_bouchons")
 	 */
-	getItemsComments : function(commentsString, title) {
+		getItemsComments : function (commentsString, title) {
 		var result = new Array();
-		var thisController = this;
 
 		// On parcourt les remarques de la faq
-		var dataFaq = this.getApplication()
-				.getController("VivreANantes.controller.CommentsController")
-				.getCommentsList().getStore().getData();
-		var nombre = 0;
-		dataFaq.each(function(recordFaq) {
-					if (recordFaq.raw["elements"] != null) {
-						// TODO utiliser getArrayFromString à la place
-						var arrayElementsFaq = recordFaq.raw["elements"]
-								.replace(", /g", ",").replace(" ,/g", ",")
-								.split(',');
-						for (i in arrayElementsFaq) {
+		for (j in _objComments) {
+			if (_objComments[j]["elements"] != null) {
 
-							if (arrayElementsFaq[i] === commentsString) {
-								result.push({
-											html : "<B>"
-													+ recordFaq.raw["libelle"]
-													+ "</B><BR/>"
-													+ recordFaq.raw["description"]
-													+ "<br/>",
-											style : "background-color:"
-													+ thisController
-															.getColorPairImpair(nombre)
-										});
-								nombre++;
-							}
-
+				if (_objComments[j]["elements"]!=null) {
+					var arElementsFaq = _objComments[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+					for (i in arElementsFaq) {
+	
+						if (arElementsFaq[i] === commentsString) {
+							result.push({
+								html : "<B>" + _objComments[j]["libelle"] + "</B><BR/>" + _objComments[j]["description"] + "<br/>"
+							});
 						}
-					}
-				});
-		// TODO Ajout d'un formulaire
-		title = title.replace("-/g", "_").replace("<I>", "")
-				.replace("</I>", "");
-		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " ("
-				+ commentsString + ")";
-		result.push(
-				
-				{
-					xtype : 'button',
-					width: 200,
-					id : "garbagesdetails_informations",
-					text : "Commente",
-					data : {
-						code : codeValue
-					}
+
 				}
-				/*
-				 * { xtype : 'button', text : 'Envoyez un commentaire', centered :
-				 * 'true', data : { code : codeValue } }
-				 */
-
-				/*{
-			xtype : 'container',
-			layout : 'vbox',
-			padding : '20 200 20 200',
-			style : "background-color:"
-					+ thisController.getColorPairImpair(nombre),
-			items : [{
-						xtype : 'button',
-						width: 200,
-						id : "garbagesdetails_informations",
-						text : "Envoyez un commentaire",
-						data : {
-							code : codeValue
-						}
-					}]*/
+				}
+			}
+		}
+		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
+		var codeValue = "comments_xtype" + _SEPARATOR + " " + title + " (" + commentsString + ")";
+		result.push({
+			xtype : 'button',
+			width : 200,
+			id : "garbagesdetails_informations",
+			text : "Envoyer un commentaire",
+			data : {
+				code : codeValue
+			}
+		}
+		
 		);
 		return result;
 	},
@@ -370,12 +313,12 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 * Affecte les items (les éléments fils d'un container) à un élement dont
 	 * l'identifiant est elementId de l'élément view.
 	 */
-	setItemsElement : function(view, elementId, arrayItems) {
+	setItemsElement : function(view, elementId, arItems) {
 		var theItems = view.items.items;
 		for (var i = 0; i < theItems.length; i++) {
 			if (theItems[i].id == elementId) {
 				// Cet élément devient actif
-				theItems[i].setItems(arrayItems);
+				theItems[i].setItems(arItems);
 			}
 		};
 	},
@@ -393,46 +336,40 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			}
 		};
 	},
-
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "conseils" d'une page
-	 * 
+	 *
 	 * @params advicesString chaine de caractère listant les codes des conseils
 	 *         (ex : ",cons_1,cons2,cons3")
 	 */
-	getArrayItemsToShowAdvices : function(advicesString) {
+
+		getArrayItemsToShowAdvices : function (advicesString) {
 		var result1 = new Array();
 		var result2 = new Array();
-		var thisController = this;
-		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
-				",").split(',');
-		// On parcourt les conseils
-		if (arrayConseils.length > 0) {
-			var dataAdvices = this
-					.getApplication()
-					.getController("VivreANantes.controller.GarbagesController")
-					.getAdvicesList().getStore().getData();
-			var thisController = this;
-			dataAdvices.each(function(recordAdvice) {
-				for (i in arrayConseils) {
-					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-						result1.push({
-									libelle : recordAdvice.raw["libelle"],
-									description : recordAdvice.raw["description"]
+		if (advicesString!=null) {
+			var arConseils = advicesString.replace(", /g", ",").replace(" ,/g", ",").split(',');
+			
+			// On parcourt les conseils
+			if (arConseils.length > 0) {
+				for (j in _objAdvices) {
+					for (i in arConseils) {
+						if (_objAdvices[j]["code"] === arConseils[i]) {
+							result1.push({
+								libelle : _objAdvices[j]["libelle"],
+								description : _objAdvices[j]["description"]
+							});
+							if (_objAdvices[j]["fiche"] != null
+								 && _objAdvices[j]["fiche"] != "") {
+								result2.push({
+									"libelle" : _objAdvices[j]["libelle"],
+									code : "informations" + _SEPARATOR + _objAdvices[j]["fiche"]
 								});
-						if (recordAdvice.raw["fiche"] != null
-								&& recordAdvice.raw["fiche"] != "") {
-							result2.push({
-										"libelle" : recordAdvice.raw["libelle"],
-										code : "informations"
-												+ thisController.SEPARATOR
-												+ recordAdvice.raw["fiche"]
-									});
+							}
 						}
 					}
 				}
-			});
+			}
 		}
 		return {
 			les_libelles : result1,
@@ -440,13 +377,13 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		};
 	},
 
-	setDatasConseils : function(panel, prefix, prefix2, arrayItems,
+	setDatasConseils : function(panel, prefix, prefix2, arItems,
 			nbMaxElements, nbElementsPerLine) {
 
 		// 1. les libellés
 		var idElementToChange = 0;
-		for (var i = 0; i < arrayItems.length; i++) {
-			var element = arrayItems[i];
+		for (var i = 0; i < arItems.length; i++) {
+			var element = arItems[i];
 			var idElementToChange = i + 1;
 			// On retrouve l'index de l'élément parent
 			var indexParent = panel.keys.indexOf(prefix + "_"
@@ -477,115 +414,33 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 	},
 
-	getArrayItemsToShowComments : function(commentsString, title) {
+	getArrayItemsToShowComments : function (commentsString, title) {
 		var result = new Array();
-		var thisController = this;
 
-		// On parcourt les remarques de la faq
-		var dataFaq = this.getApplication()
-				.getController("VivreANantes.controller.CommentsController")
-				.getCommentsList().getStore().getData();
-		dataFaq.each(function(recordFaq) {
-					if (recordFaq.raw["elements"] != null) {
-						// TODO utiliser getArrayFromString à la place
-						var arrayElementsFaq = recordFaq.raw["elements"]
-								.replace(", /g", ",").replace(" ,/g", ",")
-								.split(',');
-						for (i in arrayElementsFaq) {
+		// On parcourt les commentaires
+		for (j in _objComments) {
+			if (_objComments[j]["elements"] != null) {
+				var arElementsFaq = _objComments[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+				for (i in arElementsFaq) {
 
-							if (arrayElementsFaq[i] === commentsString) {
-								result.push({
-											libelle : recordFaq.raw["libelle"],
-											description : recordFaq.raw["description"]
-										});
-							}
-
-						}
+					if (arElementsFaq[i] === commentsString) {
+						result.push({
+							libelle : _objComments[j]["libelle"],
+							description : _objComments[j]["description"]
+						});
 					}
-				});
-		title = title.replace("-/g", "_").replace("<I>", "")
-				.replace("</I>", "");
-		var codeValue = "comments_xtype" + this.SEPARATOR + " " + title + " ("
-				+ commentsString + ")";
+				}
+			}
+		}
+		title = title.replace("-/g", "_").replace("<I>", "").replace("</I>", "");
+		var codeValue = "comments_xtype" + _SEPARATOR + " " + title + " (" + commentsString + ")";
 		return {
 			les_libelles : result,
 			le_titre : codeValue
 		};
 	},
 
-	/**
-	 * Renvoie les items (les éléments fils d'un container) correspondant à la
-	 * partie "conseils" d'une page
-	 * 
-	 * @params advicesString chaine de caractère listant les codes des conseils
-	 *         (ex : ",cons_1,cons2,cons3")
-	 */
-	getItemsAdvices : function(advicesString) {
-		var result = new Array();
-		var thisController = this;
-		var arrayConseils = advicesString.replace(", /g", ",").replace(" ,/g",
-				",").split(',');
-		// On parcourt les conseils
-		if (arrayConseils.length > 0) {
-			var dataAdvices = this
-					.getApplication()
-					.getController("VivreANantes.controller.GarbagesController")
-					.getAdvicesList().getStore().getData();
-			var thisController = this;
-			dataAdvices.each(function(recordAdvice) {
-				for (i in arrayConseils) {
-					if (recordAdvice.raw["code"] === arrayConseils[i]) {
-						if (recordAdvice.raw["fiche"] != null
-								&& recordAdvice.raw["fiche"] != "") {
-							// lien vers une fiche
-							result.push({
-										xtype : 'container',
-										layout : 'hbox',
-										// style : 'background-color: #759E60;',
-										id : "garbagesdetails_commentaires_"
-												+ recordAdvice.raw["code"],
-										items : [{
-											html : "<b>"
-													+ recordAdvice.raw["libelle"]
-													+ "</b><br/>"
-													+ recordAdvice.raw["description"]
-													+ "<br/><br/>",
-											flex : 1
-										}, {
-											xtype : 'container',
-											layout : 'vbox',
-											items : [{
-												xtype : 'button',
-												id : "garbagesdetails_informations",
-												text : "Plus d'infos",
-												data : {
-													code : "informations"
-															+ thisController.SEPARATOR
-															+ recordAdvice.raw["fiche"]
-												}
-											}]
-										}]
-									});
-						}
-
-						// pas de lien vers une fiche
-						else {
-							result.push({
-										id : "garbagesdetails_commentaires_"
-												+ recordAdvice.raw["code"],
-										html : "<b>"
-												+ recordAdvice.raw["libelle"]
-												+ "<br/></b>"
-												+ recordAdvice.raw["description"]
-												+ "<br/><br/>"
-									});
-						}
-					}
-				}
-			});
-		}
-		return result;
-	},
+	
 
 	/*
 	 * Créer un lien vers une page de l'application. En paramètre l'identifiant :
@@ -649,7 +504,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 */
 	makeLinkButton : function(id, idDetail) {
 		var label = this.translate("label_" + idDetail);
-		var idComplet = id + this.SEPARATOR + idDetail;
+		var idComplet = id + _SEPARATOR + idDetail;
 		var idComplet = "collectMods-contembjournmag";
 		var res = {
 			xtype : 'button',
@@ -697,10 +552,10 @@ Ext.define('VivreANantes.controller.AbstractController', {
 
 		// On décompose buttonId pour initialiser mainPageXtype et
 		// elementToShowInPage
-		var arrayButtonsId = buttonId.split(this.SEPARATOR);
-		var mainPageXtype = arrayButtonsId[0];
-		if (arrayButtonsId.length > 1) {
-			var elementToShowInPage = arrayButtonsId[1];
+		var arButtonsId = buttonId.split(_SEPARATOR);
+		var mainPageXtype = arButtonsId[0];
+		if (arButtonsId.length > 1) {
+			var elementToShowInPage = arButtonsId[1];
 		}
 
 		// On affiche le déchet
@@ -730,20 +585,23 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		}
 		// OU On affiche la fiche explicative
 		else if (mainPageXtype == "informations") {
-			var myController = this
-					.getApplication()
-					.getController("VivreANantes.controller.GarbagesController");
-			var datas = myController.getInformationsList().getStore().getData();
-			myController = this
-					.getApplication()
-					.getController("VivreANantes.controller.InformationsController");
-			// CRN_TEMPO
-			datas.each(function(record) {
-						// bascule vers la page
-						if (record.data["code"] == elementToShowInPage) {
-							myController.showDetails(elementToShowInPage);
-						}
-					});
+			informationsController = this.getApplication().getController("VivreANantes.controller.InformationsController");
+			if (_getInfo(elementToShowInPage)) {
+				informationsController.showDetails(elementToShowInPage);
+			}
+			
+
+			//			// STORE datasInformations
+			//			var myController = this	.getApplication().getController("VivreANantes.controller.GarbagesController");
+			//			var datas = myController.getInformationsList().getStore().getData();
+			//			myController = this.getApplication().getController("VivreANantes.controller.InformationsController");
+			//			// CRN_TEMPO
+			//			datas.each(function (record) {
+			//				// bascule vers la page
+			//				if (record.data["code"] == elementToShowInPage) {
+			//					myController.showDetails(elementToShowInPage);
+			//				}
+			//			});
 
 		}
 		// OU On affiche le commentaire
@@ -774,16 +632,15 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 *         créer des boutons)
 	 */
 	getDatasForButtons : function(datas, buttonLabel) {
-		var arrayItemsToShow = new Array();
+		var arItemsToShow = new Array();
 		var thisController = this;
 		datas.each(function(record) {
 					if (record.data["bouton"] == buttonLabel) {
 
 						// Ajoute les <br/>
-						var stLibelle = thisController
-								.decoupe(record.data["libelle"]);
+						var stLibelle = _cutWithBr(record.data["libelle"]);
 
-						arrayItemsToShow.push({
+						arItemsToShow.push({
 									"libelle" : stLibelle,
 									"image" : record.data["image"],
 									"id" : record.data["code"]
@@ -791,29 +648,29 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					}
 
 				});
-		return arrayItemsToShow;
+		return arItemsToShow;
 	},
 	/**
 	 * Découpe une chaîne de caractère (notamment pour les boutons) en insérant
 	 * des balises "<br/>
 	 */
-	decoupe : function(stChaine) {
+	/*decoupe : function(stChaine) {
 		var result = "";
 		if (stChaine != undefined) {
 			var iTailleMax = 30;
 
 			// séparateurs : ", " OU " ," OU " -" OU "- " OU "-" OU " "
-			var array = stChaine.split(/, | ,| -|- |-| /);
+			var ar = stChaine.split(/, | ,| -|- |-| /);
 			var tailleRestanteLigne = iTailleMax;
-			for (var i = 0; i < array.length; i++) {
-				result += array[i];
-				tailleRestanteLigne = tailleRestanteLigne - array[i].length;
+			for (var i = 0; i < ar.length; i++) {
+				result += ar[i];
+				tailleRestanteLigne = tailleRestanteLigne - ar[i].length;
 				// Si il reste des mots
-				if (i + 1 < array.length) {
+				if (i + 1 < ar.length) {
 					// Si le prochain mot n'est pas trop long, on ajoute juste
 					// un
 					// espace
-					if (array[i + 1].length <= tailleRestanteLigne) {
+					if (ar[i + 1].length <= tailleRestanteLigne) {
 						result += " ";
 						tailleRestanteLigne = tailleRestanteLigne - 1;
 					}
@@ -826,7 +683,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			}
 		}
 		return result;
-	},
+	},*/
 	
 	/**
 	 * Renvoie les boutons d'après le data
@@ -839,18 +696,18 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 */
 
 	getArrayItemsToShowForButtons : function (datas, buttonLabel) {
-		var arrayItemsToShow = new Array();
+		var arItemsToShow = new Array();
 		for (var i = 0; i < datas.length; i++) {
 			if (datas[i].bouton == buttonLabel) {
-				var stLibelle = _decoupe(datas[i]["libelle"]); // Ajoute les <br/>
-				arrayItemsToShow.push({
+				var stLibelle = _cutWithBr(datas[i]["libelle"]); // Ajoute les <br/>
+				arItemsToShow.push({
 					"libelle" : stLibelle,
 					"image" : datas[i].image,
 					"id" : datas[i].code
 				});
 			}
 		};
-		return arrayItemsToShow;
+		return arItemsToShow;
 
 	}
 });

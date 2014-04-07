@@ -1,4 +1,4 @@
-var commonDatasUsualCategory = [{
+var _objUsualCategories = [{
 		"code" : "cu_plastique",
 		"libelle" : "Plastique / briques",
 		"sousCategories" : "false",

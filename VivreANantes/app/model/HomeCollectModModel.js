@@ -66,10 +66,10 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							type : 'string',
 							convert: function(value, record) {
 								if (record.raw["modesCollecte"]!=null && record.raw["modesCollecte"].indexOf("modco_bac",0)!=-1) {
-									return "<B>Rappels</B> : les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.";
+									return "<B>Rappels</B> : les déchets recyclables dans le bac jaune, les déchets non recyclables dans le bac bleu.";
 								}
 								else {
-									return "<B>Rappels</B> : les déchets recyclables dans le bac jaune, les déchets non recyclables dans le bac bleu.";
+									return "<B>Rappels</B> : les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.";
 								}
 							}
 						}]

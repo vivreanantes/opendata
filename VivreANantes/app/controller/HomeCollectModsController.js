@@ -79,9 +79,9 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			if (!this.homeCollectModDetail) {
 				this.homeCollectModDetail = Ext
 						.create('VivreANantes.view.homecollectmods.HomeCollectModsDetails');
-
-				this.homeCollectModDetail.items.items['0'].setTpl('Source : Open Data Nantes, valable <font color=red>à partir du 16/09/2013</font></I><br/><br/><div>Adresse : {dcv}{ci}</div><br/>' +
-					'<div>Modes de collecte : <b>{modesCollecte}</b></div><div>Jours de collecte  : <b> {jct} {jcbb} {jcbj} </b></div><br/><br/>{conseils}');
+				var stSrc = "<b>Source</b> : <font color=red>OpenDataNantes 09/2013</font></I><br/><br/>";
+				this.homeCollectModDetail.items.items['0'].setTpl('<b>Adresse</b> : {dcv}{ci}<br/>' +
+					'Modes de collecte : <b>{modesCollecte}</b><br/>Jours de collecte : <b>{jct} {jcbb} {jcbj} </b><br/>'+stSrc+'{conseils}');
 					// '<UL><LI>si vous êtes en <B>"sac bleu et sac jaune"</B> (appelés "Trisac") : les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.</LI>'+
 					// '<LI>si vous êtes en <B>"bac bleu et bac jaune"</B> : les déchets recyclables est à déposer dans le bac jaune, les déchets non recyclables dans le bac bleu.</LI></UL> {src}');
 			}
@@ -90,34 +90,34 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			var thisController = this;
 			// Récupère les modes de collecte
 			var thisController = this;
-			var arrayModesDeCollecte = record.raw["modesCollecte"].split(',');
-			var arrayItemsToShow = new Array();
+			var arModesDeCollecte = record.raw["modesCollecte"].split(',');
+			var arItemsToShow = new Array();
 
 
 			// STORE dataCollectMods
 			// var dataCollectMods =
 			// this.getCollectModList().getStore().getData();
 			// dataCollectMods.each(function(recordCollectMod) {
-			// for (var i = 0; i < arrayModesDeCollecte) {
-			// if (recordCollectMod.raw["code"] === arrayModesDeCollecte[i]) {
+			// for (var i = 0; i < arModesDeCollecte) {
+			// if (recordCollectMod.raw["code"] === arModesDeCollecte[i]) {
 			// var imageValue = recordCollectMod.data['image'];
-			// var codeValue = "collectMods_xtype" + thisController.SEPARATOR +
+			// var codeValue = "collectMods_xtype" + _SEPARATOR +
 			// recordCollectMod.data['code'];
 			// var libelleValue =
 			// _stringUpperFirstLetter(recordCollectMod.data['libelle']);
-			// arrayItemsToShow.push({image:imageValue,code:codeValue,label:libelleValue});
+			// arItemsToShow.push({image:imageValue,code:codeValue,label:libelleValue});
 			// }
 			// }
 			// });
-			for (var j = 0; j < commonDatasCollectMods.length; j++) {
-				for (var i = 0; i < arrayModesDeCollecte.length; i++) {
-					if (commonDatasCollectMods[j]["code"] === arrayModesDeCollecte[i]) {
-						var imageValue = commonDatasCollectMods[j]["image"];
+			for (var j = 0; j < _objCollectMods.length; j++) {
+				for (var i = 0; i < arModesDeCollecte.length; i++) {
+					if (_objCollectMods[j]["code"] === arModesDeCollecte[i]) {
+						var imageValue = _objCollectMods[j]["image"];
 						var codeValue = "collectMods_xtype"
-								+ thisController.SEPARATOR
-								+ commonDatasCollectMods[j]["code"];
-						var libelleValue = _stringUpperFirstLetter(commonDatasCollectMods[j]["libelleBouton"]);
-						arrayItemsToShow.push({
+								+ _SEPARATOR
+								+ _objCollectMods[j]["code"];
+						var libelleValue = _stringUpperFirstLetter(_objCollectMods[j]["libelleBouton"]);
+						arItemsToShow.push({
 									image : imageValue,
 									code : codeValue,
 									label : libelleValue
@@ -128,7 +128,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			var nbGarbagesdetailsCollectmodsMax = 4;
 			thisController.setDataInButtons(
 					thisController.homeCollectModDetail.items.items['1'],
-					"homecollectmodsdetails_collectmod", arrayItemsToShow,
+					"homecollectmodsdetails_collectmod", arItemsToShow,
 					nbGarbagesdetailsCollectmodsMax);
 
 			// Bind the record onto the show contact view
@@ -159,7 +159,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			var filterHomeCollectMod = Ext.create('Ext.util.Filter', {
 				filterFn : function(item) {
 					var escaperegex = Ext.String.escapeRegex;
-					var texteSansAccents = thisController.utilRetireAccent(text.getValue());
+					var texteSansAccents = _utilRetireAccent(text.getValue());
 					var texttest = new RegExp(escaperegex(texteSansAccents), 'ig');
 					var nomVoie_sansAccents = item.data['nvsa'];
 					return (texttest.test(nomVoie_sansAccents));
@@ -170,11 +170,11 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 	},
 	
 	onTapLinkButton : function(button, e, eOpts) {
-		var arrayButtonsId = button._data["code"].split(this.SEPARATOR);
-		if (arrayButtonsId[0]==="collectMods_xtype") {
-			if (arrayButtonsId.length > 1) {
+		var arButtonsId = button._data["code"].split(_SEPARATOR);
+		if (arButtonsId[0]==="collectMods_xtype") {
+			if (arButtonsId.length > 1) {
 				var myController = this.getApplication().getController("VivreANantes.controller.CollectModsController");
-				var element = myController.getElementFromStore(arrayButtonsId[1]);
+				var element = myController.getElementFromStore(arButtonsId[1]);
 				if (element!=null) {
 					Ext.Msg.alert(element['libelle'], element['description'], Ext.emptyFn);
 				}

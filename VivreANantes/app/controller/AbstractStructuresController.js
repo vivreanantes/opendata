@@ -30,7 +30,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 						.translate("label_type"));
 				var modeCollecteTraduit = "";
 				var typeTraduit = "";
-				if (record.data["modesCollecte"] != null
+				/*if (record.data["modesCollecte"] != null
 						&& record.data["modesCollecte"] !== "") {
 					// On découpe modesCollecte, puis on traduit
 					var arModesCollecte = record.data["modesCollecte"].split(",");
@@ -45,8 +45,10 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					if (record.data["modesCollecte"]==="modco_distrisac") {
 						typeTraduit = " - " + record.data["type"];
 					}
+				}*/
+				if (record.data["type"] != null	&& record.data["type"] !== "") {
+					typeTraduit = record.data["type"];	
 				}
-				
 				descriptionTraduit += "<b>"+label + "</b>: " + modeCollecteTraduit + " "
 						+ typeTraduit + "<br/><br/>";
 			}
@@ -93,9 +95,9 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			if (record.data["conseils"] !== "") {
 				conseils = record.data["conseils"] + ",";
 			}
-			var arraysItemsAdvices = this.getItemsAdvices(conseils);
+			var arsItemsAdvices = _getAdvicesBlock(conseils);
 			this.setItemsElement(this.structuresDetail,
-					"structuresDetails_advices", arraysItemsAdvices);
+					"structuresDetails_advices", arsItemsAdvices);
 
 			// Affectation du titre
 			var stType = record.data["type"];

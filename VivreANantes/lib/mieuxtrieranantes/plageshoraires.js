@@ -174,7 +174,7 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 	var stLabelAu = _translate("label_au");
 	var stLabelEt = _translate("label_et");
 	// var stLabelDu = _translate("label_du");
-	var stLabelTouteLAnnee = _translate("label_toutelannee");
+	// var stLabelTouteLAnnee = _translate("label_toutelannee");
 	
 
 	// Cas des "sauf_"
@@ -192,7 +192,7 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 
 			// Si on est sur la plage année complère
 			if (jours === "0101-3112") {
-				result = _translate(stLabelTouteLAnnee);
+				// result = _translate(stLabelTouteLAnnee);
 			}
 			// Si on est de type "de .. à "
 			else if (jours.indexOf(separatorJusquA, 0) != -1) {
