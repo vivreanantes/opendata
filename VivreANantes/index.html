@@ -2,7 +2,8 @@
 <html manifest="" lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>VivreANantes</title>
+    <title>Mieux trier à Nantes</title>
+    <script src="lib/fitbit-app.js"></script>
     <style type="text/css">
         /**
          * Example of an initial loading indicator.
@@ -73,7 +74,7 @@
 }
     </style>
 </head>
-<body>
+<body onload="onLoad()">
     <div id="appLoadingIndicator">
         <div></div>
         <div></div>
@@ -94,9 +95,6 @@
 	<script src="lib/mieuxtrieranantes/translation.js"></script>
 	<script src="lib/mieuxtrieranantes/date.js"></script>
 	<script src="lib/mieuxtrieranantes/plageshoraires.js"></script>
-	<script src="lib/fitbit-app.js"></script>
-	
-	
 	<script src="data/GarbagesDatas.js"></script>
 	<script src="data/UsualCategoriesDatas.js"></script>
 	<script src="data/CollectModsDatas.js"></script>

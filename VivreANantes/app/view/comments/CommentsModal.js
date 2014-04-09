@@ -1,6 +1,6 @@
 Ext.define('VivreANantes.view.comments.CommentsModal', {
 			extend : 'Ext.Panel',
-			alias : 'widget.modalpanel',
+			alias : 'widget.commentmodal',
 
 			config : {
 				centered : true,

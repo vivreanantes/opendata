@@ -128,7 +128,6 @@ Ext
 		// Le relais : quartier_admin, quartier
 		// Encombrant : quartier_admin et quartier
 		// DecheterieEcopoint : quartier
-		// Colonnes enterrées : à faire
 		
 		// TODO encombrants : améliorer la macro et le traitement java
 		// HomeCollectModModel.js
@@ -150,10 +149,7 @@ Ext
 		// TODO Modes des collecte listing des lieux les plus proches sur la page des modes de collecte
 		// TODO le texte des modes de collecte est dupliqué. Il faudrait les récupérer.
 
-		///////////// CED ////////////////// 
 
-		// TODO Carte : utiliser le localstorage pour mémoriser les structures affichées, et les quartiers 
-		// TODO Carte : filtrer sur les structures et les quartiers
 		// TODO Carte : permettre la bascule de la carte vers StructuresDetails (utiliser AbstractController.makeLink)
 
 		// TODO Calendrier - DUR : intégrer le composant Ext.ux.TouchCalendar (on utilisera Ext.ux.TouchCalendarView)

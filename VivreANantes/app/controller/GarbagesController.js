@@ -183,7 +183,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		} else if (arButtonsId[0] === "comments_xtype") {
 			// Ext.Viewport.add({xtype:'commentsModal_xtype'});
 			Ext.Viewport.add({
-						xtype : 'modalpanel'
+						xtype : 'commentmodal'
 					});
 		}
 

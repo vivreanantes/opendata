@@ -1,3 +1,4 @@
+/*
 // Some methods are slightly different for apps vs the website.
 // This file has the app version of the methods
 
@@ -91,25 +92,21 @@ var foodSubmitForm = function() {
   return false;
 };
 
-/*jQuery(document).ready(function($) {
-
-    user = $.cookie("user");
-    pass = $.cookie("pass");
-
-    //a hack to force xhr request header, 
-    //with out this it works in site, but fails on local files (ie phonegap)
-    jQuery.ajaxSetup({
-      beforeSend: function(xhr) {
-	  xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-	}
-      });
-    
-    if(user!=null && user!='' && pass!=null && pass!='') {
-      getHome('/home');
-    }
-    sparklines();
-    
-  });*/
+//jQuery(document).ready(function($) {
+//    user = $.cookie("user");
+//    pass = $.cookie("pass");
+//    //a hack to force xhr request header, 
+//    //with out this it works in site, but fails on local files (ie phonegap)
+//    jQuery.ajaxSetup({
+//      beforeSend: function(xhr) {
+//	  xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+//	}
+//      });
+//    if(user!=null && user!='' && pass!=null && pass!='') {
+//      getHome('/home');
+//    }
+//    sparklines();
+//  });
 
 function roundNumber(num) {
   var dec = 3;
@@ -165,4 +162,45 @@ document.addEventListener("deviceready", function(){
       }, false); 
 
 //     watchAccel();
-  }, false); 
+  }, false);
+  */
+  
+  
+  // Call onDeviceReady when PhoneGap is loaded.
+    //
+    // At this point, the document has loaded but phonegap-1.0.0.js has not.
+    // When PhoneGap is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    // 
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        // Register the event listener
+        document.addEventListener("menubutton", onMenuKeyDown, false);
+         // Register the event listener
+        document.addEventListener("searchbutton", onSearchKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    	alert("backbutton");
+    }
+    
+    // Handle the menu button
+    //
+    function onMenuKeyDown() {
+    	alert("onMenuKeyDown");
+    }
+    
+    // Handle the search button
+    //
+    function onSearchKeyDown() {
+    	alert("onSearchKeyDown");
+    }

@@ -23,7 +23,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 			onShowDetails : function(button, e, eOpts) {
 				if (button.id === 'envoyez') {
 					Ext.Viewport.add({
-								xtype : 'modalpanel'
+								xtype : 'commentmodal'
 							});
 				} else {
 					this.showDetails(button._data.code);
@@ -113,12 +113,14 @@ Ext.define('VivreANantes.controller.InformationsController', {
 				if (arItemsToShow.length > 0) {
 					var theItems = arItemsToShow;
 					for (var i = 0; i < theItems.length; i++) {
-						var stLibelle = _cutWithBr(theItems[i]["libelle"]);
-						result.push({
-									code : theItems[i].id,
+						if (theItems[i]["id"]!='') {
+							var stLibelle = _cutWithBr(theItems[i]["libelle"]);
+							result.push({
+									code : theItems[i]["id"],
 									label : stLibelle,
-									image : theItems[i].image
-								});
+									image : theItems[i]["image"]
+							});
+						}
 					}
 				}
 

@@ -8,7 +8,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		
 		if (button.id==="commentez") {
 			// Panneau commentez
-			 Ext.Viewport.add({xtype:'modalpanel'});
+			 Ext.Viewport.add({xtype:'commentmodal'});
 		} else {
 			this.manageLinkButtons(button._data["code"]);
 		}
