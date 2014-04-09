@@ -179,11 +179,14 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 
 	// Cas des "sauf_"
 	if (plageHoraire.substring(0, 5) == "sauf_") {
-		result = _stringUpperFirstLetter(_translate("label_sauf_ferie") + " " + " (sauf dates ci-dessous)");
+		result = _translate("label_sauf_ferie");
+	}
+	// Cas de "feries_suivant"
+	else if (plageHoraire.substring(0, 14) == "feries_suivant") {
+		result = _translate("label_uniqferiessuivant") + " :";
 	}
 	// Cas des plages
 	else {
-
 		var arHeures = plageHoraire.split(separatorDeZonePlageHoraire);
 
 		// 2. Zone date début / date de fin
@@ -199,16 +202,16 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 				result = result + /*stLabelDu + " " + */jours.substring(0, 2) + " "
 						+ __getMonthString(jours.substring(2, 4), stLocale)
 						+ " " + stLabelAu + " " + jours.substring(5, 7) + " "
-						+ __getMonthString(jours.substring(7, 9), stLocale);
+						+ __getMonthString(jours.substring(7, 9), stLocale) + " - ";
 			}
 			// Cas des jours précis
 			else {
 				result = result + /*stLabelLe + " "*/ + jours.substring(0, 2) + " "
 						+ __getMonthString(jours.substring(2, 4), stLocale)
-						+ " " + "20" + jours.substring(4, 6);
+						+ " " + "20" + jours.substring(4, 6)+ " - ";
 			}
 		}
-		result = result + " - ";
+		// result = result + " - ";
 
 		// 3. Zone "jours de la semaine" (si elle existe)
 		if (arHeures[1] != null && arHeures[1].length > 0) {
@@ -223,7 +226,7 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 				result = result + "lundi au samedi"
 			} else if (jourDeLaSemaine.length == 5) {
 				// Renvoie par exemple "du lundi au samedi"
-				result = result + /stLabelDu + " "/
+				result = result + /* stLabelDu + " " */
 						+ __getDayString(jourDeLaSemaine.substring(0, 2), 0)
 						+ " " + stLabelAu + " "
 						+ __getDayString(jourDeLaSemaine.substring(3, 5), 0)

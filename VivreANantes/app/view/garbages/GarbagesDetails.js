@@ -113,33 +113,29 @@ Ext.define('VivreANantes.view.garbages.GarbagesDetails', {
 		}, {
 			// Le premier conseil
 			xtype : 'container',
-			layout : 'hbox',
+			layout : 'vbox',
 			width : '100%',
 			id : "garbagesdetails_conseils_1",
 			items : [{
-						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
+						tpl : "<br/><br/><b>{libelle}</b><br/>{description}<br/>",
 						id : "garbagesdetails_conseils_1_libelle"
 					}, {
 						xtype : 'label',
 						id : "garbagesdetails_conseils_1_bouton",
-						text : "Voir fiche",
-						width:"150px"
-					}]
+						tpl : "Voir <i>fiche {libelle}</i>"					}]
 		}, {
 			// Le deuxieme conseil
 			xtype : 'container',
-			layout : 'hbox',
+			layout : 'vbox',
 			width : '100%',
 			id : "garbagesdetails_conseils_2",
 			items : [{
-						tpl : "<b>{libelle}</b><br/>{description}<br/><br/>",
+						tpl : "<br/><br/><b>{libelle}</b><br/>{description}<br/>",
 						id : "garbagesdetails_conseils_2_libelle"
 					}, {
 						xtype : 'label',
 						id : "garbagesdetails_conseils_2_bouton",
-						text : "Voir fiche",
-						width:"150px"
-					}]
+						text : "Voir <i>fiche {libelle}</i>"					}]
 		}, {
 			id : "garbagesdetails_commentaires"
 		}, {

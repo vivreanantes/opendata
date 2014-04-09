@@ -377,13 +377,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		};
 	},
 
-	setDatasConseils : function(panel, prefix, prefix2, arItems,
+	setDatasConseils : function(panel, prefix, prefix2, prefix3, arItems, arItemsBoutons,
 			nbMaxElements, nbElementsPerLine) {
 
 		// 1. les libellés
 		var idElementToChange = 0;
 		for (var i = 0; i < arItems.length; i++) {
 			var element = arItems[i];
+			var elementButton = arItemsBoutons[i];
 			var idElementToChange = i + 1;
 			// On retrouve l'index de l'élément parent
 			var indexParent = panel.keys.indexOf(prefix + "_"
@@ -397,6 +398,14 @@ Ext.define('VivreANantes.controller.AbstractController', {
 				if (index != -1) {
 					panelParent.items.items[index].setData(element);
 					// panelParent.items.items[index].setHidden(false);
+				}
+				if (elementButton) {
+					var prefixComplet = prefix + "_" + idElementToChange + "_"
+						+ prefix3;
+					var index = panelParent.items.keys.indexOf(prefixComplet);
+					if (index != -1) {
+						panelParent.items.items[index].setData(elementButton);
+					}
 				}
 			}
 		}

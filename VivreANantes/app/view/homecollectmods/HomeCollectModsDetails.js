@@ -3,7 +3,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
 	xtype : 'homecollectmodsdetails_xtype',
 
 	config : {
-		title : 'Collecte à domicile',
+		title : 'Collecte à domicile (Nantes)',
 		layout : 'hbox',
 		items : [{
 					// html : '<I>Source : Open Data Nantes, valable à partir du

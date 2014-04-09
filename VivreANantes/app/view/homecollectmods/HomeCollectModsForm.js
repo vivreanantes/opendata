@@ -9,7 +9,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsForm', {
 		items : [{
 					xtype : 'textfield',
 					name : 'name',
-					label : 'Adresse',
+					label : 'Rue',
 					id : 'homeCollectModsFormText',
 					placeHolder : "Sans 'rue'. Ex : Alain Gerbault"
 				}

@@ -40,7 +40,11 @@ function _translate(stKey, stLocale) {
 		},
 		"label_sauf_ferie" : {
 			"en" : "except official holiday",
-			"fr" : "pas jours fériés"
+			"fr" : "sauf jours fériés"
+		},
+		"label_uniqferiessuivant" : {
+			"en" : "only following official holiday",
+			"fr" : "uniquement les jours fériés suivant"
 		},
 		"label_le" : {
 			"en" : " ",

@@ -173,8 +173,7 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 		var arButtonsId = button._data["code"].split(_SEPARATOR);
 		if (arButtonsId[0]==="collectMods_xtype") {
 			if (arButtonsId.length > 1) {
-				var myController = this.getApplication().getController("VivreANantes.controller.CollectModsController");
-				var element = myController.getElementFromStore(arButtonsId[1]);
+				var element = _getCollectMod(arButtonsId[1]);
 				if (element!=null) {
 					Ext.Msg.alert(element['libelle'], element['description'], Ext.emptyFn);
 				}
@@ -182,8 +181,6 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 		} else {
 			this.manageLinkButtons(button._data["code"]);
 		}
-		// console.log("saveBackButton 2");
-		// this.saveBackButton("HomeCollectModsView", false);
 	}
 
 });

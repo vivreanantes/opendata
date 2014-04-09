@@ -39,19 +39,20 @@ Ext.define('VivreANantes.controller.InformationsController', {
 				var myElement = _getInfo(elementId);
 
 				var description = myElement["description"]
-						+ _getCommentsBloc[myElement["code"]];
+						+ _getCommentsBloc(myElement["code"]);
 				/*
 				 * var description = description + this .getApplication()
 				 * .getController("VivreANantes.controller.CommentsController")
 				 * .getCommentString(myElement["code"]);
 				 */
-				var title = "<I>"
+				/*var title = "<I>"
 						+ this.translateWithUpperFirstLetter("label_fiche")
-						+ "</I> " + myElement["libelle"];
+						+ "</I> " + myElement["libelle"];*/
+				var title = myElement["libelle"];
 				// Met l'élément dans le détail
 				this.getInformations().push({
 							xtype : 'panel',
-							title : myElement["libelle"],
+							title : title,
 							html : description,
 							scrollable : true,
 							styleHtmlContent : true

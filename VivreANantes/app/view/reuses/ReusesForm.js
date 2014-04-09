@@ -27,7 +27,7 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 				text : "Jouets",
 				value : "smco_reempjouet"
 			}, {
-				text : "Livres, CDs, BDs...",
+				text : "Livres/BD/CD/DVD",
 				value : "smco_reemplivreCD"
 			}, {
 				text : "Vêtements (dont Le Relais)",

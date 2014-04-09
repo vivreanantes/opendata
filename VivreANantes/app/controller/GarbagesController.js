@@ -10,25 +10,25 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		refs : {
 			garbagesView : 'garbages_xtype',
 			garbagesContainer : 'garbagescontainer_xtype',
-			garbagesList : 'garbagesList_xtype',
+			// garbagesList : 'garbagesList_xtype',
 			garbageDetail : 'garbagesDetails_xtype',
 			garbagesForm : 'garbagesForm_xtype',
 			garbagesFormText : '#garbagesFormText',
 			garbagesFormSelect : '#garbagesFormSelect',
 			garbagesFormButton : '#garbagesFormButton',
 			garbagesButtonsPanel : 'garbagesButtonsPanel_xtype',
-			usualCategoriesButtonsPanel : 'usualCategoriesButtonsPanel_xtype',
-			advicesList : 'advicesList_xtype',
+			usualCategoriesButtonsPanel : 'usualCategoriesButtonsPanel_xtype'
+			// advicesList : 'advicesList_xtype',
 			// collectModList : 'collectModList_xtype',
-			usualCategoriesList2 : 'usualCategoriesList2_xtype',
-			informationsList : 'informationsList_xtype'
+			// usualCategoriesList2 : 'usualCategoriesList2_xtype',
+			// informationsList : 'informationsList_xtype'
 		},
 		control : {
 			collectModsView : {},
-			collectModsList : {
+			/*collectModsList : {
 				initialize : "onInitCollectModsList"
 
-			},
+			},*/
 			usualCategoriesButtonsPanel : {
 				initialize : 'onInitUsualCategoriesButtonsPanel',
 				show : 'onShowUsualCategoriesButtonsPanel'
@@ -37,9 +37,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 * usualSubCategoriesButtonsPanel : { initialize :
 			 * 'onInitUsualSubCategoriesButtonsPanel' },
 			 */
-			garbagesList : {
+			/*garbagesList : {
 				itemtap : 'showGarbagesDetail_old'
-			},
+			},*/
 
 			garbagesView : {
 				push : 'onGarbagesViewPush',
@@ -48,7 +48,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			},
 
 			garbagesFormText : {
-// keyup : 'onGarbageStoreFilter',
+			// keyup : 'onGarbageStoreFilter',
 			// change : 'onGarbageStoreFilter',
 			// clearicontap : 'onGarbageStoreFilter'
 			},
@@ -62,7 +62,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			advicesList : {
 				initialize : 'onInitGarbagesAdvices'
 			},*/
-
 			/*
 			 * wasteTreatmentsCategoriesList : { initialize :
 			 * 'onInitGarbagesWasteTreatmentsCategoriesList' },
@@ -70,12 +69,12 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			/*
 			 * collectModList : { initialize : 'onInitGarbagesCollectModList' },
 			 */
-			informationsList : {
+			/*informationsList : {
 				// initialize : 'onInitGarbagesInformationsList'
-			},
-			usualCategoriesList2 : {
+			},*/
+			/*usualCategoriesList2 : {
 				// initialize : 'onInitGarbagesUsualCategoryList'
-			},
+			},*/
 			// fonctionne comme une CSS selector
 			// (http://www.w3.org/TR/CSS2/selector.html)
 			'usualCategoriesButtonsPanel_xtype button' : {
@@ -470,8 +469,8 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
 			this.setDatasConseils(this.garbageDetail.items,
-					"garbagesdetails_conseils", "libelle",
-					arsConseils.les_libelles, nbElementsMax);
+					"garbagesdetails_conseils", "libelle", "bouton",
+					arsConseils.les_libelles, arsConseils.les_boutons, nbElementsMax);
 	
 			// Ajout des commentaires OK
 			var code = record["code"];
@@ -533,10 +532,10 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 	filter : function() {
 		var result = new Array();
 
-		if (this.garbagesList == null) {
+		/*if (this.garbagesList == null) {
 			this.garbagesList = Ext
 					.create('VivreANantes.view.garbages.GarbagesList');
-		}
+		}*/
 
 		var text = _utilRetireAccent(this.getGarbagesFormText().getValue());
 		var category = this.getGarbagesFormSelect();

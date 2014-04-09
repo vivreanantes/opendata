@@ -4,9 +4,9 @@ Ext.define('VivreANantes.view.comments.CommentsModal', {
 
 			config : {
 				centered : true,
-				height : 400,
+				height : "320px",
 				itemId : 'modalPanel',
-				width : 300,
+				width : "280px",
 				hideOnMaskTap : true,
 				modal : true,
 				scrollable : true,
@@ -15,7 +15,7 @@ Ext.define('VivreANantes.view.comments.CommentsModal', {
 				scrollable : 'true',
 				items : [{
 							xtype : 'commentsForm_xtype',
-							height : 400,
+							height : "300px",
 							scrollable : false
 						}]
 			}

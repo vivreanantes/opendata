@@ -24,7 +24,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 										text : "Encombrants",
 										value : "modco_encombrants_resume"	
 									}, {
-										text : "Récup cartouches encres/tuners",
+										text : "Récup cartouches encre/tuners",
 										value : "smco_reempcartouchetoner"
 									}, {
 										text : "Récup électroménager, meubles, jouets",
