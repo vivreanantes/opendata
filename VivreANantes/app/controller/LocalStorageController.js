@@ -11,7 +11,7 @@ Ext.define('VivreANantes.controller.LocalStorageController', {
 				this.initLocalStorage();
 			},*/
 			
-			initLocalStorage : function() {
+			/*initLocalStorage : function() {
 				// our Store automatically picks up the LocalStorageProxy
 				// defined on the Search model
 				this.store = Ext.create('Ext.data.Store', {
@@ -28,7 +28,7 @@ Ext.define('VivreANantes.controller.LocalStorageController', {
 
 				// finally, save our Search data to localStorage
 				this.store.sync();
-			},
+			},*/
 			
 			
 			getLocale : function() {

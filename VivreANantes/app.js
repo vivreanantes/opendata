@@ -89,9 +89,9 @@ Ext
 			controllers : [ 'WelcomeController', 'GeoController', 'InformationsController', 'StructuresController', 'ReusesController', 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
 			,'CommentsController', 'LocalStorageController' /*, 'Calendar'*/],
 			
-			models : ['CategorieUsuelleModel', 'GarbageModel', 'HomeCollectModModel','StructureModel','AdviceModel', 'CommentsModel', /*'WasteTreatmentsCategories',*/ 'CollectModModel'/*, 'CalendarModel'*/, 'LocaleStorageModel', 'InformationsModel'],
+			models : [/*'CategorieUsuelleModel', */ /*'GarbageModel',*/ 'HomeCollectModModel','StructureModel'/*'CommentsModel',*/ /*'WasteTreatmentsCategories',*/ /*'CollectModModel'*/ /*, 'CalendarModel'*//*, 'InformationsModel'*/],
 			
-			stores : ['CategorieUsuelleStore', 'GarbageStore', 'HomeCollectModStore', 'AdviceStore', /*'WasteTreatmentsCategoriesStore',*//* 'CollectModStore',*/ 'CommentsStore'/*, 'DistrisacStore'*/, 'TrisacStore', 'StructureStore', 'StructureGeoStore', 'InformationsStore'],
+			stores : [/*'CategorieUsuelleStore',*/ /*'GarbageStore',*/ 'HomeCollectModStore', /*'WasteTreatmentsCategoriesStore',*/ /*'CollectModStore',*/ /*'CommentsStore'*//*, 'DistrisacStore'*/ 'TrisacStore', 'StructureStore', 'StructureGeoStore'/*, 'InformationsStore'*/],
 
 			icon : {
 				57 : 'resources/icons/Icon.png',

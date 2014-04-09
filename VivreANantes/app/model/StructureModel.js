@@ -1,5 +1,5 @@
 Ext.define('VivreANantes.model.StructureModel', {
-	extend : 'VivreANantes.model.AbstractStructureModel',
+			extend : 'Ext.data.Model',
 
 	config : {
 		fields : [{
