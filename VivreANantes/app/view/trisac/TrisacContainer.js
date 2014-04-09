@@ -13,15 +13,10 @@ Ext.define('VivreANantes.view.trisac.TrisacContainer', {
 							xtype : 'TrisacForm_xtype',
 							height : 140,
 							scrollable : false
-						},
-
-						{
+						}, {
 							xtype : 'TrisacList_xtype',
 							scrollable : 'vertical',
 							flex : 1
-						}
-
-				]
+						}]
 			}
-
 		});

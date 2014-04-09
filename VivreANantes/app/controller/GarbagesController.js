@@ -4,8 +4,8 @@
 Ext.define('VivreANantes.controller.GarbagesController', {
 	extend : 'VivreANantes.controller.AbstractController',
 	requires : ['VivreANantes.view.garbages.GarbagesContainer',
-			'VivreANantes.view.garbages.GarbagesForm',
-			'VivreANantes.view.garbages.GarbagesList'],
+			'VivreANantes.view.garbages.GarbagesForm'/*,
+			'VivreANantes.view.garbages.GarbagesList'*/],
 	config : {
 		refs : {
 			garbagesView : 'garbages_xtype',
@@ -159,7 +159,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			}
 		}
 
-		var nbGarbagesMax = 18; // la page UsualCategoriesButtonPanel.js affiche
+		var nbGarbagesMax = 18; // la page UsualCategoriesButtonsPanel.js affiche
 		// 18 éléments
 		this.setDataInButtonsWithManyLines(this
 						.getUsualCategoriesButtonsPanel(),

@@ -11,7 +11,7 @@ Ext.define('VivreANantes.view.collectMod.CollectMods', {
 				iconCls : 'trash', // icône en forme de poubelle
 				title : 'Modes',
 				items : [{
-							xtype : 'collectModsButtonsList_xtype'
+							xtype : 'collectModsButtonsPanel_xtype'
 						}],
 				defaultBackButtonText : "Retour"
 			}

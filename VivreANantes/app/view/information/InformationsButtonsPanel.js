@@ -1,30 +1,35 @@
 /**
- * Catégories usuelles : page avant boutons
+ * Listes des fiches explicatives
  * 
  * @author Christian Renoulin
  */
-Ext.define('VivreANantes.view.garbages.UsualCategoriesButtonPanel', {
+
+Ext.define('VivreANantes.view.information.InformationsButtonsPanel', {
 	extend : 'Ext.Container',
-	xtype : 'usualCategoriesButtonsPanel_xtype',
+	xtype : 'informationsbuttonslist_xtype',
 	config : {
+		title : 'Fiches',
+		iconCls : 'action',
+		scrollable : true,
 		layout : {
 			type : 'vbox'
 		},
+		scrollable : true,
 		items : [{
 			layout : {
 				type : 'hbox',
 				align : 'strech'
 			},
 			items : [{
-				id : "usualCategoriesButtonsPanel_1",
+				id : "informationsButtonsPanel_1",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_2",
+				id : "informationsButtonsPanel_2",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_3",
+				id : "informationsButtonsPanel_3",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
@@ -34,15 +39,15 @@ Ext.define('VivreANantes.view.garbages.UsualCategoriesButtonPanel', {
 				align : 'strech'
 			},
 			items : [{
-				id : "usualCategoriesButtonsPanel_4",
+				id : "informationsButtonsPanel_4",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_5",
+				id : "informationsButtonsPanel_5",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_6",
+				id : "informationsButtonsPanel_6",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
@@ -52,15 +57,15 @@ Ext.define('VivreANantes.view.garbages.UsualCategoriesButtonPanel', {
 				align : 'strech'
 			},
 			items : [{
-				id : "usualCategoriesButtonsPanel_7",
+				id : "informationsButtonsPanel_7",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_8",
+				id : "informationsButtonsPanel_8",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_9",
+				id : "informationsButtonsPanel_9",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
@@ -70,15 +75,15 @@ Ext.define('VivreANantes.view.garbages.UsualCategoriesButtonPanel', {
 				align : 'strech'
 			},
 			items : [{
-				id : "usualCategoriesButtonsPanel_10",
+				id : "informationsButtonsPanel_10",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_11",
+				id : "informationsButtonsPanel_11",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_12",
+				id : "informationsButtonsPanel_12",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
@@ -88,15 +93,15 @@ Ext.define('VivreANantes.view.garbages.UsualCategoriesButtonPanel', {
 				align : 'strech'
 			},
 			items : [{
-				id : "usualCategoriesButtonsPanel_13",
+				id : "informationsButtonsPanel_13",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_14",
+				id : "informationsButtonsPanel_14",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_15",
+				id : "informationsButtonsPanel_15",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
@@ -106,18 +111,54 @@ Ext.define('VivreANantes.view.garbages.UsualCategoriesButtonPanel', {
 				align : 'strech'
 			},
 			items : [{
-				id : "usualCategoriesButtonsPanel_16",
+				id : "informationsButtonsPanel_16",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_17",
+				id : "informationsButtonsPanel_17",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}, {
-				id : "usualCategoriesButtonsPanel_18",
+				id : "informationsButtonsPanel_18",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}]
+		}, {
+			layout : {
+				type : 'hbox',
+				align : 'strech'
+			},
+			items : [{
+				id : "informationsButtonsPanel_19",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_20",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_21",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}]
+		}, {
+			layout : {
+				type : 'hbox',
+				align : 'strech'
+			},
+			items : [{
+				id : "informationsButtonsPanel_22",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_23",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_24",
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
 		}]
 	}
-});
+		});

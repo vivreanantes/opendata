@@ -4,7 +4,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 			config : {
 				refs : {
 					collectModsView : 'collectMods_xtype',
-					collectModsList : 'collectModsButtonsList_xtype',
+					collectModsList : 'collectModsButtonsPanel_xtype',
 					collectModsDetails : 'collectModsDetails_xtype',
 					buttonConteneurPapierCarton : '#modco_contpapiercarton'
 				},
@@ -19,7 +19,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 						back : 'onPushBackButton3'
 					},
 					// fonctionne comme une CSS selecteur
-					'collectModsButtonsList_xtype button' : {
+					'collectModsButtonsPanel_xtype button' : {
 						tap : 'onShowDetails'
 					},
 					// fonctionne comme une CSS selector
@@ -53,7 +53,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 		}
 
 		var nbMax = 18; // la page affiche 18 éléments
-		this.setDataInButtonsWithManyLines(this.getCollectModsList(), "collectModsButtonsList", result, nbMax, 3);
+		this.setDataInButtonsWithManyLines(this.getCollectModsList(), "collectModsButtonsPanel", result, nbMax, 3);
 
 		//	var arItems = this.getContentButtonsPanel(arItemsToShow);
 		// 	this.removeAllAndSetItems(this.getCollectModsList(), arItems);

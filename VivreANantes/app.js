@@ -31,22 +31,22 @@ Ext
 			'geo.MapContainer',
 			'geo.Toast',
 			// Accueil
-			'welcome.Welcome',
-			'welcome.WelcomeList',
+			// 'welcome.Welcome',
+			// 'welcome.WelcomeList',
 			// 'garbages.Garbages',
 			// Déchets
 			// 'garbages.GarbagesContainer2',
 			'garbages.GarbageButtonsPanel',
-			'garbages.UsualCategoriesButtonPanel',
-			'garbages.AdvicesList',
+			'garbages.UsualCategoriesButtonsPanel',
+			// 'garbages.AdvicesList',
 			// 'garbages.WasteTreatmentsCategoriesList',
-			'garbages.CollectModsList',
-			'garbages.InformationsList',
-			'garbages.CommentsList',
-			'garbages.UsualCategoriesList2',
+			// 'garbages.CollectModsList',
+			// 'garbages.InformationsList',
+			// 'garbages.CommentsList',
+			// 'garbages.UsualCategoriesList2',
 			// Modes de collecte
 			'collectMod.CollectMods',
-			'collectMod.CollectModsButtonsList',
+			'collectMod.CollectModsButtonsPanel',
 			'collectMod.CollectModsDetails',
 			// Commentaires
 			'comments.Comments',
@@ -67,7 +67,7 @@ Ext
 			'game.Guess',
 			// Informations
 			'information.Informations',
-			'information.InformationsButtonsList',
+			'information.InformationsButtonsPanel',
 			// A propos
 			'about.Description',
 			// Calendrier
@@ -100,8 +100,8 @@ Ext
 				144 : 'resources/icons/Icon~ipad@2x.png'
 			},
 
-			phoneStartupScreen : 'resources/loading/Homescreen.jpg',
-			tabletStartupScreen : 'resources/loading/Homescreen~ipad.jpg',
+			phoneStartupScreen : 'resources/loading/Icon_320_sur_460.png',
+			tabletStartupScreen : 'resources/loading/Icon_768_sur_1004.png',
 
 			viewport : {
 				autoMaximize : true
