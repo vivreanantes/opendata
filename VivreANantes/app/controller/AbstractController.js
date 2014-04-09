@@ -5,73 +5,6 @@
 Ext.define('VivreANantes.controller.AbstractController', {
 	extend : 'Ext.app.Controller',
 
-	/**
-	 * Ajoute les éléments d'un tableau arSrc  à un tableau existant arTarget
-	 */
-	utilPushArray : function(arSrc, arTarget) {
-		arTarget.push.apply(arTarget, arSrc);
-		return;
-	},
-
-	/**
-	 * Vérifie si un tableau arSrc contient un objet obj
-	 */
-	utilArrayContainObject : function(arSrc, obj) {
-		return _utilArrayContainObject(arSrc, obj);
-	},
-
-	/**
-	 * Met la première lettre en majuscule
-	 */
-	stringUpperFirstLetter : function(result) {
-		return _stringUpperFirstLetter(result);
-	},
-
-	/**
-	 * Traduit et met la première lettre en majuscule
-	 */
-	translateWithUpperFirstLetter : function(result) {
-		return translateWithUpperFirstLetter(result);
-	},
-
-	/**
-	 * Retourne un objet String correspondant à l'année actuelle. Exemple "2014"
-	 */
-	utilGetStringCurrentYearAAAA : function() {
-		return _utilGetStringCurrentYearAAAA();
-	},
-
-	utilGetDateTodayWithoutSeconds : function() {
-		return _utilGetDateTodayWithoutSeconds();
-	},
-
-	/*
-	 * Retourne sous forme d'une chaîne de caractère le jour de la semaine d'une
-	 * date
-	 */
-
-	utilGetDayOfWeek : function(d) {
-
-		var weekday = new Array(7);
-		weekday[0] = "label_dimanche";
-		weekday[1] = "label_lundi";
-		weekday[2] = "label_mardi";
-		weekday[3] = "label_mercredi";
-		weekday[4] = "label_jeudi";
-		weekday[5] = "label_vendredi";
-		weekday[6] = "label_samedi";
-		var day = weekday[d.getDay()];
-		var result = this.translate(day);
-		return result;
-	},
-
-	utilGetDayOfWeekTwoCharacters : function(day) {
-		return utilGetDayOfWeekTwoCharacters(day);
-	},
-
-	utilReplace : function(strSrc, avant, apres) {
-		return strSrc.split(avant).join(apres);
-	},
 
 	/*
 	 * Traduit un libellé. Si on ne le trouve pas, renvoie la clé.
@@ -90,109 +23,16 @@ Ext.define('VivreANantes.controller.AbstractController', {
 	 * LocalStorageController.
 	 */
 	getLocale : function() {
-		var result = "";
-		var localStorageController = this
+		var result = "fr";
+		/*var localStorageController = this
 				.getApplication()
 				.getController("VivreANantes.controller.LocalStorageController");
-		result = localStorageController.getLocale();
+		result = localStorageController.getLocale();*/
 		return result;
 	},
 
 	IMAGE_DIR : "resources/images/",
 
-	/**
-	 * Convertit un jour dans sa chaine de caractère. Ex "01" devient "janvier".
-	 */
-	convertDayNumberToString : function(stMonth) {
-		var result = "";
-		if (stMonth == "01") {
-			result = "label_janvier";
-		} else if (stMonth == "02") {
-			result = "label_fevrier";
-		} else if (stMonth == "03") {
-			result = "label_mars";
-		} else if (stMonth == "04") {
-			result = "label_avril";
-		} else if (stMonth == "05") {
-			result = "label_mai";
-		} else if (stMonth == "06") {
-			result = "label_juin";
-		} else if (stMonth == "07") {
-			result = "label_juillet";
-		} else if (stMonth == "08") {
-			result = "label_aout";
-		} else if (stMonth == "09") {
-			result = "label_septembre";
-		} else if (stMonth == "10") {
-			result = "label_octobre";
-		} else if (stMonth == "11") {
-			result = "label_novembre";
-		} else if (stMonth == "12") {
-			result = "label_decembre";
-		}
-		result = this.translate(result);
-		return result;
-	},
-
-	/*
-	 * onTapCommentButton : function(button) { alert(button.id); },
-	 */
-
-	getContentButtonsPanel : function(arItemsToShow) {
-		var arItems = new Array();
-		var aritemsLine = new Array();
-		var nbElementsParLines = 3;
-		if (arItemsToShow) {
-			for (var i = 0; i < arItemsToShow.length; i++) {
-				// Si je suis sur un multiple de 3 je termine la ligne
-				if (i / nbElementsParLines == Math
-						.round(i / nbElementsParLines)) {
-					if (aritemsLine != null) {
-						var objectItem1 = {
-							'layout' : {
-								type : 'hbox',
-								align : 'stretch'
-							},
-							'items' : aritemsLine
-						};
-						arItems.push(objectItem1);
-					}
-
-					var aritemsLine = new Array();
-				}
-				var libelle = "<font size='3'>"
-						+ arItemsToShow[i]["libelle"] + "</font>";
-				aritemsLine.push({
-							xtype : "button",
-							height : '120px',
-							width : '33%',
-							id : arItemsToShow[i]["id"],
-							// code : arItemsToShow[i]["id"],
-							html : "<center>" + libelle
-									+ "<br/><img src='resources/images/"
-									+ arItemsToShow[i]["image"]
-									+ "' /></center>"
-						});
-			}
-			// Si la dernière ligne n'est pas terminée
-			if (aritemsLine.length != 0) {
-				var objectItem1 = {
-					'layout' : {
-						type : 'hbox',
-						align : 'stretch'
-					},
-					'items' : aritemsLine
-				};
-				arItems.push(objectItem1);
-			}
-		}
-		return arItems;
-	},
-
-	removeAllAndSetItems : function(panel, arItems) {
-		panel.removeAll(true, true);
-		panel.setItems(arItems);
-	},
 
 	setDataInButtonsWithManyLines : function(panel, prefix, arItems,
 			nbMaxElements, nbElementsPerLine) {
@@ -300,14 +140,6 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		return result;
 	},
 
-	getColorPairImpair : function(nombre) {
-		if (nombre % 2 == 0) { // pair
-			return color = "#5E99AA";
-		} else { // impair
-			return color = "#5E99EE";
-
-		}
-	},
 
 	/**
 	 * Affecte les items (les éléments fils d'un container) à un élement dont
@@ -336,6 +168,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			}
 		};
 	},
+	
 	/**
 	 * Renvoie les items (les éléments fils d'un container) correspondant à la
 	 * partie "conseils" d'une page

@@ -1,6 +1,22 @@
 
 var _SEPARATOR = "#";
-	
+
+
+/**
+ * Ajoute les éléments d'un tableau arSrc  à un tableau existant arTarget
+ */
+function utilPushArray (arSrc, arTarget) {
+		arTarget.push.apply(arTarget, arSrc);
+		return;
+	};
+
+function _utilReplace(strSrc, avant, apres) {
+	return strSrc.split(avant).join(apres);
+};
+
+/**
+	 * Vérifie si un tableau arSrc contient un objet obj
+	 */
 function _utilArrayContainObject(a, obj) {
 	for (var i = 0; i < a.length; i++) {
 		if (a[i] === obj) {
@@ -42,7 +58,10 @@ function _utilGetStringCurrentYearAAAA () {
 	return (new Date()).getFullYear();
 }
 
-function translateWithUpperFirstLetter (result) {
+/**
+	 * Traduit et met la première lettre en majuscule
+	 */
+function _translateWithUpperFirstLetter (result) {
 	return _stringUpperFirstLetter(_translate(result));
 }
 

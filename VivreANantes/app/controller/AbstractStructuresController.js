@@ -26,7 +26,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			// Ajout du type
 			var descriptionTraduit = "";
 			if (record.data["modesCollecte"] != null && record.data["modesCollecte"] !== "") {
-				var label = this.stringUpperFirstLetter(this
+				var label = _stringUpperFirstLetter(this
 						.translate("label_type"));
 				var modeCollecteTraduit = "";
 				var typeTraduit = "";
@@ -60,21 +60,21 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			}
 			if (record.data["adresseTemp"] != null
 					&& record.data["adresseTemp"] !== "") {
-				var label = this.stringUpperFirstLetter(this
+				var label = _stringUpperFirstLetter(this
 						.translate("label_adresse"));
 				descriptionTraduit += "<b>"+label + "</b>: "
 						+ record.data["adresseTemp"] + "<br/><br/>";
 			}
 			if (record.data["numeroTemp"] != null
 					&& record.data["numeroTemp"] !== "") {
-				var label = this.stringUpperFirstLetter(this
+				var label = _stringUpperFirstLetter(this
 						.translate("label_telephone"));
 				descriptionTraduit += "<b>"+label + "</b>: " + record.data["numeroTemp"]
 						+ "<br/><br/>";
 			}
 			if (record.data["plagesHoraires_lisible"] != null
 					&& record.data["plagesHoraires_lisible"] !== "") {
-				var label = this.stringUpperFirstLetter(this
+				var label = _stringUpperFirstLetter(this
 						.translate("label_horaires"));
 				descriptionTraduit += "<b>"+label + "</b>: "
 						+ record.data["plagesHoraires_prochainsJours"]
@@ -102,7 +102,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			// Affectation du titre
 			var stType = record.data["type"];
 			var title = /*"<I>" + stType + "</I>" + " "*/
-					this.stringUpperFirstLetter(record.data["libelle"]);
+					_stringUpperFirstLetter(record.data["libelle"]);
 			this.structuresDetail.setTitle(title);
 			
 			// Ajout des commentaires

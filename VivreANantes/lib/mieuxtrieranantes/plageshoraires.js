@@ -86,6 +86,10 @@ function __utilGetDateTomorrowWithoutSeconds() {
 	return _addDays(today, 1);
 }
 
+/**
+ * Retourne sous forme d'une chaîne de caractère le jour de la semaine d'une
+ * date
+*/
 function __utilGetDayOfWeekTwoCharacters(date) {
 
 	var weekday = new Array(7);

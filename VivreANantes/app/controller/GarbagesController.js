@@ -230,10 +230,6 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 	},
 
-	translateWithUpperFirstLetterAndDecoupe : function(stLabel) {
-		return _cutWithBr(this.translateWithUpperFirstLetter(stLabel));
-	},
-
 	/*
 	 * 
 	 */
@@ -348,8 +344,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			} else {
 				treatmentCategories = "";
 			}
-			treatmentCategories = this
-					.stringUpperFirstLetter(treatmentCategories);
+			treatmentCategories =_stringUpperFirstLetter(treatmentCategories);
 
 			// Modes de collecte
 			this.garbageDetail.items.items['0'].items.items['1'].items.items['0']
@@ -588,7 +583,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			this.garbagesButtonsPanel = Ext
 					.create('VivreANantes.view.garbages.GarbageButtonsPanel');
 		}
-		// var arItems = this.getContentButtonsPanel(result);
+
 
 		// this.removeAllAndSetItems(this.garbagesButtonsPanel, arItems);
 		var nbGarbagesMax = 39; // la page GarbageButtonsPanel.js affiche 39

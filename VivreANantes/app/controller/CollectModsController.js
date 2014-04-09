@@ -100,11 +100,9 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 
 				// Affectation du titre
 				var title = "<I>"
-						+ this
-								.translateWithUpperFirstLetter("label_modeDeCollecte")
+						+ _translateWithUpperFirstLetter("label_modeDeCollecte")
 						+ "</I> "
-						+ this
-								.stringUpperFirstLetter(collectModFromStore["libelle"]);
+						+ _stringUpperFirstLetter(collectModFromStore["libelle"]);
 				this.collectModsDetails.setTitle(title);
 				
 				// Ajout des commentaires

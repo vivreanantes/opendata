@@ -86,8 +86,8 @@ Ext
 			'trisac.TrisacList'
 			],
 
-			controllers : [ 'WelcomeController', 'GeoController', 'InformationsController', 'StructuresController', 'ReusesController', 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
-			,'CommentsController', 'LocalStorageController' /*, 'Calendar'*/],
+			controllers : [/* 'WelcomeController',*/ 'GeoController', 'InformationsController', 'StructuresController'/*, 'ReusesController'*/, 'GarbagesController', 'HomeCollectModsController', 'TrisacsController', 'CollectModsController' 
+			/*,'CommentsController'*/ /*, 'LocalStorageController'*/ /*, 'Calendar'*/],
 			
 			models : [/*'CategorieUsuelleModel', */ /*'GarbageModel',*/ 'HomeCollectModModel','StructureModel'/*'CommentsModel',*/ /*'WasteTreatmentsCategories',*/ /*'CollectModModel'*/ /*, 'CalendarModel'*//*, 'InformationsModel'*/],
 			

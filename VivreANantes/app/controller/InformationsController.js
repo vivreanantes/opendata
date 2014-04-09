@@ -46,7 +46,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 				 * .getCommentString(myElement["code"]);
 				 */
 				/*var title = "<I>"
-						+ this.translateWithUpperFirstLetter("label_fiche")
+						+ _translateWithUpperFirstLetter("label_fiche")
 						+ "</I> " + myElement["libelle"];*/
 				var title = myElement["libelle"];
 				// Met l'élément dans le détail
