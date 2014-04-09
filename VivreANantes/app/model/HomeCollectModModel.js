@@ -2,16 +2,16 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 			extend : 'Ext.data.Model',
 
 			config : {
-				fields : [ {
+				fields : [               			{
 							name : 'modesCollecte',
-							// type : 'string',
-							// mapping : 'modesCollecte',
 						  	convert: function(value, record) {
-						  		if (value!=null) {
-									return value.replace(/modco_sac/g, "Sac ").replace(/modco_bac/g, "Bac ");
+						  		if (record.raw["modesCollecte"]=="modco_sacjaune,modco_sacbleu") {
+						  			return "Sacs jaunes et bleus";
+						  		} else if (record.raw["modesCollecte"]=="modco_bacbleu,modco_bacjaune") {
+						  			return "Bacs jaunes et bleus";
 						  		}
-						  		return value;
-                			}
+						  		return "";
+						  	}		
 						}, {
 							name : 'dcv',
 							type : 'string',
@@ -42,7 +42,7 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							name : 'jcbb',
 							type : 'string',
 							convert: function(value, record) {
-								if (record.data["modesCollecte"]!=null && record.data["modesCollecte"].indexOf("Bac bleu",0)!=-1) {
+								if (record.raw["modesCollecte"]!=null && record.raw["modesCollecte"].indexOf("modco_bacbleu",0)!=-1) {
 									return "<B>Bleu</B> "+value;
 								}
 								return value;
@@ -51,7 +51,7 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							name : 'jcbj',
 							type : 'string',
 							convert: function(value, record) {
-								if (record.data["modesCollecte"]!=null && record.data["modesCollecte"].indexOf("Bac jaune",0)!=-1) {
+								if (record.raw["modesCollecte"]!=null && record.raw["modesCollecte"].indexOf("modco_bacjaune",0)!=-1) {
 									return "<B>Jaune</B> "+value;
 								}
 								else {
