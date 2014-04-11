@@ -230,8 +230,8 @@ function __traduitPlageHoraire(plageHoraire, stLocale) {
 				result = result + "lundi au samedi"
 			} else if (jourDeLaSemaine.length == 5) {
 				// Renvoie par exemple "du lundi au samedi"
-				result = result + /* stLabelDu + " " */
-						+ __getDayString(jourDeLaSemaine.substring(0, 2), 0)
+				/* stLabelDu + " " */
+				result = result + __getDayString(jourDeLaSemaine.substring(0, 2), 0)
 						+ " " + stLabelAu + " "
 						+ __getDayString(jourDeLaSemaine.substring(3, 5), 0)
 						+ " ";

@@ -107,7 +107,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 			onActivate : function(newActiveItem, container, oldActiveItem,
 					eOpts) {
 				var arItemsToShow = this.getArrayItemsToShowForButtons(
-						_objInfos, "fiche");
+						_infosDatas, "fiche");
 
 				var result = new Array();
 				if (arItemsToShow.length > 0) {
@@ -124,7 +124,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 					}
 				}
 
-				// _objInfos
+				// _infosDatas
 				var nbGarbagesMax = 18; // la page InformationsButtonsPanel.js
 										// affiche
 				// 18 éléments

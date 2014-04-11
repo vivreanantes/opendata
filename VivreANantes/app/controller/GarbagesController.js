@@ -140,9 +140,9 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 
 	putInButtonsPanel : function(stringFilter) {
 
-		// utilisation de _objUsualCategories
+		// utilisation de _usualCategoriesDatas
 		var arItemsToShow = this.getArrayItemsToShowForButtons(
-				_objUsualCategories, stringFilter);
+				_usualCategoriesDatas, stringFilter);
 
 		var result = new Array();
 		if (arItemsToShow.length > 0) {
@@ -182,9 +182,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			}
 		} else if (arButtonsId[0] === "comments_xtype") {
 			// Ext.Viewport.add({xtype:'commentsModal_xtype'});
-			Ext.Viewport.add({
-						xtype : 'commentmodal'
-					});
+			Ext.Viewport.add({xtype : 'commentmodal'});
 		}
 
 	},
@@ -359,19 +357,20 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 * de collecte :", "id" : "garbagesdetails_recyclable" });
 			 * 
 			 */
+			if (modesDeCollecte) {
 			var arModesDeCollecte = modesDeCollecte.split(',');
 			// On parcours les modes de collecte
 			if (arModesDeCollecte.length > 0) {
 
-				for (var j = 0; j < _objCollectMods.length; j++) {
+				for (var j = 0; j < _collectModsDatas.length; j++) {
 					for (var i = 0; i < arModesDeCollecte.length; i++) {
-						if (_objCollectMods[j]["code"] === arModesDeCollecte[i]) {
-							var imageValue = _objCollectMods[j]["image"];
+						if (_collectModsDatas[j]["code"] === arModesDeCollecte[i]) {
+							var imageValue = _collectModsDatas[j]["image"];
 
 							var codeValue = "collectMods_xtype"
 									+ _SEPARATOR
-									+ _objCollectMods[j]["code"];
-							var libelleValue = _stringUpperFirstLetter(_objCollectMods[j]["libelleBouton"]);
+									+ _collectModsDatas[j]["code"];
+							var libelleValue = _stringUpperFirstLetter(_collectModsDatas[j]["libelleBouton"]);
 							arItemsToShow.push({
 										image : imageValue,
 										code : codeValue,
@@ -382,28 +381,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 					}
 				}
 
-				// // STORE dataCollectMods
-				// var dataCollectMods =
-				// this.getCollectModList().getStore().getData();
-				// var numModCollect = 0;
-				// dataCollectMods.each(function(recordCollectMod) {
-				// for (var i = 0; i < arModesDeCollecte) {
-				// if (recordCollectMod.raw["code"] === arModesDeCollecte[i])
-				// {
-				// var imageValue = recordCollectMod.data['image'];
-				// var codeValue = "collectMods_xtype" +
-				// _SEPARATOR + recordCollectMod.data['code'];
-				// var libelleValue =
-				// _stringUpperFirstLetter(recordCollectMod.data['libelle']);
-				// arItemsToShow.push({image:imageValue,code:codeValue,label:libelleValue});
-				// /*arItemsToShow.push(thisController
-				// .makeLinkButton("collectMods_xtype",
-				// arModesDeCollecte[i]));
-				// */
-				// }
-				// }
-				// });
-
+			}
 			}
 			if (modesDeCollecteTraduit !== "") {
 				modesDeCollecteTraduit = "<BR/>Modes de collecte : "
@@ -536,21 +514,21 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 		var category = this.getGarbagesFormSelect();
 		var escaperegex = Ext.String.escapeRegex;
 		
-		for (var j = 0; j < _objGarbages.length; j++) {
+		for (var j = 0; j < _garbagesDatas.length; j++) {
 			// Important : il faut recréer l'expression régulière à chaque fois
 			// sinon les résultats sont faux !
 			// var text = text.getValue());
 			var texttest = new RegExp(escaperegex(text), 'ig');
-			var descNoAccents = _objGarbages[j]["descNoAccents"];
-			if ((_objGarbages[j]["categoriesUsuelles"] === category.getValue() || category
+			var descNoAccents = _garbagesDatas[j]["descNoAccents"];
+			if ((_garbagesDatas[j]["categoriesUsuelles"] === category.getValue() || category
 					.getValue() === "all")
 					&& texttest.test(descNoAccents)) {
 				// Ajoute les <br/>
-				var stLibelle = _cutWithBr(_objGarbages[j]["nom"]);
+				var stLibelle = _cutWithBr(_garbagesDatas[j]["nom"]);
 				result.push({
-							code : _objGarbages[j]["code"],
+							code : _garbagesDatas[j]["code"],
 							label : stLibelle,
-							image : _objGarbages[j]["image"]
+							image : _garbagesDatas[j]["image"]
 						});
 			}
 		}

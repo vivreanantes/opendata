@@ -5,15 +5,17 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	extend : "VivreANantes.controller.AbstractController",
 
 	onTapLinkButton : function(button, e, eOpts) {
-		
-		if (button.id==="commentez") {
+
+		if (button.id === "commentez") {
 			// Panneau commentez
-			 Ext.Viewport.add({xtype:'commentmodal'});
+			Ext.Viewport.add({
+						xtype : 'commentmodal'
+					});
 		} else {
 			this.manageLinkButtons(button._data["code"]);
 		}
 	},
-	
+
 	/**
 	 * Affiche le détail pour une page de type structure.
 	 */
@@ -25,32 +27,32 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			}
 			// Ajout du type
 			var descriptionTraduit = "";
-			if (record.data["modesCollecte"] != null && record.data["modesCollecte"] !== "") {
+			if (record.data["modesCollecte"] != null
+					&& record.data["modesCollecte"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_type"));
 				var modeCollecteTraduit = "";
 				var typeTraduit = "";
-				/*if (record.data["modesCollecte"] != null
-						&& record.data["modesCollecte"] !== "") {
-					// On découpe modesCollecte, puis on traduit
-					var arModesCollecte = record.data["modesCollecte"].split(",");
-					for (var i = 0; i < arModesCollecte.length; i++) {
-						var unModeCollecte = arModesCollecte[i];
-						if (i>0) {
-							modeCollecteTraduit = modeCollecteTraduit + ", ";
-						}
-						modeCollecteTraduit = modeCollecteTraduit + this.translate("label_"	+ unModeCollecte);
-					}
-					// Dans le cas de distribution Trisac on ajoute le type
-					if (record.data["modesCollecte"]==="modco_distrisac") {
-						typeTraduit = " - " + record.data["type"];
-					}
-				}*/
-				if (record.data["type"] != null	&& record.data["type"] !== "") {
-					typeTraduit = record.data["type"];	
+				/*
+				 * if (record.data["modesCollecte"] != null &&
+				 * record.data["modesCollecte"] !== "") { // On découpe
+				 * modesCollecte, puis on traduit var arModesCollecte =
+				 * record.data["modesCollecte"].split(","); for (var i = 0; i <
+				 * arModesCollecte.length; i++) { var unModeCollecte =
+				 * arModesCollecte[i]; if (i>0) { modeCollecteTraduit =
+				 * modeCollecteTraduit + ", "; } modeCollecteTraduit =
+				 * modeCollecteTraduit + this.translate("label_" +
+				 * unModeCollecte); } // Dans le cas de distribution Trisac on
+				 * ajoute le type if
+				 * (record.data["modesCollecte"]==="modco_distrisac") {
+				 * typeTraduit = " - " + record.data["type"]; } }
+				 */
+				if (record.data["type"] != null && record.data["type"] !== "") {
+					typeTraduit = record.data["type"];
 				}
-				descriptionTraduit += "<b>"+label + "</b>: " + modeCollecteTraduit + " "
-						+ typeTraduit + "<br/><br/>";
+				descriptionTraduit += "<b>" + label + "</b>: "
+						+ modeCollecteTraduit + " " + typeTraduit
+						+ "<br/><br/>";
 			}
 			// Ajout de la description
 			if (record.data["description_fr"] != null
@@ -62,28 +64,30 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					&& record.data["adresseTemp"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_adresse"));
-				descriptionTraduit += "<b>"+label + "</b>: "
+				descriptionTraduit += "<b>" + label + "</b>: "
 						+ record.data["adresseTemp"] + "<br/><br/>";
 			}
 			if (record.data["numeroTemp"] != null
 					&& record.data["numeroTemp"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_telephone"));
-				descriptionTraduit += "<b>"+label + "</b>: " + record.data["numeroTemp"]
-						+ "<br/><br/>";
+				descriptionTraduit += "<b>" + label + "</b>: "
+						+ record.data["numeroTemp"] + "<br/><br/>";
 			}
 			if (record.data["plagesHoraires_lisible"] != null
 					&& record.data["plagesHoraires_lisible"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_horaires"));
-				descriptionTraduit += "<b>"+label + "</b>: "
+				descriptionTraduit += "<b>" + label + "</b>: "
 						+ record.data["plagesHoraires_prochainsJours"]
 						+ "<br/>" + record.data["plagesHoraires_lisible"]
 						+ "<br/><br/>";
 			}
 			if (record.data["src"] != null && record.data["src"] !== "") {
 				var label = _stringUpperFirstLetter(_translate("label_source"));
-				descriptionTraduit += "<b>" + label + "</b> : <font color='red'>" + record.data["src"] + "</font><br/><br/>";
+				descriptionTraduit += "<b>" + label
+						+ "</b> : <font color='red'>" + record.data["src"]
+						+ "</font><br/><br/>";
 			}
 			this.setDataElement(this.structuresDetail,
 					"structuresDetails_description", {
@@ -95,20 +99,26 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			if (record.data["conseils"] !== "") {
 				conseils = record.data["conseils"] + ",";
 			}
-			var arsItemsAdvices = _getAdvicesBlock(conseils);
+			var arsItemsAdvices = _getAdvicesBlock(conseils,
+					"garbagesdetails_commentaires_");
 			this.setItemsElement(this.structuresDetail,
 					"structuresDetails_advices", arsItemsAdvices);
 
 			// Affectation du titre
 			var stType = record.data["type"];
-			var title = /*"<I>" + stType + "</I>" + " "*/
-					_stringUpperFirstLetter(record.data["libelle"]);
+			var title = /* "<I>" + stType + "</I>" + " " */
+			_stringUpperFirstLetter(record.data["libelle"]);
 			this.structuresDetail.setTitle(title);
-			
+
 			// Ajout des commentaires
 			var code = record.data["code"];
-			this.setItemsElement(this.structuresDetail,
-					"structuresDetails_comments", this.getItemsComments(code, title));
+			var arsCommentaires = this.getArrayItemsToShowComments(code, title);
+			var nbElementsMax = 3;
+			this.setDataInButtons(this.structuresDetail,
+					"structuresDetails_comments", arsCommentaires.les_libelles,
+					nbElementsMax);
+
+			// this.setItemsElement(this.structuresDetail, "", this.getItemsComments(code, title));
 
 			// Bind the record onto the show contact view
 			this.structuresDetail.setData(record.data);
@@ -118,14 +128,17 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	},
 
 	/**
-	 * Pour des données 'structure' (stockées dans 'structures.json' et stockés dans un 'StructureStore.js') calcule les data à partir du store.
-	 * Invoque getAttributsPlagesHoraires sur toutes les plages horaires
+	 * Pour des données 'structure' (stockées dans 'structures.json' et stockés
+	 * dans un 'StructureStore.js') calcule les data à partir du store. Invoque
+	 * getAttributsPlagesHoraires sur toutes les plages horaires
 	 */
 	calculateDatas : function(store) {
 		var datas = store.getData();
 		var dataLength = datas.length;
 		if (dataLength > 0 && datas.items[0].data["type"] != null) {
-			// On parcours tous les éléments pour valoriser "plagesHoraires_prochainsJours", "plagesHoraires_lisible" et "plagesHoraires_periodes"
+			// On parcours tous les éléments pour valoriser
+			// "plagesHoraires_prochainsJours", "plagesHoraires_lisible" et
+			// "plagesHoraires_periodes"
 			for (var i = 0; i < dataLength; i++) {
 				// this.old_fillAttributs_PlagesHoraires(datas.items[i]);
 				this.getAttributsPlagesHoraires(datas.items[i]);
@@ -135,7 +148,8 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 	},
 
 	/**
-	 * Pour une plage horaire, valorise data["plagesHoraires_lisible"] et data["plagesHoraires_prochainsJours"].
+	 * Pour une plage horaire, valorise data["plagesHoraires_lisible"] et
+	 * data["plagesHoraires_prochainsJours"].
 	 */
 	getAttributsPlagesHoraires : function(objStructures, stLocale) {
 		var stPlagesHoraire = objStructures.get("plagesHoraires");
@@ -164,16 +178,18 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 		} else {
 			var stOuvertAujourdhuiEtDemain = " ";
 		}
-		
-		var stplagesHoraires = _traduitEnsemblePlageHoraire(stPlagesHoraire, stLocale);
-		
+
+		var stplagesHoraires = _traduitEnsemblePlageHoraire(stPlagesHoraire,
+				stLocale);
+
 		objStructures.data["plagesHoraires_lisible"] = stplagesHoraires;
 		objStructures.data["plagesHoraires_prochainsJours"] = stOuvertAujourdhuiEtDemain;
 		// objStructures.data["plagesHoraires_periodes"] = arNewAttributes;
 	},
 
 	/**
-	 * Valorise les options des listes déroulantes "quartier" (ce sont les quartiers administratifs)
+	 * Valorise les options des listes déroulantes "quartier" (ce sont les
+	 * quartiers administratifs)
 	 */
 	setOptionsQuartiersAdmin : function(selectField) {
 
@@ -197,7 +213,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					value : "Doulon Bottiere"
 				}, {
 					text : "Hauts Pavés - Saint Félix",
-					value : "Hauts-Paves Saint-Felix"
+					value : "Hauts Paves Saint-Felix"
 				}, {
 					text : "Ile De Nantes",
 					value : "Ile de Nantes"
@@ -215,7 +231,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					value : "Nantes Sud"
 				}]);
 	},
-	
+
 	/**
 	 * Valorise les options des listes déroulantes "quartier"
 	 */

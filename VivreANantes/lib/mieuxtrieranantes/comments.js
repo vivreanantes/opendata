@@ -12,17 +12,17 @@ function _getCommentsBloc(code) {
 	var faqTraduit = "";
 	// var commentLink = this.makeLink("commentsPanel");
 
-	// On parcours les remarques de la faq _objComments
-	for (var j = 0; j < _objComments.length; j++) {
-		if (_objComments[j]["elements"] != null) {
+	// On parcours les remarques de la faq _commentsDatas
+	for (var j = 0; j < _commentsDatas.length; j++) {
+		if (_commentsDatas[j]["elements"] != null) {
 
-			var arComments = _objComments[j]["elements"]
+			var arComments = _commentsDatas[j]["elements"]
 					.replace(", /g", ",").replace(" ,/g", ",").split(',');
 			for (var i = 0; i < arComments.length; i++) {
 				if (arComments[i] === code) {
 					faqTraduit += "<br/><B>"
-							+ _objComments[j]["libelle"] + "</B><BR/>"
-							+ _objComments[j]["description"];
+							+ _commentsDatas[j]["libelle"] + "</B><BR/>"
+							+ _commentsDatas[j]["description"];
 				}
 			}
 		}
@@ -44,13 +44,13 @@ function _getCollectMod(idElement) {
 	var image = "";
 	var libelle = "";
 
-	for (j in _objCollectMods) {
-		if (_objCollectMods[j].code === idElement) {
-			description = _objCollectMods[j]["description"];
-			conseils = _objCollectMods[j]["conseils"];
-			faq = _objCollectMods[j]["faq"];
-			libelle = _objCollectMods[j]["libelle"];
-			image = _objCollectMods[j]["image"];
+	for (j in _collectModsDatas) {
+		if (_collectModsDatas[j].code === idElement) {
+			description = _collectModsDatas[j]["description"];
+			conseils = _collectModsDatas[j]["conseils"];
+			faq = _collectModsDatas[j]["faq"];
+			libelle = _collectModsDatas[j]["libelle"];
+			image = _collectModsDatas[j]["image"];
 		}
 	}
 
@@ -69,9 +69,9 @@ function _getCollectMod(idElement) {
  */
 function _getGarbage(idElement) {
 	var result = '';
-	for (j in _objGarbages) {
-		if (_objGarbages[j]["code"] === idElement) {
-			result = _objGarbages[j];
+	for (j in _garbagesDatas) {
+		if (_garbagesDatas[j]["code"] === idElement) {
+			result = _garbagesDatas[j];
 		}
 	}
 	return result;
@@ -87,13 +87,13 @@ function _getInfo(idElement) {
 	var image = "";
 	var bouton = "";
 
-	for (j in _objInfos) {
-		if (_objInfos[j]["code"] === idElement) {
-			description = _objInfos[j]["description_fr"];
-			libelle = _objInfos[j]["libelle"];
-			image = _objInfos[j]["image"];
-			bouton = _objInfos[j]["bouton"];
-			faq = _objInfos[j]["faq"];
+	for (j in _infosDatas) {
+		if (_infosDatas[j]["code"] === idElement) {
+			description = _infosDatas[j]["description_fr"];
+			libelle = _infosDatas[j]["libelle"];
+			image = _infosDatas[j]["image"];
+			bouton = _infosDatas[j]["bouton"];
+			faq = _infosDatas[j]["faq"];
 		}
 	}
 	return {
@@ -112,8 +112,9 @@ function _getInfo(idElement) {
 	 * 
 	 * @params advicesString chaine de caractère listant les codes des conseils
 	 *         (ex : ",cons_1,cons2,cons3")
+	 * @params prefix
 	 */
-function _getAdvicesBlock (advicesString) {
+function _getAdvicesBlock (advicesString, prefixString) {
 		var result = new Array();
 		var thisController = this;
 		var arConseils = advicesString.replace(", /g", ",").replace(" ,/g",
@@ -121,21 +122,21 @@ function _getAdvicesBlock (advicesString) {
 		// On parcourt les conseils
 		if (arConseils.length > 0) {
 
-			for (j in _objAdvices) {
+			for (j in _advicesDatas) {
 				// STORE datasAdvices
 				// var dataAdvices = this.getApplication().getController("VivreANantes.controller.GarbagesController").getAdvicesList().getStore().getData();
 				// var thisController = this;
 				// dataAdvices.each(function (recordAdvice) {
 				for (i in arConseils) {
-					if (_objAdvices[j]["code"] === arConseils[i]) {
-						if (_objAdvices[j]["fiche"] != null && _objAdvices[j]["fiche"] != "") {
+					if (_advicesDatas[j]["code"] === arConseils[i]) {
+						if (_advicesDatas[j]["fiche"] != null && _advicesDatas[j]["fiche"] != "") {
 							// lien vers une fiche
 							result.push({
 								xtype : 'container',
 								layout : 'hbox',
-								id : "garbagesdetails_commentaires_" + _objAdvices[j]["code"],
+								id : prefixString + _advicesDatas[j]["code"],
 								items : [{
-										html : "<b>" + _objAdvices[j]["libelle"] + "</b><br/>" + _objAdvices[j]["description"] + "<br/><br/>",
+										html : "<b>" + _advicesDatas[j]["libelle"] + "</b><br/>" + _advicesDatas[j]["description"] + "<br/><br/>",
 										flex : 1
 									}, {
 										xtype : 'container',
@@ -145,7 +146,7 @@ function _getAdvicesBlock (advicesString) {
 												id : "garbagesdetails_informations",
 												text : "Plus d'infos",
 												data : {
-													code : "informations" + _SEPARATOR + _objAdvices[j]["fiche"]
+													code : "informations" + _SEPARATOR + _advicesDatas[j]["fiche"]
 												}
 											}
 										]
@@ -157,8 +158,8 @@ function _getAdvicesBlock (advicesString) {
 						// pas de lien vers une fiche
 						else {
 							result.push({
-								id : "garbagesdetails_commentaires_" + _objAdvices[j]["code"],
-								html : "<b>" + _objAdvices[j]["libelle"] + "<br/></b>" + _objAdvices[j]["description"] + "<br/><br/>"
+								id : prefixString + _advicesDatas[j]["code"],
+								html : "<b>" + _advicesDatas[j]["libelle"] + "<br/></b>" + _advicesDatas[j]["description"] + "<br/><br/>"
 							});
 						}
 					}

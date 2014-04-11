@@ -109,14 +109,14 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			// }
 			// }
 			// });
-			for (var j = 0; j < _objCollectMods.length; j++) {
+			for (var j = 0; j < _collectModsDatas.length; j++) {
 				for (var i = 0; i < arModesDeCollecte.length; i++) {
-					if (_objCollectMods[j]["code"] === arModesDeCollecte[i]) {
-						var imageValue = _objCollectMods[j]["image"];
+					if (_collectModsDatas[j]["code"] === arModesDeCollecte[i]) {
+						var imageValue = _collectModsDatas[j]["image"];
 						var codeValue = "collectMods_xtype"
 								+ _SEPARATOR
-								+ _objCollectMods[j]["code"];
-						var libelleValue = _stringUpperFirstLetter(_objCollectMods[j]["libelleBouton"]);
+								+ _collectModsDatas[j]["code"];
+						var libelleValue = _stringUpperFirstLetter(_collectModsDatas[j]["libelleBouton"]);
 						arItemsToShow.push({
 									image : imageValue,
 									code : codeValue,

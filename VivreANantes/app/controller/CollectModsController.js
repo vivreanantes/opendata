@@ -36,7 +36,7 @@ Ext.define('VivreANantes.controller.CollectModsController', {
 		//		var dataCollectMods = this.getApplication().getController("VivreANantes.controller.GarbagesController").getCollectModList().getStore();
 		//		var arItemsToShow = this.getDatasForButtons_old(dataCollectMods, "modco");
 
-		var arItemsToShow = this.getArrayItemsToShowForButtons(_objCollectMods, "modco");
+		var arItemsToShow = this.getArrayItemsToShowForButtons(_collectModsDatas, "modco");
 
 		var result = new Array();
 		if (arItemsToShow.length > 0) {

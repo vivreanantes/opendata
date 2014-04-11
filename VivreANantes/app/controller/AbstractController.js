@@ -107,16 +107,16 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		var result = new Array();
 
 		// On parcourt les remarques de la faq
-		for (j in _objComments) {
-			if (_objComments[j]["elements"] != null) {
+		for (j in _commentsDatas) {
+			if (_commentsDatas[j]["elements"] != null) {
 
-				if (_objComments[j]["elements"]!=null) {
-					var arElementsFaq = _objComments[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+				if (_commentsDatas[j]["elements"]!=null) {
+					var arElementsFaq = _commentsDatas[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
 					for (i in arElementsFaq) {
 	
 						if (arElementsFaq[i] === commentsString) {
 							result.push({
-								html : "<B>" + _objComments[j]["libelle"] + "</B><BR/>" + _objComments[j]["description"] + "<br/>"
+								html : "<img src='resources/icons/chat2.png' /><B>" + _commentsDatas[j]["libelle"] + "</B><BR/>" + _commentsDatas[j]["description"] + "<br/>"
 							});
 						}
 
@@ -185,18 +185,18 @@ Ext.define('VivreANantes.controller.AbstractController', {
 			
 			// On parcourt les conseils
 			if (arConseils.length > 0) {
-				for (j in _objAdvices) {
+				for (j in _advicesDatas) {
 					for (i in arConseils) {
-						if (_objAdvices[j]["code"] === arConseils[i]) {
+						if (_advicesDatas[j]["code"] === arConseils[i]) {
 							result1.push({
-								libelle : _objAdvices[j]["libelle"],
-								description : _objAdvices[j]["description"]
+								libelle : "<img src='resources/icons/info.png' /> " + _advicesDatas[j]["libelle"],
+								description : _advicesDatas[j]["description"]
 							});
-							if (_objAdvices[j]["fiche"] != null
-								 && _objAdvices[j]["fiche"] != "") {
+							if (_advicesDatas[j]["fiche"] != null
+								 && _advicesDatas[j]["fiche"] != "") {
 								result2.push({
-									"libelle" : _objAdvices[j]["libelle"],
-									code : "informations" + _SEPARATOR + _objAdvices[j]["fiche"]
+									"libelle" :  _advicesDatas[j]["libelle"],
+									code : "informations" + _SEPARATOR + _advicesDatas[j]["fiche"]
 								});
 							}
 						}
@@ -260,15 +260,15 @@ Ext.define('VivreANantes.controller.AbstractController', {
 		var result = new Array();
 
 		// On parcourt les commentaires
-		for (j in _objComments) {
-			if (_objComments[j]["elements"] != null) {
-				var arElementsFaq = _objComments[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
+		for (j in _commentsDatas) {
+			if (_commentsDatas[j]["elements"] != null) {
+				var arElementsFaq = _commentsDatas[j]["elements"].replace(", /g", ",").replace(" ,/g", ",").split(',');
 				for (i in arElementsFaq) {
 
 					if (arElementsFaq[i] === commentsString) {
 						result.push({
-							libelle : _objComments[j]["libelle"],
-							description : _objComments[j]["description"]
+							libelle : "<img src='resources/icons/chat2.png' /> " + _commentsDatas[j]["libelle"],
+							description : _commentsDatas[j]["description"]
 						});
 					}
 				}

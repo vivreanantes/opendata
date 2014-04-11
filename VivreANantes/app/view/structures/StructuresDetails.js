@@ -5,8 +5,6 @@ Ext.define('VivreANantes.view.structures.StructuresDetails', {
 			config : {
 				title : 'Détail de la structure',
 				layout : 'vbox',
-				// tpl : '',
-				// html: '',
 				scrollable : true,
 				styleHtmlContent : true,
 				record : null,
@@ -18,6 +16,15 @@ Ext.define('VivreANantes.view.structures.StructuresDetails', {
 							}
 						}, {
 							id : "structuresDetails_advices"
+						}, {
+							id : "structuresDetails_comments_1",
+							tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+						}, {
+							id : "structuresDetails_comments_2",
+							tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
+						}, {
+							id : "structuresDetails_comments_3",
+							tpl : "<b>{libelle}</b><br/>{description}<br/><br/>"
 						}, {
 							xtype : 'button',
 							width : '200px',
