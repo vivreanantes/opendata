@@ -79,36 +79,17 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 			if (!this.homeCollectModDetail) {
 				this.homeCollectModDetail = Ext
 						.create('VivreANantes.view.homecollectmods.HomeCollectModsDetails');
-				var stSrc = "<b>Source</b> : <font color=red>OpenDataNantes 09/2013</font></I><br/><br/>";
-				this.homeCollectModDetail.items.items['0'].setTpl('<b>Adresse</b> : {dcv}{ci}<br/>' +
-					'Modes de collecte : <b>{modesCollecte}</b><br/>Jours de collecte : <b>{jct} {jcbb} {jcbj} </b><br/>'+stSrc+'{conseils}');
+				// var stSrc = "<b>Source</b> : <font color=red>OpenDataNantes 09/2013</font></I><br/><br/>";
+				this.homeCollectModDetail.items.items['0'].setTpl('');
 					// '<UL><LI>si vous êtes en <B>"sac bleu et sac jaune"</B> (appelés "Trisac") : les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.</LI>'+
 					// '<LI>si vous êtes en <B>"bac bleu et bac jaune"</B> : les déchets recyclables est à déposer dans le bac jaune, les déchets non recyclables dans le bac bleu.</LI></UL> {src}');
 			}
 			
 			// Récupère les modes de collecte
 			var thisController = this;
-			// Récupère les modes de collecte
-			var thisController = this;
-			var arModesDeCollecte = record.raw["modesCollecte"].split(',');
+			var arModesDeCollecte = record.raw["mco"].split(',');
 			var arItemsToShow = new Array();
 
-
-			// STORE dataCollectMods
-			// var dataCollectMods =
-			// this.getCollectModList().getStore().getData();
-			// dataCollectMods.each(function(recordCollectMod) {
-			// for (var i = 0; i < arModesDeCollecte) {
-			// if (recordCollectMod.raw["code"] === arModesDeCollecte[i]) {
-			// var imageValue = recordCollectMod.data['image'];
-			// var codeValue = "collectMods_xtype" + _SEPARATOR +
-			// recordCollectMod.data['code'];
-			// var libelleValue =
-			// _stringUpperFirstLetter(recordCollectMod.data['libelle']);
-			// arItemsToShow.push({image:imageValue,code:codeValue,label:libelleValue});
-			// }
-			// }
-			// });
 			for (var j = 0; j < _collectModsDatas.length; j++) {
 				for (var i = 0; i < arModesDeCollecte.length; i++) {
 					if (_collectModsDatas[j]["code"] === arModesDeCollecte[i]) {
@@ -131,8 +112,22 @@ Ext.define('VivreANantes.controller.HomeCollectModsController', {
 					"homecollectmodsdetails_collectmod", arItemsToShow,
 					nbGarbagesdetailsCollectmodsMax);
 
+			// Ajout des conseils
+			var conseils = record.data["cons"];
+			var nbElementsMax = 2; // la page HomeCollectModsDetails.js affiche 2 éléments
+			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
+			for (var j = 0; j < arsConseils.length; j++) {
+				arsConseils
+				
+			}
+			this.setDatasConseils(this.homeCollectModDetail.items.items['0'].items,
+					"homecollectmodsdetails_conseils", "libelle", "bouton",
+					arsConseils.les_libelles, arsConseils.les_boutons, nbElementsMax);
+
+					
+					
 			// Bind the record onto the show contact view
-			this.homeCollectModDetail.items.items['0'].setData(record.data);
+			this.homeCollectModDetail.items.items['0'].items.items['0'].setData(record.data);
 
 			// Push the show contact view into the navigation view
 			this.getHomeCollectModsView().push(this.homeCollectModDetail);

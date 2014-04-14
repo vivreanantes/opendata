@@ -136,6 +136,7 @@ Ext
 		// CollectModModel.js
 		// GarbageModel.js
 		// HomeCollectModModel.js
+		// On donne à tord "bacs bleus" pour rue l'Abreuvoir  : http://www.nantesmetropole.fr/pratique/dechets/les-ordures-menageres-residuelles-23181.kjsp?RH=1250009772138&RF=1250009829554
 		
 		/////////// CRN Long terme //////////
 

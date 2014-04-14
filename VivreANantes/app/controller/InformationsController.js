@@ -124,10 +124,7 @@ Ext.define('VivreANantes.controller.InformationsController', {
 					}
 				}
 
-				// _infosDatas
-				var nbGarbagesMax = 18; // la page InformationsButtonsPanel.js
-										// affiche
-				// 18 éléments
+				var nbGarbagesMax = 30; // 30 éléments
 				this.setDataInButtonsWithManyLines(this.getInformationsList(),
 						"informationsButtonsPanel", result, nbGarbagesMax, 3);
 			}

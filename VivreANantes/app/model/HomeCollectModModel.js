@@ -3,12 +3,12 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 
 			config : {
 				fields : [               			{
-							name : 'modesCollecte',
+							name : 'mco',
 						  	convert: function(value, record) {
-						  		if (record.raw["modesCollecte"]=="modco_sacjaune,modco_sacbleu") {
-						  			return "Sacs jaunes et bleus";
-						  		} else if (record.raw["modesCollecte"]=="modco_bacbleu,modco_bacjaune") {
-						  			return "Bacs jaunes et bleus";
+						  		if (record.raw["mco"]=="modco_sacjaune,modco_sacbleu") {
+						  			return "<b>Modes de collecte</b> : Sacs jaunes et bleus";
+						  		} else if (record.raw["mco"]=="modco_bacbleu,modco_bacjaune") {
+						  			return "<b>Modes de collecte</b> : Bacs jaunes et bleus";
 						  		}
 						  		return "";
 						  	}		
@@ -36,13 +36,23 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							// }
 						},
 						{
+							name : 'jcprefixe',
+							type : 'string',
+							convert: function(value, record) {
+								if (record.raw["jct"]!=null || record.raw["jcbb"]!=null || record.raw["jcbj"]!=null) {
+									return "<br/>Jours de collecte : ";
+								}
+								return value;
+							}
+						},
+						{
 							name : 'jct',
 							type : 'string'
 						}, {
 							name : 'jcbb',
 							type : 'string',
 							convert: function(value, record) {
-								if (record.raw["modesCollecte"]!=null && record.raw["modesCollecte"].indexOf("modco_bacbleu",0)!=-1) {
+								if (value!=null && record.raw["mco"]!=null && record.raw["mco"].indexOf("modco_bacbleu",0)!=-1) {
 									return "<B>Bleu</B> "+value;
 								}
 								return value;
@@ -51,7 +61,7 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							name : 'jcbj',
 							type : 'string',
 							convert: function(value, record) {
-								if (record.raw["modesCollecte"]!=null && record.raw["modesCollecte"].indexOf("modco_bacjaune",0)!=-1) {
+								if (value!=null && record.raw["mco"]!=null && record.raw["mco"].indexOf("modco_bacjaune",0)!=-1) {
 									return "<B>Jaune</B> "+value;
 								}
 								else {
@@ -62,16 +72,17 @@ Ext.define('VivreANantes.model.HomeCollectModModel', {
 							name : 'src',
 							type : 'string'
 						}, {
-							name : 'conseils',
-							type : 'string',
+							name : 'cons',
+							type : 'string'
+							/*,
 							convert: function(value, record) {
-								if (record.raw["modesCollecte"]!=null && record.raw["modesCollecte"].indexOf("modco_bac",0)!=-1) {
-									return "<B>Rappels</B> : les déchets recyclables dans le bac jaune, les déchets non recyclables dans le bac bleu.";
+								if (record.raw["mco"]!=null && record.raw["mco"].indexOf("modco_bac",0)!=-1) {
+									return "<B>Rappels</B> : ";
 								}
 								else {
-									return "<B>Rappels</B> : les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.";
+									return "<B>Rappels</B> : ";
 								}
-							}
+							}*/
 						}]
 			}
 
