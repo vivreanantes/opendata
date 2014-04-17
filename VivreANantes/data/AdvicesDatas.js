@@ -40,7 +40,7 @@ var _advicesDatas = [
 {"code":"cons_alloproprete","libelle":"Des questions ? 0800 344 000","description":"Numéro gratuit. 8h à 17h du lundi au samedi"},
 {"code":"cons_pastoxique","libelle":"Non recyclable car présence produits toxiques","description":"Les bombes de peintures contiennent des produits toxiques, et ne peuvent pas être recyclées (contrairement aux bombes aérosols comme les déodorants)."},
 {"code":"cons_toxique","libelle":"Produit toxique","description":"Les produits toxiques ne doivent pas être mis avec les ordures ménagères. Ils doivent être déposés dans les décheteries, écopoints et écotox."},
-{"code":"cons_lerelais","libelle":"Vous pouvez déposer dans les conteneurs \"Le Relais\"","description":"Vêtements, linge de maison, chaussures (liées par paire), maroquinerie <B>dans un sac bien fermé</B>.","fiche":"fiche_lerelais"},
+{"code":"cons_lerelais","libelle":"Vous pouvez déposer dans les conteneurs \"Le Relais\"","description":"Vêtements, linge de maison, chaussures (liées par paire), maroquinerie <B>dans un sac bien fermé</B>.<BR>Voir fiche <I>Le Relais</I>.","fiche":"fiche_lerelais"},
 {"code":"cons_sacs","libelle":"Rappels sur les sacs","description":"Les sacs sont à déposer dans le même bac, les déchets recyclables dans le sac jaune, les déchets non recyclables dans le sac bleu.","fiche":"fiche_sacjaune"},
 {"code":"cons_bacs","libelle":"Rappels sur les bacs","description":"Les déchets recyclables dans le bac jaune, les déchets non recyclables dans le bac bleu.","fiche":"fiche_bacjaune"},
 {"code":"cons_collecte6h14h","libelle":"Les collectes ont lieu de 6h à 14h","description":"Présentez votre bac avant 6h ou la veille."},

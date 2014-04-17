@@ -5,6 +5,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsDetails', {
 	config : {
 		title : 'Collecte à domicile',
 		layout : 'hbox',
+		scrollable : true,		
 		items : [{
 			xtype : 'container',
 			layout : 'vbox',

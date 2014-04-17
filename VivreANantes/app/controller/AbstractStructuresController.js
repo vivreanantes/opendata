@@ -190,7 +190,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					value : 'all'
 				}, {
 					text : "Bellevue Chantenay Sainte-Anne",
-					value : "Bellevue Chantenay Sainte-Anne"
+					value : "Bellevue Chantenay Sainte Anne"
 				}, {
 					text : "Breil Barberie",
 					value : "Breil Barberie"

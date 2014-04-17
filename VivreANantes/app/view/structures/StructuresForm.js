@@ -1,3 +1,4 @@
+
 /**
  * Formulaire des Déchets
  */
@@ -37,7 +38,7 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 										value : /smco_reempvet|smco_conteneurlerelais/g
 									}, {
 										text : "Récup divers (lunettes...)",
-										value : "smco_reempdivers,smco_reemplunettes"
+										value : /smco_reempdivers|smco_reemplunettes/g
 									}]
 						}, {
 							xtype : 'selectfield',

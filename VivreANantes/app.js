@@ -2,21 +2,22 @@ Ext.Loader.setPath({
 	'Ext' : 'touch/src'
 });
 
-/*Ext.regApplication('App', {
+window.onclick = clickEvent;
 
-    icon: 'resources/icons/Icon.png',
-
-    tabletStartupScreen: 'resources/icons/Icon~ipad.png',
-
-    phoneStartupScreen: 'resources/icons/Icon@2x.png',
-
-    glossOnIcon: true,
-
-    fullscreen: true,
-
-    launch: function() {
+function clickEvent(e){
+    e = e || window.event;
+    var t = e.target || e.srcElement
+    if ( t.name || t.href ){
+       if( typeof t.href == "string" && t.href.substr(0,4) == 'http' ){
+           if( t.attributes.href.value !== "#" ){
+               // window.open(t.href, '_system', 'location=yes');
+           	navigator.app.loadUrl(url, {openExternal: true});
+           }
+           return false; // no further action for this click
+       }
     }
-});*/
+    return true; // process click as normal
+}
 
 Ext
 		.application({
