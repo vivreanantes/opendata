@@ -24,11 +24,7 @@ Ext
 			views : [
 			// Vue Principale
 			'Main',
-			// Partie Carte	
-			'geo.LeafletMap',
 			'geo.MapOSM',
-			//'geo.Map', 
-			'geo.MapContainer',
 			'geo.Toast',
 			// Accueil
 			// 'welcome.Welcome',
