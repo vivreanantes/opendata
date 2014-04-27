@@ -25,28 +25,18 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				this.structuresDetail = Ext
 						.create("VivreANantes.view.structures.StructuresDetails");
 			}
-			// Ajout du type
+
 			var descriptionTraduit = "";
+			// Le titre
+			var title = record.data["libelle"];
+			descriptionTraduit += title + "<br/><br/>";
+			// Ajout du type
 			if (record.data["modesCollecte"] != null
 					&& record.data["modesCollecte"] !== "") {
 				var label = _stringUpperFirstLetter(this
 						.translate("label_type"));
 				var modeCollecteTraduit = "";
 				var typeTraduit = "";
-				/*
-				 * if (record.data["modesCollecte"] != null &&
-				 * record.data["modesCollecte"] !== "") { // On découpe
-				 * modesCollecte, puis on traduit var arModesCollecte =
-				 * record.data["modesCollecte"].split(","); for (var i = 0; i <
-				 * arModesCollecte.length; i++) { var unModeCollecte =
-				 * arModesCollecte[i]; if (i>0) { modeCollecteTraduit =
-				 * modeCollecteTraduit + ", "; } modeCollecteTraduit =
-				 * modeCollecteTraduit + this.translate("label_" +
-				 * unModeCollecte); } // Dans le cas de distribution Trisac on
-				 * ajoute le type if
-				 * (record.data["modesCollecte"]==="modco_distrisac") {
-				 * typeTraduit = " - " + record.data["type"]; } }
-				 */
 				if (record.data["type"] != null && record.data["type"] !== "") {
 					typeTraduit = record.data["type"];
 				}
@@ -54,12 +44,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 						+ modeCollecteTraduit + " " + typeTraduit
 						+ "<br/><br/>";
 			}
-			// Ajout de la description
-			if (record.data["description_fr"] != null
-					&& record.data["description_fr"] !== "") {
-				descriptionTraduit += record.data["description_fr"]
-						+ "<br/><br/>";
-			}
+			// Ajout de l'adresse
 			if (record.data["adresseTemp"] != null
 					&& record.data["adresseTemp"] !== "") {
 				var label = _stringUpperFirstLetter(this
@@ -67,6 +52,13 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				descriptionTraduit += "<b>" + label + "</b>: "
 						+ record.data["adresseTemp"] + "<br/><br/>";
 			}
+			// Ajout de la description
+			if (record.data["description_fr"] != null
+					&& record.data["description_fr"] !== "") {
+				descriptionTraduit += record.data["description_fr"]
+						+ "<br/><br/>";
+			}
+			// Ajout du téléphone
 			if (record.data["numeroTemp"] != null
 					&& record.data["numeroTemp"] !== "") {
 				var label = _stringUpperFirstLetter(this
@@ -74,6 +66,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 				descriptionTraduit += "<b>" + label + "</b>: "
 						+ record.data["numeroTemp"] + "<br/><br/>";
 			}
+			// Ajout de la plage horaire
 			if (record.data["plagesHoraires_lisible"] != null
 					&& record.data["plagesHoraires_lisible"] !== "") {
 				var label = _stringUpperFirstLetter(this
@@ -83,6 +76,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 						+ "<br/>" + record.data["plagesHoraires_lisible"]
 						+ "<br/><br/>";
 			}
+			// Ajout de la source
 			if (record.data["src"] != null && record.data["src"] !== "") {
 				var label = _stringUpperFirstLetter(_translate("label_source"));
 				descriptionTraduit += "<b>" + label
@@ -105,9 +99,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					"structuresDetails_advices", arsItemsAdvices);
 
 			// Affectation du titre
-			var stType = record.data["type"];
-			var title = /* "<I>" + stType + "</I>" + " " */
-			_stringUpperFirstLetter(record.data["libelle"]);
+			var title = record.data["libelle"];
 			this.structuresDetail.setTitle(title);
 
 			// Ajout des commentaires
@@ -166,14 +158,14 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 			bOuvertDemain = true;
 		}
 		if (bOuvertAujourdhui == true && bOuvertDemain == true) {
-			var stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+			var stOuvertAujourdhuiEtDemain = "<FONT COLOR='green'>"
 					+ this.translate("label_ouvert_aujourdhui_et_demain")
 					+ "</FONT>"
 		} else if (bOuvertAujourdhui == true && bOuvertDemain == false) {
-			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+			stOuvertAujourdhuiEtDemain = "<FONT COLOR='green'>"
 					+ this.translate("label_ouvert_aujourdhui") + "</FONT>"
 		} else if (bOuvertAujourdhui == false && bOuvertDemain == true) {
-			stOuvertAujourdhuiEtDemain = "<FONT COLOR=red>"
+			stOuvertAujourdhuiEtDemain = "<FONT COLOR='green'>"
 					+ this.translate("label_ouvert_demain") + "</FONT>"
 		} else {
 			var stOuvertAujourdhuiEtDemain = " ";
@@ -198,7 +190,7 @@ Ext.define("VivreANantes.controller.AbstractStructuresController", {
 					value : 'all'
 				}, {
 					text : "Bellevue Chantenay Sainte-Anne",
-					value : "Bellevue Chantenay Sainte-Anne"
+					value : "Bellevue Chantenay Sainte Anne"
 				}, {
 					text : "Breil Barberie",
 					value : "Breil Barberie"

@@ -159,6 +159,42 @@ Ext.define('VivreANantes.view.information.InformationsButtonsPanel', {
 				xtype : "button", height : '100px', width : '33%', 
 				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
 			}]
+		}, {
+			layout : {
+				type : 'hbox',
+				align : 'strech'
+			},
+			items : [{
+				id : "informationsButtonsPanel_25",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_26",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_27",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}]
+		}, {
+			layout : {
+				type : 'hbox',
+				align : 'strech'
+			},
+			items : [{
+				id : "informationsButtonsPanel_28",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_29",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}, {
+				id : "informationsButtonsPanel_30",
+				xtype : "button", height : '100px', width : '33%', 
+				tpl : "<center><font size='2'>{label}</font><br/><img src='resources/images/{image}' /></center>", data : { label:"", image : ""}
+			}]
 		}]
-	}
+		}
 		});

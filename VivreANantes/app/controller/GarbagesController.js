@@ -323,7 +323,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			 */
 			if (treatmentCategories === "OUI") {
 				treatmentCategories = this.translate("label_recyclable")
-						+ " : " + "<FONT COLOR=green size=4>"
+						+ " : " + "<FONT COLOR='green' size=4>"
 						+ this.translate("label_OUI") + "</FONT>";
 			} else if (treatmentCategories === "NON") {
 				treatmentCategories = this.translate("label_recyclable")
@@ -438,8 +438,7 @@ Ext.define('VivreANantes.controller.GarbagesController', {
 			// conseilTraduit})
 
 			// Ajout des conseils
-			var nbElementsMax = 2; // la page GarbagesDetails.js affiche 2
-			// éléments
+			var nbElementsMax = 2; // la page GarbagesDetails.js affiche 2 éléments
 			var arsConseils = this.getArrayItemsToShowAdvices(conseils);
 			this.setDatasConseils(this.garbageDetail.items,
 					"garbagesdetails_conseils", "libelle", "bouton",

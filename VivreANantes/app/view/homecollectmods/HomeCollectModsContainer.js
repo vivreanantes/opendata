@@ -8,7 +8,7 @@ Ext.define('VivreANantes.view.homecollectmods.HomeCollectModsContainer', {
 
 			config : {
 				layout : 'vbox',
-				title : "Collecte à domicile (Nantes)",
+				title : "Collecte à domicile",
 				items : [{
 							xtype : 'homecollectmodsform_xtype',
 							height : 100,

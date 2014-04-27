@@ -34,7 +34,7 @@ Ext.define('VivreANantes.view.reuses.ReusesForm', {
 				value : /smco_reempvet|smco_conteneurlerelais/g
 			}, {
 				text : "Divers (lunettes...)",
-				value : "smco_reempdivers,smco_reemplunettes"
+				value : /smco_reempdivers|smco_reemplunettes/g
 			}]
 		}, {
 			xtype : 'selectfield',
