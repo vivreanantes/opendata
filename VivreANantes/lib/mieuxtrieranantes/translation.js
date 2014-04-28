@@ -160,23 +160,23 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_reempelectromenag" : {
 			"en" : "Re-employment household appliances ",
-			"fr" : "Récup. électroménager"
+			"fr" : "Réemploi électroménager"
 		},
 		"label_smco_reempcartouchetoner" : {
 			"en" : "Re-employment ",
-			"fr" : "Récup. cartouches d'encres/tuners imprimantes"
+			"fr" : "Réemploi cartouches d'encres/tuners imprimantes"
 		},
 		"label_smco_reempjouet" : {
 			"en" : "Re-employment toy",
-			"fr" : "Récup. de jouets"
+			"fr" : "Réemploi de jouets"
 		},
 		"label_smco_reempmeuble" : {
 			"en" : "Re-employment pieces of furniture",
-			"fr" : "Récup. de meuble"
+			"fr" : "Réemploi de meuble"
 		},
 		"label_smco_reempinfo" : {
 			"en" : "Re-employment computer",
-			"fr" : "Récup. informatique"
+			"fr" : "Réemploi informatique"
 		},
 		"label_smco_vendeurvoiture" : {
 			"en" : "",
@@ -184,15 +184,15 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_reemplivreCD" : {
 			"en" : "Re-employment books, CDs, comics, DVDs",
-			"fr" : "Récup. des livres, CDs, BDs, DVDs..."
+			"fr" : "Réemploi des livres/BD/CD/DVD..."
 		},
 		"label_smco_reempvet" : {
 			"en" : "Re-employment clothes",
-			"fr" : "Récup. des vêtements"
+			"fr" : "Réemploi des vêtements"
 		},
 		"label_smco_reempdivers" : {
 			"en" : "Re-employment divers",
-			"fr" : "Récup. d'objets divers"
+			"fr" : "Réemploi d'objets divers"
 		},
 		"label_smco_batiment" : {
 			"en" : "",
@@ -200,7 +200,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_vaisselle" : {
 			"en" : "Re-employment ",
-			"fr" : "Récup. de la vaisselle"
+			"fr" : "Réemploi de la vaisselle"
 		},
 		"label_smco_papier" : {
 			"en" : "",
@@ -248,7 +248,7 @@ function _translate(stKey, stLocale) {
 		},
 		"label_smco_velo" : {
 			"en" : "",
-			"fr" : "Récup. des vélos"
+			"fr" : "Réemploi des vélos"
 		},
 		"label_smco_pharmacie" : {
 			"en" : "",

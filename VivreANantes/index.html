@@ -14,16 +14,24 @@
             height: 100%;
         }
 
-        #appLoadingIndicator {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top: -10px;
-            margin-left: -50px;
-            width: 100px;
-            height: 20px;
+	#appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
         }
-
+        
+        
+		#appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+        
+        /**
         #appLoadingIndicator > * {
             background-color: #FFFFFF;
             float: left;
@@ -37,6 +45,7 @@
             -webkit-animation-direction: linear;
             opacity: 0.3
         }
+		*/
 
         #appLoadingIndicator > :nth-child(1) {
             -webkit-animation-delay: 0.18s;
@@ -55,9 +64,10 @@
                 opacity: 0.3
             }
 
+		/* background-color:#1985D0 */
             50% {
                 opacity: 1;
-                background-color:#1985D0
+               
             }
 
             100% {
@@ -75,10 +85,13 @@
     </style>
 </head>
 <body onload="onLoad()">
-    <div id="appLoadingIndicator">
-        <div></div>
-        <div></div>
-        <div></div>
+     <div id="appLoadingIndicator">
+	    <center>
+    	    <img src="resources/icons/Icon@2x.png" /><br/>
+	        Par des bénévoles<br/>
+	        www.mieuxtrierantes.fr<br/>
+	        Version 1.0.8
+        </center>
     </div>
     <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
     <link rel="stylesheet" href="resources/css/mieuxtrieranantes.css" />

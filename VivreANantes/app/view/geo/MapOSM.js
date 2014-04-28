@@ -37,12 +37,12 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 		this.layermapping['modco_reemploi'] = {
 			name : 'Récup',
 			iconurl : 'resources/icons/marker-icon-green.png',
-			label : '<img style="width:10%" src="resources/icons/marker-icon-green.png"> Récup.'
+			label : '<img style="width:10%" src="resources/icons/marker-icon-green.png"> Réemploi'
 		};
 		this.layermapping['modco_distrisac'] = {
 			name : 'Distrisac',
 			iconurl : 'resources/icons/marker-icon-red.png',
-			label : '<img style="width:10%" src="resources/icons/marker-icon-red.png"> Distrisac'
+			label : '<img style="width:10%" src="resources/icons/marker-icon-red.png"> Trisac'
 		};
 		/*
 		this.layermapping['modco_ecotox'] = {
@@ -219,7 +219,7 @@ Ext.define('VivreANantes.view.geo.MapOSM', {
 			
 			// CONVERSION NOM DU LAYER (pas d'utilisation regexp trop consommateur)
 			if (modesCollecteKey == 'smco_reemp') modesCollecte = 'modco_reemploi';
-			else if (modesCollecteKey == 'modco_cont') modesCollecte = 'modco_conteneur';
+			else if (modesCollecteKey == ',modco_con') modesCollecte = 'modco_conteneur';
 			
 			// FILTER STRUCTURES
 			if (modesCollecte != 'modco_distrisac'

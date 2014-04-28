@@ -22,22 +22,22 @@ Ext.define('VivreANantes.view.structures.StructuresForm', {
 										text : "Encombrants",
 										value : "modco_encombrants_resume"	
 									}, {
-										text : "Récup cartouches encre/tuners",
+										text : "Réemploi cartouches encre/tuners",
 										value : "smco_reempcartouchetoner"
 									}, {
-										text : "Récup électrom., meubles, jouets",
+										text : "Réemploi électrom., meubles, jouets",
 										value : /smco_reempelectromenag|smco_reempmeuble|smco_reempjouet/g
 									}, {
-										text : "Récup informatique",
+										text : "Réemploi informatique",
 										value : "smco_reempinfo"
 									}, {
-										text : "Récup livres/BD/CD/DVD",
+										text : "Réemploi livres/BD/CD/DVD",
 										value : "smco_reemplivreCD"
 									}, {
-										text : "Récup vêtements",
+										text : "Réemploi vêtements",
 										value : /smco_reempvet|smco_conteneurlerelais/g
 									}, {
-										text : "Récup divers (lunettes...)",
+										text : "Réemploi divers (lunettes...)",
 										value : /smco_reempdivers|smco_reemplunettes/g
 									}]
 						}, {

@@ -90,6 +90,10 @@ Ext
 			
 			stores : [/*'CategorieUsuelleStore',*/ /*'GarbageStore',*/ 'HomeCollectModStore', /*'WasteTreatmentsCategoriesStore',*/ /*'CollectModStore',*/ /*'CommentsStore'*//*, 'DistrisacStore'*/ 'TrisacStore', 'StructureStore', 'StructureGeoStore'/*, 'InformationsStore'*/],
 
+			requires: [
+    		    'Ext.MessageBox'
+    		],
+    
 			icon : {
 				57 : 'resources/icons/Icon.png',
 				72 : 'resources/icons/Icon~ipad.png',
@@ -111,6 +115,19 @@ Ext
 				Ext.Viewport.add({
 					xtype : 'main'
 				});
+				
+				Ext.Viewport.element.dom.addEventListener('click', function (e) {
+				    if (e.target.tagName !== 'A') {
+        				return;
+    				};
+    				e.preventDefault();
+    				var href = e.target.getAttribute('href');
+    				// pas testé : navigator.app.loadUrl(href, {openExternal: true});
+    				// ouvre dans l'appli : window.open(href, '_system', 'location=yes'); // not worked as well 
+    				// ne produit rien : Ext.device.Device.openURL(href);
+    				// Ext.device.Device.openURL('http://sencha.com');
+    				// ouvre dans l'appli : window.open('http://www.google.com')
+				}, false);
 			}
 			
 		});

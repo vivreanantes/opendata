@@ -313,7 +313,7 @@ Ext.define('VivreANantes.controller.AbstractController', {
 					+ "Structures" + st3;
 		} else if (id == "reusesPanel") {
 			res = st1 + "showReusesPanel(\"" + idDetail + "\")" + st2
-					+ "Récup." + st3;
+					+ "Réemploi" + st3;
 		} else if (id == "collectModsPanel") {
 			if (idDetail != "") {
 				var label = this.translate("label_" + idDetail);
